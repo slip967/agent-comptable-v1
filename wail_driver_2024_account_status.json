@@ -1,0 +1,1557 @@
+{
+  "source_fec": "891370595FEC20241231.txt",
+  "row_count": 6671,
+  "unique_accounts": 68,
+  "ok_accounts": [
+    {
+      "account": "5121",
+      "family": "512",
+      "count": 2169,
+      "examples": [
+        {
+          "piece": "[AN]",
+          "date": "20240101",
+          "libelle": "Report À Nouveau - Lignes validées",
+          "account": "5121"
+        },
+        {
+          "piece": "0001",
+          "date": "20240102",
+          "libelle": "REMCB00103",
+          "account": "5121"
+        },
+        {
+          "piece": "0002",
+          "date": "20240102",
+          "libelle": "REMCB00065",
+          "account": "5121"
+        }
+      ]
+    },
+    {
+      "account": "411",
+      "family": "411",
+      "count": 1132,
+      "examples": [
+        {
+          "piece": "[AN]",
+          "date": "20240101",
+          "libelle": "REMISE CB",
+          "account": "411"
+        },
+        {
+          "piece": "0001",
+          "date": "20240101",
+          "libelle": "REMISE CB",
+          "account": "411"
+        },
+        {
+          "piece": "0001",
+          "date": "20240101",
+          "libelle": "REMISE CB",
+          "account": "411"
+        }
+      ]
+    },
+    {
+      "account": "401",
+      "family": "401",
+      "count": 1012,
+      "examples": [
+        {
+          "piece": "[AN]",
+          "date": "20240101",
+          "libelle": "AD GESTION 14 /PERIODE SEPT",
+          "account": "401"
+        },
+        {
+          "piece": "0008",
+          "date": "20240101",
+          "libelle": "AD GESTION 14",
+          "account": "401"
+        },
+        {
+          "piece": "0058",
+          "date": "20240101",
+          "libelle": "AD GESTION 14",
+          "account": "401"
+        }
+      ]
+    },
+    {
+      "account": "627",
+      "family": "627",
+      "count": 803,
+      "examples": [
+        {
+          "piece": "0003",
+          "date": "20240102",
+          "libelle": "COMCB00065",
+          "account": "627"
+        },
+        {
+          "piece": "0004",
+          "date": "20240102",
+          "libelle": "COMCB00103",
+          "account": "627"
+        },
+        {
+          "piece": "0111",
+          "date": "20240102",
+          "libelle": "INTERETS/FRAIS",
+          "account": "627"
+        }
+      ]
+    },
+    {
+      "account": "4456611",
+      "family": "445661",
+      "count": 404,
+      "examples": [
+        {
+          "piece": "0424",
+          "date": "20240101",
+          "libelle": "BRICO DEPOT",
+          "account": "445661"
+        },
+        {
+          "piece": "0425",
+          "date": "20240101",
+          "libelle": "BRICO DEPOT",
+          "account": "445661"
+        },
+        {
+          "piece": "0436",
+          "date": "20240101",
+          "libelle": "LEROY MERLIN",
+          "account": "445661"
+        }
+      ]
+    },
+    {
+      "account": "445661",
+      "family": "445661",
+      "count": 267,
+      "examples": [
+        {
+          "piece": "0424",
+          "date": "20240101",
+          "libelle": "BRICO DEPOT",
+          "account": "445661"
+        },
+        {
+          "piece": "0425",
+          "date": "20240101",
+          "libelle": "BRICO DEPOT",
+          "account": "445661"
+        },
+        {
+          "piece": "0436",
+          "date": "20240101",
+          "libelle": "LEROY MERLIN",
+          "account": "445661"
+        }
+      ]
+    },
+    {
+      "account": "6063",
+      "family": "606",
+      "count": 62,
+      "examples": [
+        {
+          "piece": "0424",
+          "date": "20240101",
+          "libelle": "BRICO DEPOT",
+          "account": "6063"
+        },
+        {
+          "piece": "0425",
+          "date": "20240101",
+          "libelle": "BRICO DEPOT",
+          "account": "6063"
+        },
+        {
+          "piece": "0436",
+          "date": "20240101",
+          "libelle": "LEROY MERLIN",
+          "account": "6063"
+        }
+      ]
+    },
+    {
+      "account": "431",
+      "family": "431",
+      "count": 38,
+      "examples": [
+        {
+          "piece": "[AN]",
+          "date": "20240101",
+          "libelle": "Report À Nouveau - Lignes validées",
+          "account": "431"
+        },
+        {
+          "piece": "0012",
+          "date": "20240101",
+          "libelle": "Salaires décembre/22 URSSAF",
+          "account": "431"
+        },
+        {
+          "piece": "0037",
+          "date": "20240101",
+          "libelle": "Salaires février/23 URSSAF",
+          "account": "431"
+        }
+      ]
+    },
+    {
+      "account": "4373",
+      "family": "437",
+      "count": 26,
+      "examples": [
+        {
+          "piece": "[AN]",
+          "date": "20240101",
+          "libelle": "Report À Nouveau - Lignes validées",
+          "account": "4373"
+        },
+        {
+          "piece": "0037",
+          "date": "20240101",
+          "libelle": "Salaires février/23 Régime Unifié Agirc Arrco",
+          "account": "4373"
+        },
+        {
+          "piece": "0039",
+          "date": "20240101",
+          "libelle": "Salaires avril/23 Régime Unifié Agirc Arrco",
+          "account": "4373"
+        }
+      ]
+    },
+    {
+      "account": "6226",
+      "family": "622",
+      "count": 21,
+      "examples": [
+        {
+          "piece": "0491",
+          "date": "20240104",
+          "libelle": "QUIMANAGE",
+          "account": "6226"
+        },
+        {
+          "piece": "0511",
+          "date": "20240115",
+          "libelle": "CN2C",
+          "account": "6226"
+        },
+        {
+          "piece": "0492",
+          "date": "20240117",
+          "libelle": "QUIMANAGE",
+          "account": "6226"
+        }
+      ]
+    },
+    {
+      "account": "60611",
+      "family": "606",
+      "count": 20,
+      "examples": [
+        {
+          "piece": "0424",
+          "date": "20240101",
+          "libelle": "BRICO DEPOT",
+          "account": "6063"
+        },
+        {
+          "piece": "0425",
+          "date": "20240101",
+          "libelle": "BRICO DEPOT",
+          "account": "6063"
+        },
+        {
+          "piece": "0436",
+          "date": "20240101",
+          "libelle": "LEROY MERLIN",
+          "account": "6063"
+        }
+      ]
+    },
+    {
+      "account": "421BIA",
+      "family": "421",
+      "count": 20,
+      "examples": [
+        {
+          "piece": "0012",
+          "date": "20240101",
+          "libelle": "Salaires décembre/22 DEMBELE MAKA",
+          "account": "421DEMBELE"
+        },
+        {
+          "piece": "0026",
+          "date": "20240101",
+          "libelle": "DEMBELE MAKA",
+          "account": "421DEMBELE"
+        },
+        {
+          "piece": "0036",
+          "date": "20240101",
+          "libelle": "Salaires janvier/23 DEMBELE MAKA",
+          "account": "421DEMBELE"
+        }
+      ]
+    },
+    {
+      "account": "6411",
+      "family": "641",
+      "count": 12,
+      "examples": [
+        {
+          "piece": "0001",
+          "date": "20240131",
+          "libelle": "Salaires janvier/24",
+          "account": "641"
+        },
+        {
+          "piece": "0001",
+          "date": "20240131",
+          "libelle": "Salaires janvier/24",
+          "account": "6411"
+        },
+        {
+          "piece": "0002",
+          "date": "20240229",
+          "libelle": "Salaires février/24",
+          "account": "6411"
+        }
+      ]
+    },
+    {
+      "account": "6451",
+      "family": "645",
+      "count": 12,
+      "examples": [
+        {
+          "piece": "0001",
+          "date": "20240131",
+          "libelle": "Salaires janvier/24",
+          "account": "6451"
+        },
+        {
+          "piece": "0001",
+          "date": "20240131",
+          "libelle": "Salaires janvier/24",
+          "account": "6453"
+        },
+        {
+          "piece": "0001",
+          "date": "20240131",
+          "libelle": "Salaires janvier/24",
+          "account": "6454"
+        }
+      ]
+    },
+    {
+      "account": "6454",
+      "family": "645",
+      "count": 12,
+      "examples": [
+        {
+          "piece": "0001",
+          "date": "20240131",
+          "libelle": "Salaires janvier/24",
+          "account": "6451"
+        },
+        {
+          "piece": "0001",
+          "date": "20240131",
+          "libelle": "Salaires janvier/24",
+          "account": "6453"
+        },
+        {
+          "piece": "0001",
+          "date": "20240131",
+          "libelle": "Salaires janvier/24",
+          "account": "6454"
+        }
+      ]
+    },
+    {
+      "account": "6132",
+      "family": "613",
+      "count": 10,
+      "examples": [
+        {
+          "piece": "0016",
+          "date": "20240101",
+          "libelle": "SCI VICTORIA",
+          "account": "6132"
+        },
+        {
+          "piece": "0027",
+          "date": "20240108",
+          "libelle": "SCI VICTORIA",
+          "account": "6132"
+        },
+        {
+          "piece": "0017",
+          "date": "20240301",
+          "libelle": "SCI VICTORIA",
+          "account": "6132"
+        }
+      ]
+    },
+    {
+      "account": "421 KHAN",
+      "family": "421",
+      "count": 9,
+      "examples": [
+        {
+          "piece": "0012",
+          "date": "20240101",
+          "libelle": "Salaires décembre/22 DEMBELE MAKA",
+          "account": "421DEMBELE"
+        },
+        {
+          "piece": "0026",
+          "date": "20240101",
+          "libelle": "DEMBELE MAKA",
+          "account": "421DEMBELE"
+        },
+        {
+          "piece": "0036",
+          "date": "20240101",
+          "libelle": "Salaires janvier/23 DEMBELE MAKA",
+          "account": "421DEMBELE"
+        }
+      ]
+    },
+    {
+      "account": "6453",
+      "family": "645",
+      "count": 9,
+      "examples": [
+        {
+          "piece": "0001",
+          "date": "20240131",
+          "libelle": "Salaires janvier/24",
+          "account": "6451"
+        },
+        {
+          "piece": "0001",
+          "date": "20240131",
+          "libelle": "Salaires janvier/24",
+          "account": "6453"
+        },
+        {
+          "piece": "0001",
+          "date": "20240131",
+          "libelle": "Salaires janvier/24",
+          "account": "6454"
+        }
+      ]
+    },
+    {
+      "account": "4081",
+      "family": "408",
+      "count": 8,
+      "examples": [
+        {
+          "piece": "0003",
+          "date": "20240101",
+          "libelle": "CANAL SAT",
+          "account": "408"
+        },
+        {
+          "piece": "0051",
+          "date": "20240101",
+          "libelle": "CANAL SAT",
+          "account": "408"
+        },
+        {
+          "piece": "0002",
+          "date": "20240101",
+          "libelle": "ENGIE",
+          "account": "408"
+        }
+      ]
+    },
+    {
+      "account": "44586",
+      "family": "44586",
+      "count": 8,
+      "examples": [
+        {
+          "piece": "0049",
+          "date": "20241231",
+          "libelle": "BAGUETTE CHQ 2784326 04122024",
+          "account": "44586"
+        },
+        {
+          "piece": "0050",
+          "date": "20241231",
+          "libelle": "BOULANGERIE",
+          "account": "44586"
+        },
+        {
+          "piece": "0052",
+          "date": "20241231",
+          "libelle": "CASH MARKET",
+          "account": "44586"
+        }
+      ]
+    },
+    {
+      "account": "421DEMBELE",
+      "family": "421",
+      "count": 6,
+      "examples": [
+        {
+          "piece": "0012",
+          "date": "20240101",
+          "libelle": "Salaires décembre/22 DEMBELE MAKA",
+          "account": "421DEMBELE"
+        },
+        {
+          "piece": "0026",
+          "date": "20240101",
+          "libelle": "DEMBELE MAKA",
+          "account": "421DEMBELE"
+        },
+        {
+          "piece": "0036",
+          "date": "20240101",
+          "libelle": "Salaires janvier/23 DEMBELE MAKA",
+          "account": "421DEMBELE"
+        }
+      ]
+    },
+    {
+      "account": "6161",
+      "family": "616",
+      "count": 5,
+      "examples": [
+        {
+          "piece": "0042",
+          "date": "20240112",
+          "libelle": "MULTI PRO       I82003353",
+          "account": "6161"
+        },
+        {
+          "piece": "1117",
+          "date": "20240715",
+          "libelle": "MULTI PRO       I82003353",
+          "account": "6161"
+        },
+        {
+          "piece": "1557",
+          "date": "20240927",
+          "libelle": "PAIEMENT CB  MACIF ILE",
+          "account": "6161"
+        }
+      ]
+    },
+    {
+      "account": "408",
+      "family": "408",
+      "count": 4,
+      "examples": [
+        {
+          "piece": "0003",
+          "date": "20240101",
+          "libelle": "CANAL SAT",
+          "account": "408"
+        },
+        {
+          "piece": "0051",
+          "date": "20240101",
+          "libelle": "CANAL SAT",
+          "account": "408"
+        },
+        {
+          "piece": "0002",
+          "date": "20240101",
+          "libelle": "ENGIE",
+          "account": "408"
+        }
+      ]
+    },
+    {
+      "account": "4378",
+      "family": "437",
+      "count": 4,
+      "examples": [
+        {
+          "piece": "[AN]",
+          "date": "20240101",
+          "libelle": "Report À Nouveau - Lignes validées",
+          "account": "4373"
+        },
+        {
+          "piece": "0037",
+          "date": "20240101",
+          "libelle": "Salaires février/23 Régime Unifié Agirc Arrco",
+          "account": "4373"
+        },
+        {
+          "piece": "0039",
+          "date": "20240101",
+          "libelle": "Salaires avril/23 Régime Unifié Agirc Arrco",
+          "account": "4373"
+        }
+      ]
+    },
+    {
+      "account": "6278",
+      "family": "627",
+      "count": 4,
+      "examples": [
+        {
+          "piece": "0003",
+          "date": "20240102",
+          "libelle": "COMCB00065",
+          "account": "627"
+        },
+        {
+          "piece": "0004",
+          "date": "20240102",
+          "libelle": "COMCB00103",
+          "account": "627"
+        },
+        {
+          "piece": "0111",
+          "date": "20240102",
+          "libelle": "INTERETS/FRAIS",
+          "account": "627"
+        }
+      ]
+    },
+    {
+      "account": "421AHMED",
+      "family": "421",
+      "count": 4,
+      "examples": [
+        {
+          "piece": "0012",
+          "date": "20240101",
+          "libelle": "Salaires décembre/22 DEMBELE MAKA",
+          "account": "421DEMBELE"
+        },
+        {
+          "piece": "0026",
+          "date": "20240101",
+          "libelle": "DEMBELE MAKA",
+          "account": "421DEMBELE"
+        },
+        {
+          "piece": "0036",
+          "date": "20240101",
+          "libelle": "Salaires janvier/23 DEMBELE MAKA",
+          "account": "421DEMBELE"
+        }
+      ]
+    },
+    {
+      "account": "421SAHED",
+      "family": "421",
+      "count": 4,
+      "examples": [
+        {
+          "piece": "0012",
+          "date": "20240101",
+          "libelle": "Salaires décembre/22 DEMBELE MAKA",
+          "account": "421DEMBELE"
+        },
+        {
+          "piece": "0026",
+          "date": "20240101",
+          "libelle": "DEMBELE MAKA",
+          "account": "421DEMBELE"
+        },
+        {
+          "piece": "0036",
+          "date": "20240101",
+          "libelle": "Salaires janvier/23 DEMBELE MAKA",
+          "account": "421DEMBELE"
+        }
+      ]
+    },
+    {
+      "account": "641",
+      "family": "641",
+      "count": 4,
+      "examples": [
+        {
+          "piece": "0001",
+          "date": "20240131",
+          "libelle": "Salaires janvier/24",
+          "account": "641"
+        },
+        {
+          "piece": "0001",
+          "date": "20240131",
+          "libelle": "Salaires janvier/24",
+          "account": "6411"
+        },
+        {
+          "piece": "0002",
+          "date": "20240229",
+          "libelle": "Salaires février/24",
+          "account": "6411"
+        }
+      ]
+    },
+    {
+      "account": "4457113",
+      "family": "44571",
+      "count": 4,
+      "examples": [
+        {
+          "piece": "0031",
+          "date": "20241231",
+          "libelle": "TVA déductible 20% Débits",
+          "account": "4457113"
+        },
+        {
+          "piece": "0033",
+          "date": "20241231",
+          "libelle": "REGUL TVA 2024",
+          "account": "4457113"
+        },
+        {
+          "piece": "0012",
+          "date": "20241231",
+          "libelle": "REMISE CHEQUE",
+          "account": "4457113"
+        }
+      ]
+    },
+    {
+      "account": "604",
+      "family": "604",
+      "count": 2,
+      "examples": [
+        {
+          "piece": "0168",
+          "date": "20240312",
+          "libelle": "JEAN JAURES",
+          "account": "604"
+        },
+        {
+          "piece": "0133",
+          "date": "20241212",
+          "libelle": "CARBURANT",
+          "account": "604"
+        }
+      ]
+    },
+    {
+      "account": "6135",
+      "family": "613",
+      "count": 2,
+      "examples": [
+        {
+          "piece": "0016",
+          "date": "20240101",
+          "libelle": "SCI VICTORIA",
+          "account": "6132"
+        },
+        {
+          "piece": "0027",
+          "date": "20240108",
+          "libelle": "SCI VICTORIA",
+          "account": "6132"
+        },
+        {
+          "piece": "0017",
+          "date": "20240301",
+          "libelle": "SCI VICTORIA",
+          "account": "6132"
+        }
+      ]
+    },
+    {
+      "account": "4456613",
+      "family": "445661",
+      "count": 2,
+      "examples": [
+        {
+          "piece": "0424",
+          "date": "20240101",
+          "libelle": "BRICO DEPOT",
+          "account": "445661"
+        },
+        {
+          "piece": "0425",
+          "date": "20240101",
+          "libelle": "BRICO DEPOT",
+          "account": "445661"
+        },
+        {
+          "piece": "0436",
+          "date": "20240101",
+          "libelle": "LEROY MERLIN",
+          "account": "445661"
+        }
+      ]
+    },
+    {
+      "account": "6412",
+      "family": "641",
+      "count": 2,
+      "examples": [
+        {
+          "piece": "0001",
+          "date": "20240131",
+          "libelle": "Salaires janvier/24",
+          "account": "641"
+        },
+        {
+          "piece": "0001",
+          "date": "20240131",
+          "libelle": "Salaires janvier/24",
+          "account": "6411"
+        },
+        {
+          "piece": "0002",
+          "date": "20240229",
+          "libelle": "Salaires février/24",
+          "account": "6411"
+        }
+      ]
+    },
+    {
+      "account": "6458",
+      "family": "645",
+      "count": 1,
+      "examples": [
+        {
+          "piece": "0001",
+          "date": "20240131",
+          "libelle": "Salaires janvier/24",
+          "account": "6451"
+        },
+        {
+          "piece": "0001",
+          "date": "20240131",
+          "libelle": "Salaires janvier/24",
+          "account": "6453"
+        },
+        {
+          "piece": "0001",
+          "date": "20240131",
+          "libelle": "Salaires janvier/24",
+          "account": "6454"
+        }
+      ]
+    },
+    {
+      "account": "6261",
+      "family": "626",
+      "count": 1,
+      "examples": [
+        {
+          "piece": "0064",
+          "date": "20241231",
+          "libelle": "ORANGE",
+          "account": "6261"
+        }
+      ]
+    }
+  ],
+  "review_accounts": [
+    {
+      "account": "455",
+      "family": "455",
+      "count": 27,
+      "examples": [
+        {
+          "piece": "[AN]",
+          "date": "20240101",
+          "libelle": "Report À Nouveau - Lignes validées",
+          "account": "455"
+        },
+        {
+          "piece": "0444",
+          "date": "20240101",
+          "libelle": "LEROY MERLIN",
+          "account": "455"
+        },
+        {
+          "piece": "0486",
+          "date": "20240207",
+          "libelle": "METRO FRANCE -CB regl mourad",
+          "account": "455"
+        }
+      ]
+    },
+    {
+      "account": "447",
+      "family": "447",
+      "count": 17,
+      "examples": [
+        {
+          "piece": "[AN]",
+          "date": "20240101",
+          "libelle": "Report À Nouveau - Lignes validées",
+          "account": "447"
+        },
+        {
+          "piece": "0119",
+          "date": "20240115",
+          "libelle": "PRLV SEPA DIR. GENE. DES FINANCES PUBLIQUES",
+          "account": "447"
+        },
+        {
+          "piece": "0262",
+          "date": "20240215",
+          "libelle": "PRLV SEPA DIR. GENE. DES FINANCES PUBLIQUES",
+          "account": "447"
+        }
+      ]
+    },
+    {
+      "account": "6021",
+      "family": "602",
+      "count": 17,
+      "examples": [
+        {
+          "piece": "0106",
+          "date": "20240215",
+          "libelle": "ESPACE VERT - ESP",
+          "account": "6021"
+        },
+        {
+          "piece": "0039",
+          "date": "20240402",
+          "libelle": "MEIGAL",
+          "account": "6021"
+        },
+        {
+          "piece": "0048",
+          "date": "20240404",
+          "libelle": "MEIGAL",
+          "account": "6021"
+        }
+      ]
+    },
+    {
+      "account": "6313",
+      "family": "631",
+      "count": 13,
+      "examples": [
+        {
+          "piece": "0939",
+          "date": "20240617",
+          "libelle": "PAIEMENT CB CNFSE",
+          "account": "6313"
+        },
+        {
+          "piece": "0001",
+          "date": "20240131",
+          "libelle": "Salaires janvier/24",
+          "account": "6313"
+        },
+        {
+          "piece": "0002",
+          "date": "20240229",
+          "libelle": "Salaires février/24",
+          "account": "6313"
+        }
+      ]
+    },
+    {
+      "account": "531",
+      "family": "531",
+      "count": 12,
+      "examples": [
+        {
+          "piece": "0012",
+          "date": "20240101",
+          "libelle": "ALIMENTATION DE CAISSE",
+          "account": "531"
+        },
+        {
+          "piece": "0001",
+          "date": "20240215",
+          "libelle": "ESPACE VERT",
+          "account": "531"
+        },
+        {
+          "piece": "0004",
+          "date": "20240215",
+          "libelle": "ESPACE VERT",
+          "account": "531"
+        }
+      ]
+    },
+    {
+      "account": "6333",
+      "family": "633",
+      "count": 12,
+      "examples": [
+        {
+          "piece": "0001",
+          "date": "20240131",
+          "libelle": "Salaires janvier/24",
+          "account": "6333"
+        },
+        {
+          "piece": "0002",
+          "date": "20240229",
+          "libelle": "Salaires février/24",
+          "account": "6333"
+        },
+        {
+          "piece": "0003",
+          "date": "20240331",
+          "libelle": "Salaires mars/24",
+          "account": "6333"
+        }
+      ]
+    },
+    {
+      "account": "68112",
+      "family": "681",
+      "count": 5,
+      "examples": [
+        {
+          "piece": "0041",
+          "date": "20241231",
+          "libelle": "DOTATIONS AUX AMORTISSEMENTS",
+          "account": "68112"
+        },
+        {
+          "piece": "0042",
+          "date": "20241231",
+          "libelle": "DOTATIONS AUX AMORTISSEMENTS",
+          "account": "68112"
+        },
+        {
+          "piece": "0043",
+          "date": "20241231",
+          "libelle": "DOTATIONS AUX AMORTISSEMENT",
+          "account": "68112"
+        }
+      ]
+    },
+    {
+      "account": "4421",
+      "family": "442",
+      "count": 4,
+      "examples": [
+        {
+          "piece": "0005",
+          "date": "20240101",
+          "libelle": "Salaires mai/22",
+          "account": "4421"
+        },
+        {
+          "piece": "0006",
+          "date": "20240101",
+          "libelle": "Salaires juin/22",
+          "account": "4421"
+        },
+        {
+          "piece": "0007",
+          "date": "20240101",
+          "libelle": "Salaires juillet/22",
+          "account": "4421"
+        }
+      ]
+    },
+    {
+      "account": "119",
+      "family": "119",
+      "count": 3,
+      "examples": [
+        {
+          "piece": "0021",
+          "date": "20240101",
+          "libelle": "Résultat de l'exercice (perte)",
+          "account": "119"
+        },
+        {
+          "piece": "0059",
+          "date": "20240101",
+          "libelle": "PV 2022",
+          "account": "119"
+        },
+        {
+          "piece": "0030",
+          "date": "20240630",
+          "libelle": "AFFECTATION DE RESULTAT 2023",
+          "account": "119"
+        }
+      ]
+    },
+    {
+      "account": "28135",
+      "family": "281",
+      "count": 3,
+      "examples": [
+        {
+          "piece": "0024",
+          "date": "20240101",
+          "libelle": "IM000002 - Dotation aux amortissements et aux provisions",
+          "account": "28135"
+        },
+        {
+          "piece": "0061",
+          "date": "20240101",
+          "libelle": "IM000002 - Dotation aux amortissements et aux provisions",
+          "account": "28135"
+        },
+        {
+          "piece": "0041",
+          "date": "20241231",
+          "libelle": "DOTATIONS AUX AMORTISSEMENTS",
+          "account": "28135"
+        }
+      ]
+    },
+    {
+      "account": "658",
+      "family": "658",
+      "count": 3,
+      "examples": [
+        {
+          "piece": "0032",
+          "date": "20241231",
+          "libelle": "REGUL TVA 2024",
+          "account": "658"
+        },
+        {
+          "piece": "0059",
+          "date": "20241231",
+          "libelle": "Écriture de régularisation",
+          "account": "658"
+        },
+        {
+          "piece": "0067",
+          "date": "20241231",
+          "libelle": "Écriture de régularisation",
+          "account": "658"
+        }
+      ]
+    },
+    {
+      "account": "28181",
+      "family": "281",
+      "count": 3,
+      "examples": [
+        {
+          "piece": "0024",
+          "date": "20240101",
+          "libelle": "IM000002 - Dotation aux amortissements et aux provisions",
+          "account": "28135"
+        },
+        {
+          "piece": "0061",
+          "date": "20240101",
+          "libelle": "IM000002 - Dotation aux amortissements et aux provisions",
+          "account": "28135"
+        },
+        {
+          "piece": "0041",
+          "date": "20241231",
+          "libelle": "DOTATIONS AUX AMORTISSEMENTS",
+          "account": "28135"
+        }
+      ]
+    },
+    {
+      "account": "129",
+      "family": "129",
+      "count": 2,
+      "examples": [
+        {
+          "piece": "[AN]",
+          "date": "20240101",
+          "libelle": "Perte - Lignes validées",
+          "account": "129"
+        },
+        {
+          "piece": "0030",
+          "date": "20240630",
+          "libelle": "AFFECTATION DE RESULTAT 2023",
+          "account": "129"
+        }
+      ]
+    },
+    {
+      "account": "2181",
+      "family": "218",
+      "count": 2,
+      "examples": [
+        {
+          "piece": "0529",
+          "date": "20240409",
+          "libelle": "GASTRO HERO",
+          "account": "2181"
+        },
+        {
+          "piece": "0528",
+          "date": "20240601",
+          "libelle": "CMA",
+          "account": "2181"
+        }
+      ]
+    },
+    {
+      "account": "6026",
+      "family": "602",
+      "count": 2,
+      "examples": [
+        {
+          "piece": "0106",
+          "date": "20240215",
+          "libelle": "ESPACE VERT - ESP",
+          "account": "6021"
+        },
+        {
+          "piece": "0039",
+          "date": "20240402",
+          "libelle": "MEIGAL",
+          "account": "6021"
+        },
+        {
+          "piece": "0048",
+          "date": "20240404",
+          "libelle": "MEIGAL",
+          "account": "6021"
+        }
+      ]
+    },
+    {
+      "account": "701",
+      "family": "701",
+      "count": 2,
+      "examples": [
+        {
+          "piece": "0012",
+          "date": "20241231",
+          "libelle": "REMISE CHEQUE",
+          "account": "701"
+        },
+        {
+          "piece": "0013",
+          "date": "20241231",
+          "libelle": "TICKETS DE RESTAURANT",
+          "account": "701"
+        }
+      ]
+    },
+    {
+      "account": "101",
+      "family": "101",
+      "count": 1,
+      "examples": [
+        {
+          "piece": "[AN]",
+          "date": "20240101",
+          "libelle": "Report À Nouveau - Lignes validées",
+          "account": "101"
+        }
+      ]
+    },
+    {
+      "account": "206",
+      "family": "206",
+      "count": 1,
+      "examples": [
+        {
+          "piece": "[AN]",
+          "date": "20240101",
+          "libelle": "Report À Nouveau - Lignes validées",
+          "account": "206"
+        }
+      ]
+    },
+    {
+      "account": "2135",
+      "family": "213",
+      "count": 1,
+      "examples": [
+        {
+          "piece": "[AN]",
+          "date": "20240101",
+          "libelle": "Report À Nouveau - Lignes validées",
+          "account": "2135"
+        }
+      ]
+    },
+    {
+      "account": "275",
+      "family": "275",
+      "count": 1,
+      "examples": [
+        {
+          "piece": "[AN]",
+          "date": "20240101",
+          "libelle": "Report À Nouveau - Lignes validées",
+          "account": "275"
+        }
+      ]
+    },
+    {
+      "account": "2154",
+      "family": "215",
+      "count": 1,
+      "examples": [
+        {
+          "piece": "0028",
+          "date": "20240101",
+          "libelle": "SARL SFJ",
+          "account": "2154"
+        }
+      ]
+    },
+    {
+      "account": "6022",
+      "family": "602",
+      "count": 1,
+      "examples": [
+        {
+          "piece": "0106",
+          "date": "20240215",
+          "libelle": "ESPACE VERT - ESP",
+          "account": "6021"
+        },
+        {
+          "piece": "0039",
+          "date": "20240402",
+          "libelle": "MEIGAL",
+          "account": "6021"
+        },
+        {
+          "piece": "0048",
+          "date": "20240404",
+          "libelle": "MEIGAL",
+          "account": "6021"
+        }
+      ]
+    },
+    {
+      "account": "6712",
+      "family": "671",
+      "count": 1,
+      "examples": [
+        {
+          "piece": "1597",
+          "date": "20241004",
+          "libelle": "PAIEMENT CB RENNES WEB AMENDE.GOUV",
+          "account": "6712"
+        }
+      ]
+    },
+    {
+      "account": "4282",
+      "family": "428",
+      "count": 1,
+      "examples": [
+        {
+          "piece": "0025",
+          "date": "20241231",
+          "libelle": "Dettes provisionnées pour congés à payer",
+          "account": "4282"
+        }
+      ]
+    },
+    {
+      "account": "28154",
+      "family": "281",
+      "count": 1,
+      "examples": [
+        {
+          "piece": "0024",
+          "date": "20240101",
+          "libelle": "IM000002 - Dotation aux amortissements et aux provisions",
+          "account": "28135"
+        },
+        {
+          "piece": "0061",
+          "date": "20240101",
+          "libelle": "IM000002 - Dotation aux amortissements et aux provisions",
+          "account": "28135"
+        },
+        {
+          "piece": "0041",
+          "date": "20241231",
+          "libelle": "DOTATIONS AUX AMORTISSEMENTS",
+          "account": "28135"
+        }
+      ]
+    },
+    {
+      "account": "311",
+      "family": "311",
+      "count": 1,
+      "examples": [
+        {
+          "piece": "0044",
+          "date": "20241231",
+          "libelle": "STOCK FINAL",
+          "account": "311"
+        }
+      ]
+    },
+    {
+      "account": "6031",
+      "family": "603",
+      "count": 1,
+      "examples": [
+        {
+          "piece": "0044",
+          "date": "20241231",
+          "libelle": "STOCK FINAL",
+          "account": "6031"
+        }
+      ]
+    },
+    {
+      "account": "758",
+      "family": "758",
+      "count": 1,
+      "examples": [
+        {
+          "piece": "0065",
+          "date": "20241231",
+          "libelle": "Écriture de régularisation",
+          "account": "758"
+        }
+      ]
+    }
+  ],
+  "other_accounts": [
+    {
+      "account": "601",
+      "family": "601",
+      "count": 415,
+      "examples": [
+        {
+          "piece": "0515",
+          "date": "20240102",
+          "libelle": "METRO FRANCE",
+          "account": "601"
+        },
+        {
+          "piece": "0512",
+          "date": "20240108",
+          "libelle": "METRO FRANCE",
+          "account": "601"
+        },
+        {
+          "piece": "0516",
+          "date": "20240113",
+          "libelle": "METRO FRANCE",
+          "account": "601"
+        }
+      ]
+    },
+    {
+      "account": "4382",
+      "family": "438",
+      "count": 5,
+      "examples": [
+        {
+          "piece": "0005",
+          "date": "20240101",
+          "libelle": "Charges sociales sur congés à payer",
+          "account": "4382"
+        },
+        {
+          "piece": "0005",
+          "date": "20240101",
+          "libelle": "Charges sociales sur congés à payer",
+          "account": "4382"
+        },
+        {
+          "piece": "0013",
+          "date": "20240101",
+          "libelle": "Charges sociales sur congés à payer",
+          "account": "4382"
+        }
+      ]
+    },
+    {
+      "account": "445511",
+      "family": "445",
+      "count": 5,
+      "examples": [
+        {
+          "piece": "[AN]",
+          "date": "20240101",
+          "libelle": "Report À Nouveau - Lignes validées",
+          "account": "445511"
+        },
+        {
+          "piece": "0028",
+          "date": "20240101",
+          "libelle": "SARL SFJ",
+          "account": "4456214"
+        },
+        {
+          "piece": "0529",
+          "date": "20240409",
+          "libelle": "GASTRO HERO",
+          "account": "445621"
+        }
+      ]
+    },
+    {
+      "account": "4456214",
+      "family": "445",
+      "count": 2,
+      "examples": [
+        {
+          "piece": "[AN]",
+          "date": "20240101",
+          "libelle": "Report À Nouveau - Lignes validées",
+          "account": "445511"
+        },
+        {
+          "piece": "0028",
+          "date": "20240101",
+          "libelle": "SARL SFJ",
+          "account": "4456214"
+        },
+        {
+          "piece": "0529",
+          "date": "20240409",
+          "libelle": "GASTRO HERO",
+          "account": "445621"
+        }
+      ]
+    },
+    {
+      "account": "445621",
+      "family": "445",
+      "count": 2,
+      "examples": [
+        {
+          "piece": "[AN]",
+          "date": "20240101",
+          "libelle": "Report À Nouveau - Lignes validées",
+          "account": "445511"
+        },
+        {
+          "piece": "0028",
+          "date": "20240101",
+          "libelle": "SARL SFJ",
+          "account": "4456214"
+        },
+        {
+          "piece": "0529",
+          "date": "20240409",
+          "libelle": "GASTRO HERO",
+          "account": "445621"
+        }
+      ]
+    }
+  ],
+  "used_only_purchase_accounts": false,
+  "notes": "The validation inspected the full FEC account distribution, not only purchase accounts; purchase-style accounts are the main focus, but payroll, VAT, bank, clients, and assorted accounts were also checked for coherence."
+}

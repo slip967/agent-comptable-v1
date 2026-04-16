@@ -1,0 +1,524 @@
+{
+  "db": "abt3fec2",
+  "invoice_link_mode": "invoice_block",
+  "scanned": 11766,
+  "skipped_generated_guard": 0,
+  "skipped_no_invoice_form_guard": 0,
+  "touched_docs": 0,
+  "total_field_changes": 0,
+  "mode": "inspect_only",
+  "mapping": {},
+  "top_account_values": [
+    [
+      "401",
+      3423
+    ],
+    [
+      "607",
+      1888
+    ],
+    [
+      "4456611",
+      1837
+    ],
+    [
+      "445661",
+      1702
+    ],
+    [
+      "4456614",
+      735
+    ],
+    [
+      "512",
+      330
+    ],
+    [
+      "6063",
+      301
+    ],
+    [
+      "4456615",
+      211
+    ],
+    [
+      "411",
+      137
+    ],
+    [
+      "6011",
+      126
+    ],
+    [
+      "704",
+      119
+    ],
+    [
+      "604",
+      118
+    ],
+    [
+      "601",
+      118
+    ],
+    [
+      "60611",
+      108
+    ],
+    [
+      "615",
+      68
+    ],
+    [
+      "6261",
+      52
+    ],
+    [
+      "6226",
+      48
+    ],
+    [
+      "4457115",
+      48
+    ],
+    [
+      "6021",
+      41
+    ],
+    [
+      "51211",
+      41
+    ],
+    [
+      "4457117",
+      31
+    ],
+    [
+      "605",
+      30
+    ],
+    [
+      "5121",
+      26
+    ],
+    [
+      "455",
+      25
+    ],
+    [
+      "6135",
+      23
+    ],
+    [
+      "4456617",
+      23
+    ],
+    [
+      "4457114",
+      19
+    ],
+    [
+      "2157",
+      18
+    ],
+    [
+      "531",
+      16
+    ],
+    [
+      "6257",
+      11
+    ]
+  ],
+  "top_account_paths": [
+    [
+      "account_number",
+      11766
+    ]
+  ],
+  "top_key_paths": [
+    [
+      "_id",
+      11766
+    ],
+    [
+      "_rev",
+      11766
+    ],
+    [
+      "p",
+      11766
+    ],
+    [
+      "data",
+      11766
+    ],
+    [
+      "data.collection",
+      11766
+    ],
+    [
+      "data.type",
+      11766
+    ],
+    [
+      "data.sub_type",
+      11766
+    ],
+    [
+      "date",
+      11766
+    ],
+    [
+      "fiscal_year_uid",
+      11766
+    ],
+    [
+      "journal_code",
+      11766
+    ],
+    [
+      "number",
+      11766
+    ],
+    [
+      "line_seq",
+      11766
+    ],
+    [
+      "label",
+      11766
+    ],
+    [
+      "piece_ref",
+      11766
+    ],
+    [
+      "piece_date",
+      11766
+    ],
+    [
+      "piece_id",
+      11766
+    ],
+    [
+      "debit",
+      11766
+    ],
+    [
+      "credit",
+      11766
+    ],
+    [
+      "account_number",
+      11766
+    ],
+    [
+      "aux_account",
+      11766
+    ],
+    [
+      "matching",
+      11766
+    ],
+    [
+      "matching_date",
+      11766
+    ],
+    [
+      "tva_lines",
+      11766
+    ],
+    [
+      "created_at",
+      11766
+    ],
+    [
+      "updated_at",
+      11766
+    ],
+    [
+      "invoice",
+      11766
+    ],
+    [
+      "invoice.invoice_form_id",
+      11766
+    ],
+    [
+      "invoice.core_profile_id",
+      11766
+    ],
+    [
+      "invoice.numero_facture",
+      11766
+    ],
+    [
+      "invoice.date_facture",
+      11766
+    ],
+    [
+      "invoice.montant_ttc",
+      11766
+    ],
+    [
+      "invoice.siren_emetteur",
+      11766
+    ],
+    [
+      "invoice.siren_destinataire",
+      11766
+    ],
+    [
+      "invoice.matched_at",
+      11766
+    ],
+    [
+      "tva_lines[0].taux",
+      11466
+    ],
+    [
+      "tva_lines[0].montant_tva",
+      11466
+    ],
+    [
+      "tva_lines[0].montant_ht",
+      11466
+    ],
+    [
+      "tva_lines[1].taux",
+      1818
+    ],
+    [
+      "tva_lines[1].montant_tva",
+      1818
+    ],
+    [
+      "tva_lines[1].montant_ht",
+      1818
+    ]
+  ],
+  "sample_docs": [
+    {
+      "_id": "fr_bd_519665103:00b362fbf5f64ff78e546ae5f7bfc096",
+      "top_keys": [
+        "_id",
+        "_rev",
+        "p",
+        "data",
+        "date",
+        "fiscal_year_uid",
+        "journal_code",
+        "number",
+        "line_seq",
+        "label",
+        "piece_ref",
+        "piece_date",
+        "piece_id",
+        "debit",
+        "credit",
+        "account_number",
+        "aux_account",
+        "matching",
+        "matching_date",
+        "tva_lines",
+        "created_at",
+        "updated_at",
+        "invoice"
+      ],
+      "invoice": {
+        "invoice_form_id": "fr_bd_519665103:8556fe35-d044-4b42-b2f9-6e689cfdef62",
+        "core_profile_id": "fr_bd_519665103:2024:c9c1fbdc8b44569b455f1d07",
+        "numero_facture": "330869",
+        "date_facture": "2024-02-19",
+        "montant_ttc": 191.88,
+        "siren_emetteur": "562048314",
+        "siren_destinataire": null,
+        "matched_at": "2026-02-27T08:58:10.761134Z"
+      },
+      "account_candidates": [
+        {
+          "path": "account_number",
+          "value": "445661"
+        }
+      ]
+    },
+    {
+      "_id": "fr_bd_519665103:00b4435ca2a54045876c2336aec46ca5",
+      "top_keys": [
+        "_id",
+        "_rev",
+        "p",
+        "data",
+        "date",
+        "fiscal_year_uid",
+        "journal_code",
+        "number",
+        "line_seq",
+        "label",
+        "piece_ref",
+        "piece_date",
+        "piece_id",
+        "debit",
+        "credit",
+        "account_number",
+        "aux_account",
+        "matching",
+        "matching_date",
+        "tva_lines",
+        "created_at",
+        "updated_at",
+        "invoice"
+      ],
+      "invoice": {
+        "invoice_form_id": "fr_bd_519665103:7b805da2-af09-4b1e-aebc-5aeff7950294",
+        "core_profile_id": "fr_bd_519665103:2025:d2b954207bcf07f0ba5e61e0",
+        "numero_facture": "FV241111689",
+        "date_facture": "2024-11-23",
+        "montant_ttc": 63.64,
+        "siren_emetteur": "447915430",
+        "siren_destinataire": "519665103",
+        "matched_at": "2026-02-27T08:58:09.906855Z"
+      },
+      "account_candidates": [
+        {
+          "path": "account_number",
+          "value": "445661"
+        }
+      ]
+    },
+    {
+      "_id": "fr_bd_519665103:00bb2e101bfc4e3d807babb49c41593f",
+      "top_keys": [
+        "_id",
+        "_rev",
+        "p",
+        "data",
+        "date",
+        "fiscal_year_uid",
+        "journal_code",
+        "number",
+        "line_seq",
+        "label",
+        "piece_ref",
+        "piece_date",
+        "piece_id",
+        "debit",
+        "credit",
+        "account_number",
+        "aux_account",
+        "matching",
+        "matching_date",
+        "tva_lines",
+        "created_at",
+        "updated_at",
+        "invoice"
+      ],
+      "invoice": {
+        "invoice_form_id": "fr_bd_519665103:5b3e04fb-311d-4595-827c-8baabe5c1adc",
+        "core_profile_id": "fr_bd_519665103:2024:cf000e484d002c36a549a3d5",
+        "numero_facture": "532385",
+        "date_facture": "2024-05-03",
+        "montant_ttc": 680.73,
+        "siren_emetteur": "525254694",
+        "siren_destinataire": "519665103",
+        "matched_at": "2026-02-27T08:58:07.848878Z"
+      },
+      "account_candidates": [
+        {
+          "path": "account_number",
+          "value": "401"
+        }
+      ]
+    },
+    {
+      "_id": "fr_bd_519665103:00dab55146ad4e31b744c40533379063",
+      "top_keys": [
+        "_id",
+        "_rev",
+        "p",
+        "data",
+        "date",
+        "fiscal_year_uid",
+        "journal_code",
+        "number",
+        "line_seq",
+        "label",
+        "piece_ref",
+        "piece_date",
+        "piece_id",
+        "debit",
+        "credit",
+        "account_number",
+        "aux_account",
+        "matching",
+        "matching_date",
+        "tva_lines",
+        "created_at",
+        "updated_at",
+        "invoice"
+      ],
+      "invoice": {
+        "invoice_form_id": "fr_bd_519665103:3cec3018-f650-476a-9f87-ccb86911e53f",
+        "core_profile_id": "fr_bd_519665103:2024:5e6f8e008dacd20cfae5465c",
+        "numero_facture": "FA22CL22700",
+        "date_facture": "2024-04-30",
+        "montant_ttc": 182.67,
+        "siren_emetteur": "489928044",
+        "siren_destinataire": null,
+        "matched_at": "2026-02-27T08:58:06.083777Z"
+      },
+      "account_candidates": [
+        {
+          "path": "account_number",
+          "value": "4456611"
+        }
+      ]
+    },
+    {
+      "_id": "fr_bd_519665103:01064c3cd6e24caabe82c052f4c16930",
+      "top_keys": [
+        "_id",
+        "_rev",
+        "p",
+        "data",
+        "date",
+        "fiscal_year_uid",
+        "journal_code",
+        "number",
+        "line_seq",
+        "label",
+        "piece_ref",
+        "piece_date",
+        "piece_id",
+        "debit",
+        "credit",
+        "account_number",
+        "aux_account",
+        "matching",
+        "matching_date",
+        "tva_lines",
+        "created_at",
+        "updated_at",
+        "invoice"
+      ],
+      "invoice": {
+        "invoice_form_id": "fr_bd_519665103:bb061b13-f35c-4e87-9120-00dc90e7a888",
+        "core_profile_id": "fr_bd_519665103:2024:eb861d0de902062e64ec7fc4",
+        "numero_facture": "FV240707614",
+        "date_facture": "2024-07-17",
+        "montant_ttc": 90.39,
+        "siren_emetteur": "447915430",
+        "siren_destinataire": "519665103",
+        "matched_at": "2026-02-27T08:58:14.228900Z"
+      },
+      "account_candidates": [
+        {
+          "path": "account_number",
+          "value": "607"
+        }
+      ]
+    }
+  ],
+  "report_csv": "C:\\Users\\Dell\\Downloads\\scripts-master\\scripts-master\\abt3fec2_entry_account_updates_report.csv"
+}

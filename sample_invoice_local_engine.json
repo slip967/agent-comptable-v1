@@ -1,0 +1,23 @@
+{
+  "_id": "fr_bd_519665103:sample-local-engine",
+  "invoice_number": "SAMPLE-001",
+  "invoice_date": "09/04/2026",
+  "issuer": {
+    "name": "FOURNISSEUR DEMO",
+    "ape": "4632A"
+  },
+  "recipient": {
+    "name": "CLIENT DEMO",
+    "ape": "4722Z"
+  },
+  "line_items": [
+    {
+      "description": "COTI.RSD",
+      "vat_percent": 20.0
+    },
+    {
+      "description": "BASSE COTE BOEUF",
+      "vat_percent": 5.5
+    }
+  ]
+}

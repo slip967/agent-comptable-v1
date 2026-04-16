@@ -1,0 +1,2092 @@
+{
+  "meta": {
+    "generated_at": "2026-03-31T17:14:37.975934Z",
+    "db_factures": "abt3",
+    "partition_prefix": "fr_bd_519665103",
+    "total_unique_references": 2917,
+    "stats": {
+      "line_items_exploitation_metier": 8639,
+      "line_items_charges_externes": 72,
+      "line_items_a_revoir": 227
+    }
+  },
+  "category": "charges_externes",
+  "items": [
+    {
+      "canonical_label": "sortie volaille",
+      "source_labels_top": [
+        [
+          "Sortie volaille",
+          5
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          5
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          5
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4632C",
+          5
+        ]
+      ],
+      "occurrences": 5,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:169e9a4a-03d7-4801-9b0e-4e3726b7e99a",
+          "invoice_number": "FV2509-08540",
+          "invoice_date": "17/09/2025",
+          "description": "Sortie volaille",
+          "total_net": 1.59,
+          "total_gross": 1.91,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:249fa365-db1b-45f7-957b-8f0879993396",
+          "invoice_number": "FV2506-03393",
+          "invoice_date": "07/06/2025",
+          "description": "Sortie volaille",
+          "total_net": 7.55,
+          "total_gross": 9.06,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:50479f1c-ece4-4b3f-b3b6-25155846aff7",
+          "invoice_number": "FV2502-08712",
+          "invoice_date": "19/02/2025",
+          "description": "Sortie volaille",
+          "total_net": 2.1,
+          "total_gross": 2.52,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:b0734e55-4305-4cad-8b41-7f071474df7e",
+          "invoice_number": "FV2504-03400",
+          "invoice_date": "05/04/2025",
+          "description": "Sortie volaille",
+          "total_net": 4.59,
+          "total_gross": 5.51,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:c7c3e078-a575-4b54-a5f3-1776048a363d",
+          "invoice_number": "FV2509-07037",
+          "invoice_date": "13/09/2025",
+          "description": "Sortie volaille",
+          "total_net": 3.85,
+          "total_gross": 4.62,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "f fixe",
+      "source_labels_top": [
+        [
+          "F. FIXE",
+          5
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "5.5",
+          3
+        ],
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          3
+        ],
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4632A",
+          5
+        ]
+      ],
+      "occurrences": 5,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385",
+          "invoice_number": "1832013",
+          "invoice_date": "17/01/2024",
+          "description": "F. FIXE",
+          "total_net": 0.5,
+          "total_gross": 0.53,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:8a248fe2-e4d2-4514-a5fc-7d59be7c7785",
+          "invoice_number": "1845018",
+          "invoice_date": "07/03/2024",
+          "description": "F. FIXE",
+          "total_net": 0.5,
+          "total_gross": 0.53,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:b222bdb4-11a4-45f3-82ce-0b6a2cac7039",
+          "invoice_number": "1973621",
+          "invoice_date": "10/07/2025",
+          "description": "F. FIXE",
+          "total_net": 1.0,
+          "total_gross": 1.2,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:fc195965-7f63-4e85-bb8a-2c373ba39005",
+          "invoice_number": "1993126",
+          "invoice_date": "03/10/2025",
+          "description": "F. FIXE",
+          "total_net": 0.5,
+          "total_gross": 0.53,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:fcd5473c-0f02-4eef-a4ba-83dac3f3bb2d",
+          "invoice_number": "1839164",
+          "invoice_date": "14/02/2024",
+          "description": "F. FIXE",
+          "total_net": 0.5,
+          "total_gross": 0.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "acompte sur charges",
+      "source_labels_top": [
+        [
+          "ACOMPTE SUR CHARGES Du 01/01/2025 Au 28/02/2025",
+          2
+        ],
+        [
+          "ACOMPTE SUR CHARGES Du 01/03/2025 Au 31/03/2025",
+          2
+        ]
+      ],
+      "proposed_account": "6132",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          4
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          4
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 4,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:60fab965-ca59-4781-8071-861c932c9a81",
+          "invoice_number": "2003538-25000069",
+          "invoice_date": "24/03/2025",
+          "description": "ACOMPTE SUR CHARGES Du 01/01/2025 Au 28/02/2025",
+          "total_net": 432.67,
+          "total_gross": 432.67,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:60fab965-ca59-4781-8071-861c932c9a81",
+          "invoice_number": "2003538-25000069",
+          "invoice_date": "24/03/2025",
+          "description": "ACOMPTE SUR CHARGES Du 01/03/2025 Au 31/03/2025",
+          "total_net": 283.13,
+          "total_gross": 283.13,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:ad01d2ee-52b0-41f7-aae0-784935fcfeb9",
+          "invoice_number": "n-2003538-25000069",
+          "invoice_date": "24/03/2025",
+          "description": "ACOMPTE SUR CHARGES Du 01/01/2025 Au 28/02/2025",
+          "total_net": 432.67,
+          "total_gross": 432.67,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:ad01d2ee-52b0-41f7-aae0-784935fcfeb9",
+          "invoice_number": "n-2003538-25000069",
+          "invoice_date": "24/03/2025",
+          "description": "ACOMPTE SUR CHARGES Du 01/03/2025 Au 31/03/2025",
+          "total_net": 283.13,
+          "total_gross": 283.13,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "interbev",
+      "source_labels_top": [
+        [
+          "INTERBEV",
+          4
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "5.5",
+          2
+        ],
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          2
+        ],
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4632A",
+          4
+        ]
+      ],
+      "occurrences": 4,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385",
+          "invoice_number": "1832013",
+          "invoice_date": "17/01/2024",
+          "description": "INTERBEV",
+          "total_net": 0.5,
+          "total_gross": 0.53,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:fc195965-7f63-4e85-bb8a-2c373ba39005",
+          "invoice_number": "1993126",
+          "invoice_date": "03/10/2025",
+          "description": "INTERBEV",
+          "total_net": 0.58,
+          "total_gross": 0.61,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:fcd5473c-0f02-4eef-a4ba-83dac3f3bb2d",
+          "invoice_number": "1839164",
+          "invoice_date": "14/02/2024",
+          "description": "INTERBEV",
+          "total_net": 2.1,
+          "total_gross": 2.12,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:fcd5473c-0f02-4eef-a4ba-83dac3f3bb2d",
+          "invoice_number": "1839164",
+          "invoice_date": "14/02/2024",
+          "description": "INTERBEV",
+          "total_net": 0.37,
+          "total_gross": 0.39,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais de relance",
+      "source_labels_top": [
+        [
+          "Frais de relance",
+          3
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          2
+        ],
+        [
+          "unknown",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 3,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:09437944-54fa-4d58-b404-e954e21bfa22",
+          "invoice_number": "G.1196233498124422454",
+          "invoice_date": "20/08/2024",
+          "description": "Frais de relance",
+          "total_net": 10.0,
+          "total_gross": 10.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:666de54d-b140-4b30-b0f2-0146caf36a8d",
+          "invoice_number": "G.1236290905962340226",
+          "invoice_date": "09/01/2025",
+          "description": "Frais de relance",
+          "total_net": 10.0,
+          "total_gross": 10.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:c76061b3-4fa9-4e2b-86ab-4ecb3515e2cf",
+          "invoice_number": "29913406/73235/0079/C6 1/1",
+          "invoice_date": "20/01/2025",
+          "description": "Frais de relance",
+          "total_net": 10.0,
+          "total_gross": 10.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "loyer principal indice 4tr2022",
+      "source_labels_top": [
+        [
+          "LOYER PRINCIPAL Du 01/01/2025 Au 31/03/2025 Indice 06 4TR2022",
+          2
+        ],
+        [
+          "LOYER PRINCIPAL Du 01/07/2024 Au 30/09/2024 Indice 06 4TR2022",
+          1
+        ]
+      ],
+      "proposed_account": "6132",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          3
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          3
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 3,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:206dab53-d750-455d-a661-be166ac639ce",
+          "invoice_number": "2003538-24000210",
+          "invoice_date": "25/09/2024",
+          "description": "LOYER PRINCIPAL Du 01/07/2024 Au 30/09/2024 Indice 06 4TR2022",
+          "total_net": 4639.91,
+          "total_gross": 4639.91,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:60fab965-ca59-4781-8071-861c932c9a81",
+          "invoice_number": "2003538-25000069",
+          "invoice_date": "24/03/2025",
+          "description": "LOYER PRINCIPAL Du 01/01/2025 Au 31/03/2025 Indice 06 4TR2022",
+          "total_net": 4639.91,
+          "total_gross": 4639.91,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:ad01d2ee-52b0-41f7-aae0-784935fcfeb9",
+          "invoice_number": "n-2003538-25000069",
+          "invoice_date": "24/03/2025",
+          "description": "LOYER PRINCIPAL Du 01/01/2025 Au 31/03/2025 Indice 06 4TR2022",
+          "total_net": 4639.91,
+          "total_gross": 4639.91,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "total port",
+      "source_labels_top": [
+        [
+          "Total Port",
+          3
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          3
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          3
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4632C",
+          3
+        ]
+      ],
+      "occurrences": 3,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:249fa365-db1b-45f7-957b-8f0879993396",
+          "invoice_number": "FV2506-03393",
+          "invoice_date": "07/06/2025",
+          "description": "Total Port",
+          "total_net": 10.0,
+          "total_gross": 12.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:7967df5e-6f5a-4a15-b224-d3d40ffa4c27",
+          "invoice_number": "FV2502-13820",
+          "invoice_date": "28/02/2025",
+          "description": "Total Port",
+          "total_net": 35.0,
+          "total_gross": 42.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:c7c3e078-a575-4b54-a5f3-1776048a363d",
+          "invoice_number": "FV2509-07037",
+          "invoice_date": "13/09/2025",
+          "description": "Total Port",
+          "total_net": 25.0,
+          "total_gross": 30.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "sortie volaille",
+      "source_labels_top": [
+        [
+          "Sortie volaille",
+          3
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          3
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          3
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4632C",
+          3
+        ]
+      ],
+      "occurrences": 3,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:907ac2e1-f30b-495a-80cd-de809c906e06",
+          "invoice_number": "FV2402-04839",
+          "invoice_date": "10/02/2024",
+          "description": "Sortie volaille",
+          "total_net": 1.27,
+          "total_gross": 1.52,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:94f28b6e-1a4b-4b87-b05f-709d0c2790ca",
+          "invoice_number": "FV2403-01197",
+          "invoice_date": "04/03/2024",
+          "description": "Sortie volaille",
+          "total_net": 2.92,
+          "total_gross": 3.5,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:dab72c75-6456-41ea-950b-c48c139569c7",
+          "invoice_number": "FV2506-05964",
+          "invoice_date": "13/06/2025",
+          "description": "Sortie volaille",
+          "total_net": 0.76,
+          "total_gross": 0.91,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "solde charges",
+      "source_labels_top": [
+        [
+          "SOLDE CHARGES 2024 Du 01/01/2024 Au 31/12/2024",
+          2
+        ]
+      ],
+      "proposed_account": "6132",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:60fab965-ca59-4781-8071-861c932c9a81",
+          "invoice_number": "2003538-25000069",
+          "invoice_date": "24/03/2025",
+          "description": "SOLDE CHARGES 2024 Du 01/01/2024 Au 31/12/2024",
+          "total_net": 649.68,
+          "total_gross": 649.68,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:ad01d2ee-52b0-41f7-aae0-784935fcfeb9",
+          "invoice_number": "n-2003538-25000069",
+          "invoice_date": "24/03/2025",
+          "description": "SOLDE CHARGES 2024 Du 01/01/2024 Au 31/12/2024",
+          "total_net": 649.68,
+          "total_gross": 649.68,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "coti rsd",
+      "source_labels_top": [
+        [
+          "COTI.RSD",
+          2
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ],
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ],
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4632A",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385",
+          "invoice_number": "1832013",
+          "invoice_date": "17/01/2024",
+          "description": "COTI.RSD",
+          "total_net": 0.11,
+          "total_gross": 0.12,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:fcd5473c-0f02-4eef-a4ba-83dac3f3bb2d",
+          "invoice_number": "1839164",
+          "invoice_date": "14/02/2024",
+          "description": "COTI.RSD",
+          "total_net": 0.47,
+          "total_gross": 0.49,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "total port",
+      "source_labels_top": [
+        [
+          "Total Port",
+          2
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4632C",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:7c381e05-ff06-43d5-84ff-eb701e8571ae",
+          "invoice_number": "FV2501-05446",
+          "invoice_date": "11/01/2025",
+          "description": "Total Port",
+          "total_net": 10.0,
+          "total_gross": 12.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:907ac2e1-f30b-495a-80cd-de809c906e06",
+          "invoice_number": "FV2402-04839",
+          "invoice_date": "10/02/2024",
+          "description": "Total Port",
+          "total_net": 10.0,
+          "total_gross": 12.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "solde pour",
+      "source_labels_top": [
+        [
+          "Solde dû pour 10/2024",
+          1
+        ],
+        [
+          "Solde dû pour 01/2025",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:a14f2f0e-1f96-4d51-844c-cf7f7a9f63e4",
+          "invoice_number": "G.1245790686473718208",
+          "invoice_date": "11/02/2025",
+          "description": "Solde dû pour 10/2024",
+          "total_net": 5309.91,
+          "total_gross": 5309.91,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_519665103:a14f2f0e-1f96-4d51-844c-cf7f7a9f63e4",
+          "invoice_number": "G.1245790686473718208",
+          "invoice_date": "11/02/2025",
+          "description": "Solde dû pour 01/2025",
+          "total_net": 5392.49,
+          "total_gross": 5392.49,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "decro",
+      "source_labels_top": [
+        [
+          "DECRO",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:041fbcbd-413c-46a1-920d-fc613e213231",
+          "invoice_number": "155371",
+          "invoice_date": "14/08/2024",
+          "description": "DECRO",
+          "total_net": 0.24,
+          "total_gross": 0.29,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "solde pour la honoraires ou services",
+      "source_labels_top": [
+        [
+          "Solde dû pour la période 01/2024 - Honoraires ou services d'administration de biens",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:0488070a-e05d-4b2b-aa00-a79b8d6a927f",
+          "invoice_number": "17214448/73235/0074/C6",
+          "invoice_date": "12/02/2024",
+          "description": "Solde dû pour la période 01/2024 - Honoraires ou services d'administration de biens",
+          "total_net": 5033.23,
+          "total_gross": 6039.88,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "solde",
+      "source_labels_top": [
+        [
+          "Solde dû au 07/2024",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [],
+      "tva_hint_top": [
+        [
+          "unknown",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:09437944-54fa-4d58-b404-e954e21bfa22",
+          "invoice_number": "G.1196233498124422454",
+          "invoice_date": "20/08/2024",
+          "description": "Solde dû au 07/2024",
+          "total_net": 5326.06,
+          "total_gross": 5326.06,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "acompte sur charges",
+      "source_labels_top": [
+        [
+          "ACOMPTE SUR CHARGES Du 01/07/2024 Au 30/09/2024",
+          1
+        ]
+      ],
+      "proposed_account": "6135",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:206dab53-d750-455d-a661-be166ac639ce",
+          "invoice_number": "2003538-24000210",
+          "invoice_date": "25/09/2024",
+          "description": "ACOMPTE SUR CHARGES Du 01/07/2024 Au 30/09/2024",
+          "total_net": 660.0,
+          "total_gross": 660.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "interbev",
+      "source_labels_top": [
+        [
+          "INTERBEV",
+          1
+        ]
+      ],
+      "proposed_account": "6281",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4632A",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+          "invoice_number": "1870449",
+          "invoice_date": "13/06/2024",
+          "description": "INTERBEV",
+          "total_net": 8.97,
+          "total_gross": 10.76,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "coti rsd",
+      "source_labels_top": [
+        [
+          "COTI.RSD",
+          1
+        ]
+      ],
+      "proposed_account": "6281",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4632A",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+          "invoice_number": "1870449",
+          "invoice_date": "13/06/2024",
+          "description": "COTI.RSD",
+          "total_net": 1.5,
+          "total_gross": 1.8,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "f fixe",
+      "source_labels_top": [
+        [
+          "F. FIXE",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4632A",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+          "invoice_number": "1870449",
+          "invoice_date": "13/06/2024",
+          "description": "F. FIXE",
+          "total_net": 0.5,
+          "total_gross": 0.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais de port",
+      "source_labels_top": [
+        [
+          "Frais de port",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:2cdae330-5c7d-4696-ac7e-47511f719b32",
+          "invoice_number": "FA1665268",
+          "invoice_date": "03/09/2024",
+          "description": "Frais de port",
+          "total_net": 0.0,
+          "total_gross": 0.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais fixes",
+      "source_labels_top": [
+        [
+          "FRAIS FIXES",
+          1
+        ]
+      ],
+      "proposed_account": "6281",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4632A",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:36235183-6541-4bdc-b710-599100954c57",
+          "invoice_number": "1971046",
+          "invoice_date": "30/06/2025",
+          "description": "FRAIS FIXES",
+          "total_net": 0.5,
+          "total_gross": 0.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais administratifs carte acheteur",
+      "source_labels_top": [
+        [
+          "Frais Administratifs Carte Acheteur",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6832A",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:3810ce6d-c1f4-46c7-bd58-c9f0bd8e2156",
+          "invoice_number": "F001562361",
+          "invoice_date": "08/01/2025",
+          "description": "Frais Administratifs Carte Acheteur",
+          "total_net": 24.92,
+          "total_gross": 29.904,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "entree ctte camionnette abatt",
+      "source_labels_top": [
+        [
+          "Entrée CTTE (Camionnette) (Abatt: 100%)",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6832A",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:3810ce6d-c1f4-46c7-bd58-c9f0bd8e2156",
+          "invoice_number": "F001562361",
+          "invoice_date": "08/01/2025",
+          "description": "Entrée CTTE (Camionnette) (Abatt: 100%)",
+          "total_net": -23.52,
+          "total_gross": -28.224,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "entree ctte camionnette",
+      "source_labels_top": [
+        [
+          "Entrée CTTE (Camionnette)",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6832A",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:3810ce6d-c1f4-46c7-bd58-c9f0bd8e2156",
+          "invoice_number": "F001562361",
+          "invoice_date": "08/01/2025",
+          "description": "Entrée CTTE (Camionnette)",
+          "total_net": 58.8,
+          "total_gross": 70.56,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "sortie viande",
+      "source_labels_top": [
+        [
+          "Sortie viande",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4632C",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:4213c9ec-a70b-448d-97ea-93a75f14fd96",
+          "invoice_number": "FV2505-10242",
+          "invoice_date": "21/05/2025",
+          "description": "Sortie viande",
+          "total_net": 3.45,
+          "total_gross": 4.14,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "solde octobre",
+      "source_labels_top": [
+        [
+          "Solde dû - Octobre 2024",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:666de54d-b140-4b30-b0f2-0146caf36a8d",
+          "invoice_number": "G.1236290905962340226",
+          "invoice_date": "09/01/2025",
+          "description": "Solde dû - Octobre 2024",
+          "total_net": 5309.91,
+          "total_gross": 5309.91,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "solde janvier",
+      "source_labels_top": [
+        [
+          "Solde dû - Janvier 2025",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:666de54d-b140-4b30-b0f2-0146caf36a8d",
+          "invoice_number": "G.1236290905962340226",
+          "invoice_date": "09/01/2025",
+          "description": "Solde dû - Janvier 2025",
+          "total_net": 5392.49,
+          "total_gross": 5392.49,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "palette legere",
+      "source_labels_top": [
+        [
+          "Palette Légere",
+          1
+        ]
+      ],
+      "proposed_account": "6132",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "3.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:75334608-dc1c-4605-bb88-1b7ca0b5b8fd",
+          "invoice_number": "FA1661087",
+          "invoice_date": "15/01/2024",
+          "description": "Palette Légere",
+          "total_net": 7.8,
+          "total_gross": 8.03,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "interb gbao",
+      "source_labels_top": [
+        [
+          "interb gbao",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:775fd06b-7fff-4956-a893-221e08f7be6b",
+          "invoice_number": "336274",
+          "invoice_date": "12/04/2024",
+          "description": "interb gbao",
+          "total_net": 0.02,
+          "total_gross": 0.02,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "interb vdo",
+      "source_labels_top": [
+        [
+          "interb vdo",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:775fd06b-7fff-4956-a893-221e08f7be6b",
+          "invoice_number": "336274",
+          "invoice_date": "12/04/2024",
+          "description": "interb vdo",
+          "total_net": 0.04,
+          "total_gross": 0.04,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "tm ht",
+      "source_labels_top": [
+        [
+          "TM HT",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4632A",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:82696caf-1a22-4f64-975f-64bdb8ef57cb",
+          "invoice_number": "FR94.065.028",
+          "invoice_date": "03/06/2024",
+          "description": "TM HT",
+          "total_net": 1.5,
+          "total_gross": 1.8,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "solde d avant reglement",
+      "source_labels_top": [
+        [
+          "Solde d'avant règlement",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4632C",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:a8898d4f-3937-480c-a6ec-ce726e9029cb",
+          "invoice_number": "FV2509-15289",
+          "invoice_date": "30/09/2025",
+          "description": "Solde d'avant règlement",
+          "total_net": 44.56,
+          "total_gross": 44.56,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "solde administration de biens",
+      "source_labels_top": [
+        [
+          "Solde dû - Administration de biens",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:b0a0d14b-2338-407c-b274-aaf2b4d7b9d9",
+          "invoice_number": "05886164/73235/0074/C61/1",
+          "invoice_date": "10/01/2024",
+          "description": "Solde dû - Administration de biens",
+          "total_net": 5024.9,
+          "total_gross": 6029.88,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "abonnement trim mobitpe mobile",
+      "source_labels_top": [
+        [
+          "ABONNEMENT TRIM. MOBITPE MOBILE du 01/04/25 au 30/06/25",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:b3742730-2748-49f2-acad-1d8d2a7d33a1",
+          "invoice_number": "250400084229",
+          "invoice_date": "01/04/2025",
+          "description": "ABONNEMENT TRIM. MOBITPE MOBILE du 01/04/25 au 30/06/25",
+          "total_net": 93.0,
+          "total_gross": 111.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "abonnement trim sims carte sim",
+      "source_labels_top": [
+        [
+          "ABONNEMENT TRIM. SIMS CARTE SIM du 01/04/25 au 30/06/25",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:b3742730-2748-49f2-acad-1d8d2a7d33a1",
+          "invoice_number": "250400084229",
+          "invoice_date": "01/04/2025",
+          "description": "ABONNEMENT TRIM. SIMS CARTE SIM du 01/04/25 au 30/06/25",
+          "total_net": 0.0,
+          "total_gross": 0.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transport sur ventes",
+      "source_labels_top": [
+        [
+          "Transport sur ventes",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4632C",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:bd4a7e12-034e-44e4-a158-a7749c465dba",
+          "invoice_number": "FV2501-07129",
+          "invoice_date": "15/01/2025",
+          "description": "Transport sur ventes",
+          "total_net": 25.0,
+          "total_gross": 30.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "solde pour",
+      "source_labels_top": [
+        [
+          "Solde dû pour période 10/2024",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:c76061b3-4fa9-4e2b-86ab-4ecb3515e2cf",
+          "invoice_number": "29913406/73235/0079/C6 1/1",
+          "invoice_date": "20/01/2025",
+          "description": "Solde dû pour période 10/2024",
+          "total_net": 5309.91,
+          "total_gross": 5309.91,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "terme",
+      "source_labels_top": [
+        [
+          "Terme 01/2025",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:c76061b3-4fa9-4e2b-86ab-4ecb3515e2cf",
+          "invoice_number": "29913406/73235/0079/C6 1/1",
+          "invoice_date": "20/01/2025",
+          "description": "Terme 01/2025",
+          "total_net": 5392.49,
+          "total_gross": 5392.49,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais de relance lie a deux",
+      "source_labels_top": [
+        [
+          "Frais de relance lié a deux échéances impayées",
+          1
+        ]
+      ],
+      "proposed_account": "6278",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6491Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:d06caf2b-6110-431c-913f-d6df2ee39223",
+          "invoice_number": "13.11.2024-1471636-2024.0213176",
+          "invoice_date": "28/10/2024",
+          "description": "Frais de relance lié a deux échéances impayées",
+          "total_net": 25.0,
+          "total_gross": 30.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "entretien parking",
+      "source_labels_top": [
+        [
+          "Entretien parking",
+          1
+        ]
+      ],
+      "proposed_account": "6152",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:d494443e-2aa4-4ad8-84d6-f1bf18f358aa",
+          "invoice_number": "20014103",
+          "invoice_date": "24/04/2025",
+          "description": "Entretien parking",
+          "total_net": 2.78,
+          "total_gross": 3.33,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "loyer principal indice 4tr2022",
+      "source_labels_top": [
+        [
+          "LOYER PRINCIPAL Du 01/01/2024 Au 31/03/2024 Indice 06 4TR2022",
+          1
+        ]
+      ],
+      "proposed_account": "613",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:ea3966bd-6c5b-4593-9035-957402cb60cb",
+          "invoice_number": "2003538-24000070",
+          "invoice_date": "25/03/2024",
+          "description": "LOYER PRINCIPAL Du 01/01/2024 Au 31/03/2024 Indice 06 4TR2022",
+          "total_net": 4639.91,
+          "total_gross": 4639.91,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "desourisation",
+      "source_labels_top": [
+        [
+          "DESOURISATION DU 30/01/2024",
+          1
+        ]
+      ],
+      "proposed_account": "613",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:ea3966bd-6c5b-4593-9035-957402cb60cb",
+          "invoice_number": "2003538-24000070",
+          "invoice_date": "25/03/2024",
+          "description": "DESOURISATION DU 30/01/2024",
+          "total_net": 92.58,
+          "total_gross": 92.58,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "acompte sur charges",
+      "source_labels_top": [
+        [
+          "ACOMPTE SUR CHARGES Du 01/01/2024 Au 31/03/2024",
+          1
+        ]
+      ],
+      "proposed_account": "613",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:ea3966bd-6c5b-4593-9035-957402cb60cb",
+          "invoice_number": "2003538-24000070",
+          "invoice_date": "25/03/2024",
+          "description": "ACOMPTE SUR CHARGES Du 01/01/2024 Au 31/03/2024",
+          "total_net": 660.0,
+          "total_gross": 660.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "solde charges locatives",
+      "source_labels_top": [
+        [
+          "SOLDE CHARGES LOCATIVES 2023 Du 01/01/2023 Au 31/12/2023",
+          1
+        ]
+      ],
+      "proposed_account": "613",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:ea3966bd-6c5b-4593-9035-957402cb60cb",
+          "invoice_number": "2003538-24000070",
+          "invoice_date": "25/03/2024",
+          "description": "SOLDE CHARGES LOCATIVES 2023 Du 01/01/2023 Au 31/12/2023",
+          "total_net": 818.92,
+          "total_gross": 818.92,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "total port",
+      "source_labels_top": [
+        [
+          "Total Port",
+          1
+        ]
+      ],
+      "proposed_account": "624",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4632C",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:ede6b295-4217-40ec-93da-8e9f098007c0",
+          "invoice_number": "FV2509-15289",
+          "invoice_date": "30/09/2025",
+          "description": "Total Port",
+          "total_net": 35.0,
+          "total_gross": 42.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "total port",
+      "source_labels_top": [
+        [
+          "Total Port",
+          1
+        ]
+      ],
+      "proposed_account": "622",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4632C",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_519665103:f6863989-a410-4fd5-bdc3-39acf9245360",
+          "invoice_number": "FV2409-07335",
+          "invoice_date": "14/09/2024",
+          "description": "Total Port",
+          "total_net": 25.0,
+          "total_gross": 30.0,
+          "currency": "EUR"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3545 @@
+{
+  "meta": {
+    "generated_at": "2026-04-13T10:10:14.931399Z",
+    "db_factures": "abt3",
+    "partition_prefix": "fr_bd_824332985",
+    "total_unique_references": 849,
+    "stats": {
+      "line_items_exploitation_metier": 379,
+      "line_items_charges_externes": 121,
+      "line_items_a_revoir": 692
+    }
+  },
+  "category": "charges_externes",
+  "items": [
+    {
+      "canonical_label": "frais de gestion",
+      "source_labels_top": [
+        [
+          "Frais de Gestion",
+          15
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          15
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          15
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4671Z",
+          15
+        ]
+      ],
+      "occurrences": 15,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:012e6c68-0dc0-4866-b665-177b2d2d72f8",
+          "invoice_number": "F3W21541",
+          "invoice_date": "30/09/2023",
+          "description": "Frais de Gestion",
+          "total_net": 7.3,
+          "total_gross": 8.76,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:2f31a6fa-b85d-4b18-83b9-e4c369475d5b",
+          "invoice_number": "F3253015",
+          "invoice_date": "15/01/2023",
+          "description": "Frais de Gestion",
+          "total_net": 6.65,
+          "total_gross": 7.98,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:31c867f1-149c-43a4-a077-00646dae00a9",
+          "invoice_number": "F3B10890",
+          "invoice_date": "31/03/2023",
+          "description": "Frais de Gestion",
+          "total_net": 3.27,
+          "total_gross": 3.92,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:39e3869c-8d40-4f02-8609-ecf24e983ec8",
+          "invoice_number": "F3E17203",
+          "invoice_date": "30/04/2023",
+          "description": "Frais de Gestion",
+          "total_net": 6.59,
+          "total_gross": 7.91,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:4fddcc1a-ea8a-4c68-a5b0-b4873ad3d99b",
+          "invoice_number": "F3596575",
+          "invoice_date": "15/02/2023",
+          "description": "Frais de Gestion",
+          "total_net": 5.83,
+          "total_gross": 7.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "livraison",
+      "source_labels_top": [
+        [
+          "Livraison",
+          5
+        ]
+      ],
+      "proposed_account": "622600",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          4
+        ],
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          4
+        ],
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5621Z",
+          2
+        ],
+        [
+          "4791B",
+          1
+        ],
+        [
+          "4645Z",
+          1
+        ],
+        [
+          "4791A",
+          1
+        ]
+      ],
+      "occurrences": 5,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:056f9f7c-220c-4f92-b5a3-8516d4f2a9f3",
+          "invoice_number": "INV-FR-128348161-2023-76694",
+          "invoice_date": "16/11/2023",
+          "description": "Livraison",
+          "total_net": 2.49,
+          "total_gross": 2.99,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:83ac971f-337d-4ed0-964d-aef123f96d75",
+          "invoice_number": "INV-FR-798088695-2023-28100",
+          "invoice_date": "07/07/2023",
+          "description": "Livraison",
+          "total_net": 0.0,
+          "total_gross": 0.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:9651bec3-a0ed-40d1-b1e1-c047b63e8a54",
+          "invoice_number": "DS-ASE-INV-FR-2023-85418053",
+          "invoice_date": "24/06/2023",
+          "description": "Livraison",
+          "total_net": 9.94,
+          "total_gross": 11.93,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:9804b0be-f2a4-4dee-944b-6938572a96fd",
+          "invoice_number": "FR32Q56RGAEUI",
+          "invoice_date": "22/11/2023",
+          "description": "Livraison",
+          "total_net": 0.0,
+          "total_gross": 0.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:b9e97158-ab75-4870-a35f-676785ca4d8b",
+          "invoice_number": "DS-ASE-INV-FR-2023-95496946",
+          "invoice_date": "13/07/2023",
+          "description": "Livraison",
+          "total_net": 0.0,
+          "total_gross": 0.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "vos services fournis par votre operateur",
+      "source_labels_top": [
+        [
+          "Vos services fournis par votre opérateur",
+          4
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          4
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          4
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          4
+        ]
+      ],
+      "occurrences": 4,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:0bbfe2c2-56f9-4b22-85f6-cd2268818d97",
+          "invoice_number": "11253383371023",
+          "invoice_date": "02/10/2023",
+          "description": "Vos services fournis par votre opérateur",
+          "total_net": 47.93,
+          "total_gross": 57.52,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:64ef6d9b-3aea-48f6-a1ac-5b284946d236",
+          "invoice_number": "11471877380223",
+          "invoice_date": "02/02/2023",
+          "description": "Vos services fournis par votre opérateur",
+          "total_net": 44.48,
+          "total_gross": 53.38,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:90037190-8a00-4586-b637-e836c0b71d29",
+          "invoice_number": "11378724720623",
+          "invoice_date": "02/06/2023",
+          "description": "Vos services fournis par votre opérateur",
+          "total_net": 53.18,
+          "total_gross": 63.82,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:bf5ae4bf-4447-4b0e-929a-6bd0e5536571",
+          "invoice_number": "11831247500823",
+          "invoice_date": "02/08/2023",
+          "description": "Vos services fournis par votre opérateur",
+          "total_net": 55.2,
+          "total_gross": 66.24,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "vos abonnements forfaits et options",
+      "source_labels_top": [
+        [
+          "Vos abonnements, forfaits et options",
+          4
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          4
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          4
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          4
+        ]
+      ],
+      "occurrences": 4,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:0bbfe2c2-56f9-4b22-85f6-cd2268818d97",
+          "invoice_number": "11253383371023",
+          "invoice_date": "02/10/2023",
+          "description": "Vos abonnements, forfaits et options",
+          "total_net": 44.15,
+          "total_gross": 52.98,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:64ef6d9b-3aea-48f6-a1ac-5b284946d236",
+          "invoice_number": "11471877380223",
+          "invoice_date": "02/02/2023",
+          "description": "Vos abonnements, forfaits et options",
+          "total_net": 44.15,
+          "total_gross": 52.98,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:90037190-8a00-4586-b637-e836c0b71d29",
+          "invoice_number": "11378724720623",
+          "invoice_date": "02/06/2023",
+          "description": "Vos abonnements, forfaits et options",
+          "total_net": 44.15,
+          "total_gross": 52.98,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:bf5ae4bf-4447-4b0e-929a-6bd0e5536571",
+          "invoice_number": "11831247500823",
+          "invoice_date": "02/08/2023",
+          "description": "Vos abonnements, forfaits et options",
+          "total_net": 44.15,
+          "total_gross": 52.98,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "vos communications",
+      "source_labels_top": [
+        [
+          "Vos communications (du 02/09 au 01/10)",
+          1
+        ],
+        [
+          "Vos communications (du 02/01 au 01/02)",
+          1
+        ],
+        [
+          "Vos communications (du 02/05 au 01/06)",
+          1
+        ],
+        [
+          "Vos communications (du 02/07 au 01/08)",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          4
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          4
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          4
+        ]
+      ],
+      "occurrences": 4,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:0bbfe2c2-56f9-4b22-85f6-cd2268818d97",
+          "invoice_number": "11253383371023",
+          "invoice_date": "02/10/2023",
+          "description": "Vos communications (du 02/09 au 01/10)",
+          "total_net": 3.78,
+          "total_gross": 4.54,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:64ef6d9b-3aea-48f6-a1ac-5b284946d236",
+          "invoice_number": "11471877380223",
+          "invoice_date": "02/02/2023",
+          "description": "Vos communications (du 02/01 au 01/02)",
+          "total_net": 0.33,
+          "total_gross": 0.4,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:90037190-8a00-4586-b637-e836c0b71d29",
+          "invoice_number": "11378724720623",
+          "invoice_date": "02/06/2023",
+          "description": "Vos communications (du 02/05 au 01/06)",
+          "total_net": 9.03,
+          "total_gross": 10.84,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:bf5ae4bf-4447-4b0e-929a-6bd0e5536571",
+          "invoice_number": "11831247500823",
+          "invoice_date": "02/08/2023",
+          "description": "Vos communications (du 02/07 au 01/08)",
+          "total_net": 11.05,
+          "total_gross": 13.26,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais de gestion",
+      "source_labels_top": [
+        [
+          "Frais de Gestion",
+          4
+        ]
+      ],
+      "proposed_account": "62260000",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          4
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          4
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4671Z",
+          4
+        ]
+      ],
+      "occurrences": 4,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:2268d3c8-cae4-43e7-903e-df02d0c49183",
+          "invoice_number": "F3M31891",
+          "invoice_date": "30/06/2023",
+          "description": "Frais de Gestion",
+          "total_net": 4.34,
+          "total_gross": 5.21,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:4d331ea0-8f7e-4c5c-8fea-60821219e538",
+          "invoice_number": "N87342701-D007/D007",
+          "invoice_date": "10/01/2023",
+          "description": "Frais de Gestion",
+          "total_net": 4.5,
+          "total_gross": 5.4,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:de411099-8f1c-4567-a62d-43586df2904a",
+          "invoice_number": "N87342701-D007/D007",
+          "invoice_date": "10/01/2023",
+          "description": "Frais de Gestion",
+          "total_net": 4.5,
+          "total_gross": 5.4,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:e990ea35-9164-483c-b5c2-ce828f4868df",
+          "invoice_number": "F3H24707",
+          "invoice_date": "31/05/2023",
+          "description": "Frais de Gestion",
+          "total_net": 7.12,
+          "total_gross": 8.54,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais de gestion frais station",
+      "source_labels_top": [
+        [
+          "Frais de Gestion / Frais Station",
+          3
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          3
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          3
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4671Z",
+          3
+        ]
+      ],
+      "occurrences": 3,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:8db517ee-cab2-4835-8153-f746c7fd2987",
+          "invoice_number": "F3K43908",
+          "invoice_date": "15/06/2023",
+          "description": "Frais de Gestion / Frais Station",
+          "total_net": 7.29,
+          "total_gross": 8.75,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:96dc390b-97ca-4a79-9e7c-40aab1fab190",
+          "invoice_number": "F3123553",
+          "invoice_date": "31/12/2022",
+          "description": "Frais de Gestion / Frais Station",
+          "total_net": 4.5,
+          "total_gross": 5.4,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:dec7d386-2855-4fb4-876a-4419742e178d",
+          "invoice_number": "K3101897",
+          "invoice_date": "31/10/2023",
+          "description": "Frais de Gestion / Frais Station",
+          "total_net": 8.01,
+          "total_gross": 9.61,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "peage",
+      "source_labels_top": [
+        [
+          "Péage",
+          2
+        ]
+      ],
+      "proposed_account": "6257",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4671Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:012e6c68-0dc0-4866-b665-177b2d2d72f8",
+          "invoice_number": "F3W21541",
+          "invoice_date": "30/09/2023",
+          "description": "Péage",
+          "total_net": 32.67,
+          "total_gross": 39.2,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:b34831cd-2c5c-4a7a-a6ff-17485c4edbfd",
+          "invoice_number": "F3S16243",
+          "invoice_date": "15/08/2023",
+          "description": "Péage",
+          "total_net": 55.09,
+          "total_gross": 66.1,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "extrait registre commerce et des societes",
+      "source_labels_top": [
+        [
+          "Extrait du Registre du Commerce et des Sociétés n*2023/22965 RAN TRANSPORT",
+          2
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6910Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:0649bb34-b071-424c-b795-03c1b6e4e89a",
+          "invoice_number": "23067938",
+          "invoice_date": "03/08/2023",
+          "description": "Extrait du Registre du Commerce et des Sociétés n*2023/22965 RAN TRANSPORT",
+          "total_net": 2.24,
+          "total_gross": 2.69,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:4734452c-cf80-451d-b84f-73931589ca76",
+          "invoice_number": "23067938",
+          "invoice_date": "03/08/2023",
+          "description": "Extrait du Registre du Commerce et des Sociétés n*2023/22965 RAN TRANSPORT",
+          "total_net": 2.24,
+          "total_gross": 2.69,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "suppl encombrement passager",
+      "source_labels_top": [
+        [
+          "Suppl. Encombrement Passager",
+          2
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5010Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:15c66a76-052c-44de-a4dc-2d1a951bd6bb",
+          "invoice_number": "SNCM00004025926",
+          "invoice_date": "27/06/2023",
+          "description": "Suppl. Encombrement Passager",
+          "total_net": 15.0,
+          "total_gross": 15.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:fcead4c7-6c09-42ad-abbc-49a3b4766855",
+          "invoice_number": "SNCM00004025927",
+          "invoice_date": "27/06/2023",
+          "description": "Suppl. Encombrement Passager",
+          "total_net": 15.0,
+          "total_gross": 15.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "suppl encombrement vehicule",
+      "source_labels_top": [
+        [
+          "Suppl. Encombrement Véhicule",
+          2
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5010Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:15c66a76-052c-44de-a4dc-2d1a951bd6bb",
+          "invoice_number": "SNCM00004025926",
+          "invoice_date": "27/06/2023",
+          "description": "Suppl. Encombrement Véhicule",
+          "total_net": 15.0,
+          "total_gross": 15.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:fcead4c7-6c09-42ad-abbc-49a3b4766855",
+          "invoice_number": "SNCM00004025927",
+          "invoice_date": "27/06/2023",
+          "description": "Suppl. Encombrement Véhicule",
+          "total_net": 15.0,
+          "total_gross": 15.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "suppl securite passager",
+      "source_labels_top": [
+        [
+          "Suppl.Sécurité Passager",
+          2
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5010Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:15c66a76-052c-44de-a4dc-2d1a951bd6bb",
+          "invoice_number": "SNCM00004025926",
+          "invoice_date": "27/06/2023",
+          "description": "Suppl.Sécurité Passager",
+          "total_net": 6.0,
+          "total_gross": 6.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:fcead4c7-6c09-42ad-abbc-49a3b4766855",
+          "invoice_number": "SNCM00004025927",
+          "invoice_date": "27/06/2023",
+          "description": "Suppl.Sécurité Passager",
+          "total_net": 6.0,
+          "total_gross": 6.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "suppl securite vehicule",
+      "source_labels_top": [
+        [
+          "Suppl.Sécurité Véhicule",
+          2
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5010Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:15c66a76-052c-44de-a4dc-2d1a951bd6bb",
+          "invoice_number": "SNCM00004025926",
+          "invoice_date": "27/06/2023",
+          "description": "Suppl.Sécurité Véhicule",
+          "total_net": 3.0,
+          "total_gross": 3.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:fcead4c7-6c09-42ad-abbc-49a3b4766855",
+          "invoice_number": "SNCM00004025927",
+          "invoice_date": "27/06/2023",
+          "description": "Suppl.Sécurité Véhicule",
+          "total_net": 3.0,
+          "total_gross": 3.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "supplement carburant",
+      "source_labels_top": [
+        [
+          "Supplément carburant",
+          2
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5010Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:15c66a76-052c-44de-a4dc-2d1a951bd6bb",
+          "invoice_number": "SNCM00004025926",
+          "invoice_date": "27/06/2023",
+          "description": "Supplément carburant",
+          "total_net": 60.0,
+          "total_gross": 60.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:fcead4c7-6c09-42ad-abbc-49a3b4766855",
+          "invoice_number": "SNCM00004025927",
+          "invoice_date": "27/06/2023",
+          "description": "Supplément carburant",
+          "total_net": 60.0,
+          "total_gross": 60.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert",
+      "source_labels_top": [
+        [
+          "Transfert",
+          2
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ],
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ],
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:3f9fd64e-11be-41c2-8614-d9e092a7df47",
+          "invoice_number": "3",
+          "invoice_date": "18/05/2023",
+          "description": "Transfert",
+          "total_net": 63.63,
+          "total_gross": 76.36,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:96bf5e30-bf7b-47d9-8fce-f20e99e653c2",
+          "invoice_number": "3",
+          "invoice_date": "18/05/2023",
+          "description": "Transfert",
+          "total_net": 63.63,
+          "total_gross": 63.63,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "a depart gare de montparnasse destination",
+      "source_labels_top": [
+        [
+          "23/12/2023 a 09:30 Départ : Gare de Montparnasse Destination : Aéroport Paris-Charles de Gaulle, Route de la Commune, Le Mesnil-Amelot, Seine-et-Marne 77990, France",
+          2
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:947967bb-3d64-4cfd-a1f7-c77c89ecb6f8",
+          "invoice_number": "FCH_001328",
+          "invoice_date": "23/12/2023",
+          "description": "23/12/2023 a 09:30 Départ : Gare de Montparnasse Destination : Aéroport Paris-Charles de Gaulle, Route de la Commune, Le Mesnil-Amelot, Seine-et-Marne 77990, France",
+          "total_net": 80.0,
+          "total_gross": 80.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_824332985:edf5b144-068c-4103-b75c-785260236a78",
+          "invoice_number": "FCH_001328",
+          "invoice_date": "23/12/2023",
+          "description": "23/12/2023 a 09:30 Départ : Gare de Montparnasse Destination : Aéroport Paris-Charles de Gaulle, Route de la Commune, Le Mesnil-Amelot, Seine-et-Marne 77990, France",
+          "total_net": 80.0,
+          "total_gross": 80.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "traversee alger marseille mediterranee installation fauteuil",
+      "source_labels_top": [
+        [
+          "Traversée ALGER - MARSEILLE / MEDITERRANEE - Installation Fauteuil en Salon (CONF) - Passager M/ ADULT/ BOUSNINA FAICAL - Véhicule MERCEDES CLASSE E",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5010Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:15c66a76-052c-44de-a4dc-2d1a951bd6bb",
+          "invoice_number": "SNCM00004025926",
+          "invoice_date": "27/06/2023",
+          "description": "Traversée ALGER - MARSEILLE / MEDITERRANEE - Installation Fauteuil en Salon (CONF) - Passager M/ ADULT/ BOUSNINA FAICAL - Véhicule MERCEDES CLASSE E",
+          "total_net": 400.0,
+          "total_gross": 400.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais portuaires",
+      "source_labels_top": [
+        [
+          "Frais Portuaires",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5010Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:15c66a76-052c-44de-a4dc-2d1a951bd6bb",
+          "invoice_number": "SNCM00004025926",
+          "invoice_date": "27/06/2023",
+          "description": "Frais Portuaires",
+          "total_net": 42.0,
+          "total_gross": 42.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "main d oeuvre remplacer le filtre",
+      "source_labels_top": [
+        [
+          "Main d'oeuvre - remplacer le filtre a carburant",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4511Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:1cf088cd-8ff2-45e3-8381-8b597af6c54b",
+          "invoice_number": "30356080",
+          "invoice_date": "13/01/2023",
+          "description": "Main d'oeuvre - remplacer le filtre a carburant",
+          "total_net": 124.83,
+          "total_gross": 149.8,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transport",
+      "source_labels_top": [
+        [
+          "Transport",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4932Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:1f4c3429-145a-4afd-a273-9afc2b0b99e4",
+          "invoice_number": "3",
+          "invoice_date": "22/05/2022",
+          "description": "Transport",
+          "total_net": 63.63,
+          "total_gross": 76.36,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transport de personnes allee le a",
+      "source_labels_top": [
+        [
+          "TRANSPORT DE PERSONNES : Allée le 24/07/2023 à 12h00 Mr LUIZ CARLOS STURZENEGGER Départ : CDG2G Arrivée : HOTEL BURGUNDY",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4941B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:34d0a62e-8938-4d76-abfb-664678c4e767",
+          "invoice_number": "202307/0080",
+          "invoice_date": "01/08/2023",
+          "description": "TRANSPORT DE PERSONNES : Allée le 24/07/2023 à 12h00 Mr LUIZ CARLOS STURZENEGGER Départ : CDG2G Arrivée : HOTEL BURGUNDY",
+          "total_net": 72.72,
+          "total_gross": 80.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transport de personnes allee le 17h20",
+      "source_labels_top": [
+        [
+          "TRANSPORT DE PERSONNES : Allée le 30/07/2023 17h20 Mr SHAUM AYERS Départ : CDG2D Arrivée : HILTON PARIS LA DEFENCE",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4941B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:34d0a62e-8938-4d76-abfb-664678c4e767",
+          "invoice_number": "202307/0080",
+          "invoice_date": "01/08/2023",
+          "description": "TRANSPORT DE PERSONNES : Allée le 30/07/2023 17h20 Mr SHAUM AYERS Départ : CDG2D Arrivée : HILTON PARIS LA DEFENCE",
+          "total_net": 72.72,
+          "total_gross": 80.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transport de personnes allee le 09h30",
+      "source_labels_top": [
+        [
+          "TRANSPORT DE PERSONNES : Allée le 02/08/2023 09h30 BLYTHE CARDENAS Départ : CDGT1 Arrivée : HOTEL PAS DE CALAIS PARIS 6éme",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4941B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:34d0a62e-8938-4d76-abfb-664678c4e767",
+          "invoice_number": "202307/0080",
+          "invoice_date": "01/08/2023",
+          "description": "TRANSPORT DE PERSONNES : Allée le 02/08/2023 09h30 BLYTHE CARDENAS Départ : CDGT1 Arrivée : HOTEL PAS DE CALAIS PARIS 6éme",
+          "total_net": 72.72,
+          "total_gross": 80.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 6h15 cdg",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 1 : 01/08/2023/6H15/75008/CDG/",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4638B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:3bd2cf7a-7571-4698-9d05-fbd84f29d1eb",
+          "invoice_number": "2023/10/0083A",
+          "invoice_date": "05/10/2023",
+          "description": "TRANSFERT N 1 : 01/08/2023/6H15/75008/CDG/",
+          "total_net": 63.63,
+          "total_gross": 70.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 13h35 orly",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 2 :01/08/2023/13H35/ORLY/75004/",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4638B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:3bd2cf7a-7571-4698-9d05-fbd84f29d1eb",
+          "invoice_number": "2023/10/0083A",
+          "invoice_date": "05/10/2023",
+          "description": "TRANSFERT N 2 :01/08/2023/13H35/ORLY/75004/",
+          "total_net": 63.63,
+          "total_gross": 70.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 13h55 cdg",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 3 : 21/09/2023/13H55/CDG/75009/",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4638B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:3bd2cf7a-7571-4698-9d05-fbd84f29d1eb",
+          "invoice_number": "2023/10/0083A",
+          "invoice_date": "05/10/2023",
+          "description": "TRANSFERT N 3 : 21/09/2023/13H55/CDG/75009/",
+          "total_net": 63.63,
+          "total_gross": 70.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 9h30 cdg",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 4 :23/09/2023/9H30/CDG/75001",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4638B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:3bd2cf7a-7571-4698-9d05-fbd84f29d1eb",
+          "invoice_number": "2023/10/0083A",
+          "invoice_date": "05/10/2023",
+          "description": "TRANSFERT N 4 :23/09/2023/9H30/CDG/75001",
+          "total_net": 63.63,
+          "total_gross": 70.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 4h30 cdg",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 5 : 28/09/2023/4H30/75018/CDG",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4638B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:3bd2cf7a-7571-4698-9d05-fbd84f29d1eb",
+          "invoice_number": "2023/10/0083A",
+          "invoice_date": "05/10/2023",
+          "description": "TRANSFERT N 5 : 28/09/2023/4H30/75018/CDG",
+          "total_net": 63.63,
+          "total_gross": 70.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "course vtc a depart rue de",
+      "source_labels_top": [
+        [
+          "Course VTC du 18/07/2023 à 08:20. Départ : Rue De La Haye, 93290 Tremblay-en-France, France. Destination : Gare de Montparnasse.",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:40b03337-d7d1-4a92-a7cf-ad967d945d8a",
+          "invoice_number": "FCH_001284",
+          "invoice_date": "18/07/2023",
+          "description": "Course VTC du 18/07/2023 à 08:20. Départ : Rue De La Haye, 93290 Tremblay-en-France, France. Destination : Gare de Montparnasse.",
+          "total_net": 100.0,
+          "total_gross": 100.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n1 15h59 g nord",
+      "source_labels_top": [
+        [
+          "TRANSFERT N1 : 26/02/2023/15H59/G.DU NORD/75016/75008/",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4932Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:4908972e-2721-4064-adfc-03d3564835bd",
+          "invoice_number": "2023/03/0018",
+          "invoice_date": "08/03/2023",
+          "description": "TRANSFERT N1 : 26/02/2023/15H59/G.DU NORD/75016/75008/",
+          "total_net": 72.72,
+          "total_gross": 80.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n g nord",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 2 : 28/02/2023/G.DU NORD/75016/",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4932Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:4908972e-2721-4064-adfc-03d3564835bd",
+          "invoice_number": "2023/03/0018",
+          "invoice_date": "08/03/2023",
+          "description": "TRANSFERT N 2 : 28/02/2023/G.DU NORD/75016/",
+          "total_net": 50.0,
+          "total_gross": 55.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n multu transferts dan paris",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 1 : 07/06/2023/MULTU TRANSFERTS DAN PARIS",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:4e407e6a-7a9a-4750-bf3a-2a06564916f3",
+          "invoice_number": "2023/12/00119B",
+          "invoice_date": "09/06/2023",
+          "description": "TRANSFERT N 1 : 07/06/2023/MULTU TRANSFERTS DAN PARIS",
+          "total_net": 490.9,
+          "total_gross": 589.08,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert 16h47 g nord",
+      "source_labels_top": [
+        [
+          "TRANSFERT 01: 26/04/2023/16H47/G.DU NORD/75016",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:51a41ed9-4fa8-4a3e-8cb5-fbcec782bba5",
+          "invoice_number": "2023/05/0036",
+          "invoice_date": "05/05/2023",
+          "description": "TRANSFERT 01: 26/04/2023/16H47/G.DU NORD/75016",
+          "total_net": 45.45,
+          "total_gross": 50.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "a depart gare de lyon destination",
+      "source_labels_top": [
+        [
+          "06/12/2023 a 19:45 Départ : Gare de Lyon Destination : 12b Avenue Julien Chadel, 91210 Draveil, France",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:5bb15dbf-bb15-4904-b570-b1086cfa4461",
+          "invoice_number": "FCH_001325",
+          "invoice_date": "06/12/2023",
+          "description": "06/12/2023 a 19:45 Départ : Gare de Lyon Destination : 12b Avenue Julien Chadel, 91210 Draveil, France",
+          "total_net": 75.0,
+          "total_gross": 75.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "vos services fournis par des tiers",
+      "source_labels_top": [
+        [
+          "Vos services fournis par des tiers",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:64ef6d9b-3aea-48f6-a1ac-5b284946d236",
+          "invoice_number": "11471877380223",
+          "invoice_date": "02/02/2023",
+          "description": "Vos services fournis par des tiers",
+          "total_net": 0.64,
+          "total_gross": 0.77,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "vos services ponctuels",
+      "source_labels_top": [
+        [
+          "Vos services ponctuels",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:64ef6d9b-3aea-48f6-a1ac-5b284946d236",
+          "invoice_number": "11471877380223",
+          "invoice_date": "02/02/2023",
+          "description": "Vos services ponctuels",
+          "total_net": 0.64,
+          "total_gross": 0.77,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 8h00 cdg",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 1 :03/06/2023/8H00/75010/CDG",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:7ab11171-f69a-460c-aeff-83359566456a",
+          "invoice_number": "2023/07/0055A",
+          "invoice_date": "07/07/2023",
+          "description": "TRANSFERT N 1 :03/06/2023/8H00/75010/CDG",
+          "total_net": 72.72,
+          "total_gross": 87.26,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 15h30 cdg nowshow",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 2 :21/06/2023/15H30/CDG/75016/NOWSHOW",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:7ab11171-f69a-460c-aeff-83359566456a",
+          "invoice_number": "2023/07/0055A",
+          "invoice_date": "07/07/2023",
+          "description": "TRANSFERT N 2 :21/06/2023/15H30/CDG/75016/NOWSHOW",
+          "total_net": 90.9,
+          "total_gross": 109.08,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 19h00 multu transferts",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 3 : 22/06/2023/19H00/MULTU TRANSFERTS",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:7ab11171-f69a-460c-aeff-83359566456a",
+          "invoice_number": "2023/07/0055A",
+          "invoice_date": "07/07/2023",
+          "description": "TRANSFERT N 3 : 22/06/2023/19H00/MULTU TRANSFERTS",
+          "total_net": 350.0,
+          "total_gross": 420.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "marseille bejaia alger marseille corsica depart",
+      "source_labels_top": [
+        [
+          "MARSEILLE/BEJAIA/ALGER/MARSEILLE CORSICA DEPART LE 05/08/2023 RETOUR LE 16/09/2023",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4932Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:80fa9148-e653-46ce-a98d-c49eeaf668a6",
+          "invoice_number": "23-07-983",
+          "invoice_date": "04/07/2023",
+          "description": "MARSEILLE/BEJAIA/ALGER/MARSEILLE CORSICA DEPART LE 05/08/2023 RETOUR LE 16/09/2023",
+          "total_net": 1260.0,
+          "total_gross": 1260.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais de gestion",
+      "source_labels_top": [
+        [
+          "Frais de Gestion",
+          1
+        ]
+      ],
+      "proposed_account": "622700",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4671Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:a0961221-2ab5-4106-aba1-bcb2fbc6baa8",
+          "invoice_number": "F3413186",
+          "invoice_date": "31/01/2023",
+          "description": "Frais de Gestion",
+          "total_net": 7.54,
+          "total_gross": 9.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transport",
+      "source_labels_top": [
+        [
+          "Transport",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4932Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:a241a479-7449-4693-ae8c-a22f7ebcc69e",
+          "invoice_number": "3",
+          "invoice_date": "22/05/2022",
+          "description": "Transport",
+          "total_net": 63.63,
+          "total_gross": 76.36,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "billet d avion to7220 paris orly",
+      "source_labels_top": [
+        [
+          "Billet d'avion TO7220 Paris (Orly) - Sétif 17/03/2023",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5110Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:bab9f532-fe01-4024-8293-95ca90fc5c46",
+          "invoice_number": "T6C56Y",
+          "invoice_date": "26/02/2023",
+          "description": "Billet d'avion TO7220 Paris (Orly) - Sétif 17/03/2023",
+          "total_net": 88.0,
+          "total_gross": 88.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "surplus lie a la taxe de",
+      "source_labels_top": [
+        [
+          "Surplus lié à la taxe de solidarité",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5110Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:bab9f532-fe01-4024-8293-95ca90fc5c46",
+          "invoice_number": "T6C56Y",
+          "invoice_date": "26/02/2023",
+          "description": "Surplus lié à la taxe de solidarité",
+          "total_net": 32.81,
+          "total_gross": 32.81,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "taxe d aeroport francaise",
+      "source_labels_top": [
+        [
+          "Taxe d'aéroport française",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5110Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:bab9f532-fe01-4024-8293-95ca90fc5c46",
+          "invoice_number": "T6C56Y",
+          "invoice_date": "26/02/2023",
+          "description": "Taxe d'aéroport française",
+          "total_net": 3.0,
+          "total_gross": 3.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "taxe de solidarite",
+      "source_labels_top": [
+        [
+          "Taxe de solidarité",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5110Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:bab9f532-fe01-4024-8293-95ca90fc5c46",
+          "invoice_number": "T6C56Y",
+          "invoice_date": "26/02/2023",
+          "description": "Taxe de solidarité",
+          "total_net": 20.2,
+          "total_gross": 20.2,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "taxes aeroportuaires",
+      "source_labels_top": [
+        [
+          "Taxes aéroportuaires",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5110Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:bab9f532-fe01-4024-8293-95ca90fc5c46",
+          "invoice_number": "T6C56Y",
+          "invoice_date": "26/02/2023",
+          "description": "Taxes aéroportuaires",
+          "total_net": 4.51,
+          "total_gross": 4.51,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "billet d avion to7221 setif paris",
+      "source_labels_top": [
+        [
+          "Billet d'avion TO7221 Sétif - Paris (Orly) 24/03/2023",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5110Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:bab9f532-fe01-4024-8293-95ca90fc5c46",
+          "invoice_number": "T6C56Y",
+          "invoice_date": "26/02/2023",
+          "description": "Billet d'avion TO7221 Sétif - Paris (Orly) 24/03/2023",
+          "total_net": 46.0,
+          "total_gross": 46.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "taxe d aeroport",
+      "source_labels_top": [
+        [
+          "Taxe d'aéroport",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5110Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:bab9f532-fe01-4024-8293-95ca90fc5c46",
+          "invoice_number": "T6C56Y",
+          "invoice_date": "26/02/2023",
+          "description": "Taxe d'aéroport",
+          "total_net": 38.38,
+          "total_gross": 38.38,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "a depart gare de montparnasse destination",
+      "source_labels_top": [
+        [
+          "16/07/2023 a 14:00 Départ : Gare de Montparnasse Destination : Rue De La Haye, 93290 Tremblay-en-France, France",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:bd2bf2c3-e651-44d4-87c7-40ca74ee7b38",
+          "invoice_number": "FCH_001282",
+          "invoice_date": "16/07/2023",
+          "description": "16/07/2023 a 14:00 Départ : Gare de Montparnasse Destination : Rue De La Haye, 93290 Tremblay-en-France, France",
+          "total_net": 100.0,
+          "total_gross": 100.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "marseille bejaia alger marseille bateau corsica",
+      "source_labels_top": [
+        [
+          "MARSEILLE/BEJAIA/ALGER/MARSEILLE BATEAU CORSICA",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "7911Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:c0bafdf1-e357-4f79-9378-9f1a498dce37",
+          "invoice_number": "000 220",
+          "invoice_date": "27/06/2023",
+          "description": "MARSEILLE/BEJAIA/ALGER/MARSEILLE BATEAU CORSICA",
+          "total_net": 1260.0,
+          "total_gross": 1260.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais acte ligne hors taxe",
+      "source_labels_top": [
+        [
+          "Frais Acte Ligne Hors Taxe",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "7911Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:c0bafdf1-e357-4f79-9378-9f1a498dce37",
+          "invoice_number": "000 220",
+          "invoice_date": "27/06/2023",
+          "description": "Frais Acte Ligne Hors Taxe",
+          "total_net": 0.0,
+          "total_gross": 0.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais acte ligne t v a",
+      "source_labels_top": [
+        [
+          "Frais Acte Ligne T.V.A.",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "7911Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:c0bafdf1-e357-4f79-9378-9f1a498dce37",
+          "invoice_number": "000 220",
+          "invoice_date": "27/06/2023",
+          "description": "Frais Acte Ligne T.V.A.",
+          "total_net": 0.0,
+          "total_gross": 0.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais intervention",
+      "source_labels_top": [
+        [
+          "Frais Intervention",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "7911Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:c0bafdf1-e357-4f79-9378-9f1a498dce37",
+          "invoice_number": "000 220",
+          "invoice_date": "27/06/2023",
+          "description": "Frais Intervention",
+          "total_net": 0.0,
+          "total_gross": 0.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 13h55 orly romainville",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 01 :01/02/2023/13H55/ORLY/ROMAINVILLE",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:cd28656e-69b1-4cbf-9017-c064e04c0ef4",
+          "invoice_number": "2023/03/0020",
+          "invoice_date": "08/03/2023",
+          "description": "TRANSFERT N 01 :01/02/2023/13H55/ORLY/ROMAINVILLE",
+          "total_net": 72.72,
+          "total_gross": 80.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 19h55 cdg",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 02 :01/02/2023/19H55/CDG/75004/",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:cd28656e-69b1-4cbf-9017-c064e04c0ef4",
+          "invoice_number": "2023/03/0020",
+          "invoice_date": "08/03/2023",
+          "description": "TRANSFERT N 02 :01/02/2023/19H55/CDG/75004/",
+          "total_net": 72.72,
+          "total_gross": 80.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 15h30 orly",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 03 :02/02/2023/15H30/75003/ORLY/",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:cd28656e-69b1-4cbf-9017-c064e04c0ef4",
+          "invoice_number": "2023/03/0020",
+          "invoice_date": "08/03/2023",
+          "description": "TRANSFERT N 03 :02/02/2023/15H30/75003/ORLY/",
+          "total_net": 72.72,
+          "total_gross": 80.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 20h00 cdg",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 04 : 05/02/2023/20H00/CDG/75003",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:cd28656e-69b1-4cbf-9017-c064e04c0ef4",
+          "invoice_number": "2023/03/0020",
+          "invoice_date": "08/03/2023",
+          "description": "TRANSFERT N 04 : 05/02/2023/20H00/CDG/75003",
+          "total_net": 72.72,
+          "total_gross": 80.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 7h15 orly",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 05 :06/02/2023/7H15/75007/ORLY/",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:cd28656e-69b1-4cbf-9017-c064e04c0ef4",
+          "invoice_number": "2023/03/0020",
+          "invoice_date": "08/03/2023",
+          "description": "TRANSFERT N 05 :06/02/2023/7H15/75007/ORLY/",
+          "total_net": 72.72,
+          "total_gross": 80.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 9h45 orly",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 06 :06/02/2023/9H45/ORLY/78000",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:cd28656e-69b1-4cbf-9017-c064e04c0ef4",
+          "invoice_number": "2023/03/0020",
+          "invoice_date": "08/03/2023",
+          "description": "TRANSFERT N 06 :06/02/2023/9H45/ORLY/78000",
+          "total_net": 72.72,
+          "total_gross": 80.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 13h00 cdg",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 07 :09/02/2023/13H00/CDG/75015/",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:cd28656e-69b1-4cbf-9017-c064e04c0ef4",
+          "invoice_number": "2023/03/0020",
+          "invoice_date": "08/03/2023",
+          "description": "TRANSFERT N 07 :09/02/2023/13H00/CDG/75015/",
+          "total_net": 72.72,
+          "total_gross": 80.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 14h30 cdg",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 08 :16/02/2023/14H30/75008/CDG/",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:cd28656e-69b1-4cbf-9017-c064e04c0ef4",
+          "invoice_number": "2023/03/0020",
+          "invoice_date": "08/03/2023",
+          "description": "TRANSFERT N 08 :16/02/2023/14H30/75008/CDG/",
+          "total_net": 72.72,
+          "total_gross": 80.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 22h35 orly",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 09 :18/02/2023/22H35/ORLY/75011/",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:cd28656e-69b1-4cbf-9017-c064e04c0ef4",
+          "invoice_number": "2023/03/0020",
+          "invoice_date": "08/03/2023",
+          "description": "TRANSFERT N 09 :18/02/2023/22H35/ORLY/75011/",
+          "total_net": 72.72,
+          "total_gross": 80.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 5h30 orly",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 10 : 19/02/2023/5H30/75016/ORLY/",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:cd28656e-69b1-4cbf-9017-c064e04c0ef4",
+          "invoice_number": "2023/03/0020",
+          "invoice_date": "08/03/2023",
+          "description": "TRANSFERT N 10 : 19/02/2023/5H30/75016/ORLY/",
+          "total_net": 72.72,
+          "total_gross": 80.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 10h45 orly guncourt",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 11 : 20/02/2023/10H45/ORLY/GUNCOURT/",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:cd28656e-69b1-4cbf-9017-c064e04c0ef4",
+          "invoice_number": "2023/03/0020",
+          "invoice_date": "08/03/2023",
+          "description": "TRANSFERT N 11 : 20/02/2023/10H45/ORLY/GUNCOURT/",
+          "total_net": 72.72,
+          "total_gross": 80.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 18h40 cdg",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 12 :20/02/2023/18H40/CDG/75009/",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:cd28656e-69b1-4cbf-9017-c064e04c0ef4",
+          "invoice_number": "2023/03/0020",
+          "invoice_date": "08/03/2023",
+          "description": "TRANSFERT N 12 :20/02/2023/18H40/CDG/75009/",
+          "total_net": 45.45,
+          "total_gross": 50.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 6h40 g nord",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 13 :22/02/2023/6H40/75009/G.DU NORD",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:cd28656e-69b1-4cbf-9017-c064e04c0ef4",
+          "invoice_number": "2023/03/0020",
+          "invoice_date": "08/03/2023",
+          "description": "TRANSFERT N 13 :22/02/2023/6H40/75009/G.DU NORD",
+          "total_net": 72.72,
+          "total_gross": 80.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 6h45 cdg",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 14 : 23/02/2023/6H45/75001/CDG/",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:cd28656e-69b1-4cbf-9017-c064e04c0ef4",
+          "invoice_number": "2023/03/0020",
+          "invoice_date": "08/03/2023",
+          "description": "TRANSFERT N 14 : 23/02/2023/6H45/75001/CDG/",
+          "total_net": 72.72,
+          "total_gross": 80.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 9h00 cdg",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 15 :23/02/2023/9H00/CDG/75006",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:cd28656e-69b1-4cbf-9017-c064e04c0ef4",
+          "invoice_number": "2023/03/0020",
+          "invoice_date": "08/03/2023",
+          "description": "TRANSFERT N 15 :23/02/2023/9H00/CDG/75006",
+          "total_net": 72.72,
+          "total_gross": 80.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "trnsfert n 17h40 g de lyon",
+      "source_labels_top": [
+        [
+          "TRNSFERT N 16 : 23/02/2023/17H40/G. DE LYON/75003",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:cd28656e-69b1-4cbf-9017-c064e04c0ef4",
+          "invoice_number": "2023/03/0020",
+          "invoice_date": "08/03/2023",
+          "description": "TRNSFERT N 16 : 23/02/2023/17H40/G. DE LYON/75003",
+          "total_net": 45.45,
+          "total_gross": 50.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert chauff mr miniere vl en",
+      "source_labels_top": [
+        [
+          "Transfert - Chauff. : Mr MINIERE / VL : EN-902-PY - Lundi 12 Juin 2023 a 06.30 - Client : Mr Fred. - Départ : 17 bd Jukes Ferry, 75012 Paris. - Arrivée : Aéroport d'Orly.",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "10.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "check_required",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4932Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:e5a8a49d-7a1d-4fad-97f3-9668947a779a",
+          "invoice_number": "2023086",
+          "invoice_date": "12/06/2023",
+          "description": "Transfert - Chauff. : Mr MINIERE / VL : EN-902-PY - Lundi 12 Juin 2023 a 06.30 - Client : Mr Fred. - Départ : 17 bd Jukes Ferry, 75012 Paris. - Arrivée : Aéroport d'Orly.",
+          "total_net": 72.73,
+          "total_gross": 80.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert 11h20 g nord nowshow",
+      "source_labels_top": [
+        [
+          "TRANSFERT 01:05/04/2023/11H20/G.NORD/75007/NOWSHOW",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:ecd22a3d-6781-4b8b-ad75-6f02e3d02fcb",
+          "invoice_number": "2023/05/0035",
+          "invoice_date": "05/05/2023",
+          "description": "TRANSFERT 01:05/04/2023/11H20/G.NORD/75007/NOWSHOW",
+          "total_net": 45.45,
+          "total_gross": 54.54,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transfert n 13h45 orly",
+      "source_labels_top": [
+        [
+          "TRANSFERT N 02 : 08/04/2023/13H45/ORLY/75008",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:ecd22a3d-6781-4b8b-ad75-6f02e3d02fcb",
+          "invoice_number": "2023/05/0035",
+          "invoice_date": "05/05/2023",
+          "description": "TRANSFERT N 02 : 08/04/2023/13H45/ORLY/75008",
+          "total_net": 72.72,
+          "total_gross": 87.26,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "marseille bejaia alger marseille bateau corsica",
+      "source_labels_top": [
+        [
+          "MARSEILLE/BEJAIA/ALGER/MARSEILLE BATEAU CORSICA",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "7911Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:efb416fd-c559-4183-8b6a-38fc5835597b",
+          "invoice_number": "000 220",
+          "invoice_date": "27/06/2023",
+          "description": "MARSEILLE/BEJAIA/ALGER/MARSEILLE BATEAU CORSICA",
+          "total_net": 1260.0,
+          "total_gross": 1260.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "course vtc depart gare de lyon",
+      "source_labels_top": [
+        [
+          "Course VTC - Départ : Gare de Lyon, Destination : 12b Avenue Julien Chadel, 91210 Draveil, France",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4638B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:f0820ead-fc54-4e39-b37a-957dcfc596de",
+          "invoice_number": "FCH_001325",
+          "invoice_date": "06/12/2023",
+          "description": "Course VTC - Départ : Gare de Lyon, Destination : 12b Avenue Julien Chadel, 91210 Draveil, France",
+          "total_net": 75.0,
+          "total_gross": 75.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais de port",
+      "source_labels_top": [
+        [
+          "FRAIS DE PORT",
+          1
+        ]
+      ],
+      "proposed_account": "622600",
+      "category": "charges_externes",
+      "tva_rates_top": [],
+      "tva_hint_top": [
+        [
+          "unknown",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4791A",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:f165b98d-6ef8-45c6-8694-d8db6059354d",
+          "invoice_number": "2312191851W7C5K",
+          "invoice_date": "19/12/2023",
+          "description": "FRAIS DE PORT",
+          "total_net": 0.0,
+          "total_gross": 0.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "a depart rue de marnes ville",
+      "source_labels_top": [
+        [
+          "31/07/2023 a 04:30 Départ : 16 Rue De Marnes, 92410 Ville-d'Avray, France Destination : Aéroport d'Orly",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:f235a519-f12c-4719-85a3-929334fe08d6",
+          "invoice_number": "FCH_001288",
+          "invoice_date": "31/07/2023",
+          "description": "31/07/2023 a 04:30 Départ : 16 Rue De Marnes, 92410 Ville-d'Avray, France Destination : Aéroport d'Orly",
+          "total_net": 90.0,
+          "total_gross": 90.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "traversee marseille bejaia jean nicoli passage",
+      "source_labels_top": [
+        [
+          "Traversée Marseille - Bejaia / Jean Nicoli - Passage",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5010Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:fcead4c7-6c09-42ad-abbc-49a3b4766855",
+          "invoice_number": "SNCM00004025927",
+          "invoice_date": "27/06/2023",
+          "description": "Traversée Marseille - Bejaia / Jean Nicoli - Passage",
+          "total_net": 99.0,
+          "total_gross": 99.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "traversee marseille bejaia jean nicoli vehicule",
+      "source_labels_top": [
+        [
+          "Traversée Marseille - Bejaia / Jean Nicoli - Véhicule",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5010Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:fcead4c7-6c09-42ad-abbc-49a3b4766855",
+          "invoice_number": "SNCM00004025927",
+          "invoice_date": "27/06/2023",
+          "description": "Traversée Marseille - Bejaia / Jean Nicoli - Véhicule",
+          "total_net": 374.0,
+          "total_gross": 374.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais portuaires taxes et redevances",
+      "source_labels_top": [
+        [
+          "Frais Portuaires (Taxes et Redevances)",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5010Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_824332985:fcead4c7-6c09-42ad-abbc-49a3b4766855",
+          "invoice_number": "SNCM00004025927",
+          "invoice_date": "27/06/2023",
+          "description": "Frais Portuaires (Taxes et Redevances)",
+          "total_net": 42.0,
+          "total_gross": 42.0,
+          "currency": "EUR"
+        }
+      ]
+    }
+  ]
+}

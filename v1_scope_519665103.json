@@ -1,0 +1,9 @@
+{
+  "v1_scope": {
+    "client_siren": "519665103",
+    "partition_prefix": "fr_bd_519665103",
+    "db_factures": "abt3",
+    "db_entries": "fec_452416191",
+    "metier_pilote": "Boulangerie"
+  }
+}

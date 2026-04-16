@@ -1,0 +1,351 @@
+{
+  "source_fec": "891370595FEC20241231.txt",
+  "ok_vtc": [
+    {
+      "account": "5121",
+      "family": "512",
+      "count": 2169
+    },
+    {
+      "account": "411",
+      "family": "411",
+      "count": 1132
+    },
+    {
+      "account": "401",
+      "family": "401",
+      "count": 1012
+    },
+    {
+      "account": "627",
+      "family": "627",
+      "count": 803
+    },
+    {
+      "account": "4456611",
+      "family": "445661",
+      "count": 404
+    },
+    {
+      "account": "445661",
+      "family": "445661",
+      "count": 267
+    },
+    {
+      "account": "6063",
+      "family": "606",
+      "count": 62
+    },
+    {
+      "account": "431",
+      "family": "431",
+      "count": 38
+    },
+    {
+      "account": "4373",
+      "family": "437",
+      "count": 26
+    },
+    {
+      "account": "6226",
+      "family": "622",
+      "count": 21
+    },
+    {
+      "account": "60611",
+      "family": "606",
+      "count": 20
+    },
+    {
+      "account": "421BIA",
+      "family": "421",
+      "count": 20
+    },
+    {
+      "account": "6411",
+      "family": "641",
+      "count": 12
+    },
+    {
+      "account": "6451",
+      "family": "645",
+      "count": 12
+    },
+    {
+      "account": "6454",
+      "family": "645",
+      "count": 12
+    },
+    {
+      "account": "6132",
+      "family": "613",
+      "count": 10
+    },
+    {
+      "account": "421 KHAN",
+      "family": "421",
+      "count": 9
+    },
+    {
+      "account": "6453",
+      "family": "645",
+      "count": 9
+    },
+    {
+      "account": "4081",
+      "family": "408",
+      "count": 8
+    },
+    {
+      "account": "44586",
+      "family": "44586",
+      "count": 8
+    },
+    {
+      "account": "421DEMBELE",
+      "family": "421",
+      "count": 6
+    },
+    {
+      "account": "6161",
+      "family": "616",
+      "count": 5
+    },
+    {
+      "account": "408",
+      "family": "408",
+      "count": 4
+    },
+    {
+      "account": "4378",
+      "family": "437",
+      "count": 4
+    },
+    {
+      "account": "6278",
+      "family": "627",
+      "count": 4
+    },
+    {
+      "account": "421AHMED",
+      "family": "421",
+      "count": 4
+    },
+    {
+      "account": "421SAHED",
+      "family": "421",
+      "count": 4
+    },
+    {
+      "account": "641",
+      "family": "641",
+      "count": 4
+    },
+    {
+      "account": "4457113",
+      "family": "44571",
+      "count": 4
+    },
+    {
+      "account": "604",
+      "family": "604",
+      "count": 2
+    },
+    {
+      "account": "6135",
+      "family": "613",
+      "count": 2
+    },
+    {
+      "account": "4456613",
+      "family": "445661",
+      "count": 2
+    },
+    {
+      "account": "6412",
+      "family": "641",
+      "count": 2
+    },
+    {
+      "account": "6458",
+      "family": "645",
+      "count": 1
+    },
+    {
+      "account": "6261",
+      "family": "626",
+      "count": 1
+    }
+  ],
+  "a_surveiller": [
+    {
+      "account": "455",
+      "family": "455",
+      "count": 27
+    },
+    {
+      "account": "447",
+      "family": "447",
+      "count": 17
+    },
+    {
+      "account": "6021",
+      "family": "602",
+      "count": 17
+    },
+    {
+      "account": "6313",
+      "family": "631",
+      "count": 13
+    },
+    {
+      "account": "531",
+      "family": "531",
+      "count": 12
+    },
+    {
+      "account": "6333",
+      "family": "633",
+      "count": 12
+    },
+    {
+      "account": "68112",
+      "family": "681",
+      "count": 5
+    },
+    {
+      "account": "4421",
+      "family": "442",
+      "count": 4
+    },
+    {
+      "account": "119",
+      "family": "119",
+      "count": 3
+    },
+    {
+      "account": "28135",
+      "family": "281",
+      "count": 3
+    },
+    {
+      "account": "658",
+      "family": "658",
+      "count": 3
+    },
+    {
+      "account": "28181",
+      "family": "281",
+      "count": 3
+    },
+    {
+      "account": "129",
+      "family": "129",
+      "count": 2
+    },
+    {
+      "account": "2181",
+      "family": "218",
+      "count": 2
+    },
+    {
+      "account": "6026",
+      "family": "602",
+      "count": 2
+    },
+    {
+      "account": "701",
+      "family": "701",
+      "count": 2
+    },
+    {
+      "account": "101",
+      "family": "101",
+      "count": 1
+    },
+    {
+      "account": "206",
+      "family": "206",
+      "count": 1
+    },
+    {
+      "account": "2135",
+      "family": "213",
+      "count": 1
+    },
+    {
+      "account": "275",
+      "family": "275",
+      "count": 1
+    },
+    {
+      "account": "2154",
+      "family": "215",
+      "count": 1
+    },
+    {
+      "account": "6022",
+      "family": "602",
+      "count": 1
+    },
+    {
+      "account": "6712",
+      "family": "671",
+      "count": 1
+    },
+    {
+      "account": "4282",
+      "family": "428",
+      "count": 1
+    },
+    {
+      "account": "28154",
+      "family": "281",
+      "count": 1
+    },
+    {
+      "account": "311",
+      "family": "311",
+      "count": 1
+    },
+    {
+      "account": "6031",
+      "family": "603",
+      "count": 1
+    },
+    {
+      "account": "758",
+      "family": "758",
+      "count": 1
+    },
+    {
+      "account": "601",
+      "family": "601",
+      "count": 415
+    },
+    {
+      "account": "4382",
+      "family": "438",
+      "count": 5
+    },
+    {
+      "account": "445511",
+      "family": "445",
+      "count": 5
+    },
+    {
+      "account": "4456214",
+      "family": "445",
+      "count": 2
+    },
+    {
+      "account": "445621",
+      "family": "445",
+      "count": 2
+    }
+  ],
+  "meta": {
+    "used_only_purchase_accounts": false,
+    "note": "ok_vtc contains the coherent VTC account families; a_surveiller contains the remaining accounts that are less typical or outside the main VTC purchase/charge pattern."
+  }
+}

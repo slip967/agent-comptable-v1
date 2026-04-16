@@ -1,0 +1,982 @@
+{
+  "meta": {
+    "generated_at": "2026-04-13T09:22:50.532995Z",
+    "db_factures": "abt3",
+    "partition_prefix": "fr_bd_752620443",
+    "total_unique_references": 3275,
+    "stats": {
+      "line_items_exploitation_metier": 7879,
+      "line_items_a_revoir": 196,
+      "line_items_charges_externes": 53
+    }
+  },
+  "category": "charges_externes",
+  "items": [
+    {
+      "canonical_label": "bbox location equipement",
+      "source_labels_top": [
+        [
+          "Bbox - location équipement",
+          4
+        ],
+        [
+          "Bbox - location équipement (du 23/04 au 22/05)",
+          2
+        ],
+        [
+          "Bbox - location équipement (du 23/03 au 22/04)",
+          2
+        ],
+        [
+          "Bbox - location équipement (du 23/05 au 22/06)",
+          1
+        ],
+        [
+          "Bbox - location équipement (du 23/08 au 22/09)",
+          1
+        ]
+      ],
+      "proposed_account": "6132",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          10
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          10
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          10
+        ]
+      ],
+      "occurrences": 10,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:260bb166-27ee-4cbc-aa7f-a2c1bf5d50cc",
+          "invoice_number": "11594388450524",
+          "invoice_date": "23/05/2024",
+          "description": "Bbox - location équipement (du 23/05 au 22/06)",
+          "total_net": 2.5,
+          "total_gross": 3.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:322fbe52-8beb-49d4-b42b-d759408330c4",
+          "invoice_number": "11462702331024",
+          "invoice_date": "23/10/2024",
+          "description": "Bbox - location équipement",
+          "total_net": 2.5,
+          "total_gross": 3.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:38511439-ab27-4125-95ef-a165006ddd52",
+          "invoice_number": "11426309930424",
+          "invoice_date": "23/04/2024",
+          "description": "Bbox - location équipement (du 23/04 au 22/05)",
+          "total_net": 2.5,
+          "total_gross": 3.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:50347e21-34e4-454a-9fb5-50cfe4d1a5da",
+          "invoice_number": "11253241350324",
+          "invoice_date": "23/03/2024",
+          "description": "Bbox - location équipement (du 23/03 au 22/04)",
+          "total_net": 2.5,
+          "total_gross": 3.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:813dbc60-c528-449a-84fc-173637796f75",
+          "invoice_number": "11426309930424",
+          "invoice_date": "23/04/2024",
+          "description": "Bbox - location équipement (du 23/04 au 22/05)",
+          "total_net": 2.5,
+          "total_gross": 3.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "loyer principal indice icon 4t",
+      "source_labels_top": [
+        [
+          "Loyer principal Du 01/02/2024 Au 29/02/2024 Indice ICON 4T-2022",
+          3
+        ],
+        [
+          "Loyer principal Du 01/02/2024 Au 29/02/2024 Indice ICON 4T-2022 2052,000",
+          1
+        ],
+        [
+          "Loyer principal - Du 01/04/2024 Au 30/04/2024 Indice ICON 4T-2022",
+          1
+        ],
+        [
+          "Loyer principal Du 01/10/2024 Au 31/10/2024 Indice ICON 4T-2023",
+          1
+        ],
+        [
+          "Loyer principal Du 01/11/2024 Au 30/11/2024 Indice ICON 4T-2023 2162,000",
+          1
+        ],
+        [
+          "Loyer principal Du 01/10/2024 Au 31/10/2024 Indice ICON 4T-2023 2162,000",
+          1
+        ]
+      ],
+      "proposed_account": "6132",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          8
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          8
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4110D",
+          8
+        ]
+      ],
+      "occurrences": 8,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:30acc240-b329-402e-8126-2f7281878596",
+          "invoice_number": "2000008-24000300",
+          "invoice_date": "04/01/2024",
+          "description": "Loyer principal Du 01/02/2024 Au 29/02/2024 Indice ICON 4T-2022 2052,000",
+          "total_net": 1463.14,
+          "total_gross": 1755.77,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:3c647e43-b1b5-4ce6-8d55-e319d866163e",
+          "invoice_number": "2000008-24000300",
+          "invoice_date": "04/01/2024",
+          "description": "Loyer principal Du 01/02/2024 Au 29/02/2024 Indice ICON 4T-2022",
+          "total_net": 1463.14,
+          "total_gross": 1755.77,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:6b4bee3f-cfb7-4e66-8086-20dcbc46bff8",
+          "invoice_number": "2000008-24000300",
+          "invoice_date": "04/01/2024",
+          "description": "Loyer principal Du 01/02/2024 Au 29/02/2024 Indice ICON 4T-2022",
+          "total_net": 1463.14,
+          "total_gross": 1755.77,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:711c54af-c808-44f9-bb23-3cc75b74765a",
+          "invoice_number": "2000008-24000300",
+          "invoice_date": "04/01/2024",
+          "description": "Loyer principal Du 01/02/2024 Au 29/02/2024 Indice ICON 4T-2022",
+          "total_net": 1463.14,
+          "total_gross": 1755.77,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:be48ecde-8569-432c-a2e5-f616b3872173",
+          "invoice_number": "2000008-24000556",
+          "invoice_date": "05/03/2024",
+          "description": "Loyer principal - Du 01/04/2024 Au 30/04/2024 Indice ICON 4T-2022",
+          "total_net": 1463.14,
+          "total_gross": 1755.77,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "provision pour charges",
+      "source_labels_top": [
+        [
+          "Provision pour charges Du 01/02/2024 Au 29/02/2024",
+          4
+        ],
+        [
+          "Provision pour charges Du 01/10/2024 Au 31/10/2024",
+          2
+        ],
+        [
+          "Provision pour charges - Du 01/04/2024 Au 30/04/2024",
+          1
+        ],
+        [
+          "Provision pour charges Du 01/11/2024 Au 30/11/2024",
+          1
+        ]
+      ],
+      "proposed_account": "6132",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          8
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          8
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4110D",
+          8
+        ]
+      ],
+      "occurrences": 8,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:30acc240-b329-402e-8126-2f7281878596",
+          "invoice_number": "2000008-24000300",
+          "invoice_date": "04/01/2024",
+          "description": "Provision pour charges Du 01/02/2024 Au 29/02/2024",
+          "total_net": 40.0,
+          "total_gross": 40.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:3c647e43-b1b5-4ce6-8d55-e319d866163e",
+          "invoice_number": "2000008-24000300",
+          "invoice_date": "04/01/2024",
+          "description": "Provision pour charges Du 01/02/2024 Au 29/02/2024",
+          "total_net": 40.0,
+          "total_gross": 40.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:6b4bee3f-cfb7-4e66-8086-20dcbc46bff8",
+          "invoice_number": "2000008-24000300",
+          "invoice_date": "04/01/2024",
+          "description": "Provision pour charges Du 01/02/2024 Au 29/02/2024",
+          "total_net": 40.0,
+          "total_gross": 40.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:711c54af-c808-44f9-bb23-3cc75b74765a",
+          "invoice_number": "2000008-24000300",
+          "invoice_date": "04/01/2024",
+          "description": "Provision pour charges Du 01/02/2024 Au 29/02/2024",
+          "total_net": 40.0,
+          "total_gross": 40.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:be48ecde-8569-432c-a2e5-f616b3872173",
+          "invoice_number": "2000008-24000556",
+          "invoice_date": "05/03/2024",
+          "description": "Provision pour charges - Du 01/04/2024 Au 30/04/2024",
+          "total_net": 40.0,
+          "total_gross": 40.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "provision taxe fonciere",
+      "source_labels_top": [
+        [
+          "Provision / Taxe fonciére Du 01/02/2024 Au 29/02/2024",
+          4
+        ],
+        [
+          "Provision / Taxe foncière - Du 01/04/2024 Au 30/04/2024",
+          1
+        ],
+        [
+          "Provision / Taxe foncière Du 01/10/2024 Au 31/10/2024",
+          1
+        ],
+        [
+          "Provision / Taxe foncière Du 01/11/2024 Au 30/11/2024",
+          1
+        ],
+        [
+          "Provision / Taxe fonciére Du 01/10/2024 Au 31/10/2024",
+          1
+        ]
+      ],
+      "proposed_account": "6132",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          8
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          8
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4110D",
+          8
+        ]
+      ],
+      "occurrences": 8,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:30acc240-b329-402e-8126-2f7281878596",
+          "invoice_number": "2000008-24000300",
+          "invoice_date": "04/01/2024",
+          "description": "Provision / Taxe fonciére Du 01/02/2024 Au 29/02/2024",
+          "total_net": 292.0,
+          "total_gross": 350.4,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:3c647e43-b1b5-4ce6-8d55-e319d866163e",
+          "invoice_number": "2000008-24000300",
+          "invoice_date": "04/01/2024",
+          "description": "Provision / Taxe fonciére Du 01/02/2024 Au 29/02/2024",
+          "total_net": 292.0,
+          "total_gross": 350.4,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:6b4bee3f-cfb7-4e66-8086-20dcbc46bff8",
+          "invoice_number": "2000008-24000300",
+          "invoice_date": "04/01/2024",
+          "description": "Provision / Taxe fonciére Du 01/02/2024 Au 29/02/2024",
+          "total_net": 292.0,
+          "total_gross": 350.4,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:711c54af-c808-44f9-bb23-3cc75b74765a",
+          "invoice_number": "2000008-24000300",
+          "invoice_date": "04/01/2024",
+          "description": "Provision / Taxe fonciére Du 01/02/2024 Au 29/02/2024",
+          "total_net": 292.0,
+          "total_gross": 350.4,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:be48ecde-8569-432c-a2e5-f616b3872173",
+          "invoice_number": "2000008-24000556",
+          "invoice_date": "05/03/2024",
+          "description": "Provision / Taxe foncière - Du 01/04/2024 Au 30/04/2024",
+          "total_net": 292.0,
+          "total_gross": 350.4,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "deplacement",
+      "source_labels_top": [
+        [
+          "Déplacement",
+          4
+        ]
+      ],
+      "proposed_account": "6251",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          4
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          4
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4321A",
+          1
+        ]
+      ],
+      "occurrences": 4,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:2117809c-6b99-4be1-aba4-cff0abf66b47",
+          "invoice_number": "005",
+          "invoice_date": "27/06/2024",
+          "description": "Déplacement",
+          "total_net": 40.0,
+          "total_gross": 48.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:5100c67f-a84a-4008-b3e9-1b9e466261c0",
+          "invoice_number": "005",
+          "invoice_date": "27/06/2024",
+          "description": "Déplacement",
+          "total_net": 40.0,
+          "total_gross": 48.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:d4807a0f-14fd-46e6-843f-2b2d439f8600",
+          "invoice_number": "005",
+          "invoice_date": "27/06/2024",
+          "description": "Déplacement",
+          "total_net": 40.0,
+          "total_gross": 48.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:fb3ef175-2214-435a-837b-50196e50a4b6",
+          "invoice_number": "005",
+          "invoice_date": "27/06/2024",
+          "description": "Déplacement",
+          "total_net": 40.0,
+          "total_gross": 48.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "solde de charges",
+      "source_labels_top": [
+        [
+          "Solde de charges Du 01/01/2023 Au 31/12/2023",
+          2
+        ]
+      ],
+      "proposed_account": "615500",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4110D",
+          1
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:2cfcf24a-9e35-4ffc-a67c-9cb08f5cdd54",
+          "invoice_number": "2000008-24001550",
+          "invoice_date": "17/06/2024",
+          "description": "Solde de charges Du 01/01/2023 Au 31/12/2023",
+          "total_net": 140.77,
+          "total_gross": 140.77,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:614836e5-c399-4c0d-8be4-ebdcdf4cded4",
+          "invoice_number": "2000008-24001550",
+          "invoice_date": "17/06/2024",
+          "description": "Solde de charges Du 01/01/2023 Au 31/12/2023",
+          "total_net": 140.77,
+          "total_gross": 140.77,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais enlevement barky",
+      "source_labels_top": [
+        [
+          "FRAIS ENLEVEMENT BARKY",
+          2
+        ]
+      ],
+      "proposed_account": "622",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4631Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b2b308eb-2c53-4d12-8f4c-4af08313014e",
+          "invoice_number": "FA2428882",
+          "invoice_date": "25/07/2024",
+          "description": "FRAIS ENLEVEMENT BARKY",
+          "total_net": 12.0,
+          "total_gross": 14.4,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:c8892522-4aad-4d4d-a0d5-38c90e9c8167",
+          "invoice_number": "FA2428882",
+          "invoice_date": "25/07/2024",
+          "description": "FRAIS ENLEVEMENT BARKY",
+          "total_net": 12.0,
+          "total_gross": 14.4,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transport",
+      "source_labels_top": [
+        [
+          "TRANSPORT",
+          2
+        ]
+      ],
+      "proposed_account": "622",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4631Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b2b308eb-2c53-4d12-8f4c-4af08313014e",
+          "invoice_number": "FA2428882",
+          "invoice_date": "25/07/2024",
+          "description": "TRANSPORT",
+          "total_net": 2.0,
+          "total_gross": 2.4,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:c8892522-4aad-4d4d-a0d5-38c90e9c8167",
+          "invoice_number": "FA2428882",
+          "invoice_date": "25/07/2024",
+          "description": "TRANSPORT",
+          "total_net": 2.0,
+          "total_gross": 2.4,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "livraison",
+      "source_labels_top": [
+        [
+          "Livraison",
+          1
+        ]
+      ],
+      "proposed_account": "622600",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4791A",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:3aa4c2e6-1a02-4e16-92f3-ac5823469801",
+          "invoice_number": "FR41PBM32AEUI",
+          "invoice_date": "12/11/2024",
+          "description": "Livraison",
+          "total_net": 0.0,
+          "total_gross": 0.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "espace client facturation electronique",
+      "source_labels_top": [
+        [
+          "Espace Client - Facturation électronique",
+          1
+        ]
+      ],
+      "proposed_account": "6185",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:8ba2b41e-0825-4485-88c6-8bcd3b9eb59a",
+          "invoice_number": "220008334195",
+          "invoice_date": "11/06/2024",
+          "description": "Espace Client - Facturation électronique",
+          "total_net": 0.0,
+          "total_gross": 0.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "carte bancaire",
+      "source_labels_top": [
+        [
+          "CARTE BANCAIRE",
+          1
+        ]
+      ],
+      "proposed_account": "62780000",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:a6a0b21c-8274-4703-bfab-ecf21cdf75ba",
+          "invoice_number": "481",
+          "invoice_date": "12/02/2024",
+          "description": "CARTE BANCAIRE",
+          "total_net": 19.0,
+          "total_gross": 20.05,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "livraison",
+      "source_labels_top": [
+        [
+          "Livraison",
+          1
+        ]
+      ],
+      "proposed_account": "624100",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4791B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:ae66b308-8e2b-43c1-83b1-480d2792347e",
+          "invoice_number": "FR41PBM32AEUI",
+          "invoice_date": "12/11/2024",
+          "description": "Livraison",
+          "total_net": 0.0,
+          "total_gross": 0.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bbox location equipement",
+      "source_labels_top": [
+        [
+          "Bbox - location équipement (du 23/04 au 22/05)",
+          1
+        ]
+      ],
+      "proposed_account": "613200",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b0043862-21fd-4bc9-8435-361a312476f6",
+          "invoice_number": "11426309930424",
+          "invoice_date": "23/04/2024",
+          "description": "Bbox - location équipement (du 23/04 au 22/05)",
+          "total_net": 2.5,
+          "total_gross": 3.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "palettes",
+      "source_labels_top": [
+        [
+          "PALETTES",
+          1
+        ]
+      ],
+      "proposed_account": "622",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4631Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b2b308eb-2c53-4d12-8f4c-4af08313014e",
+          "invoice_number": "FA2428882",
+          "invoice_date": "25/07/2024",
+          "description": "PALETTES",
+          "total_net": 6.5,
+          "total_gross": 7.8,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais enlevement inflation transport",
+      "source_labels_top": [
+        [
+          "FRAIS ENLEVEMENT + INFLATION TRANSPORT",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4631Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:e58b3e4f-113c-47cc-bb30-24399d972a9a",
+          "invoice_number": "FA2414563",
+          "invoice_date": "12/04/2024",
+          "description": "FRAIS ENLEVEMENT + INFLATION TRANSPORT",
+          "total_net": 30.0,
+          "total_gross": 36.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais enlevement inflation",
+      "source_labels_top": [
+        [
+          "FRAIS ENLEVEMENT + INFLATION",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4631Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:fdd640cc-8ccb-4d3c-8210-6f23ae288930",
+          "invoice_number": "FA2414563",
+          "invoice_date": "12/04/2024",
+          "description": "FRAIS ENLEVEMENT + INFLATION",
+          "total_net": 30.0,
+          "total_gross": 36.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "transport",
+      "source_labels_top": [
+        [
+          "TRANSPORT",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4631Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:fdd640cc-8ccb-4d3c-8210-6f23ae288930",
+          "invoice_number": "FA2414563",
+          "invoice_date": "12/04/2024",
+          "description": "TRANSPORT",
+          "total_net": 0.0,
+          "total_gross": 0.0,
+          "currency": "EUR"
+        }
+      ]
+    }
+  ]
+}

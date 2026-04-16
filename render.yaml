@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: agent-comptable-v1
+    runtime: python
+    rootDir: .
+    buildCommand: pip install -r agent_cloud_v1/requirements.txt
+    startCommand: uvicorn agent_cloud_v1.line_item_app:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: OPENROUTER_MODEL
+        value: deepseek/deepseek-chat-v3.1
+      - key: OPENROUTER_APP_URL
+        value: https://your-render-service.onrender.com
+      - key: OPENROUTER_APP_NAME
+        value: Agent Comptable Cloud

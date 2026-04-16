@@ -1,0 +1,973 @@
+{
+  "meta": {
+    "profile_id": "charges_externes_global_v1",
+    "metier": "global",
+    "client_siren": "519665103",
+    "partition_prefix": "fr_bd_519665103",
+    "version": "v1",
+    "status": "draft",
+    "source_note": "Base globale charges externes pre-remplie depuis reference_base_charges_externes; validation requise.",
+    "generated_at": "2026-04-02T12:40:27.922290Z",
+    "items_count": 28,
+    "cleanup_note": "Nettoyage manuel: dedoublonnage + suppression des lignes sans source_invoice_ids fiable.",
+    "source_invoice_ids_note": "Jusqu a 3 invoice_id source par article_source depuis invoice_form.",
+    "accounts_enrichment": {
+      "reference_file": "v1_519665103_reference_base_charges_externes_v1.json",
+      "matched_items": 28,
+      "unmatched_items": 0,
+      "already_present": 0
+    },
+    "charges_profile_enrichment": {
+      "source_file": "base_charges_externes_v1_with_accounts.json",
+      "generated_at": "2026-04-07T20:34:32.311015Z",
+      "version": "charges_externes_rules_v1",
+      "counts_by_sous_profil": {
+        "cotisations_professionnelles": 10,
+        "entretien_et_maintenance": 2,
+        "frais_administratifs_et_bancaires": 4,
+        "loyers_et_charges_locatives": 4,
+        "telecom_et_abonnements": 2,
+        "transport_et_logistique": 6
+      },
+      "counts_by_nature_charge": {
+        "abonnement": 2,
+        "charges_locatives": 3,
+        "cotisation": 10,
+        "entretien": 2,
+        "frais": 4,
+        "loyer": 1,
+        "transport": 6
+      },
+      "counts_by_profil_facturation": {
+        "abonnement_et_consommation": 2,
+        "cotisation_ou_forfait": 10,
+        "forfait_ou_frais": 4,
+        "intervention_ponctuelle": 2,
+        "loyer_et_charges": 4,
+        "prestation_ponctuelle": 6
+      }
+    },
+    "source_invoice_year_filter": "2024",
+    "vtc_hors_scope_transfer_v1": {
+      "updated_at": "2026-04-14T15:16:58.867367Z",
+      "source_file": "base_produits_vtc_v1_with_accounts.json",
+      "added_items": 12,
+      "months": [
+        "AOUT",
+        "AVRIL",
+        "DECEMBRE",
+        "FEVRIER",
+        "JANVIER",
+        "JUILLET",
+        "JUIN",
+        "MAI",
+        "MARS",
+        "NOVEMBRE",
+        "OCTOBRE",
+        "SEPTEMBRE"
+      ]
+    },
+    "vtc_hors_scope_transfer_revert_v1": {
+      "updated_at": "2026-04-14T15:19:33.473016Z",
+      "removed_items": 12,
+      "rule": "remove items marked vtc_hors_scope_transfer_v1"
+    }
+  },
+  "items": [
+    {
+      "article_source": "COTI.RSD",
+      "article_canonique": "coti rsd",
+      "categorie": "charges_externes",
+      "sous_categorie": "charges_generales",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coti",
+        "rsd"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [
+        "4632A"
+      ],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+      "source_invoice_ids": [
+        "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+        "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385",
+        "fr_bd_519665103:6b649b52-1cff-4146-a224-47f59839575f"
+      ],
+      "compte_comptable": "6227",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 362,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "cotisations_professionnelles",
+      "nature_charge": "cotisation",
+      "profil_facturation": "cotisation_ou_forfait",
+      "profil_facturation_champs": [
+        "periode_debut",
+        "periode_fin",
+        "montant_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword:cotisation"
+    },
+    {
+      "article_source": "FRAIS FIXES",
+      "article_canonique": "frais fixes",
+      "categorie": "charges_externes",
+      "sous_categorie": "charges_generales",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "frais",
+        "fixes"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [
+        "4632A"
+      ],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6281",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 361,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "cotisations_professionnelles",
+      "nature_charge": "cotisation",
+      "profil_facturation": "cotisation_ou_forfait",
+      "profil_facturation_champs": [
+        "periode_debut",
+        "periode_fin",
+        "montant_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword:cotisation"
+    },
+    {
+      "article_source": "INTERBEV",
+      "article_canonique": "interbev",
+      "categorie": "charges_externes",
+      "sous_categorie": "charges_generales",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "interbev"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [
+        "4632A"
+      ],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+      "source_invoice_ids": [
+        "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+        "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385"
+      ],
+      "compte_comptable": "6227",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 364,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "cotisations_professionnelles",
+      "nature_charge": "cotisation",
+      "profil_facturation": "cotisation_ou_forfait",
+      "profil_facturation_champs": [
+        "periode_debut",
+        "periode_fin",
+        "montant_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword:cotisation"
+    },
+    {
+      "article_source": "Entretien parking",
+      "article_canonique": "entretien parking",
+      "categorie": "charges_externes",
+      "sous_categorie": "entretien_reparation",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "entretien",
+        "parking"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6152",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 361,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "entretien_et_maintenance",
+      "nature_charge": "entretien",
+      "profil_facturation": "intervention_ponctuelle",
+      "profil_facturation_champs": [
+        "date_intervention",
+        "description_intervention",
+        "montant_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword_or_account:entretien"
+    },
+    {
+      "article_source": "ABONNEMENT TRIM. MOBITPE MOBILE du 01/04/25 au 30/06/25",
+      "article_canonique": "abonnement trim mobitpe mobile",
+      "categorie": "charges_externes",
+      "sous_categorie": "frais_service",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "abonnement",
+        "trim",
+        "mobitpe",
+        "mobile"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+      "source_invoice_ids": [],
+      "compte_comptable": "627",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 301,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "frais_administratifs_et_bancaires",
+      "nature_charge": "frais",
+      "profil_facturation": "forfait_ou_frais",
+      "profil_facturation_champs": [
+        "date_operation",
+        "description_frais",
+        "montant_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "manual_override:mobitpe_non_telecom"
+    },
+    {
+      "article_source": "ABONNEMENT TRIM. SIMS CARTE SIM du 01/04/25 au 30/06/25",
+      "article_canonique": "abonnement trim sims carte sim",
+      "categorie": "charges_externes",
+      "sous_categorie": "frais_service",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "abonnement",
+        "trim",
+        "sims",
+        "carte"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+      "source_invoice_ids": [],
+      "compte_comptable": "626",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 301,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "telecom_et_abonnements",
+      "nature_charge": "abonnement",
+      "profil_facturation": "abonnement_et_consommation",
+      "profil_facturation_champs": [
+        "periode_debut",
+        "periode_fin",
+        "abonnement_ht",
+        "consommation_ht",
+        "identifiant_ligne"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword:telecom"
+    },
+    {
+      "article_source": "COTI.RSD",
+      "article_canonique": "coti rsd",
+      "categorie": "charges_externes",
+      "sous_categorie": "frais_service",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "coti",
+        "rsd"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [
+        "4632A"
+      ],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=2)",
+      "source_invoice_ids": [
+        "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+        "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385",
+        "fr_bd_519665103:6b649b52-1cff-4146-a224-47f59839575f"
+      ],
+      "compte_comptable": "6227",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 362,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "cotisations_professionnelles",
+      "nature_charge": "cotisation",
+      "profil_facturation": "cotisation_ou_forfait",
+      "profil_facturation_champs": [
+        "periode_debut",
+        "periode_fin",
+        "montant_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword:cotisation"
+    },
+    {
+      "article_source": "DECRO",
+      "article_canonique": "decro",
+      "categorie": "charges_externes",
+      "sous_categorie": "frais_service",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "decro"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+      "source_invoice_ids": [
+        "fr_bd_519665103:003f5876-a443-42e2-9d69-60c58f89afa5",
+        "fr_bd_519665103:02d5e7c2-3877-40fc-b589-cc7daf4784ec",
+        "fr_bd_519665103:0417048a-9942-4273-a5f6-4a1dc7e9c12c"
+      ],
+      "compte_comptable": "6227",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 241,
+      "compte_comptable_match_reason": "article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "cotisations_professionnelles",
+      "nature_charge": "cotisation",
+      "profil_facturation": "cotisation_ou_forfait",
+      "profil_facturation_champs": [
+        "periode_debut",
+        "periode_fin",
+        "montant_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword:cotisation"
+    },
+    {
+      "article_source": "F. FIXE",
+      "article_canonique": "f fixe",
+      "categorie": "charges_externes",
+      "sous_categorie": "frais_service",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "fixe"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [
+        "4632A"
+      ],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=5)",
+      "source_invoice_ids": [
+        "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+        "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385",
+        "fr_bd_519665103:6b649b52-1cff-4146-a224-47f59839575f"
+      ],
+      "compte_comptable": "6227",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 365,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "cotisations_professionnelles",
+      "nature_charge": "cotisation",
+      "profil_facturation": "cotisation_ou_forfait",
+      "profil_facturation_champs": [
+        "periode_debut",
+        "periode_fin",
+        "montant_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword:cotisation"
+    },
+    {
+      "article_source": "F. FIXE",
+      "article_canonique": "f fixe",
+      "categorie": "charges_externes",
+      "sous_categorie": "frais_service",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "fixe"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [
+        "4632A"
+      ],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+      "source_invoice_ids": [
+        "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+        "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385",
+        "fr_bd_519665103:6b649b52-1cff-4146-a224-47f59839575f"
+      ],
+      "compte_comptable": "6227",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 365,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "cotisations_professionnelles",
+      "nature_charge": "cotisation",
+      "profil_facturation": "cotisation_ou_forfait",
+      "profil_facturation_champs": [
+        "periode_debut",
+        "periode_fin",
+        "montant_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword:cotisation"
+    },
+    {
+      "article_source": "Frais Administratifs Carte Acheteur",
+      "article_canonique": "frais administratifs carte acheteur",
+      "categorie": "charges_externes",
+      "sous_categorie": "frais_service",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "frais",
+        "administratifs",
+        "carte",
+        "acheteur"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [
+        "6832A"
+      ],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+      "source_invoice_ids": [],
+      "compte_comptable": "627",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 361,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "frais_administratifs_et_bancaires",
+      "nature_charge": "frais",
+      "profil_facturation": "forfait_ou_frais",
+      "profil_facturation_champs": [
+        "date_operation",
+        "description_frais",
+        "montant_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword_or_account:administratif"
+    },
+    {
+      "article_source": "Frais de port",
+      "article_canonique": "frais de port",
+      "categorie": "charges_externes",
+      "sous_categorie": "frais_service",
+      "tva_rate": 0.0,
+      "mots_cles": [
+        "frais",
+        "port"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+      "source_invoice_ids": [
+        "fr_bd_519665103:2cdae330-5c7d-4696-ac7e-47511f719b32"
+      ],
+      "compte_comptable": "6227",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 361,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "transport_et_logistique",
+      "nature_charge": "transport",
+      "profil_facturation": "prestation_ponctuelle",
+      "profil_facturation_champs": [
+        "date_prestation",
+        "description_prestation",
+        "montant_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword:transport"
+    },
+    {
+      "article_source": "Frais de relance",
+      "article_canonique": "frais de relance",
+      "categorie": "charges_externes",
+      "sous_categorie": "frais_service",
+      "tva_rate": 0.0,
+      "mots_cles": [
+        "frais",
+        "relance"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=3)",
+      "source_invoice_ids": [
+        "fr_bd_519665103:09437944-54fa-4d58-b404-e954e21bfa22"
+      ],
+      "compte_comptable": "6227",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 603,
+      "compte_comptable_match_reason": "invoice_id_overlap=3, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "frais_administratifs_et_bancaires",
+      "nature_charge": "frais",
+      "profil_facturation": "forfait_ou_frais",
+      "profil_facturation_champs": [
+        "date_operation",
+        "description_frais",
+        "montant_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword_or_account:administratif"
+    },
+    {
+      "article_source": "interb gbao",
+      "article_canonique": "interb gbao",
+      "categorie": "charges_externes",
+      "sous_categorie": "frais_service",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "interb",
+        "gbao"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+      "source_invoice_ids": [
+        "fr_bd_519665103:775fd06b-7fff-4956-a893-221e08f7be6b"
+      ],
+      "compte_comptable": "6227",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 361,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "cotisations_professionnelles",
+      "nature_charge": "cotisation",
+      "profil_facturation": "cotisation_ou_forfait",
+      "profil_facturation_champs": [
+        "periode_debut",
+        "periode_fin",
+        "montant_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword:cotisation"
+    },
+    {
+      "article_source": "interb vdo",
+      "article_canonique": "interb vdo",
+      "categorie": "charges_externes",
+      "sous_categorie": "frais_service",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "interb",
+        "vdo"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+      "source_invoice_ids": [
+        "fr_bd_519665103:775fd06b-7fff-4956-a893-221e08f7be6b"
+      ],
+      "compte_comptable": "6227",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 361,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "cotisations_professionnelles",
+      "nature_charge": "cotisation",
+      "profil_facturation": "cotisation_ou_forfait",
+      "profil_facturation_champs": [
+        "periode_debut",
+        "periode_fin",
+        "montant_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword:cotisation"
+    },
+    {
+      "article_source": "INTERBEV",
+      "article_canonique": "interbev",
+      "categorie": "charges_externes",
+      "sous_categorie": "frais_service",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "interbev"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [
+        "4632A"
+      ],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=4)",
+      "source_invoice_ids": [
+        "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+        "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385"
+      ],
+      "compte_comptable": "6227",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 364,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "cotisations_professionnelles",
+      "nature_charge": "cotisation",
+      "profil_facturation": "cotisation_ou_forfait",
+      "profil_facturation_champs": [
+        "periode_debut",
+        "periode_fin",
+        "montant_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword:cotisation"
+    },
+    {
+      "article_source": "Sortie viande",
+      "article_canonique": "sortie viande",
+      "categorie": "charges_externes",
+      "sous_categorie": "frais_service",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "sortie",
+        "viande"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [
+        "4632C"
+      ],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+      "source_invoice_ids": [
+        "fr_bd_519665103:9fd2eea5-e050-47d2-96bf-f7263217c4cf"
+      ],
+      "compte_comptable": "6227",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 361,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "transport_et_logistique",
+      "nature_charge": "transport",
+      "profil_facturation": "prestation_ponctuelle",
+      "profil_facturation_champs": [
+        "date_prestation",
+        "description_prestation",
+        "montant_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword:transport"
+    },
+    {
+      "article_source": "Sortie volaille",
+      "article_canonique": "sortie volaille",
+      "categorie": "charges_externes",
+      "sous_categorie": "frais_service",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "sortie",
+        "volaille"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [
+        "4632C"
+      ],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=5)",
+      "source_invoice_ids": [
+        "fr_bd_519665103:0102860e-d8dd-45a7-9aaa-1c6b35b0c49a"
+      ],
+      "compte_comptable": "624",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 245,
+      "compte_comptable_match_reason": "article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "transport_et_logistique",
+      "nature_charge": "transport",
+      "profil_facturation": "prestation_ponctuelle",
+      "profil_facturation_champs": [
+        "date_prestation",
+        "description_prestation",
+        "montant_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword:transport"
+    },
+    {
+      "article_source": "Terme 01/2025",
+      "article_canonique": "terme",
+      "categorie": "charges_externes",
+      "sous_categorie": "frais_service",
+      "tva_rate": 0.0,
+      "mots_cles": [
+        "terme"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+      "source_invoice_ids": [],
+      "compte_comptable": "627",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 301,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "frais_administratifs_et_bancaires",
+      "nature_charge": "frais",
+      "profil_facturation": "forfait_ou_frais",
+      "profil_facturation_champs": [
+        "date_operation",
+        "description_frais",
+        "montant_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword_or_account:administratif"
+    },
+    {
+      "article_source": "TM HT",
+      "article_canonique": "tm ht",
+      "categorie": "charges_externes",
+      "sous_categorie": "frais_service",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "tm",
+        "ht"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [
+        "4632A"
+      ],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+      "source_invoice_ids": [
+        "fr_bd_519665103:82696caf-1a22-4f64-975f-64bdb8ef57cb"
+      ],
+      "compte_comptable": "627",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 361,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "frais_administratifs_et_bancaires",
+      "nature_charge": "frais",
+      "profil_facturation": "forfait_ou_frais",
+      "profil_facturation_champs": [
+        "date_operation",
+        "description_frais",
+        "montant_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword_or_account:administratif"
+    },
+    {
+      "article_source": "Total Port",
+      "article_canonique": "total port",
+      "categorie": "charges_externes",
+      "sous_categorie": "frais_service",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "total",
+        "port"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [
+        "4632C"
+      ],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=3)",
+      "source_invoice_ids": [],
+      "compte_comptable": "624",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 483,
+      "compte_comptable_match_reason": "invoice_id_overlap=2, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "transport_et_logistique",
+      "nature_charge": "transport",
+      "profil_facturation": "prestation_ponctuelle",
+      "profil_facturation_champs": [
+        "date_prestation",
+        "description_prestation",
+        "montant_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword:transport"
+    },
+    {
+      "article_source": "Transport sur ventes",
+      "article_canonique": "transport sur ventes",
+      "categorie": "charges_externes",
+      "sous_categorie": "frais_service",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "transport",
+        "sur",
+        "ventes"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [
+        "4632C"
+      ],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6227",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 361,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "transport_et_logistique",
+      "nature_charge": "transport",
+      "profil_facturation": "prestation_ponctuelle",
+      "profil_facturation_champs": [
+        "date_prestation",
+        "description_prestation",
+        "montant_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword:transport"
+    },
+    {
+      "article_source": "ACOMPTE SUR CHARGES Du 01/01/2025 Au 28/02/2025",
+      "article_canonique": "acompte sur charges",
+      "categorie": "charges_externes",
+      "sous_categorie": "locations",
+      "tva_rate": 0.0,
+      "mots_cles": [
+        "acompte",
+        "sur",
+        "charges"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=4)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6132",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 424,
+      "compte_comptable_match_reason": "invoice_id_overlap=2, article_source_exact, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "loyers_et_charges_locatives",
+      "nature_charge": "charges_locatives",
+      "profil_facturation": "loyer_et_charges",
+      "profil_facturation_champs": [
+        "periode_debut",
+        "periode_fin",
+        "loyer_ht",
+        "charges_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword_or_account:loyer"
+    },
+    {
+      "article_source": "DESOURISATION DU 30/01/2024",
+      "article_canonique": "desourisation",
+      "categorie": "charges_externes",
+      "sous_categorie": "locations",
+      "tva_rate": 0.0,
+      "mots_cles": [
+        "desourisation"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+      "source_invoice_ids": [
+        "fr_bd_519665103:ea3966bd-6c5b-4593-9035-957402cb60cb"
+      ],
+      "compte_comptable": "613",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 301,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "entretien_et_maintenance",
+      "nature_charge": "entretien",
+      "profil_facturation": "intervention_ponctuelle",
+      "profil_facturation_champs": [
+        "date_intervention",
+        "description_intervention",
+        "montant_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword_or_account:entretien"
+    },
+    {
+      "article_source": "LOYER PRINCIPAL Du 01/01/2025 Au 31/03/2025 Indice 06 4TR2022",
+      "article_canonique": "loyer principal indice 4tr2022",
+      "categorie": "charges_externes",
+      "sous_categorie": "locations",
+      "tva_rate": 0.0,
+      "mots_cles": [
+        "loyer",
+        "principal",
+        "indice",
+        "4tr2022"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=3)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6132",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 423,
+      "compte_comptable_match_reason": "invoice_id_overlap=2, article_source_exact, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "loyers_et_charges_locatives",
+      "nature_charge": "loyer",
+      "profil_facturation": "loyer_et_charges",
+      "profil_facturation_champs": [
+        "periode_debut",
+        "periode_fin",
+        "loyer_ht",
+        "charges_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword_or_account:loyer"
+    },
+    {
+      "article_source": "SOLDE CHARGES 2024 Du 01/01/2024 Au 31/12/2024",
+      "article_canonique": "solde charges",
+      "categorie": "charges_externes",
+      "sous_categorie": "locations",
+      "tva_rate": 0.0,
+      "mots_cles": [
+        "solde",
+        "charges"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=2)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6132",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 422,
+      "compte_comptable_match_reason": "invoice_id_overlap=2, article_source_exact, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "loyers_et_charges_locatives",
+      "nature_charge": "charges_locatives",
+      "profil_facturation": "loyer_et_charges",
+      "profil_facturation_champs": [
+        "periode_debut",
+        "periode_fin",
+        "loyer_ht",
+        "charges_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword_or_account:loyer"
+    },
+    {
+      "article_source": "SOLDE CHARGES LOCATIVES 2023 Du 01/01/2023 Au 31/12/2023",
+      "article_canonique": "solde charges locatives",
+      "categorie": "charges_externes",
+      "sous_categorie": "locations",
+      "tva_rate": 0.0,
+      "mots_cles": [
+        "solde",
+        "charges",
+        "locatives"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+      "source_invoice_ids": [
+        "fr_bd_519665103:ea3966bd-6c5b-4593-9035-957402cb60cb"
+      ],
+      "compte_comptable": "613",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 301,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "loyers_et_charges_locatives",
+      "nature_charge": "charges_locatives",
+      "profil_facturation": "loyer_et_charges",
+      "profil_facturation_champs": [
+        "periode_debut",
+        "periode_fin",
+        "loyer_ht",
+        "charges_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword_or_account:loyer"
+    },
+    {
+      "article_source": "Total Port",
+      "article_canonique": "total port",
+      "categorie": "charges_externes",
+      "sous_categorie": "transport",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "total",
+        "port"
+      ],
+      "fournisseur_type": "service",
+      "ape_context": [
+        "4632C"
+      ],
+      "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+      "source_invoice_ids": [],
+      "compte_comptable": "624",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 483,
+      "compte_comptable_match_reason": "invoice_id_overlap=2, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "sous_profil": "transport_et_logistique",
+      "nature_charge": "transport",
+      "profil_facturation": "prestation_ponctuelle",
+      "profil_facturation_champs": [
+        "date_prestation",
+        "description_prestation",
+        "montant_ht"
+      ],
+      "classification_version": "charges_externes_rules_v1",
+      "classification_reason": "keyword:transport"
+    }
+  ],
+  "a_valider": []
+}

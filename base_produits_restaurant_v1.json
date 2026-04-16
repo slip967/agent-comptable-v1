@@ -1,0 +1,1251 @@
+{
+    "meta":  {
+                 "profile_id":  "produits_restaurant_v1",
+                 "metier":  "restaurant",
+                 "client_siren":  "519665103",
+                 "partition_prefix":  "fr_bd_519665103",
+                 "version":  "v1",
+                 "status":  "draft",
+                 "items_count":  45,
+                 "cleanup_note":  "Nettoyage manuel: suppression charges_externes en base metier + dedoublonnage produits.",
+                 "source_invoice_ids_note":  "Jusqu a 30 invoice_id source par article_source depuis invoice_form.",
+                 "accounts_enrichment":  {
+                                             "reference_file":  "v1_519665103_reference_base_exploitation_v1.json",
+                                             "matched_items":  2,
+                                             "unmatched_items":  0,
+                                             "already_present":  0
+                                         },
+                 "accounts_alignment_from_abt3fec2":  {
+                                                          "db":  "abt3fec2",
+                                                          "selector":  "p=entry + invoice exists + _id not contains generated",
+                                                          "changed_items":  1,
+                                                          "unchanged_items":  0,
+                                                          "no_signal_items":  1,
+                                                          "min_confidence":  0.55
+                                                      },
+                 "invoice_source_enrichment":  {
+                                                   "db_factures":  "abt3",
+                                                   "match_rule":  "invoice_form.line_items.description == article_source (normalise)",
+                                                   "year_filter":  "none",
+                                                   "changed_items":  0,
+                                                   "added_invoice_ids_total":  0
+                                               },
+                 "restaurant_expansion_from_invoice_form":  {
+                                                                "added_items":  15,
+                                                                "target_total":  45,
+                                                                "source":  "invoice_form",
+                                                                "rule":  "account startswith 60 + metier keyword filters + lexical quality"
+                                                            },
+                 "keywords_cleanup_single_char_and_zero_v1":  {
+                                                                  "removed_single_char_keywords":  20,
+                                                                  "fixed_ocr_zero_to_o_keywords":  0,
+                                                                  "deduplicated_keywords":  0,
+                                                                  "items_touched":  12,
+                                                                  "total_keywords_before":  188,
+                                                                  "total_keywords_after":  168,
+                                                                  "rules":  [
+                                                                                "remove keywords with length \u003c= 1",
+                                                                                "replace 0 with o only when 0 is adjacent to letters"
+                                                                            ]
+                                                              },
+                 "text_normalization_v2":  {
+                                               "updated_at":  "2026-04-13T17:20:47.966548Z",
+                                               "rows_touched":  0,
+                                               "article_source_updated":  0,
+                                               "article_canonique_updated":  0,
+                                               "mots_cles_updated":  0,
+                                               "rule":  "remove special chars (including % * +), fix OCR 0/O in words, normalize canon + keywords"
+                                           },
+                 "account_normalization_v1":  {
+                                                  "rule":  "trim trailing zeros for padded compte_comptable values when length \u003e 3",
+                                                  "changed_items":  14,
+                                                  "normalized_pairs":  [
+                                                                           {
+                                                                               "old":  "60610000",
+                                                                               "new":  "6061",
+                                                                               "count":  10
+                                                                           },
+                                                                           {
+                                                                               "old":  "60620000",
+                                                                               "new":  "6062",
+                                                                               "count":  2
+                                                                           },
+                                                                           {
+                                                                               "old":  "606200",
+                                                                               "new":  "6062",
+                                                                               "count":  2
+                                                                           }
+                                                                       ]
+                                              },
+                 "account_verification_v1":  {
+                                                 "class_6_only":  true,
+                                                 "suspicious_accounts":  [
+
+                                                                         ]
+                                             }
+             },
+    "items":  [
+                  {
+                      "article_source":  "FILM ALIMENTAIRE 45CM X 300M EN BOITE DISTRIBUTRICE AVEC LAME",
+                      "article_canonique":  "film alimentaire 45cm x 300m en boite distributrice avec lame",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "emballage",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "boite",
+                                        "emballage",
+                                        "emporter"
+                                    ],
+                      "fournisseur_type":  "consommables",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:2b654cc7-770b-4ca9-8013-83c3e2e8795f"
+                                             ],
+                      "compte_comptable":  "6062",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  231,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, category_match, occurrences_bonus",
+                      "compte_comptable_validation_status":  "valide_auto_ok_2026-04-09",
+                      "compte_comptable_validation_note":  "Ancien statut moteur: validation_humaine (top_candidates_too_close). Compte conserve."
+                  },
+                  {
+                      "article_source":  "HUILE TOURNESOL 1L x15 MAUREL",
+                      "article_canonique":  "huile tournesol 1l x15 maurel",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "huile",
+                                        "friture"
+                                    ],
+                      "fournisseur_type":  "grossiste alimentaire",
+                      "ape_context":  [
+                                          "5610A"
+                                      ],
+                      "notes":  "",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:07bd8534-6098-40a4-8bdf-d90d05a04de1",
+                                                 "fr_bd_519665103:18253df1-7756-45e6-a507-e571c6d48cde"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "abt3fec2_entry_invoice_block_v1",
+                      "compte_comptable_match_score":  100,
+                      "compte_comptable_match_reason":  "votes=607:1; confidence=1.00; invoices=fr_bd_519665103:07bd8534-6098-40a4-8bdf-d90d05a04de1",
+                      "compte_comptable_validation_status":  "valide_auto_ok_2026-04-09",
+                      "compte_comptable_validation_note":  "Ajustement manuel valide: 6062 -\u003e 6010 (matiere premiere alimentaire restaurant, TVA 5.5)."
+                  },
+                  {
+                      "article_source":  "HARISSA 1/2",
+                      "article_canonique":  "harissa 1 2",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "harissa"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=5)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+                                                 "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618",
+                                                 "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4",
+                                                 "fr_bd_519665103:587b8d6c-a35f-48c7-a88b-dd7522562fdf",
+                                                 "fr_bd_519665103:780660eb-fd47-4d75-a51e-0d0ee64b474e"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  255,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "HARISSA 1/6",
+                      "article_canonique":  "harissa 1 6",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "harissa"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=5)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f",
+                                                 "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4",
+                                                 "fr_bd_519665103:64cfb123-6244-4010-9c48-8a3e3d1d5d0b",
+                                                 "fr_bd_519665103:cd809da0-f24c-4302-989d-ec7fbecfb020",
+                                                 "fr_bd_519665103:780660eb-fd47-4d75-a51e-0d0ee64b474e"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  255,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "HARISSA TUBE 70g",
+                      "article_canonique":  "harissa tube 70g",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "harissa",
+                                        "tube",
+                                        "70g"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=5)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:75334608-dc1c-4605-bb88-1b7ca0b5b8fd",
+                                                 "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+                                                 "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618",
+                                                 "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4",
+                                                 "fr_bd_519665103:780660eb-fd47-4d75-a51e-0d0ee64b474e"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  255,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "OLIVE VERTE DENOYAUTEE",
+                      "article_canonique":  "olive verte denoyautee",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "olive",
+                                        "verte",
+                                        "denoyautee"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=5)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+                                                 "fr_bd_519665103:e4345936-ed42-4d14-85d1-69bd52325db9",
+                                                 "fr_bd_519665103:65afe443-ded1-4f32-a87e-3e226e82b376",
+                                                 "fr_bd_519665103:587b8d6c-a35f-48c7-a88b-dd7522562fdf",
+                                                 "fr_bd_519665103:1d759b9d-7590-416c-83c8-b38a8b2f258f"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  255,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "HARISSA 4/4",
+                      "article_canonique":  "harissa 4 4",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "harissa"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=4)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f",
+                                                 "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618",
+                                                 "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4",
+                                                 "fr_bd_519665103:780660eb-fd47-4d75-a51e-0d0ee64b474e"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  254,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "OLIVE NOIRE FACON GRECE 8KG",
+                      "article_canonique":  "olive noire facon grece 8kg",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "olive",
+                                        "noire",
+                                        "facon",
+                                        "grece",
+                                        "8kg"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=4)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:e9224be4-4f30-4e81-a798-82ce078859f3",
+                                                 "fr_bd_519665103:08771ce5-6789-496f-b2d8-7aed273ff81d",
+                                                 "fr_bd_519665103:daf56281-e414-4b70-bc05-8ecbdbfd7be9",
+                                                 "fr_bd_519665103:62641d04-e406-4a41-a529-6e91e4ccc9fe"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  254,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "OLIVE VIOLETE",
+                      "article_canonique":  "olive violete",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "olive",
+                                        "violete"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=4)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f",
+                                                 "fr_bd_519665103:e4345936-ed42-4d14-85d1-69bd52325db9",
+                                                 "fr_bd_519665103:587b8d6c-a35f-48c7-a88b-dd7522562fdf",
+                                                 "fr_bd_519665103:1d759b9d-7590-416c-83c8-b38a8b2f258f"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  254,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "COCA COLA BOITE 33CLX24",
+                      "article_canonique":  "coca cola boite 33clx24",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "emballage",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "coca",
+                                        "cola",
+                                        "boite",
+                                        "33clx24"
+                                    ],
+                      "fournisseur_type":  "fournisseur non alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=3)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:3b9d68bf-89d2-4ae5-986b-e0a3ba82216a",
+                                                 "fr_bd_519665103:5244a230-47d5-4aea-aa1d-21cb1687cf8f",
+                                                 "fr_bd_519665103:a3430f7d-47b6-471a-aca2-d64803cac2ec"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  253,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "Harissa Berbére 350g",
+                      "article_canonique":  "harissa berbere 350g",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  0.0,
+                      "mots_cles":  [
+                                        "harissa",
+                                        "berbere",
+                                        "350g"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=3)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:f11739e3-377a-4fe4-8dde-5597a9b0103a",
+                                                 "fr_bd_519665103:b11ea9c4-42a6-4c52-82f2-a7d697f10bd2",
+                                                 "fr_bd_519665103:dafe530c-f5f1-4739-95d5-544c4a2274ad"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  253,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "COLORANT ORANGE ALIMENTAIRE E110",
+                      "article_canonique":  "colorant orange alimentaire e110",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "colorant",
+                                        "orange",
+                                        "alimentaire",
+                                        "e110"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=2)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:178fa06f-4860-498d-9b5d-c26c4ca2b3c8",
+                                                 "fr_bd_519665103:25b16df8-ef99-4b11-a0a0-01868d86b1a4"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  252,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "COLORANT ROUGE ALIMENTAIRE E124 1KG",
+                      "article_canonique":  "colorant rouge alimentaire e124 1kg",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "colorant",
+                                        "rouge",
+                                        "alimentaire",
+                                        "e124",
+                                        "1kg"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=2)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:65be3faf-ca0a-462b-adfd-096d485e4d9d",
+                                                 "fr_bd_519665103:2d7add17-43b7-42cc-a5b5-33c8338bcfbc"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  252,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "CONCAR 100 ROUGE (COLORANT)",
+                      "article_canonique":  "concar 100 rouge colorant",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "concar",
+                                        "100",
+                                        "rouge",
+                                        "colorant"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=2)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:29017d1b-bfb8-492d-940c-9bb11257cc1c",
+                                                 "fr_bd_519665103:985de3cc-b0fb-4c6a-b644-0940cd1287f0"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  252,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "Colorant Alimentaire bocal",
+                      "article_canonique":  "colorant alimentaire bocal",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  2.0,
+                      "mots_cles":  [
+                                        "colorant",
+                                        "alimentaire",
+                                        "bocal"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=2)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:75334608-dc1c-4605-bb88-1b7ca0b5b8fd",
+                                                 "fr_bd_519665103:3ee42288-cb45-47bc-92a0-9938a2c6ab1f"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  252,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "HUILE D\u0027OLIVE EL HORA",
+                      "article_canonique":  "huile d olive el hora",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "huile",
+                                        "olive",
+                                        "el",
+                                        "hora"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=2)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+                                                 "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  252,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "HUILE DE TOURNESOL 1LITRE",
+                      "article_canonique":  "huile de tournesol 1litre",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "huile",
+                                        "tournesol",
+                                        "1litre"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=2)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:e4345936-ed42-4d14-85d1-69bd52325db9",
+                                                 "fr_bd_519665103:906ccca8-bc85-4ff8-b522-538870f48735"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  252,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "OLIVE VERTES CASSE PICQUANT",
+                      "article_canonique":  "olive vertes casse picquant",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "olive",
+                                        "vertes",
+                                        "casse",
+                                        "picquant"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=2)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f",
+                                                 "fr_bd_519665103:e4345936-ed42-4d14-85d1-69bd52325db9"
+                                             ],
+                      "compte_comptable":  "6062",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  252,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "PERSIL AL ARCH 30G X 20",
+                      "article_canonique":  "persil al arch 30g x 20",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "persil",
+                                        "al",
+                                        "arch",
+                                        "30g",
+                                        "20"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=2)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:587b8d6c-a35f-48c7-a88b-dd7522562fdf",
+                                                 "fr_bd_519665103:780660eb-fd47-4d75-a51e-0d0ee64b474e"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  252,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "Persil Entier 50g",
+                      "article_canonique":  "persil entier 50g",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "persil",
+                                        "entier",
+                                        "50g"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=2)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:1edd3148-f603-4639-a5af-3b70db2ecd0e",
+                                                 "fr_bd_519665103:3ee42288-cb45-47bc-92a0-9938a2c6ab1f"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  252,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "THON NAVIGATEUR 1/2",
+                      "article_canonique":  "thon navigateur 1 2",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "thon",
+                                        "navigateur"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=2)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4",
+                                                 "fr_bd_519665103:780660eb-fd47-4d75-a51e-0d0ee64b474e"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  252,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "THON PISCAMAR",
+                      "article_canonique":  "thon piscamar",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "thon",
+                                        "piscamar"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=2)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4",
+                                                 "fr_bd_519665103:906ccca8-bc85-4ff8-b522-538870f48735"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  252,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "Thon a I\u0027huile Grand pecheur 1/2",
+                      "article_canonique":  "thon a i huile grand pecheur 1 2",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  0.0,
+                      "mots_cles":  [
+                                        "thon",
+                                        "huile",
+                                        "grand",
+                                        "pecheur"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=2)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:b11ea9c4-42a6-4c52-82f2-a7d697f10bd2",
+                                                 "fr_bd_519665103:dafe530c-f5f1-4739-95d5-544c4a2274ad"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  252,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "Boite LAMELLES 9 P COUTEAU B",
+                      "article_canonique":  "boite lamelles 9 p couteau b",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "emballage",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "boite",
+                                        "lamelles",
+                                        "couteau"
+                                    ],
+                      "fournisseur_type":  "fournisseur non alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:88b3814b-e3aa-4439-b4d2-3bb6d2910006"
+                                             ],
+                      "compte_comptable":  "6063",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "CANELLE BATON AL ARCH SACHET 50G X20",
+                      "article_canonique":  "canelle baton al arch sachet 50g x20",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "emballage",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "canelle",
+                                        "baton",
+                                        "al",
+                                        "arch",
+                                        "sachet",
+                                        "50g"
+                                    ],
+                      "fournisseur_type":  "fournisseur non alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:587b8d6c-a35f-48c7-a88b-dd7522562fdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "COCA COLA BOITE 33CL",
+                      "article_canonique":  "coca cola boite 33cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "emballage",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "coca",
+                                        "cola",
+                                        "boite",
+                                        "33cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur non alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:98257628-57f5-4936-825e-b387dc533697"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "COULEUR ALIMENTAIRE",
+                      "article_canonique":  "couleur alimentaire",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "couleur",
+                                        "alimentaire"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "EP.COL.OR.M. COLORANT ORANGE ALIMENTAIRE E110",
+                      "article_canonique":  "ep col or m colorant orange alimentaire e110",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "ep",
+                                        "col",
+                                        "or",
+                                        "colorant",
+                                        "orange"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:866c30c8-3bfb-488a-a046-2aeeee19e780"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "HARISSA TUBE 70GR SICAM X24 Lot:-",
+                      "article_canonique":  "harissa tube 70gr sicam x24 lot",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "harissa",
+                                        "tube",
+                                        "70gr",
+                                        "sicam",
+                                        "x24",
+                                        "lot"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:c2710c86-9f7e-4be3-9c6b-534b17342bdb"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "HARISSA TUBE BOITE 70G X 12",
+                      "article_canonique":  "harissa tube boite 70g x 12",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "emballage",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "harissa",
+                                        "tube",
+                                        "boite",
+                                        "70g",
+                                        "12"
+                                    ],
+                      "fournisseur_type":  "fournisseur non alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:c32ed4b4-4f54-4878-b199-389507e4eec9"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "HARISSA TUBE BOITE70G X 12",
+                      "article_canonique":  "harissa tube boite70g x 12",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "harissa",
+                                        "tube",
+                                        "boite70g",
+                                        "12"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:184cafe8-5a3e-4cb3-ae84-ef8d23568b4d"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "HUILE TOURNESOL 25L MAUREL BIDON",
+                      "article_canonique":  "huile tournesol 25l maurel bidon",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "huile",
+                                        "tournesol",
+                                        "25l",
+                                        "maurel",
+                                        "bidon"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:aa749506-46e5-4227-b000-3dc0e7fd8ba2"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "Huile d\u0027olive TASSOURT 1L",
+                      "article_canonique":  "huile d olive tassourt 1l",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "huile",
+                                        "olive",
+                                        "tassourt",
+                                        "1l"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "Mille SAC BRETELLES BLANC 26 12X45 (C500)",
+                      "article_canonique":  "mille sac bretelles blanc 26 12x45 c500",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "emballage",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "mille",
+                                        "sac",
+                                        "bretelles",
+                                        "blanc",
+                                        "26",
+                                        "12x45"
+                                    ],
+                      "fournisseur_type":  "fournisseur non alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:88b3814b-e3aa-4439-b4d2-3bb6d2910006"
+                                             ],
+                      "compte_comptable":  "6063",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "OEUFS FILM BLANC MOYEN FR X300 cat:1 Lot 3593",
+                      "article_canonique":  "oeufs film blanc moyen fr x300 cat 1 lot 3593",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "emballage",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "oeufs",
+                                        "film",
+                                        "blanc",
+                                        "moyen",
+                                        "fr",
+                                        "x300"
+                                    ],
+                      "fournisseur_type":  "fournisseur non alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:913c7a9a-4bbf-4ca5-9765-f5d0accc8511"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "OEUFS FILM BLANC MOYEN FR X360",
+                      "article_canonique":  "oeufs film blanc moyen fr x360",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "emballage",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "oeufs",
+                                        "film",
+                                        "blanc",
+                                        "moyen",
+                                        "fr",
+                                        "x360"
+                                    ],
+                      "fournisseur_type":  "fournisseur non alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:6d179c12-379d-4856-9a93-f14c3b261251"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "OEUFS FILM TEINTE MOYEN FR X300",
+                      "article_canonique":  "oeufs film teinte moyen fr x300",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "emballage",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "oeufs",
+                                        "film",
+                                        "teinte",
+                                        "moyen",
+                                        "fr",
+                                        "x300"
+                                    ],
+                      "fournisseur_type":  "fournisseur non alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:6d179c12-379d-4856-9a93-f14c3b261251"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "OEUFS FILM TEINTE MOYEN FR X300 cat:1 Lot 3594 3FRSGU02 21/05/2025",
+                      "article_canonique":  "oeufs film teinte moyen fr x300 cat 1 lot 3594 3frsgu02 21 05 2025",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "emballage",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "oeufs",
+                                        "film",
+                                        "teinte",
+                                        "moyen",
+                                        "fr",
+                                        "x300"
+                                    ],
+                      "fournisseur_type":  "fournisseur non alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:913c7a9a-4bbf-4ca5-9765-f5d0accc8511"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "OLIVE DENOYAUTEE 4/4 12",
+                      "article_canonique":  "olive denoyautee 4 4 12",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "olive",
+                                        "denoyautee",
+                                        "12"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:64cfb123-6244-4010-9c48-8a3e3d1d5d0b"
+                                             ],
+                      "compte_comptable":  "6062",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "OLIVE FACON GREC AVEC NOYAUX",
+                      "article_canonique":  "olive facon grec avec noyaux",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "olive",
+                                        "facon",
+                                        "grec",
+                                        "noyaux"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f"
+                                             ],
+                      "compte_comptable":  "6062",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "OLIVE MEXICANE",
+                      "article_canonique":  "olive mexicane",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "olive",
+                                        "mexicane"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:1d759b9d-7590-416c-83c8-b38a8b2f258f"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "OLIVE MEXICANE PIQUANT",
+                      "article_canonique":  "olive mexicane piquant",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "olive",
+                                        "mexicane",
+                                        "piquant"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:1d759b9d-7590-416c-83c8-b38a8b2f258f"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "OLIVE NOIRE FACON GRECE 8KG Lot:-",
+                      "article_canonique":  "olive noire facon grece 8kg lot",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "olive",
+                                        "noire",
+                                        "facon",
+                                        "grece",
+                                        "8kg",
+                                        "lot"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:555b0d33-a722-4d99-9ea9-cacb9031f503"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "OLIVE NOIRE GRECQUE 8 KG",
+                      "article_canonique":  "olive noire grecque 8 kg",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "olive",
+                                        "noire",
+                                        "grecque"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:e4345936-ed42-4d14-85d1-69bd52325db9"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "OLIVE RONDELLE 6",
+                      "article_canonique":  "olive rondelle 6",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "olive",
+                                        "rondelle"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:587b8d6c-a35f-48c7-a88b-dd7522562fdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  }
+              ],
+    "a_valider":  [
+
+                  ]
+}

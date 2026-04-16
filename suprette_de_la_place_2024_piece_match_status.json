@@ -1,0 +1,1835 @@
+{
+  "source_fec": "FEC 2024 - SUPRETTE DE LA PLACE.txt",
+  "purchase_piece_count": 141,
+  "matched_piece_count": 4,
+  "no_match_piece_count": 137,
+  "pieces": [
+    {
+      "piece": "AC0038",
+      "date": "01/01/2024",
+      "supplier": [
+        "BOUYGUES",
+        "METRO"
+      ],
+      "amount": -10.16000000000004,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0194",
+      "date": "01/01/2024",
+      "supplier": [
+        "HAUDECOEUR",
+        "NES GROSSISTE"
+      ],
+      "amount": 69.34000000000002,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0070",
+      "date": "01/01/2024",
+      "supplier": [
+        "IDF DISTRIBUTION",
+        "METRO"
+      ],
+      "amount": -1688.26,
+      "label_count": 9,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0072",
+      "date": "01/01/2024",
+      "supplier": [
+        "IDF DISTRIBUTION",
+        "METRO"
+      ],
+      "amount": -950.6499999999999,
+      "label_count": 9,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0089",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND",
+        "METRO"
+      ],
+      "amount": -974.3399999999999,
+      "label_count": 12,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0181",
+      "date": "01/01/2024",
+      "supplier": [
+        "NEW FRUITS",
+        "QUIMANAGE"
+      ],
+      "amount": 29.990000000000006,
+      "label_count": 9,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0010",
+      "date": "01/01/2024",
+      "supplier": [
+        "ENGIE",
+        "ST MICHEL MAGASIN"
+      ],
+      "amount": -53.59,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0199",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE",
+        "WDL PREPAID SERVICES"
+      ],
+      "amount": -322.65,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0214",
+      "date": "01/01/2024",
+      "supplier": [
+        "TROPIC ISLAND",
+        "WDL PREPAID SERVICES"
+      ],
+      "amount": -380.78000000000003,
+      "label_count": 6,
+      "matched_labels": 4,
+      "status": "matched",
+      "top_matches": [
+        {
+          "score": 0.95,
+          "fec_label": "TROPIC ISLAND",
+          "base_article_source": "TROPIC ISLAND 3",
+          "base_account": "607",
+          "seq": 0.93,
+          "jaccard": 1.0
+        },
+        {
+          "score": 0.95,
+          "fec_label": "TROPIC ISLAND",
+          "base_article_source": "TROPIC ISLAND 3",
+          "base_account": "607",
+          "seq": 0.93,
+          "jaccard": 1.0
+        },
+        {
+          "score": 0.95,
+          "fec_label": "TROPIC ISLAND",
+          "base_article_source": "TROPIC ISLAND 3",
+          "base_account": "607",
+          "seq": 0.93,
+          "jaccard": 1.0
+        },
+        {
+          "score": 0.95,
+          "fec_label": "TROPIC ISLAND",
+          "base_article_source": "TROPIC ISLAND 3",
+          "base_account": "607",
+          "seq": 0.93,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "piece": "AC0215",
+      "date": "01/01/2024",
+      "supplier": [
+        "TROPIC ISLAND",
+        "WDL PREPAID SERVICES"
+      ],
+      "amount": -323.44,
+      "label_count": 5,
+      "matched_labels": 3,
+      "status": "matched",
+      "top_matches": [
+        {
+          "score": 0.95,
+          "fec_label": "TROPIC ISLAND",
+          "base_article_source": "TROPIC ISLAND 3",
+          "base_account": "607",
+          "seq": 0.93,
+          "jaccard": 1.0
+        },
+        {
+          "score": 0.95,
+          "fec_label": "TROPIC ISLAND",
+          "base_article_source": "TROPIC ISLAND 3",
+          "base_account": "607",
+          "seq": 0.93,
+          "jaccard": 1.0
+        },
+        {
+          "score": 0.95,
+          "fec_label": "TROPIC ISLAND",
+          "base_article_source": "TROPIC ISLAND 3",
+          "base_account": "607",
+          "seq": 0.93,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "piece": "AC0001",
+      "date": "01/01/2024",
+      "supplier": [
+        "ENGIE",
+        "WDL PREPAID SERVICES"
+      ],
+      "amount": 285.31,
+      "label_count": 14,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0002",
+      "date": "01/01/2024",
+      "supplier": [
+        "ENGIE"
+      ],
+      "amount": 87.13999999999996,
+      "label_count": 12,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0003",
+      "date": "01/01/2024",
+      "supplier": [
+        "ENGIE"
+      ],
+      "amount": 139.83000000000004,
+      "label_count": 9,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0004",
+      "date": "01/01/2024",
+      "supplier": [
+        "ENGIE"
+      ],
+      "amount": 115.87,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0005",
+      "date": "01/01/2024",
+      "supplier": [
+        "ENGIE"
+      ],
+      "amount": 82.36999999999998,
+      "label_count": 10,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0008",
+      "date": "01/01/2024",
+      "supplier": [
+        "ENGIE"
+      ],
+      "amount": 172.66999999999996,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0009",
+      "date": "01/01/2024",
+      "supplier": [
+        "ENGIE"
+      ],
+      "amount": 344.7,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0021",
+      "date": "01/01/2024",
+      "supplier": [
+        "AGIDRAA"
+      ],
+      "amount": 32.160000000000025,
+      "label_count": 10,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0022",
+      "date": "01/01/2024",
+      "supplier": [
+        "AGIDRAA"
+      ],
+      "amount": 97.84000000000002,
+      "label_count": 9,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0023",
+      "date": "01/01/2024",
+      "supplier": [
+        "EUROBIS"
+      ],
+      "amount": 34.73000000000017,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0024",
+      "date": "01/01/2024",
+      "supplier": [
+        "EUROBIS"
+      ],
+      "amount": 72.63999999999994,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0025",
+      "date": "01/01/2024",
+      "supplier": [
+        "EUROBIS"
+      ],
+      "amount": 88.2600000000001,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0026",
+      "date": "01/01/2024",
+      "supplier": [
+        "EUROBIS"
+      ],
+      "amount": 164.39,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0027",
+      "date": "01/01/2024",
+      "supplier": [
+        "IDF DISTRIBUTION"
+      ],
+      "amount": 8.19999999999997,
+      "label_count": 4,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0028",
+      "date": "01/01/2024",
+      "supplier": [
+        "IDF DISTRIBUTION"
+      ],
+      "amount": 6.259999999999986,
+      "label_count": 4,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0029",
+      "date": "01/01/2024",
+      "supplier": [
+        "IDF DISTRIBUTION"
+      ],
+      "amount": 8.200000000000014,
+      "label_count": 4,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0030",
+      "date": "01/01/2024",
+      "supplier": [
+        "IDF DISTRIBUTION"
+      ],
+      "amount": 312.3200000000002,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0031",
+      "date": "01/01/2024",
+      "supplier": [
+        "IDF DISTRIBUTION"
+      ],
+      "amount": 111.0500000000001,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0032",
+      "date": "01/01/2024",
+      "supplier": [
+        "IDF DISTRIBUTION"
+      ],
+      "amount": 36.08000000000001,
+      "label_count": 6,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0033",
+      "date": "01/01/2024",
+      "supplier": [
+        "IDF DISTRIBUTION"
+      ],
+      "amount": 109.98999999999982,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0034",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 100.47999999999999,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0035",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 60.41999999999999,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0036",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 32.53000000000002,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0037",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 284.65999999999997,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0039",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 207.14999999999998,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0040",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 157.48000000000002,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0041",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 350.27,
+      "label_count": 10,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0042",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 125.62999999999998,
+      "label_count": 6,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0043",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 65.64999999999999,
+      "label_count": 6,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0044",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 66.78999999999996,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0046",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 65.6,
+      "label_count": 9,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0047",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 110.57999999999997,
+      "label_count": 9,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0048",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 21.100000000000005,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0049",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 393.16999999999996,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0050",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 402.72,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0051",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 472.88,
+      "label_count": 6,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0052",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 410.17,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0053",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 413.77000000000004,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0054",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 405.05999999999995,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0055",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 377.85,
+      "label_count": 6,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0056",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 522.14,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0057",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 422.40000000000003,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0058",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 351.03,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0059",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 351.03,
+      "label_count": 4,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0060",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 351.03,
+      "label_count": 4,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0061",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": -88.93999999999998,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0064",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 75.90999999999998,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0066",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 95.05,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0067",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 60.32999999999997,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0068",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 82.44999999999997,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0069",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 236.09,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0071",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 49.62999999999997,
+      "label_count": 6,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0073",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 170.98000000000002,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0074",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 88.84999999999998,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0076",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 363.99,
+      "label_count": 6,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0079",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 97.41999999999999,
+      "label_count": 6,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0080",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 119.82999999999998,
+      "label_count": 9,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0081",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 106.5,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0082",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 115.07999999999998,
+      "label_count": 9,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0083",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 141.22,
+      "label_count": 9,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0084",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 370.61,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0085",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 351.99999999999994,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0086",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 380.85999999999996,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0087",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 427.98999999999995,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0088",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 371.13000000000005,
+      "label_count": 6,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0090",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 122.81,
+      "label_count": 9,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0149",
+      "date": "01/01/2024",
+      "supplier": [
+        "ALIMEX"
+      ],
+      "amount": 79.22000000000016,
+      "label_count": 10,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0150",
+      "date": "01/01/2024",
+      "supplier": [
+        "ALIMEX"
+      ],
+      "amount": 14.230000000000018,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0164",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "amount": 219.48,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0165",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "amount": 156.47000000000006,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0167",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "amount": 155.51000000000008,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0168",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "amount": 243.67000000000004,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0169",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "amount": 122.55000000000007,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0170",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "amount": 109.57999999999997,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0171",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "amount": 121.52999999999996,
+      "label_count": 6,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0172",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "amount": 68.03000000000004,
+      "label_count": 9,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0173",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "amount": 53.459999999999894,
+      "label_count": 9,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0174",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "amount": 176.16,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0175",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "amount": 82.32000000000008,
+      "label_count": 9,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0176",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "amount": -3399.35,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0177",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "amount": 402.56,
+      "label_count": 6,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0180",
+      "date": "01/01/2024",
+      "supplier": [
+        "NEW FRUITS"
+      ],
+      "amount": 60.82999999999999,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0182",
+      "date": "01/01/2024",
+      "supplier": [
+        "NEW FRUITS"
+      ],
+      "amount": 49.33999999999999,
+      "label_count": 8,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0183",
+      "date": "01/01/2024",
+      "supplier": [
+        "NEW FRUITS"
+      ],
+      "amount": -21.259999999999987,
+      "label_count": 6,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0184",
+      "date": "01/01/2024",
+      "supplier": [
+        "NEW FRUITS"
+      ],
+      "amount": 6.999999999999993,
+      "label_count": 4,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0185",
+      "date": "01/01/2024",
+      "supplier": [
+        "NEW FRUITS"
+      ],
+      "amount": 26.319999999999997,
+      "label_count": 6,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0186",
+      "date": "01/01/2024",
+      "supplier": [
+        "NEW FRUITS"
+      ],
+      "amount": 29.999999999999993,
+      "label_count": 4,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0187",
+      "date": "01/01/2024",
+      "supplier": [
+        "NESPRESSO FRANCE"
+      ],
+      "amount": 7.0000000000000195,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0188",
+      "date": "01/01/2024",
+      "supplier": [
+        "NESPRESSO FRANCE"
+      ],
+      "amount": 49.51000000000001,
+      "label_count": 6,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0189",
+      "date": "01/01/2024",
+      "supplier": [
+        "NESPRESSO FRANCE"
+      ],
+      "amount": 22.060000000000024,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0190",
+      "date": "01/01/2024",
+      "supplier": [
+        "NESPRESSO FRANCE"
+      ],
+      "amount": 30.000000000000007,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0195",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "amount": 49.0,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0196",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "amount": 3.999999999999968,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0197",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "amount": 30.000000000000007,
+      "label_count": 4,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0198",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "amount": 4.000000000000043,
+      "label_count": 4,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0200",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "amount": 30.000000000000014,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0201",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "amount": 3.999999999999961,
+      "label_count": 4,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0202",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "amount": 30.00000000000003,
+      "label_count": 4,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0203",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "amount": 4.000000000000005,
+      "label_count": 4,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0204",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "amount": 4.000000000000014,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0205",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "amount": 29.999999999999993,
+      "label_count": 4,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0206",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "amount": 17.000000000000007,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0207",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "amount": -48.39999999999994,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0208",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "amount": 59.9999999999998,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0209",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "amount": 63.40000000000002,
+      "label_count": 4,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0210",
+      "date": "01/01/2024",
+      "supplier": [
+        "CARREFOUR"
+      ],
+      "amount": 45.38,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0213",
+      "date": "01/01/2024",
+      "supplier": [
+        "SODIMA"
+      ],
+      "amount": 8.199999999999998,
+      "label_count": 4,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0245",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "amount": 309.98000000000013,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0246",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "amount": 335.98,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0247",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "amount": 322.96000000000015,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0249",
+      "date": "01/01/2024",
+      "supplier": [
+        "ENGIE"
+      ],
+      "amount": 348.96,
+      "label_count": 6,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0250",
+      "date": "01/01/2024",
+      "supplier": [
+        "IDF DISTRIBUTION"
+      ],
+      "amount": 17.259999999999813,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0252",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "amount": 17.25999999999997,
+      "label_count": 6,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0255",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 30.000000000000014,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0257",
+      "date": "01/01/2024",
+      "supplier": [
+        "TROPIC ISLAND"
+      ],
+      "amount": 132.03000000000011,
+      "label_count": 6,
+      "matched_labels": 4,
+      "status": "matched",
+      "top_matches": [
+        {
+          "score": 0.95,
+          "fec_label": "TROPIC ISLAND",
+          "base_article_source": "TROPIC ISLAND 3",
+          "base_account": "607",
+          "seq": 0.93,
+          "jaccard": 1.0
+        },
+        {
+          "score": 0.95,
+          "fec_label": "TROPIC ISLAND",
+          "base_article_source": "TROPIC ISLAND 3",
+          "base_account": "607",
+          "seq": 0.93,
+          "jaccard": 1.0
+        },
+        {
+          "score": 0.95,
+          "fec_label": "TROPIC ISLAND",
+          "base_article_source": "TROPIC ISLAND 3",
+          "base_account": "607",
+          "seq": 0.93,
+          "jaccard": 1.0
+        },
+        {
+          "score": 0.95,
+          "fec_label": "TROPIC ISLAND",
+          "base_article_source": "TROPIC ISLAND 3",
+          "base_account": "607",
+          "seq": 0.93,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "piece": "AC0258",
+      "date": "01/01/2024",
+      "supplier": [
+        "TROPIC ISLAND"
+      ],
+      "amount": 159.17999999999995,
+      "label_count": 6,
+      "matched_labels": 4,
+      "status": "matched",
+      "top_matches": [
+        {
+          "score": 0.95,
+          "fec_label": "TROPIC ISLAND",
+          "base_article_source": "TROPIC ISLAND 3",
+          "base_account": "607",
+          "seq": 0.93,
+          "jaccard": 1.0
+        },
+        {
+          "score": 0.95,
+          "fec_label": "TROPIC ISLAND",
+          "base_article_source": "TROPIC ISLAND 3",
+          "base_account": "607",
+          "seq": 0.93,
+          "jaccard": 1.0
+        },
+        {
+          "score": 0.95,
+          "fec_label": "TROPIC ISLAND",
+          "base_article_source": "TROPIC ISLAND 3",
+          "base_account": "607",
+          "seq": 0.93,
+          "jaccard": 1.0
+        },
+        {
+          "score": 0.95,
+          "fec_label": "TROPIC ISLAND",
+          "base_article_source": "TROPIC ISLAND 3",
+          "base_account": "607",
+          "seq": 0.93,
+          "jaccard": 1.0
+        }
+      ]
+    },
+    {
+      "piece": "AC0006",
+      "date": "01/01/2024",
+      "supplier": [
+        "ENGIE"
+      ],
+      "amount": 31.589999999999996,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0007",
+      "date": "01/01/2024",
+      "supplier": [
+        "ENGIE"
+      ],
+      "amount": 31.409999999999926,
+      "label_count": 6,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0045",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 1221.67,
+      "label_count": 6,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0062",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 34.889999999999986,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0063",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 50.24000000000002,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0065",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 76.66000000000004,
+      "label_count": 6,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0075",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 59.88000000000002,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0077",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 71.89999999999999,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0078",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "amount": 38.27000000000005,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0151",
+      "date": "01/01/2024",
+      "supplier": [
+        "ALIMEX"
+      ],
+      "amount": 20.150000000000084,
+      "label_count": 7,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0166",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "amount": 5.639999999999948,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0178",
+      "date": "01/01/2024",
+      "supplier": [
+        "NEW FRUITS"
+      ],
+      "amount": -5.639999999999985,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "AC0179",
+      "date": "01/01/2024",
+      "supplier": [
+        "NEW FRUITS"
+      ],
+      "amount": 57.67,
+      "label_count": 4,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "24120011",
+      "date": "03/12/2024",
+      "supplier": [
+        "MKS"
+      ],
+      "amount": 1.1368683772161603e-13,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    },
+    {
+      "piece": "24120029",
+      "date": "09/12/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "amount": 0.0,
+      "label_count": 5,
+      "matched_labels": 0,
+      "status": "no_match",
+      "top_matches": []
+    }
+  ]
+}

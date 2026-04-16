@@ -1,0 +1,30 @@
+﻿invoice_id,core_profile_id,invoice_number,invoice_date,issuer_name,issuer_siren,sub_profiles,recommended_accounts,needs_split_review,status
+fr_bd_519665103:003f5876-a443-42e2-9d69-60c58f89afa5,fr_bd_519665103:2025:f8a9ae7728cf0d4a739c5cc8,160586,20/11/2024,ETABLISSEMENTS CANU,398434837,cotisations_professionnelles,6227,no,invoice_updated+core
+fr_bd_519665103:00b4a0b1-9c35-4fa1-8dcc-d22909b6a76e,fr_bd_519665103:2025:5a88e9ee5c4ba3c3435e32da,FV2505-09453,20/05/2025,AVIGROS,447915430,transport_et_logistique,6226,no,invoice_updated+core
+fr_bd_519665103:0102860e-d8dd-45a7-9aaa-1c6b35b0c49a,fr_bd_519665103:2024:9dbc47fc4486f470134152f6,FV2408-00331,01/08/2024,AVIGROS,447915430,transport_et_logistique,6226,no,invoice_updated+core
+fr_bd_519665103:02d5e7c2-3877-40fc-b589-cc7daf4784ec,fr_bd_519665103:2025:af5ca69968a517f669ae89bc,162938,30/12/2024,ETABLISSEMENTS CANU,398434837,cotisations_professionnelles,6227,no,invoice_updated+core
+fr_bd_519665103:0417048a-9942-4273-a5f6-4a1dc7e9c12c,fr_bd_519665103:2025:d4d30364ce5efdadc46fa2a2,160921,26/11/2024,ETABLISSEMENTS CANU,398434837,cotisations_professionnelles,6227,no,invoice_updated+core
+fr_bd_519665103:047ce282-1ea7-4468-b474-1ffc8b33954a,fr_bd_519665103:2025:1c1a9e7d4f61c6bb7b8870ba,FV2503-10347,20/03/2025,AVIGROS,447915430,transport_et_logistique,6226,no,invoice_updated+core
+fr_bd_519665103:09437944-54fa-4d58-b404-e954e21bfa22,fr_bd_519665103:2024:cedfebf031f826b8521826ca,G.1196233498124422454,20/08/2024,LEFORT & RAIMBERT,562129635,frais_administratifs_et_bancaires,6227,no,invoice_updated+core
+fr_bd_519665103:249fa365-db1b-45f7-957b-8f0879993396,fr_bd_519665103:2025:611bfa162b2ca87f213e1cfd,FV2506-03393,07/06/2025,AVIGROS,447915430,transport_et_logistique,6226,no,invoice_updated+core
+fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138,fr_bd_519665103:2024:3bdb7acf4444341d78ae376f,1870449,13/06/2024,BBV,392806741,cotisations_professionnelles,6227,no,invoice_updated+core
+fr_bd_519665103:2cdae330-5c7d-4696-ac7e-47511f719b32,fr_bd_519665103:2024:e891a93a9e58b154c31acefd,FA1665268,03/09/2024,TRADCO FRANCE,442947859,transport_et_logistique,6227,no,invoice_updated+core
+fr_bd_519665103:36235183-6541-4bdc-b710-599100954c57,fr_bd_519665103:2025:b21e2294d397bb4a433a1ed9,1971046,30/06/2025,BBV,392806741,cotisations_professionnelles,6281,no,invoice_updated+core
+fr_bd_519665103:3810ce6d-c1f4-46c7-bd58-c9f0bd8e2156,fr_bd_519665103:2025:7e97d7faab891f24397c0521,F001562361,08/01/2025,RUNGIS MARCHE INTERNATIONAL,662012491,frais_administratifs_et_bancaires,6226,no,invoice_updated+core
+fr_bd_519665103:4213c9ec-a70b-448d-97ea-93a75f14fd96,fr_bd_519665103:2025:ac1a54e682d6830f9c7801f6,FV2505-10242,21/05/2025,AVIGROS,447915430,transport_et_logistique,6227,no,invoice_updated+core
+fr_bd_519665103:60fab965-ca59-4781-8071-861c932c9a81,fr_bd_519665103:2025:1fbd1e8a9087fd8be2bad88e,2003538-25000069,24/03/2025,LEFORT & RAIMBERT,562129635,loyers_et_charges_locatives,6132,no,invoice_updated+core
+fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385,fr_bd_519665103:2024:99054df38c2a48293ff76c68,1832013,17/01/2024,BBV,392806741,cotisations_professionnelles,6227,no,invoice_updated+core
+fr_bd_519665103:666de54d-b140-4b30-b0f2-0146caf36a8d,fr_bd_519665103:2025:5afba64bf33f563aa04b1dbe,G.1236290905962340226,09/01/2025,LEFORT & RAIMBERT,562129635,frais_administratifs_et_bancaires,6227,no,invoice_updated+core
+fr_bd_519665103:6b649b52-1cff-4146-a224-47f59839575f,fr_bd_519665103:2024:6619efb162ad4ab1a0d3cc77,1852779,04/04/2024,BBV,392806741,cotisations_professionnelles,6227,no,invoice_updated+core
+fr_bd_519665103:775fd06b-7fff-4956-a893-221e08f7be6b,fr_bd_519665103:2024:40db93d9830907f7af5b5196,336274,12/04/2024,POMMIER TREPIN COUSIN,562048314,cotisations_professionnelles,6227,no,invoice_updated+core
+fr_bd_519665103:7967df5e-6f5a-4a15-b224-d3d40ffa4c27,fr_bd_519665103:2025:e858a85186c20d202912b2f1,FV2502-13820,28/02/2025,AVIGROS,447915430,transport_et_logistique,6226,no,invoice_updated+core
+fr_bd_519665103:7c381e05-ff06-43d5-84ff-eb701e8571ae,fr_bd_519665103:2025:04c72b632020dc54d81995fc,FV2501-05446,11/01/2025,AVIGROS,447915430,transport_et_logistique,6226,no,invoice_updated+core
+fr_bd_519665103:82696caf-1a22-4f64-975f-64bdb8ef57cb,fr_bd_519665103:2024:0a1725d6414eea287ee905f8,FR94.065.028,03/06/2024,SENV,499664563,frais_administratifs_et_bancaires,6226,no,invoice_updated+core
+fr_bd_519665103:9fd2eea5-e050-47d2-96bf-f7263217c4cf,fr_bd_519665103:2024:7bcbf0f65ae11d1feb6fa0d7,FV2406-06044,13/06/2024,AVIGROS,447915430,transport_et_logistique,6227,no,invoice_updated+core
+fr_bd_519665103:ad01d2ee-52b0-41f7-aae0-784935fcfeb9,fr_bd_519665103:2025:001ad066408f1a40ab1b0912,n-2003538-25000069,24/03/2025,LEFORT & RAIMBERT,562129635,loyers_et_charges_locatives,6132,no,invoice_updated+core
+fr_bd_519665103:b3742730-2748-49f2-acad-1d8d2a7d33a1,fr_bd_519665103:2025:5124108d66605af42f4ccc62,250400084229,01/04/2025,EURO-INFORMATION,312730674,telecom_et_abonnements,6226,no,invoice_updated+core
+fr_bd_519665103:bd4a7e12-034e-44e4-a158-a7749c465dba,fr_bd_519665103:2025:ff3e5f09c66e80a0b0207760,FV2501-07129,15/01/2025,AVIGROS,447915430,transport_et_logistique,6227,no,invoice_updated+core
+fr_bd_519665103:c76061b3-4fa9-4e2b-86ab-4ecb3515e2cf,fr_bd_519665103:2025:2c6f239c1aecbb9930504e9b,29913406/73235/0079/C6 1/1,20/01/2025,LEFORT & RAIMBERT,562129635,frais_administratifs_et_bancaires,6226 | 6227,yes,invoice_updated+core
+fr_bd_519665103:d494443e-2aa4-4ad8-84d6-f1bf18f358aa,fr_bd_519665103:2025:befbf1307cd4b2c20009c428,20014103,24/04/2025,VALOPHIS HABITAT OFFICE PUBLIC DE LHABITAT DU VAL DE MARNE,785769555,entretien_et_maintenance,6152,no,invoice_updated+core
+fr_bd_519665103:e600b785-12e5-4fcf-a9ac-49b515bca876,fr_bd_519665103:2026:54bd3dee2af1b4525aa332ff,2003057,12/11/2025,BBV,392806741,cotisations_professionnelles,6227,no,invoice_updated+core
+fr_bd_519665103:ea3966bd-6c5b-4593-9035-957402cb60cb,fr_bd_519665103:2024:1caee2963cd675601ebb63f4,2003538-24000070,25/03/2024,LEFORT & RAIMBERT,562129635,entretien_et_maintenance | loyers_et_charges_locatives,613,yes,invoice_updated+core

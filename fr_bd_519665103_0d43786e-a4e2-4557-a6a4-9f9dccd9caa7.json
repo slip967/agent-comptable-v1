@@ -1,0 +1,79 @@
+{
+  "_id": "fr_bd_519665103:0d43786e-a4e2-4557-a6a4-9f9dccd9caa7",
+  "invoice_number": "1983672",
+  "invoice_date": "28/08/2025",
+  "issuer": {
+    "name": "BBV",
+    "company_registrations": [
+      {
+        "type": "SIREN",
+        "value": "392806741"
+      },
+      {
+        "type": "SIRET",
+        "value": "39280674100014"
+      },
+      {
+        "type": "TVA_INTRA",
+        "value": "FR21392806741"
+      },
+      {
+        "type": "RCS",
+        "value": "CRETEIL B 392 806 741"
+      },
+      {
+        "type": "APE",
+        "value": "4632A"
+      }
+    ],
+    "iban": null,
+    "bic": null,
+    "address": "1 AVE EUGENE THOMAS 94270 LE KREMLIN BICETRE",
+    "phone": "01.46.86.23.26",
+    "email": null,
+    "kmorganisation": false,
+    "legal_name": "BBV",
+    "siren": "392806741"
+  },
+  "recipient": {
+    "name": "MOUAD",
+    "company_registrations": [
+      {
+        "type": "SIREN",
+        "value": "519665103"
+      }
+    ],
+    "client_code": "125966",
+    "billing_address": "2, RUE DEL'AUBRAC CP 80507 94595 RUNGIS CEDEX",
+    "shipping_address": "2, RUE DEL'AUBRAC CP 80507 94595 RUNGIS CEDEX",
+    "legal_name": "MOUAD",
+    "kmorganisation": true
+  },
+  "line_items": [
+    {
+      "product_code": "5230344",
+      "description": "BASSE COTE BOEUF",
+      "unit_price": 10.0,
+      "quantity": 122.8,
+      "unit": "KG",
+      "discount": null,
+      "vat_percent": 5.5,
+      "vat_total": 67.63,
+      "total_net": 1228.0,
+      "total_gross": 1295.63,
+      "accounting_account": "6011",
+      "accounting_account_label": "Achats de marchandises - Viandes"
+    }
+  ],
+  "vat": [
+    {
+      "vat_amount": 1228.0,
+      "vat_percent": 5.5,
+      "vat_total": 67.63
+    }
+  ],
+  "total_net": 1228.0,
+  "total_vat": 67.63,
+  "total_gross": 1295.63,
+  "currency": "EUR"
+}

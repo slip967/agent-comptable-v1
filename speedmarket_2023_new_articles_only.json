@@ -1,0 +1,1912 @@
+﻿{
+    "meta":  {
+                 "source_file":  "scripts-master/base_produits_epicerie_v1.json",
+                 "source_folder":  "Z:\\e\\fichiers_pdf_paris\\Keymanage pdf - maroc\\2024\\Clients 2024\\SPEED MARKET_83196239400019\\FLAT_INPUT\\Facture\\Facture\\2023",
+                 "count":  75,
+                 "filter":  "items where notes starts with \"Import PDF Speedmarket 2023 depuis \"",
+                 "purchase_invoice_only_filter_v1":  {
+                                                         "updated_at":  "2026-04-15T11:17:33.6979483Z",
+                                                         "removed_items_count":  21,
+                                                         "pruned_items_count":  8,
+                                                         "excluded_invoice_ids":  [
+                                                                                      "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_30_n000001000119121_49_80_pdf",
+                                                                                      "fr_bd_831962394:pdf_899309900_RIVIERA_CAP_COUNTRY_2023_06_01_2222_2214_0_00_pdf",
+                                                                                      "fr_bd_831962394:pdf_INCONNU_2023_06_28_8066_0_00_pdf"
+                                                                                  ],
+                                                         "rule":  "keep purchase invoices only; remove credit notes / zero-value / non-purchase source invoices"
+                                                     }
+             },
+    "items":  [
+                  {
+                      "article_source":  "OASIS POINTE POIRE SLIM 33CL",
+                      "article_canonique":  "oasis pointe poire slim 33cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "oasis",
+                                        "pointe",
+                                        "poire",
+                                        "slim",
+                                        "33cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-02_0-00800002-0227762_208.91.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_02_0_00800002_0227762_208_91_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "OASIS FRAISE FRAMBOISE SLIM 33CLX6",
+                      "article_canonique":  "oasis fraise framboise slim 33clx6",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "oasis",
+                                        "fraise",
+                                        "framboise",
+                                        "slim",
+                                        "33clx6"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-02_0-00800002-0227762_208.91.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_02_0_00800002_0227762_208_91_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "OASIS POMME CASSIS FRAMBOISE SLIM 33CL",
+                      "article_canonique":  "oasis pomme cassis framboise slim 33cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "oasis",
+                                        "pomme",
+                                        "cassis",
+                                        "framboise",
+                                        "slim",
+                                        "33cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-02_0-00800002-0227762_208.91.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_02_0_00800002_0227762_208_91_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "OASIS POMME CASSIS FRAMBOISE 50CL PET",
+                      "article_canonique":  "oasis pomme cassis framboise 50cl pet",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "oasis",
+                                        "pomme",
+                                        "cassis",
+                                        "framboise",
+                                        "50cl",
+                                        "pet"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-02_0-00800002-0227762_208.91.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_02_0_00800002_0227762_208_91_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "SCHWEPPES POMME 50CL PET",
+                      "article_canonique":  "schweppes pomme 50cl pet",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "schweppes",
+                                        "pomme",
+                                        "50cl",
+                                        "pet"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-02_0-00800002-0227762_208.91.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_02_0_00800002_0227762_208_91_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "SCHWEPPES AGRUME 50CL PET",
+                      "article_canonique":  "schweppes agrume 50cl pet",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "schweppes",
+                                        "agrume",
+                                        "50cl",
+                                        "pet"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-02_0-00800002-0227762_208.91.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_02_0_00800002_0227762_208_91_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "CRISTALINE 50CL PET",
+                      "article_canonique":  "cristaline 50cl pet",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "cristaline",
+                                        "50cl",
+                                        "pet"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-02_0-00800002-0227762_208.91.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_02_0_00800002_0227762_208_91_pdf",
+                                                 "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_23_002_406554_122_77_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "CRISTALINE 1.5L",
+                      "article_canonique":  "cristaline 1 5l",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "cristaline",
+                                        "5l"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-02_0-00800002-0227762_208.91.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_02_0_00800002_0227762_208_91_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "CARAIBOS BANANE BOITE 33CL",
+                      "article_canonique":  "caraibos banane boite 33cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "caraibos",
+                                        "banane",
+                                        "boite",
+                                        "33cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-03_0-00800002-022918_29.80.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_03_0_00800002_022918_29_80_pdf",
+                                                 "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_23_002_406554_122_77_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "OASIS ICE TEA PECHE PET 50CL",
+                      "article_canonique":  "oasis ice tea peche pet 50cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "oasis",
+                                        "ice",
+                                        "tea",
+                                        "peche",
+                                        "pet",
+                                        "50cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-18_0-00800002-024226_142.08.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_18_0_00800002_024226_142_08_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "7UP MOJITO BTE 33CL SLIM",
+                      "article_canonique":  "7up mojito bte 33cl slim",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "7up",
+                                        "mojito",
+                                        "bte",
+                                        "33cl",
+                                        "slim"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-23_002-406554_122.77.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_23_002_406554_122_77_pdf"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "ROCHE MAZET VIN ROUGE 12.5D C. SAUV. 2018 6-75CL",
+                      "article_canonique":  "roche mazet vin rouge 12 5d c sauv 2018 6 75cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "roche",
+                                        "mazet",
+                                        "vin",
+                                        "rouge",
+                                        "12",
+                                        "5d"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-23_002-406554_122.77.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_23_002_406554_122_77_pdf",
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf",
+                                                 "fr_bd_831962394:pdf_892610098_LUZOUE_2023_12_20_INV_2023_806_24_00_pdf"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "REDBULL EDITION 24X250ML",
+                      "article_canonique":  "redbull edition 24x250ml",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "redbull",
+                                        "edition",
+                                        "24x250ml"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf",
+                                                 "fr_bd_831962394:pdf_892610098_LUZOUE_2023_12_20_INV_2023_806_24_00_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "OASIS TROPICAL POMME FRAISE CASIS FRAMBOISE 24X33CL",
+                      "article_canonique":  "oasis tropical pomme fraise casis framboise 24x33cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "oasis",
+                                        "tropical",
+                                        "pomme",
+                                        "fraise",
+                                        "casis",
+                                        "framboise"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "LIPTON PECHE ICE TEA 24X33CL",
+                      "article_canonique":  "lipton peche ice tea 24x33cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "lipton",
+                                        "peche",
+                                        "ice",
+                                        "tea",
+                                        "24x33cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf",
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "HAWAI 24X33CL",
+                      "article_canonique":  "hawai 24x33cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "hawai",
+                                        "24x33cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf",
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "FANTA MANGUE FRUIT DU DRAGON 33CLX24",
+                      "article_canonique":  "fanta mangue fruit du dragon 33clx24",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "fanta",
+                                        "mangue",
+                                        "fruit",
+                                        "du",
+                                        "dragon",
+                                        "33clx24"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "COCA ZERO IMPORT 24X33CL",
+                      "article_canonique":  "coca zero import 24x33cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "coca",
+                                        "zero",
+                                        "import",
+                                        "24x33cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "COCA CHERRY DK 24X33CL",
+                      "article_canonique":  "coca cherry dk 24x33cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "coca",
+                                        "cherry",
+                                        "dk",
+                                        "24x33cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf",
+                                                 "fr_bd_831962394:pdf_892610098_LUZOUE_2023_12_20_INV_2023_806_24_00_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "COCACOLA 33CLX24",
+                      "article_canonique":  "cocacola 33clx24",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "cocacola",
+                                        "33clx24"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "MUSCADOR MUSCAT ROSE BLANC 6X75CL",
+                      "article_canonique":  "muscador muscat rose blanc 6x75cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "muscador",
+                                        "muscat",
+                                        "rose",
+                                        "blanc",
+                                        "6x75cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "SCHWEPPES AGRUM 6X1.5L",
+                      "article_canonique":  "schweppes agrum 6x1 5l",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "schweppes",
+                                        "agrum",
+                                        "6x1",
+                                        "5l"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "OASIS FRAISE FRAMBOISE 6X2L",
+                      "article_canonique":  "oasis fraise framboise 6x2l",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "oasis",
+                                        "fraise",
+                                        "framboise",
+                                        "6x2l"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "SCHWEPPES GRENADINE 1LX6",
+                      "article_canonique":  "schweppes grenadine 1lx6",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "schweppes",
+                                        "grenadine",
+                                        "1lx6"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "RHUM BLANC LM 40D FLASK 20CL",
+                      "article_canonique":  "rhum blanc lm 40d flask 20cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "rhum",
+                                        "blanc",
+                                        "lm",
+                                        "40d",
+                                        "flask",
+                                        "20cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf",
+                                                 "fr_bd_831962394:pdf_892610098_LUZOUE_2023_12_20_INV_2023_806_24_00_pdf"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "FLASK COGNAC COURCEL 40D 20CL",
+                      "article_canonique":  "flask cognac courcel 40d 20cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "flask",
+                                        "cognac",
+                                        "courcel",
+                                        "40d",
+                                        "20cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "SAC ROULEAUX LEGUMES UNITE",
+                      "article_canonique":  "sac rouleaux legumes unite",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "emballage",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "sac",
+                                        "rouleaux",
+                                        "legumes",
+                                        "unite"
+                                    ],
+                      "fournisseur_type":  "fournisseur non alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf"
+                                             ],
+                      "compte_comptable":  "6062",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "CAPTAIN MORGAN RUM 35D 20CL",
+                      "article_canonique":  "captain morgan rum 35d 20cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "captain",
+                                        "morgan",
+                                        "rum",
+                                        "35d",
+                                        "20cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "RED ONE WAX CIRE ALL COLORS 150ML",
+                      "article_canonique":  "red one wax cire all colors 150ml",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "emballage",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "red",
+                                        "one",
+                                        "wax",
+                                        "cire",
+                                        "all",
+                                        "colors"
+                                    ],
+                      "fournisseur_type":  "fournisseur non alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf"
+                                             ],
+                      "compte_comptable":  "6062",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "FANTA EXOTIC 1.5L",
+                      "article_canonique":  "fanta exotic 1 5l",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "fanta",
+                                        "exotic",
+                                        "5l"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf",
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "LEFFE BLONDE 6.6 50CLX24",
+                      "article_canonique":  "leffe blonde 6 6 50clx24",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "leffe",
+                                        "blonde",
+                                        "50clx24"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "CARAIBOS 24X33CL",
+                      "article_canonique":  "caraibos 24x33cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "caraibos",
+                                        "24x33cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "COCA VANILLE FR 33CLX24",
+                      "article_canonique":  "coca vanille fr 33clx24",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "coca",
+                                        "vanille",
+                                        "fr",
+                                        "33clx24"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "P MOJITO 33CLX24",
+                      "article_canonique":  "p mojito 33clx24",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "mojito",
+                                        "33clx24"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "TROPICO EXO TROP 24X33CL",
+                      "article_canonique":  "tropico exo trop 24x33cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "tropico",
+                                        "exo",
+                                        "trop",
+                                        "24x33cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "BRIQUETS BELFLAM TRANSPARENTS X50",
+                      "article_canonique":  "briquets belflam transparents x50",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "emballage",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "briquets",
+                                        "belflam",
+                                        "transparents",
+                                        "x50"
+                                    ],
+                      "fournisseur_type":  "fournisseur non alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-10-03_000001000110905_722.70.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_10_03_000001000110905_722_70_pdf"
+                                             ],
+                      "compte_comptable":  "6062",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "DAMOISEAU 50D 35CL",
+                      "article_canonique":  "damoiseau 50d 35cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "damoiseau",
+                                        "50d",
+                                        "35cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-30_000001000119115_218.79.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_30_000001000119115_218_79_pdf"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "RED BULL ENERGY BOTTLE 50CLX24",
+                      "article_canonique":  "red bull energy bottle 50clx24",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "red",
+                                        "bull",
+                                        "energy",
+                                        "bottle",
+                                        "50clx24"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-30_000001000119115_218.79.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_30_000001000119115_218_79_pdf"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "DATTES RAVIER 500G",
+                      "article_canonique":  "dattes ravier 500g",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "dattes",
+                                        "ravier",
+                                        "500g"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-28_000004000075893_413.24.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "6011",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "BONBON PASTEQUE 2KG",
+                      "article_canonique":  "bonbon pasteque 2kg",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "emballage",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "bonbon",
+                                        "pasteque",
+                                        "2kg"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-28_000004000075893_413.24.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "6063",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "ORIENCO AMANDES CARMEL 23125 CRUES 500G",
+                      "article_canonique":  "orienco amandes carmel 23125 crues 500g",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "orienco",
+                                        "amandes",
+                                        "carmel",
+                                        "23125",
+                                        "crues",
+                                        "500g"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-28_000004000075893_413.24.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "HD ORIENCO RAISIN BRUN SULTANINE 500G",
+                      "article_canonique":  "hd orienco raisin brun sultanine 500g",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "hd",
+                                        "orienco",
+                                        "raisin",
+                                        "brun",
+                                        "sultanine",
+                                        "500g"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-28_000004000075893_413.24.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "ORIENCO RAISINS SECS NOIRS JUMBO 500G",
+                      "article_canonique":  "orienco raisins secs noirs jumbo 500g",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "orienco",
+                                        "raisins",
+                                        "secs",
+                                        "noirs",
+                                        "jumbo",
+                                        "500g"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-28_000004000075893_413.24.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "HD ORIENCO GRAINES TOURNESOL GRILLEES SALEES 500G",
+                      "article_canonique":  "hd orienco graines tournesol grillees salees 500g",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "hd",
+                                        "orienco",
+                                        "graines",
+                                        "tournesol",
+                                        "grillees",
+                                        "salees"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-28_000004000075893_413.24.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "OASIS PECHE ABRICOT 6X2L",
+                      "article_canonique":  "oasis peche abricot 6x2l",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "oasis",
+                                        "peche",
+                                        "abricot",
+                                        "6x2l"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-28_000004000075893_413.24.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "FANTA COCA AMERICAN 12X355ML",
+                      "article_canonique":  "fanta coca american 12x355ml",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "fanta",
+                                        "coca",
+                                        "american",
+                                        "12x355ml"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-28_000004000075893_413.24.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "OASIS POMME POIRE 6X2L",
+                      "article_canonique":  "oasis pomme poire 6x2l",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "oasis",
+                                        "pomme",
+                                        "poire",
+                                        "6x2l"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-28_000004000075893_413.24.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "SCHWEPPES LEMAN 6X1.5L",
+                      "article_canonique":  "schweppes leman 6x1 5l",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "schweppes",
+                                        "leman",
+                                        "6x1",
+                                        "5l"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-28_000004000075893_413.24.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "COCA FR VERRE PERDU 75CLX6",
+                      "article_canonique":  "coca fr verre perdu 75clx6",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "coca",
+                                        "fr",
+                                        "verre",
+                                        "perdu",
+                                        "75clx6"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-28_000004000075893_413.24.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf",
+                                                 "fr_bd_831962394:pdf_892610098_LUZOUE_2023_12_20_INV_2023_806_24_00_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "OASIS TROPICAL POMME FRAISE CASIS FRAMBOISE 12X50CL",
+                      "article_canonique":  "oasis tropical pomme fraise casis framboise 12x50cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "oasis",
+                                        "tropical",
+                                        "pomme",
+                                        "fraise",
+                                        "casis",
+                                        "framboise"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-28_000004000075893_413.24.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "SCHEPPS GRENADINE 33CLX24",
+                      "article_canonique":  "schepps grenadine 33clx24",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "schepps",
+                                        "grenadine",
+                                        "33clx24"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-28_000004000075893_413.24.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "COCA FR BOX 20X33",
+                      "article_canonique":  "coca fr box 20x33",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "coca",
+                                        "fr",
+                                        "box",
+                                        "20x33"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-28_000004000075893_413.24.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "MINUTE MAID ORANGE POMME 24X33CL",
+                      "article_canonique":  "minute maid orange pomme 24x33cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "minute",
+                                        "maid",
+                                        "orange",
+                                        "pomme",
+                                        "24x33cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-28_000004000075893_413.24.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "OASIS TROPICAL POMME FRAISE CASIS FRA 24X33CL",
+                      "article_canonique":  "oasis tropical pomme fraise casis fra 24x33cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "oasis",
+                                        "tropical",
+                                        "pomme",
+                                        "fraise",
+                                        "casis",
+                                        "fra"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-28_000004000075893_413.24.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "PELEGRINO CIT MEN GRE 4X6X33CL",
+                      "article_canonique":  "pelegrino cit men gre 4x6x33cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "pelegrino",
+                                        "cit",
+                                        "men",
+                                        "gre",
+                                        "4x6x33cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-28_000004000075893_413.24.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "VIMTO ROUGE 24X33CL",
+                      "article_canonique":  "vimto rouge 24x33cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "vimto",
+                                        "rouge",
+                                        "24x33cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-28_000004000075893_413.24.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "CAIPIRINHA 275ML 15VOL",
+                      "article_canonique":  "caipirinha 275ml 15vol",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "caipirinha",
+                                        "275ml",
+                                        "15vol"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-28_000004000075893_413.24.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "FANTA ORANGE 9X1.5L",
+                      "article_canonique":  "fanta orange 9x1 5l",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "fanta",
+                                        "orange",
+                                        "9x1",
+                                        "5l"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-28_000004000075893_413.24.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "VODKA SOBIESKI 37.5VOL 20CL",
+                      "article_canonique":  "vodka sobieski 37 5vol 20cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "vodka",
+                                        "sobieski",
+                                        "37",
+                                        "5vol",
+                                        "20cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-28_000004000075893_413.24.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "MAG. VIN TABLE RG ROSE ROUGE 11D 6X1.5L",
+                      "article_canonique":  "mag vin table rg rose rouge 11d 6x1 5l",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "mag",
+                                        "vin",
+                                        "table",
+                                        "rg",
+                                        "rose",
+                                        "rouge"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 810542456 - GNANAM EXOTIQUE\\2023-12-28_000004000075893_413.24.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "KRONENBOURG ROUGE 4.2D BTE 50CLX24",
+                      "article_canonique":  "kronenbourg rouge 4 2d bte 50clx24",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "kronenbourg",
+                                        "rouge",
+                                        "2d",
+                                        "bte",
+                                        "50clx24"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 892610098 - LUZOUE\\2023-12-20_INV-2023-806_24.00.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_892610098_LUZOUE_2023_12_20_INV_2023_806_24_00_pdf"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "JP CHENET VIN MAG VIN TABLE RG ROSE ROUGE 11D 6X1.5L",
+                      "article_canonique":  "jp chenet vin mag vin table rg rose rouge 11d 6x1 5l",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "jp",
+                                        "chenet",
+                                        "vin",
+                                        "mag",
+                                        "table",
+                                        "rg"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 892610098 - LUZOUE\\2023-12-20_INV-2023-806_24.00.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_892610098_LUZOUE_2023_12_20_INV_2023_806_24_00_pdf"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "MANGUE CARTON BOX",
+                      "article_canonique":  "mangue carton box",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "mangue",
+                                        "carton",
+                                        "box"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 892610098 - LUZOUE\\2023-12-20_INV-2023-806_24.00.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_892610098_LUZOUE_2023_12_20_INV_2023_806_24_00_pdf"
+                                             ],
+                      "compte_comptable":  "6011",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "KOLACHAMPION 24X33CL",
+                      "article_canonique":  "kolachampion 24x33cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "kolachampion",
+                                        "24x33cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 892610098 - LUZOUE\\2023-12-20_INV-2023-806_24.00.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_892610098_LUZOUE_2023_12_20_INV_2023_806_24_00_pdf"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "BAVARTA 8.6 50CLX24",
+                      "article_canonique":  "bavarta 8 6 50clx24",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "bavarta",
+                                        "50clx24"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 892610098 - LUZOUE\\2023-12-20_INV-2023-806_24.00.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_892610098_LUZOUE_2023_12_20_INV_2023_806_24_00_pdf"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "DESPERADOS MOJITO 12X50CL",
+                      "article_canonique":  "desperados mojito 12x50cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "desperados",
+                                        "mojito",
+                                        "12x50cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 892610098 - LUZOUE\\2023-12-20_INV-2023-806_24.00.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_892610098_LUZOUE_2023_12_20_INV_2023_806_24_00_pdf"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "SUPER BOCK 24X25CL",
+                      "article_canonique":  "super bock 24x25cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "super",
+                                        "bock",
+                                        "24x25cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 892610098 - LUZOUE\\2023-12-20_INV-2023-806_24.00.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_892610098_LUZOUE_2023_12_20_INV_2023_806_24_00_pdf"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "DESPERADOS RED 5.9 50CLX24",
+                      "article_canonique":  "desperados red 5 9 50clx24",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "desperados",
+                                        "red",
+                                        "50clx24"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 892610098 - LUZOUE\\2023-12-20_INV-2023-806_24.00.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_892610098_LUZOUE_2023_12_20_INV_2023_806_24_00_pdf"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "VIVA 1LX6",
+                      "article_canonique":  "viva 1lx6",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "viva",
+                                        "1lx6"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 892610098 - LUZOUE\\2023-12-20_INV-2023-806_24.00.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_892610098_LUZOUE_2023_12_20_INV_2023_806_24_00_pdf"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "GINGEMBRE KG",
+                      "article_canonique":  "gingembre kg",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "gingembre",
+                                        "kg"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 892610098 - LUZOUE\\2023-12-20_INV-2023-806_24.00.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_892610098_LUZOUE_2023_12_20_INV_2023_806_24_00_pdf"
+                                             ],
+                      "compte_comptable":  "6011",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "PIMENTSAFRICAIN KG",
+                      "article_canonique":  "pimentsafricain kg",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "pimentsafricain",
+                                        "kg"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 892610098 - LUZOUE\\2023-12-20_INV-2023-806_24.00.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_892610098_LUZOUE_2023_12_20_INV_2023_806_24_00_pdf"
+                                             ],
+                      "compte_comptable":  "6011",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "TWIX 32X50G",
+                      "article_canonique":  "twix 32x50g",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "emballage",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "twix",
+                                        "32x50g"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 892610098 - LUZOUE\\2023-12-20_INV-2023-806_24.00.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_892610098_LUZOUE_2023_12_20_INV_2023_806_24_00_pdf"
+                                             ],
+                      "compte_comptable":  "6063",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "WHISKY J\u0026B 40D 35CL",
+                      "article_canonique":  "whisky j b 40d 35cl",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "whisky",
+                                        "40d",
+                                        "35cl"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 892610098 - LUZOUE\\2023-12-20_INV-2023-806_24.00.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_892610098_LUZOUE_2023_12_20_INV_2023_806_24_00_pdf"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "WHISKY LABELS 35CL 40",
+                      "article_canonique":  "whisky labels 35cl 40",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "whisky",
+                                        "labels",
+                                        "35cl",
+                                        "40"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 892610098 - LUZOUE\\2023-12-20_INV-2023-806_24.00.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_892610098_LUZOUE_2023_12_20_INV_2023_806_24_00_pdf"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  },
+                  {
+                      "article_source":  "MANGUE KG",
+                      "article_canonique":  "mangue kg",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "mangue",
+                                        "kg"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Import PDF Speedmarket 2023 depuis 892610098 - LUZOUE\\2023-12-20_INV-2023-806_24.00.pdf",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_831962394:pdf_892610098_LUZOUE_2023_12_20_INV_2023_806_24_00_pdf"
+                                             ],
+                      "compte_comptable":  "6011",
+                      "compte_comptable_source":  "speedmarket_2023_pdf_import_v1",
+                      "compte_comptable_match_score":  50,
+                      "compte_comptable_match_reason":  "import_from_speedmarket_2023_pdf_folder"
+                  }
+              ]
+}

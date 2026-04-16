@@ -1,0 +1,623 @@
+{
+  "meta": {
+    "generated_at": "2026-04-13T10:10:15.926978Z",
+    "db_factures": "abt3",
+    "partition_prefix": "fr_bd_831060876",
+    "total_unique_references": 166,
+    "stats": {
+      "line_items_exploitation_metier": 210,
+      "line_items_charges_externes": 141,
+      "line_items_a_revoir": 20
+    }
+  },
+  "category": "a_revoir",
+  "items": [
+    {
+      "canonical_label": "mensualite facilite de paiement equipement",
+      "source_labels_top": [
+        [
+          "Mensualité facilité de paiement équipement",
+          3
+        ]
+      ],
+      "proposed_account": "2183",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          3
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          3
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          3
+        ]
+      ],
+      "occurrences": 3,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:11e6a29d-b91f-4972-a22e-ef2626a5a54e",
+          "invoice_number": "11785201350124",
+          "invoice_date": "02/01/2024",
+          "description": "Mensualité facilité de paiement équipement",
+          "total_net": 8.0,
+          "total_gross": 9.6,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:4548eaf6-e699-4a60-84d8-e3067a7282a8",
+          "invoice_number": "11267418390324",
+          "invoice_date": "27/03/2024",
+          "description": "Mensualité facilité de paiement équipement",
+          "total_net": 4.0,
+          "total_gross": 4.8,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:60839a68-a4da-45ab-a48c-f023d2c2c5c9",
+          "invoice_number": "11284656990424",
+          "invoice_date": "02/04/2024",
+          "description": "Mensualité facilité de paiement équipement",
+          "total_net": 8.0,
+          "total_gross": 9.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "mensualites de vos facilites de paiement",
+      "source_labels_top": [
+        [
+          "Mensualités de vos facilités de paiement pour votre équipement",
+          3
+        ]
+      ],
+      "proposed_account": "2183",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          3
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          3
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          3
+        ]
+      ],
+      "occurrences": 3,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:2f5ee41d-fbb3-4540-81ec-421cf9a5d96a",
+          "invoice_number": "01/09/2024",
+          "invoice_date": "02/08/2024",
+          "description": "Mensualités de vos facilités de paiement pour votre équipement",
+          "total_net": 16.0,
+          "total_gross": 19.2,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:4d8bdce6-5c23-44e3-a8e0-bc945cea0d6f",
+          "invoice_number": "11497452941124",
+          "invoice_date": "02/11/2024",
+          "description": "Mensualités de vos facilités de paiement pour votre équipement",
+          "total_net": 16.0,
+          "total_gross": 19.2,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:56fd18db-1f17-43eb-a468-75f900e039e8",
+          "invoice_number": "11324538131024",
+          "invoice_date": "02/10/2024",
+          "description": "Mensualités de vos facilités de paiement pour votre équipement",
+          "total_net": 16.0,
+          "total_gross": 19.2,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais de rejet de prelevement",
+      "source_labels_top": [
+        [
+          "Frais de rejet de prélèvement",
+          2
+        ],
+        [
+          "Frais de rejet de prélevement (du 24/01 au 24/01)",
+          1
+        ]
+      ],
+      "proposed_account": "6588",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          3
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          3
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          3
+        ]
+      ],
+      "occurrences": 3,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:4548eaf6-e699-4a60-84d8-e3067a7282a8",
+          "invoice_number": "11267418390324",
+          "invoice_date": "27/03/2024",
+          "description": "Frais de rejet de prélèvement",
+          "total_net": 8.33,
+          "total_gross": 10.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:4be360f8-1ff6-4e93-b490-0978a2155757",
+          "invoice_number": "11967982040224",
+          "invoice_date": "02/02/2024",
+          "description": "Frais de rejet de prélevement (du 24/01 au 24/01)",
+          "total_net": 8.33,
+          "total_gross": 10.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:5d838c58-70fd-4caa-ab5c-b8c5ea9117bb",
+          "invoice_number": "11267443830324",
+          "invoice_date": "27/03/2024",
+          "description": "Frais de rejet de prélèvement",
+          "total_net": 8.33,
+          "total_gross": 10.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais de rejet de prelevement",
+      "source_labels_top": [
+        [
+          "Frais de rejet de prélèvement (du 19/04 au 19/04)",
+          1
+        ],
+        [
+          "Frais de rejet de prélèvement",
+          1
+        ]
+      ],
+      "proposed_account": "658",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:863eabe1-0f48-43ee-af0c-87842ace0e17",
+          "invoice_number": "11475086830524",
+          "invoice_date": "02/05/2024",
+          "description": "Frais de rejet de prélèvement (du 19/04 au 19/04)",
+          "total_net": 8.33,
+          "total_gross": 10.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:bdb67c38-0f71-48ab-84fb-eb9fe8033010",
+          "invoice_number": "11798055130724",
+          "invoice_date": "02/07/2024",
+          "description": "Frais de rejet de prélèvement",
+          "total_net": 8.33,
+          "total_gross": 10.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "mensualite facilite de paiement equipement e0034445796022",
+      "source_labels_top": [
+        [
+          "Mensualité facilité de paiement équipement (E0034445796022)",
+          1
+        ]
+      ],
+      "proposed_account": "2183",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:1f098334-10fc-4929-af91-62e8dbf0ecd8",
+          "invoice_number": "11675503091224",
+          "invoice_date": "02/12/2024",
+          "description": "Mensualité facilité de paiement équipement (E0034445796022)",
+          "total_net": 8.0,
+          "total_gross": 9.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "mensualite facilite de paiement equipement e0038937234007",
+      "source_labels_top": [
+        [
+          "Mensualité facilité de paiement équipement (E0038937234007)",
+          1
+        ]
+      ],
+      "proposed_account": "2183",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:1f098334-10fc-4929-af91-62e8dbf0ecd8",
+          "invoice_number": "11675503091224",
+          "invoice_date": "02/12/2024",
+          "description": "Mensualité facilité de paiement équipement (E0038937234007)",
+          "total_net": 8.0,
+          "total_gross": 9.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "mensualite de votre facilite de paiement",
+      "source_labels_top": [
+        [
+          "Mensualité de votre facilité de paiement pour votre équipement",
+          1
+        ]
+      ],
+      "proposed_account": "2183",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:301180f9-bbbc-4177-a903-575b18ad81a2",
+          "invoice_number": "11102290410224",
+          "invoice_date": "27/02/2024",
+          "description": "Mensualité de votre facilité de paiement pour votre équipement",
+          "total_net": 4.0,
+          "total_gross": 4.8,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "report a nouveau lignes validees",
+      "source_labels_top": [
+        [
+          "Report A Nouveau - Lignes validées",
+          1
+        ]
+      ],
+      "proposed_account": "4456614",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:51634929-48c0-456d-93f6-8eeac4f095fd",
+          "invoice_number": null,
+          "invoice_date": "01/01/2024",
+          "description": "Report A Nouveau - Lignes validées",
+          "total_net": 328.0,
+          "total_gross": 393.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "mensualite facilite de paiement equipement e0034445796016",
+      "source_labels_top": [
+        [
+          "Mensualité facilité de paiement équipement (E0034445796016)",
+          1
+        ]
+      ],
+      "proposed_account": "2183",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:6f54e694-88c4-43e7-b74b-4e1610ef4ebf",
+          "invoice_number": "11626668220624",
+          "invoice_date": "02/06/2024",
+          "description": "Mensualité facilité de paiement équipement (E0034445796016)",
+          "total_net": 8.0,
+          "total_gross": 9.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "mensualite facilite de paiement equipement e0038937234001",
+      "source_labels_top": [
+        [
+          "Mensualité facilité de paiement équipement (E0038937234001)",
+          1
+        ]
+      ],
+      "proposed_account": "2183",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:6f54e694-88c4-43e7-b74b-4e1610ef4ebf",
+          "invoice_number": "11626668220624",
+          "invoice_date": "02/06/2024",
+          "description": "Mensualité facilité de paiement équipement (E0038937234001)",
+          "total_net": 8.0,
+          "total_gross": 9.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "mensualite de votre facilite de paiement",
+      "source_labels_top": [
+        [
+          "Mensualité de votre facilité de paiement pour votre équipement",
+          1
+        ]
+      ],
+      "proposed_account": "404",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:a268321b-5310-463f-b292-54edd132f683",
+          "invoice_number": "11833640641224",
+          "invoice_date": "27/12/2024",
+          "description": "Mensualité de votre facilité de paiement pour votre équipement",
+          "total_net": 7.0,
+          "total_gross": 7.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "mensualite facilite de paiement equipement",
+      "source_labels_top": [
+        [
+          "Mensualité facilité de paiement équipement",
+          1
+        ]
+      ],
+      "proposed_account": "404",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:bdb67c38-0f71-48ab-84fb-eb9fe8033010",
+          "invoice_number": "11798055130724",
+          "invoice_date": "02/07/2024",
+          "description": "Mensualité facilité de paiement équipement",
+          "total_net": 8.0,
+          "total_gross": 9.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "taxe d enlevement des ordures menageres",
+      "source_labels_top": [
+        [
+          "Taxe d'Enlevement des Ordures Ménageres (TEOM) 11/109 tantiemes 01/01/24 au 31/12/24",
+          1
+        ]
+      ],
+      "proposed_account": "635",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:d470e2e4-0da6-4673-a136-69873bdca2c1",
+          "invoice_number": "",
+          "invoice_date": "24/01/2025",
+          "description": "Taxe d'Enlevement des Ordures Ménageres (TEOM) 11/109 tantiemes 01/01/24 au 31/12/24",
+          "total_net": 18.97,
+          "total_gross": 18.97,
+          "currency": "EUR"
+        }
+      ]
+    }
+  ]
+}

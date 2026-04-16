@@ -1,0 +1,6421 @@
+{
+  "meta": {
+    "generated_at": "2026-04-13T09:22:50.532995Z",
+    "db_factures": "abt3",
+    "partition_prefix": "fr_bd_752620443",
+    "total_unique_references": 3275,
+    "stats": {
+      "line_items_exploitation_metier": 7879,
+      "line_items_a_revoir": 196,
+      "line_items_charges_externes": 53
+    }
+  },
+  "category": "a_revoir",
+  "items": [
+    {
+      "canonical_label": "contribution public electricite",
+      "source_labels_top": [
+        [
+          "Contribution service public électricité du 09/12/23 au 08/01/24",
+          3
+        ],
+        [
+          "Contribution service public électricité du 09/05/24 au 08/06/24",
+          2
+        ],
+        [
+          "Contribution service public électricité du 09/10/24 au 08/11/24",
+          2
+        ],
+        [
+          "Contribution service public électricité",
+          1
+        ],
+        [
+          "Contribution service public électricité du 09/07/24 au 08/08/24",
+          1
+        ],
+        [
+          "Contribution service public électricité du 09/04/24 au 08/05/24",
+          1
+        ]
+      ],
+      "proposed_account": "6351",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          10
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          10
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 10,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:1075f0b2-2d57-45ee-889f-1b2fe6c35976",
+          "invoice_number": "220008334195",
+          "invoice_date": "11/06/2024",
+          "description": "Contribution service public électricité du 09/05/24 au 08/06/24",
+          "total_net": 26.33,
+          "total_gross": 31.6,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:3a08bb79-bfb9-431b-95b6-998ed7246cab",
+          "invoice_number": "420006912904",
+          "invoice_date": "11/11/2024",
+          "description": "Contribution service public électricité du 09/10/24 au 08/11/24",
+          "total_net": 22.3,
+          "total_gross": 26.76,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:5d7b5018-14f3-448a-9217-b3d1a942a7b1",
+          "invoice_number": "420006912904",
+          "invoice_date": "11/11/2024",
+          "description": "Contribution service public électricité du 09/10/24 au 08/11/24",
+          "total_net": 22.3,
+          "total_gross": 26.76,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:5d92f386-5cb8-4555-8ed6-51a119040ece",
+          "invoice_number": "220008509577",
+          "invoice_date": "11/10/2024",
+          "description": "Contribution service public électricité",
+          "total_net": 24.36,
+          "total_gross": 29.23,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:5f4c9e65-f988-4e52-8e74-d8c451901ae4",
+          "invoice_number": "420006488691",
+          "invoice_date": "11/01/2024",
+          "description": "Contribution service public électricité du 09/12/23 au 08/01/24",
+          "total_net": 1.16,
+          "total_gross": 1.39,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "taxes locales part communale",
+      "source_labels_top": [
+        [
+          "Taxes locales - part communale",
+          7
+        ]
+      ],
+      "proposed_account": "6351",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          7
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          7
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 7,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:5f4c9e65-f988-4e52-8e74-d8c451901ae4",
+          "invoice_number": "420006488691",
+          "invoice_date": "11/01/2024",
+          "description": "Taxes locales - part communale",
+          "total_net": 0.0,
+          "total_gross": 0.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:8f001735-2a97-4d69-88bf-2fbaaaa694d5",
+          "invoice_number": "420006528818",
+          "invoice_date": "12/02/2024",
+          "description": "Taxes locales - part communale",
+          "total_net": 0.0,
+          "total_gross": 0.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:b2d3dd15-6fa1-402b-817a-0467a7da9b50",
+          "invoice_number": "420006528818",
+          "invoice_date": "12/02/2024",
+          "description": "Taxes locales - part communale",
+          "total_net": 0.0,
+          "total_gross": 0.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:b9e4f3a5-1741-46de-9881-385ea1b3394a",
+          "invoice_number": "420006528818",
+          "invoice_date": "12/02/2024",
+          "description": "Taxes locales - part communale",
+          "total_net": 0.0,
+          "total_gross": 0.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:bea778c4-38a5-4249-8443-e05e515131f3",
+          "invoice_number": "420006488691",
+          "invoice_date": "11/01/2024",
+          "description": "Taxes locales - part communale",
+          "total_net": 0.0,
+          "total_gross": 0.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "contribution public elec kwh",
+      "source_labels_top": [
+        [
+          "Contribution service public élec du 09/01/24 au 31/01/24 (955 kWh)",
+          3
+        ],
+        [
+          "Contribution service public élec du 01/02/24 au 08/02/24 (333 kWh)",
+          3
+        ]
+      ],
+      "proposed_account": "6351",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          6
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          6
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 6,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:8f001735-2a97-4d69-88bf-2fbaaaa694d5",
+          "invoice_number": "420006528818",
+          "invoice_date": "12/02/2024",
+          "description": "Contribution service public élec du 09/01/24 au 31/01/24 (955 kWh)",
+          "total_net": 0.96,
+          "total_gross": 1.15,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:8f001735-2a97-4d69-88bf-2fbaaaa694d5",
+          "invoice_number": "420006528818",
+          "invoice_date": "12/02/2024",
+          "description": "Contribution service public élec du 01/02/24 au 08/02/24 (333 kWh)",
+          "total_net": 6.99,
+          "total_gross": 8.39,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:b2d3dd15-6fa1-402b-817a-0467a7da9b50",
+          "invoice_number": "420006528818",
+          "invoice_date": "12/02/2024",
+          "description": "Contribution service public élec du 09/01/24 au 31/01/24 (955 kWh)",
+          "total_net": 0.96,
+          "total_gross": 1.15,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:b2d3dd15-6fa1-402b-817a-0467a7da9b50",
+          "invoice_number": "420006528818",
+          "invoice_date": "12/02/2024",
+          "description": "Contribution service public élec du 01/02/24 au 08/02/24 (333 kWh)",
+          "total_net": 6.99,
+          "total_gross": 8.39,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:b9e4f3a5-1741-46de-9881-385ea1b3394a",
+          "invoice_number": "420006528818",
+          "invoice_date": "12/02/2024",
+          "description": "Contribution service public élec du 09/01/24 au 31/01/24 (955 kWh)",
+          "total_net": 0.96,
+          "total_gross": 1.15,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "mr propre 750ml pro spray nettoyant",
+      "source_labels_top": [
+        [
+          "MR PROPRE 750ML Pro Spray Nettoyant Desinfectant Multi-Surfaces",
+          2
+        ],
+        [
+          "MR PROPRE 750ML Pro Spray Nettoyant Multi Surface Brillance (BG)",
+          2
+        ]
+      ],
+      "proposed_account": "707",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          4
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          4
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4690Z",
+          4
+        ]
+      ],
+      "occurrences": 4,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:152fa547-ad82-4a47-81da-0876cd2673da",
+          "invoice_number": "03064",
+          "invoice_date": "24/06/2024",
+          "description": "MR PROPRE 750ML Pro Spray Nettoyant Desinfectant Multi-Surfaces",
+          "total_net": 6.642,
+          "total_gross": 7.9704,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:152fa547-ad82-4a47-81da-0876cd2673da",
+          "invoice_number": "03064",
+          "invoice_date": "24/06/2024",
+          "description": "MR PROPRE 750ML Pro Spray Nettoyant Multi Surface Brillance (BG)",
+          "total_net": 6.642,
+          "total_gross": 7.9704,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:9dee7488-3e70-4a60-afea-49610cb68145",
+          "invoice_number": "03064",
+          "invoice_date": "24/06/2024",
+          "description": "MR PROPRE 750ML Pro Spray Nettoyant Desinfectant Multi-Surfaces",
+          "total_net": 6.642,
+          "total_gross": 13.282,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:9dee7488-3e70-4a60-afea-49610cb68145",
+          "invoice_number": "03064",
+          "invoice_date": "24/06/2024",
+          "description": "MR PROPRE 750ML Pro Spray Nettoyant Multi Surface Brillance (BG)",
+          "total_net": 6.642,
+          "total_gross": 13.282,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "contribution public electricite kwh",
+      "source_labels_top": [
+        [
+          "Contribution service public électricité du 09/01/24 au 31/01/24 (955 kWh)",
+          1
+        ],
+        [
+          "Contribution service public électricité du 01/02/24 au 08/02/24 (333 kWh)",
+          1
+        ],
+        [
+          "Contribution service public électricité du 09/02/24 au 08/03/24 (905 kWh)",
+          1
+        ]
+      ],
+      "proposed_account": "6351",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          3
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          3
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 3,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:c0b39b51-1bd3-4dfe-bef4-7a6d65d95783",
+          "invoice_number": "420006528818",
+          "invoice_date": "12/02/2024",
+          "description": "Contribution service public électricité du 09/01/24 au 31/01/24 (955 kWh)",
+          "total_net": 0.96,
+          "total_gross": 1.15,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:c0b39b51-1bd3-4dfe-bef4-7a6d65d95783",
+          "invoice_number": "420006528818",
+          "invoice_date": "12/02/2024",
+          "description": "Contribution service public électricité du 01/02/24 au 08/02/24 (333 kWh)",
+          "total_net": 6.99,
+          "total_gross": 8.39,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:d28f87b1-0f12-44f3-82c1-317204743505",
+          "invoice_number": "20040088354",
+          "invoice_date": "11/03/2024",
+          "description": "Contribution service public électricité du 09/02/24 au 08/03/24 (905 kWh)",
+          "total_net": 19.01,
+          "total_gross": 22.81,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "mme proff 750ml citron liquide vaisselle",
+      "source_labels_top": [
+        [
+          "Mme PROFF 750ML Citron Liquide vaisselle Fraicheur",
+          2
+        ]
+      ],
+      "proposed_account": "707",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4690Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:152fa547-ad82-4a47-81da-0876cd2673da",
+          "invoice_number": "03064",
+          "invoice_date": "24/06/2024",
+          "description": "Mme PROFF 750ML Citron Liquide vaisselle Fraicheur",
+          "total_net": 20.16,
+          "total_gross": 24.192,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:9dee7488-3e70-4a60-afea-49610cb68145",
+          "invoice_number": "03064",
+          "invoice_date": "24/06/2024",
+          "description": "Mme PROFF 750ML Citron Liquide vaisselle Fraicheur",
+          "total_net": 10.08,
+          "total_gross": 30.24,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "mme proff 750ml grenade liquide vaisselle",
+      "source_labels_top": [
+        [
+          "Mme PROFF 750ML Grenade Liquide vaisselle Fraicheur",
+          2
+        ]
+      ],
+      "proposed_account": "707",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4690Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:152fa547-ad82-4a47-81da-0876cd2673da",
+          "invoice_number": "03064",
+          "invoice_date": "24/06/2024",
+          "description": "Mme PROFF 750ML Grenade Liquide vaisselle Fraicheur",
+          "total_net": 10.08,
+          "total_gross": 12.096,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:9dee7488-3e70-4a60-afea-49610cb68145",
+          "invoice_number": "03064",
+          "invoice_date": "24/06/2024",
+          "description": "Mme PROFF 750ML Grenade Liquide vaisselle Fraicheur",
+          "total_net": 10.08,
+          "total_gross": 20.16,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "mme proff 750ml lave vitre camsil",
+      "source_labels_top": [
+        [
+          "Mme PROFF 750ML Lave Vitre CAMSIL",
+          2
+        ]
+      ],
+      "proposed_account": "707",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4690Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:152fa547-ad82-4a47-81da-0876cd2673da",
+          "invoice_number": "03064",
+          "invoice_date": "24/06/2024",
+          "description": "Mme PROFF 750ML Lave Vitre CAMSIL",
+          "total_net": 9.348,
+          "total_gross": 11.2176,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:9dee7488-3e70-4a60-afea-49610cb68145",
+          "invoice_number": "03064",
+          "invoice_date": "24/06/2024",
+          "description": "Mme PROFF 750ML Lave Vitre CAMSIL",
+          "total_net": 9.348,
+          "total_gross": 18.698,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "mme proff 750ml peche liquide vaisselle",
+      "source_labels_top": [
+        [
+          "Mme PROFF 750ML Péche Liquide vaisselle Fraicheur",
+          2
+        ]
+      ],
+      "proposed_account": "707",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4690Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:152fa547-ad82-4a47-81da-0876cd2673da",
+          "invoice_number": "03064",
+          "invoice_date": "24/06/2024",
+          "description": "Mme PROFF 750ML Péche Liquide vaisselle Fraicheur",
+          "total_net": 10.08,
+          "total_gross": 12.096,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:9dee7488-3e70-4a60-afea-49610cb68145",
+          "invoice_number": "03064",
+          "invoice_date": "24/06/2024",
+          "description": "Mme PROFF 750ML Péche Liquide vaisselle Fraicheur",
+          "total_net": 10.08,
+          "total_gross": 20.16,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "mme proff 750ml pomme liquide vaisselle",
+      "source_labels_top": [
+        [
+          "Mme PROFF 750ML Pomme Liquide vaisselle Fraicheur",
+          2
+        ]
+      ],
+      "proposed_account": "707",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4690Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:152fa547-ad82-4a47-81da-0876cd2673da",
+          "invoice_number": "03064",
+          "invoice_date": "24/06/2024",
+          "description": "Mme PROFF 750ML Pomme Liquide vaisselle Fraicheur",
+          "total_net": 20.16,
+          "total_gross": 24.192,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:9dee7488-3e70-4a60-afea-49610cb68145",
+          "invoice_number": "03064",
+          "invoice_date": "24/06/2024",
+          "description": "Mme PROFF 750ML Pomme Liquide vaisselle Fraicheur",
+          "total_net": 10.08,
+          "total_gross": 30.24,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "mr propre 5l ultra javel eucalyptus",
+      "source_labels_top": [
+        [
+          "MR PROPRE 1.5L Ultra Javel Eucalyptus Bleekmidel",
+          1
+        ],
+        [
+          "MR PROPRE 1.5L Ultra Javel Eucalyptus",
+          1
+        ]
+      ],
+      "proposed_account": "707",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4690Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:152fa547-ad82-4a47-81da-0876cd2673da",
+          "invoice_number": "03064",
+          "invoice_date": "24/06/2024",
+          "description": "MR PROPRE 1.5L Ultra Javel Eucalyptus Bleekmidel",
+          "total_net": 18.126,
+          "total_gross": 21.7512,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:9dee7488-3e70-4a60-afea-49610cb68145",
+          "invoice_number": "03064",
+          "invoice_date": "24/06/2024",
+          "description": "MR PROPRE 1.5L Ultra Javel Eucalyptus",
+          "total_net": 18.126,
+          "total_gross": 36.256,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "mr propre 2l gel avec javel",
+      "source_labels_top": [
+        [
+          "MR. PROPRE 2L Gel avec Javel 3en1 (Mastro Lindo) con Candeggina",
+          2
+        ]
+      ],
+      "proposed_account": "707",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4690Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:152fa547-ad82-4a47-81da-0876cd2673da",
+          "invoice_number": "03064",
+          "invoice_date": "24/06/2024",
+          "description": "MR. PROPRE 2L Gel avec Javel 3en1 (Mastro Lindo) con Candeggina",
+          "total_net": 14.676,
+          "total_gross": 17.6112,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:9dee7488-3e70-4a60-afea-49610cb68145",
+          "invoice_number": "03064",
+          "invoice_date": "24/06/2024",
+          "description": "MR. PROPRE 2L Gel avec Javel 3en1 (Mastro Lindo) con Candeggina",
+          "total_net": 14.676,
+          "total_gross": 29.356,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "sofin 4l floral passion assouplissant",
+      "source_labels_top": [
+        [
+          "SOFIN 1.4L Floral Passion Assouplissant",
+          2
+        ]
+      ],
+      "proposed_account": "707",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4690Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:152fa547-ad82-4a47-81da-0876cd2673da",
+          "invoice_number": "03064",
+          "invoice_date": "24/06/2024",
+          "description": "SOFIN 1.4L Floral Passion Assouplissant",
+          "total_net": 18.288,
+          "total_gross": 21.9456,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:9dee7488-3e70-4a60-afea-49610cb68145",
+          "invoice_number": "03064",
+          "invoice_date": "24/06/2024",
+          "description": "SOFIN 1.4L Floral Passion Assouplissant",
+          "total_net": 18.288,
+          "total_gross": 36.578,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "velvera cotton tiges pcs pamuklu cubuk",
+      "source_labels_top": [
+        [
+          "VELVERA Cotton-tiges 100 pcs Pamuklu Cubuk 100 adet",
+          2
+        ]
+      ],
+      "proposed_account": "707",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ],
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ],
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4690Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:152fa547-ad82-4a47-81da-0876cd2673da",
+          "invoice_number": "03064",
+          "invoice_date": "24/06/2024",
+          "description": "VELVERA Cotton-tiges 100 pcs Pamuklu Cubuk 100 adet",
+          "total_net": 33.012,
+          "total_gross": 39.6144,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:9dee7488-3e70-4a60-afea-49610cb68145",
+          "invoice_number": "03064",
+          "invoice_date": "24/06/2024",
+          "description": "VELVERA Cotton-tiges 100 pcs Pamuklu Cubuk 100 adet",
+          "total_net": 33.012,
+          "total_gross": 66.022,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "fanta vietnam 33x24",
+      "source_labels_top": [
+        [
+          "FANTA VIETNAM 33X24",
+          2
+        ]
+      ],
+      "proposed_account": "707",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4711B",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:45cf28e9-84ea-48dd-848e-5aaacc60ed11",
+          "invoice_number": "481",
+          "invoice_date": "06/05/2024",
+          "description": "FANTA VIETNAM 33X24",
+          "total_net": 23.28,
+          "total_gross": 24.5604,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:45cf28e9-84ea-48dd-848e-5aaacc60ed11",
+          "invoice_number": "481",
+          "invoice_date": "06/05/2024",
+          "description": "FANTA VIETNAM 33X24",
+          "total_net": 23.28,
+          "total_gross": 24.5604,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "loyer principal indice icon 4t",
+      "source_labels_top": [
+        [
+          "Loyer principal Du 01/04/2024 Au 30/04/2024 Indice ICON 4T-2022",
+          1
+        ],
+        [
+          "Loyer principal Du 01/11/2024 Au 30/11/2024 Indice ICON 4T-2023 2162,000",
+          1
+        ]
+      ],
+      "proposed_account": "6123",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4110D",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:68d64032-3942-4a24-b56c-303710d87918",
+          "invoice_number": "2000008-24000556",
+          "invoice_date": "05/03/2024",
+          "description": "Loyer principal Du 01/04/2024 Au 30/04/2024 Indice ICON 4T-2022",
+          "total_net": 1463.14,
+          "total_gross": 1755.77,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:6de2e0dc-c27e-45db-a969-8e3ec1b5b801",
+          "invoice_number": "2000008-24002144",
+          "invoice_date": "03/10/2024",
+          "description": "Loyer principal Du 01/11/2024 Au 30/11/2024 Indice ICON 4T-2023 2162,000",
+          "total_net": 1541.57,
+          "total_gross": 1849.88,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "provision pour charges",
+      "source_labels_top": [
+        [
+          "Provision pour charges Du 01/04/2024 Au 30/04/2024",
+          1
+        ],
+        [
+          "Provision pour charges Du 01/11/2024 Au 30/11/2024",
+          1
+        ]
+      ],
+      "proposed_account": "6123",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "0.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4110D",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:68d64032-3942-4a24-b56c-303710d87918",
+          "invoice_number": "2000008-24000556",
+          "invoice_date": "05/03/2024",
+          "description": "Provision pour charges Du 01/04/2024 Au 30/04/2024",
+          "total_net": 40.0,
+          "total_gross": 40.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:6de2e0dc-c27e-45db-a969-8e3ec1b5b801",
+          "invoice_number": "2000008-24002144",
+          "invoice_date": "03/10/2024",
+          "description": "Provision pour charges Du 01/11/2024 Au 30/11/2024",
+          "total_net": 40.0,
+          "total_gross": 40.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "provision taxe fonciere",
+      "source_labels_top": [
+        [
+          "Provision / Taxe fonciére Du 01/04/2024 Au 30/04/2024",
+          1
+        ],
+        [
+          "Provision / Taxe fonciére Du 01/11/2024 Au 30/11/2024",
+          1
+        ]
+      ],
+      "proposed_account": "6123",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4110D",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:68d64032-3942-4a24-b56c-303710d87918",
+          "invoice_number": "2000008-24000556",
+          "invoice_date": "05/03/2024",
+          "description": "Provision / Taxe fonciére Du 01/04/2024 Au 30/04/2024",
+          "total_net": 292.0,
+          "total_gross": 350.4,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:6de2e0dc-c27e-45db-a969-8e3ec1b5b801",
+          "invoice_number": "2000008-24002144",
+          "invoice_date": "03/10/2024",
+          "description": "Provision / Taxe fonciére Du 01/11/2024 Au 30/11/2024",
+          "total_net": 292.0,
+          "total_gross": 350.4,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "congelateur bahus blanc vitre lisse coulissante",
+      "source_labels_top": [
+        [
+          "Congélateur bahus blanc vitré lisse coulissante 620 L -14/-24 -C",
+          2
+        ]
+      ],
+      "proposed_account": "2183",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4669C",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:724976a1-e1b6-449d-8045-996a194d962d",
+          "invoice_number": "FA1817418",
+          "invoice_date": "26/07/2024",
+          "description": "Congélateur bahus blanc vitré lisse coulissante 620 L -14/-24 -C",
+          "total_net": 1036.1,
+          "total_gross": 1243.32,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:da8cb7dc-09dd-44ae-8a15-108da0bae6c4",
+          "invoice_number": "FA1817418",
+          "invoice_date": "26/07/2024",
+          "description": "Congélateur bahus blanc vitré lisse coulissante 620 L -14/-24 -C",
+          "total_net": 1036.1,
+          "total_gross": 1243.32,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "recompense ecodefi des pros",
+      "source_labels_top": [
+        [
+          "Récompense Ecodéfi des Pros",
+          2
+        ]
+      ],
+      "proposed_account": "758",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "0.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:a61e86f7-9a25-4c68-b0ab-76d546248dc3",
+          "invoice_number": "SD132241480",
+          "invoice_date": "07/05/2024",
+          "description": "Récompense Ecodéfi des Pros",
+          "total_net": -33.61,
+          "total_gross": -33.61,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_752620443:e3430018-096f-4cce-8006-8fee4a04924c",
+          "invoice_number": "SD132241480",
+          "invoice_date": "07/05/2024",
+          "description": "Récompense Ecodéfi des Pros",
+          "total_net": -33.61,
+          "total_gross": -33.61,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bbox location equipement",
+      "source_labels_top": [
+        [
+          "Bbox - location équipement (du 23/07 au 22/08)",
+          1
+        ]
+      ],
+      "proposed_account": "6114",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:0139f4ed-c311-46a6-83a6-f9b34913c135",
+          "invoice_number": "11938139870724",
+          "invoice_date": "23/07/2024",
+          "description": "Bbox - location équipement (du 23/07 au 22/08)",
+          "total_net": 2.5,
+          "total_gross": 3.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "dedommagement suite a une perte de",
+      "source_labels_top": [
+        [
+          "Dédommagement suite a une perte de service",
+          1
+        ]
+      ],
+      "proposed_account": "758",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:28b4759d-28f3-420b-b7cb-3f129e423180",
+          "invoice_number": "11914905110124",
+          "invoice_date": "23/01/2024",
+          "description": "Dédommagement suite a une perte de service",
+          "total_net": -1.11,
+          "total_gross": -1.332,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "monster 50x12",
+      "source_labels_top": [
+        [
+          "MONSTER 50X12",
+          1
+        ]
+      ],
+      "proposed_account": "707",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4711B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:45cf28e9-84ea-48dd-848e-5aaacc60ed11",
+          "invoice_number": "481",
+          "invoice_date": "06/05/2024",
+          "description": "MONSTER 50X12",
+          "total_net": 1125.0,
+          "total_gross": 1186.875,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "fanta vert 50clx12",
+      "source_labels_top": [
+        [
+          "FANTA VERT 50CLX12",
+          1
+        ]
+      ],
+      "proposed_account": "707",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4711B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:45cf28e9-84ea-48dd-848e-5aaacc60ed11",
+          "invoice_number": "481",
+          "invoice_date": "06/05/2024",
+          "description": "FANTA VERT 50CLX12",
+          "total_net": 23.0,
+          "total_gross": 24.265,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "fanta shokota 50x12",
+      "source_labels_top": [
+        [
+          "FANTA SHOKOTA 50X12",
+          1
+        ]
+      ],
+      "proposed_account": "707",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4711B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:45cf28e9-84ea-48dd-848e-5aaacc60ed11",
+          "invoice_number": "481",
+          "invoice_date": "06/05/2024",
+          "description": "FANTA SHOKOTA 50X12",
+          "total_net": 20.4,
+          "total_gross": 21.522,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "ice tea framboise 25lx6",
+      "source_labels_top": [
+        [
+          "ICE TEA FRAMBOISE 1.25LX6",
+          1
+        ]
+      ],
+      "proposed_account": "707",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4711B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:45cf28e9-84ea-48dd-848e-5aaacc60ed11",
+          "invoice_number": "481",
+          "invoice_date": "06/05/2024",
+          "description": "ICE TEA FRAMBOISE 1.25LX6",
+          "total_net": 8.15,
+          "total_gross": 8.59825,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "boules magique 100x",
+      "source_labels_top": [
+        [
+          "BOULES MAGIQUE 100X",
+          1
+        ]
+      ],
+      "proposed_account": "707",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4711B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:45cf28e9-84ea-48dd-848e-5aaacc60ed11",
+          "invoice_number": "481",
+          "invoice_date": "06/05/2024",
+          "description": "BOULES MAGIQUE 100X",
+          "total_net": 13.9,
+          "total_gross": 16.68,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "fanta tropical exo 5lx9",
+      "source_labels_top": [
+        [
+          "FANTA TROPICAL EXO 1.5LX9",
+          1
+        ]
+      ],
+      "proposed_account": "707",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4711B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:45cf28e9-84ea-48dd-848e-5aaacc60ed11",
+          "invoice_number": "481",
+          "invoice_date": "06/05/2024",
+          "description": "FANTA TROPICAL EXO 1.5LX9",
+          "total_net": 13.23,
+          "total_gross": 13.95765,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "eau cristaline 5x6 palette",
+      "source_labels_top": [
+        [
+          "EAU CRISTALINE 1.5X6 PALETTE",
+          1
+        ]
+      ],
+      "proposed_account": "707",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4711B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:45cf28e9-84ea-48dd-848e-5aaacc60ed11",
+          "invoice_number": "481",
+          "invoice_date": "06/05/2024",
+          "description": "EAU CRISTALINE 1.5X6 PALETTE",
+          "total_net": 193.2,
+          "total_gross": 203.826,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bbox location equipement",
+      "source_labels_top": [
+        [
+          "Bbox - location équipement",
+          1
+        ]
+      ],
+      "proposed_account": "6112",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:532d453f-fd1b-4726-9b5b-971d0f096ee2",
+          "invoice_number": "11285112820924",
+          "invoice_date": "23/09/2024",
+          "description": "Bbox - location équipement",
+          "total_net": 2.5,
+          "total_gross": 3.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons halal booster bits fruits 90gr",
+      "source_labels_top": [
+        [
+          "Bonbons halal booster bits fruits 90gr",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons halal booster bits fruits 90gr",
+          "total_net": 15.12,
+          "total_gross": 15.12,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons booster bits acide 90gr fini",
+      "source_labels_top": [
+        [
+          "Bonbons booster bits acide 90gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons booster bits acide 90gr FINI",
+          "total_net": 15.12,
+          "total_gross": 15.12,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons halal tropical mix 90gr fini",
+      "source_labels_top": [
+        [
+          "Bonbons halal tropical mix 90gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons halal tropical mix 90gr FINI",
+          "total_net": 30.24,
+          "total_gross": 30.24,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons little mix acide 90gr fini",
+      "source_labels_top": [
+        [
+          "Bonbons little mix acide 90gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons little mix acide 90gr FINI",
+          "total_net": 30.24,
+          "total_gross": 30.24,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons poulpes acides 90gr fini",
+      "source_labels_top": [
+        [
+          "Bonbons poulpes acides 90gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons poulpes acides 90gr FINI",
+          "total_net": 15.12,
+          "total_gross": 15.12,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons tranches de pasteque 90gr fini",
+      "source_labels_top": [
+        [
+          "Bonbons tranches de pastèque 90gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons tranches de pastèque 90gr FINI",
+          "total_net": 15.12,
+          "total_gross": 15.12,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons cerises acides 90gr fini",
+      "source_labels_top": [
+        [
+          "Bonbons Cerises acides 90gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons Cerises acides 90gr FINI",
+          "total_net": 7.56,
+          "total_gross": 7.56,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons roses bleues 90gr fini",
+      "source_labels_top": [
+        [
+          "Bonbons Roses bleues 90gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons Roses bleues 90gr FINI",
+          "total_net": 15.12,
+          "total_gross": 15.12,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "chewing gum halal melon 100gr fini",
+      "source_labels_top": [
+        [
+          "Chewing gum HALAL Melon 100gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Chewing gum HALAL Melon 100gr FINI",
+          "total_net": 8.76,
+          "total_gross": 8.76,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "chewing gum pasteque halal 100gr fini",
+      "source_labels_top": [
+        [
+          "Chewing gum pastèque HALAL 100gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Chewing gum pastèque HALAL 100gr FINI",
+          "total_net": 8.76,
+          "total_gross": 8.76,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons crocodiles sucres 90gr fini",
+      "source_labels_top": [
+        [
+          "Bonbons Crocodiles sucrés 90gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons Crocodiles sucrés 90gr FINI",
+          "total_net": 15.12,
+          "total_gross": 15.12,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons finitronc dianans 100gr fini",
+      "source_labels_top": [
+        [
+          "Bonbons Finitronc Dianans 100gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons Finitronc Dianans 100gr FINI",
+          "total_net": 15.6,
+          "total_gross": 15.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons fraises sauvages lisses 90gr fini",
+      "source_labels_top": [
+        [
+          "Bonbons fraises sauvages lisses 90gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons fraises sauvages lisses 90gr FINI",
+          "total_net": 7.56,
+          "total_gross": 7.56,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons oursons lisses 90gr fini",
+      "source_labels_top": [
+        [
+          "Bonbons Oursons lisses 90gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons Oursons lisses 90gr FINI",
+          "total_net": 15.12,
+          "total_gross": 15.12,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "raisin golden 250gr meray",
+      "source_labels_top": [
+        [
+          "Raisin golden 250gr MERAY",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Raisin golden 250gr MERAY",
+          "total_net": 22.8,
+          "total_gross": 22.8,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "tournesol grille sale 150gr rafik",
+      "source_labels_top": [
+        [
+          "Tournesol grillé salé 150gr RAFIK",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Tournesol grillé salé 150gr RAFIK",
+          "total_net": 15.6,
+          "total_gross": 15.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "miel avec cire en verre 450gr",
+      "source_labels_top": [
+        [
+          "Miel avec cire en verre 450gr NATUR BAL",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Miel avec cire en verre 450gr NATUR BAL",
+          "total_net": 18.9,
+          "total_gross": 18.9,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "confiture de fraises 380gr premium tamek",
+      "source_labels_top": [
+        [
+          "Confiture de fraises 380gr premium TAMEK",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Confiture de fraises 380gr premium TAMEK",
+          "total_net": 19.08,
+          "total_gross": 19.08,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "carambar atomic x180 pc",
+      "source_labels_top": [
+        [
+          "Carambar atomic x180 pc",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Carambar atomic x180 pc",
+          "total_net": 16.5,
+          "total_gross": 16.5,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "carambar caranougat x180 pc",
+      "source_labels_top": [
+        [
+          "Carambar caranougat x180 pc",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Carambar caranougat x180 pc",
+          "total_net": 16.5,
+          "total_gross": 16.5,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "chips original 125gr bret s",
+      "source_labels_top": [
+        [
+          "Chips Original 125gr BRET'S",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Chips Original 125gr BRET'S",
+          "total_net": 13.5,
+          "total_gross": 13.5,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "chips arome poulet braise 125gr bret",
+      "source_labels_top": [
+        [
+          "Chips arôme Poulet Braisé 125gr BRET'S",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Chips arôme Poulet Braisé 125gr BRET'S",
+          "total_net": 15.5,
+          "total_gross": 15.5,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "chips arome indian curry 125gr bret",
+      "source_labels_top": [
+        [
+          "Chips arôme Indian Curry 125gr BRET'S",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Chips arôme Indian Curry 125gr BRET'S",
+          "total_net": 15.5,
+          "total_gross": 15.5,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "chips petits oignons 125gr bret s",
+      "source_labels_top": [
+        [
+          "Chips Petits Oignons 125gr BRET'S",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Chips Petits Oignons 125gr BRET'S",
+          "total_net": 15.5,
+          "total_gross": 15.5,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "chips arome barbecue 125gr bret s",
+      "source_labels_top": [
+        [
+          "Chips arôme Barbecue 125gr BRET'S",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Chips arôme Barbecue 125gr BRET'S",
+          "total_net": 52.0,
+          "total_gross": 52.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "boisson fairy drink 10x20cl capri sun",
+      "source_labels_top": [
+        [
+          "Boisson fairy drink 10x20cl CAPRI-SUN",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Boisson fairy drink 10x20cl CAPRI-SUN",
+          "total_net": 52.0,
+          "total_gross": 52.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "boisson monster alarm 10x20cl capri sun",
+      "source_labels_top": [
+        [
+          "Boisson monster alarm 10x20cl CAPRI-SUN",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Boisson monster alarm 10x20cl CAPRI-SUN",
+          "total_net": 52.0,
+          "total_gross": 52.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "boisson jungle drink 10x20cl capri sun",
+      "source_labels_top": [
+        [
+          "Boisson jungle drink 10x20cl CAPRI-SUN",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Boisson jungle drink 10x20cl CAPRI-SUN",
+          "total_net": 52.0,
+          "total_gross": 52.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "boisson oranges peches 33cl capri sun",
+      "source_labels_top": [
+        [
+          "Boisson oranges-Pêches 33cl CAPRI-SUN",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Boisson oranges-Pêches 33cl CAPRI-SUN",
+          "total_net": 42.75,
+          "total_gross": 42.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "boisson mango maracuja 33cl capri sun",
+      "source_labels_top": [
+        [
+          "Boisson Mango&Maracuja 33cl CAPRI-SUN",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Boisson Mango&Maracuja 33cl CAPRI-SUN",
+          "total_net": 57.0,
+          "total_gross": 57.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "boisson multi fruits 33cl capri sun",
+      "source_labels_top": [
+        [
+          "Boisson multi-fruits 33cl CAPRI-SUN",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Boisson multi-fruits 33cl CAPRI-SUN",
+          "total_net": 57.0,
+          "total_gross": 57.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "saucisse de dinde sous vide 500gr",
+      "source_labels_top": [
+        [
+          "Saucisse de dinde sous vide 500gr EMIN",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Saucisse de dinde sous vide 500gr EMIN",
+          "total_net": 23.0,
+          "total_gross": 23.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "fromage leerdammer original 160gr",
+      "source_labels_top": [
+        [
+          "Fromage Leerdammer original 160gr",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Fromage Leerdammer original 160gr",
+          "total_net": 22.77,
+          "total_gross": 22.77,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "kiri creme 150gr",
+      "source_labels_top": [
+        [
+          "Kiri crème 150gr",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Kiri crème 150gr",
+          "total_net": 16.65,
+          "total_gross": 16.65,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "kiri nature 100gr",
+      "source_labels_top": [
+        [
+          "Kiri nature 100gr",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Kiri nature 100gr",
+          "total_net": 12.9,
+          "total_gross": 12.9,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "la vache qui rit 120gr portions",
+      "source_labels_top": [
+        [
+          "La vache qui rit 120gr 8 portions",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "La vache qui rit 120gr 8 portions",
+          "total_net": 18.0,
+          "total_gross": 18.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "nouilles instantanees halal gout crevette yum",
+      "source_labels_top": [
+        [
+          "Nouilles instantanées Halal goût crevette YUM YUM",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Nouilles instantanées Halal goût crevette YUM YUM",
+          "total_net": 59.94,
+          "total_gross": 59.94,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "huile d olive 1lt kavak",
+      "source_labels_top": [
+        [
+          "Huile d'olive 1Lt KAVAK",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Huile d'olive 1Lt KAVAK",
+          "total_net": 69.0,
+          "total_gross": 69.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "huile de tournesol 1lt schumak",
+      "source_labels_top": [
+        [
+          "Huile de tournesol 1Lt SCHUMAK",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Huile de tournesol 1Lt SCHUMAK",
+          "total_net": 38.16,
+          "total_gross": 38.16,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "dattes branchees naturelles 900gr tunisie kerem",
+      "source_labels_top": [
+        [
+          "Dattes branchées naturelles 900gr Tunisie KEREM",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Dattes branchées naturelles 900gr Tunisie KEREM",
+          "total_net": 45.6,
+          "total_gross": 45.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "dattes ravier 250gr algerie datol",
+      "source_labels_top": [
+        [
+          "Dattes ravier 250gr Algérie DATOL",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Dattes ravier 250gr Algérie DATOL",
+          "total_net": 15.6,
+          "total_gross": 15.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "pate d arachide 500gr aya",
+      "source_labels_top": [
+        [
+          "Pâte d'arachide 500gr AYA",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Pâte d'arachide 500gr AYA",
+          "total_net": 31.08,
+          "total_gross": 31.08,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "colorant alimentaire ideal",
+      "source_labels_top": [
+        [
+          "Colorant alimentaire IDEAL",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Colorant alimentaire IDEAL",
+          "total_net": 12.5,
+          "total_gross": 12.5,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "salade thon catalane 250gr",
+      "source_labels_top": [
+        [
+          "Salade au thon catalane 250gr",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Salade au thon catalane 250gr",
+          "total_net": 39.6,
+          "total_gross": 39.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "thon a la catalane 135gr belle",
+      "source_labels_top": [
+        [
+          "Thon à la catalane 135gr BELLE FRANCE",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Thon à la catalane 135gr BELLE FRANCE",
+          "total_net": 13.8,
+          "total_gross": 13.8,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "thon a la sauce mayonnaise 135gr",
+      "source_labels_top": [
+        [
+          "Thon à la sauce mayonnaise 135gr BELLE FRANCE",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:65679239-9d9c-4842-8ba1-c5bc9d657f71",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Thon à la sauce mayonnaise 135gr BELLE FRANCE",
+          "total_net": 13.8,
+          "total_gross": 13.8,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "ne 5lx6",
+      "source_labels_top": [
+        [
+          "NE 1.5LX6",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4711B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:68de2881-2f34-4dcc-a9d0-56ca2d5fdaf1",
+          "invoice_number": "FB4803",
+          "invoice_date": "12/02/2024",
+          "description": "NE 1.5LX6",
+          "total_net": 96.6,
+          "total_gross": 101.913,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "ve 5lx6",
+      "source_labels_top": [
+        [
+          "VE 1.5LX6",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4711B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:68de2881-2f34-4dcc-a9d0-56ca2d5fdaf1",
+          "invoice_number": "FB4803",
+          "invoice_date": "12/02/2024",
+          "description": "VE 1.5LX6",
+          "total_net": 96.6,
+          "total_gross": 101.913,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "vanille",
+      "source_labels_top": [
+        [
+          "VANILLE",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4711B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:68de2881-2f34-4dcc-a9d0-56ca2d5fdaf1",
+          "invoice_number": "FB4803",
+          "invoice_date": "12/02/2024",
+          "description": "VANILLE",
+          "total_net": 12.36,
+          "total_gross": 13.0398,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "cain x12",
+      "source_labels_top": [
+        [
+          "CAIN X12",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4711B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:68de2881-2f34-4dcc-a9d0-56ca2d5fdaf1",
+          "invoice_number": "FB4803",
+          "invoice_date": "12/02/2024",
+          "description": "CAIN X12",
+          "total_net": 11.64,
+          "total_gross": 12.2802,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "carte bancaire",
+      "source_labels_top": [
+        [
+          "CARTE BANCAIRE",
+          1
+        ]
+      ],
+      "proposed_account": "70610000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4711B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:68de2881-2f34-4dcc-a9d0-56ca2d5fdaf1",
+          "invoice_number": "FB4803",
+          "invoice_date": "12/02/2024",
+          "description": "CARTE BANCAIRE",
+          "total_net": 19.0,
+          "total_gross": 20.045,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "eau cristaline 5lx6",
+      "source_labels_top": [
+        [
+          "EAU CRISTALINE 1.5LX6",
+          1
+        ]
+      ],
+      "proposed_account": "707",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4711B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:75192bd3-427a-4623-b877-eb85f59034ba",
+          "invoice_number": "481",
+          "invoice_date": "09/01/2024",
+          "description": "EAU CRISTALINE 1.5LX6",
+          "total_net": 193.2,
+          "total_gross": 203.83,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "fanta americain x12",
+      "source_labels_top": [
+        [
+          "FANTA AMERICAIN X12",
+          1
+        ]
+      ],
+      "proposed_account": "707",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4711B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:75192bd3-427a-4623-b877-eb85f59034ba",
+          "invoice_number": "481",
+          "invoice_date": "09/01/2024",
+          "description": "FANTA AMERICAIN X12",
+          "total_net": 58.2,
+          "total_gross": 61.4,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "coca cherry vanille 33x12",
+      "source_labels_top": [
+        [
+          "COCA CHERRY VANILLE 33X12",
+          1
+        ]
+      ],
+      "proposed_account": "707",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4711B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:75192bd3-427a-4623-b877-eb85f59034ba",
+          "invoice_number": "481",
+          "invoice_date": "09/01/2024",
+          "description": "COCA CHERRY VANILLE 33X12",
+          "total_net": 12.36,
+          "total_gross": 13.04,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "red bull winter boite 25cl",
+      "source_labels_top": [
+        [
+          "RED BULL WINTER BOITE 25CL",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4639B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:79dd1ef7-16e0-4920-98b8-829386117e27",
+          "invoice_number": "0/0 (051) 0002/029102",
+          "invoice_date": "05/11/2024",
+          "description": "RED BULL WINTER BOITE 25CL",
+          "total_net": 26.32,
+          "total_gross": 27.77,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "sprite fresh b0ite slim 33cl",
+      "source_labels_top": [
+        [
+          "SPRITE FRESH B0ITE SLIM 33CL",
+          1
+        ]
+      ],
+      "proposed_account": "70710000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4639B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:79dd1ef7-16e0-4920-98b8-829386117e27",
+          "invoice_number": "0/0 (051) 0002/029102",
+          "invoice_date": "05/11/2024",
+          "description": "SPRITE FRESH B0ITE SLIM 33CL",
+          "total_net": 12.24,
+          "total_gross": 12.91,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "lay s barbecue 145g",
+      "source_labels_top": [
+        [
+          "LAY' S BARBECUE 145G",
+          1
+        ]
+      ],
+      "proposed_account": "70720000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4639B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:79dd1ef7-16e0-4920-98b8-829386117e27",
+          "invoice_number": "0/0 (051) 0002/029102",
+          "invoice_date": "05/11/2024",
+          "description": "LAY' S BARBECUE 145G",
+          "total_net": 31.08,
+          "total_gross": 32.79,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "kinder bueno white",
+      "source_labels_top": [
+        [
+          "KINDER BUENO WHITE",
+          1
+        ]
+      ],
+      "proposed_account": "70730000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4639B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:79dd1ef7-16e0-4920-98b8-829386117e27",
+          "invoice_number": "0/0 (051) 0002/029102",
+          "invoice_date": "05/11/2024",
+          "description": "KINDER BUENO WHITE",
+          "total_net": 42.82,
+          "total_gross": 45.18,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "ya0urt nature 16x125g r0chamb",
+      "source_labels_top": [
+        [
+          "YA0URT NATURE 16X125G R0CHAMB",
+          1
+        ]
+      ],
+      "proposed_account": "70740000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4639B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:79dd1ef7-16e0-4920-98b8-829386117e27",
+          "invoice_number": "0/0 (051) 0002/029102",
+          "invoice_date": "05/11/2024",
+          "description": "YA0URT NATURE 16X125G R0CHAMB",
+          "total_net": 2.65,
+          "total_gross": 2.8,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "danone 125g le nature",
+      "source_labels_top": [
+        [
+          "DANONE 16*125G LE NATURE",
+          1
+        ]
+      ],
+      "proposed_account": "70740000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4639B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:79dd1ef7-16e0-4920-98b8-829386117e27",
+          "invoice_number": "0/0 (051) 0002/029102",
+          "invoice_date": "05/11/2024",
+          "description": "DANONE 16*125G LE NATURE",
+          "total_net": 3.24,
+          "total_gross": 3.42,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "oeuf m g ppa lr",
+      "source_labels_top": [
+        [
+          "OEUF 6 M/G PPA LR",
+          1
+        ]
+      ],
+      "proposed_account": "70740000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4639B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:79dd1ef7-16e0-4920-98b8-829386117e27",
+          "invoice_number": "0/0 (051) 0002/029102",
+          "invoice_date": "05/11/2024",
+          "description": "OEUF 6 M/G PPA LR",
+          "total_net": 40.47,
+          "total_gross": 42.7,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "0euf m sol rochambeau",
+      "source_labels_top": [
+        [
+          "0EUF 12 M SOL ROCHAMBEAU",
+          1
+        ]
+      ],
+      "proposed_account": "70740000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4639B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:79dd1ef7-16e0-4920-98b8-829386117e27",
+          "invoice_number": "0/0 (051) 0002/029102",
+          "invoice_date": "05/11/2024",
+          "description": "0EUF 12 M SOL ROCHAMBEAU",
+          "total_net": 23.28,
+          "total_gross": 24.56,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "pain mie nature lc 550g rocham",
+      "source_labels_top": [
+        [
+          "PAIN MIE NATURE LC 550G ROCHAM",
+          1
+        ]
+      ],
+      "proposed_account": "70750000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4639B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:79dd1ef7-16e0-4920-98b8-829386117e27",
+          "invoice_number": "0/0 (051) 0002/029102",
+          "invoice_date": "05/11/2024",
+          "description": "PAIN MIE NATURE LC 550G ROCHAM",
+          "total_net": 11.9,
+          "total_gross": 12.55,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "pain chocolat lc 360g roch",
+      "source_labels_top": [
+        [
+          "8 PAIN CHOCOLAT LC 360G ROCH",
+          1
+        ]
+      ],
+      "proposed_account": "70750000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4639B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:79dd1ef7-16e0-4920-98b8-829386117e27",
+          "invoice_number": "0/0 (051) 0002/029102",
+          "invoice_date": "05/11/2024",
+          "description": "8 PAIN CHOCOLAT LC 360G ROCH",
+          "total_net": 17.5,
+          "total_gross": 18.46,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "pain lait lc 350g roch",
+      "source_labels_top": [
+        [
+          "10 PAIN LAIT LC 350G ROCH",
+          1
+        ]
+      ],
+      "proposed_account": "70750000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4639B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:79dd1ef7-16e0-4920-98b8-829386117e27",
+          "invoice_number": "0/0 (051) 0002/029102",
+          "invoice_date": "05/11/2024",
+          "description": "10 PAIN LAIT LC 350G ROCH",
+          "total_net": 15.84,
+          "total_gross": 16.71,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bri0che tressee lc 600g",
+      "source_labels_top": [
+        [
+          "BRI0CHE TRESSEE LC 600G",
+          1
+        ]
+      ],
+      "proposed_account": "70750000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4639B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:79dd1ef7-16e0-4920-98b8-829386117e27",
+          "invoice_number": "0/0 (051) 0002/029102",
+          "invoice_date": "05/11/2024",
+          "description": "BRI0CHE TRESSEE LC 600G",
+          "total_net": 11.2,
+          "total_gross": 11.82,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "pom jazz scifre c1 fr france",
+      "source_labels_top": [
+        [
+          "POM JAZZ/Scifre 170/220 C1 FR FRANCE",
+          1
+        ]
+      ],
+      "proposed_account": "70760000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4639B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:79dd1ef7-16e0-4920-98b8-829386117e27",
+          "invoice_number": "0/0 (051) 0002/029102",
+          "invoice_date": "05/11/2024",
+          "description": "POM JAZZ/Scifre 170/220 C1 FR FRANCE",
+          "total_net": 12.11,
+          "total_gross": 12.78,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "kaki persimon espagne c1 espagne",
+      "source_labels_top": [
+        [
+          "KAKI PERSIMON ESPAGNE C1 ESPAGNE",
+          1
+        ]
+      ],
+      "proposed_account": "70760000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4639B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:79dd1ef7-16e0-4920-98b8-829386117e27",
+          "invoice_number": "0/0 (051) 0002/029102",
+          "invoice_date": "05/11/2024",
+          "description": "KAKI PERSIMON ESPAGNE C1 ESPAGNE",
+          "total_net": 15.71,
+          "total_gross": 16.57,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "clem oronules mlle cal es c1espagne",
+      "source_labels_top": [
+        [
+          "CLEM ORONULES MLLE CAL.3 ES C1ESPAGNE",
+          1
+        ]
+      ],
+      "proposed_account": "70760000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4639B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:79dd1ef7-16e0-4920-98b8-829386117e27",
+          "invoice_number": "0/0 (051) 0002/029102",
+          "invoice_date": "05/11/2024",
+          "description": "CLEM ORONULES MLLE CAL.3 ES C1ESPAGNE",
+          "total_net": 23.32,
+          "total_gross": 24.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "poi comice 2kg c1 frfrance",
+      "source_labels_top": [
+        [
+          "POI COMICE 70/75 4.2KG C1 FRFRANCE",
+          1
+        ]
+      ],
+      "proposed_account": "70760000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4639B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:79dd1ef7-16e0-4920-98b8-829386117e27",
+          "invoice_number": "0/0 (051) 0002/029102",
+          "invoice_date": "05/11/2024",
+          "description": "POI COMICE 70/75 4.2KG C1 FRFRANCE",
+          "total_net": 11.72,
+          "total_gross": 12.36,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "citron primo ntar mc kg c1",
+      "source_labels_top": [
+        [
+          "CITRON PRIMO. NTAR MC 1,5 KG 50 C1 ESPESPAGNE",
+          1
+        ]
+      ],
+      "proposed_account": "70760000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4639B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:79dd1ef7-16e0-4920-98b8-829386117e27",
+          "invoice_number": "0/0 (051) 0002/029102",
+          "invoice_date": "05/11/2024",
+          "description": "CITRON PRIMO. NTAR MC 1,5 KG 50 C1 ESPESPAGNE",
+          "total_net": 3.89,
+          "total_gross": 4.1,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "concombre pc esp c1espagne",
+      "source_labels_top": [
+        [
+          "CONCOMBRE 4/5 PC ESP C1ESPAGNE",
+          1
+        ]
+      ],
+      "proposed_account": "70760000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4639B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:79dd1ef7-16e0-4920-98b8-829386117e27",
+          "invoice_number": "0/0 (051) 0002/029102",
+          "invoice_date": "05/11/2024",
+          "description": "CONCOMBRE 4/5 PC ESP C1ESPAGNE",
+          "total_net": 7.92,
+          "total_gross": 8.36,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "sal iceberg mc pc demipalx28 c1",
+      "source_labels_top": [
+        [
+          "SAL ICEBERG MC PC DEMIPALX28 C1 ESESPAGNE",
+          1
+        ]
+      ],
+      "proposed_account": "70760000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4639B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:79dd1ef7-16e0-4920-98b8-829386117e27",
+          "invoice_number": "0/0 (051) 0002/029102",
+          "invoice_date": "05/11/2024",
+          "description": "SAL ICEBERG MC PC DEMIPALX28 C1 ESESPAGNE",
+          "total_net": 10.89,
+          "total_gross": 11.49,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "tom rde mc 6kg maroc c1maroc",
+      "source_labels_top": [
+        [
+          "TOM RDE MC 67+ 6KG 56 MAROC C1MAROC",
+          1
+        ]
+      ],
+      "proposed_account": "70760000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4639B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:79dd1ef7-16e0-4920-98b8-829386117e27",
+          "invoice_number": "0/0 (051) 0002/029102",
+          "invoice_date": "05/11/2024",
+          "description": "TOM RDE MC 67+ 6KG 56 MAROC C1MAROC",
+          "total_net": 17.88,
+          "total_gross": 18.86,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "oig charc mc 8kg c1 fr",
+      "source_labels_top": [
+        [
+          "OIG CHARC MC 7/10 8KG C1 FR 66FRANCE",
+          1
+        ]
+      ],
+      "proposed_account": "70760000",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4639B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:79dd1ef7-16e0-4920-98b8-829386117e27",
+          "invoice_number": "0/0 (051) 0002/029102",
+          "invoice_date": "05/11/2024",
+          "description": "OIG CHARC MC 7/10 8KG C1 FR 66FRANCE",
+          "total_net": 7.92,
+          "total_gross": 8.36,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "solde de charges",
+      "source_labels_top": [
+        [
+          "Solde de charges Du 01/01/2023 Au 31/12/2023",
+          1
+        ]
+      ],
+      "proposed_account": "411",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:90f852ca-80f0-479e-9cd7-7ee4082ead69",
+          "invoice_number": "2000008-24001550",
+          "invoice_date": "17/06/2024",
+          "description": "Solde de charges Du 01/01/2023 Au 31/12/2023",
+          "total_net": 140.77,
+          "total_gross": 140.77,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "recompense ecodefi des pros felicitations vous",
+      "source_labels_top": [
+        [
+          "Récompense Ecodéfi des Pros - Félicitations, vous faites partie des gagnants de l'écodéfi des pros. Cette somme correspond au cumul des gains successifs remportés pendant toute la durée du challenge selon les conditions précisées a l'article 8 des Conditions Générales d'Utilisation",
+          1
+        ]
+      ],
+      "proposed_account": "758",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:94ab6d95-7551-4364-a601-734b2c8f0c8a",
+          "invoice_number": "SD132241480",
+          "invoice_date": "07/05/2024",
+          "description": "Récompense Ecodéfi des Pros - Félicitations, vous faites partie des gagnants de l'écodéfi des pros. Cette somme correspond au cumul des gains successifs remportés pendant toute la durée du challenge selon les conditions précisées a l'article 8 des Conditions Générales d'Utilisation",
+          "total_net": -33.61,
+          "total_gross": -33.61,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bbox location equipement",
+      "source_labels_top": [
+        [
+          "Bbox - location équipement",
+          1
+        ]
+      ],
+      "proposed_account": "6125",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:a9d22284-86cc-4495-b357-65c927561071",
+          "invoice_number": "11285112820924",
+          "invoice_date": "23/09/2024",
+          "description": "Bbox - location équipement",
+          "total_net": 2.5,
+          "total_gross": 3.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bbox pro internet telephonie",
+      "source_labels_top": [
+        [
+          "Bbox Pro+ Internet - Téléphonie (du 23/07 au 22/08)",
+          1
+        ]
+      ],
+      "proposed_account": "706100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:abb42844-5418-4c4a-9e1f-81f825bf38a6",
+          "invoice_number": "11938139870724",
+          "invoice_date": "23/07/2024",
+          "description": "Bbox Pro+ Internet - Téléphonie (du 23/07 au 22/08)",
+          "total_net": 38.49,
+          "total_gross": 46.19,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bbox location equipement",
+      "source_labels_top": [
+        [
+          "Bbox - location équipement (du 23/07 au 22/08)",
+          1
+        ]
+      ],
+      "proposed_account": "706100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:abb42844-5418-4c4a-9e1f-81f825bf38a6",
+          "invoice_number": "11938139870724",
+          "invoice_date": "23/07/2024",
+          "description": "Bbox - location équipement (du 23/07 au 22/08)",
+          "total_net": 2.5,
+          "total_gross": 3.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons halal booster bits fruits 90gr",
+      "source_labels_top": [
+        [
+          "Bonbons halal booster bits fruits 90gr",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons halal booster bits fruits 90gr",
+          "total_net": 15.12,
+          "total_gross": 15.12,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons booster bits acide 90gr fini",
+      "source_labels_top": [
+        [
+          "Bonbons booster bits acide 90gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons booster bits acide 90gr FINI",
+          "total_net": 15.12,
+          "total_gross": 15.12,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons halal tropical mix 90gr fini",
+      "source_labels_top": [
+        [
+          "Bonbons halal tropical mix 90gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons halal tropical mix 90gr FINI",
+          "total_net": 15.12,
+          "total_gross": 15.12,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons little mix acide 90gr fini",
+      "source_labels_top": [
+        [
+          "Bonbons little mix acide 90gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons little mix acide 90gr FINI",
+          "total_net": 30.24,
+          "total_gross": 30.24,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons poulpes acides 90gr fini",
+      "source_labels_top": [
+        [
+          "Bonbons poulpes acides 90gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons poulpes acides 90gr FINI",
+          "total_net": 15.12,
+          "total_gross": 15.12,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons tranches de pasteque 90gr fini",
+      "source_labels_top": [
+        [
+          "Bonbons tranches de pastèque 90gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons tranches de pastèque 90gr FINI",
+          "total_net": 15.12,
+          "total_gross": 15.12,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons cerises acides 90gr fini",
+      "source_labels_top": [
+        [
+          "Bonbons Cerises acides 90gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons Cerises acides 90gr FINI",
+          "total_net": 7.56,
+          "total_gross": 7.56,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons roses bleues 90gr fini",
+      "source_labels_top": [
+        [
+          "Bonbons Roses bleues 90gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons Roses bleues 90gr FINI",
+          "total_net": 15.12,
+          "total_gross": 15.12,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "chewing gum halal melon 100gr fini",
+      "source_labels_top": [
+        [
+          "Chewing gum HALAL Melon 100gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Chewing gum HALAL Melon 100gr FINI",
+          "total_net": 8.76,
+          "total_gross": 8.76,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "chewing gum pasteque halal 100gr fini",
+      "source_labels_top": [
+        [
+          "Chewing gum pastèque HALAL 100gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Chewing gum pastèque HALAL 100gr FINI",
+          "total_net": 8.76,
+          "total_gross": 8.76,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons crocodiles sucres 90gr fini",
+      "source_labels_top": [
+        [
+          "Bonbons Crocodiles sucrés 90gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons Crocodiles sucrés 90gr FINI",
+          "total_net": 15.12,
+          "total_gross": 15.12,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons finitronc dianans 100gr fini",
+      "source_labels_top": [
+        [
+          "Bonbons Finitronc Dianans 100gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons Finitronc Dianans 100gr FINI",
+          "total_net": 15.6,
+          "total_gross": 15.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons fraises sauvages lisses 90gr fini",
+      "source_labels_top": [
+        [
+          "Bonbons fraises sauvages lisses 90gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons fraises sauvages lisses 90gr FINI",
+          "total_net": 7.56,
+          "total_gross": 7.56,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bonbons oursons lisses 90gr fini",
+      "source_labels_top": [
+        [
+          "Bonbons Oursons lisses 90gr FINI",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Bonbons Oursons lisses 90gr FINI",
+          "total_net": 15.12,
+          "total_gross": 15.12,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "raisin golden 250gr meray",
+      "source_labels_top": [
+        [
+          "Raisin golden 250gr MERAY",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Raisin golden 250gr MERAY",
+          "total_net": 22.8,
+          "total_gross": 22.8,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "tournesol grille sale 150gr rafik",
+      "source_labels_top": [
+        [
+          "Tournesol grillé salé 150gr RAFIK",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Tournesol grillé salé 150gr RAFIK",
+          "total_net": 15.6,
+          "total_gross": 15.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "miel avec cire en verre 450gr",
+      "source_labels_top": [
+        [
+          "Miel avec cire en verre 450gr NATUR BAL",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Miel avec cire en verre 450gr NATUR BAL",
+          "total_net": 18.9,
+          "total_gross": 18.9,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "confiture de fraises 380gr premium tamek",
+      "source_labels_top": [
+        [
+          "Confiture de fraises 380gr premium TAMEK",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Confiture de fraises 380gr premium TAMEK",
+          "total_net": 19.08,
+          "total_gross": 19.08,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "carambar atomic x180 pc",
+      "source_labels_top": [
+        [
+          "Carambar atomic x180 pc",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Carambar atomic x180 pc",
+          "total_net": 16.5,
+          "total_gross": 16.5,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "carambar caranougat x180 pc",
+      "source_labels_top": [
+        [
+          "Carambar caranougat x180 pc",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Carambar caranougat x180 pc",
+          "total_net": 16.5,
+          "total_gross": 16.5,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "chips original 125gr bret s",
+      "source_labels_top": [
+        [
+          "Chips Original 125gr BRET'S",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Chips Original 125gr BRET'S",
+          "total_net": 13.5,
+          "total_gross": 13.5,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "chips arome poulet braise 125gr bret",
+      "source_labels_top": [
+        [
+          "Chips arôme Poulet Braisé 125gr BRET'S",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Chips arôme Poulet Braisé 125gr BRET'S",
+          "total_net": 15.5,
+          "total_gross": 15.5,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "chips arome indian curry 125gr bret",
+      "source_labels_top": [
+        [
+          "Chips arôme Indian Curry 125gr BRET'S",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Chips arôme Indian Curry 125gr BRET'S",
+          "total_net": 15.5,
+          "total_gross": 15.5,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "chips petits oignons 125gr bret s",
+      "source_labels_top": [
+        [
+          "Chips Petits Oignons 125gr BRET'S",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Chips Petits Oignons 125gr BRET'S",
+          "total_net": 15.5,
+          "total_gross": 15.5,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "chips arome barbecue 125gr bret s",
+      "source_labels_top": [
+        [
+          "Chips arôme Barbecue 125gr BRET'S",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Chips arôme Barbecue 125gr BRET'S",
+          "total_net": 15.5,
+          "total_gross": 15.5,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "boisson fairy drink 10x20cl capri sun",
+      "source_labels_top": [
+        [
+          "Boisson fairy drink 10x20cl CAPRI-SUN",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Boisson fairy drink 10x20cl CAPRI-SUN",
+          "total_net": 52.0,
+          "total_gross": 52.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "boisson monster alarm 10x20cl capri sun",
+      "source_labels_top": [
+        [
+          "Boisson monster alarm 10x20cl CAPRI-SUN",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Boisson monster alarm 10x20cl CAPRI-SUN",
+          "total_net": 52.0,
+          "total_gross": 52.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "boisson jungle drink 10x20cl capri sun",
+      "source_labels_top": [
+        [
+          "Boisson jungle drink 10x20cl CAPRI-SUN",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Boisson jungle drink 10x20cl CAPRI-SUN",
+          "total_net": 52.0,
+          "total_gross": 52.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "boisson oranges peches 33cl capri sun",
+      "source_labels_top": [
+        [
+          "Boisson oranges-Pêches 33cl CAPRI-SUN",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Boisson oranges-Pêches 33cl CAPRI-SUN",
+          "total_net": 42.75,
+          "total_gross": 42.75,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "boisson mango maraduja 33cl capri sun",
+      "source_labels_top": [
+        [
+          "Boisson Mango&Maraduja 33cl CAPRI-SUN",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Boisson Mango&Maraduja 33cl CAPRI-SUN",
+          "total_net": 57.0,
+          "total_gross": 57.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "boisson multi fruits 33cl capri sun",
+      "source_labels_top": [
+        [
+          "Boisson multi-fruits 33cl CAPRI-SUN",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Boisson multi-fruits 33cl CAPRI-SUN",
+          "total_net": 57.0,
+          "total_gross": 57.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "sosis de dinde sous vide 500gr",
+      "source_labels_top": [
+        [
+          "Sosis de dinde sous vide 500gr EMIN",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Sosis de dinde sous vide 500gr EMIN",
+          "total_net": 23.0,
+          "total_gross": 23.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "fromage leerdammer original 160gr",
+      "source_labels_top": [
+        [
+          "Fromage Leerdammer original 160gr",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Fromage Leerdammer original 160gr",
+          "total_net": 22.77,
+          "total_gross": 22.77,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "kiri creme 150gr",
+      "source_labels_top": [
+        [
+          "Kiri crème 150gr",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Kiri crème 150gr",
+          "total_net": 16.65,
+          "total_gross": 16.65,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "kiri nature 100gr",
+      "source_labels_top": [
+        [
+          "Kiri nature 100gr",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Kiri nature 100gr",
+          "total_net": 12.9,
+          "total_gross": 12.9,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "la vache qui rit 120gr portions",
+      "source_labels_top": [
+        [
+          "la vache qui rit 120gr 8 portions",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "la vache qui rit 120gr 8 portions",
+          "total_net": 18.0,
+          "total_gross": 18.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "nouilles instantanees halal gout crevette yum",
+      "source_labels_top": [
+        [
+          "Nouilles instantanées Halal goût crevette YUM YUM",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Nouilles instantanées Halal goût crevette YUM YUM",
+          "total_net": 59.94,
+          "total_gross": 59.94,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "huile d olive 1l kavak",
+      "source_labels_top": [
+        [
+          "Huile d'olive 1L KAVAK",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Huile d'olive 1L KAVAK",
+          "total_net": 69.0,
+          "total_gross": 69.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "huile de tournesol 1l schumak",
+      "source_labels_top": [
+        [
+          "Huile de tournesol 1L SCHUMAK",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Huile de tournesol 1L SCHUMAK",
+          "total_net": 38.16,
+          "total_gross": 38.16,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "dattes branchees naturelles 900gr tunisie kerem",
+      "source_labels_top": [
+        [
+          "Dattes branchées naturelles 900gr Tunisie KEREM",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Dattes branchées naturelles 900gr Tunisie KEREM",
+          "total_net": 45.6,
+          "total_gross": 45.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "dattes ravier 250gr algerie datol",
+      "source_labels_top": [
+        [
+          "Dattes ravier 250gr Algérie DATOL",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Dattes ravier 250gr Algérie DATOL",
+          "total_net": 15.6,
+          "total_gross": 15.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "pate d arachide 500gr aya",
+      "source_labels_top": [
+        [
+          "Pate d'arachide 500gr AYA",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Pate d'arachide 500gr AYA",
+          "total_net": 31.08,
+          "total_gross": 31.08,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "colorant alimentaire ideal",
+      "source_labels_top": [
+        [
+          "Colorant alimentaire IDEAL",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Colorant alimentaire IDEAL",
+          "total_net": 12.5,
+          "total_gross": 12.5,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "salade thon catalane 250gr",
+      "source_labels_top": [
+        [
+          "Salade au thon catalane 250gr",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Salade au thon catalane 250gr",
+          "total_net": 39.6,
+          "total_gross": 39.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "thon a la catalane 135gr belle",
+      "source_labels_top": [
+        [
+          "Thon à la catalane 135gr BELLE FRANCE",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Thon à la catalane 135gr BELLE FRANCE",
+          "total_net": 13.8,
+          "total_gross": 13.8,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "thon a la sauce mayonnaise 135gr",
+      "source_labels_top": [
+        [
+          "Thon à la sauce mayonnaise 135gr BELLE FRANCE",
+          1
+        ]
+      ],
+      "proposed_account": "707100",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_752620443:b4900a8d-427f-4dd3-b728-b0c9a5fd909d",
+          "invoice_number": "27543",
+          "invoice_date": "22/02/2024",
+          "description": "Thon à la sauce mayonnaise 135gr BELLE FRANCE",
+          "total_net": 13.8,
+          "total_gross": 13.8,
+          "currency": "EUR"
+        }
+      ]
+    }
+  ]
+}

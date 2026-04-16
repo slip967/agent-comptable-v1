@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "generated_at": "2026-04-10T10:38:19.899859Z",
+    "db_factures": "abt3",
+    "partition_prefix": "fr_bd_827722265",
+    "total_unique_references": 27,
+    "stats": {
+      "line_items_exploitation_metier": 26,
+      "line_items_charges_externes": 1
+    }
+  },
+  "category": "a_revoir",
+  "items": []
+}

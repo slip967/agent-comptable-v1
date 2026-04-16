@@ -1,0 +1,140 @@
+{
+  "fec_file": "C:\\Users\\Dell\\Downloads\\FEC 2023.txt",
+  "pdf_root": "Z:\\e\\fichiers_pdf_paris\\Keymanage pdf - maroc\\2024\\Clients 2024\\SPEED MARKET_83196239400019\\FLAT_INPUT\\Facture\\Facture\\2023",
+  "pdf_count": 13,
+  "exact_match_count": 4,
+  "exact_matches": [
+    {
+      "invoice": {
+        "relative_path": "399315613 - METRO FRANCE/2023-10-02_0-00800002-0227762_208.91.pdf",
+        "date": "2023-10-02",
+        "amount": "208.91",
+        "supplier_folder": "399315613 - METRO FRANCE"
+      },
+      "matches": [
+        {
+          "piece": "23100004",
+          "date": "02/10/2023",
+          "document": "",
+          "libelle": "METRO",
+          "account": "401",
+          "debit": "208,91000000",
+          "credit": "0"
+        }
+      ]
+    },
+    {
+      "invoice": {
+        "relative_path": "399315613 - METRO FRANCE/2023-10-03_0-00800002-022918_29.80.pdf",
+        "date": "2023-10-03",
+        "amount": "29.80",
+        "supplier_folder": "399315613 - METRO FRANCE"
+      },
+      "matches": [
+        {
+          "piece": "23100002",
+          "date": "03/10/2023",
+          "document": "",
+          "libelle": "METRO",
+          "account": "401",
+          "debit": "29,80000000",
+          "credit": "0"
+        }
+      ]
+    },
+    {
+      "invoice": {
+        "relative_path": "399315613 - METRO FRANCE/2023-10-18_0-00800002-024226_142.08.pdf",
+        "date": "2023-10-18",
+        "amount": "142.08",
+        "supplier_folder": "399315613 - METRO FRANCE"
+      },
+      "matches": [
+        {
+          "piece": "23100005",
+          "date": "18/10/2023",
+          "document": "",
+          "libelle": "METRO",
+          "account": "401",
+          "debit": "142,08000000",
+          "credit": "0"
+        }
+      ]
+    },
+    {
+      "invoice": {
+        "relative_path": "399315613 - METRO FRANCE/2023-10-23_002-406554_122.77.pdf",
+        "date": "2023-10-23",
+        "amount": "122.77",
+        "supplier_folder": "399315613 - METRO FRANCE"
+      },
+      "matches": [
+        {
+          "piece": "23100001",
+          "date": "03/10/2023",
+          "document": "",
+          "libelle": "METRO",
+          "account": "401",
+          "debit": "122,77000000",
+          "credit": "0"
+        }
+      ]
+    }
+  ],
+  "no_exact_match_pdfs": [
+    {
+      "relative_path": "399315613 - METRO FRANCE/2023-10-02_544900017673_37.16.pdf",
+      "date": "2023-10-02",
+      "amount": "37.16",
+      "supplier_folder": "399315613 - METRO FRANCE"
+    },
+    {
+      "relative_path": "399315613 - METRO FRANCE/2023-10-03_42603254211192001899_48.00.pdf",
+      "date": "2023-10-03",
+      "amount": "48.00",
+      "supplier_folder": "399315613 - METRO FRANCE"
+    },
+    {
+      "relative_path": "810542456 - GNANAM EXOTIQUE/2023-10-03_000001000110905_722.70.pdf",
+      "date": "2023-10-03",
+      "amount": "722.70",
+      "supplier_folder": "810542456 - GNANAM EXOTIQUE"
+    },
+    {
+      "relative_path": "810542456 - GNANAM EXOTIQUE/2023-12-30_000001000119115_218.79.pdf",
+      "date": "2023-12-30",
+      "amount": "218.79",
+      "supplier_folder": "810542456 - GNANAM EXOTIQUE"
+    },
+    {
+      "relative_path": "810542456 - GNANAM EXOTIQUE/2023-12-30_n000001000119121_-49.80.pdf",
+      "date": "2023-12-30",
+      "amount": "-49.80",
+      "supplier_folder": "810542456 - GNANAM EXOTIQUE"
+    },
+    {
+      "relative_path": "892610098 - LUZOUE/2023-12-20_INV-2023-806_24.00.pdf",
+      "date": "2023-12-20",
+      "amount": "24.00",
+      "supplier_folder": "892610098 - LUZOUE"
+    },
+    {
+      "relative_path": "899309900 - RIVIERA CAP & COUNTRY/2023-06-01_2222-2214_0.00.pdf",
+      "date": "2023-06-01",
+      "amount": "0.00",
+      "supplier_folder": "899309900 - RIVIERA CAP & COUNTRY"
+    },
+    {
+      "relative_path": "GNANAM EXOTIQUE/2023-12-28_000004000075893_413.24.pdf",
+      "date": "2023-12-28",
+      "amount": "413.24",
+      "supplier_folder": "GNANAM EXOTIQUE"
+    },
+    {
+      "relative_path": "INCONNU/2023-06-28_8066_0.00.pdf",
+      "date": "2023-06-28",
+      "amount": "0.00",
+      "supplier_folder": "INCONNU"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "source_file": "base_produits_vtc_v1.json",
+    "selection": "a_valider only (articles sources errones/hors VTC)",
+    "items_count": 12
+  },
+  "items": [
+    {
+      "article_source": "FR COCA COLA 24X33CL",
+      "sirens": [
+        "839181104"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_839181104:000eeac8-57f5-40cf-9d09-c185bddc34a7",
+        "fr_bd_839181104:2f36171b-bca5-4c4a-8a7c-20dfa4b0f5c7",
+        "fr_bd_839181104:31a0b787-bbd4-4ddd-bec2-6c47d7d9500a",
+        "fr_bd_839181104:70bc7460-3b0b-473d-9e0d-d29992b1a9f1",
+        "fr_bd_839181104:7d78055f-3c82-48d5-a746-79ea2de7a5e3"
+      ],
+      "compte_comptable": "6068",
+      "validation_status": "a_controler_decision_comptable",
+      "validation_reason": "hors_perimetre_vtc_potentiel"
+    },
+    {
+      "article_source": "OASIS TROPICAL 24X33CL",
+      "sirens": [
+        "839181104"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_839181104:000eeac8-57f5-40cf-9d09-c185bddc34a7",
+        "fr_bd_839181104:2f36171b-bca5-4c4a-8a7c-20dfa4b0f5c7",
+        "fr_bd_839181104:31a0b787-bbd4-4ddd-bec2-6c47d7d9500a",
+        "fr_bd_839181104:70bc7460-3b0b-473d-9e0d-d29992b1a9f1",
+        "fr_bd_839181104:7d78055f-3c82-48d5-a746-79ea2de7a5e3"
+      ],
+      "compte_comptable": "6068",
+      "validation_status": "a_controler_decision_comptable",
+      "validation_reason": "hors_perimetre_vtc_potentiel"
+    },
+    {
+      "article_source": "OASIS POMME POIRE 24X33CL",
+      "sirens": [
+        "839181104"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_839181104:8b2dda4b-9e18-448e-81db-2998fcff1407",
+        "fr_bd_839181104:9c8b710f-8db4-4360-8940-09614a5afe5a",
+        "fr_bd_839181104:ca87a91a-28f4-4a91-871f-7df23c0352e6",
+        "fr_bd_839181104:ebb1d3a9-ee99-4d4f-be7c-71ab6bf50d5a"
+      ],
+      "compte_comptable": "6068",
+      "validation_status": "a_controler_decision_comptable",
+      "validation_reason": "hors_perimetre_vtc_potentiel"
+    },
+    {
+      "article_source": "COCA COLA CHERRY 24X33CL",
+      "sirens": [
+        "839181104"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_839181104:aa657635-264e-4a4e-98c3-860690759f83",
+        "fr_bd_839181104:c4de30e8-881e-487c-b656-4d3cf7a05e8e"
+      ],
+      "compte_comptable": "6068",
+      "validation_status": "a_controler_decision_comptable",
+      "validation_reason": "hors_perimetre_vtc_potentiel"
+    },
+    {
+      "article_source": "Coca Cola",
+      "sirens": [
+        "839181104"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_839181104:d9c9f534-3e54-4f07-a473-8a62466d407c",
+        "fr_bd_839181104:e1764786-c961-44b8-8b33-fa725c50bfd2"
+      ],
+      "compte_comptable": "6068",
+      "validation_status": "a_controler_decision_comptable",
+      "validation_reason": "hors_perimetre_vtc_potentiel"
+    },
+    {
+      "article_source": "FR FANTA ORANGE 24X33CL",
+      "sirens": [
+        "839181104"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_839181104:2f36171b-bca5-4c4a-8a7c-20dfa4b0f5c7",
+        "fr_bd_839181104:f6b27267-7fa0-4d7d-9160-fa601b4cfa56"
+      ],
+      "compte_comptable": "6068",
+      "validation_status": "a_controler_decision_comptable",
+      "validation_reason": "hors_perimetre_vtc_potentiel"
+    },
+    {
+      "article_source": "Coca",
+      "sirens": [
+        "839181104"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_839181104:6cf20926-7142-4a3b-8114-12a37683212c"
+      ],
+      "compte_comptable": "6068",
+      "validation_status": "a_controler_decision_comptable",
+      "validation_reason": "hors_perimetre_vtc_potentiel"
+    },
+    {
+      "article_source": "FANTA COCA AMERICAN 12*355ML",
+      "sirens": [
+        "844082156"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_844082156:3483e866-c67a-4bb0-9962-7555339d56a2"
+      ],
+      "compte_comptable": "6068",
+      "validation_status": "a_controler_decision_comptable",
+      "validation_reason": "hors_perimetre_vtc_potentiel"
+    },
+    {
+      "article_source": "HEINEKEN 20*25CL",
+      "sirens": [
+        "844082156"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_844082156:3483e866-c67a-4bb0-9962-7555339d56a2"
+      ],
+      "compte_comptable": "6068",
+      "validation_status": "a_controler_decision_comptable",
+      "validation_reason": "hors_perimetre_vtc_potentiel"
+    },
+    {
+      "article_source": "HEINEKEN 5D 12X25CL",
+      "sirens": [
+        "844082156"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_844082156:3483e866-c67a-4bb0-9962-7555339d56a2"
+      ],
+      "compte_comptable": "6068",
+      "validation_status": "a_controler_decision_comptable",
+      "validation_reason": "hors_perimetre_vtc_potentiel"
+    },
+    {
+      "article_source": "OASIS TROPICAL/POMME/FRAISE/CASIS/FRA 24*33CL",
+      "sirens": [
+        "844082156"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_844082156:3483e866-c67a-4bb0-9962-7555339d56a2"
+      ],
+      "compte_comptable": "6068",
+      "validation_status": "a_controler_decision_comptable",
+      "validation_reason": "hors_perimetre_vtc_potentiel"
+    },
+    {
+      "article_source": "REDBULL EDITION 24*250ML *",
+      "sirens": [
+        "844082156"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_844082156:3483e866-c67a-4bb0-9962-7555339d56a2"
+      ],
+      "compte_comptable": "6068",
+      "validation_status": "a_controler_decision_comptable",
+      "validation_reason": "hors_perimetre_vtc_potentiel"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+﻿{
+    "meta":  {
+                 "fec_file":  "C:\\Users\\Dell\\Downloads\\FEC 2023.txt",
+                 "pdf_root":  "Z:\\e\\fichiers_pdf_paris\\Keymanage pdf - maroc\\2024\\Clients 2024\\SPEED MARKET_83196239400019\\FLAT_INPUT\\Facture\\Facture\\2023",
+                 "pdf_count":  13,
+                 "exact_match_pdf_count":  4,
+                 "no_exact_match_pdf_count":  6,
+                 "note":  "Validation des comptes pour les PDFs sans match exact FEC; les pieces a 0,00 et l avoir negatif ont ete retirees.",
+                 "excluded_non_purchase_pdf_count":  3,
+                 "excluded_non_purchase_rel_paths":  [
+                                                         "899309900 - RIVIERA CAP \u0026 COUNTRY/2023-06-01_2222-2214_0.00.pdf",
+                                                         "INCONNU/2023-06-28_8066_0.00.pdf",
+                                                         "810542456 - GNANAM EXOTIQUE/2023-12-30_n000001000119121_-49.80.pdf"
+                                                     ]
+             },
+    "items":  [
+                  {
+                      "relative_path":  "399315613 - METRO FRANCE/2023-10-02_544900017673_37.16.pdf",
+                      "probable_account":  "6061/6068",
+                      "confidence":  "medium",
+                      "reason":  "2 lignes produits déjà comptabilisées en 6061 et 6068; cohérent avec boissons soft."
+                  },
+                  {
+                      "relative_path":  "399315613 - METRO FRANCE/2023-10-03_42603254211192001899_48.00.pdf",
+                      "probable_account":  null,
+                      "confidence":  "low",
+                      "reason":  "Aucune ligne produit exploitable retrouvée dans la base."
+                  },
+                  {
+                      "relative_path":  "810542456 - GNANAM EXOTIQUE/2023-10-03_000001000110905_722.70.pdf",
+                      "probable_account":  "6061 majoritaire, puis 6068/607/6062",
+                      "confidence":  "medium",
+                      "reason":  "Panier mixte déjà réparti dans la base par type de produit."
+                  },
+                  {
+                      "relative_path":  "810542456 - GNANAM EXOTIQUE/2023-12-30_000001000119115_218.79.pdf",
+                      "probable_account":  "607",
+                      "confidence":  "good",
+                      "reason":  "Les 2 lignes retrouvées sont déjà en 607."
+                  },
+                  {
+                      "relative_path":  "892610098 - LUZOUE/2023-12-20_INV-2023-806_24.00.pdf",
+                      "probable_account":  "6068 majoritaire, puis 6061/6063/607/6011",
+                      "confidence":  "medium",
+                      "reason":  "Panier mixte déjà réparti dans la base."
+                  },
+                  {
+                      "relative_path":  "GNANAM EXOTIQUE/2023-12-28_000004000075893_413.24.pdf",
+                      "probable_account":  "6061 majoritaire, puis 6068/607/6063/6011",
+                      "confidence":  "medium",
+                      "reason":  "Panier mixte déjà réparti dans la base."
+                  }
+              ]
+}

@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "generated_at": "2026-04-10T10:38:19.899859Z",
+    "db_factures": "abt3",
+    "partition_prefix": "fr_bd_827722265",
+    "total_unique_references": 27,
+    "stats": {
+      "line_items_exploitation_metier": 26,
+      "line_items_charges_externes": 1
+    }
+  },
+  "category": "charges_externes",
+  "items": [
+    {
+      "canonical_label": "port",
+      "source_labels_top": [
+        [
+          "Port",
+          1
+        ]
+      ],
+      "proposed_account": "624",
+      "category": "charges_externes",
+      "tva_rates_top": [],
+      "tva_hint_top": [
+        [
+          "unknown",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_827722265:91ddd953-93ac-451f-a300-dcd6ee2d3caf",
+          "invoice_number": "50",
+          "invoice_date": null,
+          "description": "Port",
+          "total_net": 19.0,
+          "total_gross": 19.0,
+          "currency": "EUR"
+        }
+      ]
+    }
+  ]
+}

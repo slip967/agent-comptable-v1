@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "generated_at": "2026-04-13T09:51:10.162307Z",
+    "db_factures": "abt3",
+    "partition_prefix": "fr_bd_844082156",
+    "total_unique_references": 54,
+    "stats": {
+      "line_items_exploitation_metier": 48,
+      "line_items_charges_externes": 6,
+      "line_items_a_revoir": 1
+    }
+  },
+  "category": "a_revoir",
+  "items": [
+    {
+      "canonical_label": "remboursement serie speciale b you 180go",
+      "source_labels_top": [
+        [
+          "Remboursement Série Speciale B&YOU 180Go (du 31/12 au 01/01)",
+          1
+        ]
+      ],
+      "proposed_account": "758",
+      "category": "a_revoir",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_844082156:85badeae-c424-430b-aad3-6318dbd4bf02",
+          "invoice_number": "11790158860124",
+          "invoice_date": "02/01/2024",
+          "description": "Remboursement Série Speciale B&YOU 180Go (du 31/12 au 01/01)",
+          "total_net": -1.34,
+          "total_gross": -1.61,
+          "currency": "EUR"
+        }
+      ]
+    }
+  ]
+}

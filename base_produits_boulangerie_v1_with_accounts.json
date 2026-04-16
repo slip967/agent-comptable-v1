@@ -1,0 +1,678 @@
+{
+    "meta":  {
+                 "profile_id":  "produits_boulangerie_v1",
+                 "metier":  "boulangerie",
+                 "client_siren":  "519665103",
+                 "partition_prefix":  "fr_bd_519665103",
+                 "version":  "v1",
+                 "status":  "draft",
+                 "source_note":  "Pre-rempli automatiquement depuis les references v1_519665103; validation metier requise.",
+                 "items_count":  25,
+                 "cleanup_note":  "Nettoyage manuel: suppression charges_externes en base metier + dedoublonnage produits.",
+                 "source_invoice_ids_note":  "Jusqu a 3 invoice_id source par article_source depuis invoice_form.",
+                 "accounts_enrichment":  {
+                                             "reference_file":  "v1_519665103_reference_base_exploitation_v1.json",
+                                             "matched_items":  25,
+                                             "unmatched_items":  0,
+                                             "already_present":  0
+                                         },
+                 "source_invoice_year_filter":  "2024",
+                 "accounts_alignment_from_abt3fec2":  {
+                                                          "db":  "abt3fec2",
+                                                          "selector":  "p=entry + invoice exists + _id not contains generated",
+                                                          "changed_items":  5,
+                                                          "unchanged_items":  0,
+                                                          "no_signal_items":  20,
+                                                          "min_confidence":  0.55
+                                                      },
+                 "keywords_cleanup_single_char_and_zero_v1":  {
+                                                                  "removed_single_char_keywords":  0,
+                                                                  "fixed_ocr_zero_to_o_keywords":  0,
+                                                                  "deduplicated_keywords":  0,
+                                                                  "items_touched":  0,
+                                                                  "total_keywords_before":  63,
+                                                                  "total_keywords_after":  63,
+                                                                  "rules":  [
+                                                                                "remove keywords with length \u003c= 1",
+                                                                                "replace 0 with o only when 0 is adjacent to letters"
+                                                                            ]
+                                                              },
+                 "text_normalization_v2":  {
+                                               "updated_at":  "2026-04-13T17:20:48.133721Z",
+                                               "rows_touched":  0,
+                                               "article_source_updated":  0,
+                                               "article_canonique_updated":  0,
+                                               "mots_cles_updated":  0,
+                                               "rule":  "remove special chars (including % * +), fix OCR 0/O in words, normalize canon + keywords"
+                                           },
+                 "account_normalization_v1":  {
+                                                  "rule":  "trim trailing zeros for padded compte_comptable values when length \u003e 3",
+                                                  "changed_items":  9,
+                                                  "normalized_pairs":  [
+                                                                           {
+                                                                               "old":  "60610000",
+                                                                               "new":  "6061",
+                                                                               "count":  8
+                                                                           },
+                                                                           {
+                                                                               "old":  "606100",
+                                                                               "new":  "6061",
+                                                                               "count":  1
+                                                                           }
+                                                                       ]
+                                              },
+                 "account_verification_v1":  {
+                                                  "class_6_only":  true,
+                                                  "suspicious_accounts":  [ ]
+                                             }
+             },
+    "items":  [
+                  {
+                      "article_source":  "CANADIENNE D\u0027OEUFS X180",
+                      "article_canonique":  "canadienne d oeufs x180",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "oeufs",
+                                        "x180"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+
+                                             ],
+                      "compte_comptable":  "601",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  311,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "FARINE DE POIS CHICHE",
+                      "article_canonique":  "farine de pois chiche",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "farine",
+                                        "pois",
+                                        "chiche"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  311,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus",
+                      "compte_comptable_validation_status":  "valide_auto_ok_2026-04-09",
+                      "compte_comptable_validation_note":  "Ancien statut moteur: validation_humaine (top_candidates_too_close). Compte conserve."
+                  },
+                  {
+                      "article_source":  "Farine Pois Chiches 500g",
+                      "article_canonique":  "farine pois chiches 500g",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "farine",
+                                        "pois",
+                                        "chiche"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  311,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus",
+                      "compte_comptable_validation_status":  "valide_auto_ok_2026-04-09",
+                      "compte_comptable_validation_note":  "Ancien statut moteur: validation_humaine (top_candidates_too_close). Compte conserve."
+                  },
+                  {
+                      "article_source":  "HUILE D\u0027OLIVE EL HORA",
+                      "article_canonique":  "huile d olive el hora",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "huile",
+                                        "olive"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  311,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "Huile d\u0027olive TASSOURT 1L",
+                      "article_canonique":  "huile d olive tassourt 1l",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "huile",
+                                        "olive",
+                                        "1l"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  311,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "HUILE TOURNESOL 1L x15 MAUREL",
+                      "article_canonique":  "huile tournesol 1l x15 maurel",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "huile",
+                                        "tournesol"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:07bd8534-6098-40a4-8bdf-d90d05a04de1",
+                                                 "fr_bd_519665103:18253df1-7756-45e6-a507-e571c6d48cde"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "abt3fec2_entry_invoice_block_v1",
+                      "compte_comptable_match_score":  100,
+                      "compte_comptable_match_reason":  "votes=607:1; confidence=1.00; invoices=fr_bd_519665103:07bd8534-6098-40a4-8bdf-d90d05a04de1",
+                      "compte_comptable_validation_status":  "valide_auto_ok_2026-04-09",
+                      "compte_comptable_validation_note":  "Ancien statut moteur: validation_humaine (top_candidates_too_close). Compte conserve."
+                  },
+                  {
+                      "article_source":  "HUILE TOURNESOL 25L MAUREL BIDON",
+                      "article_canonique":  "huile tournesol 25l maurel bidon",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "huile",
+                                        "tournesol",
+                                        "bidon"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  311,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus",
+                      "compte_comptable_validation_status":  "valide_auto_ok_2026-04-09",
+                      "compte_comptable_validation_note":  "Ancien statut moteur: validation_humaine (top_candidates_too_close). Compte conserve."
+                  },
+                  {
+                      "article_source":  "LAIT FERMENTE CHERGUI 10 X 1L",
+                      "article_canonique":  "lait fermente chergui 10 x 1l",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "lait",
+                                        "chergui"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:196cca26-bc04-43f9-b988-6bdad87fbc56",
+                                                 "fr_bd_519665103:4dfa1f0d-13be-4459-8303-ef42102d4ad3",
+                                                 "fr_bd_519665103:bcb12536-25b0-47ae-b440-1ad4abeb6c2a"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "abt3fec2_entry_invoice_block_v1",
+                      "compte_comptable_match_score":  100,
+                      "compte_comptable_match_reason":  "votes=607:2; confidence=1.00; invoices=fr_bd_519665103:196cca26-bc04-43f9-b988-6bdad87fbc56 | fr_bd_519665103:4dfa1f0d-13be-4459-8303-ef42102d4ad3"
+                  },
+                  {
+                      "article_source":  "LAIT FERMENTE LUXLAIT 8X1L",
+                      "article_canonique":  "lait fermente luxlait 8x1l",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "lait",
+                                        "luxlait"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:18253df1-7756-45e6-a507-e571c6d48cde"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  311,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "LAIT FERMENTEE LUXLAIT X8",
+                      "article_canonique":  "lait fermentee luxlait x8",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "lait",
+                                        "luxlait",
+                                        "8x1l"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  311,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "Levure Saf 125g",
+                      "article_canonique":  "levure saf 125g",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "levure",
+                                        "saf",
+                                        "125g"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  311,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "OEUFS DE POULE BRUN - MOYEN",
+                      "article_canonique":  "oeufs de poule brun moyen",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "oeufs",
+                                        "poule",
+                                        "brun"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+
+                                             ],
+                      "compte_comptable":  "601",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  311,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "OEUFS FILM BLANC MOYEN FR X360",
+                      "article_canonique":  "oeufs film blanc moyen fr x360",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "oeufs",
+                                        "blanc",
+                                        "x360"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  311,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "OEUFS FILM TEINTE MOYEN FR X300",
+                      "article_canonique":  "oeufs film teinte moyen fr x300",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "oeufs",
+                                        "teinte",
+                                        "x300"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  311,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "OEUFS MOYENS BLANCS 10 30",
+                      "article_canonique":  "oeufs moyens blancs 10 30",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "oeufs",
+                                        "moyens",
+                                        "blancs"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:196cca26-bc04-43f9-b988-6bdad87fbc56"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "abt3fec2_entry_invoice_block_v1",
+                      "compte_comptable_match_score":  100,
+                      "compte_comptable_match_reason":  "votes=607:1; confidence=1.00; invoices=fr_bd_519665103:196cca26-bc04-43f9-b988-6bdad87fbc56"
+                  },
+                  {
+                      "article_source":  "OEUFS X30",
+                      "article_canonique":  "oeufs x30",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "oeufs",
+                                        "x30"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:9f8cf7ab-4237-4cf1-b096-9c94e27ed18a"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "abt3fec2_entry_invoice_block_v1",
+                      "compte_comptable_match_score":  100,
+                      "compte_comptable_match_reason":  "votes=607:1; confidence=1.00; invoices=fr_bd_519665103:9f8cf7ab-4237-4cf1-b096-9c94e27ed18a"
+                  },
+                  {
+                      "article_source":  "PATE A TARTINER CREME NOISETTE NELLA 700GR X 6",
+                      "article_canonique":  "pate a tartiner creme noisette nella 700gr x 6",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "pate",
+                                        "tartiner",
+                                        "noisette"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "SAF LEVURE 72",
+                      "article_canonique":  "saf levure 72",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "levure",
+                                        "fraiche"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+                                          "1071C"
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "SEL",
+                      "article_canonique":  "sel",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "sel"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  361,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+                      "compte_comptable_validation_status":  "valide_auto_ok_2026-04-09",
+                      "compte_comptable_validation_note":  "Ancien statut moteur: validation_humaine (top_candidates_too_close). Compte conserve."
+                  },
+                  {
+                      "article_source":  "SEL FIN BTE VERSEUSE 750GR X10",
+                      "article_canonique":  "sel fin bte verseuse 750gr x10",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "sel",
+                                        "verseuse"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:07bd8534-6098-40a4-8bdf-d90d05a04de1"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "abt3fec2_entry_invoice_block_v1",
+                      "compte_comptable_match_score":  100,
+                      "compte_comptable_match_reason":  "votes=607:1; confidence=1.00; invoices=fr_bd_519665103:07bd8534-6098-40a4-8bdf-d90d05a04de1"
+                  },
+                  {
+                      "article_source":  "Sel fin WALIMA 500g",
+                      "article_canonique":  "sel fin walima 500g",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "sel",
+                                        "fin"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  311,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "Semoule d\u0027orge Fine Trad 1kg",
+                      "article_canonique":  "semoule d orge fine trad 1kg",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  0.0,
+                      "mots_cles":  [
+                                        "semoule",
+                                        "orge",
+                                        "fine"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:b11ea9c4-42a6-4c52-82f2-a7d697f10bd2",
+                                                 "fr_bd_519665103:dafe530c-f5f1-4739-95d5-544c4a2274ad",
+                                                 "fr_bd_519665103:f11739e3-377a-4fe4-8dde-5597a9b0103a"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  553,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=3, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "Semoule d\u0027orge Grosse Trad 1kg",
+                      "article_canonique":  "semoule d orge grosse trad 1kg",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  0.0,
+                      "mots_cles":  [
+                                        "semoule",
+                                        "orge",
+                                        "grosse"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:b11ea9c4-42a6-4c52-82f2-a7d697f10bd2",
+                                                 "fr_bd_519665103:dafe530c-f5f1-4739-95d5-544c4a2274ad"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  432,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=2, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "Semoule de blé fine 1kg",
+                      "article_canonique":  "semoule de ble fine 1kg",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  0.0,
+                      "mots_cles":  [
+                                        "semoule",
+                                        "ble",
+                                        "fine"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:dafe530c-f5f1-4739-95d5-544c4a2274ad"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  311,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "SUCRE JAUNE",
+                      "article_canonique":  "sucre jaune",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "sucre",
+                                        "jaune"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f"
+                                             ],
+                      "compte_comptable":  "6061",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  311,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+                  }
+              ],
+    "a_valider":  [
+
+                  ]
+}

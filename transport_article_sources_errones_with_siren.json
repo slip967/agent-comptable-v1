@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "source_file": "base_produits_transport_v1.json",
+    "selection": "auto-detected suspicious article_source (high-confidence OCR/glued token rules)",
+    "items_count": 0,
+    "rules": [
+      "ocr_0_in_word: token contains letter+0+letter",
+      "digit_glued_word: token starts with digits directly followed by long letters"
+    ],
+    "by_client_siren": {}
+  },
+  "items": []
+}

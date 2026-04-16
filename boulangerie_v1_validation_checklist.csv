@@ -1,0 +1,31 @@
+﻿idx,article_source,article_canonique,categorie,sous_categorie,compte_comptable,tva_rate,status,valider_keep,corriger_canonique,corriger_compte,corriger_tva,commentaire
+1,FARINE DE POIS CHICHE,farine,exploitation_metier,matiere_premiere,601,5.5,to_validate,no,farine pois chiche,6061,5.5,Doublon meme article_source; garder idx 2
+2,FARINE DE POIS CHICHE,farine pois chiche,exploitation_metier,matiere_premiere,6061,5.5,to_validate,yes,farine pois chiche,6061,5.5,Reference principale retenue
+3,Farine Pois Chiches 500g,farine pois chiche,exploitation_metier,matiere_premiere,60610000,5.5,to_validate,yes,farine pois chiche,60610000,5.5,Variante 500g retenue
+4,SAF LEVURE *72,levure,exploitation_metier,matiere_premiere,601,5.5,to_validate,yes,levure,6061,5.5,Ajustement compte selon reference client
+5,Levure Saf 125g,levure,exploitation_metier,matiere_premiere,6061,5.5,to_validate,no,levure saf 125g,60610000,5.5,Doublon avec idx 6 plus detaille
+6,Levure Saf 125g,levure,exploitation_metier,matiere_premiere,60610000,5.5,to_validate,yes,levure saf 125g,60610000,5.5,Version detaillee retenue
+7,Semoule de blé fine 1kg,semoule ble,exploitation_metier,matiere_premiere,60610000,0.0,to_validate,yes,semoule ble,60610000,0.0,TVA 0.0 observee a confirmer
+8,Semoule d'orge Fine Trad 1kg,semoule orge,exploitation_metier,matiere_premiere,60610000,0.0,to_validate,yes,semoule orge,60610000,0.0,Conforme aux occurrences historiques
+9,Semoule d'orge Grosse Trad 1kg,semoule orge,exploitation_metier,matiere_premiere,60610000,0.0,to_validate,yes,semoule orge,60610000,0.0,Conforme aux occurrences historiques
+10,SUCRE JAUNE,sucre,exploitation_metier,matiere_premiere,606100,5.5,to_validate,yes,sucre,606100,5.5,Conforme reference client
+11,Sel fin WALIMA 500g,sel,exploitation_metier,matiere_premiere,60610000,5.5,to_validate,,,,,
+12,SEL FIN BTE VERSEUSE 750GR X10,sel,exploitation_metier,matiere_premiere,6062,5.5,to_validate,,,,,
+13,SEL,sel,exploitation_metier,matiere_premiere,6068,5.5,to_validate,,,,,
+14,HUILE TOURNESOL 1L x15 MAUREL,huile tournesol,exploitation_metier,matiere_premiere,6062,5.5,to_validate,,,,,
+15,HUILE TOURNESOL 25L MAUREL BIDON,huile tournesol,exploitation_metier,matiere_premiere,6061,5.5,to_validate,,,,,
+16,HUILE D'OLIVE EL HORA,huile olive,exploitation_metier,matiere_premiere,6061,5.5,to_validate,,,,,
+17,Huile d'olive TASSOURT 1L,huile olive,exploitation_metier,matiere_premiere,60610000,5.5,to_validate,,,,,
+18,OEUFS MOYENS BLANCS 10*30,oeufs,exploitation_metier,matiere_premiere,6061,5.5,to_validate,,,,,
+19,OEUFS FILM BLANC MOYEN FR X360,oeufs,exploitation_metier,matiere_premiere,6061,5.5,to_validate,,,,,
+20,OEUFS FILM TEINTE MOYEN FR X300,oeufs,exploitation_metier,matiere_premiere,6061,5.5,to_validate,,,,,
+21,OEUFS DE POULE BRUN - MOYEN,oeufs,exploitation_metier,matiere_premiere,60225,5.5,to_validate,,,,,
+22,OEUFS X30,oeufs,exploitation_metier,matiere_premiere,6011,5.5,to_validate,,,,,
+23,CANADIENNE D'OEUFS X180,oeufs,exploitation_metier,matiere_premiere,601,5.5,to_validate,,,,,
+24,LAIT FERMENTE LUXLAIT 8X1L,lait,exploitation_metier,matiere_premiere,6061,5.5,to_validate,,,,,
+25,LAIT FERMENTE CHERGUI 10 X 1L,lait,exploitation_metier,matiere_premiere,6061,5.5,to_validate,,,,,
+26,LAIT FERMENTEE LUXLAIT X8,lait,exploitation_metier,matiere_premiere,6061,5.5,to_validate,,,,,
+27,PATE A TARTINER CREME NOISETTE NELLA 700GR X 6,pate a tartiner,exploitation_metier,matiere_premiere,6061,5.5,to_validate,,,,,
+28,OFFRE MOBILE MOBITPE MOBILE ABONNEMENT TRIM. du 01/07/25 au 30/09/25,location terminal paiement,charges_externes,telecom_et_services,626,20.0,to_validate,,,,,
+29,ABONNEMENT TRIM. MOBITPE MOBILE du 01/04/25 au 30/06/25,abonnement tpe mobile,charges_externes,telecom_et_services,6226,20.0,to_validate,,,,,
+30,Frais Administratifs Carte Acheteur,frais administratifs carte,charges_externes,frais_service,6226,20.0,to_validate,,,,,

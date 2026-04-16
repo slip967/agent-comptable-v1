@@ -1,0 +1,263 @@
+{
+  "meta": {
+    "generated_at": "2026-04-13T09:51:10.162307Z",
+    "db_factures": "abt3",
+    "partition_prefix": "fr_bd_844082156",
+    "total_unique_references": 54,
+    "stats": {
+      "line_items_exploitation_metier": 48,
+      "line_items_charges_externes": 6,
+      "line_items_a_revoir": 1
+    }
+  },
+  "category": "charges_externes",
+  "items": [
+    {
+      "canonical_label": "port emballage",
+      "source_labels_top": [
+        [
+          "Port & emballage",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "5.5",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_food",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "4711B",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_844082156:0fb0be73-be0e-4934-900b-627b1af7fd5d",
+          "invoice_number": "000005000098868",
+          "invoice_date": "21/01/2024",
+          "description": "Port & emballage",
+          "total_net": 204.99,
+          "total_gross": 216.26,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "remboursement serie speciale b you 180go",
+      "source_labels_top": [
+        [
+          "Remboursement Série Speciale B&YOU 180Go (du 31/12 au 01/01)",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_844082156:4ffc2e4f-78a9-4dd3-b062-9cc507aa42f4",
+          "invoice_number": "11790158860124",
+          "invoice_date": "02/01/2024",
+          "description": "Remboursement Série Speciale B&YOU 180Go (du 31/12 au 01/01)",
+          "total_net": -1.34,
+          "total_gross": -1.61,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "regularisation remise forfait b you",
+      "source_labels_top": [
+        [
+          "Régularisation Remise Forfait B&YOU (du 31/12 au 01/01)",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_844082156:4ffc2e4f-78a9-4dd3-b062-9cc507aa42f4",
+          "invoice_number": "11790158860124",
+          "invoice_date": "02/01/2024",
+          "description": "Régularisation Remise Forfait B&YOU (du 31/12 au 01/01)",
+          "total_net": 0.48,
+          "total_gross": 0.58,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "proces verbal assemblee generale ordinaire approbation",
+      "source_labels_top": [
+        [
+          "Procés verbal Assemblée Générale Ordinaire : - approbation des comptes - affectation du résultat pour l'exercice comptable 2023",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5829C",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_844082156:8b16b5ff-1b36-494c-bb19-7a995912e68f",
+          "invoice_number": "FA00008353",
+          "invoice_date": "22/07/2024",
+          "description": "Procés verbal Assemblée Générale Ordinaire : - approbation des comptes - affectation du résultat pour l'exercice comptable 2023",
+          "total_net": 190.0,
+          "total_gross": 228.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais de greffe",
+      "source_labels_top": [
+        [
+          "Frais de greffe",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5829C",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_844082156:8b16b5ff-1b36-494c-bb19-7a995912e68f",
+          "invoice_number": "FA00008353",
+          "invoice_date": "22/07/2024",
+          "description": "Frais de greffe",
+          "total_net": 55.0,
+          "total_gross": 66.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "vtc",
+      "source_labels_top": [
+        [
+          "Service VTC",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_844082156:a1db53f0-2347-4fe6-b26c-560da076b1e3",
+          "invoice_number": "4694803",
+          "invoice_date": "07/01/2019",
+          "description": "Service VTC",
+          "total_net": 0.0,
+          "total_gross": 0.0,
+          "currency": "EUR"
+        }
+      ]
+    }
+  ]
+}

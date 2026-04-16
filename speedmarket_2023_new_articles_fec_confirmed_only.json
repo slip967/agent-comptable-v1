@@ -1,0 +1,306 @@
+{
+  "meta": {
+    "source_base_file": "scripts-master/base_produits_epicerie_v1.json",
+    "source_report_file": "scripts-master/speedmarket_fec_match_report_2023.json",
+    "exact_match_pdf_count": 4,
+    "matched_article_count": 12,
+    "note": "Only new Speedmarket 2023 articles coming from PDFs with an exact FEC match were kept.",
+    "matched_invoice_rel_paths": [
+      "399315613 - METRO FRANCE/2023-10-02_0-00800002-0227762_208.91.pdf",
+      "399315613 - METRO FRANCE/2023-10-03_0-00800002-022918_29.80.pdf",
+      "399315613 - METRO FRANCE/2023-10-18_0-00800002-024226_142.08.pdf",
+      "399315613 - METRO FRANCE/2023-10-23_002-406554_122.77.pdf"
+    ]
+  },
+  "items": [
+    {
+      "article_source": "OASIS POINTE POIRE SLIM 33CL",
+      "article_canonique": "oasis pointe poire slim 33cl",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "oasis",
+        "pointe",
+        "poire",
+        "slim",
+        "33cl"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-02_0-00800002-0227762_208.91.pdf",
+      "source_invoice_ids": [
+        "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_02_0_00800002_0227762_208_91_pdf"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "speedmarket_2023_pdf_import_v1",
+      "compte_comptable_match_score": 50,
+      "compte_comptable_match_reason": "import_from_speedmarket_2023_pdf_folder"
+    },
+    {
+      "article_source": "OASIS FRAISE FRAMBOISE SLIM 33CLX6",
+      "article_canonique": "oasis fraise framboise slim 33clx6",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "oasis",
+        "fraise",
+        "framboise",
+        "slim",
+        "33clx6"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-02_0-00800002-0227762_208.91.pdf",
+      "source_invoice_ids": [
+        "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_02_0_00800002_0227762_208_91_pdf"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "speedmarket_2023_pdf_import_v1",
+      "compte_comptable_match_score": 50,
+      "compte_comptable_match_reason": "import_from_speedmarket_2023_pdf_folder"
+    },
+    {
+      "article_source": "OASIS POMME CASSIS FRAMBOISE SLIM 33CL",
+      "article_canonique": "oasis pomme cassis framboise slim 33cl",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "oasis",
+        "pomme",
+        "cassis",
+        "framboise",
+        "slim",
+        "33cl"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-02_0-00800002-0227762_208.91.pdf",
+      "source_invoice_ids": [
+        "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_02_0_00800002_0227762_208_91_pdf"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "speedmarket_2023_pdf_import_v1",
+      "compte_comptable_match_score": 50,
+      "compte_comptable_match_reason": "import_from_speedmarket_2023_pdf_folder"
+    },
+    {
+      "article_source": "OASIS POMME CASSIS FRAMBOISE 50CL PET",
+      "article_canonique": "oasis pomme cassis framboise 50cl pet",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "oasis",
+        "pomme",
+        "cassis",
+        "framboise",
+        "50cl",
+        "pet"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-02_0-00800002-0227762_208.91.pdf",
+      "source_invoice_ids": [
+        "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_02_0_00800002_0227762_208_91_pdf"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "speedmarket_2023_pdf_import_v1",
+      "compte_comptable_match_score": 50,
+      "compte_comptable_match_reason": "import_from_speedmarket_2023_pdf_folder"
+    },
+    {
+      "article_source": "SCHWEPPES POMME 50CL PET",
+      "article_canonique": "schweppes pomme 50cl pet",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "schweppes",
+        "pomme",
+        "50cl",
+        "pet"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-02_0-00800002-0227762_208.91.pdf",
+      "source_invoice_ids": [
+        "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_02_0_00800002_0227762_208_91_pdf"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "speedmarket_2023_pdf_import_v1",
+      "compte_comptable_match_score": 50,
+      "compte_comptable_match_reason": "import_from_speedmarket_2023_pdf_folder"
+    },
+    {
+      "article_source": "SCHWEPPES AGRUME 50CL PET",
+      "article_canonique": "schweppes agrume 50cl pet",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "schweppes",
+        "agrume",
+        "50cl",
+        "pet"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-02_0-00800002-0227762_208.91.pdf",
+      "source_invoice_ids": [
+        "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_02_0_00800002_0227762_208_91_pdf"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "speedmarket_2023_pdf_import_v1",
+      "compte_comptable_match_score": 50,
+      "compte_comptable_match_reason": "import_from_speedmarket_2023_pdf_folder"
+    },
+    {
+      "article_source": "CRISTALINE 50CL PET",
+      "article_canonique": "cristaline 50cl pet",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "cristaline",
+        "50cl",
+        "pet"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-02_0-00800002-0227762_208.91.pdf",
+      "source_invoice_ids": [
+        "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_02_0_00800002_0227762_208_91_pdf",
+        "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_23_002_406554_122_77_pdf"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "speedmarket_2023_pdf_import_v1",
+      "compte_comptable_match_score": 50,
+      "compte_comptable_match_reason": "import_from_speedmarket_2023_pdf_folder"
+    },
+    {
+      "article_source": "CRISTALINE 1.5L",
+      "article_canonique": "cristaline 1 5l",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "cristaline",
+        "5l"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-02_0-00800002-0227762_208.91.pdf",
+      "source_invoice_ids": [
+        "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_02_0_00800002_0227762_208_91_pdf"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "speedmarket_2023_pdf_import_v1",
+      "compte_comptable_match_score": 50,
+      "compte_comptable_match_reason": "import_from_speedmarket_2023_pdf_folder"
+    },
+    {
+      "article_source": "CARAIBOS BANANE BOITE 33CL",
+      "article_canonique": "caraibos banane boite 33cl",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "caraibos",
+        "banane",
+        "boite",
+        "33cl"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-03_0-00800002-022918_29.80.pdf",
+      "source_invoice_ids": [
+        "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_03_0_00800002_022918_29_80_pdf",
+        "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_23_002_406554_122_77_pdf"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "speedmarket_2023_pdf_import_v1",
+      "compte_comptable_match_score": 50,
+      "compte_comptable_match_reason": "import_from_speedmarket_2023_pdf_folder"
+    },
+    {
+      "article_source": "OASIS ICE TEA PECHE PET 50CL",
+      "article_canonique": "oasis ice tea peche pet 50cl",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "oasis",
+        "ice",
+        "tea",
+        "peche",
+        "pet",
+        "50cl"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-18_0-00800002-024226_142.08.pdf",
+      "source_invoice_ids": [
+        "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_18_0_00800002_024226_142_08_pdf"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "speedmarket_2023_pdf_import_v1",
+      "compte_comptable_match_score": 50,
+      "compte_comptable_match_reason": "import_from_speedmarket_2023_pdf_folder"
+    },
+    {
+      "article_source": "7UP MOJITO BTE 33CL SLIM",
+      "article_canonique": "7up mojito bte 33cl slim",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "7up",
+        "mojito",
+        "bte",
+        "33cl",
+        "slim"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-23_002-406554_122.77.pdf",
+      "source_invoice_ids": [
+        "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_23_002_406554_122_77_pdf"
+      ],
+      "compte_comptable": "607",
+      "compte_comptable_source": "speedmarket_2023_pdf_import_v1",
+      "compte_comptable_match_score": 50,
+      "compte_comptable_match_reason": "import_from_speedmarket_2023_pdf_folder"
+    },
+    {
+      "article_source": "ROCHE MAZET VIN ROUGE 12.5D C. SAUV. 2018 6-75CL",
+      "article_canonique": "roche mazet vin rouge 12 5d c sauv 2018 6 75cl",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "roche",
+        "mazet",
+        "vin",
+        "rouge",
+        "12",
+        "5d"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Import PDF Speedmarket 2023 depuis 399315613 - METRO FRANCE\\2023-10-23_002-406554_122.77.pdf",
+      "source_invoice_ids": [
+        "fr_bd_831962394:pdf_399315613_METRO_FRANCE_2023_10_23_002_406554_122_77_pdf",
+        "fr_bd_831962394:pdf_810542456_GNANAM_EXOTIQUE_2023_12_28_000004000075893_413_24_pdf",
+        "fr_bd_831962394:pdf_892610098_LUZOUE_2023_12_20_INV_2023_806_24_00_pdf",
+        "fr_bd_831962394:pdf_899309900_RIVIERA_CAP_COUNTRY_2023_06_01_2222_2214_0_00_pdf"
+      ],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "speedmarket_2023_pdf_import_v1",
+      "compte_comptable_match_score": 50,
+      "compte_comptable_match_reason": "import_from_speedmarket_2023_pdf_folder"
+    }
+  ]
+}

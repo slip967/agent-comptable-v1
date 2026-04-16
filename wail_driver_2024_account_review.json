@@ -1,0 +1,1209 @@
+{
+  "source_fec": "891370595FEC20241231.txt",
+  "row_count": 6671,
+  "unique_accounts": 68,
+  "family_counts": {
+    "512": 2169,
+    "411": 1132,
+    "401": 1012,
+    "627": 807,
+    "445661": 673,
+    "601": 415,
+    "606": 82,
+    "421": 43,
+    "431": 38,
+    "645": 34,
+    "437": 30,
+    "455": 27,
+    "622": 21,
+    "602": 20,
+    "641": 18,
+    "447": 17,
+    "631": 13,
+    "408": 12,
+    "613": 12,
+    "531": 12,
+    "633": 12,
+    "445": 9,
+    "44586": 8,
+    "281": 7,
+    "438": 5,
+    "616": 5,
+    "681": 5,
+    "442": 4,
+    "44571": 4,
+    "119": 3,
+    "658": 3,
+    "129": 2,
+    "604": 2,
+    "218": 2,
+    "701": 2,
+    "101": 1,
+    "206": 1,
+    "213": 1,
+    "275": 1,
+    "215": 1,
+    "671": 1,
+    "428": 1,
+    "311": 1,
+    "603": 1,
+    "626": 1,
+    "758": 1
+  },
+  "summary": {
+    "core_vtc_families_lines": 6103,
+    "review_families_lines": 126,
+    "other_lines": 442
+  },
+  "core_families": [
+    "401",
+    "408",
+    "411",
+    "421",
+    "431",
+    "437",
+    "445661",
+    "44571",
+    "44586",
+    "512",
+    "6011",
+    "604",
+    "606",
+    "609",
+    "613",
+    "616",
+    "622",
+    "625",
+    "626",
+    "627",
+    "641",
+    "645"
+  ],
+  "review_families": [
+    "101",
+    "119",
+    "129",
+    "206",
+    "213",
+    "215",
+    "218",
+    "275",
+    "281",
+    "311",
+    "428",
+    "442",
+    "447",
+    "455",
+    "531",
+    "602",
+    "603",
+    "633",
+    "658",
+    "671",
+    "681",
+    "701",
+    "758"
+  ],
+  "examples": {
+    "101": [
+      {
+        "piece": "[AN]",
+        "date": "20240101",
+        "libelle": "Report À Nouveau - Lignes validées",
+        "account": "101"
+      }
+    ],
+    "119": [
+      {
+        "piece": "0021",
+        "date": "20240101",
+        "libelle": "Résultat de l'exercice (perte)",
+        "account": "119"
+      },
+      {
+        "piece": "0059",
+        "date": "20240101",
+        "libelle": "PV 2022",
+        "account": "119"
+      },
+      {
+        "piece": "0030",
+        "date": "20240630",
+        "libelle": "AFFECTATION DE RESULTAT 2023",
+        "account": "119"
+      }
+    ],
+    "129": [
+      {
+        "piece": "[AN]",
+        "date": "20240101",
+        "libelle": "Perte - Lignes validées",
+        "account": "129"
+      },
+      {
+        "piece": "0030",
+        "date": "20240630",
+        "libelle": "AFFECTATION DE RESULTAT 2023",
+        "account": "129"
+      }
+    ],
+    "206": [
+      {
+        "piece": "[AN]",
+        "date": "20240101",
+        "libelle": "Report À Nouveau - Lignes validées",
+        "account": "206"
+      }
+    ],
+    "213": [
+      {
+        "piece": "[AN]",
+        "date": "20240101",
+        "libelle": "Report À Nouveau - Lignes validées",
+        "account": "2135"
+      }
+    ],
+    "275": [
+      {
+        "piece": "[AN]",
+        "date": "20240101",
+        "libelle": "Report À Nouveau - Lignes validées",
+        "account": "275"
+      }
+    ],
+    "281": [
+      {
+        "piece": "0024",
+        "date": "20240101",
+        "libelle": "IM000002 - Dotation aux amortissements et aux provisions",
+        "account": "28135"
+      },
+      {
+        "piece": "0061",
+        "date": "20240101",
+        "libelle": "IM000002 - Dotation aux amortissements et aux provisions",
+        "account": "28135"
+      },
+      {
+        "piece": "0041",
+        "date": "20241231",
+        "libelle": "DOTATIONS AUX AMORTISSEMENTS",
+        "account": "28135"
+      },
+      {
+        "piece": "0042",
+        "date": "20241231",
+        "libelle": "DOTATIONS AUX AMORTISSEMENTS",
+        "account": "28154"
+      },
+      {
+        "piece": "0043",
+        "date": "20241231",
+        "libelle": "DOTATIONS AUX AMORTISSEMENT",
+        "account": "28181"
+      }
+    ],
+    "401": [
+      {
+        "piece": "[AN]",
+        "date": "20240101",
+        "libelle": "AD GESTION 14 /PERIODE SEPT",
+        "account": "401"
+      },
+      {
+        "piece": "0008",
+        "date": "20240101",
+        "libelle": "AD GESTION 14",
+        "account": "401"
+      },
+      {
+        "piece": "0058",
+        "date": "20240101",
+        "libelle": "AD GESTION 14",
+        "account": "401"
+      },
+      {
+        "piece": "0066",
+        "date": "20240101",
+        "libelle": "AD GESTION 14",
+        "account": "401"
+      },
+      {
+        "piece": "0073",
+        "date": "20240101",
+        "libelle": "EURO INFORMATIO",
+        "account": "401"
+      }
+    ],
+    "408": [
+      {
+        "piece": "0003",
+        "date": "20240101",
+        "libelle": "CANAL SAT",
+        "account": "408"
+      },
+      {
+        "piece": "0051",
+        "date": "20240101",
+        "libelle": "CANAL SAT",
+        "account": "408"
+      },
+      {
+        "piece": "0002",
+        "date": "20240101",
+        "libelle": "ENGIE",
+        "account": "408"
+      },
+      {
+        "piece": "0017",
+        "date": "20240101",
+        "libelle": "ENGIE/FNP",
+        "account": "408"
+      },
+      {
+        "piece": "0049",
+        "date": "20241231",
+        "libelle": "BAGUETTE CHQ 2784326 04122024",
+        "account": "4081"
+      }
+    ],
+    "411": [
+      {
+        "piece": "[AN]",
+        "date": "20240101",
+        "libelle": "REMISE CB",
+        "account": "411"
+      },
+      {
+        "piece": "0001",
+        "date": "20240101",
+        "libelle": "REMISE CB",
+        "account": "411"
+      },
+      {
+        "piece": "0001",
+        "date": "20240101",
+        "libelle": "REMISE CB",
+        "account": "411"
+      },
+      {
+        "piece": "0001",
+        "date": "20240101",
+        "libelle": "REMISE CB",
+        "account": "411"
+      },
+      {
+        "piece": "0002",
+        "date": "20240101",
+        "libelle": "REMISE CB",
+        "account": "411"
+      }
+    ],
+    "421": [
+      {
+        "piece": "0012",
+        "date": "20240101",
+        "libelle": "Salaires décembre/22 DEMBELE MAKA",
+        "account": "421DEMBELE"
+      },
+      {
+        "piece": "0026",
+        "date": "20240101",
+        "libelle": "DEMBELE MAKA",
+        "account": "421DEMBELE"
+      },
+      {
+        "piece": "0036",
+        "date": "20240101",
+        "libelle": "Salaires janvier/23 DEMBELE MAKA",
+        "account": "421DEMBELE"
+      },
+      {
+        "piece": "0037",
+        "date": "20240101",
+        "libelle": "Salaires février/23 DEMBELE MAKA",
+        "account": "421DEMBELE"
+      },
+      {
+        "piece": "0038",
+        "date": "20240101",
+        "libelle": "Salaires mars/23 DEMBELE MAKA",
+        "account": "421DEMBELE"
+      }
+    ],
+    "431": [
+      {
+        "piece": "[AN]",
+        "date": "20240101",
+        "libelle": "Report À Nouveau - Lignes validées",
+        "account": "431"
+      },
+      {
+        "piece": "0012",
+        "date": "20240101",
+        "libelle": "Salaires décembre/22 URSSAF",
+        "account": "431"
+      },
+      {
+        "piece": "0037",
+        "date": "20240101",
+        "libelle": "Salaires février/23 URSSAF",
+        "account": "431"
+      },
+      {
+        "piece": "0038",
+        "date": "20240101",
+        "libelle": "Salaires mars/23 URSSAF",
+        "account": "431"
+      },
+      {
+        "piece": "0039",
+        "date": "20240101",
+        "libelle": "Salaires avril/23 URSSAF",
+        "account": "431"
+      }
+    ],
+    "437": [
+      {
+        "piece": "[AN]",
+        "date": "20240101",
+        "libelle": "Report À Nouveau - Lignes validées",
+        "account": "4373"
+      },
+      {
+        "piece": "0037",
+        "date": "20240101",
+        "libelle": "Salaires février/23 Régime Unifié Agirc Arrco",
+        "account": "4373"
+      },
+      {
+        "piece": "0039",
+        "date": "20240101",
+        "libelle": "Salaires avril/23 Régime Unifié Agirc Arrco",
+        "account": "4373"
+      },
+      {
+        "piece": "0270",
+        "date": "20240101",
+        "libelle": "PRLV SEPA MALAKOFF HUMANIS RETRAITE   MALAKOFF HUMANIS   2",
+        "account": "4373"
+      },
+      {
+        "piece": "0001",
+        "date": "20240101",
+        "libelle": "Salaires septembre/21 Prévoyance",
+        "account": "4378"
+      }
+    ],
+    "438": [
+      {
+        "piece": "0005",
+        "date": "20240101",
+        "libelle": "Charges sociales sur congés à payer",
+        "account": "4382"
+      },
+      {
+        "piece": "0005",
+        "date": "20240101",
+        "libelle": "Charges sociales sur congés à payer",
+        "account": "4382"
+      },
+      {
+        "piece": "0013",
+        "date": "20240101",
+        "libelle": "Charges sociales sur congés à payer",
+        "account": "4382"
+      },
+      {
+        "piece": "0013",
+        "date": "20240101",
+        "libelle": "Charges sociales sur congés à payer",
+        "account": "4382"
+      },
+      {
+        "piece": "0025",
+        "date": "20241231",
+        "libelle": "Charges sociales sur congés à payer",
+        "account": "4382"
+      }
+    ],
+    "442": [
+      {
+        "piece": "0005",
+        "date": "20240101",
+        "libelle": "Salaires mai/22",
+        "account": "4421"
+      },
+      {
+        "piece": "0006",
+        "date": "20240101",
+        "libelle": "Salaires juin/22",
+        "account": "4421"
+      },
+      {
+        "piece": "0007",
+        "date": "20240101",
+        "libelle": "Salaires juillet/22",
+        "account": "4421"
+      },
+      {
+        "piece": "0008",
+        "date": "20240101",
+        "libelle": "Salaires août/22",
+        "account": "4421"
+      }
+    ],
+    "445": [
+      {
+        "piece": "[AN]",
+        "date": "20240101",
+        "libelle": "Report À Nouveau - Lignes validées",
+        "account": "445511"
+      },
+      {
+        "piece": "0028",
+        "date": "20240101",
+        "libelle": "SARL SFJ",
+        "account": "4456214"
+      },
+      {
+        "piece": "0529",
+        "date": "20240409",
+        "libelle": "GASTRO HERO",
+        "account": "445621"
+      },
+      {
+        "piece": "0528",
+        "date": "20240601",
+        "libelle": "CMA",
+        "account": "445621"
+      },
+      {
+        "piece": "0589",
+        "date": "20240412",
+        "libelle": "CHEQUE 2748617 - TRESOR PUB",
+        "account": "445511"
+      }
+    ],
+    "447": [
+      {
+        "piece": "[AN]",
+        "date": "20240101",
+        "libelle": "Report À Nouveau - Lignes validées",
+        "account": "447"
+      },
+      {
+        "piece": "0119",
+        "date": "20240115",
+        "libelle": "PRLV SEPA DIR. GENE. DES FINANCES PUBLIQUES",
+        "account": "447"
+      },
+      {
+        "piece": "0262",
+        "date": "20240215",
+        "libelle": "PRLV SEPA DIR. GENE. DES FINANCES PUBLIQUES",
+        "account": "447"
+      },
+      {
+        "piece": "0305",
+        "date": "20240306",
+        "libelle": "CHEQUE 2748611 HAKIM-tva 2022",
+        "account": "447"
+      },
+      {
+        "piece": "0349",
+        "date": "20240315",
+        "libelle": "PRLV SEPA DIR. GENE. DES FINANCES PUBLIQUES",
+        "account": "447"
+      }
+    ],
+    "455": [
+      {
+        "piece": "[AN]",
+        "date": "20240101",
+        "libelle": "Report À Nouveau - Lignes validées",
+        "account": "455"
+      },
+      {
+        "piece": "0444",
+        "date": "20240101",
+        "libelle": "LEROY MERLIN",
+        "account": "455"
+      },
+      {
+        "piece": "0486",
+        "date": "20240207",
+        "libelle": "METRO FRANCE -CB regl mourad",
+        "account": "455"
+      },
+      {
+        "piece": "0112",
+        "date": "20240304",
+        "libelle": "BOULANGERIE",
+        "account": "455"
+      },
+      {
+        "piece": "0182",
+        "date": "20240304",
+        "libelle": "METRO FRANCE",
+        "account": "455"
+      }
+    ],
+    "512": [
+      {
+        "piece": "[AN]",
+        "date": "20240101",
+        "libelle": "Report À Nouveau - Lignes validées",
+        "account": "5121"
+      },
+      {
+        "piece": "0001",
+        "date": "20240102",
+        "libelle": "REMCB00103",
+        "account": "5121"
+      },
+      {
+        "piece": "0002",
+        "date": "20240102",
+        "libelle": "REMCB00065",
+        "account": "5121"
+      },
+      {
+        "piece": "0003",
+        "date": "20240102",
+        "libelle": "COMCB00065",
+        "account": "5121"
+      },
+      {
+        "piece": "0004",
+        "date": "20240102",
+        "libelle": "COMCB00103",
+        "account": "5121"
+      }
+    ],
+    "613": [
+      {
+        "piece": "0016",
+        "date": "20240101",
+        "libelle": "SCI VICTORIA",
+        "account": "6132"
+      },
+      {
+        "piece": "0027",
+        "date": "20240108",
+        "libelle": "SCI VICTORIA",
+        "account": "6132"
+      },
+      {
+        "piece": "0017",
+        "date": "20240301",
+        "libelle": "SCI VICTORIA",
+        "account": "6132"
+      },
+      {
+        "piece": "0018",
+        "date": "20240314",
+        "libelle": "SCI VICTORIA",
+        "account": "6132"
+      },
+      {
+        "piece": "0001",
+        "date": "20240401",
+        "libelle": "EURO INFORMATIO",
+        "account": "6135"
+      }
+    ],
+    "215": [
+      {
+        "piece": "0028",
+        "date": "20240101",
+        "libelle": "SARL SFJ",
+        "account": "2154"
+      }
+    ],
+    "445661": [
+      {
+        "piece": "0424",
+        "date": "20240101",
+        "libelle": "BRICO DEPOT",
+        "account": "445661"
+      },
+      {
+        "piece": "0425",
+        "date": "20240101",
+        "libelle": "BRICO DEPOT",
+        "account": "445661"
+      },
+      {
+        "piece": "0436",
+        "date": "20240101",
+        "libelle": "LEROY MERLIN",
+        "account": "445661"
+      },
+      {
+        "piece": "0437",
+        "date": "20240101",
+        "libelle": "LEROY MERLIN",
+        "account": "445661"
+      },
+      {
+        "piece": "0439",
+        "date": "20240101",
+        "libelle": "LEROY MERLIN",
+        "account": "445661"
+      }
+    ],
+    "606": [
+      {
+        "piece": "0424",
+        "date": "20240101",
+        "libelle": "BRICO DEPOT",
+        "account": "6063"
+      },
+      {
+        "piece": "0425",
+        "date": "20240101",
+        "libelle": "BRICO DEPOT",
+        "account": "6063"
+      },
+      {
+        "piece": "0436",
+        "date": "20240101",
+        "libelle": "LEROY MERLIN",
+        "account": "6063"
+      },
+      {
+        "piece": "0437",
+        "date": "20240101",
+        "libelle": "LEROY MERLIN",
+        "account": "6063"
+      },
+      {
+        "piece": "0439",
+        "date": "20240101",
+        "libelle": "LEROY MERLIN",
+        "account": "6063"
+      }
+    ],
+    "601": [
+      {
+        "piece": "0515",
+        "date": "20240102",
+        "libelle": "METRO FRANCE",
+        "account": "601"
+      },
+      {
+        "piece": "0512",
+        "date": "20240108",
+        "libelle": "METRO FRANCE",
+        "account": "601"
+      },
+      {
+        "piece": "0516",
+        "date": "20240113",
+        "libelle": "METRO FRANCE",
+        "account": "601"
+      },
+      {
+        "piece": "0517",
+        "date": "20240116",
+        "libelle": "METRO FRANCE",
+        "account": "601"
+      },
+      {
+        "piece": "0523",
+        "date": "20240117",
+        "libelle": " RUNGISAVIGROS",
+        "account": "601"
+      }
+    ],
+    "622": [
+      {
+        "piece": "0491",
+        "date": "20240104",
+        "libelle": "QUIMANAGE",
+        "account": "6226"
+      },
+      {
+        "piece": "0511",
+        "date": "20240115",
+        "libelle": "CN2C",
+        "account": "6226"
+      },
+      {
+        "piece": "0492",
+        "date": "20240117",
+        "libelle": "QUIMANAGE",
+        "account": "6226"
+      },
+      {
+        "piece": "0493",
+        "date": "20240222",
+        "libelle": "QUIMANAGE",
+        "account": "6226"
+      },
+      {
+        "piece": "0494",
+        "date": "20240311",
+        "libelle": "QUIMANAGE",
+        "account": "6226"
+      }
+    ],
+    "602": [
+      {
+        "piece": "0106",
+        "date": "20240215",
+        "libelle": "ESPACE VERT - ESP",
+        "account": "6021"
+      },
+      {
+        "piece": "0039",
+        "date": "20240402",
+        "libelle": "MEIGAL",
+        "account": "6021"
+      },
+      {
+        "piece": "0048",
+        "date": "20240404",
+        "libelle": "MEIGAL",
+        "account": "6021"
+      },
+      {
+        "piece": "0053",
+        "date": "20240409",
+        "libelle": "MEIGAL",
+        "account": "6021"
+      },
+      {
+        "piece": "0047",
+        "date": "20240411",
+        "libelle": "MEIGAL",
+        "account": "6021"
+      }
+    ],
+    "604": [
+      {
+        "piece": "0168",
+        "date": "20240312",
+        "libelle": "JEAN JAURES",
+        "account": "604"
+      },
+      {
+        "piece": "0133",
+        "date": "20241212",
+        "libelle": "CARBURANT",
+        "account": "604"
+      }
+    ],
+    "218": [
+      {
+        "piece": "0529",
+        "date": "20240409",
+        "libelle": "GASTRO HERO",
+        "account": "2181"
+      },
+      {
+        "piece": "0528",
+        "date": "20240601",
+        "libelle": "CMA",
+        "account": "2181"
+      }
+    ],
+    "627": [
+      {
+        "piece": "0003",
+        "date": "20240102",
+        "libelle": "COMCB00065",
+        "account": "627"
+      },
+      {
+        "piece": "0004",
+        "date": "20240102",
+        "libelle": "COMCB00103",
+        "account": "627"
+      },
+      {
+        "piece": "0111",
+        "date": "20240102",
+        "libelle": "INTERETS/FRAIS",
+        "account": "627"
+      },
+      {
+        "piece": "0007",
+        "date": "20240103",
+        "libelle": "COMCB00066",
+        "account": "627"
+      },
+      {
+        "piece": "0008",
+        "date": "20240103",
+        "libelle": "COMCB00104",
+        "account": "627"
+      }
+    ],
+    "616": [
+      {
+        "piece": "0042",
+        "date": "20240112",
+        "libelle": "MULTI PRO       I82003353",
+        "account": "6161"
+      },
+      {
+        "piece": "1117",
+        "date": "20240715",
+        "libelle": "MULTI PRO       I82003353",
+        "account": "6161"
+      },
+      {
+        "piece": "1557",
+        "date": "20240927",
+        "libelle": "PAIEMENT CB  MACIF ILE",
+        "account": "6161"
+      },
+      {
+        "piece": "1805",
+        "date": "20241106",
+        "libelle": "PRLV SEPA MACIF IDF PRODUCTION-",
+        "account": "6161"
+      },
+      {
+        "piece": "1989",
+        "date": "20241205",
+        "libelle": "PRLV SEPA MACIF IDF PRODUCTION-",
+        "account": "6161"
+      }
+    ],
+    "631": [
+      {
+        "piece": "0939",
+        "date": "20240617",
+        "libelle": "PAIEMENT CB CNFSE",
+        "account": "6313"
+      },
+      {
+        "piece": "0001",
+        "date": "20240131",
+        "libelle": "Salaires janvier/24",
+        "account": "6313"
+      },
+      {
+        "piece": "0002",
+        "date": "20240229",
+        "libelle": "Salaires février/24",
+        "account": "6313"
+      },
+      {
+        "piece": "0003",
+        "date": "20240331",
+        "libelle": "Salaires mars/24",
+        "account": "6313"
+      },
+      {
+        "piece": "0004",
+        "date": "20240430",
+        "libelle": "Salaires avril/24",
+        "account": "6313"
+      }
+    ],
+    "671": [
+      {
+        "piece": "1597",
+        "date": "20241004",
+        "libelle": "PAIEMENT CB RENNES WEB AMENDE.GOUV",
+        "account": "6712"
+      }
+    ],
+    "531": [
+      {
+        "piece": "0012",
+        "date": "20240101",
+        "libelle": "ALIMENTATION DE CAISSE",
+        "account": "531"
+      },
+      {
+        "piece": "0001",
+        "date": "20240215",
+        "libelle": "ESPACE VERT",
+        "account": "531"
+      },
+      {
+        "piece": "0004",
+        "date": "20240215",
+        "libelle": "ESPACE VERT",
+        "account": "531"
+      },
+      {
+        "piece": "0008",
+        "date": "20240216",
+        "libelle": "MARCHE INTERNATIONAL",
+        "account": "531"
+      },
+      {
+        "piece": "0007",
+        "date": "20240228",
+        "libelle": "LIDL",
+        "account": "531"
+      }
+    ],
+    "633": [
+      {
+        "piece": "0001",
+        "date": "20240131",
+        "libelle": "Salaires janvier/24",
+        "account": "6333"
+      },
+      {
+        "piece": "0002",
+        "date": "20240229",
+        "libelle": "Salaires février/24",
+        "account": "6333"
+      },
+      {
+        "piece": "0003",
+        "date": "20240331",
+        "libelle": "Salaires mars/24",
+        "account": "6333"
+      },
+      {
+        "piece": "0004",
+        "date": "20240430",
+        "libelle": "Salaires avril/24",
+        "account": "6333"
+      },
+      {
+        "piece": "0005",
+        "date": "20240531",
+        "libelle": "Salaires mai/24",
+        "account": "6333"
+      }
+    ],
+    "641": [
+      {
+        "piece": "0001",
+        "date": "20240131",
+        "libelle": "Salaires janvier/24",
+        "account": "641"
+      },
+      {
+        "piece": "0001",
+        "date": "20240131",
+        "libelle": "Salaires janvier/24",
+        "account": "6411"
+      },
+      {
+        "piece": "0002",
+        "date": "20240229",
+        "libelle": "Salaires février/24",
+        "account": "6411"
+      },
+      {
+        "piece": "0003",
+        "date": "20240331",
+        "libelle": "Salaires mars/24",
+        "account": "6411"
+      },
+      {
+        "piece": "0004",
+        "date": "20240430",
+        "libelle": "Salaires avril/24",
+        "account": "6411"
+      }
+    ],
+    "645": [
+      {
+        "piece": "0001",
+        "date": "20240131",
+        "libelle": "Salaires janvier/24",
+        "account": "6451"
+      },
+      {
+        "piece": "0001",
+        "date": "20240131",
+        "libelle": "Salaires janvier/24",
+        "account": "6453"
+      },
+      {
+        "piece": "0001",
+        "date": "20240131",
+        "libelle": "Salaires janvier/24",
+        "account": "6454"
+      },
+      {
+        "piece": "0002",
+        "date": "20240229",
+        "libelle": "Salaires février/24",
+        "account": "6451"
+      },
+      {
+        "piece": "0002",
+        "date": "20240229",
+        "libelle": "Salaires février/24",
+        "account": "6453"
+      }
+    ],
+    "428": [
+      {
+        "piece": "0025",
+        "date": "20241231",
+        "libelle": "Dettes provisionnées pour congés à payer",
+        "account": "4282"
+      }
+    ],
+    "44571": [
+      {
+        "piece": "0031",
+        "date": "20241231",
+        "libelle": "TVA déductible 20% Débits",
+        "account": "4457113"
+      },
+      {
+        "piece": "0033",
+        "date": "20241231",
+        "libelle": "REGUL TVA 2024",
+        "account": "4457113"
+      },
+      {
+        "piece": "0012",
+        "date": "20241231",
+        "libelle": "REMISE CHEQUE",
+        "account": "4457113"
+      },
+      {
+        "piece": "0013",
+        "date": "20241231",
+        "libelle": "TICKETS DE RESTAURANT",
+        "account": "4457113"
+      }
+    ],
+    "658": [
+      {
+        "piece": "0032",
+        "date": "20241231",
+        "libelle": "REGUL TVA 2024",
+        "account": "658"
+      },
+      {
+        "piece": "0059",
+        "date": "20241231",
+        "libelle": "Écriture de régularisation",
+        "account": "658"
+      },
+      {
+        "piece": "0067",
+        "date": "20241231",
+        "libelle": "Écriture de régularisation",
+        "account": "658"
+      }
+    ],
+    "681": [
+      {
+        "piece": "0041",
+        "date": "20241231",
+        "libelle": "DOTATIONS AUX AMORTISSEMENTS",
+        "account": "68112"
+      },
+      {
+        "piece": "0042",
+        "date": "20241231",
+        "libelle": "DOTATIONS AUX AMORTISSEMENTS",
+        "account": "68112"
+      },
+      {
+        "piece": "0043",
+        "date": "20241231",
+        "libelle": "DOTATIONS AUX AMORTISSEMENT",
+        "account": "68112"
+      },
+      {
+        "piece": "0066",
+        "date": "20241231",
+        "libelle": "IM000005 - Dotation aux amortissements et aux provisions",
+        "account": "68112"
+      },
+      {
+        "piece": "0068",
+        "date": "20241231",
+        "libelle": "IM000006 - Dotation aux amortissements et aux provisions",
+        "account": "68112"
+      }
+    ],
+    "311": [
+      {
+        "piece": "0044",
+        "date": "20241231",
+        "libelle": "STOCK FINAL",
+        "account": "311"
+      }
+    ],
+    "603": [
+      {
+        "piece": "0044",
+        "date": "20241231",
+        "libelle": "STOCK FINAL",
+        "account": "6031"
+      }
+    ],
+    "44586": [
+      {
+        "piece": "0049",
+        "date": "20241231",
+        "libelle": "BAGUETTE CHQ 2784326 04122024",
+        "account": "44586"
+      },
+      {
+        "piece": "0050",
+        "date": "20241231",
+        "libelle": "BOULANGERIE",
+        "account": "44586"
+      },
+      {
+        "piece": "0052",
+        "date": "20241231",
+        "libelle": "CASH MARKET",
+        "account": "44586"
+      },
+      {
+        "piece": "0053",
+        "date": "20241231",
+        "libelle": "DELICES ET SAVEUR",
+        "account": "44586"
+      },
+      {
+        "piece": "0054",
+        "date": "20241231",
+        "libelle": "DELICES DE VILLEJUIF CHEZ MOUSSA",
+        "account": "44586"
+      }
+    ],
+    "626": [
+      {
+        "piece": "0064",
+        "date": "20241231",
+        "libelle": "ORANGE",
+        "account": "6261"
+      }
+    ],
+    "758": [
+      {
+        "piece": "0065",
+        "date": "20241231",
+        "libelle": "Écriture de régularisation",
+        "account": "758"
+      }
+    ],
+    "701": [
+      {
+        "piece": "0012",
+        "date": "20241231",
+        "libelle": "REMISE CHEQUE",
+        "account": "701"
+      },
+      {
+        "piece": "0013",
+        "date": "20241231",
+        "libelle": "TICKETS DE RESTAURANT",
+        "account": "701"
+      }
+    ]
+  }
+}

@@ -1,0 +1,4545 @@
+{
+  "source_fec": "FEC 2024 - SUPRETTE DE LA PLACE.txt",
+  "no_match_piece_count": 137,
+  "stats": {
+    "with_supplier": 137,
+    "with_product": 137,
+    "with_vat": 137,
+    "with_bank": 2,
+    "suspicious": 0
+  },
+  "pieces": [
+    {
+      "piece": "24120011",
+      "date": "05/01/2024",
+      "supplier": [
+        "MKS"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "401": 1,
+        "445661": 1,
+        "607": 1,
+        "411": 1,
+        "5121": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": true,
+      "net_amount": 1.1368683772161603e-13,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "MKS",
+        "MKS",
+        "MKS",
+        "VRST GAB 02/12/24 21H11 007056"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "24120029",
+      "date": "09/12/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "main_account": "5121",
+      "accounts": {
+        "401": 1,
+        "5121": 1,
+        "408": 1,
+        "44586": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": true,
+      "net_amount": 0.0,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat"
+      ],
+      "label_sample": [
+        "000001 VIR EUROPEEN EMIS  NET",
+        "000001 VIR EUROPEEN EMIS  NET",
+        "NEW FRUIT",
+        "NEW FRUIT"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0001",
+      "date": "01/01/2024",
+      "supplier": [
+        "ENGIE",
+        "WDL PREPAID SERVICES"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 4,
+        "4456611": 4,
+        "401": 3,
+        "604": 2,
+        "60611": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 285.31,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "ALIMEX/CHQ",
+        "METRO / CB",
+        "ENGIE",
+        "ALIMEX/CHQ"
+      ],
+      "line_count": 14
+    },
+    {
+      "piece": "AC0002",
+      "date": "01/01/2024",
+      "supplier": [
+        "ENGIE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 4,
+        "4456611": 4,
+        "401": 2,
+        "60611": 2
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 87.13999999999996,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "METRO / CB",
+        "ALIMEX/CHQ",
+        "METRO / CB",
+        "ALIMEX/CHQ"
+      ],
+      "line_count": 12
+    },
+    {
+      "piece": "AC0003",
+      "date": "01/01/2024",
+      "supplier": [
+        "ENGIE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 4,
+        "4456611": 3,
+        "401": 1,
+        "60611": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 139.83000000000004,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "ALIMEX/VIR",
+        "ALIMEX/VIR",
+        "METRO / CB",
+        "ALIMEX/VIR"
+      ],
+      "line_count": 9
+    },
+    {
+      "piece": "AC0004",
+      "date": "01/01/2024",
+      "supplier": [
+        "ENGIE"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 2,
+        "445661": 1,
+        "401": 1,
+        "60611": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 115.87,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "Alimex/ESP",
+        "TIBSY",
+        "Alimex/ESP",
+        "ENGIE"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0005",
+      "date": "01/01/2024",
+      "supplier": [
+        "ENGIE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 3,
+        "401": 2,
+        "60611": 2
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 82.36999999999998,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "PALIMEX/PAYE",
+        "PALIMEX/PAYE",
+        "ENGIE",
+        "ENGIE"
+      ],
+      "line_count": 10
+    },
+    {
+      "piece": "AC0006",
+      "date": "01/01/2024",
+      "supplier": [
+        "ENGIE"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 2,
+        "401": 1,
+        "445661": 1,
+        "60611": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 31.589999999999996,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "TIBSY",
+        "ENGIE",
+        "ENGIE",
+        "ENGIE"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0007",
+      "date": "01/01/2024",
+      "supplier": [
+        "ENGIE"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 3,
+        "401": 1,
+        "445661": 1,
+        "60611": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 31.409999999999926,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "TIBSY FACTURE DE RETOUR",
+        "TIBSY",
+        "ENGIE",
+        "ENGIE"
+      ],
+      "line_count": 6
+    },
+    {
+      "piece": "AC0008",
+      "date": "01/01/2024",
+      "supplier": [
+        "ENGIE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 3,
+        "401": 1,
+        "60611": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 172.66999999999996,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "CSC FRANCE",
+        "TIBSY",
+        "TIBSY",
+        "CSC FRANCE"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0009",
+      "date": "01/01/2024",
+      "supplier": [
+        "ENGIE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 2,
+        "401": 1,
+        "60611": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 344.7,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "M.I.R",
+        "ALLO JULIRN SERVICES",
+        "M.I.R",
+        "ENGIE"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0010",
+      "date": "01/01/2024",
+      "supplier": [
+        "ENGIE",
+        "ST MICHEL MAGASIN"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 3,
+        "401": 2,
+        "445661": 1,
+        "60611": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": -53.59,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "ST MICHEL MAGASIN/CM-CIC",
+        "ETHNIC MARKET",
+        "ST MICHEL MAGASIN/CM-CIC",
+        "ENGIE"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0021",
+      "date": "01/01/2024",
+      "supplier": [
+        "AGIDRAA"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 3,
+        "401": 2,
+        "607": 2
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 32.160000000000025,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "METRO",
+        "BOUYGUES",
+        "METRO",
+        "AGIDRAA"
+      ],
+      "line_count": 10
+    },
+    {
+      "piece": "AC0022",
+      "date": "01/01/2024",
+      "supplier": [
+        "AGIDRAA"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 4,
+        "4456611": 3,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 97.84000000000002,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "BOUYGUES",
+        "BOUYGUES",
+        "ALIMEX",
+        "METRO"
+      ],
+      "line_count": 9
+    },
+    {
+      "piece": "AC0023",
+      "date": "01/01/2024",
+      "supplier": [
+        "EUROBIS"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "4456611": 1,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 34.73000000000017,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "METRO",
+        "METRO",
+        "EUROBIS",
+        "EUROBIS"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0024",
+      "date": "01/01/2024",
+      "supplier": [
+        "EUROBIS"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 4,
+        "4456611": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 72.63999999999994,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "METRO",
+        "METRO / CB",
+        "BOUYGUES",
+        "METRO"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0025",
+      "date": "01/01/2024",
+      "supplier": [
+        "EUROBIS"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 4,
+        "4456611": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 88.2600000000001,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "BOUYGUES",
+        "METRO / CB",
+        "METRO",
+        "METRO / CB"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0026",
+      "date": "01/01/2024",
+      "supplier": [
+        "EUROBIS"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 4,
+        "4456611": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 164.39,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "ENGIE",
+        "METRO / CB",
+        "BOUYGUES",
+        "METRO / CB"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0027",
+      "date": "01/01/2024",
+      "supplier": [
+        "IDF DISTRIBUTION"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 1,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 8.19999999999997,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "BOUYGUES",
+        "IDF DISTRIBUTION",
+        "IDF DISTRIBUTION",
+        "IDF DISTRIBUTION"
+      ],
+      "line_count": 4
+    },
+    {
+      "piece": "AC0028",
+      "date": "01/01/2024",
+      "supplier": [
+        "IDF DISTRIBUTION"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 1,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 6.259999999999986,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "BOUYGUES",
+        "IDF DISTRIBUTION",
+        "IDF DISTRIBUTION",
+        "IDF DISTRIBUTION"
+      ],
+      "line_count": 4
+    },
+    {
+      "piece": "AC0029",
+      "date": "01/01/2024",
+      "supplier": [
+        "IDF DISTRIBUTION"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 1,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 8.200000000000014,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "BOUYGUES",
+        "IDF DISTRIBUTION",
+        "IDF DISTRIBUTION",
+        "IDF DISTRIBUTION"
+      ],
+      "line_count": 4
+    },
+    {
+      "piece": "AC0030",
+      "date": "01/01/2024",
+      "supplier": [
+        "IDF DISTRIBUTION"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 312.3200000000002,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "BOUYGUES",
+        "FIDUCIAL GERANCE",
+        "IDF DISTRIBUTION",
+        "IDF DISTRIBUTION"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0031",
+      "date": "01/01/2024",
+      "supplier": [
+        "IDF DISTRIBUTION"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 111.0500000000001,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "ENGIE",
+        "METRO",
+        "BOUYGUES",
+        "METRO"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0032",
+      "date": "01/01/2024",
+      "supplier": [
+        "IDF DISTRIBUTION"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "4456611": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 36.08000000000001,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "BOUYGUES",
+        "METRO",
+        "METRO",
+        "IDF DISTRIBUTION"
+      ],
+      "line_count": 6
+    },
+    {
+      "piece": "AC0033",
+      "date": "01/01/2024",
+      "supplier": [
+        "IDF DISTRIBUTION"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 3,
+        "445661": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 109.98999999999982,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "METRO ESP",
+        "BOUYGUES",
+        "METRO ESP",
+        "PALIMEX"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0034",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 3,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 100.47999999999999,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "BOUYGUES",
+        "METRO",
+        "METRO / CB",
+        "METRO / CB"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0035",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 3,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 60.41999999999999,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "METRO",
+        "BOUYGUES",
+        "METRO",
+        "METRO"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0036",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 4,
+        "4456611": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 32.53000000000002,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "BOUYGUES",
+        "METRO / AVOIR",
+        "TIBSY",
+        "TIBSY"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0037",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 3,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 284.65999999999997,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "TIBSY",
+        "PRO FRANCE",
+        "BOUYGUES",
+        "PRO FRANCE"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0038",
+      "date": "01/01/2024",
+      "supplier": [
+        "BOUYGUES",
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 3,
+        "401": 2,
+        "445661": 2,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": -10.16000000000004,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "BOUYGUES",
+        "BOUYGUES",
+        "TIBSY",
+        "TIBSY FACTURE RETOUR"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0039",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 4,
+        "445661": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 207.14999999999998,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "EUROBIS",
+        "TIBSY",
+        "TIBSY AVOIR",
+        "EUROBIS"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0040",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 4,
+        "445661": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 157.48000000000002,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "EUROBIS",
+        "EUROBIS",
+        "TIBSY",
+        "ETHNIC MARKET"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0041",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 4,
+        "4456611": 4,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 350.27,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "EUROBIS",
+        "METRO / CB",
+        "CSC FRANCE",
+        "METRO / CB"
+      ],
+      "line_count": 10
+    },
+    {
+      "piece": "AC0042",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "4456611": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 125.62999999999998,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "EUROBIS",
+        "METRO /AVOIR",
+        "EUROBIS",
+        "METRO"
+      ],
+      "line_count": 6
+    },
+    {
+      "piece": "AC0043",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "4456611": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 65.64999999999999,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "AGIDRAA/VIR",
+        "AGIDRAA/VIR",
+        "METRO",
+        "METRO"
+      ],
+      "line_count": 6
+    },
+    {
+      "piece": "AC0044",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 2,
+        "445661": 1,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 66.78999999999996,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "AGIDRAA/VIR",
+        "AGIDRAA/VIR",
+        "METRO",
+        "METRO"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0045",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 3,
+        "401": 1,
+        "445661": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 1221.67,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "AGIDRAA/esp",
+        "AGIDRAA/esp",
+        "METRO",
+        "METRO"
+      ],
+      "line_count": 6
+    },
+    {
+      "piece": "AC0046",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 4,
+        "445661": 3,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 65.6,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "METRO / CB",
+        "PALIMEX",
+        "INGENICO FRANCE/PRLV",
+        "PALIMEX"
+      ],
+      "line_count": 9
+    },
+    {
+      "piece": "AC0047",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 4,
+        "4456611": 3,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 110.57999999999997,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "EUROBIS TVA 21%",
+        "METRO / CB",
+        "INGENICO FRANCE/PRLV",
+        "METRO / CB"
+      ],
+      "line_count": 9
+    },
+    {
+      "piece": "AC0048",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 21.100000000000005,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "INGENICO FRANCE/PRLV",
+        "KONICA MINOLTA",
+        "ST MICHEL MAGASIN",
+        "METRO"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0049",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 393.16999999999996,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "KONICA MINOLTA",
+        "FIDUCIAL",
+        "METRO / CB",
+        "METRO / CB"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0050",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 3,
+        "445661": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 402.72,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "FIDUCIAL",
+        "TIBSY",
+        "ETHNIC MARKET",
+        "METRO"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0051",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "4456611": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 472.88,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "FIDUCIAL",
+        "MIAMLAND/AVOIR DEJA CACL 73.46",
+        "MIAMLAND/AVOIR DEJA CACL 73.46",
+        "METRO"
+      ],
+      "line_count": 6
+    },
+    {
+      "piece": "AC0052",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 3,
+        "445661": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 410.17,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "FIDUCIAL",
+        "TIBSY",
+        "TIBSY",
+        "METRO"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0053",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 3,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 413.77000000000004,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "METRO",
+        "FIDUCIAL",
+        "METRO",
+        "TIBSY"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0054",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 3,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 405.05999999999995,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "METRO",
+        "FIDUCIAL",
+        "METRO / CB",
+        "METRO"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0055",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "4456611": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 377.85,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "FIDUCIAL",
+        "ALIMEX SARL",
+        "ALIMEX SARL",
+        "METRO"
+      ],
+      "line_count": 6
+    },
+    {
+      "piece": "AC0056",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 3,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 522.14,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "FIDUCIAL",
+        "CSC FRANCE",
+        "METRO / CB",
+        "CSC FRANCE"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0057",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 422.40000000000003,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "ENGIE",
+        "FIDUCIAL",
+        "ENGIE",
+        "METRO"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0058",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 351.03,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "FIDUCIAL",
+        "METRO",
+        "METRO",
+        "METRO"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0059",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 1,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 351.03,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "FIDUCIAL",
+        "METRO",
+        "METRO",
+        "METRO"
+      ],
+      "line_count": 4
+    },
+    {
+      "piece": "AC0060",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 1,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 351.03,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "FIDUCIAL",
+        "METRO",
+        "METRO",
+        "METRO"
+      ],
+      "line_count": 4
+    },
+    {
+      "piece": "AC0061",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": -88.93999999999998,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "FIDUCIAL",
+        "INGENICO PREPAID SERVICES",
+        "METRO",
+        "METRO"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0062",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 2,
+        "401": 1,
+        "445661": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 34.889999999999986,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "IDF DISTRIBUTION/CHQ",
+        "METRO",
+        "METRO",
+        "METRO"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0063",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 2,
+        "401": 1,
+        "445661": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 50.24000000000002,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "IDF DISTRIBUTION/CHQ",
+        "METRO",
+        "METRO",
+        "METRO"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0064",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 4,
+        "445661": 1,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 75.90999999999998,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "METRO / CB",
+        "IDF DISTRIBUTION/CHQ",
+        "METRO / CB",
+        "INGENICO PREPAID SERVICES"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0065",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 3,
+        "401": 1,
+        "445661": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 76.66000000000004,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "NES GROSSISTE /CB PERSO",
+        "IDF DISTRIBUTION",
+        "METRO",
+        "METRO"
+      ],
+      "line_count": 6
+    },
+    {
+      "piece": "AC0066",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 4,
+        "445661": 1,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 95.05,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "TIBSY CB=421.8",
+        "IDF DISTRIBUTION",
+        "TIBSY",
+        "TIBSY CB=421.8"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0067",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 4,
+        "445661": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 60.32999999999997,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "METRO / CB",
+        "TIBSY FACTURE RETOUR",
+        "METRO / CB",
+        "IDF DISTRIBUTION/VIR"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0068",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 4,
+        "445661": 1,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 82.44999999999997,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "METRO / CB",
+        "IDF DISTRIBUTION",
+        "METRO / CB",
+        "TIBSY FACTURE RETOUR"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0069",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 4,
+        "445661": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 236.09,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "TIBSY",
+        "TIBSY",
+        "TIBSY",
+        "TIBSY"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0070",
+      "date": "01/01/2024",
+      "supplier": [
+        "IDF DISTRIBUTION",
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 4,
+        "401": 2,
+        "445661": 2,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": -1688.26,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "IDF DISTRIBUTION/BON DE LIVRAISON",
+        "ALIMEX chq",
+        "IDF DISTRIBUTION/BON DE LIVRAISON",
+        "METRO / ESP"
+      ],
+      "line_count": 9
+    },
+    {
+      "piece": "AC0071",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 3,
+        "445661": 1,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 49.62999999999997,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "METRO ESP",
+        "METRO ESP",
+        "METRO / CB",
+        "METRO"
+      ],
+      "line_count": 6
+    },
+    {
+      "piece": "AC0072",
+      "date": "01/01/2024",
+      "supplier": [
+        "IDF DISTRIBUTION",
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 3,
+        "401": 2,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": -950.6499999999999,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "IDF DISTRIBUTION/BON DE LIVRAISON",
+        "KONICA MINOLTA",
+        "METRO / CB",
+        "METRO / CB"
+      ],
+      "line_count": 9
+    },
+    {
+      "piece": "AC0073",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 3,
+        "445661": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 170.98000000000002,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "METRO / CB",
+        "IDF DISTRIBUTION/VIR",
+        "METRO / CB",
+        "METRO"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0074",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 3,
+        "445661": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 88.84999999999998,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "METRO / CB",
+        "METRO / CB",
+        "IDF DISTRIBUTION",
+        "METRO"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0075",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 2,
+        "401": 1,
+        "445661": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 59.88000000000002,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "IDF DISTRIBUTION/VIR",
+        "METRO",
+        "METRO",
+        "METRO"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0076",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 3,
+        "445661": 1,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 363.99,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "CSC FRANCE",
+        "IDF DISTRIBUTION",
+        "CSC FRANCE",
+        "METRO"
+      ],
+      "line_count": 6
+    },
+    {
+      "piece": "AC0077",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 2,
+        "401": 1,
+        "445661": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 71.89999999999999,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "IDF DISTRIBUTION",
+        "METRO",
+        "METRO",
+        "METRO"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0078",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 2,
+        "401": 1,
+        "445661": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 38.27000000000005,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "LEXOLAND",
+        "METRO",
+        "METRO",
+        "METRO"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0079",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 3,
+        "445661": 1,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 97.41999999999999,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "METRO",
+        "METRO",
+        "LEXOLAND/VIR",
+        "METRO"
+      ],
+      "line_count": 6
+    },
+    {
+      "piece": "AC0080",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 4,
+        "445661": 3,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 119.82999999999998,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "METRO",
+        "TIBSY",
+        "METRO",
+        "TIBSY"
+      ],
+      "line_count": 9
+    },
+    {
+      "piece": "AC0081",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 4,
+        "445661": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 106.5,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "METRO",
+        "LEXOLAND",
+        "METRO / CB",
+        "METRO"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0082",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 4,
+        "445661": 3,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 115.07999999999998,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "METRO",
+        "LEXOLAND",
+        "METRO",
+        "METRO / CB"
+      ],
+      "line_count": 9
+    },
+    {
+      "piece": "AC0083",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 4,
+        "445661": 3,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 141.22,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "METRO / CB",
+        "METRO ESP",
+        "LEXOLAND",
+        "METRO / CB"
+      ],
+      "line_count": 9
+    },
+    {
+      "piece": "AC0084",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 3,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 370.61,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "FIDUCIAL",
+        "LEXOLAND",
+        "METRO / CB",
+        "LEXOLAND"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0085",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 3,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 351.99999999999994,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "LEXOLAND",
+        "FIDUCIAL",
+        "LEXOLAND",
+        "METRO / CB"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0086",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 3,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 380.85999999999996,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "FIDUCIAL",
+        "LEXOLAND",
+        "METRO / CB",
+        "LEXOLAND"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0087",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 3,
+        "445661": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 427.98999999999995,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "FIDUCIAL",
+        "LEXOLAND",
+        "NES GROSSISTE",
+        "METRO"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0088",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "4456611": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 371.13000000000005,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "FIDUCIAL",
+        "LEXOLAND",
+        "LEXOLAND",
+        "METRO"
+      ],
+      "line_count": 6
+    },
+    {
+      "piece": "AC0089",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND",
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 5,
+        "4456611": 4,
+        "401": 2,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": -974.3399999999999,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "LEXOLAND",
+        "LEXOLAND",
+        "METRO / CB",
+        "ALIMEX"
+      ],
+      "line_count": 12
+    },
+    {
+      "piece": "AC0090",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 4,
+        "445661": 3,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 122.81,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "ALIMEX",
+        "ALIMEX TVA SUR LIVRAISON",
+        "METRO / CB",
+        "ALIMEX"
+      ],
+      "line_count": 9
+    },
+    {
+      "piece": "AC0149",
+      "date": "01/01/2024",
+      "supplier": [
+        "ALIMEX"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 4,
+        "4456611": 3,
+        "607": 2,
+        "401": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 79.22000000000016,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "METRO / CB",
+        "NES GROSSISTE/CB",
+        "METRO / CB",
+        "NES GROSSISTE/CB"
+      ],
+      "line_count": 10
+    },
+    {
+      "piece": "AC0150",
+      "date": "01/01/2024",
+      "supplier": [
+        "ALIMEX"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 2,
+        "607": 2,
+        "401": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 14.230000000000018,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "NES GROSSISTE/ESP",
+        "NES GROSSISTE/ESP",
+        "ALIMEX",
+        "ALIMEX"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0151",
+      "date": "01/01/2024",
+      "supplier": [
+        "ALIMEX"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 2,
+        "445661": 2,
+        "607": 2,
+        "401": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 20.150000000000084,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "NES GROSSISTE/CB",
+        "ALIMEX",
+        "ALIMEX",
+        "ALIMEX"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0164",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 3,
+        "445661": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 219.48,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "PRO FRANCE",
+        "TIBSY",
+        "PRO FRANCE",
+        "LEXOLAND"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0165",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 3,
+        "445661": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 156.47000000000006,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "PRO FRANCE",
+        "PRO FRANCE",
+        "TIBSY",
+        "LEXOLAND"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0166",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 2,
+        "401": 1,
+        "445661": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 5.639999999999948,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "LABED DIFFUSION",
+        "LEXOLAND",
+        "LEXOLAND",
+        "LEXOLAND"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0167",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 4,
+        "445661": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 155.51000000000008,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "ENGIE",
+        "ALIMEX",
+        "ENGIE",
+        "TIBSY"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0168",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 243.67000000000004,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "ALLO ACCESS",
+        "INGENICO PREPAID SERVICES",
+        "ENGIE",
+        "ENGIE"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0169",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 122.55000000000007,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "ENGIE",
+        "EUROBIS",
+        "ENGIE",
+        "LEXOLAND"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0170",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 109.57999999999997,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "EUROBIS",
+        "ENGIE",
+        "ENGIE",
+        "LEXOLAND"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0171",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "4456611": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 121.52999999999996,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "ENGIE",
+        "EUROBIS",
+        "ENGIE",
+        "LEXOLAND"
+      ],
+      "line_count": 6
+    },
+    {
+      "piece": "AC0172",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 4,
+        "4456611": 3,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 68.03000000000004,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "FREE TELECOM",
+        "ENGIE",
+        "METRO / CB",
+        "METRO / CB"
+      ],
+      "line_count": 9
+    },
+    {
+      "piece": "AC0173",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 4,
+        "4456611": 3,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 53.459999999999894,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "METRO / CB",
+        "ENGIE",
+        "INGENICO PREPAID SERVICES",
+        "ENGIE"
+      ],
+      "line_count": 9
+    },
+    {
+      "piece": "AC0174",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 176.16,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "INGENICO PREPAID SERVICES",
+        "ENGIE",
+        "PRO FRANCE",
+        "ENGIE"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0175",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 4,
+        "4456611": 3,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 82.32000000000008,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "METRO",
+        "ENGIE",
+        "INGENICO PREPAID SERVICES",
+        "ENGIE"
+      ],
+      "line_count": 9
+    },
+    {
+      "piece": "AC0176",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 3,
+        "445661": 2,
+        "4551": 1,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": -3399.35,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "ENGIE",
+        "ALIMEX/CHQ",
+        "ALIMEX/CHQ",
+        "ENGIE"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0177",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "4456611": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 402.56,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "FIDUCIAL GERANCE",
+        "INGENICO PREPAID SERVICES",
+        "IDF DISTRIBUTION",
+        "LEXOLAND"
+      ],
+      "line_count": 6
+    },
+    {
+      "piece": "AC0178",
+      "date": "01/01/2024",
+      "supplier": [
+        "NEW FRUITS"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 2,
+        "401": 1,
+        "445661": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": -5.639999999999985,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "IDF DISTRIBUTION",
+        "NEW FRUITS",
+        "NEW FRUITS",
+        "NEW FRUITS"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0179",
+      "date": "01/01/2024",
+      "supplier": [
+        "NEW FRUITS"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 57.67,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "IDF DISTRIBUTION",
+        "NEW FRUITS",
+        "NEW FRUITS",
+        "NEW FRUITS"
+      ],
+      "line_count": 4
+    },
+    {
+      "piece": "AC0180",
+      "date": "01/01/2024",
+      "supplier": [
+        "NEW FRUITS"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "4456611": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 60.82999999999999,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "KONICA MINOLTA",
+        "KONICA MINOLTA",
+        "IDF DISTRIBUTION",
+        "NEW FRUITS"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0181",
+      "date": "01/01/2024",
+      "supplier": [
+        "NEW FRUITS",
+        "QUIMANAGE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 4,
+        "401": 2,
+        "4456611": 2,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 29.990000000000006,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "METRO",
+        "QUIMANAGE",
+        "WDL PREPAID SERVICES"
+      ],
+      "line_count": 9
+    },
+    {
+      "piece": "AC0182",
+      "date": "01/01/2024",
+      "supplier": [
+        "NEW FRUITS"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 4,
+        "4456611": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 49.33999999999999,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "WDL PREPAID SERVICES",
+        "QUIMANAGE",
+        "MIAMLAND",
+        "MIAMLAND"
+      ],
+      "line_count": 8
+    },
+    {
+      "piece": "AC0183",
+      "date": "01/01/2024",
+      "supplier": [
+        "NEW FRUITS"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": -21.259999999999987,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "MIAMLAND",
+        "QUIMANAGE",
+        "NEW FRUITS",
+        "NEW FRUITS"
+      ],
+      "line_count": 6
+    },
+    {
+      "piece": "AC0184",
+      "date": "01/01/2024",
+      "supplier": [
+        "NEW FRUITS"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 1,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 6.999999999999993,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "NEW FRUITS",
+        "NEW FRUITS",
+        "NEW FRUITS"
+      ],
+      "line_count": 4
+    },
+    {
+      "piece": "AC0185",
+      "date": "01/01/2024",
+      "supplier": [
+        "NEW FRUITS"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 26.319999999999997,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "INGENICO PREPAID SERVICES",
+        "NEW FRUITS",
+        "NEW FRUITS"
+      ],
+      "line_count": 6
+    },
+    {
+      "piece": "AC0186",
+      "date": "01/01/2024",
+      "supplier": [
+        "NEW FRUITS"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 1,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 29.999999999999993,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "NEW FRUITS",
+        "NEW FRUITS",
+        "NEW FRUITS"
+      ],
+      "line_count": 4
+    },
+    {
+      "piece": "AC0187",
+      "date": "01/01/2024",
+      "supplier": [
+        "NESPRESSO FRANCE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 7.0000000000000195,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "NESPRESSO FRANCE",
+        "NESPRESSO FRANCE",
+        "NESPRESSO FRANCE"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0188",
+      "date": "01/01/2024",
+      "supplier": [
+        "NESPRESSO FRANCE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 49.51000000000001,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "INGENICO PREPAID SERVICES",
+        "NESPRESSO FRANCE",
+        "NESPRESSO FRANCE"
+      ],
+      "line_count": 6
+    },
+    {
+      "piece": "AC0189",
+      "date": "01/01/2024",
+      "supplier": [
+        "NESPRESSO FRANCE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 22.060000000000024,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "INGENICO PREPAID SERVICES",
+        "QUIMANAGE",
+        "NESPRESSO FRANCE",
+        "NESPRESSO FRANCE"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0190",
+      "date": "01/01/2024",
+      "supplier": [
+        "NESPRESSO FRANCE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 30.000000000000007,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "NESPRESSO FRANCE",
+        "NESPRESSO FRANCE",
+        "NESPRESSO FRANCE"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0194",
+      "date": "01/01/2024",
+      "supplier": [
+        "HAUDECOEUR",
+        "NES GROSSISTE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "401": 2,
+        "445661": 2,
+        "4456611": 2,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 69.34000000000002,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "HAUDECOEUR",
+        "QUIMANAGE",
+        "HAUDECOEUR",
+        "NES GROSSISTE"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0195",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 49.0,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "NES GROSSISTE",
+        "NES GROSSISTE",
+        "NES GROSSISTE"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0196",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 3.999999999999968,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "NES GROSSISTE",
+        "NES GROSSISTE",
+        "NES GROSSISTE"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0197",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 1,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 30.000000000000007,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "NES GROSSISTE",
+        "NES GROSSISTE",
+        "NES GROSSISTE"
+      ],
+      "line_count": 4
+    },
+    {
+      "piece": "AC0198",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 1,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 4.000000000000043,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "NES GROSSISTE",
+        "NES GROSSISTE",
+        "NES GROSSISTE"
+      ],
+      "line_count": 4
+    },
+    {
+      "piece": "AC0199",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE",
+        "WDL PREPAID SERVICES"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "401": 2,
+        "445661": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": -322.65,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "WDL PREPAID SERVICES",
+        "QUIMANAGE",
+        "NES GROSSISTE",
+        "NES GROSSISTE"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0200",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 30.000000000000014,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "NES GROSSISTE",
+        "NES GROSSISTE",
+        "NES GROSSISTE"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0201",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 1,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 3.999999999999961,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "NES GROSSISTE",
+        "NES GROSSISTE",
+        "NES GROSSISTE"
+      ],
+      "line_count": 4
+    },
+    {
+      "piece": "AC0202",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 1,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 30.00000000000003,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "NES GROSSISTE",
+        "NES GROSSISTE",
+        "NES GROSSISTE"
+      ],
+      "line_count": 4
+    },
+    {
+      "piece": "AC0203",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 1,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 4.000000000000005,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "NES GROSSISTE",
+        "NES GROSSISTE",
+        "NES GROSSISTE"
+      ],
+      "line_count": 4
+    },
+    {
+      "piece": "AC0204",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 4.000000000000014,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "NES GROSSISTE",
+        "NES GROSSISTE",
+        "NES GROSSISTE"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0205",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 1,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 29.999999999999993,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "NES GROSSISTE",
+        "NES GROSSISTE",
+        "NES GROSSISTE"
+      ],
+      "line_count": 4
+    },
+    {
+      "piece": "AC0206",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 17.000000000000007,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "NES GROSSISTE",
+        "NES GROSSISTE",
+        "NES GROSSISTE"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0207",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": -48.39999999999994,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "NES GROSSISTE",
+        "NES GROSSISTE",
+        "NES GROSSISTE"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0208",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 59.9999999999998,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "CN2C",
+        "NES GROSSISTE",
+        "NES GROSSISTE",
+        "NES GROSSISTE"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0209",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 1,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 63.40000000000002,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "ACCESS 2 MOBILE",
+        "NES GROSSISTE",
+        "NES GROSSISTE",
+        "NES GROSSISTE"
+      ],
+      "line_count": 4
+    },
+    {
+      "piece": "AC0210",
+      "date": "01/01/2024",
+      "supplier": [
+        "CARREFOUR"
+      ],
+      "main_account": "4456611",
+      "accounts": {
+        "4456611": 3,
+        "445661": 2,
+        "401": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 45.38,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "ALIMEX",
+        "ALIMEX",
+        "CARREFOUR",
+        "CARREFOUR"
+      ],
+      "line_count": 7
+    },
+    {
+      "piece": "AC0213",
+      "date": "01/01/2024",
+      "supplier": [
+        "SODIMA"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 1,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 8.199999999999998,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "BOUYGUES",
+        "SODIMA",
+        "SODIMA",
+        "SODIMA"
+      ],
+      "line_count": 4
+    },
+    {
+      "piece": "AC0245",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 309.98000000000013,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "FIDUCIAL",
+        "NES GROSSISTE",
+        "NES GROSSISTE"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0246",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 335.98,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "FIDUCIAL",
+        "NES GROSSISTE",
+        "NES GROSSISTE"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0247",
+      "date": "01/01/2024",
+      "supplier": [
+        "NES GROSSISTE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 322.96000000000015,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "FIDUCIAL",
+        "NES GROSSISTE",
+        "NES GROSSISTE"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0249",
+      "date": "01/01/2024",
+      "supplier": [
+        "ENGIE"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "401": 1,
+        "4456611": 1,
+        "60611": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 348.96,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "FIDUCIAL",
+        "ENGIE",
+        "ENGIE"
+      ],
+      "line_count": 6
+    },
+    {
+      "piece": "AC0250",
+      "date": "01/01/2024",
+      "supplier": [
+        "IDF DISTRIBUTION"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 17.259999999999813,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "INGENICO FRANCE-TPE/PRLV",
+        "IDF DISTRIBUTION",
+        "IDF DISTRIBUTION"
+      ],
+      "line_count": 5
+    },
+    {
+      "piece": "AC0252",
+      "date": "01/01/2024",
+      "supplier": [
+        "LEXOLAND"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 3,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 17.25999999999997,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "INGENICO FRANCE-TPE/PRLV",
+        "LEXOLAND",
+        "LEXOLAND"
+      ],
+      "line_count": 6
+    },
+    {
+      "piece": "AC0255",
+      "date": "01/01/2024",
+      "supplier": [
+        "METRO"
+      ],
+      "main_account": "445661",
+      "accounts": {
+        "445661": 2,
+        "401": 1,
+        "4456611": 1,
+        "607": 1
+      },
+      "has_supplier": true,
+      "has_product": true,
+      "has_vat": true,
+      "has_bank": false,
+      "net_amount": 30.000000000000014,
+      "suspicious": false,
+      "reasons": [
+        "supplier_401",
+        "product_account",
+        "vat",
+        "non_zero"
+      ],
+      "label_sample": [
+        "QUIMANAGE",
+        "METRO",
+        "METRO",
+        "METRO"
+      ],
+      "line_count": 5
+    }
+  ]
+}

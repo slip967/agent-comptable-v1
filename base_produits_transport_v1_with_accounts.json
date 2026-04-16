@@ -1,0 +1,158 @@
+{
+    "meta":  {
+                 "profile_id":  "produits_transport_v1",
+                 "metier":  "transport",
+                 "client_siren":  "519665103",
+                 "partition_prefix":  "fr_bd_519665103",
+                 "version":  "v1",
+                 "status":  "draft",
+                 "source_note":  "Pre-rempli automatiquement depuis invoice_form CouchDB; validation metier requise.",
+                 "generated_at":  "2026-04-02T12:40:27.917794Z",
+                 "items_count":  3,
+                 "cleanup_note":  "Nettoyage manuel: suppression lignes erronees/telecom et conservation des lignes transport utiles.",
+                 "source_invoice_ids_note":  "Jusqu a 30 invoice_id source par article_source depuis invoice_form.",
+                 "accounts_enrichment":  {
+                                             "reference_file":  "v1_519665103_reference_base_exploitation_v1.json",
+                                             "matched_items":  1,
+                                             "unmatched_items":  0,
+                                             "already_present":  0
+                                         },
+                 "source_invoice_year_filter":  "2024",
+                 "accounts_alignment_from_abt3fec2":  {
+                                                          "db":  "abt3fec2",
+                                                          "selector":  "p=entry + invoice exists + _id not contains generated",
+                                                          "changed_items":  0,
+                                                          "unchanged_items":  0,
+                                                          "no_signal_items":  1,
+                                                          "min_confidence":  0.55
+                                                      },
+                 "invoice_source_enrichment":  {
+                                                   "db_factures":  "abt3",
+                                                   "match_rule":  "invoice_form.line_items.description == article_source (normalise)",
+                                                   "year_filter":  "none",
+                                                   "changed_items":  0,
+                                                   "added_invoice_ids_total":  0
+                                               },
+                 "transport_expansion_from_invoice_form":  {
+                                                               "added_items":  1,
+                                                               "target_total":  5,
+                                                               "source":  "invoice_form",
+                                                               "rule":  "account startswith 60 + metier keyword filters + lexical quality"
+                                                           },
+                 "keywords_cleanup_single_char_and_zero_v1":  {
+                                                                  "removed_single_char_keywords":  0,
+                                                                  "fixed_ocr_zero_to_o_keywords":  0,
+                                                                  "deduplicated_keywords":  0,
+                                                                  "items_touched":  0,
+                                                                  "total_keywords_before":  10,
+                                                                  "total_keywords_after":  10,
+                                                                  "rules":  [
+                                                                                "remove keywords with length \u003c= 1",
+                                                                                "replace 0 with o only when 0 is adjacent to letters"
+                                                                            ]
+                                                              },
+                 "text_normalization_v2":  {
+                                               "updated_at":  "2026-04-13T17:20:48.785200Z",
+                                               "rows_touched":  1,
+                                               "article_source_updated":  1,
+                                               "article_canonique_updated":  0,
+                                               "mots_cles_updated":  0,
+                                               "rule":  "remove special chars (including % * +), fix OCR 0/O in words, normalize canon + keywords"
+                                           },
+                 "account_normalization_v1":  {
+                                                  "rule":  "trim trailing zeros for padded compte_comptable values when length \u003e 3",
+                                                  "changed_items":  0,
+                                                  "normalized_pairs":  {
+
+                                                                       }
+                                              },
+                 "account_verification_v1":  {
+                                                 "class_6_only":  true,
+                                                 "suspicious_accounts":  [
+
+                                                                         ]
+                                             }
+             },
+    "items":  [
+                  {
+                      "article_source":  "Entree CTTE (Camionnette)",
+                      "article_canonique":  "entree ctte camionnette",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "entree",
+                                        "ctte",
+                                        "camionnette"
+                                    ],
+                      "fournisseur_type":  "service_transport",
+                      "ape_context":  [
+                                          "4941A"
+                                      ],
+                      "notes":  "Nettoye manuellement depuis extraction invoice_form",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:0c493dc6-a22b-4fff-88ee-b53354b25880",
+                                                 "fr_bd_519665103:4ac0c8f5-6b07-4a95-a66b-dfec2f1e3284",
+                                                 "fr_bd_519665103:573bb3f0-76d4-4268-ada5-28c03e2b76bb",
+                                                 "fr_bd_519665103:5e07b412-e2ee-47cd-b0e3-7acb45e080c8",
+                                                 "fr_bd_519665103:3810ce6d-c1f4-46c7-bd58-c9f0bd8e2156"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  484,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=2, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "Entrée CTTE (Camionnette) (Abatt: 100)",
+                      "article_canonique":  "entree ctte camionnette abatt 100",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "entree",
+                                        "ctte",
+                                        "camionnette",
+                                        "abatt",
+                                        "100"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:0c493dc6-a22b-4fff-88ee-b53354b25880"
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  },
+                  {
+                      "article_source":  "Condition de livraison",
+                      "article_canonique":  "condition de livraison",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  5.5,
+                      "mots_cles":  [
+                                        "condition",
+                                        "livraison"
+                                    ],
+                      "fournisseur_type":  "fournisseur alimentaire",
+                      "ape_context":  [
+
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+                      "source_invoice_ids":  [
+                                                 "fr_bd_519665103:b160ab12-5762-4d18-970d-60372121d30e"
+                                             ],
+                      "compte_comptable":  "607",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  251,
+                      "compte_comptable_match_reason":  "from_invoice_form_keyword_scope"
+                  }
+              ],
+    "a_valider":  [
+
+                  ]
+}

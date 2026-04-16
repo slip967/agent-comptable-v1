@@ -1,0 +1,291 @@
+{
+    "meta":  {
+                 "profile_id":  "produits_btp_v1",
+                 "metier":  "btp",
+                 "client_siren":  "519665103",
+                 "partition_prefix":  "fr_bd_519665103",
+                 "version":  "v1",
+                 "status":  "draft",
+                 "source_note":  "Pre-rempli automatiquement depuis invoice_form CouchDB; validation metier requise.",
+                 "generated_at":  "2026-04-02T12:40:27.903835Z",
+                 "items_count":  9,
+                 "cleanup_note":  "Nettoyage manuel: suppression charges_externes en base metier + dedoublonnage produits.",
+                 "source_invoice_ids_note":  "Jusqu a 3 invoice_id source par article_source depuis invoice_form.",
+                 "accounts_enrichment":  {
+                                             "reference_file":  "v1_519665103_reference_base_exploitation_v1.json",
+                                             "matched_items":  9,
+                                             "unmatched_items":  0,
+                                             "already_present":  0
+                                         },
+                 "source_invoice_year_filter":  "2024",
+                 "accounts_alignment_from_abt3fec2":  {
+                                                          "db":  "abt3fec2",
+                                                          "selector":  "p=entry + invoice exists + _id not contains generated",
+                                                          "changed_items":  0,
+                                                          "unchanged_items":  0,
+                                                          "no_signal_items":  9,
+                                                          "min_confidence":  0.55
+                                                      },
+                 "keywords_cleanup_single_char_and_zero_v1":  {
+                                                                  "removed_single_char_keywords":  0,
+                                                                  "fixed_ocr_zero_to_o_keywords":  0,
+                                                                  "deduplicated_keywords":  0,
+                                                                  "items_touched":  0,
+                                                                  "total_keywords_before":  34,
+                                                                  "total_keywords_after":  34,
+                                                                  "rules":  [
+                                                                                "remove keywords with length \u003c= 1",
+                                                                                "replace 0 with o only when 0 is adjacent to letters"
+                                                                            ]
+                                                              },
+                 "text_normalization_v2":  {
+                                               "updated_at":  "2026-04-13T17:20:48.137763Z",
+                                               "rows_touched":  0,
+                                               "article_source_updated":  0,
+                                               "article_canonique_updated":  0,
+                                               "mots_cles_updated":  0,
+                                               "rule":  "remove special chars (including % * +), fix OCR 0/O in words, normalize canon + keywords"
+                                           },
+                 "account_normalization_v1":  {
+                                                  "rule":  "trim trailing zeros for padded compte_comptable values when length \u003e 3",
+                                                  "changed_items":  0,
+                                                  "normalized_pairs":  {
+
+                                                                       }
+                                              },
+                 "account_verification_v1":  {
+                                                 "class_6_only":  true,
+                                                 "suspicious_accounts":  [
+
+                                                                         ]
+                                             }
+             },
+    "items":  [
+                  {
+                      "article_source":  "1PX COLLE POUDRE INT MAX30X30CM GRIS25KG",
+                      "article_canonique":  "1px colle poudre int max30x30cm gris25kg",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "consommable_chantier",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "1px",
+                                        "colle",
+                                        "poudre",
+                                        "int"
+                                    ],
+                      "fournisseur_type":  "fournisseur_materiaux",
+                      "ape_context":  [
+                                          "4120A"
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form (1 occurrences)",
+                      "source_invoice_ids":  [
+
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  361,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "1PX RAGREAGE POUDRE 3A10MM INT/EXT 25KG",
+                      "article_canonique":  "1px ragreage poudre 3a10mm int ext 25kg",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "consommable_chantier",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "1px",
+                                        "ragreage",
+                                        "poudre",
+                                        "3a10mm"
+                                    ],
+                      "fournisseur_type":  "fournisseur_materiaux",
+                      "ape_context":  [
+                                          "4120A"
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form (1 occurrences)",
+                      "source_invoice_ids":  [
+
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  301,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_canonique_exact, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "5 SACS A GRAVATS 56X96CM TISSE 60L BLC",
+                      "article_canonique":  "5 sacs a gravats 56x96cm tisse 60l blc",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "emballage",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "sacs",
+                                        "gravats",
+                                        "56x96cm"
+                                    ],
+                      "fournisseur_type":  "fournisseur_materiaux",
+                      "ape_context":  [
+                                          "4120A"
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form (1 occurrences)",
+                      "source_invoice_ids":  [
+
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  301,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_canonique_exact, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "JOINT AXTON EASY CHOCOLAT 2KG",
+                      "article_canonique":  "joint axton easy chocolat 2kg",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "consommable_chantier",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "joint",
+                                        "axton",
+                                        "easy",
+                                        "chocolat"
+                                    ],
+                      "fournisseur_type":  "fournisseur_materiaux",
+                      "ape_context":  [
+                                          "4120A"
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form (1 occurrences)",
+                      "source_invoice_ids":  [
+
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  361,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "KIT POSE CARRELAGE",
+                      "article_canonique":  "kit pose carrelage",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "consommable_chantier",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "kit",
+                                        "pose",
+                                        "carrelage"
+                                    ],
+                      "fournisseur_type":  "fournisseur_materiaux",
+                      "ape_context":  [
+                                          "4120A"
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form (1 occurrences)",
+                      "source_invoice_ids":  [
+
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  361,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "KIT100AUTONIVELANT CROIS CALE 1.5MM DXTR",
+                      "article_canonique":  "kit100autonivelant crois cale 1 5mm dxtr",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "kit100autonivelant",
+                                        "crois",
+                                        "cale",
+                                        "5mm"
+                                    ],
+                      "fournisseur_type":  "fournisseur_materiaux",
+                      "ape_context":  [
+                                          "4120A"
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form (1 occurrences)",
+                      "source_invoice_ids":  [
+
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  301,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_canonique_exact, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "MALAXEUR PEINTDEXTER 500X90 EX8 PERCEUSE",
+                      "article_canonique":  "malaxeur peintdexter 500x90 ex8 perceuse",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "consommable_chantier",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "malaxeur",
+                                        "peintdexter",
+                                        "500x90",
+                                        "ex8"
+                                    ],
+                      "fournisseur_type":  "fournisseur_materiaux",
+                      "ape_context":  [
+                                          "4120A"
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form (1 occurrences)",
+                      "source_invoice_ids":  [
+
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  361,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "PRIMAIRE AXTON INTERIEUR SEC EN 2-4H 4L",
+                      "article_canonique":  "primaire axton interieur sec en 2 4h 4l",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "consommable_chantier",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "primaire",
+                                        "axton",
+                                        "interieur",
+                                        "sec"
+                                    ],
+                      "fournisseur_type":  "fournisseur_materiaux",
+                      "ape_context":  [
+                                          "4120A"
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form (1 occurrences)",
+                      "source_invoice_ids":  [
+
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  301,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_canonique_exact, tva_match, category_match, occurrences_bonus"
+                  },
+                  {
+                      "article_source":  "ROUL ACIER MUR PLAF LISSE DEXTER180MM",
+                      "article_canonique":  "roul acier mur plaf lisse dexter180mm",
+                      "categorie":  "exploitation_metier",
+                      "sous_categorie":  "matiere_premiere",
+                      "tva_rate":  20.0,
+                      "mots_cles":  [
+                                        "roul",
+                                        "acier",
+                                        "mur",
+                                        "plaf"
+                                    ],
+                      "fournisseur_type":  "fournisseur_materiaux",
+                      "ape_context":  [
+                                          "4120A"
+                                      ],
+                      "notes":  "Pre-rempli auto depuis invoice_form (1 occurrences)",
+                      "source_invoice_ids":  [
+
+                                             ],
+                      "compte_comptable":  "6068",
+                      "compte_comptable_source":  "invoice_form_reference_v1",
+                      "compte_comptable_match_score":  361,
+                      "compte_comptable_match_reason":  "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus"
+                  }
+              ],
+    "a_valider":  [
+
+                  ]
+}

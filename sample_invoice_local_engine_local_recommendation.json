@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "engine_file": "C:\\Users\\Dell\\Downloads\\scripts-master\\scripts-master\\05_generated_entries.py",
+    "invoice_id": "fr_bd_519665103:sample-local-engine",
+    "client_siren": "519665103",
+    "client_ape": "4722Z",
+    "supplier_ape": "4632A",
+    "line_items_count": 2
+  },
+  "external_charge_recommendation": {
+    "source": "external_charge_recommendation_auto",
+    "accounts": [
+      {
+        "account_number": "6227",
+        "account_description": "Reco charges externes - cotisations_professionnelles",
+        "account_keywords": "COTI.RSD"
+      }
+    ],
+    "details": {
+      "classification": "charge_externe",
+      "line_items_considered": 1,
+      "decision": "auto_ok",
+      "alerts": [],
+      "recommended_accounts": [
+        {
+          "account_number": "6227",
+          "account_description": "Reco charges externes - cotisations_professionnelles",
+          "account_keywords": "COTI.RSD"
+        }
+      ],
+      "line_matches": [
+        {
+          "line_index": 1,
+          "line_text": "COTI.RSD",
+          "tva_hint": 20.0,
+          "predicted_account": "6227",
+          "predicted_sous_profil": "cotisations_professionnelles",
+          "predicted_profil_facturation": "cotisation_ou_forfait",
+          "predicted_score": 100.0,
+          "recommendation_decision": "auto_ok",
+          "recommendation_alerts": [],
+          "score_gap_top2": 0.0,
+          "top1_reason": "match exact article_source, source facture reelle, bonus metier, bonus charges externes, bonus TVA, bonus ape_context fournisseur",
+          "top3_accounts": [
+            "6227",
+            "6227",
+            "6226"
+          ],
+          "top3_articles": [
+            "COTI.RSD",
+            "COTI.RSD",
+            "Total Port"
+          ]
+        }
+      ]
+    }
+  },
+  "product_metier_recommendation": {
+    "source": "product_metier_recommendation_auto",
+    "accounts": [
+      {
+        "account_number": "6011",
+        "account_description": "Reco produit metier - boucherie/matiere_premiere",
+        "account_keywords": "BASSE COTE BOEUF"
+      }
+    ],
+    "details": {
+      "classification": "produit_metier",
+      "line_items_considered": 1,
+      "decision": "auto_ok",
+      "alerts": [],
+      "preferred_metiers": [
+        "boucherie",
+        "boulangerie"
+      ],
+      "metier_hint_used": "boucherie",
+      "predicted_metiers": [
+        "boucherie"
+      ],
+      "recommended_accounts": [
+        {
+          "account_number": "6011",
+          "account_description": "Reco produit metier - boucherie/matiere_premiere",
+          "account_keywords": "BASSE COTE BOEUF"
+        }
+      ],
+      "line_matches": [
+        {
+          "line_index": 2,
+          "line_text": "BASSE COTE BOEUF",
+          "tva_hint": 5.5,
+          "predicted_account": "6011",
+          "predicted_metier": "boucherie",
+          "predicted_categorie": "exploitation_metier",
+          "predicted_sous_categorie": "matiere_premiere",
+          "predicted_score": 100.0,
+          "recommendation_decision": "auto_ok",
+          "recommendation_alerts": [],
+          "score_gap_top2": 87.5,
+          "top1_reason": "match exact article_source, source facture reelle, bonus metier, bonus TVA, bonus ape_context client, bonus metier prefere",
+          "top3_accounts": [
+            "6011",
+            "60610000",
+            "6061"
+          ],
+          "top3_metiers": [
+            "boucherie",
+            "boulangerie",
+            "boulangerie"
+          ],
+          "top3_articles": [
+            "BASSE COTE BOEUF",
+            "Semoule d'orge Fine Trad 1kg",
+            "OEUFS MOYENS BLANCS 10*30"
+          ]
+        }
+      ]
+    }
+  },
+  "final_line_item_recommendation": {
+    "source": "line_item_recommendation_mixed_auto",
+    "accounts": [
+      {
+        "account_number": "6011",
+        "account_description": "Reco produit metier - boucherie/matiere_premiere",
+        "account_keywords": "BASSE COTE BOEUF"
+      },
+      {
+        "account_number": "6227",
+        "account_description": "Reco charges externes - cotisations_professionnelles",
+        "account_keywords": "COTI.RSD"
+      }
+    ],
+    "details": {
+      "classification": "mixte_produit_et_charge",
+      "decision": "auto_ok",
+      "recommended_accounts": [
+        {
+          "account_number": "6011",
+          "account_description": "Reco produit metier - boucherie/matiere_premiere",
+          "account_keywords": "BASSE COTE BOEUF"
+        },
+        {
+          "account_number": "6227",
+          "account_description": "Reco charges externes - cotisations_professionnelles",
+          "account_keywords": "COTI.RSD"
+        }
+      ],
+      "external_charge_recommendation": {
+        "classification": "charge_externe",
+        "line_items_considered": 1,
+        "decision": "auto_ok",
+        "alerts": [],
+        "recommended_accounts": [
+          {
+            "account_number": "6227",
+            "account_description": "Reco charges externes - cotisations_professionnelles",
+            "account_keywords": "COTI.RSD"
+          }
+        ],
+        "line_matches": [
+          {
+            "line_index": 1,
+            "line_text": "COTI.RSD",
+            "tva_hint": 20.0,
+            "predicted_account": "6227",
+            "predicted_sous_profil": "cotisations_professionnelles",
+            "predicted_profil_facturation": "cotisation_ou_forfait",
+            "predicted_score": 100.0,
+            "recommendation_decision": "auto_ok",
+            "recommendation_alerts": [],
+            "score_gap_top2": 0.0,
+            "top1_reason": "match exact article_source, source facture reelle, bonus metier, bonus charges externes, bonus TVA, bonus ape_context fournisseur",
+            "top3_accounts": [
+              "6227",
+              "6227",
+              "6226"
+            ],
+            "top3_articles": [
+              "COTI.RSD",
+              "COTI.RSD",
+              "Total Port"
+            ]
+          }
+        ]
+      },
+      "product_metier_recommendation": {
+        "classification": "produit_metier",
+        "line_items_considered": 1,
+        "decision": "auto_ok",
+        "alerts": [],
+        "preferred_metiers": [
+          "boucherie",
+          "boulangerie"
+        ],
+        "metier_hint_used": "boucherie",
+        "predicted_metiers": [
+          "boucherie"
+        ],
+        "recommended_accounts": [
+          {
+            "account_number": "6011",
+            "account_description": "Reco produit metier - boucherie/matiere_premiere",
+            "account_keywords": "BASSE COTE BOEUF"
+          }
+        ],
+        "line_matches": [
+          {
+            "line_index": 2,
+            "line_text": "BASSE COTE BOEUF",
+            "tva_hint": 5.5,
+            "predicted_account": "6011",
+            "predicted_metier": "boucherie",
+            "predicted_categorie": "exploitation_metier",
+            "predicted_sous_categorie": "matiere_premiere",
+            "predicted_score": 100.0,
+            "recommendation_decision": "auto_ok",
+            "recommendation_alerts": [],
+            "score_gap_top2": 87.5,
+            "top1_reason": "match exact article_source, source facture reelle, bonus metier, bonus TVA, bonus ape_context client, bonus metier prefere",
+            "top3_accounts": [
+              "6011",
+              "60610000",
+              "6061"
+            ],
+            "top3_metiers": [
+              "boucherie",
+              "boulangerie",
+              "boulangerie"
+            ],
+            "top3_articles": [
+              "BASSE COTE BOEUF",
+              "Semoule d'orge Fine Trad 1kg",
+              "OEUFS MOYENS BLANCS 10*30"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

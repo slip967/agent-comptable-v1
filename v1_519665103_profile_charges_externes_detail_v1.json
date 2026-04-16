@@ -1,0 +1,2264 @@
+{
+  "meta": {
+    "generated_at": "2026-04-08T01:48:20.257459Z",
+    "profile_id": "charges_externes_detail_v1",
+    "source_file": "C:\\Users\\Dell\\Downloads\\scripts-master\\scripts-master\\base_charges_externes_v1.json",
+    "invoice_csv": "C:\\Users\\Dell\\Downloads\\scripts-master\\scripts-master\\invoice_form_519665103_all_with_ape.csv",
+    "items_total": 28
+  },
+  "items": [
+    {
+      "item_id": "cext_0001",
+      "status": "to_validate",
+      "source": {
+        "article_source": "COTI.RSD",
+        "article_canonique": "coti rsd",
+        "categorie": "charges_externes",
+        "sous_categorie": "charges_generales",
+        "sous_profil": "cotisations_professionnelles",
+        "nature_charge": "cotisation",
+        "profil_facturation": "cotisation_ou_forfait",
+        "profil_facturation_champs": [
+          "periode_debut",
+          "periode_fin",
+          "montant_ht"
+        ],
+        "compte_comptable": "6227",
+        "tva_rate": 20.0,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+          "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385",
+          "fr_bd_519665103:6b649b52-1cff-4146-a224-47f59839575f"
+        ],
+        "issuer_names_top": [
+          [
+            "BBV",
+            3
+          ]
+        ],
+        "issuer_apes_top": [
+          [
+            "4632A",
+            3
+          ]
+        ],
+        "recipient_names_top": [
+          [
+            "MOUAD",
+            3
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            3
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+            "invoice_number": "1870449",
+            "invoice_date": "13/06/2024",
+            "issuer_name": "BBV",
+            "issuer_siren": "392806741",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385",
+            "invoice_number": "1832013",
+            "invoice_date": "17/01/2024",
+            "issuer_name": "BBV",
+            "issuer_siren": "392806741",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:6b649b52-1cff-4146-a224-47f59839575f",
+            "invoice_number": "1852779",
+            "invoice_date": "04/04/2024",
+            "issuer_name": "BBV",
+            "issuer_siren": "392806741",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0002",
+      "status": "to_validate",
+      "source": {
+        "article_source": "FRAIS FIXES",
+        "article_canonique": "frais fixes",
+        "categorie": "charges_externes",
+        "sous_categorie": "charges_generales",
+        "sous_profil": "cotisations_professionnelles",
+        "nature_charge": "cotisation",
+        "profil_facturation": "cotisation_ou_forfait",
+        "profil_facturation_champs": [
+          "periode_debut",
+          "periode_fin",
+          "montant_ht"
+        ],
+        "compte_comptable": "6281",
+        "tva_rate": 20.0,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:36235183-6541-4bdc-b710-599100954c57"
+        ],
+        "issuer_names_top": [
+          [
+            "BBV",
+            1
+          ]
+        ],
+        "issuer_apes_top": [
+          [
+            "4632A",
+            1
+          ]
+        ],
+        "recipient_names_top": [
+          [
+            "MOUAD",
+            1
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            1
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:36235183-6541-4bdc-b710-599100954c57",
+            "invoice_number": "1971046",
+            "invoice_date": "30/06/2025",
+            "issuer_name": "BBV",
+            "issuer_siren": "392806741",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0003",
+      "status": "to_validate",
+      "source": {
+        "article_source": "INTERBEV",
+        "article_canonique": "interbev",
+        "categorie": "charges_externes",
+        "sous_categorie": "charges_generales",
+        "sous_profil": "cotisations_professionnelles",
+        "nature_charge": "cotisation",
+        "profil_facturation": "cotisation_ou_forfait",
+        "profil_facturation_champs": [
+          "periode_debut",
+          "periode_fin",
+          "montant_ht"
+        ],
+        "compte_comptable": "6227",
+        "tva_rate": 20.0,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+          "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385",
+          "fr_bd_519665103:e600b785-12e5-4fcf-a9ac-49b515bca876"
+        ],
+        "issuer_names_top": [
+          [
+            "BBV",
+            3
+          ]
+        ],
+        "issuer_apes_top": [
+          [
+            "4632A",
+            3
+          ]
+        ],
+        "recipient_names_top": [
+          [
+            "MOUAD",
+            3
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            3
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+            "invoice_number": "1870449",
+            "invoice_date": "13/06/2024",
+            "issuer_name": "BBV",
+            "issuer_siren": "392806741",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385",
+            "invoice_number": "1832013",
+            "invoice_date": "17/01/2024",
+            "issuer_name": "BBV",
+            "issuer_siren": "392806741",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:e600b785-12e5-4fcf-a9ac-49b515bca876",
+            "invoice_number": "2003057",
+            "invoice_date": "12/11/2025",
+            "issuer_name": "BBV",
+            "issuer_siren": "392806741",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0004",
+      "status": "to_validate",
+      "source": {
+        "article_source": "Entretien parking",
+        "article_canonique": "entretien parking",
+        "categorie": "charges_externes",
+        "sous_categorie": "entretien_reparation",
+        "sous_profil": "entretien_et_maintenance",
+        "nature_charge": "entretien",
+        "profil_facturation": "intervention_ponctuelle",
+        "profil_facturation_champs": [
+          "date_intervention",
+          "description_intervention",
+          "montant_ht"
+        ],
+        "compte_comptable": "6152",
+        "tva_rate": 20.0,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:d494443e-2aa4-4ad8-84d6-f1bf18f358aa"
+        ],
+        "issuer_names_top": [
+          [
+            "VALOPHIS HABITAT OFFICE PUBLIC DE LHABITAT DU VAL DE MARNE",
+            1
+          ]
+        ],
+        "issuer_apes_top": [],
+        "recipient_names_top": [
+          [
+            "MOUAD",
+            1
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            1
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:d494443e-2aa4-4ad8-84d6-f1bf18f358aa",
+            "invoice_number": "20014103",
+            "invoice_date": "24/04/2025",
+            "issuer_name": "VALOPHIS HABITAT OFFICE PUBLIC DE LHABITAT DU VAL DE MARNE",
+            "issuer_siren": "785769555",
+            "issuer_ape": null,
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0005",
+      "status": "to_validate",
+      "source": {
+        "article_source": "ABONNEMENT TRIM. MOBITPE MOBILE du 01/04/25 au 30/06/25",
+        "article_canonique": "abonnement trim mobitpe mobile",
+        "categorie": "charges_externes",
+        "sous_categorie": "frais_service",
+        "sous_profil": "telecom_et_abonnements",
+        "nature_charge": "abonnement",
+        "profil_facturation": "abonnement_et_consommation",
+        "profil_facturation_champs": [
+          "periode_debut",
+          "periode_fin",
+          "abonnement_ht",
+          "consommation_ht",
+          "identifiant_ligne"
+        ],
+        "compte_comptable": "6226",
+        "tva_rate": 20.0,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:b3742730-2748-49f2-acad-1d8d2a7d33a1"
+        ],
+        "issuer_names_top": [
+          [
+            "EURO-INFORMATION",
+            1
+          ]
+        ],
+        "issuer_apes_top": [
+          [
+            "6203Z",
+            1
+          ]
+        ],
+        "recipient_names_top": [
+          [
+            "LA POSTE TELECOM",
+            1
+          ]
+        ],
+        "recipient_apes_top": [],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:b3742730-2748-49f2-acad-1d8d2a7d33a1",
+            "invoice_number": "250400084229",
+            "invoice_date": "01/04/2025",
+            "issuer_name": "EURO-INFORMATION",
+            "issuer_siren": "312730674",
+            "issuer_ape": "6203Z",
+            "recipient_name": "LA POSTE TELECOM",
+            "recipient_siren": "525254736",
+            "recipient_ape": null
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0006",
+      "status": "to_validate",
+      "source": {
+        "article_source": "ABONNEMENT TRIM. SIMS CARTE SIM du 01/04/25 au 30/06/25",
+        "article_canonique": "abonnement trim sims carte sim",
+        "categorie": "charges_externes",
+        "sous_categorie": "frais_service",
+        "sous_profil": "telecom_et_abonnements",
+        "nature_charge": "abonnement",
+        "profil_facturation": "abonnement_et_consommation",
+        "profil_facturation_champs": [
+          "periode_debut",
+          "periode_fin",
+          "abonnement_ht",
+          "consommation_ht",
+          "identifiant_ligne"
+        ],
+        "compte_comptable": "6226",
+        "tva_rate": 20.0,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:b3742730-2748-49f2-acad-1d8d2a7d33a1"
+        ],
+        "issuer_names_top": [
+          [
+            "EURO-INFORMATION",
+            1
+          ]
+        ],
+        "issuer_apes_top": [
+          [
+            "6203Z",
+            1
+          ]
+        ],
+        "recipient_names_top": [
+          [
+            "LA POSTE TELECOM",
+            1
+          ]
+        ],
+        "recipient_apes_top": [],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:b3742730-2748-49f2-acad-1d8d2a7d33a1",
+            "invoice_number": "250400084229",
+            "invoice_date": "01/04/2025",
+            "issuer_name": "EURO-INFORMATION",
+            "issuer_siren": "312730674",
+            "issuer_ape": "6203Z",
+            "recipient_name": "LA POSTE TELECOM",
+            "recipient_siren": "525254736",
+            "recipient_ape": null
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0007",
+      "status": "to_validate",
+      "source": {
+        "article_source": "COTI.RSD",
+        "article_canonique": "coti rsd",
+        "categorie": "charges_externes",
+        "sous_categorie": "frais_service",
+        "sous_profil": "cotisations_professionnelles",
+        "nature_charge": "cotisation",
+        "profil_facturation": "cotisation_ou_forfait",
+        "profil_facturation_champs": [
+          "periode_debut",
+          "periode_fin",
+          "montant_ht"
+        ],
+        "compte_comptable": "6227",
+        "tva_rate": 5.5,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=2)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+          "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385",
+          "fr_bd_519665103:6b649b52-1cff-4146-a224-47f59839575f"
+        ],
+        "issuer_names_top": [
+          [
+            "BBV",
+            3
+          ]
+        ],
+        "issuer_apes_top": [
+          [
+            "4632A",
+            3
+          ]
+        ],
+        "recipient_names_top": [
+          [
+            "MOUAD",
+            3
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            3
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+            "invoice_number": "1870449",
+            "invoice_date": "13/06/2024",
+            "issuer_name": "BBV",
+            "issuer_siren": "392806741",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385",
+            "invoice_number": "1832013",
+            "invoice_date": "17/01/2024",
+            "issuer_name": "BBV",
+            "issuer_siren": "392806741",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:6b649b52-1cff-4146-a224-47f59839575f",
+            "invoice_number": "1852779",
+            "invoice_date": "04/04/2024",
+            "issuer_name": "BBV",
+            "issuer_siren": "392806741",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0008",
+      "status": "to_validate",
+      "source": {
+        "article_source": "DECRO",
+        "article_canonique": "decro",
+        "categorie": "charges_externes",
+        "sous_categorie": "frais_service",
+        "sous_profil": "cotisations_professionnelles",
+        "nature_charge": "cotisation",
+        "profil_facturation": "cotisation_ou_forfait",
+        "profil_facturation_champs": [
+          "periode_debut",
+          "periode_fin",
+          "montant_ht"
+        ],
+        "compte_comptable": "6227",
+        "tva_rate": 20.0,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:003f5876-a443-42e2-9d69-60c58f89afa5",
+          "fr_bd_519665103:02d5e7c2-3877-40fc-b589-cc7daf4784ec",
+          "fr_bd_519665103:0417048a-9942-4273-a5f6-4a1dc7e9c12c"
+        ],
+        "issuer_names_top": [
+          [
+            "ETABLISSEMENTS CANU",
+            3
+          ]
+        ],
+        "issuer_apes_top": [
+          [
+            "4632A",
+            3
+          ]
+        ],
+        "recipient_names_top": [
+          [
+            "MOUAD",
+            3
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            3
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:003f5876-a443-42e2-9d69-60c58f89afa5",
+            "invoice_number": "160586",
+            "invoice_date": "20/11/2024",
+            "issuer_name": "ETABLISSEMENTS CANU",
+            "issuer_siren": "398434837",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:02d5e7c2-3877-40fc-b589-cc7daf4784ec",
+            "invoice_number": "162938",
+            "invoice_date": "30/12/2024",
+            "issuer_name": "ETABLISSEMENTS CANU",
+            "issuer_siren": "398434837",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:0417048a-9942-4273-a5f6-4a1dc7e9c12c",
+            "invoice_number": "160921",
+            "invoice_date": "26/11/2024",
+            "issuer_name": "ETABLISSEMENTS CANU",
+            "issuer_siren": "398434837",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0009",
+      "status": "to_validate",
+      "source": {
+        "article_source": "F. FIXE",
+        "article_canonique": "f fixe",
+        "categorie": "charges_externes",
+        "sous_categorie": "frais_service",
+        "sous_profil": "cotisations_professionnelles",
+        "nature_charge": "cotisation",
+        "profil_facturation": "cotisation_ou_forfait",
+        "profil_facturation_champs": [
+          "periode_debut",
+          "periode_fin",
+          "montant_ht"
+        ],
+        "compte_comptable": "6227",
+        "tva_rate": 5.5,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=5)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+          "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385",
+          "fr_bd_519665103:6b649b52-1cff-4146-a224-47f59839575f"
+        ],
+        "issuer_names_top": [
+          [
+            "BBV",
+            3
+          ]
+        ],
+        "issuer_apes_top": [
+          [
+            "4632A",
+            3
+          ]
+        ],
+        "recipient_names_top": [
+          [
+            "MOUAD",
+            3
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            3
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+            "invoice_number": "1870449",
+            "invoice_date": "13/06/2024",
+            "issuer_name": "BBV",
+            "issuer_siren": "392806741",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385",
+            "invoice_number": "1832013",
+            "invoice_date": "17/01/2024",
+            "issuer_name": "BBV",
+            "issuer_siren": "392806741",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:6b649b52-1cff-4146-a224-47f59839575f",
+            "invoice_number": "1852779",
+            "invoice_date": "04/04/2024",
+            "issuer_name": "BBV",
+            "issuer_siren": "392806741",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0010",
+      "status": "to_validate",
+      "source": {
+        "article_source": "F. FIXE",
+        "article_canonique": "f fixe",
+        "categorie": "charges_externes",
+        "sous_categorie": "frais_service",
+        "sous_profil": "cotisations_professionnelles",
+        "nature_charge": "cotisation",
+        "profil_facturation": "cotisation_ou_forfait",
+        "profil_facturation_champs": [
+          "periode_debut",
+          "periode_fin",
+          "montant_ht"
+        ],
+        "compte_comptable": "6227",
+        "tva_rate": 20.0,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+          "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385",
+          "fr_bd_519665103:6b649b52-1cff-4146-a224-47f59839575f"
+        ],
+        "issuer_names_top": [
+          [
+            "BBV",
+            3
+          ]
+        ],
+        "issuer_apes_top": [
+          [
+            "4632A",
+            3
+          ]
+        ],
+        "recipient_names_top": [
+          [
+            "MOUAD",
+            3
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            3
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+            "invoice_number": "1870449",
+            "invoice_date": "13/06/2024",
+            "issuer_name": "BBV",
+            "issuer_siren": "392806741",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385",
+            "invoice_number": "1832013",
+            "invoice_date": "17/01/2024",
+            "issuer_name": "BBV",
+            "issuer_siren": "392806741",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:6b649b52-1cff-4146-a224-47f59839575f",
+            "invoice_number": "1852779",
+            "invoice_date": "04/04/2024",
+            "issuer_name": "BBV",
+            "issuer_siren": "392806741",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0011",
+      "status": "to_validate",
+      "source": {
+        "article_source": "Frais Administratifs Carte Acheteur",
+        "article_canonique": "frais administratifs carte acheteur",
+        "categorie": "charges_externes",
+        "sous_categorie": "frais_service",
+        "sous_profil": "frais_administratifs_et_bancaires",
+        "nature_charge": "frais",
+        "profil_facturation": "forfait_ou_frais",
+        "profil_facturation_champs": [
+          "date_operation",
+          "description_frais",
+          "montant_ht"
+        ],
+        "compte_comptable": "6226",
+        "tva_rate": 20.0,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:3810ce6d-c1f4-46c7-bd58-c9f0bd8e2156"
+        ],
+        "issuer_names_top": [
+          [
+            "RUNGIS MARCHE INTERNATIONAL",
+            1
+          ]
+        ],
+        "issuer_apes_top": [
+          [
+            "6832A",
+            1
+          ]
+        ],
+        "recipient_names_top": [
+          [
+            "MOUAD",
+            1
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            1
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:3810ce6d-c1f4-46c7-bd58-c9f0bd8e2156",
+            "invoice_number": "F001562361",
+            "invoice_date": "08/01/2025",
+            "issuer_name": "RUNGIS MARCHE INTERNATIONAL",
+            "issuer_siren": "662012491",
+            "issuer_ape": "6832A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0012",
+      "status": "to_validate",
+      "source": {
+        "article_source": "Frais de port",
+        "article_canonique": "frais de port",
+        "categorie": "charges_externes",
+        "sous_categorie": "frais_service",
+        "sous_profil": "transport_et_logistique",
+        "nature_charge": "transport",
+        "profil_facturation": "prestation_ponctuelle",
+        "profil_facturation_champs": [
+          "date_prestation",
+          "description_prestation",
+          "montant_ht"
+        ],
+        "compte_comptable": "6227",
+        "tva_rate": 0.0,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:2cdae330-5c7d-4696-ac7e-47511f719b32"
+        ],
+        "issuer_names_top": [
+          [
+            "TRADCO FRANCE",
+            1
+          ]
+        ],
+        "issuer_apes_top": [],
+        "recipient_names_top": [
+          [
+            "MOUAD",
+            1
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            1
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:2cdae330-5c7d-4696-ac7e-47511f719b32",
+            "invoice_number": "FA1665268",
+            "invoice_date": "03/09/2024",
+            "issuer_name": "TRADCO FRANCE",
+            "issuer_siren": "442947859",
+            "issuer_ape": null,
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0013",
+      "status": "to_validate",
+      "source": {
+        "article_source": "Frais de relance",
+        "article_canonique": "frais de relance",
+        "categorie": "charges_externes",
+        "sous_categorie": "frais_service",
+        "sous_profil": "frais_administratifs_et_bancaires",
+        "nature_charge": "frais",
+        "profil_facturation": "forfait_ou_frais",
+        "profil_facturation_champs": [
+          "date_operation",
+          "description_frais",
+          "montant_ht"
+        ],
+        "compte_comptable": "6227",
+        "tva_rate": 0.0,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=3)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:09437944-54fa-4d58-b404-e954e21bfa22",
+          "fr_bd_519665103:666de54d-b140-4b30-b0f2-0146caf36a8d",
+          "fr_bd_519665103:c76061b3-4fa9-4e2b-86ab-4ecb3515e2cf"
+        ],
+        "issuer_names_top": [
+          [
+            "LEFORT & RAIMBERT",
+            3
+          ]
+        ],
+        "issuer_apes_top": [],
+        "recipient_names_top": [
+          [
+            "BOUCHERIE MOUAD",
+            3
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            3
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:09437944-54fa-4d58-b404-e954e21bfa22",
+            "invoice_number": "G.1196233498124422454",
+            "invoice_date": "20/08/2024",
+            "issuer_name": "LEFORT & RAIMBERT",
+            "issuer_siren": "562129635",
+            "issuer_ape": null,
+            "recipient_name": "BOUCHERIE MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:666de54d-b140-4b30-b0f2-0146caf36a8d",
+            "invoice_number": "G.1236290905962340226",
+            "invoice_date": "09/01/2025",
+            "issuer_name": "LEFORT & RAIMBERT",
+            "issuer_siren": "562129635",
+            "issuer_ape": null,
+            "recipient_name": "BOUCHERIE MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:c76061b3-4fa9-4e2b-86ab-4ecb3515e2cf",
+            "invoice_number": "29913406/73235/0079/C6 1/1",
+            "invoice_date": "20/01/2025",
+            "issuer_name": "LEFORT & RAIMBERT",
+            "issuer_siren": "562129635",
+            "issuer_ape": null,
+            "recipient_name": "BOUCHERIE MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0014",
+      "status": "to_validate",
+      "source": {
+        "article_source": "interb gbao",
+        "article_canonique": "interb gbao",
+        "categorie": "charges_externes",
+        "sous_categorie": "frais_service",
+        "sous_profil": "cotisations_professionnelles",
+        "nature_charge": "cotisation",
+        "profil_facturation": "cotisation_ou_forfait",
+        "profil_facturation_champs": [
+          "periode_debut",
+          "periode_fin",
+          "montant_ht"
+        ],
+        "compte_comptable": "6227",
+        "tva_rate": 5.5,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:775fd06b-7fff-4956-a893-221e08f7be6b"
+        ],
+        "issuer_names_top": [
+          [
+            "POMMIER TREPIN COUSIN",
+            1
+          ]
+        ],
+        "issuer_apes_top": [
+          [
+            "4632A",
+            1
+          ]
+        ],
+        "recipient_names_top": [
+          [
+            "MOUAD",
+            1
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            1
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:775fd06b-7fff-4956-a893-221e08f7be6b",
+            "invoice_number": "336274",
+            "invoice_date": "12/04/2024",
+            "issuer_name": "POMMIER TREPIN COUSIN",
+            "issuer_siren": "562048314",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0015",
+      "status": "to_validate",
+      "source": {
+        "article_source": "interb vdo",
+        "article_canonique": "interb vdo",
+        "categorie": "charges_externes",
+        "sous_categorie": "frais_service",
+        "sous_profil": "cotisations_professionnelles",
+        "nature_charge": "cotisation",
+        "profil_facturation": "cotisation_ou_forfait",
+        "profil_facturation_champs": [
+          "periode_debut",
+          "periode_fin",
+          "montant_ht"
+        ],
+        "compte_comptable": "6227",
+        "tva_rate": 5.5,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:775fd06b-7fff-4956-a893-221e08f7be6b"
+        ],
+        "issuer_names_top": [
+          [
+            "POMMIER TREPIN COUSIN",
+            1
+          ]
+        ],
+        "issuer_apes_top": [
+          [
+            "4632A",
+            1
+          ]
+        ],
+        "recipient_names_top": [
+          [
+            "MOUAD",
+            1
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            1
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:775fd06b-7fff-4956-a893-221e08f7be6b",
+            "invoice_number": "336274",
+            "invoice_date": "12/04/2024",
+            "issuer_name": "POMMIER TREPIN COUSIN",
+            "issuer_siren": "562048314",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0016",
+      "status": "to_validate",
+      "source": {
+        "article_source": "INTERBEV",
+        "article_canonique": "interbev",
+        "categorie": "charges_externes",
+        "sous_categorie": "frais_service",
+        "sous_profil": "cotisations_professionnelles",
+        "nature_charge": "cotisation",
+        "profil_facturation": "cotisation_ou_forfait",
+        "profil_facturation_champs": [
+          "periode_debut",
+          "periode_fin",
+          "montant_ht"
+        ],
+        "compte_comptable": "6227",
+        "tva_rate": 5.5,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=4)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+          "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385",
+          "fr_bd_519665103:e600b785-12e5-4fcf-a9ac-49b515bca876"
+        ],
+        "issuer_names_top": [
+          [
+            "BBV",
+            3
+          ]
+        ],
+        "issuer_apes_top": [
+          [
+            "4632A",
+            3
+          ]
+        ],
+        "recipient_names_top": [
+          [
+            "MOUAD",
+            3
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            3
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+            "invoice_number": "1870449",
+            "invoice_date": "13/06/2024",
+            "issuer_name": "BBV",
+            "issuer_siren": "392806741",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385",
+            "invoice_number": "1832013",
+            "invoice_date": "17/01/2024",
+            "issuer_name": "BBV",
+            "issuer_siren": "392806741",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:e600b785-12e5-4fcf-a9ac-49b515bca876",
+            "invoice_number": "2003057",
+            "invoice_date": "12/11/2025",
+            "issuer_name": "BBV",
+            "issuer_siren": "392806741",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0017",
+      "status": "to_validate",
+      "source": {
+        "article_source": "Sortie viande",
+        "article_canonique": "sortie viande",
+        "categorie": "charges_externes",
+        "sous_categorie": "frais_service",
+        "sous_profil": "transport_et_logistique",
+        "nature_charge": "transport",
+        "profil_facturation": "prestation_ponctuelle",
+        "profil_facturation_champs": [
+          "date_prestation",
+          "description_prestation",
+          "montant_ht"
+        ],
+        "compte_comptable": "6227",
+        "tva_rate": 20.0,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:4213c9ec-a70b-448d-97ea-93a75f14fd96",
+          "fr_bd_519665103:9fd2eea5-e050-47d2-96bf-f7263217c4cf"
+        ],
+        "issuer_names_top": [
+          [
+            "AVIGROS",
+            2
+          ]
+        ],
+        "issuer_apes_top": [
+          [
+            "4632C",
+            2
+          ]
+        ],
+        "recipient_names_top": [
+          [
+            "MOUAD",
+            2
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            2
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:4213c9ec-a70b-448d-97ea-93a75f14fd96",
+            "invoice_number": "FV2505-10242",
+            "invoice_date": "21/05/2025",
+            "issuer_name": "AVIGROS",
+            "issuer_siren": "447915430",
+            "issuer_ape": "4632C",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:9fd2eea5-e050-47d2-96bf-f7263217c4cf",
+            "invoice_number": "FV2406-06044",
+            "invoice_date": "13/06/2024",
+            "issuer_name": "AVIGROS",
+            "issuer_siren": "447915430",
+            "issuer_ape": "4632C",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0018",
+      "status": "to_validate",
+      "source": {
+        "article_source": "Sortie volaille",
+        "article_canonique": "sortie volaille",
+        "categorie": "charges_externes",
+        "sous_categorie": "frais_service",
+        "sous_profil": "transport_et_logistique",
+        "nature_charge": "transport",
+        "profil_facturation": "prestation_ponctuelle",
+        "profil_facturation_champs": [
+          "date_prestation",
+          "description_prestation",
+          "montant_ht"
+        ],
+        "compte_comptable": "6226",
+        "tva_rate": 20.0,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=5)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:00b4a0b1-9c35-4fa1-8dcc-d22909b6a76e",
+          "fr_bd_519665103:0102860e-d8dd-45a7-9aaa-1c6b35b0c49a",
+          "fr_bd_519665103:047ce282-1ea7-4468-b474-1ffc8b33954a"
+        ],
+        "issuer_names_top": [
+          [
+            "AVIGROS",
+            3
+          ]
+        ],
+        "issuer_apes_top": [
+          [
+            "4632C",
+            3
+          ]
+        ],
+        "recipient_names_top": [
+          [
+            "MOUAD",
+            3
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            3
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:00b4a0b1-9c35-4fa1-8dcc-d22909b6a76e",
+            "invoice_number": "FV2505-09453",
+            "invoice_date": "20/05/2025",
+            "issuer_name": "AVIGROS",
+            "issuer_siren": "447915430",
+            "issuer_ape": "4632C",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:0102860e-d8dd-45a7-9aaa-1c6b35b0c49a",
+            "invoice_number": "FV2408-00331",
+            "invoice_date": "01/08/2024",
+            "issuer_name": "AVIGROS",
+            "issuer_siren": "447915430",
+            "issuer_ape": "4632C",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:047ce282-1ea7-4468-b474-1ffc8b33954a",
+            "invoice_number": "FV2503-10347",
+            "invoice_date": "20/03/2025",
+            "issuer_name": "AVIGROS",
+            "issuer_siren": "447915430",
+            "issuer_ape": "4632C",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0019",
+      "status": "to_validate",
+      "source": {
+        "article_source": "Terme 01/2025",
+        "article_canonique": "terme",
+        "categorie": "charges_externes",
+        "sous_categorie": "frais_service",
+        "sous_profil": "frais_administratifs_et_bancaires",
+        "nature_charge": "frais",
+        "profil_facturation": "forfait_ou_frais",
+        "profil_facturation_champs": [
+          "date_operation",
+          "description_frais",
+          "montant_ht"
+        ],
+        "compte_comptable": "6226",
+        "tva_rate": 0.0,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:c76061b3-4fa9-4e2b-86ab-4ecb3515e2cf"
+        ],
+        "issuer_names_top": [
+          [
+            "LEFORT & RAIMBERT",
+            1
+          ]
+        ],
+        "issuer_apes_top": [],
+        "recipient_names_top": [
+          [
+            "BOUCHERIE MOUAD",
+            1
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            1
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:c76061b3-4fa9-4e2b-86ab-4ecb3515e2cf",
+            "invoice_number": "29913406/73235/0079/C6 1/1",
+            "invoice_date": "20/01/2025",
+            "issuer_name": "LEFORT & RAIMBERT",
+            "issuer_siren": "562129635",
+            "issuer_ape": null,
+            "recipient_name": "BOUCHERIE MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0020",
+      "status": "to_validate",
+      "source": {
+        "article_source": "TM HT",
+        "article_canonique": "tm ht",
+        "categorie": "charges_externes",
+        "sous_categorie": "frais_service",
+        "sous_profil": "frais_administratifs_et_bancaires",
+        "nature_charge": "frais",
+        "profil_facturation": "forfait_ou_frais",
+        "profil_facturation_champs": [
+          "date_operation",
+          "description_frais",
+          "montant_ht"
+        ],
+        "compte_comptable": "6226",
+        "tva_rate": 20.0,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:82696caf-1a22-4f64-975f-64bdb8ef57cb"
+        ],
+        "issuer_names_top": [
+          [
+            "SENV",
+            1
+          ]
+        ],
+        "issuer_apes_top": [
+          [
+            "4632A",
+            1
+          ]
+        ],
+        "recipient_names_top": [
+          [
+            "MOUAD",
+            1
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            1
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:82696caf-1a22-4f64-975f-64bdb8ef57cb",
+            "invoice_number": "FR94.065.028",
+            "invoice_date": "03/06/2024",
+            "issuer_name": "SENV",
+            "issuer_siren": "499664563",
+            "issuer_ape": "4632A",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0021",
+      "status": "to_validate",
+      "source": {
+        "article_source": "Total Port",
+        "article_canonique": "total port",
+        "categorie": "charges_externes",
+        "sous_categorie": "frais_service",
+        "sous_profil": "transport_et_logistique",
+        "nature_charge": "transport",
+        "profil_facturation": "prestation_ponctuelle",
+        "profil_facturation_champs": [
+          "date_prestation",
+          "description_prestation",
+          "montant_ht"
+        ],
+        "compte_comptable": "6226",
+        "tva_rate": 20.0,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=3)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:249fa365-db1b-45f7-957b-8f0879993396",
+          "fr_bd_519665103:7967df5e-6f5a-4a15-b224-d3d40ffa4c27",
+          "fr_bd_519665103:7c381e05-ff06-43d5-84ff-eb701e8571ae"
+        ],
+        "issuer_names_top": [
+          [
+            "AVIGROS",
+            3
+          ]
+        ],
+        "issuer_apes_top": [
+          [
+            "4632C",
+            3
+          ]
+        ],
+        "recipient_names_top": [
+          [
+            "MOUAD",
+            3
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            3
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:249fa365-db1b-45f7-957b-8f0879993396",
+            "invoice_number": "FV2506-03393",
+            "invoice_date": "07/06/2025",
+            "issuer_name": "AVIGROS",
+            "issuer_siren": "447915430",
+            "issuer_ape": "4632C",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:7967df5e-6f5a-4a15-b224-d3d40ffa4c27",
+            "invoice_number": "FV2502-13820",
+            "invoice_date": "28/02/2025",
+            "issuer_name": "AVIGROS",
+            "issuer_siren": "447915430",
+            "issuer_ape": "4632C",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:7c381e05-ff06-43d5-84ff-eb701e8571ae",
+            "invoice_number": "FV2501-05446",
+            "invoice_date": "11/01/2025",
+            "issuer_name": "AVIGROS",
+            "issuer_siren": "447915430",
+            "issuer_ape": "4632C",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0022",
+      "status": "to_validate",
+      "source": {
+        "article_source": "Transport sur ventes",
+        "article_canonique": "transport sur ventes",
+        "categorie": "charges_externes",
+        "sous_categorie": "frais_service",
+        "sous_profil": "transport_et_logistique",
+        "nature_charge": "transport",
+        "profil_facturation": "prestation_ponctuelle",
+        "profil_facturation_champs": [
+          "date_prestation",
+          "description_prestation",
+          "montant_ht"
+        ],
+        "compte_comptable": "6227",
+        "tva_rate": 20.0,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:bd4a7e12-034e-44e4-a158-a7749c465dba"
+        ],
+        "issuer_names_top": [
+          [
+            "AVIGROS",
+            1
+          ]
+        ],
+        "issuer_apes_top": [
+          [
+            "4632C",
+            1
+          ]
+        ],
+        "recipient_names_top": [
+          [
+            "MOUAD",
+            1
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            1
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:bd4a7e12-034e-44e4-a158-a7749c465dba",
+            "invoice_number": "FV2501-07129",
+            "invoice_date": "15/01/2025",
+            "issuer_name": "AVIGROS",
+            "issuer_siren": "447915430",
+            "issuer_ape": "4632C",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0023",
+      "status": "to_validate",
+      "source": {
+        "article_source": "ACOMPTE SUR CHARGES Du 01/01/2025 Au 28/02/2025",
+        "article_canonique": "acompte sur charges",
+        "categorie": "charges_externes",
+        "sous_categorie": "locations",
+        "sous_profil": "loyers_et_charges_locatives",
+        "nature_charge": "charges_locatives",
+        "profil_facturation": "loyer_et_charges",
+        "profil_facturation_champs": [
+          "periode_debut",
+          "periode_fin",
+          "loyer_ht",
+          "charges_ht"
+        ],
+        "compte_comptable": "6132",
+        "tva_rate": 0.0,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=4)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:60fab965-ca59-4781-8071-861c932c9a81",
+          "fr_bd_519665103:ad01d2ee-52b0-41f7-aae0-784935fcfeb9"
+        ],
+        "issuer_names_top": [
+          [
+            "LEFORT & RAIMBERT",
+            2
+          ]
+        ],
+        "issuer_apes_top": [],
+        "recipient_names_top": [
+          [
+            "BOUCHERIE MOUAD",
+            2
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            2
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:60fab965-ca59-4781-8071-861c932c9a81",
+            "invoice_number": "2003538-25000069",
+            "invoice_date": "24/03/2025",
+            "issuer_name": "LEFORT & RAIMBERT",
+            "issuer_siren": "562129635",
+            "issuer_ape": null,
+            "recipient_name": "BOUCHERIE MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:ad01d2ee-52b0-41f7-aae0-784935fcfeb9",
+            "invoice_number": "n-2003538-25000069",
+            "invoice_date": "24/03/2025",
+            "issuer_name": "LEFORT & RAIMBERT",
+            "issuer_siren": "562129635",
+            "issuer_ape": null,
+            "recipient_name": "BOUCHERIE MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0024",
+      "status": "to_validate",
+      "source": {
+        "article_source": "DESOURISATION DU 30/01/2024",
+        "article_canonique": "desourisation",
+        "categorie": "charges_externes",
+        "sous_categorie": "locations",
+        "sous_profil": "entretien_et_maintenance",
+        "nature_charge": "entretien",
+        "profil_facturation": "intervention_ponctuelle",
+        "profil_facturation_champs": [
+          "date_intervention",
+          "description_intervention",
+          "montant_ht"
+        ],
+        "compte_comptable": "613",
+        "tva_rate": 0.0,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:ea3966bd-6c5b-4593-9035-957402cb60cb"
+        ],
+        "issuer_names_top": [
+          [
+            "LEFORT & RAIMBERT",
+            1
+          ]
+        ],
+        "issuer_apes_top": [],
+        "recipient_names_top": [
+          [
+            "BOUCHERIE MOUAD",
+            1
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            1
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:ea3966bd-6c5b-4593-9035-957402cb60cb",
+            "invoice_number": "2003538-24000070",
+            "invoice_date": "25/03/2024",
+            "issuer_name": "LEFORT & RAIMBERT",
+            "issuer_siren": "562129635",
+            "issuer_ape": null,
+            "recipient_name": "BOUCHERIE MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0025",
+      "status": "to_validate",
+      "source": {
+        "article_source": "LOYER PRINCIPAL Du 01/01/2025 Au 31/03/2025 Indice 06 4TR2022",
+        "article_canonique": "loyer principal indice 4tr2022",
+        "categorie": "charges_externes",
+        "sous_categorie": "locations",
+        "sous_profil": "loyers_et_charges_locatives",
+        "nature_charge": "loyer",
+        "profil_facturation": "loyer_et_charges",
+        "profil_facturation_champs": [
+          "periode_debut",
+          "periode_fin",
+          "loyer_ht",
+          "charges_ht"
+        ],
+        "compte_comptable": "6132",
+        "tva_rate": 0.0,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=3)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:60fab965-ca59-4781-8071-861c932c9a81",
+          "fr_bd_519665103:ad01d2ee-52b0-41f7-aae0-784935fcfeb9"
+        ],
+        "issuer_names_top": [
+          [
+            "LEFORT & RAIMBERT",
+            2
+          ]
+        ],
+        "issuer_apes_top": [],
+        "recipient_names_top": [
+          [
+            "BOUCHERIE MOUAD",
+            2
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            2
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:60fab965-ca59-4781-8071-861c932c9a81",
+            "invoice_number": "2003538-25000069",
+            "invoice_date": "24/03/2025",
+            "issuer_name": "LEFORT & RAIMBERT",
+            "issuer_siren": "562129635",
+            "issuer_ape": null,
+            "recipient_name": "BOUCHERIE MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:ad01d2ee-52b0-41f7-aae0-784935fcfeb9",
+            "invoice_number": "n-2003538-25000069",
+            "invoice_date": "24/03/2025",
+            "issuer_name": "LEFORT & RAIMBERT",
+            "issuer_siren": "562129635",
+            "issuer_ape": null,
+            "recipient_name": "BOUCHERIE MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0026",
+      "status": "to_validate",
+      "source": {
+        "article_source": "SOLDE CHARGES 2024 Du 01/01/2024 Au 31/12/2024",
+        "article_canonique": "solde charges",
+        "categorie": "charges_externes",
+        "sous_categorie": "locations",
+        "sous_profil": "loyers_et_charges_locatives",
+        "nature_charge": "charges_locatives",
+        "profil_facturation": "loyer_et_charges",
+        "profil_facturation_champs": [
+          "periode_debut",
+          "periode_fin",
+          "loyer_ht",
+          "charges_ht"
+        ],
+        "compte_comptable": "6132",
+        "tva_rate": 0.0,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=2)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:60fab965-ca59-4781-8071-861c932c9a81",
+          "fr_bd_519665103:ad01d2ee-52b0-41f7-aae0-784935fcfeb9"
+        ],
+        "issuer_names_top": [
+          [
+            "LEFORT & RAIMBERT",
+            2
+          ]
+        ],
+        "issuer_apes_top": [],
+        "recipient_names_top": [
+          [
+            "BOUCHERIE MOUAD",
+            2
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            2
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:60fab965-ca59-4781-8071-861c932c9a81",
+            "invoice_number": "2003538-25000069",
+            "invoice_date": "24/03/2025",
+            "issuer_name": "LEFORT & RAIMBERT",
+            "issuer_siren": "562129635",
+            "issuer_ape": null,
+            "recipient_name": "BOUCHERIE MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:ad01d2ee-52b0-41f7-aae0-784935fcfeb9",
+            "invoice_number": "n-2003538-25000069",
+            "invoice_date": "24/03/2025",
+            "issuer_name": "LEFORT & RAIMBERT",
+            "issuer_siren": "562129635",
+            "issuer_ape": null,
+            "recipient_name": "BOUCHERIE MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0027",
+      "status": "to_validate",
+      "source": {
+        "article_source": "SOLDE CHARGES LOCATIVES 2023 Du 01/01/2023 Au 31/12/2023",
+        "article_canonique": "solde charges locatives",
+        "categorie": "charges_externes",
+        "sous_categorie": "locations",
+        "sous_profil": "loyers_et_charges_locatives",
+        "nature_charge": "charges_locatives",
+        "profil_facturation": "loyer_et_charges",
+        "profil_facturation_champs": [
+          "periode_debut",
+          "periode_fin",
+          "loyer_ht",
+          "charges_ht"
+        ],
+        "compte_comptable": "613",
+        "tva_rate": 0.0,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:ea3966bd-6c5b-4593-9035-957402cb60cb"
+        ],
+        "issuer_names_top": [
+          [
+            "LEFORT & RAIMBERT",
+            1
+          ]
+        ],
+        "issuer_apes_top": [],
+        "recipient_names_top": [
+          [
+            "BOUCHERIE MOUAD",
+            1
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            1
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:ea3966bd-6c5b-4593-9035-957402cb60cb",
+            "invoice_number": "2003538-24000070",
+            "invoice_date": "25/03/2024",
+            "issuer_name": "LEFORT & RAIMBERT",
+            "issuer_siren": "562129635",
+            "issuer_ape": null,
+            "recipient_name": "BOUCHERIE MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "cext_0028",
+      "status": "to_validate",
+      "source": {
+        "article_source": "Total Port",
+        "article_canonique": "total port",
+        "categorie": "charges_externes",
+        "sous_categorie": "transport",
+        "sous_profil": "transport_et_logistique",
+        "nature_charge": "transport",
+        "profil_facturation": "prestation_ponctuelle",
+        "profil_facturation_champs": [
+          "date_prestation",
+          "description_prestation",
+          "montant_ht"
+        ],
+        "compte_comptable": "6226",
+        "tva_rate": 20.0,
+        "notes": "Pre-rempli auto depuis reference charges externes (occurrences=1)",
+        "source_invoice_ids": [
+          "fr_bd_519665103:249fa365-db1b-45f7-957b-8f0879993396",
+          "fr_bd_519665103:7967df5e-6f5a-4a15-b224-d3d40ffa4c27",
+          "fr_bd_519665103:7c381e05-ff06-43d5-84ff-eb701e8571ae"
+        ],
+        "issuer_names_top": [
+          [
+            "AVIGROS",
+            3
+          ]
+        ],
+        "issuer_apes_top": [
+          [
+            "4632C",
+            3
+          ]
+        ],
+        "recipient_names_top": [
+          [
+            "MOUAD",
+            3
+          ]
+        ],
+        "recipient_apes_top": [
+          [
+            "4722Z",
+            3
+          ]
+        ],
+        "source_invoices": [
+          {
+            "invoice_id": "fr_bd_519665103:249fa365-db1b-45f7-957b-8f0879993396",
+            "invoice_number": "FV2506-03393",
+            "invoice_date": "07/06/2025",
+            "issuer_name": "AVIGROS",
+            "issuer_siren": "447915430",
+            "issuer_ape": "4632C",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:7967df5e-6f5a-4a15-b224-d3d40ffa4c27",
+            "invoice_number": "FV2502-13820",
+            "invoice_date": "28/02/2025",
+            "issuer_name": "AVIGROS",
+            "issuer_siren": "447915430",
+            "issuer_ape": "4632C",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:7c381e05-ff06-43d5-84ff-eb701e8571ae",
+            "invoice_number": "FV2501-05446",
+            "invoice_date": "11/01/2025",
+            "issuer_name": "AVIGROS",
+            "issuer_siren": "447915430",
+            "issuer_ape": "4632C",
+            "recipient_name": "MOUAD",
+            "recipient_siren": "519665103",
+            "recipient_ape": "4722Z"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_sous_profil": null,
+        "corrected_compte_comptable": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "splitting_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    }
+  ]
+}

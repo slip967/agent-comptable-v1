@@ -1,0 +1,6574 @@
+{
+  "meta": {
+    "generated_at": "2026-04-01T17:18:15.766409Z",
+    "profile_id": "articles_validation_519665103_v1",
+    "client_siren": "519665103",
+    "partition_prefix": "fr_bd_519665103",
+    "db_factures": "abt3",
+    "db_entries": "fec_452416191",
+    "source_file": "C:\\Users\\Dell\\Downloads\\scripts-master\\scripts-master\\v1_519665103_reference_base_a_revoir_v1.json",
+    "items_total": 143
+  },
+  "items": [
+    {
+      "item_id": "mrn_0001",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture mouad",
+        "source_label_main": "FACTURE MOUAD",
+        "source_labels_top": [
+          [
+            "FACTURE MOUAD",
+            25
+          ]
+        ],
+        "proposed_account": "411",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [
+          [
+            "513D",
+            25
+          ]
+        ],
+        "ape_client_top": [],
+        "occurrences": 25,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d0b2051a-3866-48f2-a3bc-96e03062453e",
+            "invoice_number": "Relevé de factures",
+            "invoice_date": "01/05/2024",
+            "description": "FACTURE MOUAD",
+            "total_net": 507.55,
+            "total_gross": 507.55,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:d0b2051a-3866-48f2-a3bc-96e03062453e",
+            "invoice_number": "Relevé de factures",
+            "invoice_date": "01/05/2024",
+            "description": "FACTURE MOUAD",
+            "total_net": 163.78,
+            "total_gross": 163.78,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:d0b2051a-3866-48f2-a3bc-96e03062453e",
+            "invoice_number": "Relevé de factures",
+            "invoice_date": "01/05/2024",
+            "description": "FACTURE MOUAD",
+            "total_net": 138.58,
+            "total_gross": 138.58,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:d0b2051a-3866-48f2-a3bc-96e03062453e",
+            "invoice_number": "Relevé de factures",
+            "invoice_date": "01/05/2024",
+            "description": "FACTURE MOUAD",
+            "total_net": 90.46,
+            "total_gross": 90.46,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:d0b2051a-3866-48f2-a3bc-96e03062453e",
+            "invoice_number": "Relevé de factures",
+            "invoice_date": "01/05/2024",
+            "description": "FACTURE MOUAD",
+            "total_net": 586.67,
+            "total_gross": 586.67,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0002",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "reglement de facture fv2509",
+        "source_label_main": "Règlement de facture FV2509-00147",
+        "source_labels_top": [
+          [
+            "Règlement de facture FV2509-00147",
+            1
+          ],
+          [
+            "Règlement de facture FV2509-00462",
+            1
+          ],
+          [
+            "Règlement de facture FV2509-01469",
+            1
+          ],
+          [
+            "Règlement de facture FV2509-02018",
+            1
+          ],
+          [
+            "Règlement de facture FV2509-02812",
+            1
+          ],
+          [
+            "Règlement de facture FV2509-03655",
+            1
+          ],
+          [
+            "Règlement de facture FV2509-03847",
+            1
+          ],
+          [
+            "Règlement de facture FV2509-04259",
+            1
+          ]
+        ],
+        "proposed_account": "401",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            24
+          ]
+        ],
+        "ape_supplier_top": [
+          [
+            "4632C",
+            24
+          ]
+        ],
+        "ape_client_top": [],
+        "occurrences": 24,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:cc2187e8-ce30-4207-8eba-58985a024b61",
+            "invoice_number": "Justificatif de paiement du 12. novembre 2025",
+            "invoice_date": "12/11/2025",
+            "description": "Règlement de facture FV2509-00147",
+            "total_net": 690.21,
+            "total_gross": 690.21,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:cc2187e8-ce30-4207-8eba-58985a024b61",
+            "invoice_number": "Justificatif de paiement du 12. novembre 2025",
+            "invoice_date": "12/11/2025",
+            "description": "Règlement de facture FV2509-00462",
+            "total_net": 543.29,
+            "total_gross": 543.29,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:cc2187e8-ce30-4207-8eba-58985a024b61",
+            "invoice_number": "Justificatif de paiement du 12. novembre 2025",
+            "invoice_date": "12/11/2025",
+            "description": "Règlement de facture FV2509-01469",
+            "total_net": 1305.69,
+            "total_gross": 1305.69,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:cc2187e8-ce30-4207-8eba-58985a024b61",
+            "invoice_number": "Justificatif de paiement du 12. novembre 2025",
+            "invoice_date": "12/11/2025",
+            "description": "Règlement de facture FV2509-02018",
+            "total_net": 759.72,
+            "total_gross": 759.72,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:cc2187e8-ce30-4207-8eba-58985a024b61",
+            "invoice_number": "Justificatif de paiement du 12. novembre 2025",
+            "invoice_date": "12/11/2025",
+            "description": "Règlement de facture FV2509-02812",
+            "total_net": 272.55,
+            "total_gross": 272.55,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0003",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture client fa22cl",
+        "source_label_main": "Facture client FA22CL-9858",
+        "source_labels_top": [
+          [
+            "Facture client FA22CL-9858",
+            1
+          ],
+          [
+            "Facture client FA22CL-9938",
+            1
+          ],
+          [
+            "Facture client FA22CL-11885",
+            1
+          ],
+          [
+            "Facture client FA22CL-12517",
+            1
+          ],
+          [
+            "Facture client FA22CL-14259",
+            1
+          ],
+          [
+            "Facture client FA22CL-14682",
+            1
+          ],
+          [
+            "Facture client FA22CL-15699",
+            1
+          ],
+          [
+            "Facture client FA22CL-17077",
+            1
+          ]
+        ],
+        "proposed_account": "411",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "5.5",
+            4
+          ],
+          [
+            "20.0",
+            3
+          ],
+          [
+            "16.33",
+            1
+          ],
+          [
+            "18.66",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 16,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:e4faf6bb-897e-4ad9-9c81-f1228dfa9569",
+            "invoice_number": "FA22CL-9858",
+            "invoice_date": "11/01/2023",
+            "description": "Facture client FA22CL-9858",
+            "total_net": 47.46,
+            "total_gross": 56.95,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:e4faf6bb-897e-4ad9-9c81-f1228dfa9569",
+            "invoice_number": "FA22CL-9858",
+            "invoice_date": "11/01/2023",
+            "description": "Facture client FA22CL-9938",
+            "total_net": 110.29,
+            "total_gross": 128.3,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:e4faf6bb-897e-4ad9-9c81-f1228dfa9569",
+            "invoice_number": "FA22CL-9858",
+            "invoice_date": "11/01/2023",
+            "description": "Facture client FA22CL-11885",
+            "total_net": 629.32,
+            "total_gross": 746.65,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:e4faf6bb-897e-4ad9-9c81-f1228dfa9569",
+            "invoice_number": "FA22CL-9858",
+            "invoice_date": "11/01/2023",
+            "description": "Facture client FA22CL-12517",
+            "total_net": 163.37,
+            "total_gross": 187.45,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:e4faf6bb-897e-4ad9-9c81-f1228dfa9569",
+            "invoice_number": "FA22CL-9858",
+            "invoice_date": "11/01/2023",
+            "description": "Facture client FA22CL-14259",
+            "total_net": 204.84,
+            "total_gross": 219.33,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0004",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "reglement de factures facture fv2508",
+        "source_label_main": "Règlement de factures - Facture FV2508-01758",
+        "source_labels_top": [
+          [
+            "Règlement de factures - Facture FV2508-01758",
+            1
+          ],
+          [
+            "Règlement de factures - Facture FV2508-02265",
+            1
+          ],
+          [
+            "Règlement de factures - Facture FV2508-02660",
+            1
+          ],
+          [
+            "Règlement de factures - Facture FV2508-03089",
+            1
+          ],
+          [
+            "Règlement de factures - Facture FV2508-04495",
+            1
+          ],
+          [
+            "Règlement de factures - Facture FV2508-05249",
+            1
+          ],
+          [
+            "Règlement de factures - Facture FV2508-05765",
+            1
+          ],
+          [
+            "Règlement de factures - Facture FV2508-05894",
+            1
+          ]
+        ],
+        "proposed_account": "401",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [
+          [
+            "4632C",
+            12
+          ]
+        ],
+        "ape_client_top": [],
+        "occurrences": 12,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:afd08818-2fc1-4a1d-9298-61e8f6deb789",
+            "invoice_number": "Justificatif de paiement du 29.09.2025",
+            "invoice_date": "29/09/2025",
+            "description": "Règlement de factures - Facture FV2508-01758",
+            "total_net": -441.02,
+            "total_gross": -441.02,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:afd08818-2fc1-4a1d-9298-61e8f6deb789",
+            "invoice_number": "Justificatif de paiement du 29.09.2025",
+            "invoice_date": "29/09/2025",
+            "description": "Règlement de factures - Facture FV2508-02265",
+            "total_net": -160.7,
+            "total_gross": -160.7,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:afd08818-2fc1-4a1d-9298-61e8f6deb789",
+            "invoice_number": "Justificatif de paiement du 29.09.2025",
+            "invoice_date": "29/09/2025",
+            "description": "Règlement de factures - Facture FV2508-02660",
+            "total_net": -982.56,
+            "total_gross": -982.56,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:afd08818-2fc1-4a1d-9298-61e8f6deb789",
+            "invoice_number": "Justificatif de paiement du 29.09.2025",
+            "invoice_date": "29/09/2025",
+            "description": "Règlement de factures - Facture FV2508-03089",
+            "total_net": -205.99,
+            "total_gross": -205.99,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:afd08818-2fc1-4a1d-9298-61e8f6deb789",
+            "invoice_number": "Justificatif de paiement du 29.09.2025",
+            "invoice_date": "29/09/2025",
+            "description": "Règlement de factures - Facture FV2508-04495",
+            "total_net": -1075.22,
+            "total_gross": -1075.22,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0005",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "fournisseurs",
+        "source_label_main": "Fournisseurs",
+        "source_labels_top": [
+          [
+            "Fournisseurs",
+            7
+          ]
+        ],
+        "proposed_account": "401",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [
+          [
+            "4632C",
+            6
+          ],
+          [
+            "4633Z",
+            1
+          ]
+        ],
+        "ape_client_top": [],
+        "occurrences": 7,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:0f4c8efa-ba86-4837-90ca-179c63726e34",
+            "invoice_number": "FV2407-08930",
+            "invoice_date": "19/07/2024",
+            "description": "Fournisseurs",
+            "total_net": 0.0,
+            "total_gross": 22615.41,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:2316dba8-9970-4044-8434-bed0f3ff93a6",
+            "invoice_number": "FV2409-14386",
+            "invoice_date": "28/09/2024",
+            "description": "Fournisseurs",
+            "total_net": 0.0,
+            "total_gross": 32414.79,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:8614cc83-8d6b-4d6b-8d5d-2fd0be66e8ae",
+            "invoice_number": "PADV-25-26345",
+            "invoice_date": "16/06/2025",
+            "description": "Fournisseurs",
+            "total_net": null,
+            "total_gross": 733.41,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:91f4d424-2924-4e65-baca-98365658e3bd",
+            "invoice_number": "FV2403-09494",
+            "invoice_date": "20/03/2024",
+            "description": "Fournisseurs",
+            "total_net": 0.0,
+            "total_gross": 38531.47,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:d80209d8-2a01-408c-b9af-d713bbdd0f59",
+            "invoice_number": "",
+            "invoice_date": "09/05/2024",
+            "description": "Fournisseurs",
+            "total_net": 38531.47,
+            "total_gross": 38531.47,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0006",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "reglement facture bfve",
+        "source_label_main": "Règlement facture BFVE-25-28217",
+        "source_labels_top": [
+          [
+            "Règlement facture BFVE-25-28217",
+            1
+          ],
+          [
+            "Règlement facture BFVE-25-33743",
+            1
+          ],
+          [
+            "Règlement facture BFVE-25-34770",
+            1
+          ],
+          [
+            "Règlement facture BFVE-25-36104",
+            1
+          ],
+          [
+            "Règlement facture BFVE-25-37026",
+            1
+          ]
+        ],
+        "proposed_account": "401",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [
+          [
+            "4638B",
+            5
+          ]
+        ],
+        "ape_client_top": [],
+        "occurrences": 5,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:e4e47c27-f994-4cbe-a990-c3c0871342cb",
+            "invoice_number": "PADV-25-38860",
+            "invoice_date": "23/09/2025",
+            "description": "Règlement facture BFVE-25-28217",
+            "total_net": 130.82,
+            "total_gross": 130.82,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:e4e47c27-f994-4cbe-a990-c3c0871342cb",
+            "invoice_number": "PADV-25-38860",
+            "invoice_date": "23/09/2025",
+            "description": "Règlement facture BFVE-25-33743",
+            "total_net": 521.7,
+            "total_gross": 521.7,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:e4e47c27-f994-4cbe-a990-c3c0871342cb",
+            "invoice_number": "PADV-25-38860",
+            "invoice_date": "23/09/2025",
+            "description": "Règlement facture BFVE-25-34770",
+            "total_net": 150.78,
+            "total_gross": 150.78,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:e4e47c27-f994-4cbe-a990-c3c0871342cb",
+            "invoice_number": "PADV-25-38860",
+            "invoice_date": "23/09/2025",
+            "description": "Règlement facture BFVE-25-36104",
+            "total_net": 368.86,
+            "total_gross": 368.86,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:e4e47c27-f994-4cbe-a990-c3c0871342cb",
+            "invoice_number": "PADV-25-38860",
+            "invoice_date": "23/09/2025",
+            "description": "Règlement facture BFVE-25-37026",
+            "total_net": 333.54,
+            "total_gross": 333.54,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0007",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "reglement de factures avoir vav2501",
+        "source_label_main": "Règlement de factures - Avoir VAV2501-04617",
+        "source_labels_top": [
+          [
+            "Règlement de factures - Avoir VAV2501-04617",
+            1
+          ],
+          [
+            "Règlement de factures - Avoir VAV2501-04656",
+            1
+          ]
+        ],
+        "proposed_account": "401",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [
+          [
+            "4632C",
+            2
+          ]
+        ],
+        "ape_client_top": [],
+        "occurrences": 2,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:afd08818-2fc1-4a1d-9298-61e8f6deb789",
+            "invoice_number": "Justificatif de paiement du 29.09.2025",
+            "invoice_date": "29/09/2025",
+            "description": "Règlement de factures - Avoir VAV2501-04617",
+            "total_net": -415.32,
+            "total_gross": -415.32,
+            "currency": "EUR"
+          },
+          {
+            "invoice_id": "fr_bd_519665103:afd08818-2fc1-4a1d-9298-61e8f6deb789",
+            "invoice_number": "Justificatif de paiement du 29.09.2025",
+            "invoice_date": "29/09/2025",
+            "description": "Règlement de factures - Avoir VAV2501-04656",
+            "total_net": -531.07,
+            "total_gross": -531.07,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0008",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture n fa00005416",
+        "source_label_main": "Facture N° FA00005416",
+        "source_labels_top": [
+          [
+            "Facture N° FA00005416",
+            1
+          ]
+        ],
+        "proposed_account": "411",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:0c7bac01-ffe3-4f9a-a00d-6e30c76d7ace",
+            "invoice_number": "FA00005416",
+            "invoice_date": "01/01/2023",
+            "description": "Facture N° FA00005416",
+            "total_net": 400.0,
+            "total_gross": 400.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0009",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture n fa00005557",
+        "source_label_main": "Facture N° FA00005557",
+        "source_labels_top": [
+          [
+            "Facture N° FA00005557",
+            1
+          ]
+        ],
+        "proposed_account": "411",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:0c7bac01-ffe3-4f9a-a00d-6e30c76d7ace",
+            "invoice_number": "FA00005416",
+            "invoice_date": "01/01/2023",
+            "description": "Facture N° FA00005557",
+            "total_net": 400.0,
+            "total_gross": 400.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0010",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture n fa00005683",
+        "source_label_main": "Facture N° FA00005683",
+        "source_labels_top": [
+          [
+            "Facture N° FA00005683",
+            1
+          ]
+        ],
+        "proposed_account": "411",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:0c7bac01-ffe3-4f9a-a00d-6e30c76d7ace",
+            "invoice_number": "FA00005416",
+            "invoice_date": "01/01/2023",
+            "description": "Facture N° FA00005683",
+            "total_net": 400.0,
+            "total_gross": 400.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0011",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture n fa00005754",
+        "source_label_main": "Facture N° FA00005754",
+        "source_labels_top": [
+          [
+            "Facture N° FA00005754",
+            1
+          ]
+        ],
+        "proposed_account": "411",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:0c7bac01-ffe3-4f9a-a00d-6e30c76d7ace",
+            "invoice_number": "FA00005416",
+            "invoice_date": "01/01/2023",
+            "description": "Facture N° FA00005754",
+            "total_net": 240.0,
+            "total_gross": 240.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0012",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "rglt04757",
+        "source_label_main": "RGLT04757",
+        "source_labels_top": [
+          [
+            "RGLT04757",
+            1
+          ]
+        ],
+        "proposed_account": "411",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:0c7bac01-ffe3-4f9a-a00d-6e30c76d7ace",
+            "invoice_number": "FA00005416",
+            "invoice_date": "01/01/2023",
+            "description": "RGLT04757",
+            "total_net": 400.0,
+            "total_gross": 400.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0013",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture n fa00005861",
+        "source_label_main": "Facture N° FA00005861",
+        "source_labels_top": [
+          [
+            "Facture N° FA00005861",
+            1
+          ]
+        ],
+        "proposed_account": "411",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:0c7bac01-ffe3-4f9a-a00d-6e30c76d7ace",
+            "invoice_number": "FA00005416",
+            "invoice_date": "01/01/2023",
+            "description": "Facture N° FA00005861",
+            "total_net": 400.0,
+            "total_gross": 400.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0014",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture n fa00005959",
+        "source_label_main": "Facture N° FA00005959",
+        "source_labels_top": [
+          [
+            "Facture N° FA00005959",
+            1
+          ]
+        ],
+        "proposed_account": "411",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:0c7bac01-ffe3-4f9a-a00d-6e30c76d7ace",
+            "invoice_number": "FA00005416",
+            "invoice_date": "01/01/2023",
+            "description": "Facture N° FA00005959",
+            "total_net": 400.0,
+            "total_gross": 400.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0015",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture n fa00006144",
+        "source_label_main": "Facture N° FA00006144",
+        "source_labels_top": [
+          [
+            "Facture N° FA00006144",
+            1
+          ]
+        ],
+        "proposed_account": "411",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:0c7bac01-ffe3-4f9a-a00d-6e30c76d7ace",
+            "invoice_number": "FA00005416",
+            "invoice_date": "01/01/2023",
+            "description": "Facture N° FA00006144",
+            "total_net": 400.0,
+            "total_gross": 400.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0016",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "rglt05132",
+        "source_label_main": "RGLT05132",
+        "source_labels_top": [
+          [
+            "RGLT05132",
+            1
+          ]
+        ],
+        "proposed_account": "411",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:0c7bac01-ffe3-4f9a-a00d-6e30c76d7ace",
+            "invoice_number": "FA00005416",
+            "invoice_date": "01/01/2023",
+            "description": "RGLT05132",
+            "total_net": 1200.0,
+            "total_gross": 1200.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0017",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture n fa00006260",
+        "source_label_main": "Facture N° FA00006260",
+        "source_labels_top": [
+          [
+            "Facture N° FA00006260",
+            1
+          ]
+        ],
+        "proposed_account": "411",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:0c7bac01-ffe3-4f9a-a00d-6e30c76d7ace",
+            "invoice_number": "FA00005416",
+            "invoice_date": "01/01/2023",
+            "description": "Facture N° FA00006260",
+            "total_net": 400.0,
+            "total_gross": 400.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0018",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture n fa00006383",
+        "source_label_main": "Facture N° FA00006383",
+        "source_labels_top": [
+          [
+            "Facture N° FA00006383",
+            1
+          ]
+        ],
+        "proposed_account": "411",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:0c7bac01-ffe3-4f9a-a00d-6e30c76d7ace",
+            "invoice_number": "FA00005416",
+            "invoice_date": "01/01/2023",
+            "description": "Facture N° FA00006383",
+            "total_net": 400.0,
+            "total_gross": 400.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0019",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "mouad",
+        "source_label_main": "MOUAD",
+        "source_labels_top": [
+          [
+            "MOUAD",
+            1
+          ]
+        ],
+        "proposed_account": "411",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:0c7bac01-ffe3-4f9a-a00d-6e30c76d7ace",
+            "invoice_number": "FA00005416",
+            "invoice_date": "01/01/2023",
+            "description": "MOUAD",
+            "total_net": 1200.0,
+            "total_gross": 1200.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0020",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture n fa00006501",
+        "source_label_main": "Facture N° FA00006501",
+        "source_labels_top": [
+          [
+            "Facture N° FA00006501",
+            1
+          ]
+        ],
+        "proposed_account": "411",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:0c7bac01-ffe3-4f9a-a00d-6e30c76d7ace",
+            "invoice_number": "FA00005416",
+            "invoice_date": "01/01/2023",
+            "description": "Facture N° FA00006501",
+            "total_net": 242.4,
+            "total_gross": 242.4,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0021",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture n fa00006511",
+        "source_label_main": "Facture N° FA00006511",
+        "source_labels_top": [
+          [
+            "Facture N° FA00006511",
+            1
+          ]
+        ],
+        "proposed_account": "411",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:0c7bac01-ffe3-4f9a-a00d-6e30c76d7ace",
+            "invoice_number": "FA00005416",
+            "invoice_date": "01/01/2023",
+            "description": "Facture N° FA00006511",
+            "total_net": 400.0,
+            "total_gross": 400.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0022",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture n fa00006707",
+        "source_label_main": "Facture N° FA00006707",
+        "source_labels_top": [
+          [
+            "Facture N° FA00006707",
+            1
+          ]
+        ],
+        "proposed_account": "411",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:0c7bac01-ffe3-4f9a-a00d-6e30c76d7ace",
+            "invoice_number": "FA00005416",
+            "invoice_date": "01/01/2023",
+            "description": "Facture N° FA00006707",
+            "total_net": 400.0,
+            "total_gross": 400.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0023",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture n fa00006804",
+        "source_label_main": "Facture N° FA00006804",
+        "source_labels_top": [
+          [
+            "Facture N° FA00006804",
+            1
+          ]
+        ],
+        "proposed_account": "411",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:0c7bac01-ffe3-4f9a-a00d-6e30c76d7ace",
+            "invoice_number": "FA00005416",
+            "invoice_date": "01/01/2023",
+            "description": "Facture N° FA00006804",
+            "total_net": 400.0,
+            "total_gross": 400.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0024",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture n fa00006982",
+        "source_label_main": "Facture N° FA00006982",
+        "source_labels_top": [
+          [
+            "Facture N° FA00006982",
+            1
+          ]
+        ],
+        "proposed_account": "411",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:0c7bac01-ffe3-4f9a-a00d-6e30c76d7ace",
+            "invoice_number": "FA00005416",
+            "invoice_date": "01/01/2023",
+            "description": "Facture N° FA00006982",
+            "total_net": 400.0,
+            "total_gross": 400.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0025",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture n fa00007116",
+        "source_label_main": "Facture N° FA00007116",
+        "source_labels_top": [
+          [
+            "Facture N° FA00007116",
+            1
+          ]
+        ],
+        "proposed_account": "411",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:0c7bac01-ffe3-4f9a-a00d-6e30c76d7ace",
+            "invoice_number": "FA00005416",
+            "invoice_date": "01/01/2023",
+            "description": "Facture N° FA00007116",
+            "total_net": 400.0,
+            "total_gross": 400.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0026",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture n fa00007282",
+        "source_label_main": "Facture N° FA00007282",
+        "source_labels_top": [
+          [
+            "Facture N° FA00007282",
+            1
+          ]
+        ],
+        "proposed_account": "411",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:0c7bac01-ffe3-4f9a-a00d-6e30c76d7ace",
+            "invoice_number": "FA00005416",
+            "invoice_date": "01/01/2023",
+            "description": "Facture N° FA00007282",
+            "total_net": 400.0,
+            "total_gross": 400.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0027",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "reglement de factures nasrya",
+        "source_label_main": "Règlement de factures NASRYA du 01/03/25 au 31/03/25",
+        "source_labels_top": [
+          [
+            "Règlement de factures NASRYA du 01/03/25 au 31/03/25",
+            1
+          ]
+        ],
+        "proposed_account": "401",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [
+          [
+            "4632C",
+            1
+          ]
+        ],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:13f1b96a-1a0d-4736-9bc1-66b5b2b376f0",
+            "invoice_number": "Relevé 01/03/25-31/03/25",
+            "invoice_date": "07/05/2025",
+            "description": "Règlement de factures NASRYA du 01/03/25 au 31/03/25",
+            "total_net": 16504.8,
+            "total_gross": 16504.8,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0028",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 170961",
+        "source_labels_top": [
+          [
+            "FACTURE 170961",
+            1
+          ]
+        ],
+        "proposed_account": "700051015",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 170961",
+            "total_net": 416.58,
+            "total_gross": 416.58,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0029",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 171007",
+        "source_labels_top": [
+          [
+            "FACTURE 171007",
+            1
+          ]
+        ],
+        "proposed_account": "700051061",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 171007",
+            "total_net": 309.98,
+            "total_gross": 309.98,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0030",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 171087",
+        "source_labels_top": [
+          [
+            "FACTURE 171087",
+            1
+          ]
+        ],
+        "proposed_account": "700051161",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 171087",
+            "total_net": 95.96,
+            "total_gross": 95.96,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0031",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 171188",
+        "source_labels_top": [
+          [
+            "FACTURE 171188",
+            1
+          ]
+        ],
+        "proposed_account": "700051240",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 171188",
+            "total_net": 187.54,
+            "total_gross": 187.54,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0032",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 171218",
+        "source_labels_top": [
+          [
+            "FACTURE 171218",
+            1
+          ]
+        ],
+        "proposed_account": "700051270",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 171218",
+            "total_net": 169.79,
+            "total_gross": 169.79,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0033",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 171253",
+        "source_labels_top": [
+          [
+            "FACTURE 171253",
+            1
+          ]
+        ],
+        "proposed_account": "700051319",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 171253",
+            "total_net": 656.85,
+            "total_gross": 656.85,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0034",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 171311",
+        "source_labels_top": [
+          [
+            "FACTURE 171311",
+            1
+          ]
+        ],
+        "proposed_account": "700051363",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 171311",
+            "total_net": 301.48,
+            "total_gross": 301.48,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0035",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 171403",
+        "source_labels_top": [
+          [
+            "FACTURE 171403",
+            1
+          ]
+        ],
+        "proposed_account": "700051455",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 171403",
+            "total_net": 207.54,
+            "total_gross": 207.54,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0036",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 171484",
+        "source_labels_top": [
+          [
+            "FACTURE 171484",
+            1
+          ]
+        ],
+        "proposed_account": "700051536",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 171484",
+            "total_net": 419.78,
+            "total_gross": 419.78,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0037",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 171601",
+        "source_labels_top": [
+          [
+            "FACTURE 171601",
+            1
+          ]
+        ],
+        "proposed_account": "700051653",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 171601",
+            "total_net": 555.63,
+            "total_gross": 555.63,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0038",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 171695",
+        "source_labels_top": [
+          [
+            "FACTURE 171695",
+            1
+          ]
+        ],
+        "proposed_account": "700060049",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 171695",
+            "total_net": 1635.01,
+            "total_gross": 1635.01,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0039",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 171789",
+        "source_labels_top": [
+          [
+            "FACTURE 171789",
+            1
+          ]
+        ],
+        "proposed_account": "700060143",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 171789",
+            "total_net": 282.94,
+            "total_gross": 282.94,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0040",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 172023",
+        "source_labels_top": [
+          [
+            "FACTURE 172023",
+            1
+          ]
+        ],
+        "proposed_account": "700060283",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 172023",
+            "total_net": 257.11,
+            "total_gross": 257.11,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0041",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 172023",
+        "source_labels_top": [
+          [
+            "FACTURE 172023",
+            1
+          ]
+        ],
+        "proposed_account": "700060377",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 172023",
+            "total_net": 164.63,
+            "total_gross": 164.63,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0042",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "avoir",
+        "source_label_main": "AVOIR 172063",
+        "source_labels_top": [
+          [
+            "AVOIR 172063",
+            1
+          ]
+        ],
+        "proposed_account": "700060417",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "AVOIR 172063",
+            "total_net": -738.5,
+            "total_gross": -738.5,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0043",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 172111",
+        "source_labels_top": [
+          [
+            "FACTURE 172111",
+            1
+          ]
+        ],
+        "proposed_account": "700060465",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 172111",
+            "total_net": 201.05,
+            "total_gross": 201.05,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0044",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 172259",
+        "source_labels_top": [
+          [
+            "FACTURE 172259",
+            1
+          ]
+        ],
+        "proposed_account": "700060612",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 172259",
+            "total_net": 298.07,
+            "total_gross": 298.07,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0045",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 172360",
+        "source_labels_top": [
+          [
+            "FACTURE 172360",
+            1
+          ]
+        ],
+        "proposed_account": "700060713",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 172360",
+            "total_net": 121.81,
+            "total_gross": 121.81,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0046",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 172436",
+        "source_labels_top": [
+          [
+            "FACTURE 172436",
+            1
+          ]
+        ],
+        "proposed_account": "700060788",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 172436",
+            "total_net": 110.78,
+            "total_gross": 110.78,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0047",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 172520",
+        "source_labels_top": [
+          [
+            "FACTURE 172520",
+            1
+          ]
+        ],
+        "proposed_account": "700060896",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 172520",
+            "total_net": 54.79,
+            "total_gross": 54.79,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0048",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 172573",
+        "source_labels_top": [
+          [
+            "FACTURE 172573",
+            1
+          ]
+        ],
+        "proposed_account": "700060924",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 172573",
+            "total_net": 176.76,
+            "total_gross": 176.76,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0049",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "avoir",
+        "source_label_main": "AVOIR 172648",
+        "source_labels_top": [
+          [
+            "AVOIR 172648",
+            1
+          ]
+        ],
+        "proposed_account": "700061007",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "AVOIR 172648",
+            "total_net": -32.74,
+            "total_gross": -32.74,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0050",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 172639",
+        "source_labels_top": [
+          [
+            "FACTURE 172639",
+            1
+          ]
+        ],
+        "proposed_account": "700061016",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 172639",
+            "total_net": 52.81,
+            "total_gross": 52.81,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0051",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 172732",
+        "source_labels_top": [
+          [
+            "FACTURE 172732",
+            1
+          ]
+        ],
+        "proposed_account": "700061082",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 172732",
+            "total_net": 236.73,
+            "total_gross": 236.73,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0052",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 172854",
+        "source_labels_top": [
+          [
+            "FACTURE 172854",
+            1
+          ]
+        ],
+        "proposed_account": "700061181",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 172854",
+            "total_net": 90.19,
+            "total_gross": 90.19,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0053",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 172976",
+        "source_labels_top": [
+          [
+            "FACTURE 172976",
+            1
+          ]
+        ],
+        "proposed_account": "700061325",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 172976",
+            "total_net": 214.43,
+            "total_gross": 214.43,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0054",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 173043",
+        "source_labels_top": [
+          [
+            "FACTURE 173043",
+            1
+          ]
+        ],
+        "proposed_account": "700061391",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:1e21bf7b-dc7c-49cc-82c6-e67e2f1a104e",
+            "invoice_number": "170961",
+            "invoice_date": "20/05/2025",
+            "description": "FACTURE 173043",
+            "total_net": 109.69,
+            "total_gross": 109.69,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0055",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "interbev coti rsd",
+        "source_label_main": "INTERBEV COTI.RSD",
+        "source_labels_top": [
+          [
+            "INTERBEV COTI.RSD",
+            1
+          ]
+        ],
+        "proposed_account": "6351",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:28390d3d-38c7-4252-95ed-aafd1869f176",
+            "invoice_number": "1978064",
+            "invoice_date": "31/07/2025",
+            "description": "INTERBEV COTI.RSD",
+            "total_net": 0.11,
+            "total_gross": 0.11,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0056",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "f fixe",
+        "source_label_main": "F.FIXE",
+        "source_labels_top": [
+          [
+            "F.FIXE",
+            1
+          ]
+        ],
+        "proposed_account": "6351",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:28390d3d-38c7-4252-95ed-aafd1869f176",
+            "invoice_number": "1978064",
+            "invoice_date": "31/07/2025",
+            "description": "F.FIXE",
+            "total_net": 0.5,
+            "total_gross": 0.5,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0057",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "aidenergie",
+        "source_label_main": "AidEnergie",
+        "source_labels_top": [
+          [
+            "AidEnergie",
+            1
+          ]
+        ],
+        "proposed_account": "6351",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:28390d3d-38c7-4252-95ed-aafd1869f176",
+            "invoice_number": "1978064",
+            "invoice_date": "31/07/2025",
+            "description": "AidEnergie",
+            "total_net": 0.98,
+            "total_gross": 0.98,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0058",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "basse sans poitrine de veau",
+        "source_label_main": "BASSE SANS POITRINE DE VEAU",
+        "source_labels_top": [
+          [
+            "BASSE SANS POITRINE DE VEAU",
+            1
+          ]
+        ],
+        "proposed_account": "707100",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "5.5",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [
+          [
+            "4632A",
+            1
+          ]
+        ],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:4fd1aa84-b2f6-45bf-9361-a70b413a2c52",
+            "invoice_number": "1998844",
+            "invoice_date": "27/10/2025",
+            "description": "BASSE SANS POITRINE DE VEAU",
+            "total_net": 418.1,
+            "total_gross": 438.1,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0059",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "carre de veau sans rognons",
+        "source_label_main": "CARRE DE VEAU SANS ROGNONS",
+        "source_labels_top": [
+          [
+            "CARRE DE VEAU SANS ROGNONS",
+            1
+          ]
+        ],
+        "proposed_account": "707100",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "5.5",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [
+          [
+            "4632A",
+            1
+          ]
+        ],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:4fd1aa84-b2f6-45bf-9361-a70b413a2c52",
+            "invoice_number": "1998844",
+            "invoice_date": "27/10/2025",
+            "description": "CARRE DE VEAU SANS ROGNONS",
+            "total_net": 155.4,
+            "total_gross": 167.32,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0060",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "taxes et prestations depenses generales",
+        "source_label_main": "TAXES ET PRESTATIONS - DEPENSES GENERALES",
+        "source_labels_top": [
+          [
+            "TAXES ET PRESTATIONS - DEPENSES GENERALES",
+            1
+          ]
+        ],
+        "proposed_account": "6351",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "20.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:5f45acd3-9ea9-4925-86b4-5d20e1d7138d",
+            "invoice_number": "070 1 12625 00030 78",
+            "invoice_date": "18/03/2024",
+            "description": "TAXES ET PRESTATIONS - DEPENSES GENERALES",
+            "total_net": 20744.52,
+            "total_gross": 21970.89,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0061",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "taxes prestations taxe ordures menageres",
+        "source_label_main": "TAXES & PRESTATIONS - TAXE ORDURES MENAGERES",
+        "source_labels_top": [
+          [
+            "TAXES & PRESTATIONS - TAXE ORDURES MENAGERES",
+            1
+          ]
+        ],
+        "proposed_account": "6351",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "5.5",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:5f45acd3-9ea9-4925-86b4-5d20e1d7138d",
+            "invoice_number": "070 1 12625 00030 78",
+            "invoice_date": "18/03/2024",
+            "description": "TAXES & PRESTATIONS - TAXE ORDURES MENAGERES",
+            "total_net": 3820.0,
+            "total_gross": 4045.83,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0062",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "creance recouvrement abonnement fournisseur d energie",
+        "source_label_main": "Créance recouvrement - Abonnement fournisseur d'énergie EDF",
+        "source_labels_top": [
+          [
+            "Créance recouvrement - Abonnement fournisseur d'énergie EDF",
+            1
+          ]
+        ],
+        "proposed_account": "658800",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:8584c0db-29e0-40ee-a0c6-4d8a3a3fcb39",
+            "invoice_number": "1120354691",
+            "invoice_date": "22/11/2024",
+            "description": "Créance recouvrement - Abonnement fournisseur d'énergie EDF",
+            "total_net": 8930.52,
+            "total_gross": 8930.52,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0063",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "frais de recouvrement",
+        "source_label_main": "Frais de recouvrement",
+        "source_labels_top": [
+          [
+            "Frais de recouvrement",
+            1
+          ]
+        ],
+        "proposed_account": "658800",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:8584c0db-29e0-40ee-a0c6-4d8a3a3fcb39",
+            "invoice_number": "1120354691",
+            "invoice_date": "22/11/2024",
+            "description": "Frais de recouvrement",
+            "total_net": 50.0,
+            "total_gross": 50.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0064",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "datte regime 1kg de piece",
+        "source_label_main": "DATTE REGIME 1kg de 12 Piece",
+        "source_labels_top": [
+          [
+            "DATTE REGIME 1kg de 12 Piece",
+            1
+          ]
+        ],
+        "proposed_account": "707100",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9178b85a-4c60-4047-8c28-a9fbdbe3c080",
+            "invoice_number": "ND2024-11-2718",
+            "invoice_date": "13/11/2024",
+            "description": "DATTE REGIME 1kg de 12 Piece",
+            "total_net": 187.2,
+            "total_gross": 187.2,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0065",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "datte assila1 kg",
+        "source_label_main": "DATTE ASSILA1 kg",
+        "source_labels_top": [
+          [
+            "DATTE ASSILA1 kg",
+            1
+          ]
+        ],
+        "proposed_account": "707100",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9178b85a-4c60-4047-8c28-a9fbdbe3c080",
+            "invoice_number": "ND2024-11-2718",
+            "invoice_date": "13/11/2024",
+            "description": "DATTE ASSILA1 kg",
+            "total_net": 302.4,
+            "total_gross": 302.4,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0066",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "datte medjoule g",
+        "source_label_main": "DATTE MEDJOULE 750 g",
+        "source_labels_top": [
+          [
+            "DATTE MEDJOULE 750 g",
+            1
+          ]
+        ],
+        "proposed_account": "707100",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9178b85a-4c60-4047-8c28-a9fbdbe3c080",
+            "invoice_number": "ND2024-11-2718",
+            "invoice_date": "13/11/2024",
+            "description": "DATTE MEDJOULE 750 g",
+            "total_net": 168.0,
+            "total_gross": 168.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0067",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 168334",
+        "source_labels_top": [
+          [
+            "FACTURE 168334",
+            1
+          ]
+        ],
+        "proposed_account": "700040055",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 168334",
+            "total_net": 143.5,
+            "total_gross": 143.5,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0068",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 168376",
+        "source_labels_top": [
+          [
+            "FACTURE 168376",
+            1
+          ]
+        ],
+        "proposed_account": "700040114",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 168376",
+            "total_net": 144.49,
+            "total_gross": 144.49,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0069",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 168413",
+        "source_labels_top": [
+          [
+            "FACTURE 168413",
+            1
+          ]
+        ],
+        "proposed_account": "700040208",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 168413",
+            "total_net": 41.44,
+            "total_gross": 41.44,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0070",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 168569",
+        "source_labels_top": [
+          [
+            "FACTURE 168569",
+            1
+          ]
+        ],
+        "proposed_account": "700040287",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 168569",
+            "total_net": 144.25,
+            "total_gross": 144.25,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0071",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 168608",
+        "source_labels_top": [
+          [
+            "FACTURE 168608",
+            1
+          ]
+        ],
+        "proposed_account": "700040327",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 168608",
+            "total_net": 275.8,
+            "total_gross": 275.8,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0072",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 168775",
+        "source_labels_top": [
+          [
+            "FACTURE 168775",
+            1
+          ]
+        ],
+        "proposed_account": "700040484",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 168775",
+            "total_net": 76.81,
+            "total_gross": 76.81,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0073",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 168937",
+        "source_labels_top": [
+          [
+            "FACTURE 168937",
+            1
+          ]
+        ],
+        "proposed_account": "700040656",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 168937",
+            "total_net": 339.76,
+            "total_gross": 339.76,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0074",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 169005",
+        "source_labels_top": [
+          [
+            "FACTURE 169005",
+            1
+          ]
+        ],
+        "proposed_account": "700040756",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 169005",
+            "total_net": 181.01,
+            "total_gross": 181.01,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0075",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 169170",
+        "source_labels_top": [
+          [
+            "FACTURE 169170",
+            1
+          ]
+        ],
+        "proposed_account": "700040872",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 169170",
+            "total_net": 144.6,
+            "total_gross": 144.6,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0076",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 169285",
+        "source_labels_top": [
+          [
+            "FACTURE 169285",
+            1
+          ]
+        ],
+        "proposed_account": "700041001",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 169285",
+            "total_net": 249.61,
+            "total_gross": 249.61,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0077",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 169289",
+        "source_labels_top": [
+          [
+            "FACTURE 169289",
+            1
+          ]
+        ],
+        "proposed_account": "700041005",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 169289",
+            "total_net": 10.19,
+            "total_gross": 10.19,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0078",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 169340",
+        "source_labels_top": [
+          [
+            "FACTURE 169340",
+            1
+          ]
+        ],
+        "proposed_account": "700041055",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 169340",
+            "total_net": 47.74,
+            "total_gross": 47.74,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0079",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 169534",
+        "source_labels_top": [
+          [
+            "FACTURE 169534",
+            1
+          ]
+        ],
+        "proposed_account": "700041249",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 169534",
+            "total_net": 185.87,
+            "total_gross": 185.87,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0080",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 169635",
+        "source_labels_top": [
+          [
+            "FACTURE 169635",
+            1
+          ]
+        ],
+        "proposed_account": "700041350",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 169635",
+            "total_net": 231.89,
+            "total_gross": 231.89,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0081",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 169784",
+        "source_labels_top": [
+          [
+            "FACTURE 169784",
+            1
+          ]
+        ],
+        "proposed_account": "700041497",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 169784",
+            "total_net": 127.96,
+            "total_gross": 127.96,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0082",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "avoir",
+        "source_label_main": "AVOIR 169939",
+        "source_labels_top": [
+          [
+            "AVOIR 169939",
+            1
+          ]
+        ],
+        "proposed_account": "700041576",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "AVOIR 169939",
+            "total_net": -1267.94,
+            "total_gross": -1267.94,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0083",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 169896",
+        "source_labels_top": [
+          [
+            "FACTURE 169896",
+            1
+          ]
+        ],
+        "proposed_account": "700041619",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 169896",
+            "total_net": 1502.79,
+            "total_gross": 1502.79,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0084",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 169993",
+        "source_labels_top": [
+          [
+            "FACTURE 169993",
+            1
+          ]
+        ],
+        "proposed_account": "700050049",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 169993",
+            "total_net": 152.63,
+            "total_gross": 152.63,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0085",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 170081",
+        "source_labels_top": [
+          [
+            "FACTURE 170081",
+            1
+          ]
+        ],
+        "proposed_account": "700050135",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 170081",
+            "total_net": 232.93,
+            "total_gross": 232.93,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0086",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 170243",
+        "source_labels_top": [
+          [
+            "FACTURE 170243",
+            1
+          ]
+        ],
+        "proposed_account": "700050297",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 170243",
+            "total_net": 329.18,
+            "total_gross": 329.18,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0087",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 170375",
+        "source_labels_top": [
+          [
+            "FACTURE 170375",
+            1
+          ]
+        ],
+        "proposed_account": "700050429",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 170375",
+            "total_net": 392.53,
+            "total_gross": 392.53,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0088",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 170466",
+        "source_labels_top": [
+          [
+            "FACTURE 170466",
+            1
+          ]
+        ],
+        "proposed_account": "700050519",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 170466",
+            "total_net": 119.28,
+            "total_gross": 119.28,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0089",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 170546",
+        "source_labels_top": [
+          [
+            "FACTURE 170546",
+            1
+          ]
+        ],
+        "proposed_account": "700050599",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 170546",
+            "total_net": 274.37,
+            "total_gross": 274.37,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0090",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 170624",
+        "source_labels_top": [
+          [
+            "FACTURE 170624",
+            1
+          ]
+        ],
+        "proposed_account": "700050701",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 170624",
+            "total_net": 204.94,
+            "total_gross": 204.94,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0091",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "FACTURE 170782",
+        "source_labels_top": [
+          [
+            "FACTURE 170782",
+            1
+          ]
+        ],
+        "proposed_account": "700050836",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:9e70c8c4-ab62-4ffb-96a2-58c143dc06c7",
+            "invoice_number": "169993",
+            "invoice_date": "02/05/2025",
+            "description": "FACTURE 170782",
+            "total_net": 258.46,
+            "total_gross": 258.46,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0092",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "retard de paiement",
+        "source_label_main": "RETARD DE PAIEMENT",
+        "source_labels_top": [
+          [
+            "RETARD DE PAIEMENT",
+            1
+          ]
+        ],
+        "proposed_account": "658",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:aea87108-e8f9-446d-af2f-944377eb7c4a",
+            "invoice_number": "646-AR",
+            "invoice_date": "20/03/2025",
+            "description": "RETARD DE PAIEMENT",
+            "total_net": 5412.49,
+            "total_gross": 5412.49,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0093",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "frais de relance",
+        "source_label_main": "FRAIS DE RELANCE",
+        "source_labels_top": [
+          [
+            "FRAIS DE RELANCE",
+            1
+          ]
+        ],
+        "proposed_account": "658",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "20.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:aea87108-e8f9-446d-af2f-944377eb7c4a",
+            "invoice_number": "646-AR",
+            "invoice_date": "20/03/2025",
+            "description": "FRAIS DE RELANCE",
+            "total_net": 8.33,
+            "total_gross": 10.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0094",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "retard de paiement",
+        "source_label_main": "RETARD DE PAIEMENT",
+        "source_labels_top": [
+          [
+            "RETARD DE PAIEMENT",
+            1
+          ]
+        ],
+        "proposed_account": "665600",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:ba8e7695-4d6d-4798-96d9-c0d46d9f5b01",
+            "invoice_number": "790-AR",
+            "invoice_date": "22/04/2024",
+            "description": "RETARD DE PAIEMENT",
+            "total_net": 4583.57,
+            "total_gross": 4583.57,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0095",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "frais de relance",
+        "source_label_main": "FRAIS DE RELANCE",
+        "source_labels_top": [
+          [
+            "FRAIS DE RELANCE",
+            1
+          ]
+        ],
+        "proposed_account": "665600",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "20.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:ba8e7695-4d6d-4798-96d9-c0d46d9f5b01",
+            "invoice_number": "790-AR",
+            "invoice_date": "22/04/2024",
+            "description": "FRAIS DE RELANCE",
+            "total_net": 8.33,
+            "total_gross": 10.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0096",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "fac mouad",
+        "source_label_main": "FAC MOUAD",
+        "source_labels_top": [
+          [
+            "FAC MOUAD",
+            1
+          ]
+        ],
+        "proposed_account": "21100002",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [
+          [
+            "4632A",
+            1
+          ]
+        ],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:c61e947f-0e07-445b-a462-24d51a90071e",
+            "invoice_number": "0021081867",
+            "invoice_date": "23/07/2021",
+            "description": "FAC MOUAD",
+            "total_net": 1715.21,
+            "total_gross": 1715.21,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0097",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "fac mouad",
+        "source_label_main": "FAC MOUAD",
+        "source_labels_top": [
+          [
+            "FAC MOUAD",
+            1
+          ]
+        ],
+        "proposed_account": "002111460",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [
+          [
+            "4632A",
+            1
+          ]
+        ],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:c61e947f-0e07-445b-a462-24d51a90071e",
+            "invoice_number": "0021081867",
+            "invoice_date": "23/07/2021",
+            "description": "FAC MOUAD",
+            "total_net": 33.47,
+            "total_gross": 33.47,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0098",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "mouad indemn forfait",
+        "source_label_main": "MOUAD: INDEMN FORFAIT",
+        "source_labels_top": [
+          [
+            "MOUAD: INDEMN FORFAIT",
+            1
+          ]
+        ],
+        "proposed_account": "21100008",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [
+          [
+            "4632A",
+            1
+          ]
+        ],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:c61e947f-0e07-445b-a462-24d51a90071e",
+            "invoice_number": "0021081867",
+            "invoice_date": "23/07/2021",
+            "description": "MOUAD: INDEMN FORFAIT",
+            "total_net": 40.0,
+            "total_gross": 40.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0099",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "mouad art",
+        "source_label_main": "MOUAD:ART 700",
+        "source_labels_top": [
+          [
+            "MOUAD:ART 700",
+            1
+          ]
+        ],
+        "proposed_account": "21100008",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [
+          [
+            "4632A",
+            1
+          ]
+        ],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:c61e947f-0e07-445b-a462-24d51a90071e",
+            "invoice_number": "0021081867",
+            "invoice_date": "23/07/2021",
+            "description": "MOUAD:ART 700",
+            "total_net": 150.0,
+            "total_gross": 150.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0100",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "fac mouad",
+        "source_label_main": "FAC MOUAD",
+        "source_labels_top": [
+          [
+            "FAC MOUAD",
+            1
+          ]
+        ],
+        "proposed_account": "0021123458",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [
+          [
+            "4632A",
+            1
+          ]
+        ],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:c61e947f-0e07-445b-a462-24d51a90071e",
+            "invoice_number": "0021081867",
+            "invoice_date": "23/07/2021",
+            "description": "FAC MOUAD",
+            "total_net": 71.56,
+            "total_gross": 71.56,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0101",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "cheque",
+        "source_label_main": "Chéque",
+        "source_labels_top": [
+          [
+            "Chéque",
+            1
+          ]
+        ],
+        "proposed_account": "22040143",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [
+          [
+            "4632A",
+            1
+          ]
+        ],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:c61e947f-0e07-445b-a462-24d51a90071e",
+            "invoice_number": "0021081867",
+            "invoice_date": "23/07/2021",
+            "description": "Chéque",
+            "total_net": 1666.22,
+            "total_gross": 1666.22,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0102",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "cheque",
+        "source_label_main": "Chéque",
+        "source_labels_top": [
+          [
+            "Chéque",
+            1
+          ]
+        ],
+        "proposed_account": "22071250",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [
+          [
+            "4632A",
+            1
+          ]
+        ],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:c61e947f-0e07-445b-a462-24d51a90071e",
+            "invoice_number": "0021081867",
+            "invoice_date": "23/07/2021",
+            "description": "Chéque",
+            "total_net": 310.23,
+            "total_gross": 310.23,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0103",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "avoir mouad",
+        "source_label_main": "AVOIR MOUAD",
+        "source_labels_top": [
+          [
+            "AVOIR MOUAD",
+            1
+          ]
+        ],
+        "proposed_account": "411",
+        "category": "a_revoir",
+        "tva_rates_top": [],
+        "ape_supplier_top": [
+          [
+            "513D",
+            1
+          ]
+        ],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d0b2051a-3866-48f2-a3bc-96e03062453e",
+            "invoice_number": "Relevé de factures",
+            "invoice_date": "01/05/2024",
+            "description": "AVOIR MOUAD",
+            "total_net": -23.77,
+            "total_gross": -23.77,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0104",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 153397",
+        "source_labels_top": [
+          [
+            "Facture 153397",
+            1
+          ]
+        ],
+        "proposed_account": "700070025",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 153397",
+            "total_net": 165.64,
+            "total_gross": 165.64,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0105",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 153511",
+        "source_labels_top": [
+          [
+            "Facture 153511",
+            1
+          ]
+        ],
+        "proposed_account": "700070044",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 153511",
+            "total_net": 151.47,
+            "total_gross": 151.47,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0106",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 153687",
+        "source_labels_top": [
+          [
+            "Facture 153687",
+            1
+          ]
+        ],
+        "proposed_account": "700070304",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 153687",
+            "total_net": 120.69,
+            "total_gross": 120.69,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0107",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 153748",
+        "source_labels_top": [
+          [
+            "Facture 153748",
+            1
+          ]
+        ],
+        "proposed_account": "700070400",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 153748",
+            "total_net": 188.49,
+            "total_gross": 188.49,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0108",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 153839",
+        "source_labels_top": [
+          [
+            "Facture 153839",
+            1
+          ]
+        ],
+        "proposed_account": "700070455",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 153839",
+            "total_net": 49.16,
+            "total_gross": 49.16,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0109",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 153962",
+        "source_labels_top": [
+          [
+            "Facture 153962",
+            1
+          ]
+        ],
+        "proposed_account": "700070577",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 153962",
+            "total_net": 143.88,
+            "total_gross": 143.88,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0110",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 154037",
+        "source_labels_top": [
+          [
+            "Facture 154037",
+            1
+          ]
+        ],
+        "proposed_account": "700070651",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 154037",
+            "total_net": 153.12,
+            "total_gross": 153.12,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0111",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 154092",
+        "source_labels_top": [
+          [
+            "Facture 154092",
+            1
+          ]
+        ],
+        "proposed_account": "700070737",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 154092",
+            "total_net": 52.2,
+            "total_gross": 52.2,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0112",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 154194",
+        "source_labels_top": [
+          [
+            "Facture 154194",
+            1
+          ]
+        ],
+        "proposed_account": "700070809",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 154194",
+            "total_net": 73.35,
+            "total_gross": 73.35,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0113",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 154246",
+        "source_labels_top": [
+          [
+            "Facture 154246",
+            1
+          ]
+        ],
+        "proposed_account": "700070840",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 154246",
+            "total_net": 67.82,
+            "total_gross": 67.82,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0114",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 154382",
+        "source_labels_top": [
+          [
+            "Facture 154382",
+            1
+          ]
+        ],
+        "proposed_account": "700070996",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 154382",
+            "total_net": 122.57,
+            "total_gross": 122.57,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0115",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 154443",
+        "source_labels_top": [
+          [
+            "Facture 154443",
+            1
+          ]
+        ],
+        "proposed_account": "700071070",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 154443",
+            "total_net": 102.14,
+            "total_gross": 102.14,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0116",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 154525",
+        "source_labels_top": [
+          [
+            "Facture 154525",
+            1
+          ]
+        ],
+        "proposed_account": "700071138",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 154525",
+            "total_net": 58.71,
+            "total_gross": 58.71,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0117",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 154608",
+        "source_labels_top": [
+          [
+            "Facture 154608",
+            1
+          ]
+        ],
+        "proposed_account": "700071228",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 154608",
+            "total_net": 223.39,
+            "total_gross": 223.39,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0118",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 154664",
+        "source_labels_top": [
+          [
+            "Facture 154664",
+            1
+          ]
+        ],
+        "proposed_account": "700071276",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 154664",
+            "total_net": 93.77,
+            "total_gross": 93.77,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0119",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 154757",
+        "source_labels_top": [
+          [
+            "Facture 154757",
+            1
+          ]
+        ],
+        "proposed_account": "700071341",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 154757",
+            "total_net": 88.56,
+            "total_gross": 88.56,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0120",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 154908",
+        "source_labels_top": [
+          [
+            "Facture 154908",
+            1
+          ]
+        ],
+        "proposed_account": "700080051",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 154908",
+            "total_net": 167.35,
+            "total_gross": 167.35,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0121",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 155008",
+        "source_labels_top": [
+          [
+            "Facture 155008",
+            1
+          ]
+        ],
+        "proposed_account": "700080150",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 155008",
+            "total_net": 151.5,
+            "total_gross": 151.5,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0122",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 155066",
+        "source_labels_top": [
+          [
+            "Facture 155066",
+            1
+          ]
+        ],
+        "proposed_account": "700080206",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 155066",
+            "total_net": 24.16,
+            "total_gross": 24.16,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0123",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 155095",
+        "source_labels_top": [
+          [
+            "Facture 155095",
+            1
+          ]
+        ],
+        "proposed_account": "700080235",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 155095",
+            "total_net": 91.63,
+            "total_gross": 91.63,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0124",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 155243",
+        "source_labels_top": [
+          [
+            "Facture 155243",
+            1
+          ]
+        ],
+        "proposed_account": "700080383",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 155243",
+            "total_net": 138.88,
+            "total_gross": 138.88,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0125",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 155270",
+        "source_labels_top": [
+          [
+            "Facture 155270",
+            1
+          ]
+        ],
+        "proposed_account": "700080408",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 155270",
+            "total_net": 101.71,
+            "total_gross": 101.71,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0126",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 155318",
+        "source_labels_top": [
+          [
+            "Facture 155318",
+            1
+          ]
+        ],
+        "proposed_account": "700080439",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 155318",
+            "total_net": 61.59,
+            "total_gross": 61.59,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0127",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 155371",
+        "source_labels_top": [
+          [
+            "Facture 155371",
+            1
+          ]
+        ],
+        "proposed_account": "700080510",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 155371",
+            "total_net": 59.36,
+            "total_gross": 59.36,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0128",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 155405",
+        "source_labels_top": [
+          [
+            "Facture 155405",
+            1
+          ]
+        ],
+        "proposed_account": "700080544",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 155405",
+            "total_net": 13.85,
+            "total_gross": 13.85,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0129",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 155441",
+        "source_labels_top": [
+          [
+            "Facture 155441",
+            1
+          ]
+        ],
+        "proposed_account": "700080580",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 155441",
+            "total_net": 188.31,
+            "total_gross": 188.31,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0130",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 155554",
+        "source_labels_top": [
+          [
+            "Facture 155554",
+            1
+          ]
+        ],
+        "proposed_account": "700080692",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 155554",
+            "total_net": 43.92,
+            "total_gross": 43.92,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0131",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 155628",
+        "source_labels_top": [
+          [
+            "Facture 155628",
+            1
+          ]
+        ],
+        "proposed_account": "700080764",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 155628",
+            "total_net": 114.71,
+            "total_gross": 114.71,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0132",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 155667",
+        "source_labels_top": [
+          [
+            "Facture 155667",
+            1
+          ]
+        ],
+        "proposed_account": "700080803",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 155667",
+            "total_net": 78.39,
+            "total_gross": 78.39,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0133",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 155934",
+        "source_labels_top": [
+          [
+            "Facture 155934",
+            1
+          ]
+        ],
+        "proposed_account": "700081040",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 155934",
+            "total_net": 60.41,
+            "total_gross": 60.41,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0134",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 155972",
+        "source_labels_top": [
+          [
+            "Facture 155972",
+            1
+          ]
+        ],
+        "proposed_account": "700081105",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 155972",
+            "total_net": 33.51,
+            "total_gross": 33.51,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0135",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 156075",
+        "source_labels_top": [
+          [
+            "Facture 156075",
+            1
+          ]
+        ],
+        "proposed_account": "700081209",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 156075",
+            "total_net": 138.37,
+            "total_gross": 138.37,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0136",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 156136",
+        "source_labels_top": [
+          [
+            "Facture 156136",
+            1
+          ]
+        ],
+        "proposed_account": "700090025",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 156136",
+            "total_net": 34.46,
+            "total_gross": 34.46,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0137",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 156222",
+        "source_labels_top": [
+          [
+            "Facture 156222",
+            1
+          ]
+        ],
+        "proposed_account": "700090110",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 156222",
+            "total_net": 55.96,
+            "total_gross": 55.96,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0138",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture",
+        "source_label_main": "Facture 156298",
+        "source_labels_top": [
+          [
+            "Facture 156298",
+            1
+          ]
+        ],
+        "proposed_account": "700090148",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d484fa53-c454-4946-9a5f-a361414fcea4",
+            "invoice_number": "156298",
+            "invoice_date": "04/09/2024",
+            "description": "Facture 156298",
+            "total_net": 189.62,
+            "total_gross": 189.62,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0139",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "loyer garage stationnement n",
+        "source_label_main": "Loyer garage - Stationnement n° 20014103 du 01/04/2025 au 30/04/2025",
+        "source_labels_top": [
+          [
+            "Loyer garage - Stationnement n° 20014103 du 01/04/2025 au 30/04/2025",
+            1
+          ]
+        ],
+        "proposed_account": "6122",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "20.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:d494443e-2aa4-4ad8-84d6-f1bf18f358aa",
+            "invoice_number": "20014103",
+            "invoice_date": "24/04/2025",
+            "description": "Loyer garage - Stationnement n° 20014103 du 01/04/2025 au 30/04/2025",
+            "total_net": 108.78,
+            "total_gross": 129.87,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0140",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "facture client fa22cl 2eme ligne",
+        "source_label_main": "Facture client FA22CL-24796 (2ème ligne)",
+        "source_labels_top": [
+          [
+            "Facture client FA22CL-24796 (2ème ligne)",
+            1
+          ]
+        ],
+        "proposed_account": "411",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "5.5",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:e4faf6bb-897e-4ad9-9c81-f1228dfa9569",
+            "invoice_number": "FA22CL-9858",
+            "invoice_date": "11/01/2023",
+            "description": "Facture client FA22CL-24796 (2ème ligne)",
+            "total_net": 321.34,
+            "total_gross": 339.01,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0141",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "vente de marchandises",
+        "source_label_main": "Vente de marchandises",
+        "source_labels_top": [
+          [
+            "Vente de marchandises",
+            1
+          ]
+        ],
+        "proposed_account": "707",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "5.5",
+            1
+          ]
+        ],
+        "ape_supplier_top": [
+          [
+            "4632C",
+            1
+          ]
+        ],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:e612cfa1-6223-4b97-9bf7-f1f03a6ad330",
+            "invoice_number": "FV2412-00130",
+            "invoice_date": "02/12/2024",
+            "description": "Vente de marchandises",
+            "total_net": 105.22,
+            "total_gross": 111.19,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0142",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "option pour le paiement de la",
+        "source_label_main": "Option pour le paiement de la taxe d'après les débits",
+        "source_labels_top": [
+          [
+            "Option pour le paiement de la taxe d'après les débits",
+            1
+          ]
+        ],
+        "proposed_account": "6351",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "20.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:e9b6ada4-4494-4c43-b89b-b843084bc94e",
+            "invoice_number": "FA22CL-14259",
+            "invoice_date": "17/07/2023",
+            "description": "Option pour le paiement de la taxe d'après les débits",
+            "total_net": 22.2,
+            "total_gross": 26.64,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    },
+    {
+      "item_id": "mrn_0143",
+      "status": "to_validate",
+      "source": {
+        "canonical_label": "palette europe consigne a rendre",
+        "source_label_main": "Palette Europe Consigné à rendre",
+        "source_labels_top": [
+          [
+            "Palette Europe Consigné à rendre",
+            1
+          ]
+        ],
+        "proposed_account": "404",
+        "category": "a_revoir",
+        "tva_rates_top": [
+          [
+            "0.0",
+            1
+          ]
+        ],
+        "ape_supplier_top": [],
+        "ape_client_top": [],
+        "occurrences": 1,
+        "examples": [
+          {
+            "invoice_id": "fr_bd_519665103:f25b09e7-8f2f-43d8-bdbb-7d33bd4fcbf7",
+            "invoice_number": "FA1666367",
+            "invoice_date": "28/10/2024",
+            "description": "Palette Europe Consigné à rendre",
+            "total_net": 0.0,
+            "total_gross": 0.0,
+            "currency": "EUR"
+          }
+        ]
+      },
+      "validation": {
+        "decision_keep_or_exclude": null,
+        "corrected_category": null,
+        "corrected_account": null,
+        "corrected_canonical_label": null,
+        "tva_rule_note": null,
+        "comment": null
+      },
+      "validated_at": null
+    }
+  ]
+}

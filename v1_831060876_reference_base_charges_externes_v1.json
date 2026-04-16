@@ -1,0 +1,2452 @@
+{
+  "meta": {
+    "generated_at": "2026-04-13T10:10:15.926978Z",
+    "db_factures": "abt3",
+    "partition_prefix": "fr_bd_831060876",
+    "total_unique_references": 166,
+    "stats": {
+      "line_items_exploitation_metier": 210,
+      "line_items_charges_externes": 141,
+      "line_items_a_revoir": 20
+    }
+  },
+  "category": "charges_externes",
+  "items": [
+    {
+      "canonical_label": "bouygues telecom",
+      "source_labels_top": [
+        [
+          "BOUYGUES TELECOM",
+          25
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          25
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          25
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 25,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:51634929-48c0-456d-93f6-8eeac4f095fd",
+          "invoice_number": null,
+          "invoice_date": "01/01/2024",
+          "description": "BOUYGUES TELECOM",
+          "total_net": 8.7,
+          "total_gross": 10.44,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:51634929-48c0-456d-93f6-8eeac4f095fd",
+          "invoice_number": null,
+          "invoice_date": "01/01/2024",
+          "description": "BOUYGUES TELECOM",
+          "total_net": 8.83,
+          "total_gross": 10.6,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:51634929-48c0-456d-93f6-8eeac4f095fd",
+          "invoice_number": null,
+          "invoice_date": "01/01/2024",
+          "description": "BOUYGUES TELECOM",
+          "total_net": 6.83,
+          "total_gross": 8.2,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:51634929-48c0-456d-93f6-8eeac4f095fd",
+          "invoice_number": null,
+          "invoice_date": "01/01/2024",
+          "description": "BOUYGUES TELECOM",
+          "total_net": 8.57,
+          "total_gross": 10.28,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:51634929-48c0-456d-93f6-8eeac4f095fd",
+          "invoice_number": null,
+          "invoice_date": "01/01/2024",
+          "description": "BOUYGUES TELECOM",
+          "total_net": 10.83,
+          "total_gross": 13.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "qui manage",
+      "source_labels_top": [
+        [
+          "QUI MANAGE",
+          14
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          14
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          14
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 14,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:51634929-48c0-456d-93f6-8eeac4f095fd",
+          "invoice_number": null,
+          "invoice_date": "01/01/2024",
+          "description": "QUI MANAGE",
+          "total_net": 20.0,
+          "total_gross": 24.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:51634929-48c0-456d-93f6-8eeac4f095fd",
+          "invoice_number": null,
+          "invoice_date": "01/01/2024",
+          "description": "QUI MANAGE",
+          "total_net": 460.0,
+          "total_gross": 552.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:51634929-48c0-456d-93f6-8eeac4f095fd",
+          "invoice_number": null,
+          "invoice_date": "01/01/2024",
+          "description": "QUI MANAGE",
+          "total_net": 40.0,
+          "total_gross": 48.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:51634929-48c0-456d-93f6-8eeac4f095fd",
+          "invoice_number": null,
+          "invoice_date": "01/01/2024",
+          "description": "QUI MANAGE",
+          "total_net": 260.0,
+          "total_gross": 312.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:51634929-48c0-456d-93f6-8eeac4f095fd",
+          "invoice_number": null,
+          "invoice_date": "01/01/2024",
+          "description": "QUI MANAGE",
+          "total_net": 480.0,
+          "total_gross": 576.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "solocal",
+      "source_labels_top": [
+        [
+          "Solocal",
+          8
+        ]
+      ],
+      "proposed_account": "6228",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          8
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          8
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 8,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:51634929-48c0-456d-93f6-8eeac4f095fd",
+          "invoice_number": null,
+          "invoice_date": "01/01/2024",
+          "description": "Solocal",
+          "total_net": 28.8,
+          "total_gross": 34.56,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:51634929-48c0-456d-93f6-8eeac4f095fd",
+          "invoice_number": null,
+          "invoice_date": "01/01/2024",
+          "description": "Solocal",
+          "total_net": 8.25,
+          "total_gross": 9.9,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:51634929-48c0-456d-93f6-8eeac4f095fd",
+          "invoice_number": null,
+          "invoice_date": "01/01/2024",
+          "description": "Solocal",
+          "total_net": 28.8,
+          "total_gross": 34.56,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:51634929-48c0-456d-93f6-8eeac4f095fd",
+          "invoice_number": null,
+          "invoice_date": "01/01/2024",
+          "description": "Solocal",
+          "total_net": 7.4,
+          "total_gross": 8.88,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:51634929-48c0-456d-93f6-8eeac4f095fd",
+          "invoice_number": null,
+          "invoice_date": "01/01/2024",
+          "description": "Solocal",
+          "total_net": 28.8,
+          "total_gross": 34.56,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais de creation site essentiel mensuel",
+      "source_labels_top": [
+        [
+          "Frais de création site Essentiel + (mensuel)",
+          6
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          6
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          6
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6311Z",
+          6
+        ]
+      ],
+      "occurrences": 6,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:084baea8-2dbc-4b90-940a-f9f11645b1f9",
+          "invoice_number": "1000181475",
+          "invoice_date": "11/04/2024",
+          "description": "Frais de création site Essentiel + (mensuel)",
+          "total_net": 37.0,
+          "total_gross": 44.4,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:1ee1ea7d-a93a-47a2-a05c-be428749b4bc",
+          "invoice_number": "1000367195",
+          "invoice_date": "11/08/2024",
+          "description": "Frais de création site Essentiel + (mensuel)",
+          "total_net": 37.0,
+          "total_gross": 44.4,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:224b5e46-6157-41e1-9347-a2d93bdd2182",
+          "invoice_number": "1000401266",
+          "invoice_date": "11/09/2024",
+          "description": "Frais de création site Essentiel + (mensuel)",
+          "total_net": 37.0,
+          "total_gross": 44.4,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:9a13e446-7702-4793-8a43-c774fb8585a6",
+          "invoice_number": "1000148960",
+          "invoice_date": "11/03/2024",
+          "description": "Frais de création site Essentiel + (mensuel)",
+          "total_net": 41.25,
+          "total_gross": 49.5,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:af736a23-2b58-47c2-85a7-b800fc367c94",
+          "invoice_number": "1000436163",
+          "invoice_date": "11/10/2024",
+          "description": "Frais de création site Essentiel + (mensuel)",
+          "total_net": 41.25,
+          "total_gross": 49.5,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "remise commerciale",
+      "source_labels_top": [
+        [
+          "Remise Commerciale",
+          6
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          6
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          6
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5812Z",
+          6
+        ]
+      ],
+      "occurrences": 6,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:5560de0c-f1e7-4897-b80b-95eae4f71ef2",
+          "invoice_number": "1371482",
+          "invoice_date": "14/09/2024",
+          "description": "Remise Commerciale",
+          "total_net": -16.0,
+          "total_gross": -19.2,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:ba347816-8a7a-4470-98e8-6707b5b615db",
+          "invoice_number": "505758",
+          "invoice_date": "14/03/2024",
+          "description": "Remise Commerciale",
+          "total_net": -16.0,
+          "total_gross": -19.2,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:c3fca1a9-2405-45a8-bdc9-6b578b7bcb6a",
+          "invoice_number": "1498608",
+          "invoice_date": "14/10/2024",
+          "description": "Remise Commerciale",
+          "total_net": -2.2,
+          "total_gross": -2.64,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:c3fca1a9-2405-45a8-bdc9-6b578b7bcb6a",
+          "invoice_number": "1498608",
+          "invoice_date": "14/10/2024",
+          "description": "Remise Commerciale",
+          "total_net": -8.3,
+          "total_gross": -9.96,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:c3fca1a9-2405-45a8-bdc9-6b578b7bcb6a",
+          "invoice_number": "1498608",
+          "invoice_date": "14/10/2024",
+          "description": "Remise Commerciale",
+          "total_net": -5.5,
+          "total_gross": -6.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "remise commerciale",
+      "source_labels_top": [
+        [
+          "Remise Commerciale",
+          6
+        ]
+      ],
+      "proposed_account": "6228",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          6
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          6
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5812Z",
+          6
+        ]
+      ],
+      "occurrences": 6,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:6fd85691-d920-4a6b-889b-153ba7909b9c",
+          "invoice_number": "635256",
+          "invoice_date": "17/04/2024",
+          "description": "Remise Commerciale",
+          "total_net": -2.2,
+          "total_gross": -2.64,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:6fd85691-d920-4a6b-889b-153ba7909b9c",
+          "invoice_number": "635256",
+          "invoice_date": "17/04/2024",
+          "description": "Remise Commerciale",
+          "total_net": -8.3,
+          "total_gross": -9.96,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:6fd85691-d920-4a6b-889b-153ba7909b9c",
+          "invoice_number": "635256",
+          "invoice_date": "17/04/2024",
+          "description": "Remise Commerciale",
+          "total_net": -5.5,
+          "total_gross": -6.6,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:8524350f-c1d5-4805-82a6-eb89ee41d6af",
+          "invoice_number": "926372",
+          "invoice_date": "14/06/2024",
+          "description": "Remise Commerciale",
+          "total_net": -5.5,
+          "total_gross": -6.6,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:8524350f-c1d5-4805-82a6-eb89ee41d6af",
+          "invoice_number": "926372",
+          "invoice_date": "14/06/2024",
+          "description": "Remise Commerciale",
+          "total_net": -8.3,
+          "total_gross": -9.96,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "extension de presence booster",
+      "source_labels_top": [
+        [
+          "Extension de présence Booster",
+          5
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          5
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          5
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5812Z",
+          5
+        ]
+      ],
+      "occurrences": 5,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:5560de0c-f1e7-4897-b80b-95eae4f71ef2",
+          "invoice_number": "1371482",
+          "invoice_date": "14/09/2024",
+          "description": "Extension de présence Booster",
+          "total_net": 55.0,
+          "total_gross": 66.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:ba347816-8a7a-4470-98e8-6707b5b615db",
+          "invoice_number": "505758",
+          "invoice_date": "14/03/2024",
+          "description": "Extension de présence Booster",
+          "total_net": 55.0,
+          "total_gross": 66.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:c3fca1a9-2405-45a8-bdc9-6b578b7bcb6a",
+          "invoice_number": "1498608",
+          "invoice_date": "14/10/2024",
+          "description": "Extension de présence Booster",
+          "total_net": 55.0,
+          "total_gross": 66.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:e6a25bdd-f10e-450f-b9c7-4f295fa84109",
+          "invoice_number": "372474",
+          "invoice_date": "14/02/2024",
+          "description": "Extension de présence Booster",
+          "total_net": 55.0,
+          "total_gross": 66.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:fe05027f-9dc3-4d5d-8221-855106c72320",
+          "invoice_number": "1747567",
+          "invoice_date": "14/12/2024",
+          "description": "Extension de présence Booster",
+          "total_net": 55.0,
+          "total_gross": 66.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "referencement prioritaire option connect premium",
+      "source_labels_top": [
+        [
+          "Référencement prioritaire option Connect Premium",
+          5
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          5
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          5
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5812Z",
+          5
+        ]
+      ],
+      "occurrences": 5,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:5560de0c-f1e7-4897-b80b-95eae4f71ef2",
+          "invoice_number": "1371482",
+          "invoice_date": "14/09/2024",
+          "description": "Référencement prioritaire option Connect Premium",
+          "total_net": 83.0,
+          "total_gross": 99.6,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:ba347816-8a7a-4470-98e8-6707b5b615db",
+          "invoice_number": "505758",
+          "invoice_date": "14/03/2024",
+          "description": "Référencement prioritaire option Connect Premium",
+          "total_net": 83.0,
+          "total_gross": 99.6,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:c3fca1a9-2405-45a8-bdc9-6b578b7bcb6a",
+          "invoice_number": "1498608",
+          "invoice_date": "14/10/2024",
+          "description": "Référencement prioritaire option Connect Premium",
+          "total_net": 83.0,
+          "total_gross": 99.6,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:e6a25bdd-f10e-450f-b9c7-4f295fa84109",
+          "invoice_number": "372474",
+          "invoice_date": "14/02/2024",
+          "description": "Référencement prioritaire option Connect Premium",
+          "total_net": 83.0,
+          "total_gross": 99.6,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:fe05027f-9dc3-4d5d-8221-855106c72320",
+          "invoice_number": "1747567",
+          "invoice_date": "14/12/2024",
+          "description": "Référencement prioritaire option Connect Premium",
+          "total_net": 83.0,
+          "total_gross": 99.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "option connect premium",
+      "source_labels_top": [
+        [
+          "Option Connect Premium",
+          5
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          5
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          5
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5812Z",
+          5
+        ]
+      ],
+      "occurrences": 5,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:5560de0c-f1e7-4897-b80b-95eae4f71ef2",
+          "invoice_number": "1371482",
+          "invoice_date": "14/09/2024",
+          "description": "Option Connect Premium",
+          "total_net": 22.0,
+          "total_gross": 26.4,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:ba347816-8a7a-4470-98e8-6707b5b615db",
+          "invoice_number": "505758",
+          "invoice_date": "14/03/2024",
+          "description": "Option Connect Premium",
+          "total_net": 22.0,
+          "total_gross": 26.4,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:c3fca1a9-2405-45a8-bdc9-6b578b7bcb6a",
+          "invoice_number": "1498608",
+          "invoice_date": "14/10/2024",
+          "description": "Option Connect Premium",
+          "total_net": 22.0,
+          "total_gross": 26.4,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:e6a25bdd-f10e-450f-b9c7-4f295fa84109",
+          "invoice_number": "372474",
+          "invoice_date": "14/02/2024",
+          "description": "Option Connect Premium",
+          "total_net": 22.0,
+          "total_gross": 26.4,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:fe05027f-9dc3-4d5d-8221-855106c72320",
+          "invoice_number": "1747567",
+          "invoice_date": "14/12/2024",
+          "description": "Option Connect Premium",
+          "total_net": 22.0,
+          "total_gross": 26.4,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "vos services fournis par votre operateur",
+      "source_labels_top": [
+        [
+          "Vos services fournis par votre opérateur",
+          4
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          4
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          4
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          4
+        ]
+      ],
+      "occurrences": 4,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:2d7fb943-fb86-4f4a-b57a-b7a0f4de2095",
+          "invoice_number": "11947005580724",
+          "invoice_date": "27/07/2024",
+          "description": "Vos services fournis par votre opérateur",
+          "total_net": 39.99,
+          "total_gross": 47.99,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:2f5ee41d-fbb3-4540-81ec-421cf9a5d96a",
+          "invoice_number": "01/09/2024",
+          "invoice_date": "02/08/2024",
+          "description": "Vos services fournis par votre opérateur",
+          "total_net": 33.82,
+          "total_gross": 40.59,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:834607af-55db-455a-9429-35b014c9b0d5",
+          "invoice_number": "11126356290824",
+          "invoice_date": "27/08/2024",
+          "description": "Vos services fournis par votre opérateur",
+          "total_net": 35.82,
+          "total_gross": 42.99,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:e35df187-bfb3-4df7-b189-9147fda86d05",
+          "invoice_number": "11264446650324",
+          "invoice_date": "27/03/2024",
+          "description": "Vos services fournis par votre opérateur",
+          "total_net": 11.66,
+          "total_gross": 13.99,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "extension de presence booster",
+      "source_labels_top": [
+        [
+          "Extension de présence Booster",
+          4
+        ]
+      ],
+      "proposed_account": "6228",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          4
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          4
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5812Z",
+          4
+        ]
+      ],
+      "occurrences": 4,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:309a67f4-f607-4e01-a347-610a1d9b1f79",
+          "invoice_number": "1625049",
+          "invoice_date": "14/11/2024",
+          "description": "Extension de présence Booster",
+          "total_net": 55.0,
+          "total_gross": 66.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:6fd85691-d920-4a6b-889b-153ba7909b9c",
+          "invoice_number": "635256",
+          "invoice_date": "17/04/2024",
+          "description": "Extension de présence Booster",
+          "total_net": 55.0,
+          "total_gross": 66.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:8524350f-c1d5-4805-82a6-eb89ee41d6af",
+          "invoice_number": "926372",
+          "invoice_date": "14/06/2024",
+          "description": "Extension de présence Booster",
+          "total_net": 55.0,
+          "total_gross": 66.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:8731df7e-92eb-4986-b33b-c29820be8078",
+          "invoice_number": "1070221",
+          "invoice_date": "14/07/2024",
+          "description": "Extension de présence Booster",
+          "total_net": 55.0,
+          "total_gross": 66.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "referencement prioritaire option connect premium",
+      "source_labels_top": [
+        [
+          "Référencement prioritaire option Connect Premium",
+          4
+        ]
+      ],
+      "proposed_account": "6228",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          4
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          4
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5812Z",
+          4
+        ]
+      ],
+      "occurrences": 4,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:309a67f4-f607-4e01-a347-610a1d9b1f79",
+          "invoice_number": "1625049",
+          "invoice_date": "14/11/2024",
+          "description": "Référencement prioritaire option Connect Premium",
+          "total_net": 83.0,
+          "total_gross": 99.6,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:6fd85691-d920-4a6b-889b-153ba7909b9c",
+          "invoice_number": "635256",
+          "invoice_date": "17/04/2024",
+          "description": "Référencement prioritaire option Connect Premium",
+          "total_net": 83.0,
+          "total_gross": 99.6,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:8524350f-c1d5-4805-82a6-eb89ee41d6af",
+          "invoice_number": "926372",
+          "invoice_date": "14/06/2024",
+          "description": "Référencement prioritaire option Connect Premium",
+          "total_net": 83.0,
+          "total_gross": 99.6,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:8731df7e-92eb-4986-b33b-c29820be8078",
+          "invoice_number": "1070221",
+          "invoice_date": "14/07/2024",
+          "description": "Référencement prioritaire option Connect Premium",
+          "total_net": 83.0,
+          "total_gross": 99.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "option connect premium",
+      "source_labels_top": [
+        [
+          "Option Connect Premium",
+          4
+        ]
+      ],
+      "proposed_account": "6228",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          4
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          4
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5812Z",
+          4
+        ]
+      ],
+      "occurrences": 4,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:309a67f4-f607-4e01-a347-610a1d9b1f79",
+          "invoice_number": "1625049",
+          "invoice_date": "14/11/2024",
+          "description": "Option Connect Premium",
+          "total_net": 22.0,
+          "total_gross": 26.4,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:6fd85691-d920-4a6b-889b-153ba7909b9c",
+          "invoice_number": "635256",
+          "invoice_date": "17/04/2024",
+          "description": "Option Connect Premium",
+          "total_net": 22.0,
+          "total_gross": 26.4,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:8524350f-c1d5-4805-82a6-eb89ee41d6af",
+          "invoice_number": "926372",
+          "invoice_date": "14/06/2024",
+          "description": "Option Connect Premium",
+          "total_net": 22.0,
+          "total_gross": 26.4,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:8731df7e-92eb-4986-b33b-c29820be8078",
+          "invoice_number": "1070221",
+          "invoice_date": "14/07/2024",
+          "description": "Option Connect Premium",
+          "total_net": 22.0,
+          "total_gross": 26.4,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "vos abonnements forfaits et options",
+      "source_labels_top": [
+        [
+          "Vos abonnements, forfaits et options",
+          3
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          3
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          3
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          3
+        ]
+      ],
+      "occurrences": 3,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:2d7fb943-fb86-4f4a-b57a-b7a0f4de2095",
+          "invoice_number": "11947005580724",
+          "invoice_date": "27/07/2024",
+          "description": "Vos abonnements, forfaits et options",
+          "total_net": 31.66,
+          "total_gross": 37.99,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:2f5ee41d-fbb3-4540-81ec-421cf9a5d96a",
+          "invoice_number": "01/09/2024",
+          "invoice_date": "02/08/2024",
+          "description": "Vos abonnements, forfaits et options",
+          "total_net": 33.32,
+          "total_gross": 39.99,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:e35df187-bfb3-4df7-b189-9147fda86d05",
+          "invoice_number": "11264446650324",
+          "invoice_date": "27/03/2024",
+          "description": "Vos abonnements, forfaits et options",
+          "total_net": 3.32,
+          "total_gross": 3.99,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "remise commerciale",
+      "source_labels_top": [
+        [
+          "Remise Commerciale",
+          3
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          3
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          3
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5812Z",
+          3
+        ]
+      ],
+      "occurrences": 3,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:48d4aeac-d4c6-42ff-93d3-d6f8089b4904",
+          "invoice_number": "1246951",
+          "invoice_date": "14/08/2024",
+          "description": "Remise Commerciale",
+          "total_net": -5.5,
+          "total_gross": -6.6,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:48d4aeac-d4c6-42ff-93d3-d6f8089b4904",
+          "invoice_number": "1246951",
+          "invoice_date": "14/08/2024",
+          "description": "Remise Commerciale",
+          "total_net": -8.3,
+          "total_gross": -9.96,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:48d4aeac-d4c6-42ff-93d3-d6f8089b4904",
+          "invoice_number": "1246951",
+          "invoice_date": "14/08/2024",
+          "description": "Remise Commerciale",
+          "total_net": -2.2,
+          "total_gross": -2.64,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "vos services fournis par des tiers",
+      "source_labels_top": [
+        [
+          "Vos services fournis par des tiers",
+          2
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:2d7fb943-fb86-4f4a-b57a-b7a0f4de2095",
+          "invoice_number": "11947005580724",
+          "invoice_date": "27/07/2024",
+          "description": "Vos services fournis par des tiers",
+          "total_net": 4.17,
+          "total_gross": 5.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:834607af-55db-455a-9429-35b014c9b0d5",
+          "invoice_number": "11126356290824",
+          "invoice_date": "27/08/2024",
+          "description": "Vos services fournis par des tiers",
+          "total_net": 4.17,
+          "total_gross": 5.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais de rejet de prelevement",
+      "source_labels_top": [
+        [
+          "Frais de rejet de prélèvement",
+          2
+        ]
+      ],
+      "proposed_account": "6278",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:301180f9-bbbc-4177-a903-575b18ad81a2",
+          "invoice_number": "11102290410224",
+          "invoice_date": "27/02/2024",
+          "description": "Frais de rejet de prélèvement",
+          "total_net": 8.33,
+          "total_gross": 10.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:586e8001-6d2b-476b-971b-b0e80ecc66e8",
+          "invoice_number": "11090168110224",
+          "invoice_date": "27/02/2024",
+          "description": "Frais de rejet de prélèvement",
+          "total_net": 8.33,
+          "total_gross": 10.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "loyer",
+      "source_labels_top": [
+        [
+          "Loyer 01/05/24 au 25/05/24",
+          1
+        ],
+        [
+          "Loyer 26/05/24 au 31/05/24",
+          1
+        ]
+      ],
+      "proposed_account": "613",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:4644fbf9-6dc5-4f73-a948-68fdb4bb7ca9",
+          "invoice_number": "",
+          "invoice_date": "25/07/2024",
+          "description": "Loyer 01/05/24 au 25/05/24",
+          "total_net": 70.16,
+          "total_gross": 70.16,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:4644fbf9-6dc5-4f73-a948-68fdb4bb7ca9",
+          "invoice_number": "",
+          "invoice_date": "25/07/2024",
+          "description": "Loyer 26/05/24 au 31/05/24",
+          "total_net": 17.74,
+          "total_gross": 17.74,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "extension de presence booster",
+      "source_labels_top": [
+        [
+          "Extension de présence Booster",
+          2
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5812Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:48d4aeac-d4c6-42ff-93d3-d6f8089b4904",
+          "invoice_number": "1246951",
+          "invoice_date": "14/08/2024",
+          "description": "Extension de présence Booster",
+          "total_net": 55.0,
+          "total_gross": 66.0,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:88b26cc5-6c30-42f3-bc7d-1a1e632d2a82",
+          "invoice_number": "785790",
+          "invoice_date": "14/05/2024",
+          "description": "Extension de présence Booster",
+          "total_net": 55.0,
+          "total_gross": 66.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "referencement prioritaire option connect premium",
+      "source_labels_top": [
+        [
+          "Référencement prioritaire option Connect Premium",
+          2
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5812Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:48d4aeac-d4c6-42ff-93d3-d6f8089b4904",
+          "invoice_number": "1246951",
+          "invoice_date": "14/08/2024",
+          "description": "Référencement prioritaire option Connect Premium",
+          "total_net": 83.0,
+          "total_gross": 99.6,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:88b26cc5-6c30-42f3-bc7d-1a1e632d2a82",
+          "invoice_number": "785790",
+          "invoice_date": "14/05/2024",
+          "description": "Référencement prioritaire option Connect Premium",
+          "total_net": 83.0,
+          "total_gross": 99.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "option connect premium",
+      "source_labels_top": [
+        [
+          "Option Connect Premium",
+          2
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "5812Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:48d4aeac-d4c6-42ff-93d3-d6f8089b4904",
+          "invoice_number": "1246951",
+          "invoice_date": "14/08/2024",
+          "description": "Option Connect Premium",
+          "total_net": 22.0,
+          "total_gross": 26.4,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:88b26cc5-6c30-42f3-bc7d-1a1e632d2a82",
+          "invoice_number": "785790",
+          "invoice_date": "14/05/2024",
+          "description": "Option Connect Premium",
+          "total_net": 22.0,
+          "total_gross": 26.4,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "gc",
+      "source_labels_top": [
+        [
+          "GC",
+          2
+        ]
+      ],
+      "proposed_account": "6223",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:51634929-48c0-456d-93f6-8eeac4f095fd",
+          "invoice_number": null,
+          "invoice_date": "01/01/2024",
+          "description": "GC",
+          "total_net": 13.8,
+          "total_gross": 16.56,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:51634929-48c0-456d-93f6-8eeac4f095fd",
+          "invoice_number": null,
+          "invoice_date": "01/01/2024",
+          "description": "GC",
+          "total_net": 13.8,
+          "total_gross": 16.56,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais de creation site essentiel mensuel",
+      "source_labels_top": [
+        [
+          "Frais de création site Essentiel + (mensuel)",
+          2
+        ]
+      ],
+      "proposed_account": "6228",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          2
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          2
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6311Z",
+          2
+        ]
+      ],
+      "occurrences": 2,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:d90184da-64c9-488a-9eac-07392fe7e91e",
+          "invoice_number": "1000507663",
+          "invoice_date": "11/12/2024",
+          "description": "Frais de création site Essentiel + (mensuel)",
+          "total_net": 37.0,
+          "total_gross": 44.4,
+          "currency": "EUR"
+        },
+        {
+          "invoice_id": "fr_bd_831060876:e24ff558-e3f5-4f5a-992e-16884a6abb44",
+          "invoice_number": "1000259083",
+          "invoice_date": "11/06/2024",
+          "description": "Frais de création site Essentiel + (mensuel)",
+          "total_net": 37.0,
+          "total_gross": 44.4,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais de livraison relais express",
+      "source_labels_top": [
+        [
+          "Frais de livraison Relais Express",
+          1
+        ]
+      ],
+      "proposed_account": "62260000",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:0015137d-325e-4395-92bc-34cb7771a836",
+          "invoice_number": "0917123874",
+          "invoice_date": "03/05/2024",
+          "description": "Frais de livraison Relais Express",
+          "total_net": 0.83,
+          "total_gross": 1.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "forfait sensation client 70go",
+      "source_labels_top": [
+        [
+          "Forfait Sensation client 70Go",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:11e6a29d-b91f-4972-a22e-ef2626a5a54e",
+          "invoice_number": "11785201350124",
+          "invoice_date": "02/01/2024",
+          "description": "Forfait Sensation client 70Go",
+          "total_net": 38.33,
+          "total_gross": 45.99,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "option multi sim internet",
+      "source_labels_top": [
+        [
+          "Option multi-SiM Internet",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:11e6a29d-b91f-4972-a22e-ef2626a5a54e",
+          "invoice_number": "11785201350124",
+          "invoice_date": "02/01/2024",
+          "description": "Option multi-SiM Internet",
+          "total_net": 1.67,
+          "total_gross": 2.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "avantage internet 100go",
+      "source_labels_top": [
+        [
+          "Avantage Internet 100Go",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:11e6a29d-b91f-4972-a22e-ef2626a5a54e",
+          "invoice_number": "11785201350124",
+          "invoice_date": "02/01/2024",
+          "description": "Avantage Internet 100Go",
+          "total_net": 2.5,
+          "total_gross": 3.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "communications vers l international",
+      "source_labels_top": [
+        [
+          "Communications vers l'international",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:11e6a29d-b91f-4972-a22e-ef2626a5a54e",
+          "invoice_number": "11785201350124",
+          "invoice_date": "02/01/2024",
+          "description": "Communications vers l'international",
+          "total_net": 0.38,
+          "total_gross": 0.46,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "sms mms vers l international",
+      "source_labels_top": [
+        [
+          "SMS/MMS vers l'international",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:11e6a29d-b91f-4972-a22e-ef2626a5a54e",
+          "invoice_number": "11785201350124",
+          "invoice_date": "02/01/2024",
+          "description": "SMS/MMS vers l'international",
+          "total_net": 0.6,
+          "total_gross": 0.72,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "applications contenus services tiers",
+      "source_labels_top": [
+        [
+          "Applications - contenus - services (tiers)",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:11e6a29d-b91f-4972-a22e-ef2626a5a54e",
+          "invoice_number": "11785201350124",
+          "invoice_date": "02/01/2024",
+          "description": "Applications - contenus - services (tiers)",
+          "total_net": 33.97,
+          "total_gross": 33.97,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "services quotidien achats par sms",
+      "source_labels_top": [
+        [
+          "Services du quotidien (Achats par SMS)",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:11e6a29d-b91f-4972-a22e-ef2626a5a54e",
+          "invoice_number": "11785201350124",
+          "invoice_date": "02/01/2024",
+          "description": "Services du quotidien (Achats par SMS)",
+          "total_net": 7.5,
+          "total_gross": 7.5,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "vos autres services et produits",
+      "source_labels_top": [
+        [
+          "Vos autres services et produits",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:2d7fb943-fb86-4f4a-b57a-b7a0f4de2095",
+          "invoice_number": "11947005580724",
+          "invoice_date": "27/07/2024",
+          "description": "Vos autres services et produits",
+          "total_net": 8.33,
+          "total_gross": 10.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "vos communications",
+      "source_labels_top": [
+        [
+          "Vos communications (du 02/07 au 01/08)",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:2f5ee41d-fbb3-4540-81ec-421cf9a5d96a",
+          "invoice_number": "01/09/2024",
+          "invoice_date": "02/08/2024",
+          "description": "Vos communications (du 02/07 au 01/08)",
+          "total_net": 0.5,
+          "total_gross": 0.6,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "vos autres services de tiers",
+      "source_labels_top": [
+        [
+          "Vos autres services de tiers (**)",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:2f5ee41d-fbb3-4540-81ec-421cf9a5d96a",
+          "invoice_number": "01/09/2024",
+          "invoice_date": "02/08/2024",
+          "description": "Vos autres services de tiers (**)",
+          "total_net": 51.93,
+          "total_gross": 62.32,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "loyer avril",
+      "source_labels_top": [
+        [
+          "Loyer Avril 2024",
+          1
+        ]
+      ],
+      "proposed_account": "613",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:4644fbf9-6dc5-4f73-a948-68fdb4bb7ca9",
+          "invoice_number": "",
+          "invoice_date": "25/07/2024",
+          "description": "Loyer Avril 2024",
+          "total_net": 87.0,
+          "total_gross": 87.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "forfait special client 20go 5g av",
+      "source_labels_top": [
+        [
+          "Forfait Spécial client 20Go 5G Av. smartphone",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:5d838c58-70fd-4caa-ab5c-b8c5ea9117bb",
+          "invoice_number": "11267443830324",
+          "invoice_date": "27/03/2024",
+          "description": "Forfait Spécial client 20Go 5G Av. smartphone",
+          "total_net": 20.0,
+          "total_gross": 24.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "option week end internet illimite",
+      "source_labels_top": [
+        [
+          "Option Week-end internet illimité",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:5d838c58-70fd-4caa-ab5c-b8c5ea9117bb",
+          "invoice_number": "11267443830324",
+          "invoice_date": "27/03/2024",
+          "description": "Option Week-end internet illimité",
+          "total_net": 5.0,
+          "total_gross": 6.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "avantage client box",
+      "source_labels_top": [
+        [
+          "Avantage client box",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:5d838c58-70fd-4caa-ab5c-b8c5ea9117bb",
+          "invoice_number": "11267443830324",
+          "invoice_date": "27/03/2024",
+          "description": "Avantage client box",
+          "total_net": -1.67,
+          "total_gross": -2.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "internet 10go france",
+      "source_labels_top": [
+        [
+          "Internet 10Go France",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:5d838c58-70fd-4caa-ab5c-b8c5ea9117bb",
+          "invoice_number": "11267443830324",
+          "invoice_date": "27/03/2024",
+          "description": "Internet 10Go France",
+          "total_net": 8.33,
+          "total_gross": 10.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "frais de creation site essentiel mensuel",
+      "source_labels_top": [
+        [
+          "Frais de création site Essentiel + (mensuel)",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6311Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:a3230ef0-f621-4735-ad80-83b73b81181f",
+          "invoice_number": "1000294089",
+          "invoice_date": "11/07/2024",
+          "description": "Frais de création site Essentiel + (mensuel)",
+          "total_net": 37.0,
+          "total_gross": 44.4,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "aleo voyager site web referencement hebergement",
+      "source_labels_top": [
+        [
+          "PACK ALEO VOYAGER - SITE WEB + RÉFÉRENCEMENT + HÉBERGEMENT + MAINTENANCE",
+          1
+        ]
+      ],
+      "proposed_account": "6226",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "7311Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:acdffdc1-aebb-45d3-a62f-1ede37315586",
+          "invoice_number": "FACT-20240402-88932",
+          "invoice_date": "02/04/2024",
+          "description": "PACK ALEO VOYAGER - SITE WEB + RÉFÉRENCEMENT + HÉBERGEMENT + MAINTENANCE",
+          "total_net": 69.0,
+          "total_gross": 82.8,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "remise frais de creation site essentiel",
+      "source_labels_top": [
+        [
+          "Remise 10% Frais de création Site Essentiel +",
+          1
+        ]
+      ],
+      "proposed_account": "6227",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6311Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:af736a23-2b58-47c2-85a7-b800fc367c94",
+          "invoice_number": "1000436163",
+          "invoice_date": "11/10/2024",
+          "description": "Remise 10% Frais de création Site Essentiel +",
+          "total_net": -4.25,
+          "total_gross": -5.1,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "loyer octobre",
+      "source_labels_top": [
+        [
+          "Loyer Octobre 2024",
+          1
+        ]
+      ],
+      "proposed_account": "613",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:d470e2e4-0da6-4673-a136-69873bdca2c1",
+          "invoice_number": "",
+          "invoice_date": "24/01/2025",
+          "description": "Loyer Octobre 2024",
+          "total_net": 91.66,
+          "total_gross": 91.66,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "loyer novembre",
+      "source_labels_top": [
+        [
+          "Loyer Novembre 2024",
+          1
+        ]
+      ],
+      "proposed_account": "613",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "0.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "no_vat_or_exempt",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:d470e2e4-0da6-4673-a136-69873bdca2c1",
+          "invoice_number": "",
+          "invoice_date": "24/01/2025",
+          "description": "Loyer Novembre 2024",
+          "total_net": 91.66,
+          "total_gross": 91.66,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "bbox location equipement",
+      "source_labels_top": [
+        [
+          "Bbox - location équipement (du 02/07 au 01/08)",
+          1
+        ]
+      ],
+      "proposed_account": "6132",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:d6a336c1-0669-40f2-bca6-427ba4c0f160",
+          "invoice_number": "11816543670724",
+          "invoice_date": "02/07/2024",
+          "description": "Bbox - location équipement (du 02/07 au 01/08)",
+          "total_net": 2.5,
+          "total_gross": 3.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "canonical_label": "vos autres services et produits",
+      "source_labels_top": [
+        [
+          "Vos autres services et produits",
+          1
+        ]
+      ],
+      "proposed_account": "6228",
+      "category": "charges_externes",
+      "tva_rates_top": [
+        [
+          "20.0",
+          1
+        ]
+      ],
+      "tva_hint_top": [
+        [
+          "likely_service",
+          1
+        ]
+      ],
+      "ape_client_top": [],
+      "ape_supplier_top": [
+        [
+          "6120Z",
+          1
+        ]
+      ],
+      "occurrences": 1,
+      "examples": [
+        {
+          "invoice_id": "fr_bd_831060876:e35df187-bfb3-4df7-b189-9147fda86d05",
+          "invoice_number": "11264446650324",
+          "invoice_date": "27/03/2024",
+          "description": "Vos autres services et produits",
+          "total_net": 8.33,
+          "total_gross": 10.0,
+          "currency": "EUR"
+        }
+      ]
+    }
+  ]
+}

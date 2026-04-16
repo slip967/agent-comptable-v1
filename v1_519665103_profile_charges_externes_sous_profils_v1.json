@@ -1,0 +1,348 @@
+{
+  "meta": {
+    "generated_at": "2026-04-08T01:48:20.257476Z",
+    "profile_id": "charges_externes_sous_profils_v1",
+    "source_file": "C:\\Users\\Dell\\Downloads\\scripts-master\\scripts-master\\base_charges_externes_v1.json",
+    "invoice_csv": "C:\\Users\\Dell\\Downloads\\scripts-master\\scripts-master\\invoice_form_519665103_all_with_ape.csv",
+    "items_total": 6
+  },
+  "items": [
+    {
+      "sous_profil": "cotisations_professionnelles",
+      "profil_facturation": "cotisation_ou_forfait",
+      "nature_charge_top": [
+        [
+          "cotisation",
+          10
+        ]
+      ],
+      "comptes_comptables_top": [
+        [
+          "6227",
+          9
+        ],
+        [
+          "6281",
+          1
+        ]
+      ],
+      "sous_categories_top": [
+        [
+          "frais_service",
+          7
+        ],
+        [
+          "charges_generales",
+          3
+        ]
+      ],
+      "profil_facturation_champs": [
+        "montant_ht",
+        "periode_debut",
+        "periode_fin"
+      ],
+      "articles_exemples": [
+        "COTI.RSD",
+        "INTERBEV",
+        "F. FIXE",
+        "FRAIS FIXES",
+        "DECRO"
+      ],
+      "fournisseurs_exemples": [
+        "BBV",
+        "ETABLISSEMENTS CANU",
+        "POMMIER TREPIN COUSIN"
+      ],
+      "ape_fournisseur_top": [
+        [
+          "4632A",
+          24
+        ]
+      ],
+      "items_total": 10,
+      "validation": {
+        "profil_actif": null,
+        "decision_keep_or_exclude": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "comment": null
+      }
+    },
+    {
+      "sous_profil": "transport_et_logistique",
+      "profil_facturation": "prestation_ponctuelle",
+      "nature_charge_top": [
+        [
+          "transport",
+          6
+        ]
+      ],
+      "comptes_comptables_top": [
+        [
+          "6227",
+          3
+        ],
+        [
+          "6226",
+          3
+        ]
+      ],
+      "sous_categories_top": [
+        [
+          "frais_service",
+          5
+        ],
+        [
+          "transport",
+          1
+        ]
+      ],
+      "profil_facturation_champs": [
+        "date_prestation",
+        "description_prestation",
+        "montant_ht"
+      ],
+      "articles_exemples": [
+        "Total Port",
+        "Frais de port",
+        "Sortie viande",
+        "Sortie volaille",
+        "Transport sur ventes"
+      ],
+      "fournisseurs_exemples": [
+        "AVIGROS",
+        "TRADCO FRANCE"
+      ],
+      "ape_fournisseur_top": [
+        [
+          "4632C",
+          12
+        ]
+      ],
+      "items_total": 6,
+      "validation": {
+        "profil_actif": null,
+        "decision_keep_or_exclude": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "comment": null
+      }
+    },
+    {
+      "sous_profil": "frais_administratifs_et_bancaires",
+      "profil_facturation": "forfait_ou_frais",
+      "nature_charge_top": [
+        [
+          "frais",
+          4
+        ]
+      ],
+      "comptes_comptables_top": [
+        [
+          "6226",
+          3
+        ],
+        [
+          "6227",
+          1
+        ]
+      ],
+      "sous_categories_top": [
+        [
+          "frais_service",
+          4
+        ]
+      ],
+      "profil_facturation_champs": [
+        "date_operation",
+        "description_frais",
+        "montant_ht"
+      ],
+      "articles_exemples": [
+        "Frais Administratifs Carte Acheteur",
+        "Frais de relance",
+        "Terme 01/2025",
+        "TM HT"
+      ],
+      "fournisseurs_exemples": [
+        "LEFORT & RAIMBERT",
+        "RUNGIS MARCHE INTERNATIONAL",
+        "SENV"
+      ],
+      "ape_fournisseur_top": [
+        [
+          "6832A",
+          1
+        ],
+        [
+          "4632A",
+          1
+        ]
+      ],
+      "items_total": 4,
+      "validation": {
+        "profil_actif": null,
+        "decision_keep_or_exclude": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "comment": null
+      }
+    },
+    {
+      "sous_profil": "loyers_et_charges_locatives",
+      "profil_facturation": "loyer_et_charges",
+      "nature_charge_top": [
+        [
+          "charges_locatives",
+          3
+        ],
+        [
+          "loyer",
+          1
+        ]
+      ],
+      "comptes_comptables_top": [
+        [
+          "6132",
+          3
+        ],
+        [
+          "613",
+          1
+        ]
+      ],
+      "sous_categories_top": [
+        [
+          "locations",
+          4
+        ]
+      ],
+      "profil_facturation_champs": [
+        "charges_ht",
+        "loyer_ht",
+        "periode_debut",
+        "periode_fin"
+      ],
+      "articles_exemples": [
+        "ACOMPTE SUR CHARGES Du 01/01/2025 Au 28/02/2025",
+        "LOYER PRINCIPAL Du 01/01/2025 Au 31/03/2025 Indice 06 4TR2022",
+        "SOLDE CHARGES 2024 Du 01/01/2024 Au 31/12/2024",
+        "SOLDE CHARGES LOCATIVES 2023 Du 01/01/2023 Au 31/12/2023"
+      ],
+      "fournisseurs_exemples": [
+        "LEFORT & RAIMBERT"
+      ],
+      "ape_fournisseur_top": [],
+      "items_total": 4,
+      "validation": {
+        "profil_actif": null,
+        "decision_keep_or_exclude": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "comment": null
+      }
+    },
+    {
+      "sous_profil": "entretien_et_maintenance",
+      "profil_facturation": "intervention_ponctuelle",
+      "nature_charge_top": [
+        [
+          "entretien",
+          2
+        ]
+      ],
+      "comptes_comptables_top": [
+        [
+          "6152",
+          1
+        ],
+        [
+          "613",
+          1
+        ]
+      ],
+      "sous_categories_top": [
+        [
+          "entretien_reparation",
+          1
+        ],
+        [
+          "locations",
+          1
+        ]
+      ],
+      "profil_facturation_champs": [
+        "date_intervention",
+        "description_intervention",
+        "montant_ht"
+      ],
+      "articles_exemples": [
+        "Entretien parking",
+        "DESOURISATION DU 30/01/2024"
+      ],
+      "fournisseurs_exemples": [
+        "VALOPHIS HABITAT OFFICE PUBLIC DE LHABITAT DU VAL DE MARNE",
+        "LEFORT & RAIMBERT"
+      ],
+      "ape_fournisseur_top": [],
+      "items_total": 2,
+      "validation": {
+        "profil_actif": null,
+        "decision_keep_or_exclude": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "comment": null
+      }
+    },
+    {
+      "sous_profil": "telecom_et_abonnements",
+      "profil_facturation": "abonnement_et_consommation",
+      "nature_charge_top": [
+        [
+          "abonnement",
+          2
+        ]
+      ],
+      "comptes_comptables_top": [
+        [
+          "6226",
+          2
+        ]
+      ],
+      "sous_categories_top": [
+        [
+          "frais_service",
+          2
+        ]
+      ],
+      "profil_facturation_champs": [
+        "abonnement_ht",
+        "consommation_ht",
+        "identifiant_ligne",
+        "periode_debut",
+        "periode_fin"
+      ],
+      "articles_exemples": [
+        "ABONNEMENT TRIM. MOBITPE MOBILE du 01/04/25 au 30/06/25",
+        "ABONNEMENT TRIM. SIMS CARTE SIM du 01/04/25 au 30/06/25"
+      ],
+      "fournisseurs_exemples": [
+        "EURO-INFORMATION"
+      ],
+      "ape_fournisseur_top": [
+        [
+          "6203Z",
+          2
+        ]
+      ],
+      "items_total": 2,
+      "validation": {
+        "profil_actif": null,
+        "decision_keep_or_exclude": null,
+        "corrected_profil_facturation": null,
+        "corrected_profil_facturation_champs": null,
+        "comment": null
+      }
+    }
+  ]
+}

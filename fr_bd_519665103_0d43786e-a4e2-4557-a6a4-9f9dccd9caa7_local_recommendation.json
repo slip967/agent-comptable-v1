@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "engine_file": "C:\\Users\\Dell\\Downloads\\scripts-master\\scripts-master\\05_generated_entries.py",
+    "invoice_id": "fr_bd_519665103:0d43786e-a4e2-4557-a6a4-9f9dccd9caa7",
+    "client_siren": "519665103",
+    "client_ape": "4722Z",
+    "supplier_ape": "4632A",
+    "line_items_count": 1
+  },
+  "external_charge_recommendation": {
+    "source": null,
+    "accounts": [],
+    "details": {}
+  },
+  "product_metier_recommendation": {
+    "source": "product_metier_recommendation_auto",
+    "accounts": [
+      {
+        "account_number": "6011",
+        "account_description": "Reco produit metier - boucherie/matiere_premiere",
+        "account_keywords": "BASSE COTE BOEUF"
+      }
+    ],
+    "details": {
+      "classification": "produit_metier",
+      "line_items_considered": 1,
+      "decision": "auto_ok",
+      "alerts": [],
+      "preferred_metiers": [
+        "boucherie",
+        "boulangerie"
+      ],
+      "metier_hint_used": "boucherie",
+      "predicted_metiers": [
+        "boucherie"
+      ],
+      "recommended_accounts": [
+        {
+          "account_number": "6011",
+          "account_description": "Reco produit metier - boucherie/matiere_premiere",
+          "account_keywords": "BASSE COTE BOEUF"
+        }
+      ],
+      "line_matches": [
+        {
+          "line_index": 1,
+          "line_text": "BASSE COTE BOEUF",
+          "tva_hint": 5.5,
+          "predicted_account": "6011",
+          "predicted_metier": "boucherie",
+          "predicted_categorie": "exploitation_metier",
+          "predicted_sous_categorie": "matiere_premiere",
+          "predicted_score": 100.0,
+          "recommendation_decision": "auto_ok",
+          "recommendation_alerts": [],
+          "score_gap_top2": 87.5,
+          "top1_reason": "match exact article_source, source facture reelle, bonus metier, bonus TVA, bonus ape_context client, bonus meme invoice_form source, bonus metier prefere",
+          "top3_accounts": [
+            "6011",
+            "60610000",
+            "6061"
+          ],
+          "top3_metiers": [
+            "boucherie",
+            "boulangerie",
+            "boulangerie"
+          ],
+          "top3_articles": [
+            "BASSE COTE BOEUF",
+            "Semoule d'orge Fine Trad 1kg",
+            "OEUFS MOYENS BLANCS 10*30"
+          ]
+        }
+      ]
+    }
+  },
+  "final_line_item_recommendation": {
+    "source": "product_metier_recommendation_auto",
+    "accounts": [
+      {
+        "account_number": "6011",
+        "account_description": "Reco produit metier - boucherie/matiere_premiere",
+        "account_keywords": "BASSE COTE BOEUF"
+      }
+    ],
+    "details": {
+      "classification": "produit_metier",
+      "line_items_considered": 1,
+      "decision": "auto_ok",
+      "alerts": [],
+      "preferred_metiers": [
+        "boucherie",
+        "boulangerie"
+      ],
+      "metier_hint_used": "boucherie",
+      "predicted_metiers": [
+        "boucherie"
+      ],
+      "recommended_accounts": [
+        {
+          "account_number": "6011",
+          "account_description": "Reco produit metier - boucherie/matiere_premiere",
+          "account_keywords": "BASSE COTE BOEUF"
+        }
+      ],
+      "line_matches": [
+        {
+          "line_index": 1,
+          "line_text": "BASSE COTE BOEUF",
+          "tva_hint": 5.5,
+          "predicted_account": "6011",
+          "predicted_metier": "boucherie",
+          "predicted_categorie": "exploitation_metier",
+          "predicted_sous_categorie": "matiere_premiere",
+          "predicted_score": 100.0,
+          "recommendation_decision": "auto_ok",
+          "recommendation_alerts": [],
+          "score_gap_top2": 87.5,
+          "top1_reason": "match exact article_source, source facture reelle, bonus metier, bonus TVA, bonus ape_context client, bonus meme invoice_form source, bonus metier prefere",
+          "top3_accounts": [
+            "6011",
+            "60610000",
+            "6061"
+          ],
+          "top3_metiers": [
+            "boucherie",
+            "boulangerie",
+            "boulangerie"
+          ],
+          "top3_articles": [
+            "BASSE COTE BOEUF",
+            "Semoule d'orge Fine Trad 1kg",
+            "OEUFS MOYENS BLANCS 10*30"
+          ]
+        }
+      ]
+    }
+  }
+}

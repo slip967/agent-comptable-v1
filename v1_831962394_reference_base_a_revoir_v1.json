@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "generated_at": "2026-04-13T09:23:45.470831Z",
+    "db_factures": "abt3",
+    "partition_prefix": "fr_bd_831962394",
+    "total_unique_references": 46,
+    "stats": {
+      "line_items_exploitation_metier": 49
+    }
+  },
+  "category": "a_revoir",
+  "items": []
+}
