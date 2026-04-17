@@ -23,6 +23,10 @@ export function getHealth() {
   return requestJson("/health", { method: "GET" });
 }
 
+export function getMemoryStats() {
+  return requestJson("/memory/stats", { method: "GET" });
+}
+
 export function getAnalysisHistory(limit = 12) {
   return requestJson(`/analysis/history?limit=${limit}`, { method: "GET" });
 }

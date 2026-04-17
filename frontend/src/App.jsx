@@ -4,6 +4,7 @@ import {
   askAssistant,
   getAnalysisHistory,
   getHealth,
+  getMemoryStats,
   getValidationQueue,
   recommendLine,
   sendFeedback,
@@ -22,6 +23,19 @@ const decisionLabels = {
   validation_humaine: "Validation humaine",
   rejeter: "Rejeter",
 };
+
+const coherenceLabels = {
+  coherente: "Coherente",
+  incoherente: "Incoherente",
+  a_verifier: "A verifier",
+};
+
+const historyFilters = [
+  { id: "all", label: "Tout" },
+  { id: "auto_ok", label: "Auto OK" },
+  { id: "validation_humaine", label: "A valider" },
+  { id: "rejeter", label: "Rejetes" },
+];
 
 const assistantActionLabels = {
   analyser: "Action suggeree : lancer l'analyse",
@@ -79,6 +93,15 @@ function buildEditDraft(decision) {
   };
 }
 
+function buildEditDraftFromCandidate(candidate) {
+  return {
+    compte_comptable: candidate?.compte_comptable || "",
+    categorie: candidate?.categorie || "",
+    sous_categorie: candidate?.sous_categorie || "",
+    commentaire: "",
+  };
+}
+
 function buildDecisionFromRecord(record) {
   return {
     article_source: record.article_source,
@@ -107,6 +130,31 @@ function formatTimestamp(value) {
   }
 }
 
+function matchesInsightQuery(item, query) {
+  const normalizedQuery = query.trim().toLowerCase();
+  if (!normalizedQuery) {
+    return true;
+  }
+
+  const haystack = [
+    item.article_source,
+    item.metier_hint,
+    item.compte_comptable,
+    item.categorie,
+    item.sous_categorie,
+    item.explication,
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+
+  return haystack.includes(normalizedQuery);
+}
+
+function buildCandidateKey(candidate, index) {
+  return `${candidate.article_source_match}-${candidate.compte_comptable}-${index}`;
+}
+
 function getAssistantQuickPrompts(result, editMode) {
   if (editMode) {
     return [
@@ -133,6 +181,7 @@ function getAssistantQuickPrompts(result, editMode) {
 
 export default function App() {
   const [health, setHealth] = useState(null);
+  const [memoryStats, setMemoryStats] = useState(null);
   const [healthError, setHealthError] = useState("");
   const [form, setForm] = useState(initialForm);
   const [result, setResult] = useState(null);
@@ -145,6 +194,10 @@ export default function App() {
   const [feedbackStatus, setFeedbackStatus] = useState("");
   const [editMode, setEditMode] = useState(false);
   const [editDraft, setEditDraft] = useState(() => buildEditDraft(null));
+  const [expertMode, setExpertMode] = useState(false);
+  const [selectedCandidateKey, setSelectedCandidateKey] = useState(null);
+  const [insightQuery, setInsightQuery] = useState("");
+  const [historyFilter, setHistoryFilter] = useState("all");
   const [assistantInput, setAssistantInput] = useState("");
   const [assistantMessages, setAssistantMessages] = useState([]);
   const [assistantLoading, setAssistantLoading] = useState(false);
@@ -180,6 +233,9 @@ export default function App() {
   useEffect(() => {
     setEditDraft(buildEditDraft(result));
     setEditMode(false);
+    setSelectedCandidateKey(
+      result?.candidats?.length ? buildCandidateKey(result.candidats[0], 0) : null,
+    );
   }, [result]);
 
   useEffect(() => {
@@ -208,14 +264,16 @@ export default function App() {
     setInsightsLoading(true);
 
     try {
-      const [historyPayload, queuePayload] = await Promise.all([
+      const [historyPayload, queuePayload, statsPayload] = await Promise.all([
         getAnalysisHistory(),
         getValidationQueue(),
+        getMemoryStats(),
       ]);
 
       startTransition(() => {
         setAnalysisHistory(historyPayload.items || []);
         setValidationQueue(queuePayload.items || []);
+        setMemoryStats(statsPayload);
         setInsightsError("");
       });
     } catch (apiError) {
@@ -294,6 +352,20 @@ export default function App() {
     setEditMode(true);
     setFeedbackStatus("Mode modification ouvert. Ajuste les champs puis enregistre.");
     setAssistantStatus("Edition en cours");
+    setAssistantOpen(true);
+  }
+
+  function useSelectedCandidateInEdit() {
+    if (!selectedCandidate) {
+      return;
+    }
+
+    setEditDraft(buildEditDraftFromCandidate(selectedCandidate));
+    setEditMode(true);
+    setFeedbackStatus(
+      "Le candidat selectionne a ete copie dans le mode Modifier. Tu peux maintenant ajuster avant d'enregistrer.",
+    );
+    setAssistantStatus("Edition pre-remplie");
     setAssistantOpen(true);
   }
 
@@ -498,6 +570,17 @@ export default function App() {
     editDraft.compte_comptable.trim().length > 0 ||
     editDraft.categorie.trim().length > 0 ||
     editDraft.sous_categorie.trim().length > 0;
+  const filteredHistory = analysisHistory.filter(
+    (item) =>
+      (historyFilter === "all" || item.decision === historyFilter) &&
+      matchesInsightQuery(item, insightQuery),
+  );
+  const filteredQueue = validationQueue.filter((item) => matchesInsightQuery(item, insightQuery));
+  const dashboardAutoOkCount = analysisHistory.filter((item) => item.decision === "auto_ok").length;
+  const selectedCandidate =
+    result?.candidats?.find(
+      (candidate, index) => buildCandidateKey(candidate, index) === selectedCandidateKey,
+    ) || null;
 
   return (
     <main className="app-shell">
@@ -754,28 +837,181 @@ export default function App() {
               ) : null}
 
               <div className="candidate-list">
-                <div className="panel-heading compact">
-                  <p className="eyebrow">Top 3</p>
-                  <h3>Candidats retournes par le moteur</h3>
+                <div className="candidate-toolbar">
+                  <div className="panel-heading compact">
+                    <p className="eyebrow">Top 3</p>
+                    <h3>Candidats retournes par le moteur</h3>
+                  </div>
+
+                  <button
+                    className={`filter-chip ${expertMode ? "filter-chip-active" : ""}`}
+                    type="button"
+                    onClick={() => setExpertMode((current) => !current)}
+                  >
+                    {expertMode ? "Mode expert actif" : "Activer le mode expert"}
+                  </button>
                 </div>
 
                 {result.candidats.length > 0 ? (
-                  result.candidats.map((candidate, index) => (
-                    <article
-                      className="candidate-card"
-                      key={`${candidate.article_source_match}-${index}`}
-                    >
-                      <div className="candidate-topline">
-                        <strong>{candidate.compte_comptable}</strong>
-                        <span>{formatScore(candidate.score_confiance)}</span>
-                      </div>
-                      <p className="candidate-title">{candidate.article_source_match}</p>
-                      <p className="candidate-meta">
-                        {candidate.categorie} / {candidate.sous_categorie} / {candidate.metier}
-                      </p>
-                      <p className="candidate-reason">{candidate.raison_match}</p>
-                    </article>
-                  ))
+                  <div className="candidate-layout">
+                    <div className="candidate-cards">
+                      {result.candidats.map((candidate, index) => {
+                        const candidateKey = buildCandidateKey(candidate, index);
+                        const isSelected = candidateKey === selectedCandidateKey;
+
+                        return (
+                          <article
+                            className={`candidate-card ${
+                              result.compte_comptable &&
+                              candidate.compte_comptable === result.compte_comptable
+                                ? "candidate-card-selected"
+                                : ""
+                            } ${isSelected ? "candidate-card-focused" : ""}`}
+                            key={candidateKey}
+                          >
+                            <div className="candidate-topline">
+                              <div className="candidate-topline-left">
+                                <span className="candidate-rank">#{index + 1}</span>
+                                <strong>{candidate.compte_comptable}</strong>
+                              </div>
+                              <span>{formatScore(candidate.score_confiance)}</span>
+                            </div>
+                            <p className="candidate-title">{candidate.article_source_match}</p>
+                            <p className="candidate-meta">
+                              {candidate.categorie} / {candidate.sous_categorie} / {candidate.metier}
+                            </p>
+                            <div className="candidate-pill-row">
+                              <span
+                                className={`decision-chip decision-${candidate.decision || "validation_humaine"}`}
+                              >
+                                {decisionLabels[candidate.decision] || candidate.decision}
+                              </span>
+                              <span className="candidate-mini-pill">
+                                TVA{" "}
+                                {coherenceLabels[candidate.tva_coherence] || candidate.tva_coherence}
+                              </span>
+                              <span className="candidate-mini-pill">
+                                Metier{" "}
+                                {coherenceLabels[candidate.metier_coherence] ||
+                                  candidate.metier_coherence}
+                              </span>
+                            </div>
+
+                            <button
+                              className="candidate-toggle"
+                              type="button"
+                              onClick={() => setSelectedCandidateKey(candidateKey)}
+                            >
+                              {isSelected ? "Panneau ouvert" : "Voir dans le panneau"}
+                            </button>
+                          </article>
+                        );
+                      })}
+                    </div>
+
+                    {selectedCandidate ? (
+                      <aside className="candidate-side-panel">
+                        <div className="candidate-side-header">
+                          <div>
+                            <p className="eyebrow">Candidat actif</p>
+                            <h4>{selectedCandidate.article_source_match}</h4>
+                          </div>
+                          <span
+                            className={`decision-chip decision-${
+                              selectedCandidate.decision || "validation_humaine"
+                            }`}
+                          >
+                            {decisionLabels[selectedCandidate.decision] ||
+                              selectedCandidate.decision}
+                          </span>
+                        </div>
+
+                        <div className="candidate-detail-grid">
+                          <article className="candidate-detail-card">
+                            <span>Compte</span>
+                            <strong>{selectedCandidate.compte_comptable}</strong>
+                          </article>
+                          <article className="candidate-detail-card">
+                            <span>Score</span>
+                            <strong>{formatScore(selectedCandidate.score_confiance)}</strong>
+                          </article>
+                          <article className="candidate-detail-card">
+                            <span>TVA</span>
+                            <strong>
+                              {coherenceLabels[selectedCandidate.tva_coherence] ||
+                                selectedCandidate.tva_coherence}
+                            </strong>
+                          </article>
+                          <article className="candidate-detail-card">
+                            <span>Metier</span>
+                            <strong>
+                              {coherenceLabels[selectedCandidate.metier_coherence] ||
+                                selectedCandidate.metier_coherence}
+                            </strong>
+                          </article>
+                        </div>
+
+                        <div className="candidate-side-section">
+                          <span className="candidate-alerts-label">Classement</span>
+                          <p className="candidate-side-copy">
+                            {selectedCandidate.categorie} / {selectedCandidate.sous_categorie} /{" "}
+                            {selectedCandidate.metier}
+                          </p>
+                        </div>
+
+                        <div className="candidate-side-section">
+                          <span className="candidate-alerts-label">Raison de match</span>
+                          <p className="candidate-side-copy">{selectedCandidate.raison_match}</p>
+                        </div>
+
+                        <div className="candidate-side-actions">
+                          <button
+                            className="secondary-button"
+                            type="button"
+                            onClick={useSelectedCandidateInEdit}
+                          >
+                            Utiliser ce candidat dans Modifier
+                          </button>
+                        </div>
+
+                        <div className="candidate-side-section">
+                          <span className="candidate-alerts-label">Alertes</span>
+                          {selectedCandidate.alertes?.length ? (
+                            <div className="candidate-alert-list">
+                              {selectedCandidate.alertes.map((alert, alertIndex) => (
+                                <span className="candidate-alert-pill" key={`${alert}-${alertIndex}`}>
+                                  {alert}
+                                </span>
+                              ))}
+                            </div>
+                          ) : (
+                            <div className="candidate-alert-empty">
+                              Aucune alerte sur ce candidat.
+                            </div>
+                          )}
+                        </div>
+
+                        {expertMode ? (
+                          <div className="candidate-side-section">
+                            <span className="candidate-alerts-label">Pieces sources</span>
+                            {selectedCandidate.source_invoice_ids?.length ? (
+                              <div className="candidate-source-list">
+                                {selectedCandidate.source_invoice_ids.map((sourceId) => (
+                                  <code key={sourceId} className="candidate-source-pill">
+                                    {sourceId}
+                                  </code>
+                                ))}
+                              </div>
+                            ) : (
+                              <div className="candidate-alert-empty">
+                                Aucune piece source rattachee.
+                              </div>
+                            )}
+                          </div>
+                        ) : null}
+                      </aside>
+                    ) : null}
+                  </div>
                 ) : (
                   <div className="candidate-empty-state">
                     La reponse actuelle provient de la memoire des validations humaines. Aucun
@@ -795,6 +1031,64 @@ export default function App() {
         </section>
       </section>
 
+      <section className="panel command-panel">
+        <div className="command-bar">
+          <label className="field search-field">
+            <span>Recherche rapide</span>
+            <input
+              type="text"
+              value={insightQuery}
+              onChange={(event) => setInsightQuery(event.target.value)}
+              placeholder="Ex: uber, 6281, electricite, frais fixes..."
+            />
+          </label>
+
+          <div className="filter-group">
+            <span className="filter-label">Historique</span>
+            <div className="filter-chip-row">
+              {historyFilters.map((filter) => (
+                <button
+                  key={filter.id}
+                  className={`filter-chip ${historyFilter === filter.id ? "filter-chip-active" : ""}`}
+                  type="button"
+                  onClick={() => setHistoryFilter(filter.id)}
+                >
+                  {filter.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <button
+            className="secondary-button refresh-button"
+            type="button"
+            onClick={() => void refreshInsights()}
+            disabled={insightsLoading}
+          >
+            {insightsLoading ? "Rafraichissement..." : "Rafraichir"}
+          </button>
+        </div>
+
+        <div className="mini-stats-grid">
+          <article className="mini-stat-card accent-blue">
+            <span>Historique charge</span>
+            <strong>{analysisHistory.length}</strong>
+          </article>
+          <article className="mini-stat-card accent-orange">
+            <span>A valider</span>
+            <strong>{validationQueue.length}</strong>
+          </article>
+          <article className="mini-stat-card accent-green">
+            <span>Auto OK recents</span>
+            <strong>{dashboardAutoOkCount}</strong>
+          </article>
+          <article className="mini-stat-card accent-amber">
+            <span>Memoire reutilisable</span>
+            <strong>{memoryStats?.reusable_records ?? "-"}</strong>
+          </article>
+        </div>
+      </section>
+
       <section className="insights-grid">
         <section className="panel insight-panel">
           <div className="panel-heading compact">
@@ -805,8 +1099,8 @@ export default function App() {
           {insightsError ? <p className="panel-error">{insightsError}</p> : null}
 
           <div className="insight-list">
-            {analysisHistory.length > 0 ? (
-              analysisHistory.map((item, index) => (
+            {filteredHistory.length > 0 ? (
+              filteredHistory.map((item, index) => (
                 <button
                   className="insight-card"
                   type="button"
@@ -828,7 +1122,7 @@ export default function App() {
               <div className="candidate-empty-state">
                 {insightsLoading
                   ? "Chargement de l'historique..."
-                  : "Aucune analyse enregistree pour le moment."}
+                  : "Aucune analyse ne correspond au filtre actuel."}
               </div>
             )}
           </div>
@@ -841,8 +1135,8 @@ export default function App() {
           </div>
 
           <div className="insight-list">
-            {validationQueue.length > 0 ? (
-              validationQueue.map((item, index) => (
+            {filteredQueue.length > 0 ? (
+              filteredQueue.map((item, index) => (
                 <button
                   className="insight-card insight-card-queue"
                   type="button"
@@ -863,7 +1157,7 @@ export default function App() {
               <div className="candidate-empty-state">
                 {insightsLoading
                   ? "Chargement de la file..."
-                  : "La file de validation humaine est vide pour l'instant."}
+                  : "Aucune ligne de la file ne correspond a la recherche actuelle."}
               </div>
             )}
           </div>
