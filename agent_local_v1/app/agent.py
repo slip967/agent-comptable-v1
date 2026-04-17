@@ -11,7 +11,12 @@ from .config import (
     OPENROUTER_APP_URL,
     OPENROUTER_MODEL,
 )
-from .schemas import AccountingDecision, CandidateLine
+from .schemas import (
+    AccountingDecision,
+    CandidateLine,
+    FrontendAssistantInput,
+    FrontendAssistantReply,
+)
 
 
 MIN_CONFIDENCE_FOR_PROPOSED_ACCOUNT = 20.0
@@ -24,6 +29,22 @@ SYSTEM_PROMPT = (
     "Si le doute est fort, retourne decision='validation_humaine'. "
     "Si aucun candidat n'est credible, retourne decision='rejeter'. "
     "Si tu choisis un candidat, recopie exactement ses champs categorie, sous_categorie, compte_comptable et score_confiance. "
+    "Reponds uniquement en JSON valide."
+)
+
+FRONTEND_ASSISTANT_PROMPT = (
+    "Tu es l'assistant IA integre a une interface comptable React. "
+    "Tu aides l'utilisateur a comprendre le resultat, a savoir quoi faire ensuite, "
+    "et a utiliser correctement l'ecran. "
+    "Tu reponds en francais, de facon courte, concrete et rassurante. "
+    "Tu ne reveles jamais de cle API. "
+    "Tu ne dois pas inventer de compte comptable absent du contexte donne. "
+    "Si une decision existe deja, explique-la simplement en t'appuyant sur le compte, "
+    "la categorie, la sous-categorie, le score, la decision et le premier candidat si disponible. "
+    "Si aucune analyse n'existe encore, pousse l'utilisateur a lancer l'analyse. "
+    "Si l'utilisateur demande quoi faire, recommande une seule prochaine action prioritaire. "
+    "Si la decision est validation_humaine, aide a comparer ou corriger sans inventer. "
+    "Si l'utilisateur semble etre en mode modification, oriente-le vers les champs a corriger. "
     "Reponds uniquement en JSON valide."
 )
 
@@ -214,3 +235,158 @@ def run_agent(
         return _normalize_llm_decision(article_source, parsed, candidates)
     except Exception:
         return _fallback_decision(article_source, candidates)
+
+
+def _fallback_frontend_assistant(payload: FrontendAssistantInput) -> FrontendAssistantReply:
+    user_message = (payload.user_message or "").strip().lower()
+
+    if payload.current_decision is None:
+        article_label = payload.article_source or "la ligne en cours"
+        if "mode d'emploi" in user_message:
+            return FrontendAssistantReply(
+                answer=(
+                    "Commence par remplir le libelle de facture. Si tu connais deja le metier ou la TVA, "
+                    "ajoute-les aussi. Ensuite lance l'analyse pour obtenir une proposition comptable."
+                ),
+                suggested_action="analyser",
+            )
+        if "remplir" in user_message:
+            return FrontendAssistantReply(
+                answer=(
+                    "Le champ le plus important est le libelle exact de la ligne. Le metier et la TVA "
+                    "servent a fiabiliser le score quand ils sont connus."
+                ),
+                suggested_action="analyser",
+            )
+        if "premier test" in user_message:
+            return FrontendAssistantReply(
+                answer=(
+                    "Tu peux tester avec un libelle simple comme 'Electricite mars 2025' ou une ligne "
+                    "metier deja connue, puis verifier la decision dans le panneau resultat."
+                ),
+                suggested_action="analyser",
+            )
+        return FrontendAssistantReply(
+            answer=(
+                f"Je peux t'aider a lire la ligne '{article_label}', mais il faut d'abord lancer "
+                "l'analyse pour que je m'appuie sur une decision comptable concrete."
+            ),
+            suggested_action="analyser",
+        )
+
+    decision = payload.current_decision
+    best_candidate = decision.candidats[0] if decision.candidats else None
+
+    if "score" in user_message:
+        if best_candidate is not None:
+            return FrontendAssistantReply(
+                answer=(
+                    f"Le score vient surtout du premier candidat '{best_candidate.article_source_match}' "
+                    f"avec la raison de match suivante: {best_candidate.raison_match}. "
+                    "Le score mesure la qualite de la correspondance, pas a lui seul le droit d'automatiser."
+                ),
+                suggested_action="modifier" if decision.decision == "validation_humaine" else "valider",
+            )
+        return FrontendAssistantReply(
+            answer=(
+                "Le score indique la force du rapprochement entre le libelle et la reference. "
+                "La decision finale depend aussi des garde-fous metier."
+            ),
+            suggested_action="neutre",
+        )
+
+    if "modifier" in user_message or "corrig" in user_message:
+        return FrontendAssistantReply(
+            answer=(
+                "Ouvre le mode Modifier si tu veux ajuster le compte, la categorie ou la sous-categorie finale. "
+                "Garde ce qui est deja juste, et change seulement le champ qui ne colle pas au document reel."
+            ),
+            suggested_action="modifier",
+        )
+
+    if "etape" in user_message or "faire" in user_message:
+        if decision.decision == "auto_ok":
+            return FrontendAssistantReply(
+                answer=(
+                    "La prochaine etape prioritaire est de valider la ligne si le libelle et le compte "
+                    "te paraissent corrects a la lecture de la facture."
+                ),
+                suggested_action="valider",
+            )
+        if decision.decision == "validation_humaine":
+            return FrontendAssistantReply(
+                answer=(
+                    "La prochaine etape est d'ouvrir Modifier, puis de confirmer ou corriger le compte final "
+                    "en t'aidant du top 3 et du contexte metier."
+                ),
+                suggested_action="modifier",
+            )
+        return FrontendAssistantReply(
+            answer=(
+                "La proposition est trop fragile. Le plus utile maintenant est de corriger la ligne ou de la rejeter "
+                "si aucune reference ne correspond vraiment."
+            ),
+            suggested_action="modifier",
+        )
+
+    if decision.decision == "auto_ok":
+        return FrontendAssistantReply(
+            answer=(
+                "La recommandation actuelle est stable: compte, categorie et score sont deja "
+                "coherents. Tu peux valider si le libelle correspond bien a la facture lue."
+            ),
+            suggested_action="valider",
+        )
+
+    if decision.decision == "validation_humaine":
+        return FrontendAssistantReply(
+            answer=(
+                "Le moteur prefere une validation humaine. Relis le libelle, compare le premier candidat "
+                "aux autres, puis ouvre Modifier pour confirmer ou corriger le compte selon le contexte reel."
+            ),
+            suggested_action="modifier",
+        )
+
+    return FrontendAssistantReply(
+        answer=(
+            "La recommandation a ete rejetee ou reste trop fragile. Le mieux est de corriger "
+            "manuellement ou de relancer l'analyse avec plus de contexte."
+        ),
+        suggested_action="modifier",
+    )
+
+
+def run_frontend_assistant(payload: FrontendAssistantInput) -> FrontendAssistantReply:
+    client = _build_client()
+    if client is None:
+        return _fallback_frontend_assistant(payload)
+
+    request_payload = {
+        "user_message": payload.user_message,
+        "article_source": payload.article_source,
+        "metier_hint": payload.metier_hint,
+        "tva_hint": payload.tva_hint,
+        "current_decision": payload.current_decision.model_dump() if payload.current_decision else None,
+    }
+
+    try:
+        response = client.chat.completions.create(
+            model=OPENROUTER_MODEL,
+            messages=[
+                {"role": "system", "content": FRONTEND_ASSISTANT_PROMPT},
+                {"role": "user", "content": json.dumps(request_payload, ensure_ascii=False)},
+            ],
+            response_format={
+                "type": "json_schema",
+                "json_schema": {
+                    "name": "frontend_assistant_reply",
+                    "strict": True,
+                    "schema": FrontendAssistantReply.model_json_schema(),
+                },
+            },
+            temperature=0.2,
+        )
+        content = response.choices[0].message.content or "{}"
+        return FrontendAssistantReply.model_validate_json(content)
+    except Exception:
+        return _fallback_frontend_assistant(payload)

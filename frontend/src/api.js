@@ -23,6 +23,14 @@ export function getHealth() {
   return requestJson("/health", { method: "GET" });
 }
 
+export function getAnalysisHistory(limit = 12) {
+  return requestJson(`/analysis/history?limit=${limit}`, { method: "GET" });
+}
+
+export function getValidationQueue(limit = 12) {
+  return requestJson(`/validation-queue?limit=${limit}`, { method: "GET" });
+}
+
 export function recommendLine(payload) {
   return requestJson("/recommend", {
     method: "POST",
@@ -32,6 +40,13 @@ export function recommendLine(payload) {
 
 export function sendFeedback(payload) {
   return requestJson("/feedback", {
+    method: "POST",
+    body: JSON.stringify(payload),
+  });
+}
+
+export function askAssistant(payload) {
+  return requestJson("/assistant", {
     method: "POST",
     body: JSON.stringify(payload),
   });

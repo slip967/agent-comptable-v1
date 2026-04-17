@@ -57,6 +57,7 @@ class HumanValidationInput(BaseModel):
 
 class HumanValidationRecord(HumanValidationInput):
     article_source_normalized: str
+    lookup_key: str
     created_at: str
 
 
@@ -64,3 +65,44 @@ class MemoryStats(BaseModel):
     memory_file: str
     total_records: int
     reusable_records: int
+
+
+class AnalysisHistoryRecord(BaseModel):
+    article_source: str
+    article_source_normalized: str
+    lookup_key: str
+    metier_hint: str | None = None
+    tva_hint: float | None = None
+    include_charges: bool = True
+    categorie: str | None = None
+    sous_categorie: str | None = None
+    compte_comptable: str | None = None
+    score_confiance: float = 0.0
+    decision: Literal["auto_ok", "validation_humaine", "rejeter"] = "validation_humaine"
+    explication: str
+    source: Literal["engine", "memory"] = "engine"
+    created_at: str
+
+
+class AnalysisHistoryResponse(BaseModel):
+    items: list[AnalysisHistoryRecord] = Field(default_factory=list)
+
+
+class ValidationQueueResponse(BaseModel):
+    items: list[AnalysisHistoryRecord] = Field(default_factory=list)
+
+
+class FrontendAssistantInput(BaseModel):
+    user_message: str = Field(..., description="Message libre saisi dans l'assistant frontend")
+    article_source: str | None = Field(default=None, description="Libelle actuellement saisi")
+    metier_hint: str | None = Field(default=None, description="Metier en contexte")
+    tva_hint: float | None = Field(default=None, description="TVA en contexte")
+    current_decision: AccountingDecision | None = Field(
+        default=None,
+        description="Derniere decision retournee par /recommend si disponible",
+    )
+
+
+class FrontendAssistantReply(BaseModel):
+    answer: str
+    suggested_action: Literal["analyser", "valider", "modifier", "rejeter", "neutre"] = "neutre"
