@@ -18,6 +18,8 @@ const initialForm = {
   include_charges: true,
 };
 
+const UI_MODE_STORAGE_KEY = "agent-comptable-ui-mode";
+
 const decisionLabels = {
   auto_ok: "Auto OK",
   validation_humaine: "Validation humaine",
@@ -179,6 +181,15 @@ function getAssistantQuickPrompts(result, editMode) {
   ];
 }
 
+function getInitialUiMode() {
+  if (typeof window === "undefined") {
+    return "expert";
+  }
+
+  const storedValue = window.localStorage.getItem(UI_MODE_STORAGE_KEY);
+  return storedValue === "simple" ? "simple" : "expert";
+}
+
 export default function App() {
   const [health, setHealth] = useState(null);
   const [memoryStats, setMemoryStats] = useState(null);
@@ -194,7 +205,7 @@ export default function App() {
   const [feedbackStatus, setFeedbackStatus] = useState("");
   const [editMode, setEditMode] = useState(false);
   const [editDraft, setEditDraft] = useState(() => buildEditDraft(null));
-  const [expertMode, setExpertMode] = useState(false);
+  const [uiMode, setUiMode] = useState(getInitialUiMode);
   const [selectedCandidateKey, setSelectedCandidateKey] = useState(null);
   const [insightQuery, setInsightQuery] = useState("");
   const [historyFilter, setHistoryFilter] = useState("all");
@@ -250,6 +261,13 @@ export default function App() {
   useEffect(() => {
     void refreshInsights();
   }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+    window.localStorage.setItem(UI_MODE_STORAGE_KEY, uiMode);
+  }, [uiMode]);
 
   function buildRecommendPayload() {
     return {
@@ -581,6 +599,7 @@ export default function App() {
     result?.candidats?.find(
       (candidate, index) => buildCandidateKey(candidate, index) === selectedCandidateKey,
     ) || null;
+  const isExpertMode = uiMode === "expert";
 
   return (
     <main className="app-shell">
@@ -591,6 +610,29 @@ export default function App() {
           On analyse une ligne de facture, on affiche la recommandation comptable, puis on peut
           enregistrer une validation humaine sans jamais exposer la cle API dans le navigateur.
         </p>
+
+        <div className="mode-toggle-row">
+          <div className="mode-toggle-copy">
+            <span className="status-label">Niveau de detail</span>
+            <strong>{isExpertMode ? "Mode expert" : "Mode simple"}</strong>
+          </div>
+          <div className="mode-toggle-buttons">
+            <button
+              className={`filter-chip ${!isExpertMode ? "filter-chip-active" : ""}`}
+              type="button"
+              onClick={() => setUiMode("simple")}
+            >
+              Simple
+            </button>
+            <button
+              className={`filter-chip ${isExpertMode ? "filter-chip-active" : ""}`}
+              type="button"
+              onClick={() => setUiMode("expert")}
+            >
+              Expert
+            </button>
+          </div>
+        </div>
 
         <div className="status-row">
           <div className="status-pill">
@@ -836,20 +878,16 @@ export default function App() {
                 </div>
               ) : null}
 
-              <div className="candidate-list">
+              {isExpertMode ? (
+                <div className="candidate-list">
                 <div className="candidate-toolbar">
                   <div className="panel-heading compact">
                     <p className="eyebrow">Top 3</p>
                     <h3>Candidats retournes par le moteur</h3>
                   </div>
-
-                  <button
-                    className={`filter-chip ${expertMode ? "filter-chip-active" : ""}`}
-                    type="button"
-                    onClick={() => setExpertMode((current) => !current)}
-                  >
-                    {expertMode ? "Mode expert actif" : "Activer le mode expert"}
-                  </button>
+                  <p className="candidate-toolbar-note">
+                    Compare les candidats, les alertes et les raisons de match.
+                  </p>
                 </div>
 
                 {result.candidats.length > 0 ? (
@@ -988,10 +1026,10 @@ export default function App() {
                             <div className="candidate-alert-empty">
                               Aucune alerte sur ce candidat.
                             </div>
-                          )}
-                        </div>
+                            )}
+                          </div>
 
-                        {expertMode ? (
+                        {isExpertMode ? (
                           <div className="candidate-side-section">
                             <span className="candidate-alerts-label">Pieces sources</span>
                             {selectedCandidate.source_invoice_ids?.length ? (
@@ -1018,7 +1056,13 @@ export default function App() {
                     candidat moteur n'est affiche pour ce cas.
                   </div>
                 )}
-              </div>
+                </div>
+              ) : (
+                <div className="candidate-empty-state simple-mode-note">
+                  Le mode simple masque le Top 3 et les details moteurs. Passe en mode expert pour
+                  comparer les candidats et lire les alertes.
+                </div>
+              )}
             </>
           ) : (
             <div className="empty-state">
@@ -1031,65 +1075,67 @@ export default function App() {
         </section>
       </section>
 
-      <section className="panel command-panel">
-        <div className="command-bar">
-          <label className="field search-field">
-            <span>Recherche rapide</span>
-            <input
-              type="text"
-              value={insightQuery}
-              onChange={(event) => setInsightQuery(event.target.value)}
-              placeholder="Ex: uber, 6281, electricite, frais fixes..."
-            />
-          </label>
+      {isExpertMode ? (
+        <>
+          <section className="panel command-panel">
+            <div className="command-bar">
+              <label className="field search-field">
+                <span>Recherche rapide</span>
+                <input
+                  type="text"
+                  value={insightQuery}
+                  onChange={(event) => setInsightQuery(event.target.value)}
+                  placeholder="Ex: uber, 6281, electricite, frais fixes..."
+                />
+              </label>
 
-          <div className="filter-group">
-            <span className="filter-label">Historique</span>
-            <div className="filter-chip-row">
-              {historyFilters.map((filter) => (
-                <button
-                  key={filter.id}
-                  className={`filter-chip ${historyFilter === filter.id ? "filter-chip-active" : ""}`}
-                  type="button"
-                  onClick={() => setHistoryFilter(filter.id)}
-                >
-                  {filter.label}
-                </button>
-              ))}
+              <div className="filter-group">
+                <span className="filter-label">Historique</span>
+                <div className="filter-chip-row">
+                  {historyFilters.map((filter) => (
+                    <button
+                      key={filter.id}
+                      className={`filter-chip ${historyFilter === filter.id ? "filter-chip-active" : ""}`}
+                      type="button"
+                      onClick={() => setHistoryFilter(filter.id)}
+                    >
+                      {filter.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <button
+                className="secondary-button refresh-button"
+                type="button"
+                onClick={() => void refreshInsights()}
+                disabled={insightsLoading}
+              >
+                {insightsLoading ? "Rafraichissement..." : "Rafraichir"}
+              </button>
             </div>
-          </div>
 
-          <button
-            className="secondary-button refresh-button"
-            type="button"
-            onClick={() => void refreshInsights()}
-            disabled={insightsLoading}
-          >
-            {insightsLoading ? "Rafraichissement..." : "Rafraichir"}
-          </button>
-        </div>
+            <div className="mini-stats-grid">
+              <article className="mini-stat-card accent-blue">
+                <span>Historique charge</span>
+                <strong>{analysisHistory.length}</strong>
+              </article>
+              <article className="mini-stat-card accent-orange">
+                <span>A valider</span>
+                <strong>{validationQueue.length}</strong>
+              </article>
+              <article className="mini-stat-card accent-green">
+                <span>Auto OK recents</span>
+                <strong>{dashboardAutoOkCount}</strong>
+              </article>
+              <article className="mini-stat-card accent-amber">
+                <span>Memoire reutilisable</span>
+                <strong>{memoryStats?.reusable_records ?? "-"}</strong>
+              </article>
+            </div>
+          </section>
 
-        <div className="mini-stats-grid">
-          <article className="mini-stat-card accent-blue">
-            <span>Historique charge</span>
-            <strong>{analysisHistory.length}</strong>
-          </article>
-          <article className="mini-stat-card accent-orange">
-            <span>A valider</span>
-            <strong>{validationQueue.length}</strong>
-          </article>
-          <article className="mini-stat-card accent-green">
-            <span>Auto OK recents</span>
-            <strong>{dashboardAutoOkCount}</strong>
-          </article>
-          <article className="mini-stat-card accent-amber">
-            <span>Memoire reutilisable</span>
-            <strong>{memoryStats?.reusable_records ?? "-"}</strong>
-          </article>
-        </div>
-      </section>
-
-      <section className="insights-grid">
+          <section className="insights-grid">
         <section className="panel insight-panel">
           <div className="panel-heading compact">
             <p className="eyebrow">Historique</p>
@@ -1162,7 +1208,9 @@ export default function App() {
             )}
           </div>
         </section>
-      </section>
+          </section>
+        </>
+      ) : null}
 
       <button
         className={`assistant-launcher ${assistantOpen ? "assistant-launcher-hidden" : ""}`}

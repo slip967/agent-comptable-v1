@@ -98,6 +98,25 @@ textarea {
   line-height: 1.7;
 }
 
+.mode-toggle-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.mode-toggle-copy strong {
+  display: block;
+  margin-top: 4px;
+}
+
+.mode-toggle-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
 .status-row,
 .workspace-grid,
 .insights-grid,
@@ -423,6 +442,13 @@ textarea {
   align-items: center;
 }
 
+.candidate-toolbar-note {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+  text-align: right;
+}
+
 .candidate-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
@@ -532,6 +558,10 @@ textarea {
   background: rgba(255, 255, 255, 0.42);
   color: var(--muted);
   line-height: 1.6;
+}
+
+.simple-mode-note {
+  margin-top: 18px;
 }
 
 .candidate-topline {
@@ -1046,6 +1076,11 @@ textarea {
     grid-template-columns: 1fr;
   }
 
+  .mode-toggle-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
   .command-bar,
   .mini-stats-grid,
   .insights-grid,
@@ -1060,6 +1095,10 @@ textarea {
   .candidate-toolbar {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .candidate-toolbar-note {
+    text-align: left;
   }
 
   .candidate-layout {
