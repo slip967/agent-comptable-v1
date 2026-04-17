@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 from .agent import run_agent
-from .config import OPENROUTER_MODEL
+from .config import FRONTEND_ORIGINS, OPENROUTER_MODEL
 from .loader import load_all_bases
 from .memory import build_memory_decision, find_reusable_validation, get_memory_stats, save_validation
 from .schemas import (
@@ -20,6 +21,14 @@ app = FastAPI(
     title="Agent Comptable Local V1",
     description="API locale pour recommandation comptable ligne par ligne.",
     version="1.0.0",
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=FRONTEND_ORIGINS,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 

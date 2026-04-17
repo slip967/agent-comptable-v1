@@ -63,3 +63,31 @@ Si la meme ligne revient avec le meme metier, `/recommend` reutilise la derniere
 4. comparer les decisions sur 10 vraies lignes
 5. enregistrer quelques validations via `/feedback`
 6. passer ensuite au cloud
+
+## 7. React + FastAPI
+
+Le frontend React est maintenant dans [frontend](C:\Users\Dell\Downloads\scripts-master\scripts-master\frontend).
+
+Pour le brancher proprement:
+
+1. garder la cle OpenRouter uniquement dans le backend
+2. ajouter `FRONTEND_ORIGINS` dans `.env` si besoin
+3. lancer le backend:
+
+```bash
+uvicorn agent_local_v1.app.main:app --host 127.0.0.1 --port 8000 --reload
+```
+
+4. lancer le frontend:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Le frontend appelle alors:
+
+- `GET /health`
+- `POST /recommend`
+- `POST /feedback`
