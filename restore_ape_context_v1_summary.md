@@ -1,0 +1,64 @@
+# Restore Ape Context V1
+
+- generated_at: `2026-05-06T03:25:49.788747Z`
+
+- base_charges_externes_v1.json: items_changed=`249` a_valider_changed=`36` ape_filled=`285`
+- base_produits_boucherie_v1.json: items_changed=`212` a_valider_changed=`0` ape_filled=`212`
+- base_produits_boulangerie_v1.json: items_changed=`155` a_valider_changed=`0` ape_filled=`155`
+- base_produits_btp_v1.json: items_changed=`124` a_valider_changed=`0` ape_filled=`124`
+- base_produits_epicerie_v1.json: items_changed=`0` a_valider_changed=`0` ape_filled=`0`
+- base_produits_restaurant_v1.json: items_changed=`220` a_valider_changed=`0` ape_filled=`220`
+- base_produits_transport_v1.json: items_changed=`124` a_valider_changed=`0` ape_filled=`124`
+- base_produits_vtc_v1.json: items_changed=`376` a_valider_changed=`0` ape_filled=`376`
+- base_charges_externes_v1_with_accounts.json: items_changed=`245` a_valider_changed=`36` ape_filled=`281`
+- base_produits_boucherie_v1_with_accounts.json: items_changed=`212` a_valider_changed=`0` ape_filled=`212`
+- base_produits_boulangerie_v1_with_accounts.json: items_changed=`155` a_valider_changed=`0` ape_filled=`155`
+- base_produits_btp_v1_with_accounts.json: items_changed=`124` a_valider_changed=`0` ape_filled=`124`
+- base_produits_epicerie_v1_with_accounts.json: items_changed=`0` a_valider_changed=`0` ape_filled=`0`
+- base_produits_restaurant_v1_with_accounts.json: items_changed=`220` a_valider_changed=`0` ape_filled=`220`
+- base_produits_transport_v1_with_accounts.json: items_changed=`124` a_valider_changed=`0` ape_filled=`124`
+- base_produits_vtc_v1_with_accounts.json: items_changed=`376` a_valider_changed=`0` ape_filled=`376`
+
+Exemples :
+- `base_charges_externes_v1.json` / `COTI.RSD` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_charges_externes_v1.json` / `FRAIS FIXES` -> `ape_context=['4722Z']` depuis `['fr_bd_828612630']`
+- `base_charges_externes_v1.json` / `INTERBEV` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_boucherie_v1.json` / `BASSE COTE BOEUF` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_boucherie_v1.json` / `FILM ALIMENTAIRE 45CM X 300M EN BOITE DISTRIBUTRICE AVEC LAME` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_boucherie_v1.json` / `CUISSE DE POULET FERMIER HALAL` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_boulangerie_v1.json` / `CANADIENNE D'OEUFS X180` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_boulangerie_v1.json` / `FARINE DE POIS CHICHE` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_boulangerie_v1.json` / `Farine Pois Chiches 500g` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_btp_v1.json` / `COFFRAGE, SCIAGE, PONCAGE.` -> `ape_context=['4399C']` depuis `['fr_bd_903252617']`
+- `base_produits_btp_v1.json` / `Mise à disposition` -> `ape_context=['4399C']` depuis `['fr_bd_903252617']`
+- `base_produits_btp_v1.json` / `SURFAQUARTZ GRIS NATUREL` -> `ape_context=['4399C']` depuis `['fr_bd_903252617']`
+- `base_produits_restaurant_v1.json` / `FILM ALIMENTAIRE 45CM X 300M EN BOITE DISTRIBUTRICE AVEC LAME` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_restaurant_v1.json` / `HUILE TOURNESOL 1L x15 MAUREL` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_restaurant_v1.json` / `HARISSA 1/2` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_transport_v1.json` / `Entree CTTE (Camionnette)` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_transport_v1.json` / `Entrée CTTE (Camionnette) (Abatt: 100)` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_transport_v1.json` / `Condition de livraison` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_vtc_v1.json` / `Multi-TV FTTH (du 02/12 au 01/01)` -> `ape_context=['4932Z']` depuis `['fr_bd_839181104']`
+- `base_produits_vtc_v1.json` / `Remise sur abonnement - Bbox (du 02/12 au 01/01)` -> `ape_context=['4932Z']` depuis `['fr_bd_839181104']`
+- `base_produits_vtc_v1.json` / `Bbox - location équipement (du 02/12 au 01/01)` -> `ape_context=['4932Z']` depuis `['fr_bd_839181104']`
+- `base_charges_externes_v1_with_accounts.json` / `COTI.RSD` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_charges_externes_v1_with_accounts.json` / `FRAIS FIXES` -> `ape_context=['4722Z']` depuis `['fr_bd_828612630']`
+- `base_charges_externes_v1_with_accounts.json` / `INTERBEV` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_boucherie_v1_with_accounts.json` / `BASSE COTE BOEUF` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_boucherie_v1_with_accounts.json` / `FILM ALIMENTAIRE 45CM X 300M EN BOITE DISTRIBUTRICE AVEC LAME` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_boucherie_v1_with_accounts.json` / `CUISSE DE POULET FERMIER HALAL` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_boulangerie_v1_with_accounts.json` / `CANADIENNE D'OEUFS X180` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_boulangerie_v1_with_accounts.json` / `FARINE DE POIS CHICHE` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_boulangerie_v1_with_accounts.json` / `Farine Pois Chiches 500g` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_btp_v1_with_accounts.json` / `COFFRAGE, SCIAGE, PONCAGE.` -> `ape_context=['4399C']` depuis `['fr_bd_903252617']`
+- `base_produits_btp_v1_with_accounts.json` / `Mise à disposition` -> `ape_context=['4399C']` depuis `['fr_bd_903252617']`
+- `base_produits_btp_v1_with_accounts.json` / `SURFAQUARTZ GRIS NATUREL` -> `ape_context=['4399C']` depuis `['fr_bd_903252617']`
+- `base_produits_restaurant_v1_with_accounts.json` / `FILM ALIMENTAIRE 45CM X 300M EN BOITE DISTRIBUTRICE AVEC LAME` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_restaurant_v1_with_accounts.json` / `HUILE TOURNESOL 1L x15 MAUREL` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_restaurant_v1_with_accounts.json` / `HARISSA 1/2` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_transport_v1_with_accounts.json` / `Entree CTTE (Camionnette)` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_transport_v1_with_accounts.json` / `Entrée CTTE (Camionnette) (Abatt: 100)` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_transport_v1_with_accounts.json` / `Condition de livraison` -> `ape_context=['4722Z']` depuis `['fr_bd_519665103']`
+- `base_produits_vtc_v1_with_accounts.json` / `Multi-TV FTTH (du 02/12 au 01/01)` -> `ape_context=['4932Z']` depuis `['fr_bd_839181104']`
+- `base_produits_vtc_v1_with_accounts.json` / `Remise sur abonnement - Bbox (du 02/12 au 01/01)` -> `ape_context=['4932Z']` depuis `['fr_bd_839181104']`
+- `base_produits_vtc_v1_with_accounts.json` / `Bbox - location équipement (du 02/12 au 01/01)` -> `ape_context=['4932Z']` depuis `['fr_bd_839181104']`

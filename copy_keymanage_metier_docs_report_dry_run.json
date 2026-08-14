@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-04-28T10:33:59.911971Z",
+  "source_db": "keymanage_accounting",
+  "target_db": "ayasmine_test2",
+  "dry_run": true,
+  "requested_metiers": [
+    "boulangerie",
+    "boucherie",
+    "restaurant",
+    "transport",
+    "btp",
+    "charges_externes"
+  ],
+  "scan_stats": {
+    "invoice_forms_scanned": 79482,
+    "partitions_seen": 79,
+    "partitions_selected": 2,
+    "kmorganisation_scanned": 129,
+    "kmorganisation_with_ape": 3
+  },
+  "copy_stats": {
+    "kmorganisation_copied": 8,
+    "invoice_form_copied": 8459,
+    "entry_copied": 3754,
+    "created": 12221,
+    "updated": 0
+  },
+  "partitions": [
+    {
+      "partition_prefix": "fr_bd_519665103",
+      "client_siren": "519665103",
+      "client_ape": "",
+      "client_ape_source": "",
+      "kmorganisation_doc_id": "fr_bd_519665103:d5f4b4ac32b443c4801a0422f373220f",
+      "invoice_form_docs_seen": 3089,
+      "inferred_metiers": [
+        "boulangerie"
+      ],
+      "selected_metiers": [
+        "boulangerie"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_519665103:00164c74-4a36-4aa5-a092-71e762e26812",
+        "fr_bd_519665103:001ca413-4a80-42ae-a282-cbfe02bf57f5",
+        "fr_bd_519665103:0033bd1e-d69a-4927-9ece-8250b91633b0"
+      ],
+      "kmorganisation_copied": 3,
+      "invoice_form_copied": 3089,
+      "entry_copied": 1604,
+      "created": 4696,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_832065999",
+      "client_siren": "832065999",
+      "client_ape": "4329A",
+      "client_ape_source": "kmorganisation",
+      "kmorganisation_doc_id": "fr_bd_832065999:980e610484b74879a10d555369d0d1f7",
+      "invoice_form_docs_seen": 5370,
+      "inferred_metiers": [
+        "btp"
+      ],
+      "selected_metiers": [
+        "btp"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_832065999:00078d4e-c0b2-4d92-8cd8-c373e64447df",
+        "fr_bd_832065999:0057c6af-69a4-44b8-a352-c2ebc94eb3e0",
+        "fr_bd_832065999:0062579c-69ce-4341-bd06-1077c091898b"
+      ],
+      "kmorganisation_copied": 5,
+      "invoice_form_copied": 5370,
+      "entry_copied": 2150,
+      "created": 7525,
+      "updated": 0
+    }
+  ]
+}

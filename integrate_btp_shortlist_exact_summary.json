@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-05-06T15:01:13.018569Z",
+  "source_db": "keymanage_accounting",
+  "shortlist_requested": 28,
+  "shortlist_found": 28,
+  "files": [
+    {
+      "file": "base_produits_btp_v1.json",
+      "added": 28,
+      "skipped_existing": 0
+    },
+    {
+      "file": "base_produits_btp_v1_with_accounts.json",
+      "added": 28,
+      "skipped_existing": 0
+    }
+  ],
+  "added_labels": [
+    "MOYEN SACHET VISSERIE",
+    "SEAU DOSEUR 12 LITRES",
+    "ULTABOND ECO V4SP SEAU14KG",
+    "BACHE FEUTRE 1X10M",
+    "BOUCHON D40",
+    "PLAN TRAV BASIC BLANC 200X60X2.8 1PX",
+    "5 GANTS TVX GRIS SITE",
+    "CABLE U1000R2V 3G2.5MM2 5M",
+    "CABLE ACIER BRUT D1MM L5M STANDERS",
+    "CASQUE DE CHANTIER QUARTZUP BLANC DELTA",
+    "1PX COLLE CARREAUX PLATRE BLANC 25 KG",
+    "RAIL NF 48/28 3M ISOLPRO",
+    "CORNIERE ANGLE PERFO GALVA 2.5M ISOLPRO",
+    "EVAC MANCHON FF 40",
+    "PROTEGE ANGLE CARREAUX PLATRE 2.5M",
+    "500 CROISILLONS A SCELLER 2 MM",
+    "ENDUIT GARNISSANT PDR 25KG PRESTONETT",
+    "ENDUIT LISSAGE F PDRE PRESTONETT 25KG",
+    "KERAFIX EXTRA GRIS 25KG MAPEI",
+    "MANCHON FF D32",
+    "100 CHEVILLES DUOPOWER 8X40MM DIY",
+    "MASQ SURF DELIC DEXTER PRO ROSE 25MMX25M",
+    "MASQUAGE DROIT DEXTER 48MMX50M",
+    "1PX MARTEAU DE MENUISIER BOIS 25 MM",
+    "20 VIS TF CONS.BOIS TX 8X100 AB SPAX/XL",
+    "24 VIS TFB TX 6X100 A.TREM WIROX SPAX HF",
+    "BOITE A ONGLET PLASTIQUE + SCIE A DOS",
+    "COFFRET 12 FRAISES AFFLEUREUSES TIVOLY"
+  ]
+}

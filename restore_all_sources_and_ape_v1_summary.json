@@ -1,0 +1,377 @@
+{
+  "applied_at": "2026-05-06T09:04:48.215636Z",
+  "source_db_factures": "abt3",
+  "candidate_partitions": 34,
+  "company_ape_loaded": 947,
+  "kmorganisation_ape_loaded": 0,
+  "files": [
+    {
+      "file": "base_produits_boucherie_v1.json",
+      "items": {
+        "rows_total": 212,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      },
+      "a_valider": {
+        "rows_total": 0,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      }
+    },
+    {
+      "file": "base_produits_boulangerie_v1.json",
+      "items": {
+        "rows_total": 200,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      },
+      "a_valider": {
+        "rows_total": 0,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      }
+    },
+    {
+      "file": "base_produits_restaurant_v1.json",
+      "items": {
+        "rows_total": 221,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      },
+      "a_valider": {
+        "rows_total": 0,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      }
+    },
+    {
+      "file": "base_produits_btp_v1.json",
+      "items": {
+        "rows_total": 134,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      },
+      "a_valider": {
+        "rows_total": 0,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      }
+    },
+    {
+      "file": "base_produits_transport_v1.json",
+      "items": {
+        "rows_total": 160,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      },
+      "a_valider": {
+        "rows_total": 0,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      }
+    },
+    {
+      "file": "base_produits_epicerie_v1.json",
+      "items": {
+        "rows_total": 500,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      },
+      "a_valider": {
+        "rows_total": 0,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      }
+    },
+    {
+      "file": "base_produits_vtc_v1.json",
+      "items": {
+        "rows_total": 500,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      },
+      "a_valider": {
+        "rows_total": 0,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      }
+    },
+    {
+      "file": "base_charges_externes_v1.json",
+      "items": {
+        "rows_total": 267,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      },
+      "a_valider": {
+        "rows_total": 36,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      }
+    },
+    {
+      "file": "base_produits_boucherie_v1_with_accounts.json",
+      "items": {
+        "rows_total": 212,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      },
+      "a_valider": {
+        "rows_total": 0,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      }
+    },
+    {
+      "file": "base_produits_boulangerie_v1_with_accounts.json",
+      "items": {
+        "rows_total": 200,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      },
+      "a_valider": {
+        "rows_total": 0,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      }
+    },
+    {
+      "file": "base_produits_restaurant_v1_with_accounts.json",
+      "items": {
+        "rows_total": 221,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      },
+      "a_valider": {
+        "rows_total": 0,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      }
+    },
+    {
+      "file": "base_produits_btp_v1_with_accounts.json",
+      "items": {
+        "rows_total": 134,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      },
+      "a_valider": {
+        "rows_total": 0,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      }
+    },
+    {
+      "file": "base_produits_transport_v1_with_accounts.json",
+      "items": {
+        "rows_total": 160,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      },
+      "a_valider": {
+        "rows_total": 0,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      }
+    },
+    {
+      "file": "base_produits_epicerie_v1_with_accounts.json",
+      "items": {
+        "rows_total": 500,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      },
+      "a_valider": {
+        "rows_total": 0,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      }
+    },
+    {
+      "file": "base_produits_vtc_v1_with_accounts.json",
+      "items": {
+        "rows_total": 500,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      },
+      "a_valider": {
+        "rows_total": 0,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      }
+    },
+    {
+      "file": "base_charges_externes_v1_with_accounts.json",
+      "items": {
+        "rows_total": 256,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      },
+      "a_valider": {
+        "rows_total": 36,
+        "source_ids_filled_exact": 0,
+        "source_ids_filled_fuzzy": 0,
+        "source_ids_filled_fallback": 0,
+        "source_ids_still_empty": 0,
+        "ape_filled": 0,
+        "partitions_filled": 0,
+        "examples": []
+      }
+    }
+  ]
+}

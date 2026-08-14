@@ -1,0 +1,93 @@
+{
+  "generated_from": "74_extract_corrected_v3_for_injection.py",
+  "zip_source": "C:\\Users\\Dell\\Downloads\\bases_corrected_v3_ready_to_inject.zip",
+  "output_dir": "C:\\Users\\Dell\\Downloads\\scripts-master\\scripts-master\\prepared_corrected_v3_injection",
+  "expected_json_files": [
+    "base_charges_externes_corrected_v3.json",
+    "base_produits_boucherie_corrected_v3.json",
+    "base_produits_boulangerie_corrected_v3.json",
+    "base_produits_btp_corrected_v3.json",
+    "base_produits_epicerie_corrected_v3.json",
+    "base_produits_restaurant_corrected_v3.json",
+    "base_produits_transport_corrected_v3.json",
+    "base_produits_vtc_corrected_v3.json"
+  ],
+  "missing_json_files": [],
+  "extra_json_files": [],
+  "files_summary": [
+    {
+      "file": "base_charges_externes_corrected_v3.json",
+      "metier": "global",
+      "profile_id": "charges_externes_global_v1",
+      "partition_prefix": "fr_bd_519665103",
+      "items_count": 512,
+      "a_valider_count": 0,
+      "instance_docs_count": 512
+    },
+    {
+      "file": "base_produits_boucherie_corrected_v3.json",
+      "metier": "boucherie",
+      "profile_id": "produits_boucherie_v1",
+      "partition_prefix": "fr_bd_519665103",
+      "items_count": 212,
+      "a_valider_count": 0,
+      "instance_docs_count": 212
+    },
+    {
+      "file": "base_produits_boulangerie_corrected_v3.json",
+      "metier": "boulangerie",
+      "profile_id": "produits_boulangerie_v1",
+      "partition_prefix": "fr_bd_519665103",
+      "items_count": 200,
+      "a_valider_count": 0,
+      "instance_docs_count": 200
+    },
+    {
+      "file": "base_produits_btp_corrected_v3.json",
+      "metier": "btp",
+      "profile_id": "produits_btp_v1",
+      "partition_prefix": "fr_bd_519665103",
+      "items_count": 163,
+      "a_valider_count": 0,
+      "instance_docs_count": 163
+    },
+    {
+      "file": "base_produits_epicerie_corrected_v3.json",
+      "metier": "epicerie",
+      "profile_id": "produits_epicerie_v1",
+      "partition_prefix": "multi",
+      "items_count": 444,
+      "a_valider_count": 0,
+      "instance_docs_count": 444
+    },
+    {
+      "file": "base_produits_restaurant_corrected_v3.json",
+      "metier": "restaurant",
+      "profile_id": "produits_restaurant_v1",
+      "partition_prefix": "fr_bd_519665103",
+      "items_count": 219,
+      "a_valider_count": 0,
+      "instance_docs_count": 219
+    },
+    {
+      "file": "base_produits_transport_corrected_v3.json",
+      "metier": "transport",
+      "profile_id": "produits_transport_v1",
+      "partition_prefix": "fr_bd_519665103",
+      "items_count": 134,
+      "a_valider_count": 0,
+      "instance_docs_count": 134
+    },
+    {
+      "file": "base_produits_vtc_corrected_v3.json",
+      "metier": "vtc",
+      "profile_id": "produits_vtc_v1",
+      "partition_prefix": "multi",
+      "items_count": 295,
+      "a_valider_count": 0,
+      "instance_docs_count": 295
+    }
+  ],
+  "total_json_files": 8,
+  "total_instance_docs": 2179
+}

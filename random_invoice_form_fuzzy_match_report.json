@@ -1,0 +1,1645 @@
+{
+  "db_name_used": "keymanage_accounting",
+  "sample_meta": {
+    "sampling_mode": "random_all_docs_windows",
+    "scanned_rows": 200,
+    "window_limit": 200,
+    "attempts": 60,
+    "sample_pool_size": 37,
+    "document_type_filter": "Invoice",
+    "seed": 20260525,
+    "sample_size": 10
+  },
+  "references_loaded": 2124,
+  "invoice_forms": [
+    {
+      "invoice_id": "fr_bd_310496013:00b962d8-e184-4786-b636-575b1a980deb",
+      "document_type": "Invoice",
+      "invoice_number": "FA24CL-28948",
+      "invoice_date": "15/11/2024",
+      "issuer_name": "COUTELLERIE HALLES DE RUNGIS",
+      "recipient_name": "ROYAL VIANDE",
+      "client_siren": null,
+      "client_ape": null,
+      "supplier_ape": null,
+      "preferred_metiers": [],
+      "metier_hint_used": null,
+      "line_items_count": 3,
+      "matched_line_items_count": 3,
+      "line_matches": [
+        {
+          "line_index": 1,
+          "line_text": "ÉPICE POULET V3 SCEAU DE 10KG",
+          "vat_percent": 5.5,
+          "top_matches": [
+            {
+              "metier": "boucherie",
+              "base_cible": "base_produits_boucherie_v1.json",
+              "article_source_match": "CUISSE POULET HALAL CEE 10KG",
+              "compte_comptable": "6011",
+              "compte_comptable_libelle": "Achats stockés - Matières premières",
+              "score_confiance": 74.25,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.67, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4722Z"
+              ]
+            },
+            {
+              "metier": "restaurant",
+              "base_cible": "base_produits_restaurant_v1.json",
+              "article_source_match": "CUISSE POULET HALAL CEE 10KG",
+              "compte_comptable": "6011",
+              "compte_comptable_libelle": "Achats stockés - Matières premières",
+              "score_confiance": 74.25,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.67, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4722Z"
+              ]
+            },
+            {
+              "metier": "boucherie",
+              "base_cible": "base_produits_boucherie_v1.json",
+              "article_source_match": "CUISSE DE POULET HALAL UE 10KG",
+              "compte_comptable": "6011",
+              "compte_comptable_libelle": "Achats stockés - Matières premières",
+              "score_confiance": 72.56,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.61, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4722Z"
+              ]
+            }
+          ]
+        },
+        {
+          "line_index": 2,
+          "line_text": "COMPLET SAUCISSE ROSE SEAU DE 5 KG",
+          "vat_percent": 5.5,
+          "top_matches": [
+            {
+              "metier": "boulangerie",
+              "base_cible": "base_produits_boulangerie_v1.json",
+              "article_source_match": "FONDANT SEAU EN 15 KG",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 63.53,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.51, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "1071C"
+              ]
+            },
+            {
+              "metier": "boulangerie",
+              "base_cible": "base_produits_boulangerie_v1.json",
+              "article_source_match": "NAPPAGE BLOND PRO SEAU 14 KG",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 62.77,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.48, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "1071C"
+              ]
+            },
+            {
+              "metier": "boucherie",
+              "base_cible": "base_produits_boucherie_v1.json",
+              "article_source_match": "Jambon de Dinde Halal 5 kg Premier Choix",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 55.55,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.24, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4722Z"
+              ]
+            }
+          ]
+        },
+        {
+          "line_index": 3,
+          "line_text": "LAME A RUBAN 1740X16 MM 4TPI",
+          "vat_percent": 20.0,
+          "top_matches": [
+            {
+              "metier": "btp",
+              "base_cible": "base_produits_btp_v1.json",
+              "article_source_match": "CUTTER A LAME CASSABLE 25 MM d213",
+              "compte_comptable": "6063",
+              "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+              "score_confiance": 62.94,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.37, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 0,
+              "ape_context": [
+                "4673A",
+                "4779Z"
+              ]
+            },
+            {
+              "metier": "btp",
+              "base_cible": "base_produits_btp_v1.json",
+              "article_source_match": "LAME CUTTER 18MM OLFA LB10 (156) ETUI /10",
+              "compte_comptable": "6061",
+              "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+              "score_confiance": 53.07,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.39, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 0,
+              "ape_context": [
+                "4711F",
+                "4673B"
+              ]
+            },
+            {
+              "metier": "btp",
+              "base_cible": "base_produits_btp_v1.json",
+              "article_source_match": "RECHARGE LAME CUTTER ECO 18MM (10U)",
+              "compte_comptable": "6063",
+              "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+              "score_confiance": 52.07,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.36, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 0,
+              "ape_context": [
+                "4779Z",
+                "4673A"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "invoice_id": "fr_bd_310496013:866c30c8-3bfb-488a-a046-2aeeee19e780",
+      "document_type": "Invoice",
+      "invoice_number": "FA24CL-29796",
+      "invoice_date": "06/12/2024",
+      "issuer_name": "BOUCHERIE ROYAL VIANDE",
+      "recipient_name": "COUTELLERIE HALLES DE RUNGIS",
+      "client_siren": "489928044",
+      "client_ape": null,
+      "supplier_ape": null,
+      "preferred_metiers": [],
+      "metier_hint_used": null,
+      "line_items_count": 1,
+      "matched_line_items_count": 1,
+      "line_matches": [
+        {
+          "line_index": 1,
+          "line_text": "EP.COL.OR.M.. COLORANT ORANGE ALIMENTAIRE E110",
+          "vat_percent": 5.5,
+          "top_matches": [
+            {
+              "metier": "restaurant",
+              "base_cible": "base_produits_restaurant_v1.json",
+              "article_source_match": "EP.COL.OR.M.. COLORANT ORANGE ALIMENTAIRE E110",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 88.75,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "match exact article_source, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 1,
+              "invoice_paths_sources_count": 1,
+              "ape_context": [
+                "4722Z"
+              ]
+            },
+            {
+              "metier": "restaurant",
+              "base_cible": "base_produits_restaurant_v1.json",
+              "article_source_match": "COLORANT ORANGE ALIMENTAIRE E110",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 88.75,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, similarite=0.84, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 2,
+              "invoice_paths_sources_count": 2,
+              "ape_context": [
+                "4722Z"
+              ]
+            },
+            {
+              "metier": "restaurant",
+              "base_cible": "base_produits_restaurant_v1.json",
+              "article_source_match": "COLORANT ROUGE ALIMENTAIRE E124 1KG",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 79.02,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.71, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 2,
+              "invoice_paths_sources_count": 2,
+              "ape_context": [
+                "4722Z"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "invoice_id": "fr_bd_310496013:e9b6ada4-4494-4c43-b89b-b843084bc94e",
+      "document_type": "Invoice",
+      "invoice_number": "FA22CL-14259",
+      "invoice_date": "17/07/2023",
+      "issuer_name": "COUTELLERIE HALLES DE RUNGIS",
+      "recipient_name": "COUTELLERIE HALLES DE RUNGIS",
+      "client_siren": null,
+      "client_ape": null,
+      "supplier_ape": null,
+      "preferred_metiers": [],
+      "metier_hint_used": null,
+      "line_items_count": 3,
+      "matched_line_items_count": 3,
+      "line_matches": [
+        {
+          "line_index": 1,
+          "line_text": "EPICEPOULET GRILLE",
+          "vat_percent": 2.0,
+          "top_matches": [
+            {
+              "metier": "restaurant",
+              "base_cible": "base_produits_restaurant_v1.json",
+              "article_source_match": "Colorant Alimentaire bocal",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 41.3,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "tokens importants manquants, similarite=0.32, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 2,
+              "invoice_paths_sources_count": 2,
+              "ape_context": [
+                "4722Z"
+              ]
+            },
+            {
+              "metier": "vtc",
+              "base_cible": "base_produits_vtc_v1.json",
+              "article_source_match": "GRILLE DE PROTECTION",
+              "compte_comptable": "6062",
+              "compte_comptable_libelle": "Fournitures consommables",
+              "score_confiance": 32.73,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "incoherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.32, source facture réelle, TVA a verifier",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 2,
+              "ape_context": [
+                "4932Z"
+              ]
+            },
+            {
+              "metier": "transport",
+              "base_cible": "base_produits_transport_v1.json",
+              "article_source_match": "GRILLE DE PROTECTION",
+              "compte_comptable": "6062",
+              "compte_comptable_libelle": "Fournitures consommables",
+              "score_confiance": 32.73,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "incoherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.32, source facture réelle, TVA a verifier",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 2,
+              "ape_context": [
+                "4932Z"
+              ]
+            }
+          ]
+        },
+        {
+          "line_index": 2,
+          "line_text": "COMPLET SAUCISSE ROSE/B SEAU DE 5 KG RECONSTITUEUR DE STEAK HACHE OVALE",
+          "vat_percent": 5.5,
+          "top_matches": [
+            {
+              "metier": "boucherie",
+              "base_cible": "base_produits_boucherie_v1.json",
+              "article_source_match": "Jambon de Dinde Halal 5 kg Premier Choix",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 44.52,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.34, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4722Z"
+              ]
+            },
+            {
+              "metier": "epicerie",
+              "base_cible": "base_produits_epicerie_v1.json",
+              "article_source_match": "RIZ PARFUME LONG \"PERLE ASIE\" 5 KG (X5) CAMBODGE CAMBODGE AVOIR WILL ERREUR PRODUIT (/Fact FA2428882)",
+              "compte_comptable": "607",
+              "compte_comptable_libelle": "Achats de marchandises",
+              "score_confiance": 43.7,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.32, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 2,
+              "invoice_paths_sources_count": 2,
+              "ape_context": [
+                "4711B"
+              ]
+            },
+            {
+              "metier": "boulangerie",
+              "base_cible": "base_produits_boulangerie_v1.json",
+              "article_source_match": "FONDANT SEAU EN 15 KG",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 43.38,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.30, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "1071C"
+              ]
+            }
+          ]
+        },
+        {
+          "line_index": 3,
+          "line_text": "Option pour le paiement de la taxe d'après les débits",
+          "vat_percent": 20.0,
+          "top_matches": [
+            {
+              "metier": "global",
+              "base_cible": "base_charges_externes_v1.json",
+              "article_source_match": "Option renvoi d'appels Pro",
+              "compte_comptable": "6064",
+              "compte_comptable_libelle": "Fournitures administratives",
+              "score_confiance": 61.92,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.46, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4711B"
+              ]
+            },
+            {
+              "metier": "global",
+              "base_cible": "base_charges_externes_v1.json",
+              "article_source_match": "Option renvoi d'appels Pro inclus (du 23/03 au 22/04)",
+              "compte_comptable": "6064",
+              "compte_comptable_libelle": "Fournitures administratives",
+              "score_confiance": 60.94,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.42, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 2,
+              "invoice_paths_sources_count": 2,
+              "ape_context": [
+                "4711B"
+              ]
+            },
+            {
+              "metier": "vtc",
+              "base_cible": "base_produits_vtc_v1.json",
+              "article_source_match": "Programmer et coder le calculateur (Apres test rapide)",
+              "compte_comptable": "615",
+              "compte_comptable_libelle": "Entretien et réparations",
+              "score_confiance": 52.03,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.48, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4932Z"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "invoice_id": "fr_bd_382942647:07765099-cee5-4291-8278-2279d0df1644",
+      "document_type": "Invoice",
+      "invoice_number": "11560415001025",
+      "invoice_date": "16/10/2025",
+      "issuer_name": "BOUYGUES TELECOM",
+      "recipient_name": "BEN HADJ ROMDHAN ABDELMAJID",
+      "client_siren": "382942647",
+      "client_ape": null,
+      "supplier_ape": "5629B",
+      "preferred_metiers": [],
+      "metier_hint_used": null,
+      "line_items_count": 6,
+      "matched_line_items_count": 6,
+      "line_matches": [
+        {
+          "line_index": 1,
+          "line_text": "Série spéciale B&YOU 80Go",
+          "vat_percent": 20.0,
+          "top_matches": [
+            {
+              "metier": "global",
+              "base_cible": "base_charges_externes_v1.json",
+              "article_source_match": "Série Speciale B&YOU 200Go",
+              "compte_comptable": "6261",
+              "compte_comptable_libelle": "Télécommunications",
+              "score_confiance": 72.81,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.94, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4932Z"
+              ]
+            },
+            {
+              "metier": "global",
+              "base_cible": "base_charges_externes_v1.json",
+              "article_source_match": "Bbox Série Spéciale Ultym fibre",
+              "compte_comptable": "6261",
+              "compte_comptable_libelle": "Télécommunications",
+              "score_confiance": 65.05,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.57, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 1,
+              "invoice_paths_sources_count": 1,
+              "ape_context": [
+                "6120Z"
+              ]
+            },
+            {
+              "metier": "global",
+              "base_cible": "base_charges_externes_v1.json",
+              "article_source_match": "Forfait Client B&You 230Go",
+              "compte_comptable": "626",
+              "compte_comptable_libelle": "Frais postaux et de télécommunications",
+              "score_confiance": 54.66,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants manquants, similarite=0.51, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4932Z"
+              ]
+            }
+          ]
+        },
+        {
+          "line_index": 2,
+          "line_text": "Remise Forfait B&YOU",
+          "vat_percent": 20.0,
+          "top_matches": [
+            {
+              "metier": "global",
+              "base_cible": "base_charges_externes_v1.json",
+              "article_source_match": "Remise Forfait B&YOU",
+              "compte_comptable": "626",
+              "compte_comptable_libelle": "Frais postaux et de télécommunications",
+              "score_confiance": 81.25,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "coherente",
+              "tva_coherence": "coherente",
+              "raison_match": "match exact article_source, source facture réelle, bonus charges externes, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4932Z"
+              ]
+            },
+            {
+              "metier": "global",
+              "base_cible": "base_charges_externes_v1.json",
+              "article_source_match": "Remise Forfait",
+              "compte_comptable": "626",
+              "compte_comptable_libelle": "Frais postaux et de télécommunications",
+              "score_confiance": 81.25,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "coherente",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, similarite=0.82, source facture réelle, bonus charges externes, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4932Z"
+              ]
+            },
+            {
+              "metier": "global",
+              "base_cible": "base_charges_externes_v1.json",
+              "article_source_match": "Forfait B&YOU 60Go client",
+              "compte_comptable": "626",
+              "compte_comptable_libelle": "Frais postaux et de télécommunications",
+              "score_confiance": 79.63,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "coherente",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.58, source facture réelle, bonus charges externes, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 1,
+              "invoice_paths_sources_count": 1,
+              "ape_context": [
+                "4932Z"
+              ]
+            }
+          ]
+        },
+        {
+          "line_index": 3,
+          "line_text": "Avantage B&You Max",
+          "vat_percent": 20.0,
+          "top_matches": [
+            {
+              "metier": "vtc",
+              "base_cible": "base_produits_vtc_v1.json",
+              "article_source_match": "Avantage client box",
+              "compte_comptable": "6061",
+              "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+              "score_confiance": 59.66,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, similarite=0.65, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4932Z"
+              ]
+            },
+            {
+              "metier": "global",
+              "base_cible": "base_charges_externes_v1.json",
+              "article_source_match": "Avantage client box",
+              "compte_comptable": "6261",
+              "compte_comptable_libelle": "Télécommunications",
+              "score_confiance": 59.66,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, similarite=0.65, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4932Z"
+              ]
+            },
+            {
+              "metier": "global",
+              "base_cible": "base_charges_externes_v1.json",
+              "article_source_match": "Forfait Client B&You 230Go",
+              "compte_comptable": "626",
+              "compte_comptable_libelle": "Frais postaux et de télécommunications",
+              "score_confiance": 58.66,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants manquants, similarite=0.45, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4932Z"
+              ]
+            }
+          ]
+        },
+        {
+          "line_index": 4,
+          "line_text": "Remise Avantage",
+          "vat_percent": 20.0,
+          "top_matches": [
+            {
+              "metier": "global",
+              "base_cible": "base_charges_externes_v1.json",
+              "article_source_match": "Remise Forfait",
+              "compte_comptable": "626",
+              "compte_comptable_libelle": "Frais postaux et de télécommunications",
+              "score_confiance": 56.4,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.62, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4932Z"
+              ]
+            },
+            {
+              "metier": "vtc",
+              "base_cible": "base_produits_vtc_v1.json",
+              "article_source_match": "Remise offre couplage",
+              "compte_comptable": "6068",
+              "compte_comptable_libelle": "Autres matières et fournitures",
+              "score_confiance": 54.94,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.56, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4932Z"
+              ]
+            },
+            {
+              "metier": "global",
+              "base_cible": "base_charges_externes_v1.json",
+              "article_source_match": "Remise Forfait B&YOU",
+              "compte_comptable": "626",
+              "compte_comptable_libelle": "Frais postaux et de télécommunications",
+              "score_confiance": 54.01,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.51, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4932Z"
+              ]
+            }
+          ]
+        },
+        {
+          "line_index": 5,
+          "line_text": "Avantage B&You Max (du 30/09 au 15/10)",
+          "vat_percent": 20.0,
+          "top_matches": [
+            {
+              "metier": "vtc",
+              "base_cible": "base_produits_vtc_v1.json",
+              "article_source_match": "Disney+ Premium (du 28/09 au 27/10)",
+              "compte_comptable": "6261",
+              "compte_comptable_libelle": "Télécommunications",
+              "score_confiance": 59.51,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.56, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 1,
+              "invoice_paths_sources_count": 1,
+              "ape_context": [
+                "4932Z"
+              ]
+            },
+            {
+              "metier": "global",
+              "base_cible": "base_charges_externes_v1.json",
+              "article_source_match": "Vos communications (du 02/09 au 01/10)",
+              "compte_comptable": "6062",
+              "compte_comptable_libelle": "Fournitures consommables",
+              "score_confiance": 58.19,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.50, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4932Z"
+              ]
+            },
+            {
+              "metier": "global",
+              "base_cible": "base_charges_externes_v1.json",
+              "article_source_match": "Avantage Internet 60Go 3 euros + majelan inclus (du 29/08 au 01/09)",
+              "compte_comptable": "626",
+              "compte_comptable_libelle": "Frais postaux et de télécommunications",
+              "score_confiance": 58.16,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.57, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 2,
+              "invoice_paths_sources_count": 2,
+              "ape_context": [
+                "4932Z"
+              ]
+            }
+          ]
+        },
+        {
+          "line_index": 6,
+          "line_text": "Remise Avantage (du 30/09 au 15/10)",
+          "vat_percent": 20.0,
+          "top_matches": [
+            {
+              "metier": "vtc",
+              "base_cible": "base_produits_vtc_v1.json",
+              "article_source_match": "Disney+ Premium (du 28/09 au 27/10)",
+              "compte_comptable": "6261",
+              "compte_comptable_libelle": "Télécommunications",
+              "score_confiance": 56.77,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.55, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 1,
+              "invoice_paths_sources_count": 1,
+              "ape_context": [
+                "4932Z"
+              ]
+            },
+            {
+              "metier": "global",
+              "base_cible": "base_charges_externes_v1.json",
+              "article_source_match": "Vos communications (du 02/09 au 01/10)",
+              "compte_comptable": "6062",
+              "compte_comptable_libelle": "Fournitures consommables",
+              "score_confiance": 56.7,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.55, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4932Z"
+              ]
+            },
+            {
+              "metier": "global",
+              "base_cible": "base_charges_externes_v1.json",
+              "article_source_match": "Evolution d'offre - Appels illimités mobiles France_ (du 02/09 au 01/10)",
+              "compte_comptable": "626",
+              "compte_comptable_libelle": "Frais postaux et de télécommunications",
+              "score_confiance": 54.66,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.46, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 2,
+              "ape_context": [
+                "4932Z"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "invoice_id": "fr_bd_310496013:178fa06f-4860-498d-9b5d-c26c4ca2b3c8",
+      "document_type": "Invoice",
+      "invoice_number": "FA22CL-9938",
+      "invoice_date": "13/01/2023",
+      "issuer_name": "COUTELLERIE HALLES DE RUNGIS",
+      "recipient_name": "ROYAL VIANDE",
+      "client_siren": null,
+      "client_ape": null,
+      "supplier_ape": null,
+      "preferred_metiers": [],
+      "metier_hint_used": null,
+      "line_items_count": 3,
+      "matched_line_items_count": 3,
+      "line_matches": [
+        {
+          "line_index": 1,
+          "line_text": "COLORANT ORANGE ALIMENTAIRE E110",
+          "vat_percent": 5.5,
+          "top_matches": [
+            {
+              "metier": "restaurant",
+              "base_cible": "base_produits_restaurant_v1.json",
+              "article_source_match": "COLORANT ORANGE ALIMENTAIRE E110",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 88.75,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "match exact article_source, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 2,
+              "invoice_paths_sources_count": 2,
+              "ape_context": [
+                "4722Z"
+              ]
+            },
+            {
+              "metier": "restaurant",
+              "base_cible": "base_produits_restaurant_v1.json",
+              "article_source_match": "EP.COL.OR.M.. COLORANT ORANGE ALIMENTAIRE E110",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 88.75,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "libelle inclus dans article_source, libelle inclus dans article_canonique, chevauchement mots cles, tokens importants aligns, similarite=0.84, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 1,
+              "invoice_paths_sources_count": 1,
+              "ape_context": [
+                "4722Z"
+              ]
+            },
+            {
+              "metier": "restaurant",
+              "base_cible": "base_produits_restaurant_v1.json",
+              "article_source_match": "COLORANT ROUGE ALIMENTAIRE E124 1KG",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 82.82,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.84, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 2,
+              "invoice_paths_sources_count": 2,
+              "ape_context": [
+                "4722Z"
+              ]
+            }
+          ]
+        },
+        {
+          "line_index": 2,
+          "line_text": "PLAQUE SUPINOX B98/3 MM",
+          "vat_percent": 20.0,
+          "top_matches": [
+            {
+              "metier": "btp",
+              "base_cible": "base_produits_btp_v1.json",
+              "article_source_match": "Treillis soudé en panneau pour dallage Ultibat en format 3,34 x 1,99m - maille 150 x 150 fil 7 mm",
+              "compte_comptable": "6011",
+              "compte_comptable_libelle": "Achats stockés - Matières premières",
+              "score_confiance": 54.79,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.30, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 0,
+              "ape_context": [
+                "4673A"
+              ]
+            },
+            {
+              "metier": "btp",
+              "base_cible": "base_produits_btp_v1.json",
+              "article_source_match": "CUTTER STANDARD 18MM AVEC 3 LAMES NOIR",
+              "compte_comptable": "6063",
+              "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+              "score_confiance": 53.03,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.39, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 0,
+              "ape_context": [
+                "4779Z",
+                "4673A"
+              ]
+            },
+            {
+              "metier": "btp",
+              "base_cible": "base_produits_btp_v1.json",
+              "article_source_match": "CLOU BETON 3.5X60 1KG",
+              "compte_comptable": "6061",
+              "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+              "score_confiance": 50.8,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.32, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 0,
+              "ape_context": [
+                "4779Z",
+                "4673A"
+              ]
+            }
+          ]
+        },
+        {
+          "line_index": 3,
+          "line_text": "PLAQUE SUPINOX B98/2.5 MM",
+          "vat_percent": 20.0,
+          "top_matches": [
+            {
+              "metier": "global",
+              "base_cible": "base_charges_externes_v1.json",
+              "article_source_match": "Liaison frigo 1/4-1/2 (15m)",
+              "compte_comptable": "6063",
+              "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+              "score_confiance": 50.95,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.44, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4711B"
+              ]
+            },
+            {
+              "metier": "btp",
+              "base_cible": "base_produits_btp_v1.json",
+              "article_source_match": "BA13 STANDARD 1.2 X 2.5M",
+              "compte_comptable": "6011",
+              "compte_comptable_libelle": "Achats stockés - Matières premières",
+              "score_confiance": 50.52,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.43, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 0,
+              "ape_context": [
+                "4779Z",
+                "4673A"
+              ]
+            },
+            {
+              "metier": "btp",
+              "base_cible": "base_produits_btp_v1.json",
+              "article_source_match": "BA13 FLAM 1.2 X 2.5M",
+              "compte_comptable": "6011",
+              "compte_comptable_libelle": "Achats stockés - Matières premières",
+              "score_confiance": 50.31,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.42, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 0,
+              "ape_context": [
+                "4673A"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "invoice_id": "fr_bd_310496013:0343005a-3d6a-40c0-95c5-afb1a44165a1",
+      "document_type": "Invoice",
+      "invoice_number": "FA25CL-32179",
+      "invoice_date": "20/02/2025",
+      "issuer_name": "BOUCHERIE ROYAL VIANDE",
+      "recipient_name": "COUTELLERIE HALLES DE RUNGIS",
+      "client_siren": "489928044",
+      "client_ape": null,
+      "supplier_ape": null,
+      "preferred_metiers": [],
+      "metier_hint_used": null,
+      "line_items_count": 1,
+      "matched_line_items_count": 1,
+      "line_matches": [
+        {
+          "line_index": 1,
+          "line_text": "ÉPICE POULET V6 SEAU DE 10 KG",
+          "vat_percent": 5.5,
+          "top_matches": [
+            {
+              "metier": "boucherie",
+              "base_cible": "base_produits_boucherie_v1.json",
+              "article_source_match": "EPICES POULET ROTI par 10 KILO",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 74.59,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.68, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4722Z"
+              ]
+            },
+            {
+              "metier": "boulangerie",
+              "base_cible": "base_produits_boulangerie_v1.json",
+              "article_source_match": "FONDANT SEAU EN 15 KG",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 65.05,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.56, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "1071C"
+              ]
+            },
+            {
+              "metier": "boulangerie",
+              "base_cible": "base_produits_boulangerie_v1.json",
+              "article_source_match": "NAPPAGE BLOND PRO SEAU 14 KG",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 64.04,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.53, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "1071C"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "invoice_id": "fr_bd_310496013:db71d983-8943-453b-97e7-3fb3b2656857",
+      "document_type": "Invoice",
+      "invoice_number": "FA25CL-33647",
+      "invoice_date": "01/04/2025",
+      "issuer_name": "COUTELLERIE HALLES DE RUNGIS",
+      "recipient_name": "BOUCHERIE ROYAL VIANDE",
+      "client_siren": null,
+      "client_ape": null,
+      "supplier_ape": null,
+      "preferred_metiers": [],
+      "metier_hint_used": null,
+      "line_items_count": 1,
+      "matched_line_items_count": 1,
+      "line_matches": [
+        {
+          "line_index": 1,
+          "line_text": "ÉPICE POULET V6 SEAU DE 10 KG",
+          "vat_percent": 5.5,
+          "top_matches": [
+            {
+              "metier": "boucherie",
+              "base_cible": "base_produits_boucherie_v1.json",
+              "article_source_match": "EPICES POULET ROTI par 10 KILO",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 74.59,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.68, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4722Z"
+              ]
+            },
+            {
+              "metier": "boulangerie",
+              "base_cible": "base_produits_boulangerie_v1.json",
+              "article_source_match": "FONDANT SEAU EN 15 KG",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 65.05,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.56, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "1071C"
+              ]
+            },
+            {
+              "metier": "boulangerie",
+              "base_cible": "base_produits_boulangerie_v1.json",
+              "article_source_match": "NAPPAGE BLOND PRO SEAU 14 KG",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 64.04,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.53, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "1071C"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "invoice_id": "fr_bd_310496013:ecbf7558-5782-436c-9caa-803e581c210c",
+      "document_type": "Invoice",
+      "invoice_number": "FA24CL-28948",
+      "invoice_date": "15/11/2024",
+      "issuer_name": "COUTELLERIE HALLES DE RUNGIS",
+      "recipient_name": "FORY VIANDES",
+      "client_siren": "513820647",
+      "client_ape": null,
+      "supplier_ape": "4669C",
+      "preferred_metiers": [],
+      "metier_hint_used": null,
+      "line_items_count": 3,
+      "matched_line_items_count": 3,
+      "line_matches": [
+        {
+          "line_index": 1,
+          "line_text": "EPICE POULET V3 SCEAU DE 10KG",
+          "vat_percent": 5.5,
+          "top_matches": [
+            {
+              "metier": "boucherie",
+              "base_cible": "base_produits_boucherie_v1.json",
+              "article_source_match": "CUISSE POULET HALAL CEE 10KG",
+              "compte_comptable": "6011",
+              "compte_comptable_libelle": "Achats stockés - Matières premières",
+              "score_confiance": 61.94,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.67, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4722Z"
+              ]
+            },
+            {
+              "metier": "restaurant",
+              "base_cible": "base_produits_restaurant_v1.json",
+              "article_source_match": "CUISSE POULET HALAL CEE 10KG",
+              "compte_comptable": "6011",
+              "compte_comptable_libelle": "Achats stockés - Matières premières",
+              "score_confiance": 61.94,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.67, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4722Z"
+              ]
+            },
+            {
+              "metier": "boucherie",
+              "base_cible": "base_produits_boucherie_v1.json",
+              "article_source_match": "CUISSE DE POULET HALAL UE 10KG",
+              "compte_comptable": "6011",
+              "compte_comptable_libelle": "Achats stockés - Matières premières",
+              "score_confiance": 60.67,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.61, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4722Z"
+              ]
+            }
+          ]
+        },
+        {
+          "line_index": 2,
+          "line_text": "COMPLET SAUCISSE ROSE SCEAU DE 5 KG",
+          "vat_percent": 5.5,
+          "top_matches": [
+            {
+              "metier": "boucherie",
+              "base_cible": "base_produits_boucherie_v1.json",
+              "article_source_match": "Jambon de Dinde Halal 5 kg Premier Choix",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 47.84,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.24, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4722Z"
+              ]
+            },
+            {
+              "metier": "epicerie",
+              "base_cible": "base_produits_epicerie_v1.json",
+              "article_source_match": "RIZ PARFUME LONG \"PERLE ASIE\" 5 KG (X5) CAMBODGE CAMBODGE AVOIR WILL ERREUR PRODUIT (/Fact FA2428882)",
+              "compte_comptable": "607",
+              "compte_comptable_libelle": "Achats de marchandises",
+              "score_confiance": 46.97,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.20, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 2,
+              "invoice_paths_sources_count": 2,
+              "ape_context": [
+                "4711B"
+              ]
+            },
+            {
+              "metier": "boulangerie",
+              "base_cible": "base_produits_boulangerie_v1.json",
+              "article_source_match": "COMPOTE PATIS.26% 5/1",
+              "compte_comptable": "6011",
+              "compte_comptable_libelle": "Achats stockés - Matières premières",
+              "score_confiance": 44.38,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.44, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "1071C"
+              ]
+            }
+          ]
+        },
+        {
+          "line_index": 3,
+          "line_text": "LAME A RUBAN 1740X16 MM 4TPI",
+          "vat_percent": 20.0,
+          "top_matches": [
+            {
+              "metier": "btp",
+              "base_cible": "base_produits_btp_v1.json",
+              "article_source_match": "CUTTER A LAME CASSABLE 25 MM d213",
+              "compte_comptable": "6063",
+              "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+              "score_confiance": 53.45,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.37, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 0,
+              "ape_context": [
+                "4673A",
+                "4779Z"
+              ]
+            },
+            {
+              "metier": "btp",
+              "base_cible": "base_produits_btp_v1.json",
+              "article_source_match": "LAME CUTTER 18MM OLFA LB10 (156) ETUI /10",
+              "compte_comptable": "6061",
+              "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+              "score_confiance": 46.05,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.39, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 0,
+              "ape_context": [
+                "4711F",
+                "4673B"
+              ]
+            },
+            {
+              "metier": "btp",
+              "base_cible": "base_produits_btp_v1.json",
+              "article_source_match": "RECHARGE LAME CUTTER ECO 18MM (10U)",
+              "compte_comptable": "6063",
+              "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+              "score_confiance": 45.3,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.36, source facture réelle, bonus TVA, contexte APE fragile",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 0,
+              "ape_context": [
+                "4779Z",
+                "4673A"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "invoice_id": "fr_bd_310496013:7ba729cc-01a7-49e7-8a99-baed00c46cbe",
+      "document_type": "Invoice",
+      "invoice_number": "FA22CL-21734",
+      "invoice_date": "03/04/2024",
+      "issuer_name": "COUTELLERIE HALLES DE RUNGIS",
+      "recipient_name": "ROYAL VIANDE",
+      "client_siren": null,
+      "client_ape": null,
+      "supplier_ape": null,
+      "preferred_metiers": [],
+      "metier_hint_used": null,
+      "line_items_count": 1,
+      "matched_line_items_count": 1,
+      "line_matches": [
+        {
+          "line_index": 1,
+          "line_text": "EPSELROSE... COMPLET SAUCISSE ROSE/B AUX HERBES SEAU DE 5 KG les débits",
+          "vat_percent": 5.5,
+          "top_matches": [
+            {
+              "metier": "boulangerie",
+              "base_cible": "base_produits_boulangerie_v1.json",
+              "article_source_match": "NAPPAGE BLOND PRO SEAU 14 KG",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 48.38,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.35, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "1071C"
+              ]
+            },
+            {
+              "metier": "boulangerie",
+              "base_cible": "base_produits_boulangerie_v1.json",
+              "article_source_match": "FONDANT SEAU EN 15 KG",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 47.19,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.31, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "1071C"
+              ]
+            },
+            {
+              "metier": "epicerie",
+              "base_cible": "base_produits_epicerie_v1.json",
+              "article_source_match": "RIZ PARFUME LONG \"PERLE ASIE\" 5 KG (X5) CAMBODGE CAMBODGE AVOIR WILL ERREUR PRODUIT (/Fact FA2428882)",
+              "compte_comptable": "607",
+              "compte_comptable_libelle": "Achats de marchandises",
+              "score_confiance": 46.64,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.30, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 2,
+              "invoice_paths_sources_count": 2,
+              "ape_context": [
+                "4711B"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "invoice_id": "fr_bd_310496013:10ae221c-3ae4-4871-b672-22b0e05886a2",
+      "document_type": "Invoice",
+      "invoice_number": "FA22CL-25285",
+      "invoice_date": "10/07/2024",
+      "issuer_name": "COUTELLERIE HALLES DE RUNGIS",
+      "recipient_name": "ROYAL VIANDE",
+      "client_siren": null,
+      "client_ape": null,
+      "supplier_ape": null,
+      "preferred_metiers": [],
+      "metier_hint_used": null,
+      "line_items_count": 3,
+      "matched_line_items_count": 3,
+      "line_matches": [
+        {
+          "line_index": 1,
+          "line_text": "ÉPICE POULET V6 SEAU DE 10 KG",
+          "vat_percent": 5.5,
+          "top_matches": [
+            {
+              "metier": "boucherie",
+              "base_cible": "base_produits_boucherie_v1.json",
+              "article_source_match": "EPICES POULET ROTI par 10 KILO",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 74.59,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.68, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4722Z"
+              ]
+            },
+            {
+              "metier": "boulangerie",
+              "base_cible": "base_produits_boulangerie_v1.json",
+              "article_source_match": "FONDANT SEAU EN 15 KG",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 65.05,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.56, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "1071C"
+              ]
+            },
+            {
+              "metier": "boulangerie",
+              "base_cible": "base_produits_boulangerie_v1.json",
+              "article_source_match": "NAPPAGE BLOND PRO SEAU 14 KG",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 64.04,
+              "decision_finale": "validation_humaine",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.53, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "1071C"
+              ]
+            }
+          ]
+        },
+        {
+          "line_index": 2,
+          "line_text": "ÉPICE MERGUEZ SEAU DE 10KG",
+          "vat_percent": 5.5,
+          "top_matches": [
+            {
+              "metier": "restaurant",
+              "base_cible": "base_produits_restaurant_v1.json",
+              "article_source_match": "MERGUEZ BF TRANCH. HAL 1KG",
+              "compte_comptable": "6011",
+              "compte_comptable_libelle": "Achats stockés - Matières premières",
+              "score_confiance": 57.72,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.55, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "5610C"
+              ]
+            },
+            {
+              "metier": "boucherie",
+              "base_cible": "base_produits_boucherie_v1.json",
+              "article_source_match": "CUISSE DE POULET HALAL UE 10KG",
+              "compte_comptable": "6011",
+              "compte_comptable_libelle": "Achats stockés - Matières premières",
+              "score_confiance": 57.32,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.54, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4722Z"
+              ]
+            },
+            {
+              "metier": "restaurant",
+              "base_cible": "base_produits_restaurant_v1.json",
+              "article_source_match": "CUISSE DE POULET HALAL UE 10KG",
+              "compte_comptable": "6011",
+              "compte_comptable_libelle": "Achats stockés - Matières premières",
+              "score_confiance": 57.32,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.54, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4722Z"
+              ]
+            }
+          ]
+        },
+        {
+          "line_index": 3,
+          "line_text": "COMPLET SAUCISSE ROSE/B AUX HERBES SEAU DE 5 KG",
+          "vat_percent": 5.5,
+          "top_matches": [
+            {
+              "metier": "boulangerie",
+              "base_cible": "base_produits_boulangerie_v1.json",
+              "article_source_match": "NAPPAGE BLOND PRO SEAU 14 KG",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 57.55,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.43, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "1071C"
+              ]
+            },
+            {
+              "metier": "boulangerie",
+              "base_cible": "base_produits_boulangerie_v1.json",
+              "article_source_match": "FONDANT SEAU EN 15 KG",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 57.11,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.41, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "1071C"
+              ]
+            },
+            {
+              "metier": "boucherie",
+              "base_cible": "base_produits_boucherie_v1.json",
+              "article_source_match": "Jambon de Dinde Halal 5 kg Premier Choix",
+              "compte_comptable": "601",
+              "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+              "score_confiance": 50.95,
+              "decision_finale": "rejeter",
+              "metier_coherence": "a_verifier",
+              "tva_coherence": "coherente",
+              "raison_match": "chevauchement mots cles, tokens importants aligns, tokens importants manquants, similarite=0.21, source facture réelle, bonus TVA",
+              "source_invoice_ids_count": 3,
+              "invoice_paths_sources_count": 3,
+              "ape_context": [
+                "4722Z"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

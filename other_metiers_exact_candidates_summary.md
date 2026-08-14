@@ -1,0 +1,148 @@
+# Other Metiers Exact Candidates
+
+- `generated_at`: `2026-05-06T15:57:42.249197Z`
+- `source_db`: `keymanage_accounting`
+
+## boulangerie
+
+- current_items: `103`
+- target_items: `200`
+- needed: `97`
+- candidates_total: `11165`
+
+- `CUISSE DE POULET FERMIER HALAL` | compte=`607100` | occurrences=`426` | factures=`3` | client=`fr_bd_519665103`
+- `BASSE SANS POITRINE DE VEAU` | compte=`6011` | occurrences=`285` | factures=`3` | client=`fr_bd_519665103`
+- `POULET PAC HALAL` | compte=`6011` | occurrences=`256` | factures=`3` | client=`fr_bd_519665103`
+- `FILET DE POULET FERMIER HALAL` | compte=`607100` | occurrences=`221` | factures=`3` | client=`fr_bd_519665103`
+- `COQUELET HALAL` | compte=`607` | occurrences=`207` | factures=`3` | client=`fr_bd_519665103`
+- `POULET FERMIER HALAL PAC` | compte=`6011` | occurrences=`207` | factures=`3` | client=`fr_bd_519665103`
+- `FILET DE POULET HALAL UE` | compte=`6011` | occurrences=`173` | factures=`3` | client=`fr_bd_519665103`
+- `CUISSE DE POULET HALAL UE 10KG` | compte=`6011` | occurrences=`170` | factures=`3` | client=`fr_bd_519665103`
+- `CUISSE POULET HALAL CEE 10KG` | compte=`607` | occurrences=`155` | factures=`3` | client=`fr_bd_519665103`
+- `FILET DE DINDE HALAL` | compte=`607100` | occurrences=`152` | factures=`3` | client=`fr_bd_519665103`
+- `CARRE DE VEAU SANS ROGNONS` | compte=`6011` | occurrences=`142` | factures=`3` | client=`fr_bd_519665103`
+- `FILET DE POULET HALAL CEE` | compte=`607100` | occurrences=`132` | factures=`3` | client=`fr_bd_519665103`
+- `SELEC PLATINE LR CRC 25KG` | compte=`6011` | occurrences=`127` | factures=`3` | client=`fr_bd_880517875`
+- `CHICKEN WINGS HALAL` | compte=`6011` | occurrences=`123` | factures=`3` | client=`fr_bd_519665103`
+- `POULET PAC HALAL CEE` | compte=`607` | occurrences=`121` | factures=`3` | client=`fr_bd_519665103`
+- `POMME DE TERRE GRENAILLE` | compte=`6071` | occurrences=`111` | factures=`3` | client=`fr_bd_519665103`
+- `FOIE DE POULET HALAL UE` | compte=`6011` | occurrences=`109` | factures=`3` | client=`fr_bd_519665103`
+- `PILON DE POULET ID HALAL` | compte=`6071` | occurrences=`106` | factures=`3` | client=`fr_bd_519665103`
+- `AILE DE POULET HALAL UE` | compte=`6011` | occurrences=`105` | factures=`3` | client=`fr_bd_519665103`
+- `NASRYA` | compte=`607000` | occurrences=`104` | factures=`3` | client=`fr_bd_519665103`
+- `PILONS DE POULET ID HALAL` | compte=`607` | occurrences=`104` | factures=`3` | client=`fr_bd_519665103`
+- `SPICY HALAL` | compte=`607000` | occurrences=`104` | factures=`3` | client=`fr_bd_519665103`
+- `CREME FRAICHE 15%,DELISSE,202G` | compte=`601` | occurrences=`101` | factures=`3` | client=`fr_bd_890233000`
+- `BEURRE GD TOURAGE FLECHARD CT 5X2KG` | compte=`6061` | occurrences=`91` | factures=`3` | client=`fr_bd_890233000`
+- `FOIE DE POULET CEE HALAL` | compte=`6011` | occurrences=`86` | factures=`3` | client=`fr_bd_519665103`
+- `Sortie volaille` | compte=`601` | occurrences=`86` | factures=`3` | client=`fr_bd_519665103`
+- `CHORIZO TR BQ 500G` | compte=`607` | occurrences=`83` | factures=`3` | client=`fr_bd_880517875`
+- `DECRO` | compte=`6063` | occurrences=`80` | factures=`3` | client=`fr_bd_519665103`
+- `SUCRE STICK` | compte=`601100` | occurrences=`73` | factures=`3` | client=`fr_bd_915197842`
+- `CHAMPIGNON DE PARIS ECO+ 200G` | compte=`6011` | occurrences=`72` | factures=`3` | client=`fr_bd_890233000`
+- `Vente LeParisien` | compte=`6061` | occurrences=`72` | factures=`3` | client=`fr_bd_880517875`
+- `PILON DE POULET HALAL UE` | compte=`607000` | occurrences=`70` | factures=`3` | client=`fr_bd_519665103`
+- `BASSE COTE VIANDE HALLAL` | compte=`6011` | occurrences=`68` | factures=`3` | client=`fr_bd_519665103`
+- `AGNEAU` | compte=`6011` | occurrences=`65` | factures=`3` | client=`fr_bd_519665103`
+- `CREME UHT 35% 1L MC BK AP` | compte=`601` | occurrences=`65` | factures=`3` | client=`fr_bd_890233000`
+- `JAVEL EXTRAIT 2.6% BIDON 5L` | compte=`6063` | occurrences=`65` | factures=`3` | client=`fr_bd_890233000`
+- `SAL ICEBERG MC PC DEMIPALX28 C1 ESESPAGNE` | compte=`6011` | occurrences=`65` | factures=`3` | client=`fr_bd_890233000`
+- `AILES DE POULET HALAL CEE` | compte=`607` | occurrences=`63` | factures=`3` | client=`fr_bd_519665103`
+- `CORDON DE VOLAILLE HALAL` | compte=`6071` | occurrences=`62` | factures=`3` | client=`fr_bd_519665103`
+- `CAMPAILLETTE POINTE PAYSANNE 25KG` | compte=`6011` | occurrences=`60` | factures=`3` | client=`fr_bd_880517875`
+
+## restaurant
+
+- current_items: `146`
+- target_items: `200`
+- needed: `54`
+- candidates_total: `5118`
+
+- `BOUCHERIE` | compte=`601` | occurrences=`1040` | factures=`3` | client=`fr_bd_952061570`
+- `DIVERS` | compte=`606800` | occurrences=`164` | factures=`3` | client=`fr_bd_891370595`
+- `50 COUV BTE SALADE KRAFT GM` | compte=`6063` | occurrences=`94` | factures=`3` | client=`fr_bd_952061570`
+- `CAISSE COCA 24X33CL PLEIN` | compte=`6068` | occurrences=`72` | factures=`3` | client=`fr_bd_952061570`
+- `50 BTE SALADE KRAFT 1300ML` | compte=`6063` | occurrences=`65` | factures=`3` | client=`fr_bd_952061570`
+- `COCA COLA VC 33CL` | compte=`6068` | occurrences=`64` | factures=`3` | client=`fr_bd_952061570`
+- `COURGETTE VERTE VRAC` | compte=`601` | occurrences=`58` | factures=`3` | client=`fr_bd_952061570`
+- `NAVET ROND VRAC` | compte=`601` | occurrences=`58` | factures=`3` | client=`fr_bd_952061570`
+- `50 COUV BTE SALADE KRAFT PM` | compte=`6063` | occurrences=`57` | factures=`3` | client=`fr_bd_952061570`
+- `CAROTTE LAVE VRAC` | compte=`601` | occurrences=`57` | factures=`3` | client=`fr_bd_952061570`
+- `Contribution tarifaire d'acheminement (CTA)` | compte=`6061` | occurrences=`56` | factures=`3` | client=`fr_bd_891370595`
+- `Taxes locales - part communale` | compte=`6061` | occurrences=`50` | factures=`3` | client=`fr_bd_891370595`
+- `MPRO 250 SERV 2P BLC 40X40` | compte=`6063` | occurrences=`49` | factures=`3` | client=`fr_bd_952061570`
+- `50 SAC PAP KRAFT POIG 26X14X32` | compte=`6063` | occurrences=`45` | factures=`3` | client=`fr_bd_952061570`
+- `COCA SANS SUCRES VC 33CL` | compte=`6061` | occurrences=`42` | factures=`3` | client=`fr_bd_952061570`
+- `Cheesecake Fruit Rouge` | compte=`601` | occurrences=`40` | factures=`3` | client=`fr_bd_891370595`
+- `Cheesecake Mangue` | compte=`601` | occurrences=`40` | factures=`3` | client=`fr_bd_891370595`
+- `BOULE A PIZZA CRU 280GX35` | compte=`6011` | occurrences=`39` | factures=`3` | client=`fr_bd_929728467`
+- `POTIRON CORGE VRAC` | compte=`601` | occurrences=`39` | factures=`3` | client=`fr_bd_952061570`
+- `MC TOMATES CONCASSEES 4/4` | compte=`6062` | occurrences=`36` | factures=`3` | client=`fr_bd_952061570`
+- `CHOUX BLANC VRAC` | compte=`601` | occurrences=`35` | factures=`3` | client=`fr_bd_952061570`
+- `SCHEPPES AGRUM 24X25CL VIDE` | compte=`6068` | occurrences=`35` | factures=`3` | client=`fr_bd_952061570`
+- `50 COUV CRIST POT ROND` | compte=`6068` | occurrences=`33` | factures=`3` | client=`fr_bd_952061570`
+- `TENDERS NATURE 1KG KFC HALAL` | compte=`601` | occurrences=`32` | factures=`3` | client=`fr_bd_929728467`
+- `SALADE ICEBERG` | compte=`601` | occurrences=`30` | factures=`3` | client=`fr_bd_929728467`
+- `C DIVERS` | compte=`6068` | occurrences=`30` | factures=`2` | client=`fr_bd_952061570`
+- `VIANDE HACHEE EGRENEE 4MM BOEUF ISLAM CONTROL 1KG` | compte=`6011` | occurrences=`29` | factures=`3` | client=`fr_bd_929728467`
+- `50 BTE SALADE KRAFT 75OML` | compte=`6061` | occurrences=`28` | factures=`3` | client=`fr_bd_952061570`
+- `GRANINI ORANGE 25CL` | compte=`6068` | occurrences=`26` | factures=`3` | client=`fr_bd_952061570`
+- `GRANINI POMME 25CL` | compte=`6061` | occurrences=`26` | factures=`3` | client=`fr_bd_952061570`
+- `OEUF PLATEAU DE 30 OEUFS CALIBRE MOYEN` | compte=`6011` | occurrences=`26` | factures=`3` | client=`fr_bd_929728467`
+- `SCHWEPPES AGRUM24X25CL PLEIN` | compte=`6061` | occurrences=`26` | factures=`3` | client=`fr_bd_952061570`
+- `100 POT SAUCE 6CL` | compte=`6063` | occurrences=`25` | factures=`3` | client=`fr_bd_952061570`
+- `50 POT ROND CRIST 25CL` | compte=`6063` | occurrences=`25` | factures=`3` | client=`fr_bd_952061570`
+- `FRITES MY FRIES CLASSIC 6/6` | compte=`601` | occurrences=`25` | factures=`3` | client=`fr_bd_929728467`
+- `50 BTE SALADE KRAFT 130OML` | compte=`6068` | occurrences=`24` | factures=`3` | client=`fr_bd_952061570`
+- `EPAULE AGN A/OS S/JAR NZ HAL` | compte=`6011` | occurrences=`24` | factures=`3` | client=`fr_bd_952061570`
+- `GIGOT AGN A/0S HAL PAC S/V NZ` | compte=`601` | occurrences=`24` | factures=`3` | client=`fr_bd_891370595`
+- `GIGOT AGN S/0S S/V NZ HAL` | compte=`6061` | occurrences=`24` | factures=`3` | client=`fr_bd_891370595`
+- `MOZZA/EMMENT RAPE SACH 2,5KGMC` | compte=`6011` | occurrences=`24` | factures=`3` | client=`fr_bd_952061570`
+
+## transport
+
+- current_items: `129`
+- target_items: `200`
+- needed: `71`
+- candidates_total: `2790`
+
+- `Gazole` | compte=`606110` | occurrences=`421` | factures=`3` | client=`fr_bd_839181104`
+- `DIESEL` | compte=`6061` | occurrences=`69` | factures=`3` | client=`fr_bd_839181104`
+- `Forfait Client B&You 260Go 5G` | compte=`6062` | occurrences=`42` | factures=`3` | client=`fr_bd_839181104`
+- `Carburant` | compte=`606110` | occurrences=`33` | factures=`3` | client=`fr_bd_839181104`
+- `Avantage client box` | compte=`6261` | occurrences=`27` | factures=`3` | client=`fr_bd_839181104`
+- `GAZOLE` | compte=`606110` | occurrences=`26` | factures=`3` | client=`fr_bd_839181104`
+- `Carburant GO` | compte=`6063` | occurrences=`23` | factures=`3` | client=`fr_bd_839181104`
+- `Achat non détaillé` | compte=`606800` | occurrences=`19` | factures=`3` | client=`fr_bd_839181104`
+- `BANANE DESSERT` | compte=`606200` | occurrences=`16` | factures=`3` | client=`fr_bd_888020088`
+- `Gasoil` | compte=`606110` | occurrences=`16` | factures=`3` | client=`fr_bd_890852403`
+- `DIESEL B10` | compte=`606300` | occurrences=`15` | factures=`3` | client=`fr_bd_839181104`
+- `GO (Gazole)` | compte=`606110` | occurrences=`15` | factures=`3` | client=`fr_bd_839181104`
+- `Effectuer un test rapide` | compte=`6062` | occurrences=`14` | factures=`3` | client=`fr_bd_839181104`
+- `Forfait Client B&You 230Go` | compte=`6261` | occurrences=`14` | factures=`3` | client=`fr_bd_839181104`
+- `Effectuer un essai sur route` | compte=`606200` | occurrences=`13` | factures=`3` | client=`fr_bd_839181104`
+- `Forfait Spécial client 350Go 5G Av. smartphone` | compte=`6061` | occurrences=`13` | factures=`3` | client=`fr_bd_839181104`
+- `Prix de la course (frais de service Uber inclus)` | compte=`606100` | occurrences=`13` | factures=`3` | client=`fr_bd_888020088`
+- `GO 05 pompe` | compte=`6063` | occurrences=`12` | factures=`3` | client=`fr_bd_888020088`
+- `Vos abonnements, forfaits et options` | compte=`6062` | occurrences=`12` | factures=`3` | client=`fr_bd_839181104`
+- `Vos services fournis par votre opérateur` | compte=`6062` | occurrences=`12` | factures=`3` | client=`fr_bd_839181104`
+- `AdBlue` | compte=`6068` | occurrences=`11` | factures=`3` | client=`PRIM DEMENAGEMENT`
+- `Solutions Sécurité Smartphone avec Norton` | compte=`6061` | occurrences=`11` | factures=`3` | client=`fr_bd_839181104`
+- `Divers` | compte=`6068` | occurrences=`10` | factures=`3` | client=`fr_bd_839181104`
+- `Forfait Sensation 150Go 5G Avantages Smartphone` | compte=`6261` | occurrences=`10` | factures=`3` | client=`fr_bd_839181104`
+- `Article non spécifié` | compte=`606100` | occurrences=`9` | factures=`3` | client=`fr_bd_839181104`
+- `Frais de rejet de prélèvement` | compte=`6061` | occurrences=`9` | factures=`3` | client=`fr_bd_839181104`
+- `Participation au retraitement des déchets` | compte=`6068` | occurrences=`9` | factures=`3` | client=`fr_bd_839181104`
+- `REPAS` | compte=`606100` | occurrences=`9` | factures=`3` | client=`fr_bd_839181104`
+- `ADblue` | compte=`6061` | occurrences=`8` | factures=`3` | client=`fr_bd_888020088`
+- `Avantage Internet 80Go` | compte=`6261` | occurrences=`8` | factures=`3` | client=`fr_bd_839181104`
+- `FR COCA COLA 24X33CL` | compte=`6068` | occurrences=`8` | factures=`3` | client=`fr_bd_839181104`
+- `OASIS TROPICAL 24X33CL` | compte=`6068` | occurrences=`8` | factures=`3` | client=`fr_bd_839181104`
+- `Pack de 100.00 € de crédit lavage a valoir sur les stations partenaires` | compte=`6061` | occurrences=`8` | factures=`3` | client=`fr_bd_839181104`
+- `33LS PIN POINT 1 43` | compte=`6063` | occurrences=`8` | factures=`2` | client=`fr_bd_839181104`
+- `BAGUETTE/PIDE/SOMON` | compte=`60610000` | occurrences=`7` | factures=`3` | client=`fr_bd_888020088`
+- `Carburant GAZOLE` | compte=`6063` | occurrences=`7` | factures=`3` | client=`fr_bd_839181104`
+- `Forfait RED - Internet 100Go - Réseau 5G (ligne 06 16 72 07 55)` | compte=`6261` | occurrences=`7` | factures=`3` | client=`MHB TRANSPORTS`
+- `Forfait RED - Internet 100Go - Réseau 5G (ligne 06 22 77 81 14)` | compte=`6261` | occurrences=`7` | factures=`3` | client=`MHB TRANSPORTS`
+- `x7 Chicken Dips` | compte=`606100` | occurrences=`7` | factures=`3` | client=`fr_bd_839181104`
+- `Avantage Internet 60Go` | compte=`606100` | occurrences=`6` | factures=`3` | client=`fr_bd_839181104`

@@ -1,0 +1,501 @@
+﻿article_source,normalized_label,invoice_count,line_occurrences,sample_account,already_in_base,partitions
+PILON DE POULET HALAL UE,pilon de poulet halal ue,384,411,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+CUISSE DE POULET HALAL UE,cuisse de poulet halal ue,306,310,6011,False,fr_bd_828612630 | fr_bd_837602275
+POULET FERMIER JAUNE PAC HALAL,poulet fermier jaune pac halal,290,338,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+CORDON BLEU DE POULET AUTHENTIC HALAL,cordon bleu de poulet authentic halal,288,331,6011,False,fr_bd_828612630 | fr_bd_837602275
+FOIE DE VEAU,foie de veau,229,293,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+CUISSEAU DE VEAU,cuisseau de veau,212,333,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+FOIE DE POULET HALAL,foie de poulet halal,211,211,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+POMME DE TERRE GRATIN DAUPHINOIS,pomme de terre gratin dauphinois,208,209,6011,False,fr_bd_828612630 | fr_bd_837602275
+FRESSURE DE MOUTON CARCASSE ABATS,fressure de mouton carcasse abats,202,248,6011,False,fr_bd_837602275
+FOIE DE VEAU CARCASSE ABATS,foie de veau carcasse abats,195,233,6011,False,fr_bd_837602275
+BASSE COTE,basse cote,194,197,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+POITRINE DE VEAU,poitrine de veau,184,207,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+POULET FERMIER BIO PAC HALAL,poulet fermier bio pac halal,183,188,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+PANÉ DE VOLAILLE HALAL UE MILANESE,pane de volaille halal ue milanese,177,183,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+CUISSE DE DINDE HALAL,cuisse de dinde halal,166,166,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+FRESSURE DE MOUTON,fressure de mouton,165,227,6011,False,fr_bd_837602275
+CORDON BLEU PLT AUTHENTIC HALAL,cordon bleu plt authentic halal,164,192,6011,False,fr_bd_828612630 | fr_bd_837602275
+TENDER CE HALAL,tender ce halal,164,165,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+CUISSE DE POULET HALAL,cuisse de poulet halal,146,151,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+RUMSTEACK BLANC BLEU BELGE,rumsteack blanc bleu belge,144,266,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+CREPINE DE VEAU,crepine de veau,144,168,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+RUMSTEACK BLANC BLEU BELGE VIANDE HALLAL,rumsteack blanc bleu belge viande hallal,136,279,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+DONUT DE FILET DE POULET,donut de filet de poulet,135,136,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+PIED DE VEAU,pied de veau,132,167,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+QUEUE DE BOEUF CARCASSE ABATS,queue de boeuf carcasse abats,130,146,6011,False,fr_bd_837602275
+PANSE D'OVIN SALE,panse d ovin sale,129,151,6011,False,fr_bd_837602275
+CREPINE DE VEAU CARCASSE ABATS,crepine de veau carcasse abats,127,143,6011,False,fr_bd_837602275
+PDT GRATIN DAUPHINOIS,pdt gratin dauphinois,127,127,6011,False,fr_bd_828612630 | fr_bd_837602275
+GÉSIER DE POULET HALAL,gesier de poulet halal,126,126,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+BAVETTE ALOYAU BLANC BLEU BELGE VIANDE HALLAL,bavette aloyau blanc bleu belge viande hallal,120,351,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+PILON DE POULET HALAL CEE,pilon de poulet halal cee,120,120,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+CORDON BLEU S/AT HALAL,cordon bleu s at halal,118,118,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+BAVETTE ALOYAU BLANC BLEU BELGE,bavette aloyau blanc bleu belge,114,278,6011,False,fr_bd_828612630 | fr_bd_837602275
+AILE DE POULET HALAL,aile de poulet halal,114,119,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+QUEUE DE BOEUF,queue de boeuf,111,124,6011,False,fr_bd_519665103 | fr_bd_837602275
+PIED DE VEAU - CARCASSE ABATS,pied de veau carcasse abats,109,116,6011,False,fr_bd_837602275
+VEAU,veau,106,121,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+FILET DE POULET HALAL UE origine : NL,filet de poulet halal ue origine nl,105,107,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+QUEUE DE VEAU,queue de veau,102,119,6011,False,fr_bd_519665103 | fr_bd_837602275
+BAVETTE ALOYAU - VIANDE HALLAL BLANC BLEU BELGE,bavette aloyau viande hallal blanc bleu belge,101,311,6011,False,fr_bd_828612630 | fr_bd_837602275
+QUEUE DE VEAU CARCASSE ABATS,queue de veau carcasse abats,101,108,6011,False,fr_bd_837602275
+CARRE AGNEAU,carre agneau,95,119,6011,False,fr_bd_828612630 | fr_bd_837602275
+TESTICULE DE MOUTON,testicule de mouton,94,116,6011,False,fr_bd_837602275
+PAN.DOUBLE DE VEAU,pan double de veau,93,106,6011,False,fr_bd_828612630 | fr_bd_837602275
+PILON DE POULET HALAL UE origine : NL,pilon de poulet halal ue origine nl,93,95,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+COLLIER AGNEAU,collier agneau,91,103,607,False,fr_bd_519665103 | fr_bd_837602275
+BASSE COTE SOUS VIDE BEUF,basse cote sous vide beuf,88,112,6011,False,fr_bd_837602275
+GÉSIER DE POULET HALAL UE,gesier de poulet halal ue,88,88,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+LAPIN X4 HALAL,lapin x4 halal,88,88,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+CUISSE DE POULET HALAL UE origine : NL,cuisse de poulet halal ue origine nl,87,89,6011,False,fr_bd_837602275
+PANSE D'OVIN SALE CARCASSE ABATS,panse d ovin sale carcasse abats,84,92,6011,False,fr_bd_837602275
+NUGGETS DE POULET AUTHENTIC HALAL,nuggets de poulet authentic halal,84,88,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+"BRESAOLA ""BLACK ANGUS"" 1/2",bresaola black angus 1 2,83,86,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+DONUTS FILET POULET,donuts filet poulet,83,83,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+LANGUE DE VEAU,langue de veau,80,84,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+LANGUE DE MOUTON,langue de mouton,78,83,6011,False,fr_bd_837602275
+CUISSE POULET HALAL CEE 10KG origine : NL,cuisse poulet halal cee 10kg origine nl,78,78,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+CREPINE VEAU,crepine veau,77,77,6011,False,fr_bd_519665103 | fr_bd_828612630
+CREPINE DE MOUTON CARCASSE ABATS,crepine de mouton carcasse abats,75,79,6011,False,fr_bd_837602275
+Eco Contribution,eco contribution,74,128,60620000,False,fr_bd_832065999
+FILET VIANDE HALLAL BLANC BLEU BELGE,filet viande hallal blanc bleu belge,73,113,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+AidEnergie,aidenergie,73,73,6068,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+NERVEUX SOUS VIDE VEAU,nerveux sous vide veau,72,74,6011,False,fr_bd_837602275
+FILET BLANC BLEU BELGE VIANDE HALLAL,filet blanc bleu belge viande hallal,71,110,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+LANGUE DE MOUTON - CARCASSE ABATS,langue de mouton carcasse abats,69,73,6011,False,fr_bd_837602275
+"LAIT FERMENTE ""LUXLAIT "" 8 X 1L",lait fermente luxlait 8 x 1l,69,69,601,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+POULET PAC HALAL UE,poulet pac halal ue,67,106,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+FILET BLANC BLEU BELGE,filet blanc bleu belge,66,131,6011,False,fr_bd_828612630 | fr_bd_837602275
+FILET DE POULET HALAL UE origine : UE,filet de poulet halal ue origine ue,66,68,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+CHEVREAU HALAL,chevreau halal,64,73,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+PALERON SOUS VIDE BEUF,paleron sous vide beuf,62,62,6011,False,fr_bd_837602275
+RAQUETTE BLANC BLEU BELGE,raquette blanc bleu belge,61,85,6011,False,fr_bd_828612630 | fr_bd_837602275
+FILET DE POULET HALAL CEE origine : NL,filet de poulet halal cee origine nl,61,61,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+TETE DE MOUTON,tete de mouton,60,65,6011,False,fr_bd_837602275
+BOEUF FUMÉ CUIT 4 ÉPICES HALAL,boeuf fume cuit 4 epices halal,60,62,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+TESTICULE DE MOUTON CARCASSE ABATS,testicule de mouton carcasse abats,58,60,6011,False,fr_bd_837602275
+TETE DE MOUTON CARCASSE ABATS,tete de mouton carcasse abats,57,62,6011,False,fr_bd_837602275
+FILET DE CANARD HALAL,filet de canard halal,57,61,6011,False,fr_bd_828612630 | fr_bd_837602275
+CECINA DE LEON HALAL,cecina de leon halal,57,59,6011,False,fr_bd_828612630 | fr_bd_837602275
+PAN.SIMPLE DE VEAU,pan simple de veau,56,63,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+VOL'LIGHT TUNISIENNE HALAL,vol light tunisienne halal,56,59,6011,False,fr_bd_828612630 | fr_bd_837602275
+MILIEU TRAIN VIANDE HALLAL BLANC BLEU BELGE,milieu train viande hallal blanc bleu belge,55,117,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+CREPINE DE MOUTON,crepine de mouton,53,62,6011,False,fr_bd_837602275
+ROGNON DE BOEUF,rognon de boeuf,53,54,6011,False,fr_bd_519665103 | fr_bd_837602275
+BACON DE VEAU HALAL,bacon de veau halal,53,53,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+ECO-PARTICIPATION,eco participation,52,52,6068,False,fr_bd_832065999 | fr_bd_837602275
+FILET DE POULET HALAL UE origine : BE,filet de poulet halal ue origine be,52,52,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+POULET PAC HALAL origine : FR,poulet pac halal origine fr,51,67,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+GRAND SAUCISSON SEC HALAL COUPE,grand saucisson sec halal coupe,51,54,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+FILET DE POULET HALLAL,filet de poulet hallal,51,51,6011,False,fr_bd_837602275
+PIED MOUTON,pied mouton,50,52,6011,False,fr_bd_837602275
+NUGGETS PLT AUTHENTIC HALAL,nuggets plt authentic halal,50,50,6011,False,fr_bd_828612630 | fr_bd_837602275
+FRESSURE AGNEAU PIECE provenan,fressure agneau piece provenan,49,50,6011,False,fr_bd_519665103 | fr_bd_828612630
+FILET DE DINDE CEE HALAL,filet de dinde cee halal,49,49,6011,False,fr_bd_519665103 | fr_bd_828612630
+Gazole,gazole,47,58,6063,False,fr_bd_828612630 | fr_bd_832065999 | fr_bd_837602275
+PIED MOUTON CARCASSE ABATS,pied mouton carcasse abats,47,47,6011,False,fr_bd_837602275
+RAQUETTE VIANDE HALLAL BLANC BLEU BELGE,raquette viande hallal blanc bleu belge,46,76,6011,False,fr_bd_828612630 | fr_bd_837602275
+RAQUETTE BLANC BLEU BELGE VIANDE HALLAL,raquette blanc bleu belge viande hallal,46,67,6011,False,fr_bd_828612630 | fr_bd_837602275
+AGNEAU FRESSURE ORIGINE :FRANCE,agneau fressure origine france,45,45,6011,False,fr_bd_519665103 | fr_bd_828612630
+MILIEU TRAIN BLANC BLEU BELGE VIANDE HALLAL,milieu train blanc bleu belge viande hallal,44,117,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+BOEUF CUISSE FLANCH BLANC BLEU BELGE,boeuf cuisse flanch blanc bleu belge,44,60,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+BOEUF FUMÉ CUIT 4ÉPICES HALAL,boeuf fume cuit 4epices halal,44,45,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+CORIZO DINDE S/V HALAL,corizo dinde s v halal,44,44,6013,False,fr_bd_519665103 | fr_bd_837602275
+CUISSE DE POULET HALAL UE 10KG origine : NL,cuisse de poulet halal ue 10kg origine nl,44,44,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+VEAU FOIE,veau foie,44,44,607000,False,fr_bd_519665103
+ENTRECOTE SOUS VIDE BEUF,entrecote sous vide beuf,43,47,6011,False,fr_bd_837602275
+CHORIZO HALAL COUPE,chorizo halal coupe,43,45,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+PILON DE POULET HALAL,pilon de poulet halal,42,45,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+OLIVES VERTES DENOYAUTEES 6KG,olives vertes denoyautees 6kg,42,42,601,False,fr_bd_519665103 | fr_bd_837602275
+TESTICULE AGNEAU,testicule agneau,42,42,6011,False,fr_bd_519665103 | fr_bd_828612630
+JOUE DE BOEUF,joue de boeuf,41,47,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+CAILLE HALAL,caille halal,40,41,6011,False,fr_bd_828612630 | fr_bd_837602275
+LANGUE DE VEAU CARCASSE ABATS,langue de veau carcasse abats,40,41,6011,False,fr_bd_837602275
+PILON DE POULET HALAL CEE origine : NL,pilon de poulet halal cee origine nl,40,40,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+AILES DE POULET 3 PHALANGES HALAL CEE,ailes de poulet 3 phalanges halal cee,39,39,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Saucissons secs 280 grs Halal au Poivre,saucissons secs 280 grs halal au poivre,39,39,601,False,fr_bd_828612630 | fr_bd_837602275
+BAVETTE ALOYAU,bavette aloyau,38,101,6011,False,fr_bd_828612630 | fr_bd_837602275
+MILIEU TRAIN BLANC BLEU BELGE,milieu train blanc bleu belge,37,94,6011,False,fr_bd_837602275
+PLAT BLANC BLEU BELGE,plat blanc bleu belge,37,43,6011,False,fr_bd_519665103 | fr_bd_837602275
+AGNEAU TETE ORIGINE :FRANCE,agneau tete origine france,37,37,6011,False,fr_bd_519665103
+JAMBON DE DINDE,jambon de dinde,37,37,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+VEAU CREPINE,veau crepine,37,37,607000,False,fr_bd_519665103
+VEAU FOIE ORIGINE :PAYS-BAS TRACE : 0000001 N° ABT : NL,veau foie origine pays bas trace 0000001 n abt nl,37,37,6011,False,fr_bd_519665103 | fr_bd_828612630
+BOEUF CUISSE FLANCH BLANC BLEU BELGE VIANDE HALLAL,boeuf cuisse flanch blanc bleu belge viande hallal,36,60,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+SOURIS AGNEAU CARTON SOUS VIDE AGNEAU,souris agneau carton sous vide agneau,36,41,6011,False,fr_bd_837602275
+POULET EFFILÉ HALAL,poulet effile halal,36,39,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+PANÉ DE VOLAILLE HALAL UE,pane de volaille halal ue,36,37,6013,False,fr_bd_519665103 | fr_bd_837602275
+PILON DE POULET HALAL UE origine : UE,pilon de poulet halal ue origine ue,36,37,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+AILE DE POULET 3 PHALANGES HALAL UE,aile de poulet 3 phalanges halal ue,36,36,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Acrobat Pro,acrobat pro,36,36,606100,False,fr_bd_832065999
+QUEUE BOEUF provenance FR,queue boeuf provenance fr,36,36,6011,False,fr_bd_519665103 | fr_bd_828612630
+ESCALOPE VIENNOISE HALAL,escalope viennoise halal,34,38,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Colis Méchouia Piquante 220g,colis mechouia piquante 220g,34,34,601,False,fr_bd_828612630 | fr_bd_837602275
+DEMI.CARCASSE DE VEAU,demi carcasse de veau,34,34,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+OLIVE NOIRE FACON GRECE 8KG,olive noire facon grece 8kg,34,34,601,False,fr_bd_519665103 | fr_bd_837602275
+VOL'LIGHT FINES HERBES HALAL,vol light fines herbes halal,34,34,6011,False,fr_bd_828612630 | fr_bd_837602275
+PANSETTE VERTE SALEE OVIN,pansette verte salee ovin,33,51,6011,False,fr_bd_837602275
+Fourniture des accessoires nécessaire ci-dessous.,fourniture des accessoires necessaire ci dessous,33,42,6063,False,fr_bd_832065999
+CASQUE AGNEAU,casque agneau,33,40,6011,False,fr_bd_519665103 | fr_bd_837602275
+Pastrami de Veau Halal Premier Choix 378,pastrami de veau halal premier choix 378,33,34,601,False,fr_bd_828612630 | fr_bd_837602275
+AGNEAU FRESSURE ORIGINE :FRANCE TRACE : 0000001 N° ABT : FR,agneau fressure origine france trace 0000001 n abt fr,33,33,6011,False,fr_bd_519665103 | fr_bd_828612630
+ROGNON DE BOEUF - CARCASSE ABATS,rognon de boeuf carcasse abats,33,33,6011,False,fr_bd_837602275
+BOEUF CUISSE FLANCH - VIANDE HALLAL - BLANC BLEU BELGE,boeuf cuisse flanch viande hallal blanc bleu belge,32,47,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+PLAT BLANC BLEU BELGE VIANDE HALLAL,plat blanc bleu belge viande hallal,32,40,6011,False,fr_bd_519665103 | fr_bd_837602275
+CARRE DE VEAU SANS ROGNONS - VIANDE HALLAL,carre de veau sans rognons viande hallal,32,39,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Blanc de Dinde Fumé 1964 bloc 378,blanc de dinde fume 1964 bloc 378,32,34,601,False,fr_bd_828612630 | fr_bd_837602275
+COUSCOUS MOYEN DARI 12 X 1 KG,couscous moyen dari 12 x 1 kg,32,32,601,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Colis Méchouia Douce 220g,colis mechouia douce 220g,32,32,601,False,fr_bd_828612630 | fr_bd_837602275
+DEHANCHE AVEC FILET TOP NOIRE DE BALTIQUE SELECTA,dehanche avec filet top noire de baltique selecta,32,32,6011,False,fr_bd_837602275
+RAIB LVB BRIQUE 1 LITRE,raib lvb brique 1 litre,32,32,601,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+ROULADE NATURE FUMÉ HALAL,roulade nature fume halal,32,32,6011,False,fr_bd_828612630 | fr_bd_837602275
+FOIE OVIN,foie ovin,31,70,6011,False,fr_bd_837602275
+AVANT DROIT 5 COTES - VIANDE HALLAL BLANC BLEU BELGE,avant droit 5 cotes viande hallal blanc bleu belge,31,45,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+AILE DE POULET HALAL UE origine : UE,aile de poulet halal ue origine ue,31,31,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+CAILLES HALAL,cailles halal,31,31,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+FILET DE POULET HALAL CEE origine : BE,filet de poulet halal cee origine be,31,31,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+FRESSURE AGNEAU PIECE,fressure agneau piece,31,31,6011,False,fr_bd_519665103 | fr_bd_828612630
+HAMOUD SELECTO PLASTIQUE 6 X 1.5L,hamoud selecto plastique 6 x 1 5l,31,31,601,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Préparation de la zone de travail. Inclus : protection de la zone de travail.,preparation de la zone de travail inclus protection de la zone de travail,31,31,6068,False,fr_bd_832065999
+CREPINE OVIN,crepine ovin,30,37,6011,False,fr_bd_837602275
+PLAT VIANDE HALLAL BLANC BLEU BELGE,plat viande hallal blanc bleu belge,30,36,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+ALOYAU MILIEU TRAIN - VIANDE HALLAL BLANC BLEU BELGE,aloyau milieu train viande hallal blanc bleu belge,30,33,6011,False,fr_bd_519665103 | fr_bd_828612630
+Gros sec Halal,gros sec halal,30,31,601,False,fr_bd_828612630 | fr_bd_837602275
+AGNEAU CREPINE,agneau crepine,30,30,607000,False,fr_bd_519665103 | fr_bd_828612630
+BOEUF QUEUE SOUS-VIDE ORIGINE :FRANCE,boeuf queue sous vide origine france,30,30,6011,False,fr_bd_519665103 | fr_bd_828612630
+CREPINE AGNEAU,crepine agneau,30,30,6011,False,fr_bd_519665103 | fr_bd_828612630
+OEUFS BOITE X6 BIO,oeufs boite x6 bio,30,30,6011,False,fr_bd_828612630 | fr_bd_837602275
+QUEUE VEAU (V) provenance FR,queue veau v provenance fr,30,30,607,False,fr_bd_519665103 | fr_bd_828612630
+RUMSTEACK,rumsteack,29,56,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+BOEUF CUISSE HANCHE BLANC BLEU BELGE,boeuf cuisse hanche blanc bleu belge,29,49,6011,False,fr_bd_837602275
+Pastrami 'original' Halal en Bloc,pastrami original halal en bloc,29,30,601,False,fr_bd_828612630 | fr_bd_837602275
+AILES DE POULET HALAL CEE origine : BE,ailes de poulet halal cee origine be,29,29,6071,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+JAMBON DE VEAU HALAL KG,jambon de veau halal kg,29,29,6011,False,fr_bd_828612630 | fr_bd_837602275
+Saucissons secs 280 grs Halal aux Noisettes,saucissons secs 280 grs halal aux noisettes,29,29,601,False,fr_bd_828612630 | fr_bd_837602275
+CARRE AGNEAU MOINS DE 12 MOIS,carre agneau moins de 12 mois,28,43,6011,False,fr_bd_828612630 | fr_bd_837602275
+AGNEAU PANSE VERTE SALEE,agneau panse verte salee,28,28,607000,False,fr_bd_519665103 | fr_bd_828612630
+CERVELLE VEAU UE (V),cervelle veau ue v,28,28,6011,False,fr_bd_519665103 | fr_bd_828612630
+FILET DE DINDE HALAL origine : FR,filet de dinde halal origine fr,28,28,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+"POIS CHICHE BOCAL ""MIDO"" 570GX12",pois chiche bocal mido 570gx12,28,28,601,False,fr_bd_519665103 | fr_bd_837602275
+RUMSTEACK BLANC BLEU BELGE VA VIANDE VIANDE HALLAL,rumsteack blanc bleu belge va viande viande hallal,27,56,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+VEAU PIED ORIGINE :FRANCE,veau pied origine france,27,28,6011,False,fr_bd_519665103 | fr_bd_828612630
+COUSCOUS FIN DARI 12 X 1 KG,couscous fin dari 12 x 1 kg,27,27,601,False,fr_bd_828612630 | fr_bd_837602275
+Emballages,emballages,27,27,60225,False,fr_bd_519665103 | fr_bd_828612630
+Gros Chorizhal Halal,gros chorizhal halal,27,27,601,False,fr_bd_828612630 | fr_bd_837602275
+HAMOUD BLANCHE PLASTIQUE 6 X 1.5L,hamoud blanche plastique 6 x 1 5l,27,27,601,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+LANGUE AGNEAU provenance FR,langue agneau provenance fr,27,27,6011,False,fr_bd_519665103 | fr_bd_828612630
+Nettoyage en cours et en fin de chantier. Nettoyage fin de chantier et mise en décharge de déchets du chantier.,nettoyage en cours et en fin de chantier nettoyage fin de chantier et mise en decharge de dechets du chantier,27,27,6068,False,fr_bd_832065999
+Saucissons secs 280 g Halal Nature,saucissons secs 280 g halal nature,27,27,601,False,fr_bd_828612630 | fr_bd_837602275
+RUMSTEACK VA VIANDE VIANDE HALLAL BLANC BLEU BELGE,rumsteack va viande viande hallal blanc bleu belge,26,51,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+CERVELLE DE VEAU,cervelle de veau,26,31,6011,False,fr_bd_837602275
+ROGNON BLANC OVIN,rognon blanc ovin,26,31,6011,False,fr_bd_837602275
+DEMI ROSBIF AGNEAU,demi rosbif agneau,26,28,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+FILET DE POULET FERMIER HALAL S/AT,filet de poulet fermier halal s at,26,28,6011,False,fr_bd_828612630 | fr_bd_837602275
+AILE DE POULET HALAL UE origine : NL,aile de poulet halal ue origine nl,26,26,6011,False,fr_bd_828612630 | fr_bd_837602275
+Aide énergie,aide energie,26,26,6068,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+DÉLICE DE POULET NATURE HALAL,delice de poulet nature halal,26,26,601,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+F. FIXE,f fixe,26,26,6068,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+FOURRURE 45 NF,fourrure 45 nf,26,26,60620000,False,fr_bd_832065999
+LAIT FERMENTE CHERGUI 10 X 1L,lait fermente chergui 10 x 1l,26,26,6061,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+PIED VEAU provenance FR,pied veau provenance fr,26,26,6011,False,fr_bd_519665103 | fr_bd_828612630
+Roulade poulet fines herbes Halal,roulade poulet fines herbes halal,26,26,601,False,fr_bd_828612630 | fr_bd_837602275
+SEMOULE BLE EXTRA FINE RENARD 10x1KG,semoule ble extra fine renard 10x1kg,26,26,601,False,fr_bd_828612630 | fr_bd_837602275
+MILIEU TRAIN CARCASSE BEUF,milieu train carcasse beuf,25,92,6011,False,fr_bd_828612630 | fr_bd_837602275
+CULOTTE AGNEAU,culotte agneau,25,29,6011,False,fr_bd_519665103 | fr_bd_837602275
+MAGRET DE CANARD HALAL,magret de canard halal,25,26,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+AGNEAU MOINS DE 12 MOIS PRODUITS REFRIGERES,agneau moins de 12 mois produits refrigeres,25,25,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+GARDE - GARDE,garde garde,25,25,6068,False,fr_bd_837602275
+SAUCE NAWHAL'S ALGERIENNE 12X500ML,sauce nawhal s algerienne 12x500ml,25,25,601,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Saucissons secs 280 grs Halal à la Truffe Premier Choix,saucissons secs 280 grs halal a la truffe premier choix,25,25,601,False,fr_bd_828612630 | fr_bd_837602275
+BAVETTE ALOYAU BLANC BLEU BELGE VA VIANDE VIANDE HALLAL,bavette aloyau blanc bleu belge va viande viande hallal,24,62,6011,False,fr_bd_828612630 | fr_bd_837602275
+POULET FERMIER HALAL PAC origine : FR,poulet fermier halal pac origine fr,24,30,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+COLLIER AGNEAU MOINS DE 12 MOIS,collier agneau moins de 12 mois,24,27,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+COQUELET HALAL origine : FR,coquelet halal origine fr,24,26,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Roulade poulet olives Halal,roulade poulet olives halal,24,26,601,False,fr_bd_828612630 | fr_bd_837602275
+BACON DE DINDE HALAL,bacon de dinde halal,24,25,6011,False,fr_bd_828612630 | fr_bd_837602275
+DÉLICE DE DINDE HALAL,delice de dinde halal,24,24,607,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+JAMBON DE POULET DK01,jambon de poulet dk01,24,24,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+LAPIN X6 HALAL,lapin x6 halal,24,24,6011,False,fr_bd_828612630 | fr_bd_837602275
+OLIVES VIOLETTES TAILLADEES 7.5KG,olives violettes tailladees 7 5kg,24,24,601,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+CUISSE DE POULET FERMIER HALAL origine : FR,cuisse de poulet fermier halal origine fr,23,26,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+BOEUF CUISSE FLANCH,boeuf cuisse flanch,23,25,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+AGNEAU TESTICULES - ORIGINE :FRANCE,agneau testicules origine france,23,23,6011,False,fr_bd_519665103
+ENTRECOTE DE BOEUF,entrecote de boeuf,23,23,6011,False,fr_bd_828612630 | fr_bd_837602275
+VOL'LIGHT ORIENTAL HALAL,vol light oriental halal,23,23,6011,False,fr_bd_828612630 | fr_bd_837602275
+FILET,filet,22,32,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+AILES DE POULET ID HALAL,ailes de poulet id halal,22,23,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+BASSE SANS POITRINE CARCASSE VEAU,basse sans poitrine carcasse veau,22,23,6011,False,fr_bd_837602275
+CONCENTRE DE TOMATE ROLLI 1/2 440G X 12,concentre de tomate rolli 1 2 440g x 12,22,23,601,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+AGNEAU FRESSURE,agneau fressure,22,22,6011,False,fr_bd_519665103
+DEHANCHE AVEC FILET TOP WAGYU,dehanche avec filet top wagyu,22,22,6011,False,fr_bd_837602275
+FOIE DE POULET CEE HALAL origine : BE,foie de poulet cee halal origine be,22,22,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Plus value pour localisation intramuros. Plus value liée aux difficultés d'accessibilité et de stationnement du chantier.,plus value pour localisation intramuros plus value liee aux difficultes d accessibilite et de stationnement du chantier,22,22,6068,False,fr_bd_832065999
+ROULADE DE VOLAILLE FINES HERBES HALAL,roulade de volaille fines herbes halal,22,22,6011,False,fr_bd_828612630 | fr_bd_837602275
+RUMSTEACK BLANC BLEU BELGE PRODUITS REFRIGERES,rumsteack blanc bleu belge produits refrigeres,22,22,6011,False,fr_bd_519665103 | fr_bd_837602275
+Saucisson Sec Italien 280G Halal,saucisson sec italien 280g halal,22,22,601,False,fr_bd_828612630 | fr_bd_837602275
+VEAU QUEUE SOUS-VIDE ORIGINE :FRANCE,veau queue sous vide origine france,22,22,6011,False,fr_bd_519665103 | fr_bd_828612630
+VOL'LIGHT CHAMPIGNON HALAL,vol light champignon halal,22,22,6011,False,fr_bd_828612630 | fr_bd_837602275
+FAC GROUPE SODIVI,fac groupe sodivi,21,559,606,False,fr_bd_837602275
+Traitement des tableaux de menuiseries/Velux. Traitement des retours en tableau de menuiseries/Velux.,traitement des tableaux de menuiseries velux traitement des retours en tableau de menuiseries velux,21,27,6063,False,fr_bd_832065999
+SELLE AGNEAU,selle agneau,21,26,6011,False,fr_bd_519665103
+AGNEAU TETE KG,agneau tete kg,21,22,607000,False,fr_bd_519665103
+AGNEAU FRESSURE KG,agneau fressure kg,21,21,607000,False,fr_bd_519665103
+AGNEAU PANSE VERTE SALEE ORIGINE :FRANCE,agneau panse verte salee origine france,21,21,6011,False,fr_bd_519665103 | fr_bd_828612630
+AGNEAU TETE ORIGINE :FRANCE TRACE : 0000001 N° ABT : FR,agneau tete origine france trace 0000001 n abt fr,21,21,6011,False,fr_bd_519665103 | fr_bd_828612630
+"LE SUPREME ""BLACK ANGUS""",le supreme black angus,21,21,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+OEUFS MOYENS BLANCS 10*30,oeufs moyens blancs 10 30,21,21,601,False,fr_bd_519665103 | fr_bd_837602275
+OLIVES MEXICAINE 8KG,olives mexicaine 8kg,21,21,601,False,fr_bd_837602275
+Offre Spéciale - Réduction sur la position 1,offre speciale reduction sur la position 1,21,21,6061,False,fr_bd_832065999
+VENTE VIANDE HALAL,vente viande halal,21,21,607,False,fr_bd_837602275
+AGNEAU HALAL OVIN,agneau halal ovin,20,22,6011,False,fr_bd_837602275
+ARRIERE 8 COTES - VIANDE HALLAL BLANC BLEU BELGE,arriere 8 cotes viande hallal blanc bleu belge,20,21,6011,False,fr_bd_519665103 | fr_bd_837602275
+AGNEAU PANSE VERTE SALEE ORIGINE :FRANCE TRACE : 0000001 N° ABT : FR,agneau panse verte salee origine france trace 0000001 n abt fr,20,20,6011,False,fr_bd_519665103 | fr_bd_828612630
+"FILET 2,5+ AVEC CHAINETTE GALICIA Origen VACIO",filet 2 5 avec chainette galicia origen vacio,20,20,6011,False,fr_bd_837602275
+FRESSURE AGNEAU,fressure agneau,20,20,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+OLIVES VERTES CASSEES PIQUANTE 8KG,olives vertes cassees piquante 8kg,20,20,601,False,fr_bd_519665103 | fr_bd_837602275
+PILON DE POULET HALLAL CEE,pilon de poulet hallal cee,20,20,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Spotify Premium Duo,spotify premium duo,20,20,606100,False,fr_bd_832065999
+MILIEU TRAIN VA VIANDE VIANDE HALLAL BLANC BLEU BELGE,milieu train va viande viande hallal blanc bleu belge,19,41,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+FILET DE POULET FERMIER HALAL origine : FR,filet de poulet fermier halal origine fr,19,30,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+SOUS GANT COTON A LISERE PAQ DE,sous gant coton a lisere paq de,19,24,6068,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+FILET DE POULET FERMIER HALAL A S/AT,filet de poulet fermier halal a s at,19,23,6011,False,fr_bd_837602275
+GARDE,garde,19,21,6068,False,fr_bd_519665103 | fr_bd_837602275
+CORDON BLEU HALAL,cordon bleu halal,19,20,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Carburant,carburant,19,20,6068,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_832065999 | fr_bd_837602275
+CREPINE VEAU -V,crepine veau v,19,19,6011,False,fr_bd_519665103 | fr_bd_828612630
+FILET DE DINDE CEE HALAL origine : IT,filet de dinde cee halal origine it,19,19,6011,False,fr_bd_519665103 | fr_bd_828612630
+OEUFS MOY.BLANCS FILMES 30 X 8,oeufs moy blancs filmes 30 x 8,19,19,601,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Pack digital,pack digital,19,19,6068,False,fr_bd_837602275
+Saucisson fumé au Bœuf et poivre vert Halal 2.5kg,saucisson fume au b uf et poivre vert halal 2 5kg,19,19,601,False,fr_bd_828612630 | fr_bd_837602275
+VEAU PIED,veau pied,19,19,607000,False,fr_bd_519665103
+CUISSEAU DE VEAU - VIANDE HALLAL,cuisseau de veau viande hallal,18,31,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Repas,repas,18,20,606100,False,fr_bd_519665103 | fr_bd_832065999
+EPAULE AGNEAU,epaule agneau,18,19,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+AGNEAU TESTICULES,agneau testicules,18,18,607000,False,fr_bd_519665103
+CUISSE POULET HALAL CEE 10KG origine : BE,cuisse poulet halal cee 10kg origine be,18,18,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+LAIT FERMENTEE LUXLAIT X8,lait fermentee luxlait x8,18,18,601,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+POMS 6 X 1.3L,poms 6 x 1 3l,18,18,601,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+POULET FERMIER JAUNE PAC HALAL origine : FR,poulet fermier jaune pac halal origine fr,18,18,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Roulade poulet nature Halal,roulade poulet nature halal,18,18,601,False,fr_bd_828612630 | fr_bd_837602275
+SEMOULE DE BLE MOYENNE RENARD 10x1KG,semoule de ble moyenne renard 10x1kg,18,18,601,False,fr_bd_828612630 | fr_bd_837602275
+"TRAIN DE COTE DE BOEUF ""ANGUS"" HALAL",train de cote de boeuf angus halal,18,18,6011,False,fr_bd_828612630 | fr_bd_837602275
+RUMSTEACK CARCASSE BEUF,rumsteack carcasse beuf,17,29,6011,False,fr_bd_837602275
+BOITE PLANCHA CARTON 455X190X50MM /20,boite plancha carton 455x190x50mm 20,17,22,606200,False,fr_bd_828612630 | fr_bd_837602275
+AILE DE POULET HALAL UE origine : BE,aile de poulet halal ue origine be,17,20,6071,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+CHULETERO EXTRA PREMIUM GALICIA Origen,chuletero extra premium galicia origen,17,20,6011,False,fr_bd_837602275
+AGNEAU ******* MOIS DE 12 MOIS,agneau mois de 12 mois,17,18,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+CERVELLE AGNEAU provenance FR,cervelle agneau provenance fr,17,18,6011,False,fr_bd_519665103 | fr_bd_828612630
+CUISSE DE POULET HALAL origine : FR,cuisse de poulet halal origine fr,17,18,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+GRAND SAUCISSON SEC HL COUPE,grand saucisson sec hl coupe,17,18,607,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+CUISSE DE DINDE HALAL UE,cuisse de dinde halal ue,17,17,6011,False,fr_bd_519665103 | fr_bd_837602275
+CUISSE DE POULET HALAL UE origine : UE,cuisse de poulet halal ue origine ue,17,17,6011,False,fr_bd_837602275
+PIGEON HALAL,pigeon halal,17,17,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+SAC POUBELLE 130L 45 25SAC/RL,sac poubelle 130l 45 25sac rl,17,17,60620000,False,fr_bd_832065999
+TETE AGNEAU ECHAUDEES provenan,tete agneau echaudees provenan,17,17,6011,False,fr_bd_519665103 | fr_bd_828612630
+Facture,facture,16,238,607,False,fr_bd_828612630 | fr_bd_837602275
+BOEUF CUISSE FLANCH CARCASSE BEUF,boeuf cuisse flanch carcasse beuf,16,53,6011,False,fr_bd_828612630 | fr_bd_837602275
+TRANCHE DOUBLE - VIANDE HALLAL BLANC BLEU BELGE,tranche double viande hallal blanc bleu belge,16,22,6011,False,fr_bd_519665103 | fr_bd_837602275
+INTERBEV,interbev,16,21,6068,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+POULET FERMIER HALAL EFFILÉ,poulet fermier halal effile,16,19,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+CASQUE AGNEAU MOINS DE 12 MOIS,casque agneau moins de 12 mois,16,17,6011,False,fr_bd_519665103 | fr_bd_837602275
+Pantalon Saveur PC noir,pantalon saveur pc noir,16,17,6061,False,fr_bd_837602275
+Repas complet,repas complet,16,17,606100,False,fr_bd_832065999
+CAILLE HALAL - origine : FR,caille halal origine fr,16,16,6011,False,fr_bd_837602275
+COPPA BOEUF HALAL,coppa boeuf halal,16,16,6011,False,fr_bd_828612630 | fr_bd_837602275
+DEHANCHE AVEC FILET EXTRA PREMIUM Origen,dehanche avec filet extra premium origen,16,16,6011,False,fr_bd_837602275
+EPAULE AGNEAU MOINS DE 12 MOIS,epaule agneau moins de 12 mois,16,16,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Forme Poulet Fumé Halal en Bloc,forme poulet fume halal en bloc,16,16,601,False,fr_bd_828612630 | fr_bd_837602275
+HAWAI X6 1.3L,hawai x6 1 3l,16,16,6068,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Jambon de Dinde Halal 5 kg Premier Choix,jambon de dinde halal 5 kg premier choix,16,16,601,False,fr_bd_828612630 | fr_bd_837602275
+MORTIER ADHESIF MAP 25KG PLACO,mortier adhesif map 25kg placo,16,16,60610000,False,fr_bd_832065999
+Manutention et approvisionnement. Approvisionnement à pied d'œuvre des différents matériaux.,manutention et approvisionnement approvisionnement a pied d uvre des differents materiaux,16,16,6068,False,fr_bd_832065999
+OLIVE VERTE DENOYAUTEE,olive verte denoyautee,16,16,601,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+QUEUE BOEUF FRAICHE,queue boeuf fraiche,16,16,6011,False,fr_bd_519665103 | fr_bd_828612630
+ROGNON BOEUF,rognon boeuf,16,16,6011,False,fr_bd_519665103
+Roulade Halal Mosaique,roulade halal mosaique,16,16,601,False,fr_bd_828612630 | fr_bd_837602275
+SEMOULE DE BLE FINE RENARD 10 X 1KG,semoule de ble fine renard 10 x 1kg,16,16,601,False,fr_bd_828612630 | fr_bd_837602275
+Saucisson sec 280G Sup Sicilien,saucisson sec 280g sup sicilien,16,16,601,False,fr_bd_828612630 | fr_bd_837602275
+Saucissons secs 280g Halal au Piment d'Espelette Premier Choix,saucissons secs 280g halal au piment d espelette premier choix,16,16,601,False,fr_bd_828612630 | fr_bd_837602275
+BAVETTE ALOYAU VA VIANDE VIANDE HALLAL BLANC BLEU BELGE,bavette aloyau va viande viande hallal blanc bleu belge,15,43,6011,False,fr_bd_828612630 | fr_bd_837602275
+BASSE SANS POITRINE DE VEAU VIANDE HALLAL VEAU,basse sans poitrine de veau viande hallal veau,15,19,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+AGNEAU LANGUE ORIGINE :FRANCE,agneau langue origine france,15,15,6011,False,fr_bd_519665103 | fr_bd_828612630
+AILES DE POULET HALAL,ailes de poulet halal,15,15,6011,False,fr_bd_519665103 | fr_bd_828612630
+BOEUF QUEUE SOUS-VIDE ORIGINE :FRANCE TRACE : 0000001 N° ABT : FR,boeuf queue sous vide origine france trace 0000001 n abt fr,15,15,6011,False,fr_bd_519665103 | fr_bd_828612630
+Blouse porteur PC 50/50 blanc,blouse porteur pc 50 50 blanc,15,15,6061,False,fr_bd_837602275
+CARRE SANS ROGNONS - CARCASSE VEAU - Label : VIANDE HALLAL ; Né en : PAYS BAS ; Elevé en : PAYS BAS ; Code abattoir : NL 9 EG ; Abattu en : PAYS BAS ; Atelier découpe : 94-065-243 ; Découpé en : FRANCE,carre sans rognons carcasse veau label viande hallal ne en pays bas eleve en pays bas code abattoir nl 9 eg abattu en pays bas atelier decoupe 94 065 243 decoupe en france,15,15,6011,False,fr_bd_837602275
+"CUMIN MOULU 20 X 100GR ""ESPIG""",cumin moulu 20 x 100gr espig,15,15,601,False,fr_bd_837602275
+Commande personnalisée,commande personnalisee,15,15,606200,False,fr_bd_832065999
+"Déport d'un radiateur électrique, d'une prise de courant, d'un interrupteur ou d'un point lumineux. Inclus : Raccordement.",deport d un radiateur electrique d une prise de courant d un interrupteur ou d un point lumineux inclus raccordement,15,15,6063,False,fr_bd_832065999
+EPICES POULET ROTI par 10 KILO,epices poulet roti par 10 kilo,15,15,601,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Ecusson standard,ecusson standard,15,15,6061,False,fr_bd_837602275
+FEUILLES DE BRICK MIL BRICK 2X25 PCS,feuilles de brick mil brick 2x25 pcs,15,15,6061,False,fr_bd_519665103 | fr_bd_837602275
+JAMBON DE DINDE FUME 1/2 HALAL,jambon de dinde fume 1 2 halal,15,15,6011,False,fr_bd_828612630 | fr_bd_837602275
+JAMBON DE POULET,jambon de poulet,15,15,6011,False,fr_bd_828612630 | fr_bd_837602275
+KNAUF STD KS BA13 2500X1200,knauf std ks ba13 2500x1200,15,15,60620000,False,fr_bd_832065999
+LANGUE VEAU UE (V),langue veau ue v,15,15,6011,False,fr_bd_828612630
+MATCH ACRYL SAT INT A+ BLANC 15L,match acryl sat int a blanc 15l,15,15,6061,False,fr_bd_832065999
+PANSE D'AGNEAU SALEE provenanc,panse d agneau salee provenanc,15,15,6011,False,fr_bd_519665103 | fr_bd_828612630
+PAVILLON DE LA TRIPERIE FR.94.065.501.CE,pavillon de la triperie fr 94 065 501 ce,15,15,601,False,fr_bd_519665103 | fr_bd_828612630
+PRODUITS REFRIGERES,produits refrigeres,15,15,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Palletes,palletes,15,15,6068,False,fr_bd_837602275
+Remise,remise,15,15,609,False,fr_bd_832065999 | fr_bd_837602275
+Sac a linge bleu fermeture sangle,sac a linge bleu fermeture sangle,15,15,6061,False,fr_bd_837602275
+VOL'LIGHT MECHOUIA HALAL,vol light mechouia halal,15,15,6011,False,fr_bd_828612630 | fr_bd_837602275
+VOL'LIGHT NATURE ROTI HALAL,vol light nature roti halal,15,15,6011,False,fr_bd_828612630 | fr_bd_837602275
+BAVETTE ALOYAU BLANC BLEU BELGE HALLAL,bavette aloyau blanc bleu belge hallal,14,38,6011,False,fr_bd_837602275
+BASSE SANS POITRINE DE VEAU 12,basse sans poitrine de veau 12,14,30,6011,False,fr_bd_837602275
+MILIEU TRAIN,milieu train,14,30,6011,False,fr_bd_828612630 | fr_bd_837602275
+RAQUETTE,raquette,14,22,6011,False,fr_bd_828612630 | fr_bd_837602275
+AGNEAU ORIGINE FRANCE GARANTIE MOINS DE 12 MOIS,agneau origine france garantie moins de 12 mois,14,20,6011,False,fr_bd_828612630 | fr_bd_837602275
+"Fourniture et pose de plinthes en medium prépeintes. Hauteur 10 cm. Inclus : plinthes hydrofuges dans salle de bain / salle d'eau, joint acrylique au dessus des plinthes. Localisation : ensemble de l'appartement",fourniture et pose de plinthes en medium prepeintes hauteur 10 cm inclus plinthes hydrofuges dans salle de bain salle d eau joint acrylique au dessus des plinthes localisation ensemble de l appartement,14,17,6063,False,fr_bd_832065999
+FOIE GRAS DE CANARD DEVEINE HALAL,foie gras de canard deveine halal,14,16,6011,False,fr_bd_828612630 | fr_bd_837602275
+ALOYAU MILIEU TRAIN BLANC BLEU BELGE VIANDE HALLAL,aloyau milieu train blanc bleu belge viande hallal,14,15,6011,False,fr_bd_828612630 | fr_bd_837602275
+BRESAOLA BLACK ANGUS 1/2 HALAL,bresaola black angus 1 2 halal,14,15,6071,False,fr_bd_828612630 | fr_bd_837602275
+"Mises-en place de baguettes d'angle PVC entoilées. Compris : Chaque angle d'encadrement de fenêtres et de façades pour en assurer le renforcement, la protection et la finition.",mises en place de baguettes d angle pvc entoilees compris chaque angle d encadrement de fenetres et de facades pour en assurer le renforcement la protection et la finition,14,15,6063,False,fr_bd_832065999
+Saucisson fumée au Bœuf piquant Halal 2.5kg,saucisson fumee au b uf piquant halal 2 5kg,14,15,601,False,fr_bd_828612630 | fr_bd_837602275
+VEAU SANS POITRINE,veau sans poitrine,14,15,6011,False,fr_bd_828612630 | fr_bd_837602275
+BACON DE DINDE 1/2 HALAL,bacon de dinde 1 2 halal,14,14,6011,False,fr_bd_828612630 | fr_bd_837602275
+BARQUETTES FRAICHEUR ECO 500CC,barquettes fraicheur eco 500cc,14,14,606200,False,fr_bd_828612630
+CHULETERO EXTRA PREMIUM MINHOTA Origen,chuletero extra premium minhota origen,14,14,6011,False,fr_bd_837602275
+COEUR OVIN,coeur ovin,14,14,6011,False,fr_bd_837602275
+DOUBLAGE PU 10+80 2.5X1.2M SOPREMA,doublage pu 10 80 2 5x1 2m soprema,14,14,607,False,fr_bd_832065999
+FILET DE POULET 10KG PLUDIS,filet de poulet 10kg pludis,14,14,6011,False,fr_bd_828612630 | fr_bd_837602275
+FILET DE POULET HALAL CEE origine : UE,filet de poulet halal cee origine ue,14,14,6011,False,fr_bd_519665103 | fr_bd_828612630
+FOIE VEAU BLANC - V,foie veau blanc v,14,14,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+FRESSURE OVIN,fressure ovin,14,14,6011,False,fr_bd_837602275
+INTERBEV Boeuf,interbev boeuf,14,14,6068,False,fr_bd_519665103 | fr_bd_828612630
+PALERON,paleron,14,14,6011,False,fr_bd_837602275
+PERSIL DESHYDRATE 1kg HELA,persil deshydrate 1kg hela,14,14,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+POIS CHICHE Bocal,pois chiche bocal,14,14,601,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+POULET PAC HALLAL,poulet pac hallal,14,14,6011,False,fr_bd_519665103 | fr_bd_828612630
+PROGOLD MASQUAGE PRO SUP 48MMX50M,progold masquage pro sup 48mmx50m,14,14,607,False,fr_bd_832065999
+Saucissons secs 280 grs Halal aux Piment,saucissons secs 280 grs halal aux piment,14,14,601,False,fr_bd_828612630 | fr_bd_837602275
+TE 87.30 DEGRES FF D40,te 87 30 degres ff d40,14,14,607,False,fr_bd_832065999
+Traitement des déchets résiduels,traitement des dechets residuels,14,14,6068,False,fr_bd_832065999
+VEAU PIED ORIGINE :FRANCE TRACE : 0000001 N° ABT : FR,veau pied origine france trace 0000001 n abt fr,14,14,6011,False,fr_bd_519665103 | fr_bd_828612630
+BOEUF CUISSE HANCHE BLANC BLEU BELGE VIANDE HALLAL,boeuf cuisse hanche blanc bleu belge viande hallal,13,24,6011,False,fr_bd_828612630 | fr_bd_837602275
+RAQUETTE VA VIANDE VIANDE HALLAL BLANC BLEU BELGE,raquette va viande viande hallal blanc bleu belge,13,22,6011,False,fr_bd_828612630 | fr_bd_837602275
+FILET VA VIANDE VIANDE HALLAL BLANC BLEU BELGE,filet va viande viande hallal blanc bleu belge,13,20,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+AVANT DROIT 5 COTES BLANC BLEU BELGE VIANDE HALLAL,avant droit 5 cotes blanc bleu belge viande hallal,13,17,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Achat non détaillé,achat non detaille,13,13,606,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_832065999 | fr_bd_837602275
+"BASSE-COTE DE BOEUF HALAL ""ANGUS""",basse cote de boeuf halal angus,13,13,6011,False,fr_bd_828612630 | fr_bd_837602275
+BOUILLON KNORR MOUTON MAROC 648G,bouillon knorr mouton maroc 648g,13,13,601,False,fr_bd_519665103 | fr_bd_837602275
+Brésaola Halal en bloc,bresaola halal en bloc,13,13,601,False,fr_bd_828612630 | fr_bd_837602275
+CERVELLE DE VEAU CARCASSE ABATS,cervelle de veau carcasse abats,13,13,6011,False,fr_bd_837602275
+COUSCOUS DARI Moyen 1kg,couscous dari moyen 1kg,13,13,601,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Certificats d'Economie d'Energie (cEE),certificats d economie d energie cee,13,13,6061,False,fr_bd_837602275
+EMMENTAL RAPE,emmental rape,13,13,601,False,fr_bd_828612630
+GRENAILLE FR,grenaille fr,13,13,601,False,fr_bd_828612630
+JAMBON CUIT DE VEAU HALAL,jambon cuit de veau halal,13,13,6011,False,fr_bd_828612630 | fr_bd_837602275
+JAMBON DE VEAU HALAL,jambon de veau halal,13,13,6011,False,fr_bd_828612630 | fr_bd_837602275
+Manutention et approvisionnement. Approvisionnement à pied d'oeuvre des différents matériaux.,manutention et approvisionnement approvisionnement a pied d oeuvre des differents materiaux,13,13,6068,False,fr_bd_832065999
+"Nettoyage et mise a la déchéterie. Nettoyage en cours et en fin de chantier. Aspiration des sols, mise à la déchéterie des éléments déconstruits et déchets du chantier.",nettoyage et mise a la decheterie nettoyage en cours et en fin de chantier aspiration des sols mise a la decheterie des elements deconstruits et dechets du chantier,13,13,6063,False,fr_bd_832065999
+PANSETTE AGNEAU VERTE,pansette agneau verte,13,13,6011,False,fr_bd_519665103
+PATES RANDA FELL N°2 500G X24,pates randa fell n 2 500g x24,13,13,601,False,fr_bd_837602275
+PATES WARDA 500G X24,pates warda 500g x24,13,13,601,False,fr_bd_828612630 | fr_bd_837602275
+PIED VEAU,pied veau,13,13,607,False,fr_bd_519665103 | fr_bd_828612630
+PIED VEAU-V,pied veau v,13,13,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+PINTADE FERMIERE PAC HALAL,pintade fermiere pac halal,13,13,6013,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+PRESTONETT G BLANC SAC 25KG,prestonett g blanc sac 25kg,13,13,607,False,fr_bd_832065999
+RIZ BASMATI TETE ELEPHANT 1KG X10 HDC,riz basmati tete elephant 1kg x10 hdc,13,13,601,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Remise pro 4€/mois pdt 12 mois Livebox Pro Fibre,remise pro 4 mois pdt 12 mois livebox pro fibre,13,13,6061,False,fr_bd_832065999
+Remise pro 7€/mois pdt 12 mois Livebox Pro Fibre,remise pro 7 mois pdt 12 mois livebox pro fibre,13,13,6061,False,fr_bd_832065999
+SAUCE NAWHAL'S MAYO EXTRA 12X500ML,sauce nawhal s mayo extra 12x500ml,13,13,601,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Saucissons secs 280 g Halal à la Fourme d'Ambert Premier Choix,saucissons secs 280 g halal a la fourme d ambert premier choix,13,13,601,False,fr_bd_828612630 | fr_bd_837602275
+Tablier boucher bretelle PC 50/50 blanc,tablier boucher bretelle pc 50 50 blanc,13,13,6061,False,fr_bd_837602275
+Tapis 85*150 paysage gris BOUCHERIE,tapis 85 150 paysage gris boucherie,13,13,6061,False,fr_bd_837602275
+VEAU LANGUE ORIGINE :PAYS-BAS,veau langue origine pays bas,13,13,6011,False,fr_bd_519665103 | fr_bd_828612630
+VEAU PIED KG,veau pied kg,13,13,607000,False,fr_bd_519665103
+Veste H Saveurs PC jeans noir,veste h saveurs pc jeans noir,13,13,6061,False,fr_bd_837602275
+BOEUF CUISSE HANCHE - VIANDE HALLAL BLANC BLEU BELGE,boeuf cuisse hanche viande hallal blanc bleu belge,12,21,6011,False,fr_bd_828612630 | fr_bd_837602275
+SELLE AGNEAU MOINS DE 12 MOIS,selle agneau moins de 12 mois,12,16,6011,False,fr_bd_519665103
+CULOTTE AGNEAU MOINS DE 12 MOIS,culotte agneau moins de 12 mois,12,15,6011,False,fr_bd_519665103 | fr_bd_837602275
+CARRE DE VEAU SANS ROGNONS VIANDE HALLAL VEAU,carre de veau sans rognons viande hallal veau,12,14,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+FILET SOUS VIDE BEUF,filet sous vide beuf,12,14,6011,False,fr_bd_837602275
+CARRE AGNEAU - NE:GB ELV:GB ABT:GB GB 2138 - MOINS DE 12 MOIS,carre agneau ne gb elv gb abt gb gb 2138 moins de 12 mois,12,13,6011,False,fr_bd_828612630
+AILES DE POULET HALLAL CEE,ailes de poulet hallal cee,12,12,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+BASSE SANS POITRINE DE VEAU - VIANDE HALLAL - PRODUITS REFRIGERES,basse sans poitrine de veau viande hallal produits refrigeres,12,12,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+BOGA NOIR 1.5L,boga noir 1 5l,12,12,601,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275 | fr_bd_931589238
+BOGA NOIR 1.5L X 6,boga noir 1 5l x 6,12,12,601,False,fr_bd_519665103 | fr_bd_837602275
+BOUILLON KNORR BOEUF MAROC 648G,bouillon knorr boeuf maroc 648g,12,12,601,False,fr_bd_519665103 | fr_bd_837602275
+BOYAU NATUREL DE MOUTON SIMPLE 22/24 HALAL,boyau naturel de mouton simple 22 24 halal,12,12,6011,False,fr_bd_519665103 | fr_bd_837602275
+Bresaola de Black Angus Halal Premier choix,bresaola de black angus halal premier choix,12,12,601,False,fr_bd_828612630 | fr_bd_837602275
+CECINA DE LEON 10-12 Mois HALAL S/AT 100G,cecina de leon 10 12 mois halal s at 100g,12,12,601,False,fr_bd_828612630 | fr_bd_837602275
+COCA COLA 1.5L X6,coca cola 1 5l x6,12,12,6068,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Conditionnement emballage (C.EMB),conditionnement emballage c emb,12,12,6061,False,fr_bd_837602275
+Délice de poulet Halal Nature forme poulet,delice de poulet halal nature forme poulet,12,12,601,False,fr_bd_828612630 | fr_bd_837602275
+Délice de poulet olives Halal en forme de poulet,delice de poulet olives halal en forme de poulet,12,12,601,False,fr_bd_828612630 | fr_bd_837602275
+F.FIXES,f fixes,12,12,6063,False,fr_bd_519665103 | fr_bd_837602275
+FEUILLES DE BRICK JR 2 X 25PCS,feuilles de brick jr 2 x 25pcs,12,12,601,False,fr_bd_828612630 | fr_bd_837602275
+FORFAIT FOURNITURES - Fourniture des accessoires nécessaire ci-dessous,forfait fournitures fourniture des accessoires necessaire ci dessous,12,12,6063,False,fr_bd_832065999
+Interbev(dont ATM)ov a/os 1 - (soumis a TVA),interbev dont atm ov a os 1 soumis a tva,12,12,6068,False,fr_bd_837602275
+JAMBON DE DINDE PERSILLÉ HALAL,jambon de dinde persille halal,12,12,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+MOSAIQUE DE VOLAILLE PIMENTÉE,mosaique de volaille pimentee,12,12,6011,False,fr_bd_828612630 | fr_bd_837602275
+POIS CHICHE BOCAL 570GR,pois chiche bocal 570gr,12,12,601,False,fr_bd_828612630 | fr_bd_837602275
+Participation-effort-environnement (PEE),participation effort environnement pee,12,12,6061,False,fr_bd_837602275
+ROLLS ROTIFIL 4 FILS ou 2 BRINS 1KG,rolls rotifil 4 fils ou 2 brins 1kg,12,12,6068,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+SAUCISSON BOEUF SÉCHÉ HALAL,saucisson boeuf seche halal,12,12,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Traitement bactériostatique (TBB),traitement bacteriostatique tbb,12,12,6061,False,fr_bd_837602275
+FILET CARCASSE BEUF,filet carcasse beuf,11,22,6011,False,fr_bd_828612630 | fr_bd_837602275
+TRADIKIFF SUPÉRIEUR HALAL,tradikiff superieur halal,11,18,6011,False,fr_bd_828612630 | fr_bd_837602275
+POITRINE DE VEAU - VIANDE HALLAL,poitrine de veau viande hallal,11,15,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+AVANT DROIT 5 COTES BLANC BLEU BELGE,avant droit 5 cotes blanc bleu belge,11,14,6011,False,fr_bd_519665103 | fr_bd_837602275
+GANT NITRILE NOIR NON POUDRE TAILLE L 8/9 BOITE DE 100,gant nitrile noir non poudre taille l 8 9 boite de 100,11,14,6063,False,fr_bd_828612630 | fr_bd_837602275
+BALANCE VRAC CODE A CLOU VIS BOULON,balance vrac code a clou vis boulon,11,12,6063,False,fr_bd_832065999 | fr_bd_931589238
+BASSE SANS POITRINE CARCASSE VEAU - Label : VIANDE HALLAL ; Né en : PAYS BAS ; Elevé en : PAYS BAS ; Code abattoir : NL 9 EG ; Abattu en : PAYS BAS ; Atelier découpe : 94-065-243 ; Découpé en : FRANCE,basse sans poitrine carcasse veau label viande hallal ne en pays bas eleve en pays bas code abattoir nl 9 eg abattu en pays bas atelier decoupe 94 065 243 decoupe en france,11,12,6011,False,fr_bd_837602275
+"NECTAR MULTI BIO,PRESSADE,1.5L",nectar multi bio pressade 1 5l,11,12,6068,False,fr_bd_832065999
+PASTRAMI BOEUF SPICY HALAL,pastrami boeuf spicy halal,11,12,6011,False,fr_bd_828612630 | fr_bd_837602275
+SEMOULE LE RENARD EXTRA FIN/FIN/MOY/GROS KG X10,semoule le renard extra fin fin moy gros kg x10,11,12,601,False,fr_bd_828612630
+SOURIS D'AGNEAU,souris d agneau,11,12,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+AGNEAU PANSE VERTE SALEE ORIGINE IRLANDE,agneau panse verte salee origine irlande,11,11,6011,False,fr_bd_519665103 | fr_bd_828612630
+AGNEAU TESTICULES ORIGINE :FRANCE TRACE : 0000001 N° ABT : FR,agneau testicules origine france trace 0000001 n abt fr,11,11,6011,False,fr_bd_519665103
+AIL A LA PROVENCALE 3.5 KG ML,ail a la provencale 3 5 kg ml,11,11,601,False,fr_bd_837602275
+Apport déchets de chantier,apport dechets de chantier,11,11,6068,False,fr_bd_832065999
+BARQUETTE FRAICHEUR 1000 ML V00556,barquette fraicheur 1000 ml v00556,11,11,6068,False,fr_bd_828612630
+BARQUETTE MICRO ONDABLE A COUVERCLE CHARNIERE 750 ML V01013,barquette micro ondable a couvercle charniere 750 ml v01013,11,11,606200,False,fr_bd_828612630
+BASSE-COTE DE BOEUF HALAL,basse cote de boeuf halal,11,11,6011,False,fr_bd_828612630 | fr_bd_837602275
+BLANC DE POULET FUMÉ IMPORT HALAL,blanc de poulet fume import halal,11,11,6011,False,fr_bd_828612630 | fr_bd_837602275
+BOUCHON D40,bouchon d40,11,11,607,False,fr_bd_832065999
+CANETTE PAC HALAL,canette pac halal,11,11,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+"CHEVEUX D'ANGE 500 GR "" DARI"" X 12",cheveux d ange 500 gr dari x 12,11,11,601,False,fr_bd_828612630 | fr_bd_837602275
+COTI.RSD,coti rsd,11,11,6068,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+COUDE 45 DEGRES MF D40,coude 45 degres mf d40,11,11,607,False,fr_bd_832065999
+COUSCOUS DARI FIN 1kg,couscous dari fin 1kg,11,11,60610000,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Café FIRMA - CORPOSO x 48,cafe firma corposo x 48,11,11,6068,False,fr_bd_828612630 | fr_bd_837602275
+DECODECOR N°21 BIOSTATIQ 25KG,decodecor n 21 biostatiq 25kg,11,11,6061,False,fr_bd_832065999
+DELICE DE POULET FUMÉ HALAL,delice de poulet fume halal,11,11,601,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Dinde Olive Poivrons Halal en Bloc (Sévillana),dinde olive poivrons halal en bloc sevillana,11,11,601,False,fr_bd_828612630 | fr_bd_837602275
+FILET DE DINDE HALAL UE,filet de dinde halal ue,11,11,6011,False,fr_bd_519665103 | fr_bd_837602275
+FILET DE POULET HALLAL CEE,filet de poulet hallal cee,11,11,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+FRESSURE A LA PIECE,fressure a la piece,11,11,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Fourniture d'électricité - Consommation,fourniture d electricite consommation,11,11,6061,False,fr_bd_832065999
+GIMBER N°1 Original Bio -1 x 700ml,gimber n 1 original bio 1 x 700ml,11,11,6068,False,fr_bd_828612630 | fr_bd_837602275
+HAMOUD BLANCHE 1L VERRE,hamoud blanche 1l verre,11,11,601,False,fr_bd_828612630 | fr_bd_837602275
+HARISSA TUBE 70g,harissa tube 70g,11,11,601,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+JOUE DE BOEUF - CARCASSE ABATS,joue de boeuf carcasse abats,11,11,6011,False,fr_bd_837602275
+Jambon de dinde bloc 10 x10 2.5 kg Halal,jambon de dinde bloc 10 x10 2 5 kg halal,11,11,601,False,fr_bd_828612630 | fr_bd_837602275
+OEUFS FILM BLANC MOYEN FR X300,oeufs film blanc moyen fr x300,11,11,601,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+ONCTUEUX CORSE TRUFFE,onctueux corse truffe,11,11,6011,False,fr_bd_837602275
+PANSE AGNEAU,panse agneau,11,11,607,False,fr_bd_519665103 | fr_bd_828612630
+POULET PAC CERT SUPÉRIEUR HALAL,poulet pac cert superieur halal,11,11,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+PRESTONETT F BLANC SAC 25KG,prestonett f blanc sac 25kg,11,11,607,False,fr_bd_832065999
+QUEUE VEAU FRAICHE-V,queue veau fraiche v,11,11,6011,False,fr_bd_519665103
+RAIB BV BRICK 1L X10,raib bv brick 1l x10,11,11,6068,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+RAIBI JAMILA GRENADINE 330G X 12,raibi jamila grenadine 330g x 12,11,11,601,False,fr_bd_837602275
+ROULADE A LA BRETONNE HALAL,roulade a la bretonne halal,11,11,6011,False,fr_bd_828612630 | fr_bd_837602275
+Roulade de Poulet BBQ Halal,roulade de poulet bbq halal,11,11,601,False,fr_bd_828612630 | fr_bd_837602275
+"SANPELLEGRINO,ARAN.&MELO,6X33CL",sanpellegrino aran melo 6x33cl,11,11,6068,False,fr_bd_832065999
+Saucissons secs 280g Halal au Piment d'Espelette Premier,saucissons secs 280g halal au piment d espelette premier,11,11,601,False,fr_bd_828612630 | fr_bd_837602275
+TORTILLAS 30CM X 6 X 18 PCS,tortillas 30cm x 6 x 18 pcs,11,11,601,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+TRUFFE MELANOSPORUM,truffe melanosporum,11,11,6011,False,fr_bd_828612630 | fr_bd_837602275
+VEAU PIED ORIGINE :BELGIQUE,veau pied origine belgique,11,11,6011,False,fr_bd_519665103 | fr_bd_828612630
+VEAU VIANDE HALLAL,veau viande hallal,11,11,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+VIS TTPC 25 SEMIN 3.5X25MM 1000PIE,vis ttpc 25 semin 3 5x25mm 1000pie,11,11,60620000,False,fr_bd_832065999
+AVIGROS,avigros,10,55,607,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+RUMSTEACK BLANC BLEU BELGE HALLAL,rumsteack blanc bleu belge hallal,10,36,6011,False,fr_bd_837602275
+CECINA VACIO HALAL,cecina vacio halal,10,20,6011,False,fr_bd_837602275
+FILET BLANC BLEU BELGE VA VIANDE VIANDE HALLAL,filet blanc bleu belge va viande viande hallal,10,15,6011,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+TRANCHE GRASSE - VIANDE HALLAL,tranche grasse viande hallal,10,15,6011,False,fr_bd_519665103 | fr_bd_828612630
+AGNEAU ******* MOINS DE 12 MOIS NE:GB ELV:GB ABT:GB GB 2138,agneau moins de 12 mois ne gb elv gb abt gb gb 2138,10,14,6011,False,fr_bd_519665103
+CHEVREAU B,chevreau b,10,14,6011,False,fr_bd_519665103 | fr_bd_837602275

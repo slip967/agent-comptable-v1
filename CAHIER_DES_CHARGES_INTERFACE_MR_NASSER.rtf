@@ -1,0 +1,423 @@
+{\rtf1\ansi\ansicpg1252\deff0
+{\fonttbl{\f0 Aptos;}{\f1 Aptos Display;}}
+{\colortbl;\red31\green42\blue55;\red92\green107\blue122;\red26\green54\blue93;\red36\green59\blue83;\red51\green78\blue104;}
+\viewkind4\uc1\pard\cf1\f0\fs22
+\pard\qc\sa220\b\f1\fs32 Cahier Des Charges Interface - Agent Comptable AI\b0\f0\fs22\par
+\par
+\pard\qc\sa240\i\cf2 Etat d'avancement au 22 avril 2026\i0\cf1\par
+\par
+\pard\sa180\b\f1\fs28\cf3 1. Objet Du Document\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 Ce document recense le perimetre deja realise dans l'interface de l'application Agent Comptable AI.\par
+\par
+\pard\sa100 L'objectif est de presenter a M. Nasser :\par
+\pard\li720\fi-360\sa80 \'95\tab ce qui est deja disponible a l'ecran pour l'utilisateur,\par
+\pard\li720\fi-360\sa80 \'95\tab les parcours deja couverts,\par
+\pard\li720\fi-360\sa80 \'95\tab les informations deja exposees par l'interface,\par
+\pard\li720\fi-360\sa80 \'95\tab la logique de validation et de relecture actuellement accessible.\par
+\par
+\pard\sa100 Le document porte sur l'interface frontend connectee au backend local de recommandation comptable.\par
+\par
+\pard\sa180\b\f1\fs28\cf3 2. Objectif Produit Cote Interface\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 L'interface a pour but de permettre un usage comptable ligne par ligne avec quatre besoins principaux :\par
+\pard\li720\fi-360\sa80 \'95\tab lancer une analyse comptable a partir d'un libelle de facture,\par
+\pard\li720\fi-360\sa80 \'95\tab comprendre la recommandation produite par le moteur,\par
+\pard\li720\fi-360\sa80 \'95\tab valider, corriger ou rejeter la decision,\par
+\pard\li720\fi-360\sa80 \'95\tab consulter l'historique et la file de validations humaines.\par
+\par
+\pard\sa100 L'interface integre aussi un assistant IA contextuel pour expliquer les decisions et guider l'utilisateur sur l'action suivante.\par
+\par
+\pard\sa180\b\f1\fs28\cf3 3. Perimetre Fonctionnel Deja Livre\b0\f0\fs22\cf1\par
+\par
+\pard\sa120\b\f1\fs24\cf4 3.1. Coque Applicative Et Navigation\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 L'interface dispose deja d'une coque applicative complete avec :\par
+\pard\li720\fi-360\sa80 \'95\tab un en-tete produit Agent Comptable AI,\par
+\pard\li720\fi-360\sa80 \'95\tab un indicateur d'etat du systeme en ligne / hors ligne,\par
+\pard\li720\fi-360\sa80 \'95\tab un bouton d'ouverture rapide de l'assistant,\par
+\pard\li720\fi-360\sa80 \'95\tab un changement de theme clair / sombre,\par
+\pard\li720\fi-360\sa80 \'95\tab un changement de mode simple / expert,\par
+\pard\li720\fi-360\sa80 \'95\tab une navigation par onglets entre Analyse, Dashboard et Historique.\par
+\par
+\pard\sa100 Les preferences utilisateur suivantes sont deja memorisees localement :\par
+\pard\li720\fi-360\sa80 \'95\tab dernier theme choisi,\par
+\pard\li720\fi-360\sa80 \'95\tab dernier mode d'affichage choisi,\par
+\pard\li720\fi-360\sa80 \'95\tab dernier onglet ouvert.\par
+\par
+\pard\sa180\b\f1\fs28\cf3 4. Ecran Analyse\b0\f0\fs22\cf1\par
+\par
+\pard\sa120\b\f1\fs24\cf4 4.1. Formulaire D'Entree\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 L'ecran Analyse permet deja d'envoyer une ligne au backend.\par
+\par
+\pard\sa100 Les champs actuellement disponibles sont :\par
+\pard\li720\fi-360\sa80 \'95\tab Libelle de ligne facture obligatoire,\par
+\pard\li720\fi-360\sa80 \'95\tab Fournisseur optionnel,\par
+\pard\li720\fi-360\sa80 \'95\tab Metier optionnel,\par
+\pard\li720\fi-360\sa80 \'95\tab TVA optionnelle,\par
+\pard\li720\fi-360\sa80 \'95\tab case a cocher Inclure les charges externes dans la recherche.\par
+\par
+\pard\sa100 Le formulaire a ete clarifie pour montrer que :\par
+\pard\li720\fi-360\sa80 \'95\tab le libelle seul suffit a lancer une analyse,\par
+\pard\li720\fi-360\sa80 \'95\tab le metier et la TVA peuvent etre ajoutes plus tard,\par
+\pard\li720\fi-360\sa80 \'95\tab le fournisseur peut enrichir le contexte sans etre obligatoire.\par
+\par
+\pard\sa120\b\f1\fs24\cf4 4.2. Etats D'Interaction\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 L'ecran gere deja :\par
+\pard\li720\fi-360\sa80 \'95\tab l'etat de chargement Analyse en cours...,\par
+\pard\li720\fi-360\sa80 \'95\tab les erreurs API,\par
+\pard\li720\fi-360\sa80 \'95\tab l'etat vide avant toute analyse.\par
+\par
+\pard\sa180\b\f1\fs28\cf3 5. Panneau Resultat\b0\f0\fs22\cf1\par
+\par
+\pard\sa120\b\f1\fs24\cf4 5.1. Restitution Principale\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 Quand une analyse est disponible, l'interface affiche deja :\par
+\pard\li720\fi-360\sa80 \'95\tab le libelle analyse,\par
+\pard\li720\fi-360\sa80 \'95\tab une explication textuelle de la decision,\par
+\pard\li720\fi-360\sa80 \'95\tab la source de la reponse,\par
+\pard\li720\fi-360\sa80 \'95\tab la decision finale,\par
+\pard\li720\fi-360\sa80 \'95\tab le compte comptable propose,\par
+\pard\li720\fi-360\sa80 \'95\tab la categorie,\par
+\pard\li720\fi-360\sa80 \'95\tab la sous-categorie,\par
+\pard\li720\fi-360\sa80 \'95\tab le score de confiance.\par
+\par
+\pard\sa120\b\f1\fs24\cf4 5.2. Sources De Decision\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 La source du resultat est deja visible avec une distinction entre :\par
+\pard\li720\fi-360\sa80 \'95\tab Moteur,\par
+\pard\li720\fi-360\sa80 \'95\tab Memoire,\par
+\pard\li720\fi-360\sa80 \'95\tab IA.\par
+\par
+\pard\sa100 Quand la recommandation provient de la memoire, un bandeau specifique est affiche pour indiquer qu'une validation humaine precedente a ete reutilisee.\par
+\par
+\pard\sa120\b\f1\fs24\cf4 5.3. Entry Ranker Et Signaux\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 L'interface affiche deja un bloc Entry Ranker qui expose les signaux utilises pour la decision.\par
+\par
+\pard\sa100 Les familles de signaux deja visibles sont :\par
+\pard\li720\fi-360\sa80 \'95\tab Signal fort,\par
+\pard\li720\fi-360\sa80 \'95\tab Signal moyen,\par
+\pard\li720\fi-360\sa80 \'95\tab Signal faible.\par
+\par
+\pard\sa100 Pour chaque signal, l'interface montre deja :\par
+\pard\li720\fi-360\sa80 \'95\tab le nom du signal,\par
+\pard\li720\fi-360\sa80 \'95\tab sa valeur,\par
+\pard\li720\fi-360\sa80 \'95\tab sa contribution au score,\par
+\pard\li720\fi-360\sa80 \'95\tab une explication.\par
+\par
+\pard\sa100 Exemples de signaux deja visibles :\par
+\pard\li720\fi-360\sa80 \'95\tab validation humaine precedente,\par
+\pard\li720\fi-360\sa80 \'95\tab fournisseur deja vu,\par
+\pard\li720\fi-360\sa80 \'95\tab TVA coherente,\par
+\pard\li720\fi-360\sa80 \'95\tab metier coherent,\par
+\pard\li720\fi-360\sa80 \'95\tab similarite texte.\par
+\par
+\pard\sa180\b\f1\fs28\cf3 6. Actions Utilisateur Sur Le Resultat\b0\f0\fs22\cf1\par
+\par
+\pard\sa120\b\f1\fs24\cf4 6.1. Feedback Direct\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 Depuis le panneau resultat, l'utilisateur peut deja :\par
+\pard\li720\fi-360\sa80 \'95\tab Valider,\par
+\pard\li720\fi-360\sa80 \'95\tab Modifier,\par
+\pard\li720\fi-360\sa80 \'95\tab Rejeter.\par
+\par
+\pard\sa100 Ces actions sont connectees au backend via /feedback.\par
+\par
+\pard\sa120\b\f1\fs24\cf4 6.2. Mode Modifier\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 Le mode Modifier est deja un vrai mode d'edition manuelle.\par
+\par
+\pard\sa100 L'utilisateur peut deja corriger :\par
+\pard\li720\fi-360\sa80 \'95\tab compte_comptable,\par
+\pard\li720\fi-360\sa80 \'95\tab categorie,\par
+\pard\li720\fi-360\sa80 \'95\tab sous_categorie,\par
+\pard\li720\fi-360\sa80 \'95\tab commentaire.\par
+\par
+\pard\sa100 Le formulaire de correction gere deja :\par
+\pard\li720\fi-360\sa80 \'95\tab l'enregistrement de la correction,\par
+\pard\li720\fi-360\sa80 \'95\tab l'annulation,\par
+\pard\li720\fi-360\sa80 \'95\tab le rechargement de la decision corrigee.\par
+\par
+\pard\sa180\b\f1\fs28\cf3 7. Mode Expert Et Top 3 Candidats\b0\f0\fs22\cf1\par
+\par
+\pard\sa120\b\f1\fs24\cf4 7.1. Affichage En Mode Expert\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 Le mode expert affiche deja le Top 3 des candidats retournes par le moteur.\par
+\par
+\pard\sa100 Pour chaque candidat, l'interface montre deja :\par
+\pard\li720\fi-360\sa80 \'95\tab le rang,\par
+\pard\li720\fi-360\sa80 \'95\tab le compte comptable,\par
+\pard\li720\fi-360\sa80 \'95\tab le score,\par
+\pard\li720\fi-360\sa80 \'95\tab le libelle de reference retenu,\par
+\pard\li720\fi-360\sa80 \'95\tab la categorie,\par
+\pard\li720\fi-360\sa80 \'95\tab la sous-categorie,\par
+\pard\li720\fi-360\sa80 \'95\tab le metier,\par
+\pard\li720\fi-360\sa80 \'95\tab la decision candidate,\par
+\pard\li720\fi-360\sa80 \'95\tab la coherence TVA,\par
+\pard\li720\fi-360\sa80 \'95\tab la coherence metier.\par
+\par
+\pard\sa120\b\f1\fs24\cf4 7.2. Panneau Detail Candidat\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 Le candidat selectionne peut deja etre ouvert dans un panneau lateral qui affiche :\par
+\pard\li720\fi-360\sa80 \'95\tab le compte,\par
+\pard\li720\fi-360\sa80 \'95\tab le score final,\par
+\pard\li720\fi-360\sa80 \'95\tab le score texte,\par
+\pard\li720\fi-360\sa80 \'95\tab la TVA,\par
+\pard\li720\fi-360\sa80 \'95\tab le metier,\par
+\pard\li720\fi-360\sa80 \'95\tab la classification complete,\par
+\pard\li720\fi-360\sa80 \'95\tab la raison de match,\par
+\pard\li720\fi-360\sa80 \'95\tab les signaux du score,\par
+\pard\li720\fi-360\sa80 \'95\tab les alertes,\par
+\pard\li720\fi-360\sa80 \'95\tab les pieces sources rattachees quand elles existent.\par
+\par
+\pard\sa100 Depuis ce panneau, l'utilisateur peut deja :\par
+\pard\li720\fi-360\sa80 \'95\tab utiliser un candidat dans le mode Modifier,\par
+\pard\li720\fi-360\sa80 \'95\tab demander l'avis de l'assistant sur le candidat actif.\par
+\par
+\pard\sa120\b\f1\fs24\cf4 7.3. Mode Simple\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 Le mode simple masque volontairement :\par
+\pard\li720\fi-360\sa80 \'95\tab le Top 3,\par
+\pard\li720\fi-360\sa80 \'95\tab les details moteurs,\par
+\pard\li720\fi-360\sa80 \'95\tab les panneaux experts.\par
+\par
+\pard\sa100 L'interface informe deja l'utilisateur que ces informations restent accessibles en basculant en mode expert.\par
+\par
+\pard\sa180\b\f1\fs28\cf3 8. Dashboard\b0\f0\fs22\cf1\par
+\par
+\pard\sa120\b\f1\fs24\cf4 8.1. Vision D'Ensemble\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 L'onglet Dashboard propose deja une vue de pilotage avec :\par
+\pard\li720\fi-360\sa80 \'95\tab un statut global,\par
+\pard\li720\fi-360\sa80 \'95\tab un titre de synthese,\par
+\pard\li720\fi-360\sa80 \'95\tab un texte de resume,\par
+\pard\li720\fi-360\sa80 \'95\tab des indicateurs rapides.\par
+\par
+\pard\sa100 Les metriques de synthese deja visibles sont :\par
+\pard\li720\fi-360\sa80 \'95\tab Taux auto OK,\par
+\pard\li720\fi-360\sa80 \'95\tab A traiter,\par
+\pard\li720\fi-360\sa80 \'95\tab Memoire,\par
+\pard\li720\fi-360\sa80 \'95\tab Rejets.\par
+\par
+\pard\sa120\b\f1\fs24\cf4 8.2. Cartes KPI\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 Le dashboard affiche deja des cartes de suivi pour :\par
+\pard\li720\fi-360\sa80 \'95\tab Historique charge,\par
+\pard\li720\fi-360\sa80 \'95\tab Auto OK recents,\par
+\pard\li720\fi-360\sa80 \'95\tab Validation humaine,\par
+\pard\li720\fi-360\sa80 \'95\tab Analyses memoire,\par
+\pard\li720\fi-360\sa80 \'95\tab Rejets recents.\par
+\par
+\pard\sa100 Chaque carte comporte deja :\par
+\pard\li720\fi-360\sa80 \'95\tab un label metier,\par
+\pard\li720\fi-360\sa80 \'95\tab une valeur principale,\par
+\pard\li720\fi-360\sa80 \'95\tab un texte d'aide court,\par
+\pard\li720\fi-360\sa80 \'95\tab une tonalite visuelle differenciee.\par
+\par
+\pard\sa120\b\f1\fs24\cf4 8.3. File Humaine\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 Le dashboard integre deja une vraie File humaine de validations.\par
+\par
+\pard\sa100 Pour chaque ligne a traiter, l'utilisateur voit deja :\par
+\pard\li720\fi-360\sa80 \'95\tab le libelle,\par
+\pard\li720\fi-360\sa80 \'95\tab le compte propose,\par
+\pard\li720\fi-360\sa80 \'95\tab le score,\par
+\pard\li720\fi-360\sa80 \'95\tab la date,\par
+\pard\li720\fi-360\sa80 \'95\tab l'explication.\par
+\par
+\pard\sa100 Chaque ligne de file peut deja :\par
+\pard\li720\fi-360\sa80 \'95\tab etre chargee dans l'espace d'analyse,\par
+\pard\li720\fi-360\sa80 \'95\tab etre Validee,\par
+\pard\li720\fi-360\sa80 \'95\tab etre Corrigee.\par
+\par
+\pard\sa180\b\f1\fs28\cf3 9. Historique\b0\f0\fs22\cf1\par
+\par
+\pard\sa120\b\f1\fs24\cf4 9.1. Liste D'Historique\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 L'onglet Historique permet deja de consulter les analyses ligne par ligne.\par
+\par
+\pard\sa100 L'utilisateur dispose deja de :\par
+\pard\li720\fi-360\sa80 \'95\tab une recherche rapide,\par
+\pard\li720\fi-360\sa80 \'95\tab un filtre par decision,\par
+\pard\li720\fi-360\sa80 \'95\tab un bouton de rafraichissement,\par
+\pard\li720\fi-360\sa80 \'95\tab une liste d'analyses recentes.\par
+\par
+\pard\sa100 Chaque ligne d'historique affiche deja :\par
+\pard\li720\fi-360\sa80 \'95\tab le libelle,\par
+\pard\li720\fi-360\sa80 \'95\tab le score,\par
+\pard\li720\fi-360\sa80 \'95\tab la decision,\par
+\pard\li720\fi-360\sa80 \'95\tab le compte,\par
+\pard\li720\fi-360\sa80 \'95\tab la date,\par
+\pard\li720\fi-360\sa80 \'95\tab l'explication.\par
+\par
+\pard\sa120\b\f1\fs24\cf4 9.2. Detail D'Une Ligne\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 Le panneau detail de l'historique affiche deja :\par
+\pard\li720\fi-360\sa80 \'95\tab le libelle,\par
+\pard\li720\fi-360\sa80 \'95\tab l'explication,\par
+\pard\li720\fi-360\sa80 \'95\tab la decision,\par
+\pard\li720\fi-360\sa80 \'95\tab le compte,\par
+\pard\li720\fi-360\sa80 \'95\tab le score,\par
+\pard\li720\fi-360\sa80 \'95\tab le metier,\par
+\pard\li720\fi-360\sa80 \'95\tab le fournisseur,\par
+\pard\li720\fi-360\sa80 \'95\tab la source,\par
+\pard\li720\fi-360\sa80 \'95\tab la TVA,\par
+\pard\li720\fi-360\sa80 \'95\tab la categorie,\par
+\pard\li720\fi-360\sa80 \'95\tab la sous-categorie,\par
+\pard\li720\fi-360\sa80 \'95\tab l'option inclure charges,\par
+\pard\li720\fi-360\sa80 \'95\tab l'horodatage,\par
+\pard\li720\fi-360\sa80 \'95\tab la cle de recherche.\par
+\par
+\pard\sa120\b\f1\fs24\cf4 9.3. Signaux Conserves\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 Quand des signaux ont ete stockes avec l'analyse, l'interface sait deja afficher :\par
+\pard\li720\fi-360\sa80 \'95\tab les signaux de ranking conserves,\par
+\pard\li720\fi-360\sa80 \'95\tab leur famille,\par
+\pard\li720\fi-360\sa80 \'95\tab leur valeur,\par
+\pard\li720\fi-360\sa80 \'95\tab leur contribution,\par
+\pard\li720\fi-360\sa80 \'95\tab leur explication.\par
+\par
+\pard\sa120\b\f1\fs24\cf4 9.4. Top 3 Conserve\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 L'historique conserve deja le Top 3 des nouvelles analyses, quand il existe.\par
+\par
+\pard\sa100 Le detail historique peut deja afficher :\par
+\pard\li720\fi-360\sa80 \'95\tab les candidats conserves,\par
+\pard\li720\fi-360\sa80 \'95\tab leur rang,\par
+\pard\li720\fi-360\sa80 \'95\tab leur compte,\par
+\pard\li720\fi-360\sa80 \'95\tab leur score,\par
+\pard\li720\fi-360\sa80 \'95\tab leur libelle,\par
+\pard\li720\fi-360\sa80 \'95\tab leur classification,\par
+\pard\li720\fi-360\sa80 \'95\tab leur raison de match.\par
+\par
+\pard\sa120\b\f1\fs24\cf4 9.5. Actions Depuis L'Historique\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 Depuis une ligne d'historique, l'utilisateur peut deja :\par
+\pard\li720\fi-360\sa80 \'95\tab charger la ligne dans l'espace d'analyse,\par
+\pard\li720\fi-360\sa80 \'95\tab la valider directement,\par
+\pard\li720\fi-360\sa80 \'95\tab la corriger directement.\par
+\par
+\pard\sa180\b\f1\fs28\cf3 10. Assistant IA Contextuel\b0\f0\fs22\cf1\par
+\par
+\pard\sa120\b\f1\fs24\cf4 10.1. Disponibilite\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 L'assistant IA est deja present en widget lateral toujours disponible.\par
+\par
+\pard\sa100 Il peut deja :\par
+\pard\li720\fi-360\sa80 \'95\tab s'ouvrir,\par
+\pard\li720\fi-360\sa80 \'95\tab se reduire,\par
+\pard\li720\fi-360\sa80 \'95\tab etre vide manuellement,\par
+\pard\li720\fi-360\sa80 \'95\tab rester accessible pendant toute la navigation.\par
+\par
+\pard\sa120\b\f1\fs24\cf4 10.2. Contexte Charge\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 L'assistant charge deja un contexte courant comprenant au minimum :\par
+\pard\li720\fi-360\sa80 \'95\tab le libelle en cours,\par
+\pard\li720\fi-360\sa80 \'95\tab la decision actuelle,\par
+\pard\li720\fi-360\sa80 \'95\tab le compte propose,\par
+\pard\li720\fi-360\sa80 \'95\tab le score,\par
+\pard\li720\fi-360\sa80 \'95\tab le fournisseur quand il existe,\par
+\pard\li720\fi-360\sa80 \'95\tab le candidat actif si un candidat a ete selectionne.\par
+\par
+\pard\sa120\b\f1\fs24\cf4 10.3. Raccourcis Metier\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 Des prompts rapides sont deja proposes selon le contexte :\par
+\pard\li720\fi-360\sa80 \'95\tab avant analyse,\par
+\pard\li720\fi-360\sa80 \'95\tab pendant une correction,\par
+\pard\li720\fi-360\sa80 \'95\tab apres resultat,\par
+\pard\li720\fi-360\sa80 \'95\tab quand un candidat est selectionne.\par
+\par
+\pard\sa100 Exemples deja presents :\par
+\pard\li720\fi-360\sa80 \'95\tab Mode d'emploi,\par
+\pard\li720\fi-360\sa80 \'95\tab Que remplir ?,\par
+\pard\li720\fi-360\sa80 \'95\tab Explique la decision,\par
+\pard\li720\fi-360\sa80 \'95\tab Etape suivante,\par
+\pard\li720\fi-360\sa80 \'95\tab Que penser du candidat selectionne ?,\par
+\pard\li720\fi-360\sa80 \'95\tab Que dois-je corriger ici ?\par
+\par
+\pard\sa120\b\f1\fs24\cf4 10.4. Conversation Et Actions\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 Le widget permet deja :\par
+\pard\li720\fi-360\sa80 \'95\tab d'envoyer un message libre,\par
+\pard\li720\fi-360\sa80 \'95\tab de lire l'historique des messages,\par
+\pard\li720\fi-360\sa80 \'95\tab de distinguer les messages utilisateur et assistant,\par
+\pard\li720\fi-360\sa80 \'95\tab d'afficher une action suggeree par l'assistant,\par
+\pard\li720\fi-360\sa80 \'95\tab d'executer directement cette action si elle est fournie.\par
+\par
+\pard\sa100 Les actions suggerees deja prevues sont :\par
+\pard\li720\fi-360\sa80 \'95\tab analyser,\par
+\pard\li720\fi-360\sa80 \'95\tab valider,\par
+\pard\li720\fi-360\sa80 \'95\tab modifier,\par
+\pard\li720\fi-360\sa80 \'95\tab rejeter,\par
+\pard\li720\fi-360\sa80 \'95\tab neutre.\par
+\par
+\pard\sa180\b\f1\fs28\cf3 11. Design, Lisibilite Et UX\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 Les travaux interface deja realises incluent aussi plusieurs ameliorations de lisibilite et d'usage :\par
+\pard\li720\fi-360\sa80 \'95\tab theme clair / sombre,\par
+\pard\li720\fi-360\sa80 \'95\tab meilleure lisibilite en mode sombre,\par
+\pard\li720\fi-360\sa80 \'95\tab cartes dashboard plus propres et mieux proportionnees,\par
+\pard\li720\fi-360\sa80 \'95\tab contrastes renforces sur les chiffres, labels et cartes detail,\par
+\pard\li720\fi-360\sa80 \'95\tab barre de scroll de l'assistant rendue lisible en mode sombre,\par
+\pard\li720\fi-360\sa80 \'95\tab separation claire entre mode simple et mode expert,\par
+\pard\li720\fi-360\sa80 \'95\tab badges visuels pour les decisions,\par
+\pard\li720\fi-360\sa80 \'95\tab mise en avant de la source Moteur / Memoire / IA,\par
+\pard\li720\fi-360\sa80 \'95\tab scroll et composition du widget assistant corriges,\par
+\pard\li720\fi-360\sa80 \'95\tab conservation d'une presentation sobre et orientee produit metier.\par
+\par
+\pard\sa100 L'interface dispose aussi de regles responsive pour rester exploitable sur des largeurs plus faibles.\par
+\par
+\pard\sa180\b\f1\fs28\cf3 12. Connexions Backend Deja Exploitees Par L'Interface\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 L'interface est deja connectee aux services suivants :\par
+\pard\li720\fi-360\sa80 \'95\tab GET /health\par
+\pard\li720\fi-360\sa80 \'95\tab GET /memory/stats\par
+\pard\li720\fi-360\sa80 \'95\tab GET /analysis/history\par
+\pard\li720\fi-360\sa80 \'95\tab GET /validation-queue\par
+\pard\li720\fi-360\sa80 \'95\tab POST /recommend\par
+\pard\li720\fi-360\sa80 \'95\tab POST /feedback\par
+\pard\li720\fi-360\sa80 \'95\tab POST /assistant\par
+\par
+\pard\sa100 Cela signifie que l'interface n'est pas une maquette statique : elle consomme deja des donnees reelles du moteur local.\par
+\par
+\pard\sa180\b\f1\fs28\cf3 13. Resume De Ce Qui Est Deja Disponible Pour Une Demo\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 Aujourd'hui, l'interface permet deja de montrer un vrai parcours utilisateur :\par
+\pard\li720\fi-360\sa80 \'95\tab saisir une ligne de facture,\par
+\pard\li720\fi-360\sa80 \'95\tab obtenir une recommandation comptable,\par
+\pard\li720\fi-360\sa80 \'95\tab comprendre la source et les signaux du score,\par
+\pard\li720\fi-360\sa80 \'95\tab comparer les meilleurs candidats,\par
+\pard\li720\fi-360\sa80 \'95\tab valider, corriger ou rejeter la decision,\par
+\pard\li720\fi-360\sa80 \'95\tab consulter la file humaine,\par
+\pard\li720\fi-360\sa80 \'95\tab relire l'historique detaille,\par
+\pard\li720\fi-360\sa80 \'95\tab interroger un assistant IA contextuel.\par
+\par
+\pard\sa180\b\f1\fs28\cf3 14. Positionnement Actuel\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 L'interface est deja au stade d'un front metier operationnel pour :\par
+\pard\li720\fi-360\sa80 \'95\tab la demonstration,\par
+\pard\li720\fi-360\sa80 \'95\tab le test utilisateur,\par
+\pard\li720\fi-360\sa80 \'95\tab la validation fonctionnelle,\par
+\pard\li720\fi-360\sa80 \'95\tab le travail iteratif avec le backend.\par
+\par
+\pard\sa100 Elle couvre deja les briques visibles les plus importantes du produit cote utilisateur :\par
+\pard\li720\fi-360\sa80 \'95\tab analyse,\par
+\pard\li720\fi-360\sa80 \'95\tab explication,\par
+\pard\li720\fi-360\sa80 \'95\tab validation humaine,\par
+\pard\li720\fi-360\sa80 \'95\tab memoire,\par
+\pard\li720\fi-360\sa80 \'95\tab historique,\par
+\pard\li720\fi-360\sa80 \'95\tab assistant IA.\par
+\par
+\pard\sa180\b\f1\fs28\cf3 15. Prochaine Etape Logique\b0\f0\fs22\cf1\par
+\par
+\pard\sa100 La suite logique n'est plus de construire la coque de base, mais de renforcer progressivement :\par
+\pard\li720\fi-360\sa80 \'95\tab l'apprentissage apres correction humaine,\par
+\pard\li720\fi-360\sa80 \'95\tab les signaux metier plus forts,\par
+\pard\li720\fi-360\sa80 \'95\tab les regles de ranking,\par
+\pard\li720\fi-360\sa80 \'95\tab les donnees d'entree metier,\par
+\pard\li720\fi-360\sa80 \'95\tab l'industrialisation du traitement en lot.\par
+\par
+}

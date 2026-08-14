@@ -1,0 +1,128 @@
+{
+  "transport": {
+    "requested_active": [
+      "GALET DE RENVOI",
+      "SYSTEME REGULATION D AIR",
+      "TRAVERSE",
+      "SUPPORT",
+      "CADRE DE CALANDRE",
+      "POMPE A EAU",
+      "GARNITURE FREIN A DI",
+      "FILTRE POUSSIERE",
+      "JEU PCES GARNITURE FREIN",
+      "ANTIGEL ROUGE 1L (PDP)",
+      "ANTIGEL ROUGE 5L (PDP)",
+      "COURROIE TRAPEZOIDALE",
+      "TENDEUR DE COURROIE",
+      "ADBLUE vraC",
+      "ADBLUE 10L (PDP)",
+      "CAPUCHON DE VALVE",
+      "ELEMENT DE FILTRE D'HUILE",
+      "GRAISSE NOIRE CARDAN",
+      "RIVET",
+      "RIVET SYSTEME REGULATION D AIR",
+      "AILE AVANT",
+      "BOUCHON",
+      "GRILLE DE PROTECTION",
+      "TUBE ENTRETOISE",
+      "BATTERIE DE DEMARRAGE",
+      "Radiateur de refroidissement"
+    ],
+    "missing": [],
+    "files": [
+      {
+        "file": "base_produits_transport_v1.json",
+        "added": 26,
+        "skipped_existing": 0,
+        "added_labels": [
+          "GALET DE RENVOI",
+          "SYSTEME REGULATION D AIR",
+          "TRAVERSE",
+          "SUPPORT",
+          "CADRE DE CALANDRE",
+          "POMPE A EAU",
+          "GARNITURE FREIN A DI",
+          "FILTRE POUSSIERE",
+          "JEU PCES GARNITURE FREIN",
+          "ANTIGEL ROUGE 1L (PDP)",
+          "ANTIGEL ROUGE 5L (PDP)",
+          "COURROIE TRAPEZOIDALE",
+          "TENDEUR DE COURROIE",
+          "ADBLUE vraC",
+          "ADBLUE 10L (PDP)",
+          "CAPUCHON DE VALVE",
+          "ELEMENT DE FILTRE D'HUILE",
+          "GRAISSE NOIRE CARDAN",
+          "RIVET",
+          "RIVET SYSTEME REGULATION D AIR",
+          "AILE AVANT",
+          "BOUCHON",
+          "GRILLE DE PROTECTION",
+          "TUBE ENTRETOISE",
+          "BATTERIE DE DEMARRAGE",
+          "Radiateur de refroidissement"
+        ]
+      },
+      {
+        "file": "base_produits_transport_v1_with_accounts.json",
+        "added": 26,
+        "skipped_existing": 0,
+        "added_labels": [
+          "GALET DE RENVOI",
+          "SYSTEME REGULATION D AIR",
+          "TRAVERSE",
+          "SUPPORT",
+          "CADRE DE CALANDRE",
+          "POMPE A EAU",
+          "GARNITURE FREIN A DI",
+          "FILTRE POUSSIERE",
+          "JEU PCES GARNITURE FREIN",
+          "ANTIGEL ROUGE 1L (PDP)",
+          "ANTIGEL ROUGE 5L (PDP)",
+          "COURROIE TRAPEZOIDALE",
+          "TENDEUR DE COURROIE",
+          "ADBLUE vraC",
+          "ADBLUE 10L (PDP)",
+          "CAPUCHON DE VALVE",
+          "ELEMENT DE FILTRE D'HUILE",
+          "GRAISSE NOIRE CARDAN",
+          "RIVET",
+          "RIVET SYSTEME REGULATION D AIR",
+          "AILE AVANT",
+          "BOUCHON",
+          "GRILLE DE PROTECTION",
+          "TUBE ENTRETOISE",
+          "BATTERIE DE DEMARRAGE",
+          "Radiateur de refroidissement"
+        ]
+      }
+    ]
+  },
+  "btp": {
+    "requested_active": [
+      "PALETTE LUSSIANA",
+      "PALETTE CONSIGNE SLM OPL SPC"
+    ],
+    "missing": [],
+    "files": [
+      {
+        "file": "base_produits_btp_v1.json",
+        "added": 2,
+        "skipped_existing": 0,
+        "added_labels": [
+          "PALETTE LUSSIANA",
+          "PALETTE CONSIGNE SLM OPL SPC"
+        ]
+      },
+      {
+        "file": "base_produits_btp_v1_with_accounts.json",
+        "added": 2,
+        "skipped_existing": 0,
+        "added_labels": [
+          "PALETTE LUSSIANA",
+          "PALETTE CONSIGNE SLM OPL SPC"
+        ]
+      }
+    ]
+  }
+}

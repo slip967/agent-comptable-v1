@@ -1,0 +1,58 @@
+{
+  "generated_from": "copy_keymanage_metier_docs_report_quality_v3.json",
+  "source_db": "keymanage_accounting",
+  "read_only": true,
+  "top_n": 500,
+  "metiers": {
+    "boulangerie": {
+      "partitions_count": 4,
+      "invoice_forms_seen": 8062,
+      "invoice_forms_kept_after_dedup": 5960,
+      "invoice_forms_skipped_as_duplicate": 2102,
+      "base_current_distinct": 25,
+      "cleaned_distinct_article_source": 9073,
+      "cleaned_already_in_base": 22,
+      "cleaned_new_candidates": 9051
+    },
+    "boucherie": {
+      "partitions_count": 5,
+      "invoice_forms_seen": 22809,
+      "invoice_forms_kept_after_dedup": 16123,
+      "invoice_forms_skipped_as_duplicate": 6686,
+      "base_current_distinct": 40,
+      "cleaned_distinct_article_source": 21037,
+      "cleaned_already_in_base": 40,
+      "cleaned_new_candidates": 20997
+    },
+    "restaurant": {
+      "partitions_count": 3,
+      "invoice_forms_seen": 2858,
+      "invoice_forms_kept_after_dedup": 2347,
+      "invoice_forms_skipped_as_duplicate": 511,
+      "base_current_distinct": 45,
+      "cleaned_distinct_article_source": 4095,
+      "cleaned_already_in_base": 0,
+      "cleaned_new_candidates": 4095
+    },
+    "transport": {
+      "partitions_count": 10,
+      "invoice_forms_seen": 2248,
+      "invoice_forms_kept_after_dedup": 1762,
+      "invoice_forms_skipped_as_duplicate": 486,
+      "base_current_distinct": 3,
+      "cleaned_distinct_article_source": 2043,
+      "cleaned_already_in_base": 0,
+      "cleaned_new_candidates": 2043
+    },
+    "btp": {
+      "partitions_count": 9,
+      "invoice_forms_seen": 3678,
+      "invoice_forms_kept_after_dedup": 3278,
+      "invoice_forms_skipped_as_duplicate": 400,
+      "base_current_distinct": 9,
+      "cleaned_distinct_article_source": 3586,
+      "cleaned_already_in_base": 0,
+      "cleaned_new_candidates": 3586
+    }
+  }
+}

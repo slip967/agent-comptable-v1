@@ -9,4 +9,17 @@ venv/
 .mypy_cache/
 frontend/node_modules/
 frontend/dist/
+**/node_modules/
+**/dist/
 agent_local_v1/data/
+
+# Local certificates and private authentication material
+*.key
+*.p12
+*.crt
+
+# Local runtime and editor temporary files
+uvicorn_*.log
+~$*
+tmp_pdf_*/
+tmp_pdf_*.png

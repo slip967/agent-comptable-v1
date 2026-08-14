@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-05-06T16:09:42.926412Z",
+  "source_db": "keymanage_accounting",
+  "target_total": 200,
+  "metiers": [
+    {
+      "metier": "boulangerie",
+      "selected": 1,
+      "added_labels": [
+        "COEUR DE ROMAINE SAC"
+      ],
+      "files": [
+        {
+          "file": "base_produits_boulangerie_v1.json",
+          "added": 1,
+          "skipped_existing": 0
+        },
+        {
+          "file": "base_produits_boulangerie_v1_with_accounts.json",
+          "added": 1,
+          "skipped_existing": 0
+        }
+      ]
+    },
+    {
+      "metier": "restaurant",
+      "selected": 1,
+      "added_labels": [
+        "CREME FRAICHE EPAISSE 15"
+      ],
+      "files": [
+        {
+          "file": "base_produits_restaurant_v1.json",
+          "added": 1,
+          "skipped_existing": 0
+        },
+        {
+          "file": "base_produits_restaurant_v1_with_accounts.json",
+          "added": 1,
+          "skipped_existing": 0
+        }
+      ]
+    },
+    {
+      "metier": "transport",
+      "selected": 7,
+      "added_labels": [
+        "CONTROLES NIVEAU 2 DIESEL",
+        "CONTROLES NIVEAU 3 DIESEL",
+        "Carburant GO 05 pompe",
+        "Carburant SP98",
+        "E85 pompe",
+        "E85 pompe 01",
+        "ENVOI SMS GRATUIT"
+      ],
+      "files": [
+        {
+          "file": "base_produits_transport_v1.json",
+          "added": 7,
+          "skipped_existing": 0
+        },
+        {
+          "file": "base_produits_transport_v1_with_accounts.json",
+          "added": 7,
+          "skipped_existing": 0
+        }
+      ]
+    }
+  ]
+}

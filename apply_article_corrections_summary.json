@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-05-11T11:07:56.070630Z",
+  "removed": {
+    "base_charges_externes_v1.json": 1,
+    "base_charges_externes_v1_with_accounts.json": 1,
+    "base_produits_transport_v1.json": 1,
+    "base_produits_transport_v1_with_accounts.json": 1
+  },
+  "added_or_replaced": {
+    "base_produits_boulangerie_v1.json:FARINE": "added",
+    "base_produits_boulangerie_v1_with_accounts.json:FARINE": "added",
+    "base_produits_btp_v1.json:COLLE": "added",
+    "base_produits_btp_v1.json:PALETTE": "added",
+    "base_produits_btp_v1_with_accounts.json:COLLE": "added",
+    "base_produits_btp_v1_with_accounts.json:PALETTE": "added"
+  },
+  "updated": {
+    "base_produits_boulangerie_v1.json:BEURRE": "compte_comptable=6011",
+    "base_produits_boulangerie_v1_with_accounts.json:BEURRE": "compte_comptable=6011",
+    "base_produits_restaurant_v1.json:COCACOLA": "keyword+b0ite",
+    "base_produits_restaurant_v1_with_accounts.json:COCACOLA": "keyword+b0ite"
+  },
+  "checklist_removed": 4
+}

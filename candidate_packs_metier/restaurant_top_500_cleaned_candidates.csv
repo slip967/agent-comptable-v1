@@ -1,0 +1,501 @@
+﻿article_source,normalized_label,invoice_count,line_occurrences,sample_account,already_in_base,partitions
+POULET PAC HALAL,poulet pac halal,87,136,6011,False,fr_bd_891370595
+Tiramisu Choco-nut,tiramisu choco nut,87,102,601,False,fr_bd_891370595
+Diplomate Fraise,diplomate fraise,85,97,601,False,fr_bd_891370595
+SAUCISSE WUDY XXL HALAL,saucisse wudy xxl halal,81,90,6011,False,fr_bd_891370595
+Tiramisu Caramel Beurre-salé,tiramisu caramel beurre sale,75,90,601,False,fr_bd_891370595
+Misu Coco-Rocher,misu coco rocher,64,72,6068,False,fr_bd_891370595
+50 COUV BTE SALADE KRAFT GM,50 couv bte salade kraft gm,56,56,6063,False,fr_bd_952061570
+CUISSE POULET HALAL CEE 10KG,cuisse poulet halal cee 10kg,56,56,6011,False,fr_bd_891370595
+DONUTS FILET POULET,donuts filet poulet,55,59,6011,False,fr_bd_891370595
+CAROTTE MC 5KG 20/40 GB40 FR C1france,carotte mc 5kg 20 40 gb40 fr c1france,55,55,601,False,fr_bd_891370595 | fr_bd_952061570
+CUISSE DE POULET HALAL UE 10KG,cuisse de poulet halal ue 10kg,55,55,6011,False,fr_bd_891370595
+DONUT DE FILET DE POULET,donut de filet de poulet,54,57,6011,False,fr_bd_891370595
+FILET DE POULET HALAL UE,filet de poulet halal ue,54,54,6011,False,fr_bd_891370595
+COCACOLA BOITE SLIM 33CL,cocacola boite slim 33cl,53,53,6068,False,fr_bd_891370595 | fr_bd_952061570
+PILONS DE POULET ID HALAL,pilons de poulet id halal,52,55,6011,False,fr_bd_891370595
+FILET DE POULET HALAL CEE,filet de poulet halal cee,51,52,6011,False,fr_bd_891370595
+CRISTALI 50CL PET,cristali 50cl pet,51,51,6068,False,fr_bd_891370595 | fr_bd_952061570
+PILON DE POULET ID HALAL,pilon de poulet id halal,50,55,6011,False,fr_bd_891370595
+MPRO BOBINE 2P 450F X6,mpro bobine 2p 450f x6,48,48,6063,False,fr_bd_891370595 | fr_bd_952061570
+MERGUEZ BOEUF/AGN HALAL,merguez boeuf agn halal,42,43,6011,False,fr_bd_891370595
+MERGUEZ DE BOEUF/AGN HALAL,merguez de boeuf agn halal,42,43,6011,False,fr_bd_891370595
+AILE DE POULET 3 PHALANGES HALAL UE,aile de poulet 3 phalanges halal ue,42,42,6011,False,fr_bd_891370595
+COCA COLA VC 33CL,coca cola vc 33cl,42,42,6068,False,fr_bd_952061570
+OASIS TROPICAL SLIM BTE 33CL,oasis tropical slim bte 33cl,42,42,6068,False,fr_bd_891370595 | fr_bd_952061570
+AILES DE POULET 3 PHALANGES HALAL CEE,ailes de poulet 3 phalanges halal cee,41,41,6011,False,fr_bd_891370595
+MC PENNE RIGATE 5KG,mc penne rigate 5kg,41,41,6011,False,fr_bd_891370595
+Tiramisu Toffee-Choc,tiramisu toffee choc,40,42,6068,False,fr_bd_891370595
+MC OLIV.VERTES RONDELLE A10,mc oliv vertes rondelle a10,40,40,601,False,fr_bd_891370595
+BOUCHERIE,boucherie,39,645,601,False,fr_bd_952061570
+50 BTE SALADE KRAFT 1300ML,50 bte salade kraft 1300ml,38,38,6063,False,fr_bd_952061570
+BOULE A PIZZA CRU 280GX35,boule a pizza cru 280gx35,36,36,601,False,fr_bd_929728467
+BAV ALOY HAL UE,bav aloy hal ue,34,83,6011,False,fr_bd_891370595
+MC OLIV.NOIRES RONDELLE A10,mc oliv noires rondelle a10,34,34,601,False,fr_bd_891370595
+COEUR RTK 2.5KG+ HAL UE,coeur rtk 2 5kg hal ue,32,47,6011,False,fr_bd_891370595
+CAISSE COCA 24X33CL PLEIN,caisse coca 24x33cl plein,32,46,6068,False,fr_bd_952061570
+Montant total de la commande TTC,montant total de la commande ttc,32,32,606,False,fr_bd_929728467 | fr_bd_952061570
+50 COUV BTE SALADE KRAFT PM,50 couv bte salade kraft pm,30,30,6063,False,fr_bd_952061570
+HAWAI TROPICAL BOITE 33CL,hawai tropical boite 33cl,30,30,6068,False,fr_bd_891370595 | fr_bd_952061570
+Contribution tarifaire d'acheminement (CTA),contribution tarifaire d acheminement cta,29,29,6061,False,fr_bd_891370595 | fr_bd_929728467 | fr_bd_952061570
+TENDERS NATURE 1KG KFC HALAL,tenders nature 1kg kfc halal,29,29,601,False,fr_bd_929728467
+CREME FRAICHE GRAND FERMAGE 5L 15%,creme fraiche grand fermage 5l 15,28,29,601,False,fr_bd_891370595 | fr_bd_929728467
+COCA CHERRY 33CLx24 EU,coca cherry 33clx24 eu,28,28,6068,False,fr_bd_891370595 | fr_bd_929728467
+COCA SANS SUCRES VC 33CL,coca sans sucres vc 33cl,28,28,6068,False,fr_bd_952061570
+FUZETEA MENTH/CITRON VERT 33CL,fuzetea menth citron vert 33cl,28,28,6068,False,fr_bd_891370595
+OASIS TROPICAL 33CL x 24,oasis tropical 33cl x 24,28,28,6068,False,fr_bd_891370595 | fr_bd_929728467
+MPRO 250 SERV 2P BLC 40X40,mpro 250 serv 2p blc 40x40,27,27,6063,False,fr_bd_952061570
+VIANDE HACHEE EGRENEE 4MM BOEUF ISLAM CONTROL 1KG,viande hachee egrenee 4mm boeuf islam control 1kg,27,27,601,False,fr_bd_929728467
+PERRIER BOITE SLIM 33CL,perrier boite slim 33cl,26,27,6068,False,fr_bd_891370595
+AIL PELE BOCAL 1 KG,ail pele bocal 1 kg,26,26,6011,False,fr_bd_891370595 | fr_bd_952061570
+PLT BLC PAC NU HAL 1.2KG*10 FR,plt blc pac nu hal 1 2kg 10 fr,26,26,601,False,fr_bd_891370595 | fr_bd_952061570
+SALADE ICEBERG,salade iceberg,26,26,601,False,fr_bd_929728467
+50 SAC PAP KRAFT POIG 26X14X32,50 sac pap kraft poig 26x14x32,25,25,6063,False,fr_bd_952061570
+FRITES MY FRIES CLASSIC 6/6,frites my fries classic 6 6,25,25,601,False,fr_bd_929728467
+LIPTON PECHE BTE 33CL SLIM,lipton peche bte 33cl slim,25,25,6068,False,fr_bd_891370595 | fr_bd_952061570
+COCA COLA 33cl x 24 EU,coca cola 33cl x 24 eu,24,24,6068,False,fr_bd_891370595 | fr_bd_929728467
+HARICOTS VERTS E.F.2.5KG MC,haricots verts e f 2 5kg mc,24,24,601,False,fr_bd_891370595 | fr_bd_952061570
+MC TOMATES CONCASSEES 4/4,mc tomates concassees 4 4,24,24,6011,False,fr_bd_952061570
+Spotify Premium (1 mois),spotify premium 1 mois,24,24,6068,False,fr_bd_952061570
+ARO DECAPANT FOUR DEGRAIS 5L,aro decapant four degrais 5l,23,23,6063,False,fr_bd_891370595
+HUILE DE TOURNESOL BINGOIL 1L,huile de tournesol bingoil 1l,23,23,6061,False,fr_bd_891370595 | fr_bd_929728467
+ORANGINA SLIM BOITE JAUN 33CL,orangina slim boite jaun 33cl,22,23,6068,False,fr_bd_891370595 | fr_bd_952061570
+COCA SANS SUCRES 33CL,coca sans sucres 33cl,22,22,6068,False,fr_bd_891370595 | fr_bd_952061570
+Montant net facturable par Deliveroo,montant net facturable par deliveroo,22,22,606100,False,fr_bd_929728467 | fr_bd_952061570
+TORTILLA ANTALYA 30CM 90G 18PCS,tortilla antalya 30cm 90g 18pcs,22,22,601,False,fr_bd_929728467
+Taxes locales - part communale,taxes locales part communale,22,22,6061,False,fr_bd_891370595 | fr_bd_952061570
+FANTA FRAISE KIWI EU 33CL*24,fanta fraise kiwi eu 33cl 24,21,21,6068,False,fr_bd_891370595 | fr_bd_929728467
+TRESOR CHOCOLAT AU LAIT 1KG,tresor chocolat au lait 1kg,21,21,6011,False,fr_bd_891370595
+EPICERIE FINE,epicerie fine,20,23,601,False,fr_bd_891370595
+OEUF PLATEAU DE 30 OEUFS CALIBRE MOYEN,oeuf plateau de 30 oeufs calibre moyen,20,21,601,False,fr_bd_929728467
+BOURSIN CUISINE 1KG,boursin cuisine 1kg,20,20,601,False,fr_bd_929728467
+OASIS ICE TEA MNG/PASS BT33CL,oasis ice tea mng pass bt33cl,20,20,6068,False,fr_bd_891370595
+PANÉ DE VOLAILLE HALAL UE MILANESE,pane de volaille halal ue milanese,19,22,6011,False,fr_bd_891370595
+50 COUV CRIST POT ROND,50 couv crist pot rond,19,19,6063,False,fr_bd_952061570
+EAU CRISTALINE 50CL,eau cristaline 50cl,19,19,601,False,fr_bd_891370595 | fr_bd_929728467
+MARINADE BBQ,marinade bbq,19,19,6011,False,fr_bd_891370595
+MC MOUTARDE DIJON 5KG,mc moutarde dijon 5kg,19,19,601,False,fr_bd_891370595
+TOMATE ORIGINE ESPAGNE/MAROC AU KG CAT 1 (6KGLE COLIS),tomate origine espagne maroc au kg cat 1 6kgle colis,19,19,601,False,fr_bd_929728467
+BAVETTE D'ALOYAU PAD,bavette d aloyau pad,18,18,6011,False,fr_bd_891370595
+CREME LIQUIDE PRESIDENT18% 1L,creme liquide president18 1l,18,18,601,False,fr_bd_929728467
+FANTA EXOTIQUE EU 33CL X 24,fanta exotique eu 33cl x 24,18,18,601,False,fr_bd_891370595 | fr_bd_929728467
+Tiramisu Paris-Brest,tiramisu paris brest,17,18,601,False,fr_bd_891370595
+BROWNIES 770G TARTEFRAIS,brownies 770g tartefrais,17,17,6011,False,fr_bd_891370595
+CHOU BLANC 6 PC CAT1 FR FRANCE,chou blanc 6 pc cat1 fr france,17,17,6011,False,fr_bd_952061570
+COCA ZERO 33CLX24 EU,coca zero 33clx24 eu,17,17,6068,False,fr_bd_891370595 | fr_bd_929728467
+CREME FRAICHE EPAISSE 15,creme fraiche epaisse 15,17,17,601,False,fr_bd_891370595
+FANTA CITRON EUR 33CL*24,fanta citron eur 33cl 24,17,17,6068,False,fr_bd_891370595 | fr_bd_929728467
+"MOZZARELLA CANTADORA 2,5KG",mozzarella cantadora 2 5kg,17,17,601,False,fr_bd_929728467
+SCHWEPPES AGRUME 24*33 CL,schweppes agrume 24 33 cl,17,17,6068,False,fr_bd_891370595 | fr_bd_929728467
+SCHWEPPES POMME SLIM 33CL,schweppes pomme slim 33cl,17,17,6068,False,fr_bd_891370595 | fr_bd_952061570
+TENDERS HOT AND SPICY 1KG KFC HALAL,tenders hot and spicy 1kg kfc halal,17,17,601,False,fr_bd_929728467
+BUCHETTE CHEVRE 100% 180 GR,buchette chevre 100 180 gr,16,17,601,False,fr_bd_929728467
+50 BTE SALADE KRAFT 75OML,50 bte salade kraft 75oml,16,16,6063,False,fr_bd_952061570
+CAISSE COCA 24X33CL VIDE,caisse coca 24x33cl vide,16,16,6068,False,fr_bd_952061570
+GRANINI POMME 25CL,granini pomme 25cl,16,16,6068,False,fr_bd_952061570
+PETITS POIS DIYX FINS SURGELES 2.5 KG,petits pois diyx fins surgeles 2 5 kg,16,16,6011,False,fr_bd_891370595
+THYM DE PROVENCE IGP 250G,thym de provence igp 250g,16,16,6062,False,fr_bd_891370595
+BOULE A PIZZA CRU 500Gx20,boule a pizza cru 500gx20,15,15,601,False,fr_bd_929728467
+"BURGER SLICE FONDU DAIRYMAID 1,082 KG",burger slice fondu dairymaid 1 082 kg,15,15,601,False,fr_bd_891370595 | fr_bd_929728467
+Forfait 250Go 5G avantages smartphone,forfait 250go 5g avantages smartphone,15,15,6062,False,fr_bd_952061570
+GRANINI ORANGE 25CL,granini orange 25cl,15,15,6068,False,fr_bd_952061570
+MPRO BOBINE 2P 45OF X6,mpro bobine 2p 45of x6,15,15,6063,False,fr_bd_891370595 | fr_bd_952061570
+Oignon jaune MARBO 7/9 x 10 Kgs Cat 1 Espagne,oignon jaune marbo 7 9 x 10 kgs cat 1 espagne,15,15,601,False,fr_bd_952061570
+PETIT POIS DX X.FINS 2.5KG MC,petit pois dx x fins 2 5kg mc,15,15,6061,False,fr_bd_891370595 | fr_bd_952061570
+SCHEPPES AGRUM 24X25CL VIDE,scheppes agrum 24x25cl vide,15,15,6068,False,fr_bd_952061570
+TARTE ALMONDY DAIM 12 PARTS IQF,tarte almondy daim 12 parts iqf,15,15,601,False,fr_bd_891370595 | fr_bd_929728467
+50 POT A SOUPE KRAFT 36CL,50 pot a soupe kraft 36cl,14,14,6063,False,fr_bd_952061570
+50 POT ROND CRIST 25CL,50 pot rond crist 25cl,14,14,6063,False,fr_bd_952061570
+BOULE A PIZZA CRU 160GX60,boule a pizza cru 160gx60,14,14,601,False,fr_bd_929728467
+CHEDDAR FONDU 84 TR 1.033KG MC,cheddar fondu 84 tr 1 033kg mc,14,14,601,False,fr_bd_891370595 | fr_bd_952061570
+CUISSE PLT HAL A/D 10KG FR,cuisse plt hal a d 10kg fr,14,14,6011,False,fr_bd_891370595
+Concombre 50/60 Cat 1 Hollande,concombre 50 60 cat 1 hollande,14,14,601,False,fr_bd_952061570
+LAMELLE DE KEBAB POULET ADEN 800G,lamelle de kebab poulet aden 800g,14,14,601,False,fr_bd_929728467
+MARINADE TEX MEX,marinade tex mex,14,14,601,False,fr_bd_891370595
+NAVET ROND MOYEN 5KG FR FRANCE,navet rond moyen 5kg fr france,14,14,601,False,fr_bd_952061570
+OEUFS BOITE X6 LR,oeufs boite x6 lr,14,14,6011,False,fr_bd_891370595
+Option Anti-spam,option anti spam,14,14,6061,False,fr_bd_929728467
+Orangina 33cl x 24,orangina 33cl x 24,14,14,6068,False,fr_bd_891370595 | fr_bd_929728467
+SAUMON FUME 1000G SURGELE,saumon fume 1000g surgele,14,14,601,False,fr_bd_929728467 | fr_bd_952061570
+SEVEN UP MOJITO 24* 33CL,seven up mojito 24 33cl,14,14,601,False,fr_bd_891370595 | fr_bd_929728467
+100 POT SAUCE 6CL,100 pot sauce 6cl,13,13,6063,False,fr_bd_952061570
+50 BTE SALADE KRAFT 130OML,50 bte salade kraft 130oml,13,13,6063,False,fr_bd_952061570
+AIL PELE MC 1KG CHINE,ail pele mc 1kg chine,13,13,6061,False,fr_bd_891370595 | fr_bd_952061570
+COCACOLA B0ITE SLIM 33CL,cocacola b0ite slim 33cl,13,13,6068,False,fr_bd_891370595 | fr_bd_952061570
+COURGE MUSQ POTIRON BOX25 PCE FR FRANCE,courge musq potiron box25 pce fr france,13,13,601,False,fr_bd_952061570
+CREME FRAI EP 6% 5L PIZZ FLORY,creme frai ep 6 5l pizz flory,13,13,601,False,fr_bd_891370595
+EVIAN 1L VC,evian 1l vc,13,13,6068,False,fr_bd_952061570
+FANTA ORANGE EU 33cl x 24,fanta orange eu 33cl x 24,13,13,6068,False,fr_bd_891370595 | fr_bd_929728467
+LESIEUR MAYO HAUTE FERMETE 5L,lesieur mayo haute fermete 5l,13,13,601,False,fr_bd_891370595
+MC MAYO HTE FERMETE 4.7KG,mc mayo hte fermete 4 7kg,13,13,6011,False,fr_bd_891370595
+PDT GRE AGATA GBOX24 5KG C1 FR FRANCE,pdt gre agata gbox24 5kg c1 fr france,13,13,6011,False,fr_bd_891370595
+SELECTO SODA 1.5L PET,selecto soda 1 5l pet,13,13,6068,False,fr_bd_891370595
+TROPICO FR EXOTIQUE 33CL x 24,tropico fr exotique 33cl x 24,13,13,6068,False,fr_bd_891370595 | fr_bd_929728467
+GIGOT AGN S/0S S/V NZ HAL,gigot agn s 0s s v nz hal,12,27,6061,False,fr_bd_891370595
+CAIS.SANPELLEGR 12X100CL VIDE,cais sanpellegr 12x100cl vide,12,12,6068,False,fr_bd_952061570
+CASABLANCA 5D 33CL,casablanca 5d 33cl,12,12,6011,False,fr_bd_952061570
+HP10 BLANC ECO RECYCLABLE 100PCS,hp10 blanc eco recyclable 100pcs,12,12,6068,False,fr_bd_929728467
+MPRO ESSUIE-MAIN PL.Z 200F X15,mpro essuie main pl z 200f x15,12,12,6063,False,fr_bd_952061570
+Navet x 5 Kg Net Cat 1 France,navet x 5 kg net cat 1 france,12,12,601,False,fr_bd_952061570
+Option Energie Verte,option energie verte,12,12,6061,False,fr_bd_952061570
+POMME DE TERRE AGHATA 5 KG,pomme de terre aghata 5 kg,12,12,601,False,fr_bd_929728467
+POULET OUVERT 1KG HALLAL - 5 CX,poulet ouvert 1kg hallal 5 cx,12,12,601,False,fr_bd_891370595
+SCHWEPPE AGRUME 25CL VC,schweppe agrume 25cl vc,12,12,6068,False,fr_bd_952061570
+SCHWEPPES AGRUM SLIM 33CL,schweppes agrum slim 33cl,12,12,6068,False,fr_bd_891370595
+Spotify Premium,spotify premium,12,12,6068,False,fr_bd_952061570
+GIGOT AGN A/0S HAL PAC S/V NZ,gigot agn a 0s hal pac s v nz,11,20,6011,False,fr_bd_891370595
+EPICERIE,epicerie,11,14,601,False,fr_bd_891370595 | fr_bd_952061570
+SCHWEPPES AGRUM24X25CL PLEIN,schweppes agrum24x25cl plein,11,14,6068,False,fr_bd_952061570
+50 COUV BOL A SOUPE KRAFT PM,50 couv bol a soupe kraft pm,11,11,6063,False,fr_bd_952061570
+Achat non détaillé,achat non detaille,11,11,60610000,False,fr_bd_891370595 | fr_bd_952061570
+BOITE RETANCLE+COUV 500G 50P,boite retancle couv 500g 50p,11,11,606200,False,fr_bd_891370595
+COCA COLA REG PET 1.25L,coca cola reg pet 1 25l,11,11,6068,False,fr_bd_891370595 | fr_bd_952061570
+COCA COLAS 25CL VP,coca colas 25cl vp,11,11,6068,False,fr_bd_891370595
+CRISTAL SAC 20KG ARO,cristal sac 20kg aro,11,11,6011,False,fr_bd_891370595
+Carotte Grosse x 10 Kg net Cat 1 France,carotte grosse x 10 kg net cat 1 france,11,11,601,False,fr_bd_952061570
+Commission Deliveroo,commission deliveroo,11,11,606100,False,fr_bd_929728467 | fr_bd_952061570
+Contribution tarifaire d'acheminement,contribution tarifaire d acheminement,11,11,6061,False,fr_bd_891370595 | fr_bd_952061570
+EMMENTAL FR RAPE 1KG MC,emmental fr rape 1kg mc,11,11,601,False,fr_bd_952061570
+FILET DE POULET AVS AU KG,filet de poulet avs au kg,11,11,601,False,fr_bd_929728467
+MC MAY0 HTE FERMETE 4.7KG,mc may0 hte fermete 4 7kg,11,11,6011,False,fr_bd_891370595
+"MOZZA/EMMENT RAPE SACH 2,5KGMC",mozza emment rape sach 2 5kgmc,11,11,6011,False,fr_bd_952061570
+OASIS FRAISE FRAMBOISE 33cl*24,oasis fraise framboise 33cl 24,11,11,601,False,fr_bd_929728467
+OIGNON JAUNE 5 KILOS,oignon jaune 5 kilos,11,11,601,False,fr_bd_891370595 | fr_bd_929728467
+Paiements supplémentaires,paiements supplementaires,11,11,606,False,fr_bd_929728467 | fr_bd_952061570
+SAN PELL 1L VC,san pell 1l vc,11,11,6068,False,fr_bd_952061570
+TRANCHES D'AVOCAT 500G,tranches d avocat 500g,11,11,601,False,fr_bd_891370595
+GIGOT AGN S/0S HALAL S/V NZ,gigot agn s 0s halal s v nz,10,23,6061,False,fr_bd_891370595
+9854. EVIAN-BAD. 20X50STUB. PLEIN,9854 evian bad 20x50stub plein,10,13,6061,False,fr_bd_952061570
+ARO TOMATE ENTIERE PELEE 1/2,aro tomate entiere pelee 1 2,10,11,6011,False,fr_bd_952061570
+50 BTE SALADE KRAFT 1000ML,50 bte salade kraft 1000ml,10,10,6063,False,fr_bd_952061570
+AILES DE POULET HALAL CEE,ailes de poulet halal cee,10,10,6011,False,fr_bd_891370595
+BADOIT 1L VC,badoit 1l vc,10,10,6061,False,fr_bd_952061570
+GRANINI ABRICOT 25CL,granini abricot 25cl,10,10,6068,False,fr_bd_952061570
+Gazole,gazole,10,10,6063,False,fr_bd_891370595 | fr_bd_929728467 | fr_bd_952061570
+MC HUILE FRITURE 25L,mc huile friture 25l,10,10,6061,False,fr_bd_891370595
+MPRO 50 COU RPET BOL SAL PM,mpro 50 cou rpet bol sal pm,10,10,6063,False,fr_bd_952061570
+MPRO DECAP FOUR 5L,mpro decap four 5l,10,10,6063,False,fr_bd_891370595
+NAVET ROND GROS 5KG FR FRANCE,navet rond gros 5kg fr france,10,10,6011,False,fr_bd_952061570
+OIG CHARC MC 7/10 8KG C1 FR 66FRANCE,oig charc mc 7 10 8kg c1 fr 66france,10,10,6012,False,fr_bd_891370595 | fr_bd_952061570
+Obligations,obligations,10,10,6061,False,fr_bd_952061570
+PERSIL FLOCONS SAC 500G,persil flocons sac 500g,10,10,601,False,fr_bd_891370595
+PILON,pilon,10,10,6061,False,fr_bd_891370595
+PREPA TIRAMISU 1L MC,prepa tiramisu 1l mc,10,10,6011,False,fr_bd_952061570
+Promotions sur les articles,promotions sur les articles,10,10,606,False,fr_bd_929728467
+Revenus en titre-restaurant,revenus en titre restaurant,10,10,606,False,fr_bd_929728467
+SAUCE,sauce,10,10,6061,False,fr_bd_891370595
+SAUCE TOMATE TABANA,sauce tomate tabana,10,10,601,False,fr_bd_929728467
+SAUCISSE,saucisse,10,10,6061,False,fr_bd_891370595
+Vos services fournis par votre opérateur,vos services fournis par votre operateur,10,10,606,False,fr_bd_952061570
+Article non spécifié,article non specifie,9,12,606,False,fr_bd_891370595 | fr_bd_929728467 | fr_bd_952061570
+Fourniture d'électricité - Consommation,fourniture d electricite consommation,9,11,6061,False,fr_bd_929728467
+0IG CHARC MC 7/10 8KG C1 FR 66FRANCE,0ig charc mc 7 10 8kg c1 fr 66france,9,9,6011,False,fr_bd_891370595 | fr_bd_952061570
+Avantage client box,avantage client box,9,9,6062,False,fr_bd_952061570
+BOITE A PIZZA 40CM MARRON 50PCS,boite a pizza 40cm marron 50pcs,9,9,6068,False,fr_bd_929728467
+CAIS.SANPELLEGR 12X100CL PLEIN,cais sanpellegr 12x100cl plein,9,9,6068,False,fr_bd_952061570
+CANETTE,canette,9,9,6061,False,fr_bd_891370595
+CORDON BLEU DE VOLAILLE ADEN PL 1KG,cordon bleu de volaille aden pl 1kg,9,9,601,False,fr_bd_929728467
+DONUTS,donuts,9,9,6061,False,fr_bd_891370595
+ESSUIE MAIN GAUFFRE 450 FORMAT X6,essuie main gauffre 450 format x6,9,9,6068,False,fr_bd_929728467
+FILET PLT BLC HAL 5KG UE SAT,filet plt blc hal 5kg ue sat,9,9,6011,False,fr_bd_891370595
+"FROMAGE BLANC 3,1% 1KG",fromage blanc 3 1 1kg,9,9,601,False,fr_bd_891370595
+Livebox Pro Fibre - abonnements et forfaits,livebox pro fibre abonnements et forfaits,9,9,6061,False,fr_bd_929728467
+MPRO 250 SERV 2P BLC 4OX40,mpro 250 serv 2p blc 4ox40,9,9,6063,False,fr_bd_952061570
+OASIS POMME CASSIS FRAMBOISE 33CL X 24,oasis pomme cassis framboise 33cl x 24,9,9,601,False,fr_bd_929728467
+Orange Cybersecure Pro,orange cybersecure pro,9,9,6061,False,fr_bd_929728467
+PAPRIKA FUME 550G,paprika fume 550g,9,9,601,False,fr_bd_891370595
+PATES,pates,9,9,601,False,fr_bd_891370595
+PDT GRE COLOM GBX24 5KG C1 FRFRANCE,pdt gre colom gbx24 5kg c1 frfrance,9,9,601,False,fr_bd_891370595
+POIVRON,poivron,9,9,601,False,fr_bd_891370595
+SPRITE 25CL IVC,sprite 25cl ivc,9,9,6061,False,fr_bd_952061570
+COURGETTE VERTE VRAC,courgette verte vrac,8,29,601,False,fr_bd_952061570
+CAROTTE LAVE VRAC,carotte lave vrac,8,21,601,False,fr_bd_952061570
+NAVET ROND VRAC,navet rond vrac,8,21,601,False,fr_bd_952061570
+CHOUX BLANC VRAC,choux blanc vrac,8,15,601,False,fr_bd_952061570
+20 RLX 57X40X12 THERM SBPA,20 rlx 57x40x12 therm sbpa,8,8,6061,False,fr_bd_952061570
+4 PILONS,4 pilons,8,8,6061,False,fr_bd_891370595
+50 BTE SALADE KRAFT 750ML,50 bte salade kraft 750ml,8,8,6063,False,fr_bd_952061570
+9854.EVIAN-BAD.20X50STUB.VIDE,9854 evian bad 20x50stub vide,8,8,6068,False,fr_bd_952061570
+Assistance Pro 24/24,assistance pro 24 24,8,8,6061,False,fr_bd_929728467
+BOITE A PIZZA 31CM MARRON 100PCS,boite a pizza 31cm marron 100pcs,8,8,6063,False,fr_bd_929728467
+BOL CART KRAFT BRUN 1300ML/1200ML AVEC COUVERCLES 25 PCS,bol cart kraft brun 1300ml 1200ml avec couvercles 25 pcs,8,8,6068,False,fr_bd_929728467
+"CITRON PRIMO. NTAR MC 1,5 KG 50 C1 ESPESPAGNE",citron primo ntar mc 1 5 kg 50 c1 espespagne,8,8,601,False,fr_bd_952061570
+COEUR RTK 2.5KG+HALUE,coeur rtk 2 5kg halue,8,8,601,False,fr_bd_891370595
+CREVETTE CUITE S/G 60/80 2X5P EL/EQU.PENAEUS VANNAMEI,crevette cuite s g 60 80 2x5p el equ penaeus vannamei,8,8,6011,False,fr_bd_952061570
+CRISTALI 1.5L,cristali 1 5l,8,8,6068,False,fr_bd_891370595 | fr_bd_952061570
+Cheesecake Fruit Rouge,cheesecake fruit rouge,8,8,6068,False,fr_bd_891370595
+Cheesecake Mangue,cheesecake mangue,8,8,6068,False,fr_bd_891370595
+FANTA CITRON BTE SLIM 33CL,fanta citron bte slim 33cl,8,8,6068,False,fr_bd_891370595 | fr_bd_952061570
+FANTA ORANGE 33 EU,fanta orange 33 eu,8,8,601,False,fr_bd_891370595 | fr_bd_929728467
+FANTA ORGE SLIM 33CL X24 PROMO,fanta orge slim 33cl x24 promo,8,8,6061,False,fr_bd_891370595
+FORMULE SAND,formule sand,8,8,6061,False,fr_bd_891370595
+FUZETEA 25CL CONSIGNE VIDE,fuzetea 25cl consigne vide,8,8,6068,False,fr_bd_952061570
+GATEAU DAIM PREDECOUPE X 12 1K,gateau daim predecoupe x 12 1k,8,8,6068,False,fr_bd_891370595
+LOT 3 CARTOUCHES SECURISE MP,lot 3 cartouches securise mp,8,8,6063,False,fr_bd_891370595
+MAGGI KUB OR BOUILLON 128G,maggi kub or bouillon 128g,8,8,6068,False,fr_bd_891370595
+MC TOMATO KETCHUP BID 5KG,mc tomato ketchup bid 5kg,8,8,6011,False,fr_bd_891370595 | fr_bd_952061570
+MPR0 250 SERV 2P BLC 40X40,mpr0 250 serv 2p blc 40x40,8,8,6063,False,fr_bd_952061570
+MPRO 50 BOL SALAD KRAFT 130OML,mpro 50 bol salad kraft 130oml,8,8,6068,False,fr_bd_952061570
+MPRO TAMPON/EPONG VERT X10,mpro tampon epong vert x10,8,8,6063,False,fr_bd_891370595
+OASIS ICE THE PECHE BTE 33CL,oasis ice the peche bte 33cl,8,8,6068,False,fr_bd_891370595
+OASIS POMME POIRE 33CL*24,oasis pomme poire 33cl 24,8,8,601,False,fr_bd_929728467
+OASIS THE PECHE *24,oasis the peche 24,8,8,6068,False,fr_bd_891370595
+OASIS TROPICAL 25CL VC,oasis tropical 25cl vc,8,8,6068,False,fr_bd_952061570
+PETIT POIS DOUX T.F.2.5KG MC,petit pois doux t f 2 5kg mc,8,8,601,False,fr_bd_891370595
+POMME TERRE,pomme terre,8,8,6061,False,fr_bd_891370595
+SAL ICEBERG MC PC DEMIPALX28 C1 ESESPAGNE,sal iceberg mc pc demipalx28 c1 esespagne,8,8,601,False,fr_bd_891370595 | fr_bd_952061570
+SAN PELL 50CL PET,san pell 50cl pet,8,8,6068,False,fr_bd_952061570
+SAUCE BARBECUE DORO 4.8L,sauce barbecue doro 4 8l,8,8,601,False,fr_bd_891370595 | fr_bd_929728467
+SAUCE BIGGY DORO4.7KG,sauce biggy doro4 7kg,8,8,601,False,fr_bd_929728467
+SAUCISSE WUDY XXL HALAL (FRANKFURTER XXL),saucisse wudy xxl halal frankfurter xxl,8,8,6011,False,fr_bd_891370595
+BAV ALOY HALUE,bav aloy halue,7,14,601,False,fr_bd_891370595
+*CREVETTE CUITE S/G 40/60 2X5P EL/EQU.PENAEUS VANNAMEI,crevette cuite s g 40 60 2x5p el equ penaeus vannamei,7,7,6011,False,fr_bd_952061570
+4 CUISSES,4 cuisses,7,7,601,False,fr_bd_891370595
+7UP MOJITO BTE 33CL SLIM,7up mojito bte 33cl slim,7,7,6068,False,fr_bd_891370595
+9854.SPELLEGRIN 20X50CL PLEIN,9854 spellegrin 20x50cl plein,7,7,6068,False,fr_bd_952061570
+ALUMINIUM 30CM,aluminium 30cm,7,7,6063,False,fr_bd_929728467
+AROME FAMILIAL 810ML MAGGI,arome familial 810ml maggi,7,7,601,False,fr_bd_891370595
+AUBERG MC CAL 3/4 5KG FR C1 FRANCE,auberg mc cal 3 4 5kg fr c1 france,7,7,6011,False,fr_bd_952061570
+BACON A L'AMERICAINE HALAL 500 GR,bacon a l americaine halal 500 gr,7,7,601,False,fr_bd_929728467
+BADOIT 5OCL VC,badoit 5ocl vc,7,7,6068,False,fr_bd_952061570
+BRO0KIE 870G TARTEFRAIS,bro0kie 870g tartefrais,7,7,6011,False,fr_bd_891370595
+BROOKIE 870G TARTEFRAIS,brookie 870g tartefrais,7,7,602,False,fr_bd_891370595
+COCA VANILLE EUR FAT *24,coca vanille eur fat 24,7,7,601,False,fr_bd_929728467
+COEUR DE RUMSTEAK,coeur de rumsteak,7,7,6011,False,fr_bd_891370595
+COURG 14/21 METRO CHEF 5KG ES C1 ESPAGNE,courg 14 21 metro chef 5kg es c1 espagne,7,7,601,False,fr_bd_952061570
+Consommation Acheminement,consommation acheminement,7,7,6061,False,fr_bd_952061570
+Consommation Gaz naturel TQ1,consommation gaz naturel tq1,7,7,6061,False,fr_bd_952061570
+Coriandre botte x 50g Cat 1 France,coriandre botte x 50g cat 1 france,7,7,601,False,fr_bd_952061570
+DESSERT,dessert,7,7,6061,False,fr_bd_891370595
+ECHALOTE MC 3/5 5KG GBOX C1FR 16FRANCE,echalote mc 3 5 5kg gbox c1fr 16france,7,7,6011,False,fr_bd_891370595
+EVIAN 5OCL VC,evian 5ocl vc,7,7,6061,False,fr_bd_952061570
+GLACE MILK VANILLE (MILSHAKE) BAC DE 2.29KG,glace milk vanille milshake bac de 2 29kg,7,7,601,False,fr_bd_929728467
+HARICOT VERT EF600G ROCHAMBEAU,haricot vert ef600g rochambeau,7,7,6011,False,fr_bd_891370595
+HERBES PROVENCE SAC 1KG,herbes provence sac 1kg,7,7,601,False,fr_bd_891370595
+LESIEUR MAY0 HAUTE FERMETE 5L,lesieur may0 haute fermete 5l,7,7,6011,False,fr_bd_891370595
+Livraison,livraison,7,7,606,False,fr_bd_929728467 | fr_bd_952061570
+MARINADE PIRI PIRI,marinade piri piri,7,7,6011,False,fr_bd_891370595
+"MAROC RSE BOULA KHMIS 37,5CL",maroc rse boula khmis 37 5cl,7,7,6011,False,fr_bd_952061570
+MAROC RSE BOULA KHMIS 75CL,maroc rse boula khmis 75cl,7,7,6011,False,fr_bd_952061570
+MC TOMATES CONCASSEES 5/1,mc tomates concassees 5 1,7,7,6011,False,fr_bd_952061570
+MG 70% DX PLQ 500G ASTRA,mg 70 dx plq 500g astra,7,7,601,False,fr_bd_891370595
+MPRO 200 GANT NITRILE NOIR XL,mpro 200 gant nitrile noir xl,7,7,6063,False,fr_bd_891370595
+MPROBOBINE 2P 450F X6,mprobobine 2p 450f x6,7,7,6063,False,fr_bd_891370595
+OIGNON ROUGE 5 KG,oignon rouge 5 kg,7,7,601,False,fr_bd_891370595 | fr_bd_929728467
+PERRIER 33X24 EAU GAZEUSE,perrier 33x24 eau gazeuse,7,7,6068,False,fr_bd_891370595 | fr_bd_929728467
+POULET OUVERT 1KG HALLAL - 10 CX,poulet ouvert 1kg hallal 10 cx,7,7,601,False,fr_bd_891370595
+POULET OUVERT 1KG HALLAL - 8 CX,poulet ouvert 1kg hallal 8 cx,7,7,6011,False,fr_bd_891370595
+Persil plat botte x 50g Cat 1 France,persil plat botte x 50g cat 1 france,7,7,601,False,fr_bd_952061570
+Remise sous convention - créateurs d'entreprises,remise sous convention createurs d entreprises,7,7,6061,False,fr_bd_929728467
+SAL ICEBERG MC DEMIPAL PC280 C1 ES ESPAGNE,sal iceberg mc demipal pc280 c1 es espagne,7,7,6061,False,fr_bd_891370595
+SAN PELL 50CL VC,san pell 50cl vc,7,7,6068,False,fr_bd_952061570
+SPRITE 25CL CONS PLEINE,sprite 25cl cons pleine,7,7,6061,False,fr_bd_952061570
+Solutions Sécurité Smartphone avec Norton,solutions securite smartphone avec norton,7,7,6062,False,fr_bd_952061570
+TOM RDE MC 67+ 6KG 56 BE C1BELGIQUE,tom rde mc 67 6kg 56 be c1belgique,7,7,601,False,fr_bd_891370595
+Taxe Intérieure sur les Consommations de Gaz Naturel (TICGN),taxe interieure sur les consommations de gaz naturel ticgn,7,7,6061,False,fr_bd_952061570
+Taxes et contributions - Contribution Tarifaire d'Acheminement (CTA),taxes et contributions contribution tarifaire d acheminement cta,7,7,6061,False,fr_bd_929728467
+GIGOT AGN S/OS S/V NZ HAL,gigot agn s os s v nz hal,6,16,6062,False,fr_bd_891370595
+POTIRON CORGE VRAC,potiron corge vrac,6,16,601,False,fr_bd_952061570
+GIGOT AGN S/OS HALAL S/V NZ,gigot agn s os halal s v nz,6,12,6011,False,fr_bd_891370595
+1664 BLDE 5.5D 18X25CL VP,1664 blde 5 5d 18x25cl vp,6,6,6011,False,fr_bd_952061570
+9903.EVIAN-BAD.12L.STUB VIDE,9903 evian bad 12l stub vide,6,6,6068,False,fr_bd_952061570
+AILE DE POULET HALAL UE,aile de poulet halal ue,6,6,6011,False,fr_bd_891370595
+ARO LIQ VAISS MAIN CIT 5L,aro liq vaiss main cit 5l,6,6,6063,False,fr_bd_952061570
+ARO SEL FIN BV 75OG,aro sel fin bv 75og,6,6,6011,False,fr_bd_952061570
+BADOIT 50CL VC,badoit 50cl vc,6,6,6061,False,fr_bd_952061570
+CAROTTE MC 5KG 20/40 GB40 FR C1,carotte mc 5kg 20 40 gb40 fr c1,6,6,607000,False,fr_bd_891370595 | fr_bd_952061570
+CHAMPIGNON DE PARIS 3KG,champignon de paris 3kg,6,6,601,False,fr_bd_929728467
+COCA COLA BTE SLIM 33CLX30 0S,coca cola bte slim 33clx30 0s,6,6,6068,False,fr_bd_952061570
+COCA COLA EUROPE 24X33CL,coca cola europe 24x33cl,6,6,601,False,fr_bd_891370595 | fr_bd_929728467
+CROISSANT BEURRE 65G *,croissant beurre 65g,6,6,601,False,fr_bd_929728467
+CURCUMA MOULU SAC 500G,curcuma moulu sac 500g,6,6,6062,False,fr_bd_891370595
+FANTA FRUIT DU DRAGON 33cl*24,fanta fruit du dragon 33cl 24,6,6,601,False,fr_bd_929728467
+"Guirlande Lumineuse 32M 320LED, ALED LIGHT LED Fil de Cuivre Étanche IP65 avec Adapteur Alimentation, Chaine de Lampe Décoration Extérieur/Intérieur pour Noél Féte Jardin Maison(Blanc Chaud)",guirlande lumineuse 32m 320led aled light led fil de cuivre etanche ip65 avec adapteur alimentation chaine de lampe decoration exterieur interieur pour noel fete jardin maison blanc chaud,6,6,6063,False,fr_bd_952061570
+HAWAI TROPICAL B0ITE 33CL,hawai tropical b0ite 33cl,6,6,6061,False,fr_bd_952061570
+HERBES DE PROVENCE LR 250G,herbes de provence lr 250g,6,6,601,False,fr_bd_891370595
+HUILE FRITURE 25L MC,huile friture 25l mc,6,6,6061,False,fr_bd_891370595
+JAMBON BLOC DE DINDE SALIMAH 5KG CODE:775311,jambon bloc de dinde salimah 5kg code 775311,6,6,601,False,fr_bd_929728467
+LARDONS DE VEAU FUMEES TRANCHEES SALIMAH 1KG 191236,lardons de veau fumees tranchees salimah 1kg 191236,6,6,601,False,fr_bd_929728467
+MAROC RGE BOULA KHMIS 75CL,maroc rge boula khmis 75cl,6,6,6011,False,fr_bd_952061570
+MEDINA DELINDY DE DINDE 2.5KG,medina delindy de dinde 2 5kg,6,6,601,False,fr_bd_929728467
+MENU 3 PLAY,menu 3 play,6,6,6061,False,fr_bd_891370595
+METRO CHEF POIS CHICHES 5/1,metro chef pois chiches 5 1,6,6,6011,False,fr_bd_952061570
+MPR0 50 BOL SALAD KRAFT 130OML,mpr0 50 bol salad kraft 130oml,6,6,6063,False,fr_bd_952061570
+MPRO 50 COUV RPET BOL SAL GM,mpro 50 couv rpet bol sal gm,6,6,6063,False,fr_bd_952061570
+MPRO BOULE INOX 60G X10,mpro boule inox 60g x10,6,6,6063,False,fr_bd_891370595
+Montant dû au titre de la facture précédente,montant du au titre de la facture precedente,6,6,606100,False,fr_bd_929728467
+NESTLE DESSERT NOIR 5X205G,nestle dessert noir 5x205g,6,6,6068,False,fr_bd_891370595
+NETTOYANT JAVEL DILUEE 5L,nettoyant javel diluee 5l,6,6,6068,False,fr_bd_929728467
+OLIV VERTE DENOYAUTEE 2KG MAROC MAROC,oliv verte denoyautee 2kg maroc maroc,6,6,6011,False,fr_bd_952061570
+PDT AGRIA PAL 55+ 25KG C1 ESP 40ESPAGNE,pdt agria pal 55 25kg c1 esp 40espagne,6,6,6061,False,fr_bd_891370595 | fr_bd_952061570
+PERRIER EAU GAZEUSE 33CL x 24,perrier eau gazeuse 33cl x 24,6,6,6068,False,fr_bd_891370595
+POIVRE NOIR MOULU 1KG ARO,poivre noir moulu 1kg aro,6,6,6062,False,fr_bd_891370595
+POULET OUVERT 1KG HALLAL - 7 CX,poulet ouvert 1kg hallal 7 cx,6,6,601,False,fr_bd_891370595
+REBLOCHON AU LAIT CRU 450G,reblochon au lait cru 450g,6,6,601,False,fr_bd_929728467
+RIZ BASMATI 20KG DAYFI OR:INDE,riz basmati 20kg dayfi or inde,6,6,601,False,fr_bd_929728467
+Remise Forfait,remise forfait,6,6,6062,False,fr_bd_952061570
+SAUCE MAYO FACTORY 5L,sauce mayo factory 5l,6,6,601,False,fr_bd_929728467
+SERVIETTES 33*33 1 PLI,serviettes 33 33 1 pli,6,6,6061,False,fr_bd_929728467
+TROPICO L'ORIG BTE 33 CL SLIM,tropico l orig bte 33 cl slim,6,6,6068,False,fr_bd_891370595
+Taxes et contributions - Contribution au Service Public de l'Electricité (CSPE),taxes et contributions contribution au service public de l electricite cspe,6,6,6061,False,fr_bd_929728467
+VINAIGRE BLANC 8-10 L ARO,vinaigre blanc 8 10 l aro,6,6,6061,False,fr_bd_891370595
+VITTEL 50CL,vittel 50cl,6,6,6068,False,fr_bd_952061570
+"Vos abonnements, forfaits et options",vos abonnements forfaits et options,6,6,6068,False,fr_bd_952061570
+EPICERIE 5.5%,epicerie 5 5,5,14,601,False,fr_bd_891370595 | fr_bd_952061570
+9903.EVIAN-BAD.12L. STUB PLEIN,9903 evian bad 12l stub plein,5,7,6061,False,fr_bd_952061570
+AR0 TOMATE ENTIERE PELEE 1/2,ar0 tomate entiere pelee 1 2,5,7,6011,False,fr_bd_952061570
+FRUITS ET LEGUMES PIECES,fruits et legumes pieces,5,7,601,False,fr_bd_891370595
+OEUFS BOITE X 6 LABEL ROUGE,oeufs boite x 6 label rouge,5,6,6011,False,fr_bd_891370595
+PETIT POIS EXT.FIN 1KG BF,petit pois ext fin 1kg bf,5,6,606,False,fr_bd_952061570
+0IG JNE MC GBOX 6/8 5KG C1FR 25FRANCE,0ig jne mc gbox 6 8 5kg c1fr 25france,5,5,601,False,fr_bd_891370595
+0IG RGE MC GBOX 6/8 5KG C1FR 25FRANCE,0ig rge mc gbox 6 8 5kg c1fr 25france,5,5,601,False,fr_bd_891370595
+2 POULETS,2 poulets,5,5,6061,False,fr_bd_891370595
+50 KIT 6/1 BOIS KRAFT,50 kit 6 1 bois kraft,5,5,6063,False,fr_bd_952061570
+50 SAC PAPIER KRAFT 22X11X28,50 sac papier kraft 22x11x28,5,5,6063,False,fr_bd_952061570
+5O COUV BTE SALADE KRAFT GM,5o couv bte salade kraft gm,5,5,6063,False,fr_bd_952061570
+AIL PELE MC 1KG,ail pele mc 1kg,5,5,607000,False,fr_bd_891370595
+AILE PLT BLC HAL 5KG UE,aile plt blc hal 5kg ue,5,5,6011,False,fr_bd_891370595
+BARRE SNICKERS 53ML,barre snickers 53ml,5,5,602,False,fr_bd_891370595
+BEURRE DX PLQ 500G METRO CHEF,beurre dx plq 500g metro chef,5,5,601,False,fr_bd_891370595
+BROCHETTE,brochette,5,5,601,False,fr_bd_891370595
+CAROTTE MC 10KG 40+ GB18 FR C1FRANCE,carotte mc 10kg 40 gb18 fr c1france,5,5,601,False,fr_bd_891370595 | fr_bd_952061570
+CHAMPIGNON DE PARIS AU KILO,champignon de paris au kilo,5,5,601,False,fr_bd_929728467
+CHEDDAR JALAPENOS LAMBWESTON 1 KG,cheddar jalapenos lambweston 1 kg,5,5,601,False,fr_bd_929728467
+COCA SANS SUCRES 30X33CL OS,coca sans sucres 30x33cl os,5,5,6068,False,fr_bd_952061570
+CONCOMBRE PC 4/5 MC FR C1FRANCE,concombre pc 4 5 mc fr c1france,5,5,601,False,fr_bd_952061570
+CREME SUCREE S/PRESSION UHT AERO 37% 700ML DEBIC,creme sucree s pression uht aero 37 700ml debic,5,5,601,False,fr_bd_929728467
+CREVETTE CUITE S/G 30/50 2X5P EL/EQU.PENAEUS VANNAMEI,crevette cuite s g 30 50 2x5p el equ penaeus vannamei,5,5,6011,False,fr_bd_891370595 | fr_bd_952061570
+CUILLERE A SOUPE 50PCS,cuillere a soupe 50pcs,5,5,6068,False,fr_bd_929728467
+Consommation acheminement Heures creuses saison basse,consommation acheminement heures creuses saison basse,5,5,6061,False,fr_bd_891370595 | fr_bd_952061570
+Consommation acheminement Heures pleines saison basse,consommation acheminement heures pleines saison basse,5,5,6061,False,fr_bd_891370595 | fr_bd_952061570
+Courgette x 5 Kg Net cat 1 France,courgette x 5 kg net cat 1 france,5,5,601,False,fr_bd_952061570
+EMMENTAL RAPE MIX 1KG 'LE RAPE',emmental rape mix 1kg le rape,5,5,601,False,fr_bd_929728467
+ESSUIE TOUS 6P,essuie tous 6p,5,5,606300,False,fr_bd_891370595
+EVIAN 50CL VC,evian 50cl vc,5,5,6061,False,fr_bd_952061570
+EVIAN-BAD. 20X50STUB. PLEIN,evian bad 20x50stub plein,5,5,6068,False,fr_bd_952061570
+GANTS VAISS ULTRANITRIL T9/9.5,gants vaiss ultranitril t9 9 5,5,5,6063,False,fr_bd_891370595
+GRANINI ANANAS 25CL,granini ananas 25cl,5,5,6068,False,fr_bd_952061570
+GRANINI FRAISE 25CL,granini fraise 25cl,5,5,601,False,fr_bd_952061570
+Garanties d'Origine,garanties d origine,5,5,6061,False,fr_bd_952061570
+HARICOTS VERTS T.F. 2.5KG MC,haricots verts t f 2 5kg mc,5,5,601,False,fr_bd_891370595 | fr_bd_952061570
+HARISSA 3KG MAROCMAROC,harissa 3kg marocmaroc,5,5,601,False,fr_bd_952061570
+HUILE TOURNESOL MAUREL 25 L,huile tournesol maurel 25 l,5,5,601,False,fr_bd_929728467
+JAVEL PARFUMEE 2L,javel parfumee 2l,5,5,6068,False,fr_bd_891370595
+LAMELLE DE KEBAB BENS 1KG,lamelle de kebab bens 1kg,5,5,601,False,fr_bd_929728467
+"MAROC RGE BOULA KHMIS 37,5CL",maroc rge boula khmis 37 5cl,5,5,6011,False,fr_bd_952061570
+MAYONNAISE COLONA 10ML*500PCS STICK,mayonnaise colona 10ml 500pcs stick,5,5,601,False,fr_bd_891370595 | fr_bd_929728467
+"MOZZARELLA 100% CANTADORA 2,5KG",mozzarella 100 cantadora 2 5kg,5,5,601,False,fr_bd_929728467
+MP BAC GASTRO INOX GN 1/6 H65,mp bac gastro inox gn 1 6 h65,5,5,6063,False,fr_bd_891370595
+MPR0 BOBINE 2P 450F X6,mpr0 bobine 2p 450f x6,5,5,6063,False,fr_bd_952061570
+MPRO MINI JUMBO 2P PO 18OMX12,mpro mini jumbo 2p po 18omx12,5,5,6063,False,fr_bd_952061570
+Misu Pistache,misu pistache,5,5,601,False,fr_bd_891370595
+OLIVES NOIRES RONDELLES EN BOITE 3/1,olives noires rondelles en boite 3 1,5,5,601,False,fr_bd_929728467
+Option Orange Cybersecure Pro,option orange cybersecure pro,5,5,6062,False,fr_bd_929728467
+PAIN 1007 MEGA BUNS AMERICAIN 130 GR X 24 PCS,pain 1007 mega buns americain 130 gr x 24 pcs,5,5,601,False,fr_bd_929728467
+PAIN CHOCOLAT BEURRE 75G *,pain chocolat beurre 75g,5,5,601,False,fr_bd_929728467
+PAST S/P BOUQUET C.3 PC3 C1 ES ESPAGNE,past s p bouquet c 3 pc3 c1 es espagne,5,5,606,False,fr_bd_891370595 | fr_bd_952061570
+PILON DE POULET HALAL CEE,pilon de poulet halal cee,5,5,6011,False,fr_bd_891370595
+PILON PLT BLC HAL 5KG UE,pilon plt blc hal 5kg ue,5,5,6011,False,fr_bd_891370595
+POIVRON VERT CALIFORNIA ESPAGNE CAT 1,poivron vert california espagne cat 1,5,5,601,False,fr_bd_929728467
+Pain chocolat,pain chocolat,5,5,601,False,fr_bd_952061570
+RACLETTE EN TRANCHE 400G,raclette en tranche 400g,5,5,601,False,fr_bd_929728467
+SAC CAISSE PP RECYCLE METRO,sac caisse pp recycle metro,5,5,6063,False,fr_bd_952061570
+SAL ICEBERG MC PC DEMIPALX28 C1 ES,sal iceberg mc pc demipalx28 c1 es,5,5,602,False,fr_bd_891370595
+SAUCE FROMAGERE TACOS *1L,sauce fromagere tacos 1l,5,5,601,False,fr_bd_929728467
+TAMPON METALIQUE 10P,tampon metalique 10p,5,5,606800,False,fr_bd_891370595
+TOM RDE MC 67+ 6KG 56 MAROC C1MAROC,tom rde mc 67 6kg 56 maroc c1maroc,5,5,6012,False,fr_bd_891370595 | fr_bd_952061570
+VACHE QUI RIT 1 KG,vache qui rit 1 kg,5,5,601,False,fr_bd_929728467 | fr_bd_952061570
+WORLD MIX SAC DE 2KG,world mix sac de 2kg,5,5,601,False,fr_bd_952061570
+EPAULE AGN A/OS S/JAR NZ HAL,epaule agn a os s jar nz hal,4,16,6011,False,fr_bd_952061570
+BAV AL0Y HALUE,bav al0y halue,4,7,601,False,fr_bd_891370595
+BQT RECTANGLE + COUVERCLE 500G 500P,bqt rectangle couvercle 500g 500p,4,7,606200,False,fr_bd_891370595
+DIVERS PAINS,divers pains,4,6,601,False,fr_bd_952061570
+PASTEQUE,pasteque,4,6,601,False,fr_bd_891370595 | fr_bd_952061570
+AIL VIOLET VRAC,ail violet vrac,4,5,601,False,fr_bd_952061570
+Contribution au Service Public de l'Electricité (CSPE),contribution au service public de l electricite cspe,4,5,6061,False,fr_bd_929728467
+EVIAN-BAD. 12L. STUB PLEIN,evian bad 12l stub plein,4,5,6011,False,fr_bd_952061570
+MUFFIN CHOCO LAIT 100G,muffin choco lait 100g,4,5,6063,False,fr_bd_891370595
+0IG CHARC MC 7/10 8KG C1 FR 66,0ig charc mc 7 10 8kg c1 fr 66,4,4,602,False,fr_bd_891370595
+1 CUISSE P,1 cuisse p,4,4,6061,False,fr_bd_891370595
+5O COUV BOL A SOUPE KRAFT PM,5o couv bol a soupe kraft pm,4,4,6063,False,fr_bd_952061570
+AEROSOL SUCREE 70OML DEBIC,aerosol sucree 70oml debic,4,4,602,False,fr_bd_891370595
+AILE DE POULET 3PHALANGES HALAL UE,aile de poulet 3phalanges halal ue,4,4,6011,False,fr_bd_891370595
+ALIMENTATION,alimentation,4,4,601,False,fr_bd_891370595 | fr_bd_952061570
+ANANAS EXTRA.SWEET A8 COSTA-RICA PCECOSTA-RICA,ananas extra sweet a8 costa rica pcecosta rica,4,4,6011,False,fr_bd_891370595
+ARO TOMATE ENTIERE PELEE 1/2X6,aro tomate entiere pelee 1 2x6,4,4,6012,False,fr_bd_952061570
+Achats par SMS (Services du quotidien),achats par sms services du quotidien,4,4,6068,False,fr_bd_952061570
+Aubergine EUROSUR x 5 Kg Net Cat 1 Hollande,aubergine eurosur x 5 kg net cat 1 hollande,4,4,601,False,fr_bd_952061570
+BARBECUE COLONA STICK 10ML*500PCS,barbecue colona stick 10ml 500pcs,4,4,601,False,fr_bd_891370595 | fr_bd_929728467
+BOITE A PIZZA 26CM MARRON,boite a pizza 26cm marron,4,4,6061,False,fr_bd_929728467
+BOITE RETANCLE 500P 500CC,boite retancle 500p 500cc,4,4,606200,False,fr_bd_891370595
+BUN'S GOURMET 7018 PREMIUM DORES 30PCS BLACK TOAST,bun s gourmet 7018 premium dores 30pcs black toast,4,4,601,False,fr_bd_929728467
+C CART.SILICONE ACET.SDB BLC 280ML,c cart silicone acet sdb blc 280ml,4,4,60620000,False,fr_bd_891370595 | fr_bd_929728467
+CAISSE COCA 24X33CL PLEINX,caisse coca 24x33cl pleinx,4,4,6068,False,fr_bd_952061570
+CAROTTE MC 1OKG 4O+ GB18 FR C1FRANCE,carotte mc 1okg 4o gb18 fr c1france,4,4,6011,False,fr_bd_891370595 | fr_bd_952061570
+CAROTTE MC 5K C.20/40 BOX40 C1 FR FRANCE,carotte mc 5k c 20 40 box40 c1 fr france,4,4,601,False,fr_bd_891370595
+CDR RGE A DARTOIS 75CL MIL,cdr rge a dartois 75cl mil,4,4,6011,False,fr_bd_952061570
+CHEDDAR FONDU 84TR 1.033KG MC,cheddar fondu 84tr 1 033kg mc,4,4,601,False,fr_bd_891370595
+"CITRON CONFIT 2,5KG MAROCMAROC",citron confit 2 5kg marocmaroc,4,4,6011,False,fr_bd_952061570
+CLUB MEGA THON OEUF MAYO 230G,club mega thon oeuf mayo 230g,4,4,6011,False,fr_bd_891370595
+COCA SANS SUCRES 30X33CL 0S,coca sans sucres 30x33cl 0s,4,4,6068,False,fr_bd_891370595 | fr_bd_952061570
+COEUR RTK2.5KG+HALUE,coeur rtk2 5kg halue,4,4,601,False,fr_bd_891370595
+CORDON BLEU DINDE ADEN PL 1KG,cordon bleu dinde aden pl 1kg,4,4,601,False,fr_bd_929728467
+CORDON BLEU S/AT HALAL,cordon bleu s at halal,4,4,6011,False,fr_bd_891370595
+COUPE MASSICOT,coupe massicot,4,4,606100,False,fr_bd_952061570
+COURG 14/21 MC 5 KG C1 FR FRANCE,courg 14 21 mc 5 kg c1 fr france,4,4,6011,False,fr_bd_952061570
+COURG FILET 2KG 14/21 C1 FR FRANCE,courg filet 2kg 14 21 c1 fr france,4,4,6011,False,fr_bd_952061570
+COURGE MUSQ POTIRON PCE FR FRANCE,courge musq potiron pce fr france,4,4,601,False,fr_bd_952061570
+CREVETTE CUITE S/G 20/30 2X5P EL/EQU.PENAEUS VANNAMEI,crevette cuite s g 20 30 2x5p el equ penaeus vannamei,4,4,601,False,fr_bd_952061570
+CRISTAL T65 25KG,cristal t65 25kg,4,4,601,False,fr_bd_929728467
+CRISTALINE PECHE 50 CL X 6,cristaline peche 50 cl x 6,4,4,6061,False,fr_bd_929728467
+Choux BLANC LISSE Cat 1 France,choux blanc lisse cat 1 france,4,4,601,False,fr_bd_952061570
+DADA CERISE 33cL * 24,dada cerise 33cl 24,4,4,6061,False,fr_bd_929728467
+FANTA ORANGE BTE SLIM 33CL,fanta orange bte slim 33cl,4,4,6061,False,fr_bd_891370595
+FAR CAMPAILLETTE GRD SIECLE 25KG,far campaillette grd siecle 25kg,4,4,607,False,fr_bd_929728467
+"FELSGOLD BLANCHE 4,5D 33CL VP",felsgold blanche 4 5d 33cl vp,4,4,6011,False,fr_bd_952061570
+"FELSGOLD BLONDE 4,8D 33CL VP",felsgold blonde 4 8d 33cl vp,4,4,6011,False,fr_bd_952061570
+FEUILLE BRICK JRX10 170G,feuille brick jrx10 170g,4,4,6011,False,fr_bd_952061570
+FRAISE PLT 1KG ESP C1 ESPAGNE,fraise plt 1kg esp c1 espagne,4,4,6061,False,fr_bd_891370595
+FROMAGE BLC 40% 5KG MC,fromage blc 40 5kg mc,4,4,602,False,fr_bd_891370595
+Forfait 200 Go 5G Avantages Smartphone,forfait 200 go 5g avantages smartphone,4,4,6062,False,fr_bd_952061570
+HARISSA 4/4 760GR,harissa 4 4 760gr,4,4,601,False,fr_bd_929728467
+HARISSA 900ML LE SOLEIL DU CAP BON 900ML,harissa 900ml le soleil du cap bon 900ml,4,4,601,False,fr_bd_929728467
+HAWAI TROPICAL 24*33 cl,hawai tropical 24 33 cl,4,4,601,False,fr_bd_929728467
+ICE TEA FRAMBOISE 33 CL *24,ice tea framboise 33 cl 24,4,4,601,False,fr_bd_929728467
+ICE TEA LIPTON PECHE 33CL x 24,ice tea lipton peche 33cl x 24,4,4,6068,False,fr_bd_891370595 | fr_bd_929728467
+ICE TEA PECHE 33 X 24,ice tea peche 33 x 24,4,4,601,False,fr_bd_929728467
+IG CHARC MC 7/10 8KG C1 FR 66FRANCE,ig charc mc 7 10 8kg c1 fr 66france,4,4,601,False,fr_bd_891370595
+IG CHARC MC 8K C.7/10 PAL66 C1 FR FRANCE,ig charc mc 8k c 7 10 pal66 c1 fr france,4,4,6061,False,fr_bd_891370595
+JB DINDE 4T 120G HALAL,jb dinde 4t 120g halal,4,4,601,False,fr_bd_891370595
+KELLOGG'S CORN FLAKES 500G,kellogg s corn flakes 500g,4,4,602,False,fr_bd_891370595
+KETCHUP COLONA 10ml*500 STICK,ketchup colona 10ml 500 stick,4,4,601,False,fr_bd_891370595 | fr_bd_929728467
+LAMBWESTON PRIVATE 6/6,lambweston private 6 6,4,4,601,False,fr_bd_929728467
+LIQUIDE VAISSELLE 1 L,liquide vaisselle 1 l,4,4,606100,False,fr_bd_891370595
+MAYONNAISE DORO 5 L,mayonnaise doro 5 l,4,4,601,False,fr_bd_929728467
+MC SAUCE SOJA 1L,mc sauce soja 1l,4,4,601,False,fr_bd_952061570
+MC SCE SOJA TEN EN SEL.RED 1L,mc sce soja ten en sel red 1l,4,4,6011,False,fr_bd_952061570
+MENU 1/2P,menu 1 2p,4,4,6061,False,fr_bd_891370595
+MINI BEIGNET CHOCO BLANC 21G *,mini beignet choco blanc 21g,4,4,601,False,fr_bd_929728467
+MOZZA 45%MG RAPE SAC 2.5KG MC,mozza 45 mg rape sac 2 5kg mc,4,4,6011,False,fr_bd_891370595 | fr_bd_952061570
+MP CHALUMEAU CUISINE + CARTOU,mp chalumeau cuisine cartou,4,4,6063,False,fr_bd_891370595
+MP COUVERCLE INOX GN1/3 APOIGN,mp couvercle inox gn1 3 apoign,4,4,6063,False,fr_bd_891370595
+MP COUVERCLE INOX GN1/6 APOIGN,mp couvercle inox gn1 6 apoign,4,4,6064,False,fr_bd_891370595 | fr_bd_952061570
+MPR0 ESSUIE-MAIN PL.Z 200F X15,mpr0 essuie main pl z 200f x15,4,4,6063,False,fr_bd_952061570
+MPR0 FILM ALIMENTA 30OMX29CM,mpr0 film alimenta 30omx29cm,4,4,6061,False,fr_bd_952061570
+MPRO 200 GANT NITRILE NOIR M,mpro 200 gant nitrile noir m,4,4,6063,False,fr_bd_952061570
+MPRO 50 BOL SALAD KRAFT 1300ML,mpro 50 bol salad kraft 1300ml,4,4,6061,False,fr_bd_952061570
+MPRO BOULE INOX 60GX10,mpro boule inox 60gx10,4,4,6063,False,fr_bd_891370595
+MPRO FILM ALIMENTA 300MX29CM,mpro film alimenta 300mx29cm,4,4,6063,False,fr_bd_891370595 | fr_bd_952061570
+MPRO LESSIV POUDR DESINF 150D,mpro lessiv poudr desinf 150d,4,4,6064,False,fr_bd_891370595
+MPRO NETT SURF ALIM BACT 5L,mpro nett surf alim bact 5l,4,4,6063,False,fr_bd_891370595 | fr_bd_952061570
+MPRO SAC POUB COULISS 30X10OL,mpro sac poub couliss 30x10ol,4,4,606,False,fr_bd_891370595
+MPRO SAC POUB INCORP 30X11OL,mpro sac poub incorp 30x11ol,4,4,6063,False,fr_bd_952061570
+Mensualité de votre facilité de paiement pour votre équipement,mensualite de votre facilite de paiement pour votre equipement,4,4,606,False,fr_bd_952061570
+Menthe botte x 50g Cat 1 France,menthe botte x 50g cat 1 france,4,4,601,False,fr_bd_952061570
+NAVET ROND MOYEN 5K FRFRANCE,navet rond moyen 5k frfrance,4,4,6011,False,fr_bd_952061570
+NUGGETS MC DO 1KG,nuggets mc do 1kg,4,4,601,False,fr_bd_929728467
+OIG RGE MC GBOX 6/85KG C1FR 25FRANCE,oig rge mc gbox 6 85kg c1fr 25france,4,4,6061,False,fr_bd_891370595
+OIGNONS FRITS CRISPY 1KG XIONG,oignons frits crispy 1kg xiong,4,4,601,False,fr_bd_929728467
+OLIVES EN VRAC,olives en vrac,4,4,601,False,fr_bd_952061570
+PASTEL DE NATA,pastel de nata,4,4,601,False,fr_bd_891370595
+PDT AGR 25K C.60+ PAL54 C1 NL PAYS BAS,pdt agr 25k c 60 pal54 c1 nl pays bas,4,4,6061,False,fr_bd_891370595

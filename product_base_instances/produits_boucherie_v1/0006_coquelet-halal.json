@@ -1,0 +1,143 @@
+{
+  "_id": "fr_bd_519665103:product-instance:produits_boucherie_v1:1902795be005",
+  "p": "product_base_instance",
+  "data": {
+    "collection": "ProductBaseInstance",
+    "type": "ProductArticle",
+    "sub_type": "boucherie"
+  },
+  "instance_kind": "product_article_source",
+  "profile_id": "produits_boucherie_v1",
+  "metier": "boucherie",
+  "client_siren": "519665103",
+  "partition_prefix": "fr_bd_519665103",
+  "source_file": "base_produits_boucherie_v1.json",
+  "source_profile_meta": {
+    "profile_id": "produits_boucherie_v1",
+    "metier": "boucherie",
+    "client_siren": "519665103",
+    "partition_prefix": "fr_bd_519665103",
+    "version": "v1",
+    "status": "draft",
+    "items_count": 40,
+    "cleanup_note": "Nettoyage manuel: suppression charges_externes en base metier + dedoublonnage produits.",
+    "source_invoice_ids_note": "Jusqu a 30 invoice_id source par article_source depuis invoice_form.",
+    "accounts_enrichment": {
+      "reference_file": "v1_519665103_reference_base_exploitation_v1.json",
+      "matched_items": 2,
+      "unmatched_items": 0,
+      "already_present": 0
+    },
+    "source_invoice_year_filter": "2024",
+    "accounts_alignment_from_abt3fec2": {
+      "db": "abt3fec2",
+      "selector": "p=entry + invoice exists + _id not contains generated",
+      "changed_items": 0,
+      "unchanged_items": 0,
+      "no_signal_items": 2,
+      "min_confidence": 0.55
+    },
+    "invoice_source_enrichment": {
+      "db_factures": "abt3",
+      "match_rule": "invoice_form.line_items.description == article_source (normalise)",
+      "year_filter": "none",
+      "changed_items": 1,
+      "added_invoice_ids_total": 5
+    },
+    "boucherie_expansion_from_invoice_form": {
+      "added_items": 38,
+      "target_total": 40,
+      "source": "invoice_form",
+      "rule": "scope=boucherie template + account startswith 60 + lexical quality filters"
+    },
+    "keywords_cleanup_single_char_and_zero_v1": {
+      "removed_single_char_keywords": 1,
+      "fixed_ocr_zero_to_o_keywords": 0,
+      "deduplicated_keywords": 0,
+      "items_touched": 1,
+      "total_keywords_before": 147,
+      "total_keywords_after": 146,
+      "rules": [
+        "remove keywords with length <= 1",
+        "replace 0 with o only when 0 is adjacent to letters"
+      ]
+    },
+    "text_normalization_v2": {
+      "updated_at": "2026-04-13T17:20:47.388289Z",
+      "rows_touched": 0,
+      "article_source_updated": 0,
+      "article_canonique_updated": 0,
+      "mots_cles_updated": 0,
+      "rule": "remove special chars (including % * +), fix OCR 0/O in words, normalize canon + keywords"
+    },
+    "account_normalization_v1": {
+      "rule": "trim trailing zeros for padded compte_comptable values when length > 3",
+      "changed_items": 1,
+      "normalized_pairs": {
+        "old": "606200",
+        "new": "6062",
+        "count": 1
+      }
+    },
+    "account_verification_v1": {
+      "class_6_only": true,
+      "suspicious_accounts": []
+    }
+  },
+  "item_index": 6,
+  "article_source": "COQUELET HALAL",
+  "article_source_normalized": "coquelet halal",
+  "article_canonique": "coquelet halal",
+  "categorie": "exploitation_metier",
+  "sous_categorie": "matiere_premiere",
+  "compte_comptable": "6011",
+  "tva_rate": 5.5,
+  "mots_cles": [
+    "coquelet",
+    "halal"
+  ],
+  "source_invoice_ids": [
+    "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d",
+    "fr_bd_519665103:3b9a3d8b-8637-4c29-9738-7c118f0dcfd9",
+    "fr_bd_519665103:834e8468-4ed8-419d-a6bf-e0c28b5f330b",
+    "fr_bd_519665103:869deebb-5065-4b35-954f-ebda4b0afe51",
+    "fr_bd_519665103:fa9abfa2-79b9-4748-83fa-4e2391697b31",
+    "fr_bd_519665103:6ba5da79-390e-429d-97f8-9eb21ba14f94",
+    "fr_bd_519665103:1d22fe58-d038-4d90-bdf8-81c12bec0bda",
+    "fr_bd_519665103:d4bed5ca-395d-448f-988b-fdd2a4405549",
+    "fr_bd_519665103:c35b769d-ac51-412a-80ef-349c257d36b5",
+    "fr_bd_519665103:e12ed7d3-8aad-422d-9da0-55f3ce42fc91"
+  ],
+  "payload": {
+    "article_source": "COQUELET HALAL",
+    "article_canonique": "coquelet halal",
+    "categorie": "exploitation_metier",
+    "sous_categorie": "matiere_premiere",
+    "tva_rate": 5.5,
+    "mots_cles": [
+      "coquelet",
+      "halal"
+    ],
+    "fournisseur_type": "fournisseur alimentaire",
+    "ape_context": [],
+    "notes": "Pre-rempli auto depuis invoice_form boucherie (occurrences=122)",
+    "source_invoice_ids": [
+      "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d",
+      "fr_bd_519665103:3b9a3d8b-8637-4c29-9738-7c118f0dcfd9",
+      "fr_bd_519665103:834e8468-4ed8-419d-a6bf-e0c28b5f330b",
+      "fr_bd_519665103:869deebb-5065-4b35-954f-ebda4b0afe51",
+      "fr_bd_519665103:fa9abfa2-79b9-4748-83fa-4e2391697b31",
+      "fr_bd_519665103:6ba5da79-390e-429d-97f8-9eb21ba14f94",
+      "fr_bd_519665103:1d22fe58-d038-4d90-bdf8-81c12bec0bda",
+      "fr_bd_519665103:d4bed5ca-395d-448f-988b-fdd2a4405549",
+      "fr_bd_519665103:c35b769d-ac51-412a-80ef-349c257d36b5",
+      "fr_bd_519665103:e12ed7d3-8aad-422d-9da0-55f3ce42fc91"
+    ],
+    "compte_comptable": "6011",
+    "compte_comptable_source": "invoice_form_reference_v1",
+    "compte_comptable_match_score": 372,
+    "compte_comptable_match_reason": "from_invoice_form_boucherie_scope"
+  },
+  "created_at": "2026-04-21T15:42:42.589635Z",
+  "updated_at": "2026-04-21T15:42:42.589657Z"
+}

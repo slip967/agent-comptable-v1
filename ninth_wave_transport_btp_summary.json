@@ -1,0 +1,122 @@
+{
+  "transport": {
+    "requested_active": [
+      "Gazole Excellium",
+      "Gazole Premier",
+      "AdBlue Pompe",
+      "[JANTE] R19x8.5 5X112 ET 43 66.6 B1048 MB",
+      "[JANTE] R19x8.5 5X112 ET 43 66.6 B1048",
+      "[PNEUS] 245 40 19 (98y)",
+      "[PNEUS] 275 35 19 (100y)",
+      "[ACCESSOIRES] BOULON POUR JANTES / ROUES M14X1.50 28mm",
+      "LIQUIDE DE FREIN",
+      "CARTOUCHE DE FILTRE A AIR",
+      "FILTRE A POUSSIERES",
+      "FILTRE POUSSIERE FIN",
+      "FILTRE AIR"
+    ],
+    "missing": [],
+    "files": [
+      {
+        "file": "base_produits_transport_v1.json",
+        "added": 13,
+        "skipped_existing": 0,
+        "added_labels": [
+          "Gazole Excellium",
+          "Gazole Premier",
+          "AdBlue Pompe",
+          "[JANTE] R19x8.5 5X112 ET 43 66.6 B1048 MB",
+          "[JANTE] R19x8.5 5X112 ET 43 66.6 B1048",
+          "[PNEUS] 245 40 19 (98y)",
+          "[PNEUS] 275 35 19 (100y)",
+          "[ACCESSOIRES] BOULON POUR JANTES / ROUES M14X1.50 28mm",
+          "LIQUIDE DE FREIN",
+          "CARTOUCHE DE FILTRE A AIR",
+          "FILTRE A POUSSIERES",
+          "FILTRE POUSSIERE FIN",
+          "FILTRE AIR"
+        ]
+      },
+      {
+        "file": "base_produits_transport_v1_with_accounts.json",
+        "added": 13,
+        "skipped_existing": 0,
+        "added_labels": [
+          "Gazole Excellium",
+          "Gazole Premier",
+          "AdBlue Pompe",
+          "[JANTE] R19x8.5 5X112 ET 43 66.6 B1048 MB",
+          "[JANTE] R19x8.5 5X112 ET 43 66.6 B1048",
+          "[PNEUS] 245 40 19 (98y)",
+          "[PNEUS] 275 35 19 (100y)",
+          "[ACCESSOIRES] BOULON POUR JANTES / ROUES M14X1.50 28mm",
+          "LIQUIDE DE FREIN",
+          "CARTOUCHE DE FILTRE A AIR",
+          "FILTRE A POUSSIERES",
+          "FILTRE POUSSIERE FIN",
+          "FILTRE AIR"
+        ]
+      }
+    ]
+  },
+  "btp": {
+    "requested_active": [
+      "1PX LOT 10 TUBE TULIPE IRL D16 GRIS 2.4M",
+      "BASTAING BOIS 65x163 3 ML",
+      "Brique lisse pleine rouge rieussequel 220 105 50 mm",
+      "CARRELAGES REVETEMENTS - Nez de marche en aluminium avec insert en L en intérieur - localisation : Escalier RDC et RDJ - (marches - contre marches paliers)",
+      "DISQUE DIAMASTER 160X3,2/2,40X20 Z4 COUPE PANNEAUX ETERNIT",
+      "Disque à tronconner les métaux -Novipro- Diam 125x1,6x22,2mm",
+      "GANTS MANUT HAUTE VISIBILTE T10 JAUNE",
+      "POCHE A JOINT BLISTER",
+      "PRESTONETT FIN ENDUIT EN POUDRE POUR FINITION INTERIEURE SAC DE 25KG",
+      "PROF 1/4 RD FERME PVC ROG8Ql 8MM ROG801 2,5ML BLANC",
+      "RONDELLE POINT FIXE ROUGE UNI RIVET",
+      "PAREX MAITE BLANC SAC DE 25 KG (PAL 48)",
+      "Clôture Grillagée Provisoire - Ht 2.00ml"
+    ],
+    "missing": [],
+    "files": [
+      {
+        "file": "base_produits_btp_v1.json",
+        "added": 13,
+        "skipped_existing": 0,
+        "added_labels": [
+          "1PX LOT 10 TUBE TULIPE IRL D16 GRIS 2.4M",
+          "BASTAING BOIS 65x163 3 ML",
+          "Brique lisse pleine rouge rieussequel 220 105 50 mm",
+          "CARRELAGES REVETEMENTS - Nez de marche en aluminium avec insert en L en intérieur - localisation : Escalier RDC et RDJ - (marches - contre marches paliers)",
+          "DISQUE DIAMASTER 160X3,2/2,40X20 Z4 COUPE PANNEAUX ETERNIT",
+          "Disque à tronconner les métaux -Novipro- Diam 125x1,6x22,2mm",
+          "GANTS MANUT HAUTE VISIBILTE T10 JAUNE",
+          "POCHE A JOINT BLISTER",
+          "PRESTONETT FIN ENDUIT EN POUDRE POUR FINITION INTERIEURE SAC DE 25KG",
+          "PROF 1/4 RD FERME PVC ROG8Ql 8MM ROG801 2,5ML BLANC",
+          "RONDELLE POINT FIXE ROUGE UNI RIVET",
+          "PAREX MAITE BLANC SAC DE 25 KG (PAL 48)",
+          "Clôture Grillagée Provisoire - Ht 2.00ml"
+        ]
+      },
+      {
+        "file": "base_produits_btp_v1_with_accounts.json",
+        "added": 13,
+        "skipped_existing": 0,
+        "added_labels": [
+          "1PX LOT 10 TUBE TULIPE IRL D16 GRIS 2.4M",
+          "BASTAING BOIS 65x163 3 ML",
+          "Brique lisse pleine rouge rieussequel 220 105 50 mm",
+          "CARRELAGES REVETEMENTS - Nez de marche en aluminium avec insert en L en intérieur - localisation : Escalier RDC et RDJ - (marches - contre marches paliers)",
+          "DISQUE DIAMASTER 160X3,2/2,40X20 Z4 COUPE PANNEAUX ETERNIT",
+          "Disque à tronconner les métaux -Novipro- Diam 125x1,6x22,2mm",
+          "GANTS MANUT HAUTE VISIBILTE T10 JAUNE",
+          "POCHE A JOINT BLISTER",
+          "PRESTONETT FIN ENDUIT EN POUDRE POUR FINITION INTERIEURE SAC DE 25KG",
+          "PROF 1/4 RD FERME PVC ROG8Ql 8MM ROG801 2,5ML BLANC",
+          "RONDELLE POINT FIXE ROUGE UNI RIVET",
+          "PAREX MAITE BLANC SAC DE 25 KG (PAL 48)",
+          "Clôture Grillagée Provisoire - Ht 2.00ml"
+        ]
+      }
+    ]
+  }
+}

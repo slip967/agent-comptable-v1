@@ -1,0 +1,29 @@
+{
+  "requested_active": [
+    "ACCESSOIRES BOULON POUR JANTES / ROUES M14X1.50 28mm",
+    "JANTE R19x8.5 5X112 ET 43 66.6 B1048",
+    "JANTE R19x8.5 5X112 ET 43 66.6 B1048 MB",
+    "PNEUS 245 40 19 (98y)",
+    "PNEUS 275 35 19 (100y)",
+    "SET BATTERIE 5AH ET CHARGEUR STERWINS"
+  ],
+  "missing": [],
+  "files": [
+    {
+      "file": "base_produits_transport_v1.json",
+      "added": 1,
+      "skipped_existing": 5,
+      "added_labels": [
+        "SET BATTERIE 5AH ET CHARGEUR STERWINS"
+      ]
+    },
+    {
+      "file": "base_produits_transport_v1_with_accounts.json",
+      "added": 1,
+      "skipped_existing": 5,
+      "added_labels": [
+        "SET BATTERIE 5AH ET CHARGEUR STERWINS"
+      ]
+    }
+  ]
+}

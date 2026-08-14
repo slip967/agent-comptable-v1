@@ -1,0 +1,302 @@
+{
+  "applied_at": "2026-05-06T09:34:35.453798Z",
+  "source_db_factures": "abt3",
+  "files": [
+    {
+      "file": "base_produits_boucherie_v1.json",
+      "items_before": 212,
+      "items_after": 206,
+      "a_valider_before": 0,
+      "a_valider_after": 0,
+      "dropped_no_exact_match": 6,
+      "kept_remote_exact": 206,
+      "kept_local_pdf_exact": 0,
+      "examples_dropped": [
+        "CUISSE DE POULET HALAL UE",
+        "BOEUF CUISSE HANCHE BLANC BLEU BELGE",
+        "FILET DE POULET FERMIER HALAL A S/AT",
+        "BASSE-COTE DE BOEUF HALAL \"ANGUS\"",
+        "BLANC DE POULET FUMÉ IMPORT HALAL",
+        "CUISSE DE POULET HALAL UE origine : NL"
+      ]
+    },
+    {
+      "file": "base_produits_boulangerie_v1.json",
+      "items_before": 200,
+      "items_after": 103,
+      "a_valider_before": 0,
+      "a_valider_after": 0,
+      "dropped_no_exact_match": 97,
+      "kept_remote_exact": 103,
+      "kept_local_pdf_exact": 0,
+      "examples_dropped": [
+        "BEURRE GD TOURAGE FLECHARD CT 5X2KG",
+        "FARINE LABEL ROUGE L EMOTION 100 % IDF SAC 25 KG",
+        "SAL ICEBERG MC PC DEMIPALX28 C1 ESESPAGNE",
+        "CREME UHT 35% 1L MC BK AP",
+        "BEURRE SEC G.TOUR 2KG FLECH",
+        "JAVEL EXTRAIT 2.6% BIDON 5L",
+        "GROSEILLE RGE 125G PAYS-BAS C1 PAYS BAS",
+        "PATE A TARTINER 2,5KG MC"
+      ]
+    },
+    {
+      "file": "base_produits_restaurant_v1.json",
+      "items_before": 221,
+      "items_after": 146,
+      "a_valider_before": 0,
+      "a_valider_after": 0,
+      "dropped_no_exact_match": 75,
+      "kept_remote_exact": 146,
+      "kept_local_pdf_exact": 0,
+      "examples_dropped": [
+        "HUILE DE TOURNESOL 1LITRE",
+        "50 COUV BTE SALADE KRAFT GM",
+        "COCA COLA VC 33CL",
+        "50 BTE SALADE KRAFT 1300ML",
+        "BOULE A PIZZA CRU 280GX35",
+        "CAISSE COCA 24X33CL PLEIN",
+        "50 COUV BTE SALADE KRAFT PM",
+        "COCA SANS SUCRES VC 33CL"
+      ]
+    },
+    {
+      "file": "base_produits_btp_v1.json",
+      "items_before": 134,
+      "items_after": 12,
+      "a_valider_before": 0,
+      "a_valider_after": 0,
+      "dropped_no_exact_match": 122,
+      "kept_remote_exact": 12,
+      "kept_local_pdf_exact": 0,
+      "examples_dropped": [
+        "1PX COLLE POUDRE INT MAX30X30CM GRIS25KG",
+        "1PX RAGREAGE POUDRE 3A10MM INT/EXT 25KG",
+        "5 SACS A GRAVATS 56X96CM TISSE 60L BLC",
+        "JOINT AXTON EASY CHOCOLAT 2KG",
+        "KIT POSE CARRELAGE",
+        "KIT100AUTONIVELANT CROIS CALE 1.5MM DXTR",
+        "MALAXEUR PEINTDEXTER 500X90 EX8 PERCEUSE",
+        "PRIMAIRE AXTON INTERIEUR SEC EN 2-4H 4L"
+      ]
+    },
+    {
+      "file": "base_produits_transport_v1.json",
+      "items_before": 160,
+      "items_after": 129,
+      "a_valider_before": 0,
+      "a_valider_after": 0,
+      "dropped_no_exact_match": 31,
+      "kept_remote_exact": 129,
+      "kept_local_pdf_exact": 0,
+      "examples_dropped": [
+        "Gazole",
+        "Carburant GO",
+        "Carburant",
+        "DIESEL",
+        "GO (Carburant)",
+        "ADblue",
+        "Crédit lavage 100 EUR",
+        "DIESEL B10"
+      ]
+    },
+    {
+      "file": "base_produits_epicerie_v1.json",
+      "items_before": 500,
+      "items_after": 496,
+      "a_valider_before": 0,
+      "a_valider_after": 0,
+      "dropped_no_exact_match": 4,
+      "kept_remote_exact": 495,
+      "kept_local_pdf_exact": 1,
+      "examples_dropped": [
+        "CHAPELURE DOREE250G",
+        "RETRO REPULSIF ULTRASO RONGEUR",
+        "PRINGLES CREAM OIGNON 175G",
+        "OR FILET CAL.5/6 2KG ES C1 ESPAGNE"
+      ]
+    },
+    {
+      "file": "base_produits_vtc_v1.json",
+      "items_before": 500,
+      "items_after": 498,
+      "a_valider_before": 0,
+      "a_valider_after": 0,
+      "dropped_no_exact_match": 2,
+      "kept_remote_exact": 498,
+      "kept_local_pdf_exact": 0,
+      "examples_dropped": [
+        "POLISSEUSE12V BATT.OA3000TR/MN",
+        "H.MOT 229.5 1L OW40"
+      ]
+    },
+    {
+      "file": "base_charges_externes_v1.json",
+      "items_before": 267,
+      "items_after": 179,
+      "a_valider_before": 36,
+      "a_valider_after": 0,
+      "dropped_no_exact_match": 124,
+      "kept_remote_exact": 179,
+      "kept_local_pdf_exact": 0,
+      "examples_dropped": [
+        "Gaz",
+        "Eau",
+        "Abonnement eau",
+        "Consommation eau",
+        "Loyer",
+        "Charges locatives",
+        "LOYER PRINCIPAL 01/01/2025-31/03/2025",
+        "Prestation émetteur - 2nd génération"
+      ]
+    },
+    {
+      "file": "base_produits_boucherie_v1_with_accounts.json",
+      "items_before": 212,
+      "items_after": 206,
+      "a_valider_before": 0,
+      "a_valider_after": 0,
+      "dropped_no_exact_match": 6,
+      "kept_remote_exact": 206,
+      "kept_local_pdf_exact": 0,
+      "examples_dropped": [
+        "CUISSE DE POULET HALAL UE",
+        "BOEUF CUISSE HANCHE BLANC BLEU BELGE",
+        "FILET DE POULET FERMIER HALAL A S/AT",
+        "BASSE-COTE DE BOEUF HALAL \"ANGUS\"",
+        "BLANC DE POULET FUMÉ IMPORT HALAL",
+        "CUISSE DE POULET HALAL UE origine : NL"
+      ]
+    },
+    {
+      "file": "base_produits_boulangerie_v1_with_accounts.json",
+      "items_before": 200,
+      "items_after": 103,
+      "a_valider_before": 0,
+      "a_valider_after": 0,
+      "dropped_no_exact_match": 97,
+      "kept_remote_exact": 103,
+      "kept_local_pdf_exact": 0,
+      "examples_dropped": [
+        "BEURRE GD TOURAGE FLECHARD CT 5X2KG",
+        "FARINE LABEL ROUGE L EMOTION 100 % IDF SAC 25 KG",
+        "SAL ICEBERG MC PC DEMIPALX28 C1 ESESPAGNE",
+        "CREME UHT 35% 1L MC BK AP",
+        "BEURRE SEC G.TOUR 2KG FLECH",
+        "JAVEL EXTRAIT 2.6% BIDON 5L",
+        "GROSEILLE RGE 125G PAYS-BAS C1 PAYS BAS",
+        "PATE A TARTINER 2,5KG MC"
+      ]
+    },
+    {
+      "file": "base_produits_restaurant_v1_with_accounts.json",
+      "items_before": 221,
+      "items_after": 146,
+      "a_valider_before": 0,
+      "a_valider_after": 0,
+      "dropped_no_exact_match": 75,
+      "kept_remote_exact": 146,
+      "kept_local_pdf_exact": 0,
+      "examples_dropped": [
+        "HUILE DE TOURNESOL 1LITRE",
+        "50 COUV BTE SALADE KRAFT GM",
+        "COCA COLA VC 33CL",
+        "50 BTE SALADE KRAFT 1300ML",
+        "BOULE A PIZZA CRU 280GX35",
+        "CAISSE COCA 24X33CL PLEIN",
+        "50 COUV BTE SALADE KRAFT PM",
+        "COCA SANS SUCRES VC 33CL"
+      ]
+    },
+    {
+      "file": "base_produits_btp_v1_with_accounts.json",
+      "items_before": 134,
+      "items_after": 12,
+      "a_valider_before": 0,
+      "a_valider_after": 0,
+      "dropped_no_exact_match": 122,
+      "kept_remote_exact": 12,
+      "kept_local_pdf_exact": 0,
+      "examples_dropped": [
+        "1PX COLLE POUDRE INT MAX30X30CM GRIS25KG",
+        "1PX RAGREAGE POUDRE 3A10MM INT/EXT 25KG",
+        "5 SACS A GRAVATS 56X96CM TISSE 60L BLC",
+        "JOINT AXTON EASY CHOCOLAT 2KG",
+        "KIT POSE CARRELAGE",
+        "KIT100AUTONIVELANT CROIS CALE 1.5MM DXTR",
+        "MALAXEUR PEINTDEXTER 500X90 EX8 PERCEUSE",
+        "PRIMAIRE AXTON INTERIEUR SEC EN 2-4H 4L"
+      ]
+    },
+    {
+      "file": "base_produits_transport_v1_with_accounts.json",
+      "items_before": 160,
+      "items_after": 129,
+      "a_valider_before": 0,
+      "a_valider_after": 0,
+      "dropped_no_exact_match": 31,
+      "kept_remote_exact": 129,
+      "kept_local_pdf_exact": 0,
+      "examples_dropped": [
+        "Gazole",
+        "Carburant GO",
+        "Carburant",
+        "DIESEL",
+        "GO (Carburant)",
+        "ADblue",
+        "Crédit lavage 100 EUR",
+        "DIESEL B10"
+      ]
+    },
+    {
+      "file": "base_produits_epicerie_v1_with_accounts.json",
+      "items_before": 500,
+      "items_after": 496,
+      "a_valider_before": 0,
+      "a_valider_after": 0,
+      "dropped_no_exact_match": 4,
+      "kept_remote_exact": 495,
+      "kept_local_pdf_exact": 1,
+      "examples_dropped": [
+        "CHAPELURE DOREE250G",
+        "RETRO REPULSIF ULTRASO RONGEUR",
+        "PRINGLES CREAM OIGNON 175G",
+        "OR FILET CAL.5/6 2KG ES C1 ESPAGNE"
+      ]
+    },
+    {
+      "file": "base_produits_vtc_v1_with_accounts.json",
+      "items_before": 500,
+      "items_after": 498,
+      "a_valider_before": 0,
+      "a_valider_after": 0,
+      "dropped_no_exact_match": 2,
+      "kept_remote_exact": 498,
+      "kept_local_pdf_exact": 0,
+      "examples_dropped": [
+        "POLISSEUSE12V BATT.OA3000TR/MN",
+        "H.MOT 229.5 1L OW40"
+      ]
+    },
+    {
+      "file": "base_charges_externes_v1_with_accounts.json",
+      "items_before": 256,
+      "items_after": 174,
+      "a_valider_before": 36,
+      "a_valider_after": 0,
+      "dropped_no_exact_match": 118,
+      "kept_remote_exact": 174,
+      "kept_local_pdf_exact": 0,
+      "examples_dropped": [
+        "LOYER PRINCIPAL 01/01/2025-31/03/2025",
+        "Prestation émetteur - 2nd génération",
+        "Frais hebdomadaire de gestion",
+        "Frais de transaction - 2nd génération",
+        "Contribution Tarifaire d'Acheminement électricité (CTA)",
+        "Frais de service Airbnb",
+        "Services de télécommunications (forfait, communications, autres services)",
+        "Essai de contrôle sur un micropieu de l'ouvrage selon EC7"
+      ]
+    }
+  ]
+}

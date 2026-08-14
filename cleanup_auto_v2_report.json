@@ -1,0 +1,3125 @@
+{
+  "generated_at": "2026-05-05T17:13:44.827377Z",
+  "generated_from": "73_cleanup_bases_clean_v2.py",
+  "outputs": {
+    "base_charges_externes_v1.json": "base_charges_externes_clean_v2.json",
+    "base_produits_boucherie_v1.json": "base_produits_boucherie_clean_v2.json",
+    "base_produits_boulangerie_v1.json": "base_produits_boulangerie_clean_v2.json",
+    "base_produits_btp_v1.json": "base_produits_btp_clean_v2.json",
+    "base_produits_epicerie_v1.json": "base_produits_epicerie_clean_v2.json",
+    "base_produits_restaurant_v1.json": "base_produits_restaurant_clean_v2.json",
+    "base_produits_transport_v1.json": "base_produits_transport_clean_v2.json",
+    "base_produits_vtc_v1.json": "base_produits_vtc_clean_v2.json"
+  },
+  "file_summaries": {
+    "base_charges_externes_v1.json": {
+      "kind": "charges",
+      "metier": "charges_externes",
+      "items_before": 271,
+      "a_valider_before": 0,
+      "account_normalized": 12,
+      "canonical_rebuilt": 1,
+      "keywords_rebuilt": 113,
+      "auto_moved_to_charges": 0,
+      "charge_fields_refreshed": 271,
+      "items_after": 472,
+      "a_valider_after": 0,
+      "duplicates_merged": 54,
+      "manual_review_count": 43
+    },
+    "base_produits_boucherie_v1.json": {
+      "kind": "product",
+      "metier": "boucherie",
+      "items_before": 212,
+      "a_valider_before": 0,
+      "account_normalized": 0,
+      "canonical_rebuilt": 0,
+      "keywords_rebuilt": 30,
+      "auto_moved_to_charges": 0,
+      "charge_fields_refreshed": 0,
+      "items_after": 212,
+      "a_valider_after": 0,
+      "duplicates_merged": 0,
+      "manual_review_count": 0
+    },
+    "base_produits_boulangerie_v1.json": {
+      "kind": "product",
+      "metier": "boulangerie",
+      "items_before": 200,
+      "a_valider_before": 0,
+      "account_normalized": 1,
+      "canonical_rebuilt": 0,
+      "keywords_rebuilt": 100,
+      "auto_moved_to_charges": 0,
+      "charge_fields_refreshed": 0,
+      "items_after": 200,
+      "a_valider_after": 0,
+      "duplicates_merged": 0,
+      "manual_review_count": 0
+    },
+    "base_produits_btp_v1.json": {
+      "kind": "product",
+      "metier": "btp",
+      "items_before": 170,
+      "a_valider_before": 0,
+      "account_normalized": 0,
+      "canonical_rebuilt": 0,
+      "keywords_rebuilt": 99,
+      "auto_moved_to_charges": 7,
+      "charge_fields_refreshed": 0,
+      "items_after": 163,
+      "a_valider_after": 0,
+      "duplicates_merged": 0,
+      "manual_review_count": 0
+    },
+    "base_produits_epicerie_v1.json": {
+      "kind": "product",
+      "metier": "epicerie",
+      "items_before": 500,
+      "a_valider_before": 0,
+      "account_normalized": 0,
+      "canonical_rebuilt": 0,
+      "keywords_rebuilt": 102,
+      "auto_moved_to_charges": 52,
+      "charge_fields_refreshed": 0,
+      "items_after": 448,
+      "a_valider_after": 0,
+      "duplicates_merged": 0,
+      "manual_review_count": 0
+    },
+    "base_produits_restaurant_v1.json": {
+      "kind": "product",
+      "metier": "restaurant",
+      "items_before": 222,
+      "a_valider_before": 0,
+      "account_normalized": 0,
+      "canonical_rebuilt": 0,
+      "keywords_rebuilt": 100,
+      "auto_moved_to_charges": 2,
+      "charge_fields_refreshed": 0,
+      "items_after": 219,
+      "a_valider_after": 0,
+      "duplicates_merged": 1,
+      "manual_review_count": 0
+    },
+    "base_produits_transport_v1.json": {
+      "kind": "product",
+      "metier": "transport",
+      "items_before": 160,
+      "a_valider_before": 0,
+      "account_normalized": 0,
+      "canonical_rebuilt": 0,
+      "keywords_rebuilt": 57,
+      "auto_moved_to_charges": 26,
+      "charge_fields_refreshed": 0,
+      "items_after": 134,
+      "a_valider_after": 0,
+      "duplicates_merged": 0,
+      "manual_review_count": 0
+    },
+    "base_produits_vtc_v1.json": {
+      "kind": "product",
+      "metier": "vtc",
+      "items_before": 500,
+      "a_valider_before": 0,
+      "account_normalized": 0,
+      "canonical_rebuilt": 0,
+      "keywords_rebuilt": 169,
+      "auto_moved_to_charges": 168,
+      "charge_fields_refreshed": 0,
+      "items_after": 332,
+      "a_valider_after": 0,
+      "duplicates_merged": 0,
+      "manual_review_count": 0
+    }
+  },
+  "moved_to_charges": [
+    {
+      "source_file": "base_produits_btp_v1.json",
+      "bucket": "items",
+      "article_source": "Mise à disposition",
+      "reason": "service_btp_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_btp_v1.json",
+      "bucket": "items",
+      "article_source": "Mise a disposition d'une Pompe Béton (FORFAIT)",
+      "reason": "service_btp_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_btp_v1.json",
+      "bucket": "items",
+      "article_source": "FORFAIT - MISE A DISPOSITION POMPE A BÉTON",
+      "reason": "service_btp_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_btp_v1.json",
+      "bucket": "items",
+      "article_source": "MISE A DISPOSITION < COULAGE / SCIAGE > Forfait 2 ouvriers / jours",
+      "reason": "service_btp_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_btp_v1.json",
+      "bucket": "items",
+      "article_source": "FORFAIT - MISE A DISPOSITION POMPE A BETON - F/éche 28 m",
+      "reason": "service_btp_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_btp_v1.json",
+      "bucket": "items",
+      "article_source": "FORFAIT - MISE A DISPOSITION POMPE A BETON Inclus dans le forfait : Fléche 28m M-a-d 4 heures",
+      "reason": "service_btp_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_btp_v1.json",
+      "bucket": "items",
+      "article_source": "Gant manutention générale - milieu humide - tous travaux - taille 8 Novipro",
+      "reason": "service_btp_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Consommation d'électricité (HT) - Période du 22/12/22 au 31/12/22",
+      "reason": "charge_keyword:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Abonnement d'électricité - Offre classique du 22/04/2023 au 21/06/2023",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Consommation d'électricité - Période du 22/02/23 au 26/03/23 - 4157 kWh",
+      "reason": "charge_keyword:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge LYCAMOBILE 10",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge LIBON 5",
+      "reason": "charge_keyword:autres_charges_externes",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge LYCAMOBILE Pass National S",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge LEBARA Bonus Temps 5",
+      "reason": "charge_keyword:autres_charges_externes",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge SYMA 5",
+      "reason": "charge_keyword:autres_charges_externes",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge LYCAMOBILE Pass National M",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge ORANGE 5 1",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge SFR La Carte Illimitee 19,99",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge LYCAMOBILE Pass National L",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge SFR La Carte Monde 14,99",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge SFR La Carte Essentielle 4,99",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge LYCAMOBILE Pass Internation",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge SYMACOM FORFAIT BLOQUE",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox Pro Internet - Téléphonie",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge LEBARA Forfait national 19,99",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge LEBARA Forfait Appels et SMS",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Abonnement électricité du 09/05/24 au 08/06/24",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge PCS Creacard 50",
+      "reason": "charge_keyword:autres_charges_externes",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Abonnement électricité du 09/12/23 au 08/01/24",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox - location équipement",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Consommation électricité Base du 09/05/24 au 08/06/24",
+      "reason": "charge_keyword:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge Bouygues XL 10",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge Bouygues Classique 10",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Contribution service public électricité du 09/03/24 au 08/04/24",
+      "reason": "charge_keyword:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge SFR La Carte llimitee 9,99",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge SYMA Pass Inter 10",
+      "reason": "charge_keyword:autres_charges_externes",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge SFR La Carte Ilimitee 9,99",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Consommation électricité Base du 09/12/23 au 08/01/24",
+      "reason": "charge_keyword:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "LYCAMOBILE SIM Forfait Lyca S",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Contribution service public électricité du 09/06/24 au 08/07/24",
+      "reason": "charge_keyword:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Facturation électronique - abonnement",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge LYCAMOBILE Web Pass XL 19",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge LYCAMOBILE Web Pass M 4,9",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Consommation électricité Base du 09/11/24 au 08/12/24 (801 kWh)",
+      "reason": "charge_keyword:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge ORANGE illimité 20",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge LYCAMOBILE 5",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge LYCAMOBILE Web Pass L 9,99",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge LYCAMOBILE World Pass 29,9",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge LEBARA Bonus Temps 5EUR",
+      "reason": "charge_keyword:autres_charges_externes",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge LYCAMOBILE 5EUR",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge LYCAMOBILE Pass National L PLU",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge LYCAMOBILE Pass National XL",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge ORANGE Monde 5",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge ORANGE SMS 5",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Consommation électricité du 09/01/24 au 08/02/24 (1288 kWh)",
+      "reason": "charge_keyword:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge ORANGE 10 2",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "KAKI PERSIMON ESPAGNE C1 ESPAGNE",
+      "reason": "charge_keyword:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Consommation électricité Base du 09/03/24 au 08/04/24 - 1026 kWh",
+      "reason": "charge_keyword:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_epicerie_v1.json",
+      "bucket": "items",
+      "article_source": "Recharge SFR La Carte Illmitee 19,99",
+      "reason": "charge_keyword:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_restaurant_v1.json",
+      "bucket": "items",
+      "article_source": "COURGE MUSQ POTIRON BOX25 PCE FR FRANCE",
+      "reason": "charge_keyword:autres_charges_externes",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_restaurant_v1.json",
+      "bucket": "items",
+      "article_source": "PDT GRE AGATA GBOX24 5KG C1 FR FRANCE",
+      "reason": "charge_keyword:autres_charges_externes",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "Condition de livraison",
+      "reason": "charge_keyword:transport_et_logistique",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "Crédit lavage 100 EUR",
+      "reason": "service_transport_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "Lavage",
+      "reason": "service_transport_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "Lavage MP3",
+      "reason": "service_transport_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "KIT DE REPARATION SUPPORT BAGUETTE ENJOLIVEUSE",
+      "reason": "charge_keyword:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "CPT USURE GARNITURES FR",
+      "reason": "service_account_prefix",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "Bouclier avant complet remplacer",
+      "reason": "service_transport_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "Traverse avant remplacer (pare-chocs déposé)",
+      "reason": "service_transport_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "Filtre à air, remplacer",
+      "reason": "service_transport_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "Filtre à carburant, remplacer",
+      "reason": "service_transport_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "ESOE60ES B: remplacer le liquide de frein",
+      "reason": "service_transport_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "Supplément a la maintenance: faire l'appoint d'AdBlue (R)",
+      "reason": "service_transport_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "Remplacer la batterie du reseau de bord (Apres controle)",
+      "reason": "service_transport_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "GRAISSE SYNTHETIQUE",
+      "reason": "service_account_prefix",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "VIDANGE MOTEUR FILTRE",
+      "reason": "service_transport_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "Vidange huile moteur fourniture et pose filtre à huile Plaquettes de freins AV AR",
+      "reason": "service_transport_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "Bloc optique avant droit remplacer",
+      "reason": "service_transport_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "Paliers (tous) pour suspension du moteur remplacer (Moteur depose)",
+      "reason": "service_transport_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "Remplacer le bloc optique avant gauche",
+      "reason": "service_transport_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "Supplement a la maintenance remplacer le filtre a poussieres",
+      "reason": "service_transport_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "Supplement a la maintenance: remplacer la cartouche de filtre a air",
+      "reason": "service_transport_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "B: remplacer le liquide de frein",
+      "reason": "service_transport_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "VIS DE FERMETURE",
+      "reason": "service_account_prefix",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "Cloison sous aile avant gauche remplacer",
+      "reason": "service_transport_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "JEU DE CART. FILTR. CARB",
+      "reason": "service_account_prefix",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "Remplacer la pile de la clé-émetteur 022 PILE 2032",
+      "reason": "service_transport_like",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Multi-TV FTTH (du 02/12 au 01/01)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Remise sur abonnement - Bbox (du 02/12 au 01/01)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox - location équipement (du 02/12 au 01/01)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox fibre jusqu'a 1 Gb/s (du 02/11 au 01/12)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Offre Spéciale Appels illimités mobiles Europe (du 02/11 au 01/12)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Consommation d'énergie électrique - Semaine Heures Pleines du 17/1/2024 au 1/12/2024",
+      "reason": "charge_profile:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Consommation d'énergie électrique - Week-end Heures Pleines du 17/1/2024 au 16/12/2024",
+      "reason": "charge_profile:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait Client B You 260Go 5G",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Gazole Excellium",
+      "reason": "charge_profile:cotisations_professionnelles",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox - location équipement (du 02/09 au 01/10)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Multi-TV FTTH (du 02/09 au 01/10)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Remise sur abonnement - Bbox (du 02/09 au 01/10)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait Client B You 230Go",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox fibre jusqu'à 1 Gb/s (du 02/02 au 01/03)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox fibre jusqu'a1 Gb/s (du 02/12 au 01/01)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Evolution d'offre - Appels illimités mobiles France (du 02/04 au 01/05)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Offre Spéciale Appels illimités mobiles Europe (du 02/02 au 01/03)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Vos services fournis par votre opérateur",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox - location équipement (du 02/08 au 01/09)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Evolution d'offre - Appels illimités mobiles France (du 02/09 au 01/10)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Multi-TV FTTH (du 02/08 au 01/09)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Remise sur abonnement - Bbox (du 02/08 au 01/09)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Gazole Premier",
+      "reason": "charge_profile:cotisations_professionnelles",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "SMS/MMS vers l'international",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "TV by Canal Panorama",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "communications vers l'international",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "AdBlue Pompe",
+      "reason": "charge_profile:cotisations_professionnelles",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "CAPTEUR D'USURE",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Effectuer un essai sur route",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Effectuer un test rapide",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Avantage Internet 100Go 3 euros majelan inclus",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Avantage Internet 60Go 3 euros majelan inclus",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Avantage client box",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox fibre jusqu'a1 Gb/s (du 02/08 au 01/09)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "DS FORFAIT DOSE LG (PDP PD)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Evolution d'offre - Appels illimités mobiles France (du 02/08 au 01/09)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait B You client 170Go 5G",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait Spécial client 350Go 5G Av. smartphone",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "GARNITURE FREIN A DISQUE",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Internet 10Go France",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Option Week-end internet illimité",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "TS CART. FILTRE A HUILE",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "VIS DE FERMETURE",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Abonnement d'électricité du 17/11/2024 au 31/01/2025",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Appels à tarification majorée - Numéros spéciaux",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Avantage Internet 60Go",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox - location équipement (du 02/05 au 01/06)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox - location équipement (du 02/11 au 01/12)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox fibre jusqu'a1 Gb/s (du 02/07 au 01/08)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Contribution au Service Public de l'Electricité (CSPE) du 17/11/2024 au 31/01/2025",
+      "reason": "charge_profile:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Effectuer la maintenance A avec pack plus",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Free Haut Debit",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "KIT DE REPARATION SUPPORT BAGUETTE ENJOLIVEUSE",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Lavage Carte TW D",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Offre Spéciale Appels illimités mobiles Europe(du 02/10 au 01/11)",
+      "reason": "charge_profile:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Option multi-SiM Internet",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Pose kit réparation optique avant gauche",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Remise Forfait",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Vos abonnements, forfaits et options",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "régularisation offre Bbox (du 02/03 au 01/04)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Abonnement Freebox Révolution avec TV by CANAL",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Avantage Internet 80Go",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "BATTERIE DE DEMARRAGE",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox Must fibre jusqu'a 1Gb/s (du 02/05 au 01/06)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox Must fibre jusqu'a1Gb/s (du 02/02 au 01/03)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "CARTOUCHE DE FILTRE A AIR",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "CC: REVISION A7 Maintenance VIDANGE MOTEUR FILTRE",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "CPT USURE GARNITURES FR",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Chaines de télé payantes du 1er au 31 Décembre 2022 - FREEBOX TV",
+      "reason": "charge_profile:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Chaînes de télé payantes - FREEBOX TV Bouquet Maghreb (10)",
+      "reason": "charge_profile:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Consommation d'électricité - Relevé Réel - Semaine Heures Pleines",
+      "reason": "charge_profile:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "DISQUE DE FREIN COMPOSITE",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Effectuer la maintenance B avec pack plus",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Entretien/réparation véhicule Mercedes-Benz Classe E 220 d Avant (FF-354-EV) - Main d'oeuvre",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "FILTRE A POUSSIERES",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "FILTRE POUSSIERE",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "FILTRE POUSSIERE FIN",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Filtre à air, remplacer",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Filtre à carburant, remplacer",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait 150Go 5G avantages smartphone",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait 200 Go 5G Avantages Smartphone",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait 250Go 5G avantages smartphone",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait Sensation 150Go 5G Avantages Smartphone",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait Spécial client 20Go 5G Av. smartphone",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Frais de Gestion",
+      "reason": "charge_profile:frais_administratifs_et_bancaires",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "GRAISSE SYNTHETIQUE",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "J.PC.CARTOUCH.FILTR.HUILE",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "JEU DE CART. FILTR. CARB",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "LIQUIDE DE FREIN",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "MAIN D'OEUVRE",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "MOBIL S3000 5W30 VRAC",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Maintenance A avec pack plus",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Services de FREE - Abonnements, forfaits et options",
+      "reason": "charge_profile:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Supplement a la maintenance: Vous allez recevoir un email 5 Etoiles",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Supplement a la maintenance: remplacer la cartouche de filtre a air",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Supplement a la maintenance remplacer le filtre a poussieres",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Supplément a la maintenance: Facturé selon temps passé",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Supplément a la maintenance: faire l'appoint d'AdBlue (R)",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Supplément ä la maintenance",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Série Speciale B YOU 200Go",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "TV by CANAL",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Vos services fournis par des tiers - Vos abonnements",
+      "reason": "charge_profile:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "abonnement Canal",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "AGENT DE GLISSEMENT",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Abonnement Freebox Révolution avec TV by CANAL du 1er au 31 Décembre 2023",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Accessoires",
+      "reason": "charge_profile:cotisations_professionnelles",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Appels reçus hors Zone Europe",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Autres - 1 unité de internet mobile - abo hebdo",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Avantage Internet 100Go",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "B: remplacer le liquide de frein",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "B: remplacer le liquide de frein - Supplément a la maintenance",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox Must fibre jusqu'a 1 Gb/s (du 02/10 au 01/11)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox Must fibre jusqu'a 1Gb/s (du 02/04 au 01/05)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox Must fibre jusqu'a1Gb/s (du 02/07 au 01/08)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox Série Spéciale Ultym fibre (du 02/12 au 01/01)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "CAPTEUR D'USURE PLAQUETTE",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "CONTROLE OBLIGATOIRE VP",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "COQUE DE TÉLÉPHONE QUAD LOCK - IPHONE",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Chaines TV du 1er au 30 Novembre 2023 - FREEBOX TV",
+      "reason": "charge_profile:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Chaines de télé payantes - Bouquet Maghreb",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Communications hors-forfait (international, SMS/MMS international)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Consommation d'électricité - Relevé Réel - Week-end Heures Pleines",
+      "reason": "charge_profile:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Consommation d'énergie électrique - Weekend Heures Creuses du 17/07/2025 au 16/08/2025",
+      "reason": "charge_profile:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Effectuer la maintenance avec pack plus",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "FILTRE AIR",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "FORFAIT TAXI PLAQUETTES AR",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait 2h 100Mo 5G Av. Smartphone",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait B YOU 60Go client",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait Client 40Go 5G Avantages Smartphone",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait Client B You 270Go 5G",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait Sensation client 70Go",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait entretien/réparation",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "GARNITURE DE FREIN",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "GARNITURE FREINA DISQUE",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Internet depuis la France métropolitaine (dépassement)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Main d'oeuvre atelier",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Offre Spéciale Appels illimités mobiles Europe (du 02/12 au O1/01)",
+      "reason": "charge_profile:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Option Majelan",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "PATE POUR FREINS",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "PREMIERE REPARATION",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Pièces de rechange",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Pièces détachées",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Prix de l'abonnement Prime",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "REMPLACEMENT DES PLAQUETTES DE FREIN AR",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "REVISION B1",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Remise Forfait B YOU",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Remise sur Frais de livraison Relais Exp",
+      "reason": "charge_profile:transport_et_logistique",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Remplacer les garnitures de frein et les disques de frein de l'essieu arrière (roues complètes démontées)",
+      "reason": "charge_profile:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Régularisation: Répéteur Bbox Wi-Fi 5 (du 01/03 au 01/03)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Régularisation Remise forfait pendant 12 mois",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Réparation selon rapport d'expertise - Travaux effectués: Contrôle des trains avant et arrière, Remplacement, peinture (Aile avant droite, Capot moteur avant, Charnière droite de capot, Pare-chocs avant, Support avant d'aile avant droit, Pare boue avant droit partie avant, Pare boue avant droit partie arrière, Tirant de bras de suspension avant droit, Bras inférieur de suspension avant, Protection sous moteur, Boîtier de direction, Equilibreur droit de capot, Jante avant droite, Porte moyeu avant droit, Bras supérieur de suspension, Amortisseur avant droit et avant gauche, Pneumatique avant droit, Projecteur droit, Support de capteur latéral droit d'aide au stationnement, Joint de porte avant droite, Rétroviseur droit, Répétiteur de rétroviseur), Réparation, peinture (Haut de caisse droit, Elargisseur de bas de caisse, Porte avant droite, Doublure de passage de roue avant droit)",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Répéteur Bbox Wi-Fi 5",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Répéteur Bbox Wi-Fi 5 (du 02/02 au 01/03)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Supplément a la maintenance: Nettoyer, graisser le mécanisme de toit ouvrant panoramique",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Supplément a la maintenance B: effectuer la vidange d'huile dans la boite de vitesses automatique Sur véh. avec boite de vitesses 725.0",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Taxe d'aéroport",
+      "reason": "charge_profile:cotisations_professionnelles",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Taxe d'aéroport française",
+      "reason": "charge_profile:cotisations_professionnelles",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Taxe de solidarité",
+      "reason": "charge_profile:cotisations_professionnelles",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "VIDANGE MOTEUR FILTRE",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Valeur Main d'oeuvre",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Valeur Pièces de Rechange",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Vos abonnements",
+      "reason": "charge_profile:energie_electricite",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Vos abonnements, forfaits et options - Pour le mois à venir (du 02/08 au 01/09) - Option multi-SIM Internet (facturée sur fft mobile)",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Vos communications (du 02/07 au 01/08) décomptées de vos forfaits - 1 Go 230 dans le cadre de votre Internet décompté de votre forfait principal",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Vos services fournis par des tiers",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Vos services ponctuels",
+      "reason": "charge_profile:telecom_et_abonnements",
+      "target_file": "base_charges_externes_clean_v2.json"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "MONTAGE Montage",
+      "reason": "charge_profile:entretien_et_maintenance",
+      "target_file": "base_charges_externes_clean_v2.json"
+    }
+  ],
+  "suspicious_accounts": [
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Box 2eme ETAGE 4.5m2 11m3 Forfait mensuel",
+      "reason": "charge_account_prefix_unexpected:6112",
+      "account": "6112"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Loyer Hors Charges",
+      "reason": "charge_account_prefix_unexpected:7061",
+      "account": "7061"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Box 2eme ETAGE 4.5m2 11m3 Forfait mensuel 69.17 EUR",
+      "reason": "charge_account_prefix_unexpected:6112",
+      "account": "6112"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "FILTRE POUSSIERE",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "BATTERIE DE DEMARRAGE",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "Gazole Excellium",
+      "reason": "product_account_prefix_unexpected:6227",
+      "account": "6227"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "Gazole Premier",
+      "reason": "product_account_prefix_unexpected:6227",
+      "account": "6227"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "AdBlue Pompe",
+      "reason": "product_account_prefix_unexpected:6227",
+      "account": "6227"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "LIQUIDE DE FREIN",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "CARTOUCHE DE FILTRE A AIR",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "FILTRE A POUSSIERES",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "FILTRE POUSSIERE FIN",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "FILTRE AIR",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "J.PC.CARTOUCH.FILTR.HUILE",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "CAPTEUR D'USURE PLAQUETTE",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "GARNITURE DE FREIN",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "GARNITURE FREINA DISQUE",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "PATE POUR FREINS",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "CPT USURE GARNITURES FR",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "Filtre à air, remplacer",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "Filtre à carburant, remplacer",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "REMPLACEMENT DES PLAQUETTES DE FREIN AR",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "GRAISSE SYNTHETIQUE",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "VIDANGE MOTEUR FILTRE",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "B: remplacer le liquide de frein",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "VIS DE FERMETURE",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_transport_v1.json",
+      "bucket": "items",
+      "article_source": "JEU DE CART. FILTR. CARB",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Multi-TV FTTH (du 02/12 au 01/01)",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Remise sur abonnement - Bbox (du 02/12 au 01/01)",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox - location équipement (du 02/12 au 01/01)",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox fibre jusqu'a 1 Gb/s (du 02/11 au 01/12)",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Offre Spéciale Appels illimités mobiles Europe (du 02/11 au 01/12)",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait Client B You 260Go 5G",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Gazole Excellium",
+      "reason": "product_account_prefix_unexpected:6227",
+      "account": "6227"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox - location équipement (du 02/09 au 01/10)",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Multi-TV FTTH (du 02/09 au 01/10)",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Remise sur abonnement - Bbox (du 02/09 au 01/10)",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait Client B You 230Go",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox fibre jusqu'à 1 Gb/s (du 02/02 au 01/03)",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox fibre jusqu'a1 Gb/s (du 02/12 au 01/01)",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Evolution d'offre - Appels illimités mobiles France (du 02/04 au 01/05)",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Offre Spéciale Appels illimités mobiles Europe (du 02/02 au 01/03)",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Vos services fournis par votre opérateur",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox - location équipement (du 02/08 au 01/09)",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Evolution d'offre - Appels illimités mobiles France (du 02/09 au 01/10)",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Multi-TV FTTH (du 02/08 au 01/09)",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Remise sur abonnement - Bbox (du 02/08 au 01/09)",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Divers",
+      "reason": "product_account_prefix_unexpected:6251",
+      "account": "6251"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Gazole Premier",
+      "reason": "product_account_prefix_unexpected:6227",
+      "account": "6227"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "SACHET SULTAN NUGGETS",
+      "reason": "product_account_prefix_unexpected:6251",
+      "account": "6251"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "SLIM HAMOUD BLANCHE 12X33CL",
+      "reason": "product_account_prefix_unexpected:6251",
+      "account": "6251"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "SMS/MMS vers l'international",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "TV by Canal Panorama",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "communications vers l'international",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "AdBlue Pompe",
+      "reason": "product_account_prefix_unexpected:6227",
+      "account": "6227"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "CAPTEUR D'USURE",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Effectuer un essai sur route",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Effectuer un test rapide",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Avantage Internet 60Go 3 euros majelan inclus",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox fibre jusqu'a1 Gb/s (du 02/08 au 01/09)",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Evolution d'offre - Appels illimités mobiles France (du 02/08 au 01/09)",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait B You client 170Go 5G",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait Spécial client 350Go 5G Av. smartphone",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "GARNITURE FREIN A DISQUE",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "TS CART. FILTRE A HUILE",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "VIS DE FERMETURE",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Appels à tarification majorée - Numéros spéciaux",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Avantage Internet 60Go",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox - location équipement (du 02/05 au 01/06)",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox fibre jusqu'a1 Gb/s (du 02/07 au 01/08)",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Free Haut Debit",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Lavage Carte TW D",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Remise Forfait",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Vos abonnements, forfaits et options",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Avantage Internet 80Go",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "BATTERIE DE DEMARRAGE",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "CARTOUCHE DE FILTRE A AIR",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "CPT USURE GARNITURES FR",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "DISQUE DE FREIN COMPOSITE",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "FILTRE A POUSSIERES",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "FILTRE POUSSIERE",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "FILTRE POUSSIERE FIN",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Filtre à air, remplacer",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Filtre à carburant, remplacer",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait Sensation 150Go 5G Avantages Smartphone",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Frais de Gestion",
+      "reason": "product_account_prefix_unexpected:6227",
+      "account": "6227"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "GRAISSE SYNTHETIQUE",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "J.PC.CARTOUCH.FILTR.HUILE",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "JEU DE CART. FILTR. CARB",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "LIQUIDE DE FREIN",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "MAIN D'OEUVRE",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "MOBIL S3000 5W30 VRAC",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Série Speciale B YOU 200Go",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "TV by CANAL",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "AGENT DE GLISSEMENT",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Accessoires",
+      "reason": "product_account_prefix_unexpected:6227",
+      "account": "6227"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Appels reçus hors Zone Europe",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "B: remplacer le liquide de frein",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "CAPTEUR D'USURE PLAQUETTE",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "CONTROLE OBLIGATOIRE VP",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Chaines de télé payantes - Bouquet Maghreb",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "FILTRE AIR",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "FORFAIT TAXI PLAQUETTES AR",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait B YOU 60Go client",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait Client B You 270Go 5G",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait entretien/réparation",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Frais de réservation",
+      "reason": "product_account_prefix_unexpected:6251",
+      "account": "6251"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "GARNITURE DE FREIN",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "GARNITURE FREINA DISQUE",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Main d'oeuvre atelier",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Option Majelan",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "PATE POUR FREINS",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "PREMIERE REPARATION",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Pièces de rechange",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Pièces détachées",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "REMPLACEMENT DES PLAQUETTES DE FREIN AR",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "REVISION B1",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Remise Forfait B YOU",
+      "reason": "product_account_prefix_unexpected:6261",
+      "account": "6261"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Taxe d'aéroport",
+      "reason": "product_account_prefix_unexpected:6227",
+      "account": "6227"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Taxe d'aéroport française",
+      "reason": "product_account_prefix_unexpected:6227",
+      "account": "6227"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Taxe de solidarité",
+      "reason": "product_account_prefix_unexpected:6227",
+      "account": "6227"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "VIDANGE MOTEUR FILTRE",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Valeur Main d'oeuvre",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Valeur Pièces de Rechange",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Vos services fournis par des tiers",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "Vos services ponctuels",
+      "reason": "product_account_prefix_unexpected:626",
+      "account": "626"
+    },
+    {
+      "source_file": "base_produits_vtc_v1.json",
+      "bucket": "items",
+      "article_source": "MONTAGE Montage",
+      "reason": "product_account_prefix_unexpected:615",
+      "account": "615"
+    }
+  ],
+  "manual_reviews": [
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Garnitures de frein essieu arrière",
+      "reason": "charge_text_looks_product_like",
+      "details": "6062"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Garnitures et disques de frein essieu arrière",
+      "reason": "charge_text_looks_product_like",
+      "details": "6062"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Garnitures et disques de frein essieu avant",
+      "reason": "charge_text_looks_product_like",
+      "details": "6062"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "IVAFF - Interbev Veau AM",
+      "reason": "charge_text_looks_product_like",
+      "details": "6227"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "IVGUF - Interbev Veau MG",
+      "reason": "charge_text_looks_product_like",
+      "details": "6351"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "IVAUF - Interbev Veau AM",
+      "reason": "charge_text_looks_product_like",
+      "details": "6351"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Interbev Veau AM",
+      "reason": "charge_text_looks_product_like",
+      "details": "6351"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "INTERBEV Veau",
+      "reason": "charge_text_looks_product_like",
+      "details": "6227"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Interbev Veau MG",
+      "reason": "charge_text_looks_product_like",
+      "details": "6351"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Provision Eau Froide",
+      "reason": "charge_text_looks_product_like",
+      "details": "6132"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "COTIS CARTE VISA BUSINESS",
+      "reason": "charge_text_looks_product_like",
+      "details": "6278"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Fo et pose d'un coffret d'installation électrique provisoire",
+      "reason": "charge_text_looks_product_like",
+      "details": "6061"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Montage d'échafaudage - CHANTIER 5 RUE DE L'ABBE DELHOTEL 55600 AVIOTH",
+      "reason": "charge_text_looks_product_like",
+      "details": "6062"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Peindre aile avant droite niveau 1-M MET/UNI (peinture deux couches)",
+      "reason": "charge_text_looks_product_like",
+      "details": "6062"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Peindre la porte avant droite niveau 1-M MET/UNI (peinture deux couches)",
+      "reason": "charge_text_looks_product_like",
+      "details": "6062"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Revêtement du bouclier avant appliquer peinture finition et marier teintes par pistolage véh. avec pack Carrosserie AMG",
+      "reason": "charge_text_looks_product_like",
+      "details": "6062"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Peindre l'aile avant gauche niveau 1-M MET/UNI (peinture deux couches)",
+      "reason": "charge_text_looks_product_like",
+      "details": "6062"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Revetement du bouclier avant appliquer peinture finition et marier teintes par pistolage",
+      "reason": "charge_text_looks_product_like",
+      "details": "6062"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Deposer, poser, selon constat 4 garnitures de frein de l'essieu arriere (Roues completes demontees)",
+      "reason": "charge_text_looks_product_like",
+      "details": "6063"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Visite technique périodique",
+      "reason": "charge_text_looks_product_like",
+      "details": "6068"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Multi-TV FTTH (du 02/12 au 01/01)",
+      "reason": "duplicate_conflicting_accounts",
+      "details": "6061 vs 6261"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox - location équipement (du 02/12 au 01/01)",
+      "reason": "duplicate_conflicting_accounts",
+      "details": "6061 vs 6261"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait Client B&You 260Go 5G",
+      "reason": "duplicate_conflicting_accounts",
+      "details": "6226 vs 6261"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox - location équipement (du 02/09 au 01/10)",
+      "reason": "duplicate_conflicting_accounts",
+      "details": "6062 vs 6261"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Multi-TV FTTH (du 02/09 au 01/10)",
+      "reason": "duplicate_conflicting_accounts",
+      "details": "6062 vs 6261"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait Client B&You 230Go",
+      "reason": "duplicate_conflicting_accounts",
+      "details": "6062 vs 6261"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox fibre jusqu'a1 Gb/s (du 02/12 au 01/01)",
+      "reason": "duplicate_conflicting_accounts",
+      "details": "6061 vs 6261"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Communications vers l'international",
+      "reason": "duplicate_conflicting_accounts",
+      "details": "6062 vs 626"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait Spécial client 350Go 5G Av. smartphone",
+      "reason": "duplicate_conflicting_accounts",
+      "details": "6061 vs 6261"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Appels a tarification majorée (Numéros spéciaux)",
+      "reason": "duplicate_conflicting_accounts",
+      "details": "6062 vs 626"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Avantage Internet 60Go",
+      "reason": "duplicate_conflicting_accounts",
+      "details": "6061 vs 6261"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox - location équipement (du 02/05 au 01/06)",
+      "reason": "duplicate_conflicting_accounts",
+      "details": "6062 vs 6261"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Bbox fibre jusqu'a1 Gb/s (du 02/07 au 01/08)",
+      "reason": "duplicate_conflicting_accounts",
+      "details": "6061 vs 6261"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Option multi-SIM Internet",
+      "reason": "duplicate_conflicting_accounts",
+      "details": "6062 vs 6061"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Vos abonnements, forfaits et options",
+      "reason": "duplicate_conflicting_accounts",
+      "details": "6061 vs 626"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Avantage Internet 80Go",
+      "reason": "duplicate_conflicting_accounts",
+      "details": "6061 vs 6261"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait 200 Go 5G Avantages Smartphone",
+      "reason": "duplicate_conflicting_accounts",
+      "details": "6062 vs 6061"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait 250Go 5G avantages smartphone",
+      "reason": "duplicate_conflicting_accounts",
+      "details": "6062 vs 6061"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait Sensation 150Go 5G Avantages Smartphone",
+      "reason": "duplicate_conflicting_accounts",
+      "details": "6061 vs 6261"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait Spécial client 20Go 5G Av. smartphone",
+      "reason": "duplicate_conflicting_accounts",
+      "details": "6226 vs 6062"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Avantage Internet 100Go",
+      "reason": "duplicate_conflicting_accounts",
+      "details": "6062 vs 6061"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait Client B&You 270Go 5G",
+      "reason": "duplicate_conflicting_accounts",
+      "details": "6062 vs 626"
+    },
+    {
+      "source_file": "base_charges_externes_v1.json",
+      "bucket": "items",
+      "article_source": "Forfait Sensation client 70Go",
+      "reason": "duplicate_conflicting_accounts",
+      "details": "6062 vs 6061"
+    }
+  ],
+  "report_rows_count": 1513
+}

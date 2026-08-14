@@ -1,0 +1,66 @@
+{
+  "requested_active": [
+    "RUMSTEACK BLANC BLEU BELGE VIANDE HALLAL",
+    "BAVETTE ALOYAU BLANC BLEU BELGE VIANDE HALLAL",
+    "VEAU",
+    "BASSE COTE SOUS VIDE BEUF",
+    "FILET DE POULET HALAL UE origine : NL",
+    "CUISSE DE POULET HALAL UE origine : NL",
+    "FILET DE POULET HALAL UE origine : UE",
+    "FILET DE POULET HALAL CEE origine : NL",
+    "PILON DE POULET HALAL UE origine : NL",
+    "VEAU FOIE",
+    "VEAU CREPINE",
+    "BOEUF QUEUE SOUS-VIDE ORIGINE :FRANCE",
+    "AILE DE POULET HALAL UE origine : UE",
+    "AILES DE POULET HALAL CEE origine : BE",
+    "VEAU PIED ORIGINE :FRANCE"
+  ],
+  "missing": [],
+  "files": [
+    {
+      "file": "base_produits_boucherie_v1.json",
+      "added": 15,
+      "skipped_existing": 0,
+      "added_labels": [
+        "RUMSTEACK BLANC BLEU BELGE VIANDE HALLAL",
+        "BAVETTE ALOYAU BLANC BLEU BELGE VIANDE HALLAL",
+        "VEAU",
+        "BASSE COTE SOUS VIDE BEUF",
+        "FILET DE POULET HALAL UE origine : NL",
+        "CUISSE DE POULET HALAL UE origine : NL",
+        "FILET DE POULET HALAL UE origine : UE",
+        "FILET DE POULET HALAL CEE origine : NL",
+        "PILON DE POULET HALAL UE origine : NL",
+        "VEAU FOIE",
+        "VEAU CREPINE",
+        "BOEUF QUEUE SOUS-VIDE ORIGINE :FRANCE",
+        "AILE DE POULET HALAL UE origine : UE",
+        "AILES DE POULET HALAL CEE origine : BE",
+        "VEAU PIED ORIGINE :FRANCE"
+      ]
+    },
+    {
+      "file": "base_produits_boucherie_v1_with_accounts.json",
+      "added": 15,
+      "skipped_existing": 0,
+      "added_labels": [
+        "RUMSTEACK BLANC BLEU BELGE VIANDE HALLAL",
+        "BAVETTE ALOYAU BLANC BLEU BELGE VIANDE HALLAL",
+        "VEAU",
+        "BASSE COTE SOUS VIDE BEUF",
+        "FILET DE POULET HALAL UE origine : NL",
+        "CUISSE DE POULET HALAL UE origine : NL",
+        "FILET DE POULET HALAL UE origine : UE",
+        "FILET DE POULET HALAL CEE origine : NL",
+        "PILON DE POULET HALAL UE origine : NL",
+        "VEAU FOIE",
+        "VEAU CREPINE",
+        "BOEUF QUEUE SOUS-VIDE ORIGINE :FRANCE",
+        "AILE DE POULET HALAL UE origine : UE",
+        "AILES DE POULET HALAL CEE origine : BE",
+        "VEAU PIED ORIGINE :FRANCE"
+      ]
+    }
+  ]
+}

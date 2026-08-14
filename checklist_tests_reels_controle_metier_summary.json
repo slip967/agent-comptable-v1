@@ -1,0 +1,51 @@
+{
+  "total_tests": 22,
+  "by_status": {
+    "OK_auto": 12,
+    "a_valider": 10
+  },
+  "by_metier": {
+    "boucherie": {
+      "total": 3,
+      "OK_auto": 3,
+      "a_valider": 0,
+      "ambigu": 0,
+      "aucune_reco": 0
+    },
+    "restaurant": {
+      "total": 4,
+      "OK_auto": 3,
+      "a_valider": 1,
+      "ambigu": 0,
+      "aucune_reco": 0
+    },
+    "transport": {
+      "total": 2,
+      "OK_auto": 2,
+      "a_valider": 0,
+      "ambigu": 0,
+      "aucune_reco": 0
+    },
+    "boulangerie": {
+      "total": 4,
+      "OK_auto": 1,
+      "a_valider": 3,
+      "ambigu": 0,
+      "aucune_reco": 0
+    },
+    "btp": {
+      "total": 2,
+      "OK_auto": 0,
+      "a_valider": 2,
+      "ambigu": 0,
+      "aucune_reco": 0
+    },
+    "charges_externes": {
+      "total": 7,
+      "OK_auto": 3,
+      "a_valider": 4,
+      "ambigu": 0,
+      "aucune_reco": 0
+    }
+  }
+}

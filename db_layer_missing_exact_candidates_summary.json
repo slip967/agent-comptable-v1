@@ -1,0 +1,256 @@
+{
+  "generated_at": "2026-05-06T10:00:01.955862Z",
+  "source_db": "keymanage_accounting",
+  "invoice_form_scan_stats": {
+    "boulangerie": {
+      "partitions": [
+        "fr_bd_519665103",
+        "fr_bd_890233000",
+        "fr_bd_880517875",
+        "fr_bd_915197842"
+      ],
+      "invoice_forms_seen": 10060,
+      "invoice_forms_kept_after_dedup": 8446,
+      "invoice_forms_skipped_as_duplicate": 1614,
+      "line_items_seen": 64993,
+      "missing_candidate_hits": 0
+    },
+    "btp": {
+      "partitions": [
+        "fr_bd_903252617",
+        "fr_bd_842785719",
+        "fr_bd_844858571",
+        "fr_bd_792041840",
+        "fr_bd_823981568",
+        "fr_bd_509118329",
+        "fr_bd_951421064",
+        "fr_bd_879788230",
+        "fr_bd_914837463"
+      ],
+      "invoice_forms_seen": 10797,
+      "invoice_forms_kept_after_dedup": 9278,
+      "invoice_forms_skipped_as_duplicate": 1519,
+      "line_items_seen": 33473,
+      "missing_candidate_hits": 0
+    },
+    "restaurant": {
+      "partitions": [
+        "fr_bd_891370595",
+        "fr_bd_952061570",
+        "fr_bd_929728467"
+      ],
+      "invoice_forms_seen": 4179,
+      "invoice_forms_kept_after_dedup": 3661,
+      "invoice_forms_skipped_as_duplicate": 518,
+      "line_items_seen": 26481,
+      "missing_candidate_hits": 0
+    },
+    "transport": {
+      "partitions": [
+        "fr_bd_839181104",
+        "fr_bd_888020088",
+        "fr_bd_831060876",
+        "fr_bd_890852403",
+        "fr_bd_904094349",
+        "fr_bd_922040506",
+        "fr_bd_844082156",
+        "fr_bd_840367817",
+        "fr_bd_979300076",
+        "fr_bd_950819938"
+      ],
+      "invoice_forms_seen": 4546,
+      "invoice_forms_kept_after_dedup": 3725,
+      "invoice_forms_skipped_as_duplicate": 821,
+      "line_items_seen": 12938,
+      "missing_candidate_hits": 0
+    }
+  },
+  "invoice_form_candidates": {
+    "btp": [],
+    "boulangerie": [],
+    "transport": [],
+    "restaurant": []
+  },
+  "entry_layer_check": {
+    "boulangerie": {
+      "docs_seen": 112557,
+      "top_product_like_labels": [
+        {
+          "label": "627 | AGIOS",
+          "count": 1917
+        },
+        {
+          "label": "607 | AVIGROS",
+          "count": 1453
+        },
+        {
+          "label": "607 | MECARUNGIS",
+          "count": 1413
+        },
+        {
+          "label": "607 | BBV",
+          "count": 1298
+        },
+        {
+          "label": "627 | Services bancaires et assimilés",
+          "count": 511
+        },
+        {
+          "label": "6011 | GRANDS MOULINS DE PARIS",
+          "count": 439
+        },
+        {
+          "label": "607 | ETABLISSEMENTS CANU",
+          "count": 376
+        },
+        {
+          "label": "601 | ANGERVILLE DISTRIBUTION-ANDIS",
+          "count": 308
+        },
+        {
+          "label": "627 | F COMMISSION D'INTERVENTION",
+          "count": 306
+        },
+        {
+          "label": "601 | METRO FRANCE",
+          "count": 235
+        }
+      ]
+    },
+    "btp": {
+      "docs_seen": 37063,
+      "top_product_like_labels": [
+        {
+          "label": "605 | POINT.P",
+          "count": 267
+        },
+        {
+          "label": "607 | LPN VOLAILLE",
+          "count": 213
+        },
+        {
+          "label": "6257 | RESTO",
+          "count": 209
+        },
+        {
+          "label": "60611 | CARBURANT",
+          "count": 150
+        },
+        {
+          "label": "627 | Commission virement instantané émis",
+          "count": 133
+        },
+        {
+          "label": "6226 | QUI MANAGE",
+          "count": 121
+        },
+        {
+          "label": "6251 | RESTO",
+          "count": 100
+        },
+        {
+          "label": "60613 | CARBURANT",
+          "count": 87
+        },
+        {
+          "label": "6063 | POINT P S.A.S.",
+          "count": 68
+        },
+        {
+          "label": "6251 | HOTEL",
+          "count": 67
+        }
+      ]
+    },
+    "restaurant": {
+      "docs_seen": 13333,
+      "top_product_like_labels": [
+        {
+          "label": "601 | METRO FRANCE",
+          "count": 169
+        },
+        {
+          "label": "6011 | AVIGROS",
+          "count": 101
+        },
+        {
+          "label": "627 | COMC",
+          "count": 80
+        },
+        {
+          "label": "601 | RUNGISAVIGROS",
+          "count": 51
+        },
+        {
+          "label": "601 | MISU",
+          "count": 44
+        },
+        {
+          "label": "6063 | METRO FRANCE",
+          "count": 38
+        },
+        {
+          "label": "601 | SAS MALAR",
+          "count": 31
+        },
+        {
+          "label": "601 | LHPT",
+          "count": 30
+        },
+        {
+          "label": "601 | METRO",
+          "count": 28
+        },
+        {
+          "label": "6226 | QUI MANAGE",
+          "count": 27
+        }
+      ]
+    },
+    "transport": {
+      "docs_seen": 20778,
+      "top_product_like_labels": [
+        {
+          "label": "6251 | RESTAURATION",
+          "count": 156
+        },
+        {
+          "label": "6261 | BOUYGUE",
+          "count": 118
+        },
+        {
+          "label": "60611 | CARBURANTS",
+          "count": 113
+        },
+        {
+          "label": "6226 | QUI MANAGE",
+          "count": 59
+        },
+        {
+          "label": "60613 | CARBURANT/CB",
+          "count": 59
+        },
+        {
+          "label": "60611 | WEX EUROPE SERVICES",
+          "count": 59
+        },
+        {
+          "label": "6135 | E.LECLERC",
+          "count": 55
+        },
+        {
+          "label": "627 | Services bancaires et assimilés",
+          "count": 44
+        },
+        {
+          "label": "60613 | CARBURANT",
+          "count": 34
+        },
+        {
+          "label": "6161 | Multirisque",
+          "count": 30
+        }
+      ]
+    }
+  }
+}

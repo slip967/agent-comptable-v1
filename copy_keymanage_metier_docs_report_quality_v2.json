@@ -1,0 +1,4863 @@
+{
+  "generated_at": "2026-04-28T11:29:37.494078Z",
+  "source_db": "keymanage_accounting",
+  "target_db": "ayasmine_test2",
+  "dry_run": true,
+  "requested_metiers": [
+    "boulangerie",
+    "boucherie",
+    "restaurant",
+    "transport",
+    "btp",
+    "charges_externes"
+  ],
+  "scan_stats": {
+    "invoice_forms_scanned": 79673,
+    "partitions_seen": 79,
+    "partitions_selected": 30,
+    "kmorganisation_scanned": 129,
+    "kmorganisation_with_ape": 3,
+    "company_scanned": 2950,
+    "company_with_ape": 2944
+  },
+  "copy_stats": {
+    "kmorganisation_copied": 38,
+    "invoice_form_copied": 36395,
+    "entry_copied": 8359,
+    "created": 44792,
+    "updated": 0,
+    "duplicate_invoice_keys_count": 6039,
+    "duplicate_invoice_docs_count": 14165,
+    "ambiguous_line_account_invoice_count": 7966,
+    "ambiguous_entry_account_invoice_count": 2
+  },
+  "partitions": [
+    {
+      "partition_prefix": "fr_bd_837602275",
+      "client_siren": "837602275",
+      "client_ape": "4722Z",
+      "client_ape_source": "recipient",
+      "kmorganisation_doc_id": "fr_bd_837602275:c543425fb3274f4eaeb9f886dffabe98",
+      "invoice_form_docs_seen": 10313,
+      "inferred_metiers": [
+        "boucherie"
+      ],
+      "selected_metiers": [
+        "boucherie"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_837602275:00015be5-5d27-4760-9df1-d4309a1ba032",
+        "fr_bd_837602275:00030149-513e-4de9-8bea-4e1f1a1509b5",
+        "fr_bd_837602275:00057766-e489-41bc-8911-42be8dedac5b"
+      ],
+      "kmorganisation_copied": 3,
+      "invoice_form_copied": 10313,
+      "entry_copied": 1612,
+      "created": 11928,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 1469,
+      "duplicate_invoice_docs_count": 3765,
+      "ambiguous_line_account_invoice_count": 3002,
+      "ambiguous_entry_account_invoice_count": 1,
+      "duplicate_invoice_examples": [
+        {
+          "supplier_siren": "{'value': '542063623', 'bbox': [233, 3270, 1455, 3307], 'page': 0}",
+          "invoice_number": "24083953",
+          "invoice_date": "30/08/2024",
+          "total_amount": "163.70",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_837602275:00030149-513e-4de9-8bea-4e1f1a1509b5",
+            "fr_bd_837602275:1fbd85c9-213f-44ed-93e0-d9a549706a84"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '542063623', 'bbox': [210, 3285, 1562, 3329], 'page': 0}",
+          "invoice_number": "24055394",
+          "invoice_date": "31/05/2024",
+          "total_amount": "474.04",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_837602275:000a03c3-c3d7-4ee3-91d5-940fa9675a4e",
+            "fr_bd_837602275:6e4efdee-8e5f-4cb0-bf40-e2ae80524620"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '542063623', 'bbox': [229, 3270, 1455, 3314], 'page': 0}",
+          "invoice_number": "24057038",
+          "invoice_date": "06/06/2024",
+          "total_amount": "295.39",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_837602275:000d4eb3-6306-42bd-b7ca-f651fcf2a2cf",
+            "fr_bd_837602275:33610129-c640-4ad4-970c-963e7f496c16"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '912188802', 'bbox': [2078, 3442, 2233, 3479], 'page': 0}",
+          "invoice_number": "BRO00000149",
+          "invoice_date": "21/03/2025",
+          "total_amount": "9121.56",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_837602275:001ad133-91a8-4135-84d3-fd5aa0c8b97b",
+            "fr_bd_837602275:cab8bf0b-9698-42c1-8bb4-c4916162b9b7"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '542063623', 'bbox': [247, 3274, 1466, 3311], 'page': 0}",
+          "invoice_number": "24057101",
+          "invoice_date": "06/06/2024",
+          "total_amount": "314.76",
+          "document_type": "INVOICE",
+          "count": 4,
+          "invoice_form_ids": [
+            "fr_bd_837602275:00205953-165d-446d-b41c-416ee4dcd204",
+            "fr_bd_837602275:3831348f-a547-4942-b35c-34c1c8552f4c",
+            "fr_bd_837602275:6ac5d8f2-d04b-4d9e-ab2d-c542d06585bd",
+            "fr_bd_837602275:6db1aac8-7ced-4aa5-905e-47531b543fd5"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '493845609', 'bbox': [1800, 3235, 1989, 3275], 'page': 0}",
+          "invoice_number": "14204668",
+          "invoice_date": "21/10/2024",
+          "total_amount": "139.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_837602275:00285d20-f177-4530-ac3a-171de0bf953b",
+            "fr_bd_837602275:86920bbb-8fd0-47ea-ac6b-0bcb51844d41"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '542063623', 'bbox': [277, 3278, 1499, 3322], 'page': 0}",
+          "invoice_number": "24076806",
+          "invoice_date": "02/08/2024",
+          "total_amount": "270.73",
+          "document_type": "INVOICE",
+          "count": 4,
+          "invoice_form_ids": [
+            "fr_bd_837602275:002b33a4-dcc5-4e5b-8c3c-135a347beb9d",
+            "fr_bd_837602275:336f9cf4-66ca-4754-a8f0-a4d0db815a41",
+            "fr_bd_837602275:6602df0b-7235-4980-89b1-d03d617d2e4c",
+            "fr_bd_837602275:bcf64451-b437-46e7-8301-8274ec0df094"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '542063623', 'bbox': [262, 3285, 1480, 3322], 'page': 0}",
+          "invoice_number": "24107783",
+          "invoice_date": "31/10/2024",
+          "total_amount": "332.59",
+          "document_type": "INVOICE",
+          "count": 4,
+          "invoice_form_ids": [
+            "fr_bd_837602275:002ce009-9348-43a3-b257-adff71b03c8a",
+            "fr_bd_837602275:4cae9b7b-fa01-4744-8214-c54b9d0bb58c",
+            "fr_bd_837602275:a00e175f-535e-4146-aeb9-69afe04af465",
+            "fr_bd_837602275:da98a02a-6a40-4b3e-afe6-6100635b6a60"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '392806741', 'bbox': [477, 943, 675, 991], 'page': 0}",
+          "invoice_number": "2019159",
+          "invoice_date": "09/01/2026",
+          "total_amount": "432.92",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_837602275:00495c87-c23b-465e-834c-ae3d9ca27629",
+            "fr_bd_837602275:fab6da40-7b34-4b23-b402-d4ff2563eeab"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '837602275'}",
+          "invoice_number": "GR-2023-11",
+          "invoice_date": "05/09/2023",
+          "total_amount": "10500.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_837602275:004ab138-295d-413e-8ac1-a97a30f28d5a",
+            "fr_bd_837602275:faf80080-3d4d-4243-a61d-7f1e07b66080"
+          ]
+        }
+      ],
+      "ambiguous_line_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_837602275:00057766-e489-41bc-8911-42be8dedac5b",
+          "accounts": [
+            "6011",
+            "6068"
+          ],
+          "invoice_number": "VAV2501-02932"
+        },
+        {
+          "invoice_form_id": "fr_bd_837602275:000a03c3-c3d7-4ee3-91d5-940fa9675a4e",
+          "accounts": [
+            "6011",
+            "6227"
+          ],
+          "invoice_number": "24055394"
+        },
+        {
+          "invoice_form_id": "fr_bd_837602275:000d4eb3-6306-42bd-b7ca-f651fcf2a2cf",
+          "accounts": [
+            "6072",
+            "6227"
+          ],
+          "invoice_number": "24057038"
+        },
+        {
+          "invoice_form_id": "fr_bd_837602275:0011b56b-6304-4c58-8f30-1cb7e39ec400",
+          "accounts": [
+            "6071",
+            "6011"
+          ],
+          "invoice_number": "FV2504-13544"
+        },
+        {
+          "invoice_form_id": "fr_bd_837602275:0015fe86-881d-44da-af61-dca85e9c8c4b",
+          "accounts": [
+            "6013",
+            "6068"
+          ],
+          "invoice_number": "FV2504-13664"
+        },
+        {
+          "invoice_form_id": "fr_bd_837602275:00161cf0-27e8-4883-9af8-fa1ae786c36f",
+          "accounts": [
+            "601",
+            "6068"
+          ],
+          "invoice_number": "VAV2601-00467"
+        },
+        {
+          "invoice_form_id": "fr_bd_837602275:0018fc31-1051-4d7b-b1fd-401399115d5a",
+          "accounts": [
+            "6013",
+            "6011"
+          ],
+          "invoice_number": "FV2507-02304"
+        },
+        {
+          "invoice_form_id": "fr_bd_837602275:00205953-165d-446d-b41c-416ee4dcd204",
+          "accounts": [
+            "6011",
+            "6227"
+          ],
+          "invoice_number": "24057101"
+        },
+        {
+          "invoice_form_id": "fr_bd_837602275:002b33a4-dcc5-4e5b-8c3c-135a347beb9d",
+          "accounts": [
+            "6011",
+            "6227"
+          ],
+          "invoice_number": "24076806"
+        },
+        {
+          "invoice_form_id": "fr_bd_837602275:002f5877-d3bc-459f-ae88-a3e850874ca5",
+          "accounts": [
+            "6011",
+            "6227",
+            "6351"
+          ],
+          "invoice_number": "24118750"
+        }
+      ],
+      "ambiguous_entry_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_837602275:08a35311-8779-4ebc-bebc-cd91a261b9f8",
+          "accounts": [
+            "607",
+            "6278"
+          ],
+          "sample_entry_ids": [
+            "fr_bd_837602275:88387eac7226452b98e0b1f46bc3e9d7",
+            "fr_bd_837602275:b0cc16366ce34705a9129cc33f1037da"
+          ]
+        }
+      ]
+    },
+    {
+      "partition_prefix": "fr_bd_832065999",
+      "client_siren": "832065999",
+      "client_ape": "4722Z",
+      "client_ape_source": "recipient",
+      "kmorganisation_doc_id": "fr_bd_832065999:980e610484b74879a10d555369d0d1f7",
+      "invoice_form_docs_seen": 5370,
+      "inferred_metiers": [
+        "boucherie"
+      ],
+      "selected_metiers": [
+        "boucherie"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_832065999:00078d4e-c0b2-4d92-8cd8-c373e64447df",
+        "fr_bd_832065999:0057c6af-69a4-44b8-a352-c2ebc94eb3e0",
+        "fr_bd_832065999:0062579c-69ce-4341-bd06-1077c091898b"
+      ],
+      "kmorganisation_copied": 5,
+      "invoice_form_copied": 5370,
+      "entry_copied": 2150,
+      "created": 7525,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 1414,
+      "duplicate_invoice_docs_count": 3512,
+      "ambiguous_line_account_invoice_count": 995,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [
+        {
+          "supplier_siren": "{'value': '384560942', 'bbox': [461, 3325, 2020, 3362], 'page': 0}",
+          "invoice_number": "143178",
+          "invoice_date": "04/03/2025",
+          "total_amount": "550.16",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_832065999:00078d4e-c0b2-4d92-8cd8-c373e64447df",
+            "fr_bd_832065999:7fd9b733-aec7-4b12-af47-f751768e5223"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '572141885', 'bbox': [1583, 3450, 1715, 3486], 'page': 0}",
+          "invoice_number": "9159366599",
+          "invoice_date": "29/05/2024",
+          "total_amount": "-127.98",
+          "document_type": "CREDITNOTE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_832065999:0062579c-69ce-4341-bd06-1077c091898b",
+            "fr_bd_832065999:d6bfb572-2ba8-4a6a-9368-06a03f642abd"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '421345638', 'bbox': [1577, 3213, 1732, 3260], 'page': 0}",
+          "invoice_number": "58991",
+          "invoice_date": "17/09/2024",
+          "total_amount": "112.14",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_832065999:0071aebd-ca6f-4532-8017-7690e2338ff9",
+            "fr_bd_832065999:64f9e4ba-0ae2-47f3-a1e7-9d1d541757ff"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '384560942', 'bbox': [267, 833, 427, 884], 'page': 0}",
+          "invoice_number": "1802400050845",
+          "invoice_date": "14/11/2024",
+          "total_amount": "412.68",
+          "document_type": "INVOICE",
+          "count": 6,
+          "invoice_form_ids": [
+            "fr_bd_832065999:00722b1b-6a79-4925-93e6-b33ca34478ef",
+            "fr_bd_832065999:15730c12-f9a8-4064-a15d-0eec6429b4a5",
+            "fr_bd_832065999:2151f62d-f626-44bc-9029-fca5e0dca283",
+            "fr_bd_832065999:505fccbb-7e8d-45f5-ac3e-6f24c6a6e290",
+            "fr_bd_832065999:5e8421b1-3463-4567-8984-f18151a43008"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '753000421', 'bbox': [1878, 1091, 2410, 1150], 'page': 0}",
+          "invoice_number": "01250342",
+          "invoice_date": "08/01/2025",
+          "total_amount": "161.20",
+          "document_type": "RECEIPT",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_832065999:0072e14e-2a9f-47fe-9060-bbb0ce21fbbb",
+            "fr_bd_832065999:5fd12027-9e1c-4b24-aa7f-d531a106368d"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '832065999', 'bbox': [328, 3395, 486, 3431], 'page': 0}",
+          "invoice_number": "FAC-2024-0320",
+          "invoice_date": "09/10/2024",
+          "total_amount": "6195.02",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_832065999:007b34d5-6a2e-44b0-831c-b89bce3cce9f",
+            "fr_bd_832065999:dbfbde6d-7582-43aa-bf95-c0624682d1d4"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '832065999', 'bbox': [328, 3395, 486, 3431], 'page': 0}",
+          "invoice_number": "FAC-2024-0211",
+          "invoice_date": "21/02/2024",
+          "total_amount": "13441.61",
+          "document_type": "INVOICE",
+          "count": 6,
+          "invoice_form_ids": [
+            "fr_bd_832065999:009bd55e-332e-4721-bec8-a1219766cce2",
+            "fr_bd_832065999:09c17d34-4a10-42dc-bb33-170e451e8d56",
+            "fr_bd_832065999:193ce2d2-84a8-4471-b4d3-5a8bb0c97e70",
+            "fr_bd_832065999:4fdfc959-a999-41b8-b844-7eaa6bdb56a7",
+            "fr_bd_832065999:6d453620-4be7-4a05-9b7a-67b8606e2a17"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '832065999', 'bbox': [328, 3395, 486, 3431], 'page': 0}",
+          "invoice_number": "FAC-2024-0283",
+          "invoice_date": "23/03/2024",
+          "total_amount": "1358.50",
+          "document_type": "INVOICE",
+          "count": 6,
+          "invoice_form_ids": [
+            "fr_bd_832065999:009c55da-a075-4a7b-9cfd-e48b20cf8cf5",
+            "fr_bd_832065999:29ac0748-d3ae-43bd-8b6a-afdf907b30bd",
+            "fr_bd_832065999:41026e8a-8c71-41fc-b148-b05754068cbf",
+            "fr_bd_832065999:771f711d-8c7a-4fee-809a-50c5dc9d97ed",
+            "fr_bd_832065999:7841d230-a338-4649-9bc5-f8c11fcbc5a5"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '900492372', 'bbox': [1643, 3124, 2178, 3172], 'page': 0}",
+          "invoice_number": "29/03/24",
+          "invoice_date": "31/03/2024",
+          "total_amount": "500.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_832065999:00a8f138-029f-4e05-acee-0e7d35ea3004",
+            "fr_bd_832065999:756193d3-551f-429a-aac2-e5cb9ffa00bc"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '837634732', 'bbox': [1434, 471, 1604, 523], 'page': 0}",
+          "invoice_number": "40640710117",
+          "invoice_date": "04/03/2024",
+          "total_amount": "50.38",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_832065999:00d3c61e-ed42-47b2-82bc-a4052af72a83",
+            "fr_bd_832065999:fd1702a3-fc61-4ae5-ac11-2e0835061b92"
+          ]
+        }
+      ],
+      "ambiguous_line_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_832065999:00af210e-9d6c-40f1-ae2b-1b116467e09a",
+          "accounts": [
+            "701",
+            "709"
+          ],
+          "invoice_number": "1777081"
+        },
+        {
+          "invoice_form_id": "fr_bd_832065999:00f84f4d-9262-4764-a254-5eefb510b621",
+          "accounts": [
+            "6061",
+            "6351"
+          ],
+          "invoice_number": "120002639045"
+        },
+        {
+          "invoice_form_id": "fr_bd_832065999:010f6e5b-9e0e-4cb4-8173-b769be5cdac7",
+          "accounts": [
+            "6061",
+            "6062",
+            "6063"
+          ],
+          "invoice_number": "940385129"
+        },
+        {
+          "invoice_form_id": "fr_bd_832065999:012db660-3a22-460b-a889-7aff5546a601",
+          "accounts": [
+            "6061",
+            "6068"
+          ],
+          "invoice_number": "1875821"
+        },
+        {
+          "invoice_form_id": "fr_bd_832065999:013e86b1-4a5b-41dc-85a5-a3848fa099e6",
+          "accounts": [
+            "606200",
+            "2183"
+          ],
+          "invoice_number": "045 - 039339"
+        },
+        {
+          "invoice_form_id": "fr_bd_832065999:01508c23-86b4-4c55-b1d6-258d31955aae",
+          "accounts": [
+            "6068",
+            "6123"
+          ],
+          "invoice_number": "01C707N608 24B6-1A03"
+        },
+        {
+          "invoice_form_id": "fr_bd_832065999:01589309-dfea-42be-88ed-25bcffb1c116",
+          "accounts": [
+            "6063",
+            "6064",
+            "6061"
+          ],
+          "invoice_number": "625143"
+        },
+        {
+          "invoice_form_id": "fr_bd_832065999:01a08aeb-34f7-4913-96be-76a2a041e8bb",
+          "accounts": [
+            "606100",
+            "624100"
+          ],
+          "invoice_number": "LU56RBORXAEUI"
+        },
+        {
+          "invoice_form_id": "fr_bd_832065999:01bd1fec-8bde-4a14-bb19-44ade6135a68",
+          "accounts": [
+            "606300",
+            "622600"
+          ],
+          "invoice_number": "FR4V0J90AEUI"
+        },
+        {
+          "invoice_form_id": "fr_bd_832065999:01ed038a-b417-46a2-bdf6-31dd22f27baf",
+          "accounts": [
+            "606100",
+            "445660"
+          ],
+          "invoice_number": "A17"
+        }
+      ],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_828612630",
+      "client_siren": "828612630",
+      "client_ape": "4722Z",
+      "client_ape_source": "recipient",
+      "kmorganisation_doc_id": "fr_bd_828612630:b2c4b0938e894904a1affb6ec4daff26",
+      "invoice_form_docs_seen": 3947,
+      "inferred_metiers": [
+        "boucherie"
+      ],
+      "selected_metiers": [
+        "boucherie"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_828612630:001558cb-6c2b-4719-97bd-e4ddc040bd1d",
+        "fr_bd_828612630:002283aa-c378-4eae-9303-93e7cebda6fb",
+        "fr_bd_828612630:002a8240-170c-468f-bc81-96d856eafc42"
+      ],
+      "kmorganisation_copied": 3,
+      "invoice_form_copied": 3947,
+      "entry_copied": 2056,
+      "created": 6006,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 893,
+      "duplicate_invoice_docs_count": 1794,
+      "ambiguous_line_account_invoice_count": 475,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [
+        {
+          "supplier_siren": "{'value': '447915430', 'bbox': [1273, 3117, 1416, 3172], 'page': 0}",
+          "invoice_number": "FV2408-04070",
+          "invoice_date": "13/08/2024",
+          "total_amount": "728.68",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_828612630:001558cb-6c2b-4719-97bd-e4ddc040bd1d",
+            "fr_bd_828612630:5c9aeafa-b14d-417b-9c74-2eb9f0bc6ec9"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '392806741', 'bbox': [454, 950, 650, 1005], 'page': 0}",
+          "invoice_number": "1900761",
+          "invoice_date": "17/10/2024",
+          "total_amount": "1825.89",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_828612630:00433bf1-a948-486d-99af-868697f5cf8d",
+            "fr_bd_828612630:9ed24c61-30d6-4b60-9377-bdd1c02cee66"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '808636849', 'bbox': [335, 251, 541, 297], 'page': 0}",
+          "invoice_number": "526393",
+          "invoice_date": "17/11/2024",
+          "total_amount": "60.01",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_828612630:0067abdb-58b9-4721-a8f0-77b11ba9bfe9",
+            "fr_bd_828612630:49e32d6f-6712-4b70-8c2e-ba0b4597e41a"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '333329969', 'bbox': [1158, 3416, 1346, 3468], 'page': 0}",
+          "invoice_number": "20889127",
+          "invoice_date": "21/06/2024",
+          "total_amount": "91.79",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_828612630:0069e368-c7b2-485f-8e4f-20d7b15aa9b7",
+            "fr_bd_828612630:df0a2f7b-720c-4352-bce6-514219d84ec6"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '662012491', 'bbox': [949, 401, 1506, 438], 'page': 0}",
+          "invoice_number": "NF001547202",
+          "invoice_date": "12/11/2024",
+          "total_amount": "92.40",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_828612630:00957cde-e686-47f0-b941-0e100415b325",
+            "fr_bd_828612630:09e9f3c8-d5a8-46c4-baad-804ead595b87"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '447915430', 'bbox': [1280, 3106, 1423, 3176], 'page': 0}",
+          "invoice_number": "FV2405-10929",
+          "invoice_date": "23/05/2024",
+          "total_amount": "169.65",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_828612630:00ba8b78-5da5-48a1-ba28-03165ebcc2f9",
+            "fr_bd_828612630:1e8638cc-e84e-4575-813e-852558efb7a5"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '399315613', 'bbox': [1117, 566, 1300, 614], 'page': 0}",
+          "invoice_number": "031-181299",
+          "invoice_date": "05/11/2024",
+          "total_amount": "48619.16",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_828612630:00f04bc6-ee09-4ca8-9d39-d6fc21baf3b6",
+            "fr_bd_828612630:9d8a3f39-ab86-4023-a14d-8fca1bbc879a"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '562048314', 'bbox': [135, 687, 698, 731], 'page': 0}",
+          "invoice_number": "333576",
+          "invoice_date": "15/03/2024",
+          "total_amount": "440.40",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_828612630:00f17fb4-eb01-4b0c-b957-66fe961daf0a",
+            "fr_bd_828612630:961a7dda-b8a4-4ca0-a93c-6fb6ed16defd"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '489928044', 'bbox': [369, 676, 587, 724], 'page': 0}",
+          "invoice_number": "FA22CL-11886",
+          "invoice_date": "05/04/2023",
+          "total_amount": "87.70",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_828612630:00f5e603-f61b-4b69-b5c8-19bef4f0df33",
+            "fr_bd_828612630:f51cfbfd-3da5-4d2c-854d-d51aad65b46c"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '447915430', 'bbox': [1320, 3116, 1470, 3205], 'page': 0}",
+          "invoice_number": "FV2410-14024",
+          "invoice_date": "26/10/2024",
+          "total_amount": "3080.86",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_828612630:0105e5cf-ad48-44e0-a1ab-ba45f570c94c",
+            "fr_bd_828612630:2faf7e22-ec90-4f61-b797-110c1d83fadd"
+          ]
+        }
+      ],
+      "ambiguous_line_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_828612630:00f17fb4-eb01-4b0c-b957-66fe961daf0a",
+          "accounts": [
+            "6011",
+            "6025"
+          ],
+          "invoice_number": "333576"
+        },
+        {
+          "invoice_form_id": "fr_bd_828612630:0105e5cf-ad48-44e0-a1ab-ba45f570c94c",
+          "accounts": [
+            "6013",
+            "6011"
+          ],
+          "invoice_number": "FV2410-14024"
+        },
+        {
+          "invoice_form_id": "fr_bd_828612630:023fd188-8fe8-4082-93c5-cc23a8a0c40d",
+          "accounts": [
+            "6011",
+            "6288",
+            "6227",
+            "6068"
+          ],
+          "invoice_number": "1905143"
+        },
+        {
+          "invoice_form_id": "fr_bd_828612630:025a2240-6a22-41d8-8d48-9609bff83cb5",
+          "accounts": [
+            "6011",
+            "6226"
+          ],
+          "invoice_number": "FV2411-01609"
+        },
+        {
+          "invoice_form_id": "fr_bd_828612630:0339fc80-c5ed-4e52-9f0c-acdcdbcc3f08",
+          "accounts": [
+            "6061",
+            "6063",
+            "6011"
+          ],
+          "invoice_number": "42009"
+        },
+        {
+          "invoice_form_id": "fr_bd_828612630:03a6d787-9654-42d1-bf92-af1ffff2c886",
+          "accounts": [
+            "6011",
+            "6227",
+            "6278",
+            "6351"
+          ],
+          "invoice_number": "24030686"
+        },
+        {
+          "invoice_form_id": "fr_bd_828612630:0409f8a7-b476-4423-83c5-2add89f3bee1",
+          "accounts": [
+            "6011",
+            "6068"
+          ],
+          "invoice_number": "1850508"
+        },
+        {
+          "invoice_form_id": "fr_bd_828612630:05503f8a-4f47-47df-8000-524e38c4178c",
+          "accounts": [
+            "60121",
+            "6068"
+          ],
+          "invoice_number": "FV2409-01082"
+        },
+        {
+          "invoice_form_id": "fr_bd_828612630:0598fbeb-4aa5-41f8-832c-7451e3503a70",
+          "accounts": [
+            "6071",
+            "6011"
+          ],
+          "invoice_number": "FV2402-05461"
+        },
+        {
+          "invoice_form_id": "fr_bd_828612630:0654f6c3-ed3d-473c-9a15-c780796cb9b6",
+          "accounts": [
+            "6071",
+            "6011"
+          ],
+          "invoice_number": "FV2407-06914"
+        }
+      ],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_931589238",
+      "client_siren": "931589238",
+      "client_ape": "4722Z",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_931589238:faca27cdbb754de9b5f926331cbbcdf1",
+      "invoice_form_docs_seen": 90,
+      "inferred_metiers": [
+        "boucherie"
+      ],
+      "selected_metiers": [
+        "boucherie"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_931589238:00126987-0711-49cf-aee6-306fff7b8bb0",
+        "fr_bd_931589238:02e63c18-b838-44ee-adf9-bcca51011d68",
+        "fr_bd_931589238:02f33e48-48b2-4a85-9d25-ed660d7f3d4e"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 90,
+      "entry_copied": 0,
+      "created": 91,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 20,
+      "duplicate_invoice_docs_count": 42,
+      "ambiguous_line_account_invoice_count": 24,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [
+        {
+          "supplier_siren": "{'value': '384560942', 'bbox': [126, 837, 521, 884], 'page': 0}",
+          "invoice_number": "1422400004324",
+          "invoice_date": "31/07/2024",
+          "total_amount": "1010.25",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_931589238:00126987-0711-49cf-aee6-306fff7b8bb0",
+            "fr_bd_931589238:53df9d52-2b6a-4b20-8756-af021392cfdf"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '384560942', 'bbox': [458, 3318, 2020, 3369], 'page': 0}",
+          "invoice_number": "915387",
+          "invoice_date": "15/01/2025",
+          "total_amount": "111.50",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_931589238:02e63c18-b838-44ee-adf9-bcca51011d68",
+            "fr_bd_931589238:9955679e-1ed4-4eb6-b179-d0b7be67d152"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '328181680', 'bbox': [15, 619, 409, 698], 'page': 0}",
+          "invoice_number": "NF848690",
+          "invoice_date": "03/01/2025",
+          "total_amount": "66.31",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_931589238:02f33e48-48b2-4a85-9d25-ed660d7f3d4e",
+            "fr_bd_931589238:69a454d7-c1df-43a2-8b83-2be8ce4e69ba"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '384560942', 'bbox': [458, 3322, 2020, 3369], 'page': 0}",
+          "invoice_number": "478029",
+          "invoice_date": "15/01/2025",
+          "total_amount": "113.80",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_931589238:0fb6729e-de56-488c-9be8-ed9322f05313",
+            "fr_bd_931589238:94fb9de4-84c4-49ca-8cf0-b5c7f4f54e2c"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '775665615', 'bbox': [85, 533, 1001, 570], 'page': 1}",
+          "invoice_number": "11762234",
+          "invoice_date": "01/11/2024",
+          "total_amount": "35.00",
+          "document_type": "INVOICESTATEMENTWITHVAT",
+          "count": 3,
+          "invoice_form_ids": [
+            "fr_bd_931589238:15ecfccd-78bd-480e-8ba4-366852fcf0ae",
+            "fr_bd_931589238:a5da271b-11f5-487e-9d10-728a36de505d",
+            "fr_bd_931589238:f77295d0-137a-4f24-95c2-5f513fdbb3d9"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '983678202', 'bbox': [122, 519, 508, 569], 'page': 0}",
+          "invoice_number": "F24-12552",
+          "invoice_date": "30/12/2024",
+          "total_amount": "65.67",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_931589238:17ab4426-b7f4-4c34-83dd-024fa7d56caf",
+            "fr_bd_931589238:263eda86-3502-4c88-86e5-49650d35c2a6"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '399315613', 'bbox': [867, 438, 1200, 488], 'page': 0}",
+          "invoice_number": "010/1026",
+          "invoice_date": "29/12/2024",
+          "total_amount": "32.76",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_931589238:233509f7-d0b8-429d-89be-3fd8375a2503",
+            "fr_bd_931589238:b06c7b99-7d0a-4b35-b2bf-7ad430279762"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '482053360', 'bbox': [949, 3325, 1532, 3351], 'page': 0}",
+          "invoice_number": "FA209457",
+          "invoice_date": "06/01/2025",
+          "total_amount": "83.40",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_931589238:29050afe-8a1d-4351-9cfb-297aa52bc9e7",
+            "fr_bd_931589238:4e781358-42d3-4271-95c9-44a8d043f87c"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '775665615', 'bbox': [85, 533, 1001, 570], 'page': 1}",
+          "invoice_number": "11872119",
+          "invoice_date": "01/12/2024",
+          "total_amount": "147.98",
+          "document_type": "INVOICESTATEMENTWITHVAT",
+          "count": 3,
+          "invoice_form_ids": [
+            "fr_bd_931589238:2efa73f4-ea0f-46ea-84d1-8a2d199bfd06",
+            "fr_bd_931589238:8a05f94d-208d-4c92-ad5c-449b3c3d77da",
+            "fr_bd_931589238:f0e63ecd-c4fa-4620-a28b-3bff45b6e1ca"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '983678202', 'bbox': [101, 626, 490, 675], 'page': 0}",
+          "invoice_number": "F24-12012",
+          "invoice_date": "20/12/2024",
+          "total_amount": "15.32",
+          "document_type": "RECEIPT",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_931589238:481c058d-8dc9-48c2-bd11-d948b12caf4a",
+            "fr_bd_931589238:7cdc06db-ed21-40ae-8670-56978655956c"
+          ]
+        }
+      ],
+      "ambiguous_line_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_931589238:0de5ffd7-1d8b-453e-bb6f-18a9f7fda945",
+          "accounts": [
+            "6063",
+            "6226",
+            "6061"
+          ],
+          "invoice_number": ""
+        },
+        {
+          "invoice_form_id": "fr_bd_931589238:29050afe-8a1d-4351-9cfb-297aa52bc9e7",
+          "accounts": [
+            "606200",
+            "622600"
+          ],
+          "invoice_number": "FA209457"
+        },
+        {
+          "invoice_form_id": "fr_bd_931589238:299d3ea2-2064-4fad-b900-165b7a15bcb2",
+          "accounts": [
+            "606800",
+            "624100"
+          ],
+          "invoice_number": "FR54LGE2AEUI"
+        },
+        {
+          "invoice_form_id": "fr_bd_931589238:2efa73f4-ea0f-46ea-84d1-8a2d199bfd06",
+          "accounts": [
+            "6226",
+            "6227"
+          ],
+          "invoice_number": "11872119"
+        },
+        {
+          "invoice_form_id": "fr_bd_931589238:2fc84a66-0b5f-48ac-8109-b1c02bd90dfe",
+          "accounts": [
+            "6061",
+            "6226"
+          ],
+          "invoice_number": "IT4U49255I782"
+        },
+        {
+          "invoice_form_id": "fr_bd_931589238:420e1509-639a-4f18-8323-0d354013e6af",
+          "accounts": [
+            "606100",
+            "601100"
+          ],
+          "invoice_number": "FA24CL-29953"
+        },
+        {
+          "invoice_form_id": "fr_bd_931589238:4a2907d2-519b-463d-9303-2306ad381a50",
+          "accounts": [
+            "6068",
+            "6061"
+          ],
+          "invoice_number": "F24-12011"
+        },
+        {
+          "invoice_form_id": "fr_bd_931589238:4e781358-42d3-4271-95c9-44a8d043f87c",
+          "accounts": [
+            "606200",
+            "624100"
+          ],
+          "invoice_number": "FA209457"
+        },
+        {
+          "invoice_form_id": "fr_bd_931589238:7778c3ac-1b0b-4ba0-b52e-9d73dec0cd9d",
+          "accounts": [
+            "606800",
+            "624100"
+          ],
+          "invoice_number": "ARHAL"
+        },
+        {
+          "invoice_form_id": "fr_bd_931589238:85f20b84-4ce1-4796-af5b-5e21a8dd4cf3",
+          "accounts": [
+            "6061",
+            "6226"
+          ],
+          "invoice_number": "IT4U49255I782"
+        }
+      ],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_519665103",
+      "client_siren": "519665103",
+      "client_ape": "4722Z",
+      "client_ape_source": "recipient",
+      "kmorganisation_doc_id": "fr_bd_519665103:d5f4b4ac32b443c4801a0422f373220f",
+      "invoice_form_docs_seen": 3089,
+      "inferred_metiers": [
+        "boucherie",
+        "boulangerie"
+      ],
+      "selected_metiers": [
+        "boucherie",
+        "boulangerie"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_519665103:00164c74-4a36-4aa5-a092-71e762e26812",
+        "fr_bd_519665103:001ca413-4a80-42ae-a282-cbfe02bf57f5",
+        "fr_bd_519665103:0033bd1e-d69a-4927-9ece-8250b91633b0"
+      ],
+      "kmorganisation_copied": 3,
+      "invoice_form_copied": 3089,
+      "entry_copied": 1604,
+      "created": 4696,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 167,
+      "duplicate_invoice_docs_count": 339,
+      "ambiguous_line_account_invoice_count": 327,
+      "ambiguous_entry_account_invoice_count": 1,
+      "duplicate_invoice_examples": [
+        {
+          "supplier_siren": "{'value': '392806741', 'bbox': [159, 676, 1111, 731], 'page': 0}",
+          "invoice_number": "1962680",
+          "invoice_date": "29/05/2025",
+          "total_amount": "5073.39",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_519665103:001ca413-4a80-42ae-a282-cbfe02bf57f5",
+            "fr_bd_519665103:76a2aa73-8a1d-4ca6-a6b4-312666d8a00e"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '447915430', 'bbox': [790, 3113, 1735, 3165], 'page': 0}",
+          "invoice_number": "FV2503-04611",
+          "invoice_date": "10/03/2025",
+          "total_amount": "146.75",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_519665103:0077ff89-7e0a-4a0c-97ce-93734a9b3bab",
+            "fr_bd_519665103:1ade9682-bc70-408b-86b7-a7480c3dc76f"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '447915430', 'bbox': [790, 3106, 1736, 3172], 'page': 0}",
+          "invoice_number": "FV2504-03400",
+          "invoice_date": "05/04/2025",
+          "total_amount": "707.09",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_519665103:00e73fa4-28f8-4c7d-b284-84d1b80a2356",
+            "fr_bd_519665103:7bac55e2-0df6-4f4a-9238-e212841682c1"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '447915430', 'bbox': [790, 3117, 1735, 3165], 'page': 0}",
+          "invoice_number": "FV2503-00963",
+          "invoice_date": "04/03/2025",
+          "total_amount": "428.60",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_519665103:01cd8c74-794f-4bb6-9ea7-4d51e0f1034e",
+            "fr_bd_519665103:95cdcce3-fa15-4205-a889-4e28088c6d51"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '447915430', 'bbox': [753, 3117, 1698, 3165], 'page': 0}",
+          "invoice_number": "FV2502-07949",
+          "invoice_date": "18/02/2025",
+          "total_amount": "1580.21",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_519665103:02422654-5a35-48bc-9af7-3dddb25f485c",
+            "fr_bd_519665103:06933eda-3382-45e1-bdcd-808616ec5d5b"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '447915430', 'bbox': [753, 3113, 1698, 3165], 'page': 0}",
+          "invoice_number": "FV2502-09397",
+          "invoice_date": "20/02/2025",
+          "total_amount": "112.70",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_519665103:027e9639-7dc9-4025-8a49-dcd4cb4f45c2",
+            "fr_bd_519665103:a8d6992b-988c-4f76-978a-89f95c2cc6e8"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '392806741', 'bbox': [170, 676, 1111, 724], 'page': 0}",
+          "invoice_number": "1936454",
+          "invoice_date": "25/02/2025",
+          "total_amount": "943.88",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_519665103:028dc4e3-c704-48d2-a176-ed6a1714730c",
+            "fr_bd_519665103:04323868-30c1-48fa-abd0-3154a8ad31f4"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '392806741', 'bbox': [166, 680, 1115, 727], 'page': 0}",
+          "invoice_number": "1959377",
+          "invoice_date": "16/05/2025",
+          "total_amount": "497.05",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_519665103:03124e75-1a2f-4134-a718-7c2037646f02",
+            "fr_bd_519665103:1219ef73-5f8d-430a-a61f-cec8ed57c533"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '398434837', 'bbox': [1587, 427, 2068, 472], 'page': 0}",
+          "invoice_number": "164936",
+          "invoice_date": "03/02/2025",
+          "total_amount": "151.60",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_519665103:0728c676-f4a4-4093-b487-393f06a504d4",
+            "fr_bd_519665103:34a521df-b2c0-45eb-b505-4b75208e1c53"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '447915430', 'bbox': [761, 3117, 1702, 3165], 'page': 1}",
+          "invoice_number": "FV2502-00779",
+          "invoice_date": "04/02/2025",
+          "total_amount": "668.83",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_519665103:074eef96-643f-4041-8d71-4706dc58ca33",
+            "fr_bd_519665103:7e5e3280-ce26-4811-a954-e29c50773773"
+          ]
+        }
+      ],
+      "ambiguous_line_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_519665103:003f5876-a443-42e2-9d69-60c58f89afa5",
+          "accounts": [
+            "601",
+            "6063"
+          ],
+          "invoice_number": "160586"
+        },
+        {
+          "invoice_form_id": "fr_bd_519665103:027e9639-7dc9-4025-8a49-dcd4cb4f45c2",
+          "accounts": [
+            "607100",
+            "622600"
+          ],
+          "invoice_number": "FV2502-09397"
+        },
+        {
+          "invoice_form_id": "fr_bd_519665103:02d5e7c2-3877-40fc-b589-cc7daf4784ec",
+          "accounts": [
+            "601",
+            "6063"
+          ],
+          "invoice_number": "162938"
+        },
+        {
+          "invoice_form_id": "fr_bd_519665103:03064228-87cc-4cb8-9527-679f78d58c46",
+          "accounts": [
+            "60121",
+            "6011"
+          ],
+          "invoice_number": "FV2403-12023"
+        },
+        {
+          "invoice_form_id": "fr_bd_519665103:0417048a-9942-4273-a5f6-4a1dc7e9c12c",
+          "accounts": [
+            "6013",
+            "6068"
+          ],
+          "invoice_number": "160921"
+        },
+        {
+          "invoice_form_id": "fr_bd_519665103:041fbcbd-413c-46a1-920d-fc613e213231",
+          "accounts": [
+            "6013",
+            "6227"
+          ],
+          "invoice_number": "155371"
+        },
+        {
+          "invoice_form_id": "fr_bd_519665103:05d6ddea-7a11-4f56-b3db-f7bec6f72fc8",
+          "accounts": [
+            "6071",
+            "6011"
+          ],
+          "invoice_number": "FV2508-06871"
+        },
+        {
+          "invoice_form_id": "fr_bd_519665103:069a33e8-adce-4430-87f6-b13e25716929",
+          "accounts": [
+            "607000",
+            "622600"
+          ],
+          "invoice_number": "FV2506-13679"
+        },
+        {
+          "invoice_form_id": "fr_bd_519665103:069abc0e-f494-4124-a9ce-f4ca62cb608a",
+          "accounts": [
+            "6226",
+            "6227"
+          ],
+          "invoice_number": "G.1245790686473718208"
+        },
+        {
+          "invoice_form_id": "fr_bd_519665103:074eef96-643f-4041-8d71-4706dc58ca33",
+          "accounts": [
+            "6011",
+            "6012"
+          ],
+          "invoice_number": "FV2502-00779"
+        }
+      ],
+      "ambiguous_entry_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_519665103:206dab53-d750-455d-a661-be166ac639ce",
+          "accounts": [
+            "6132",
+            "614"
+          ],
+          "sample_entry_ids": [
+            "fr_bd_519665103:357b1d12a0e3499988663b8765fa7bc5",
+            "fr_bd_519665103:a5f0c6b7564d4ab098de461d8167cd38"
+          ]
+        }
+      ]
+    },
+    {
+      "partition_prefix": "fr_bd_890233000",
+      "client_siren": "890233000",
+      "client_ape": "1071C",
+      "client_ape_source": "recipient",
+      "kmorganisation_doc_id": "fr_bd_890233000:4fe66a370ca6413f9f156db419eb1b0a",
+      "invoice_form_docs_seen": 2822,
+      "inferred_metiers": [
+        "boulangerie"
+      ],
+      "selected_metiers": [
+        "boulangerie"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_890233000:0041d608-391f-4dd0-8a09-1d55a3d31d71",
+        "fr_bd_890233000:00613313-7e58-4993-b287-0ac7fbef008e",
+        "fr_bd_890233000:006a1b85-fab0-4f55-877b-734ef3e5d183"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 2822,
+      "entry_copied": 0,
+      "created": 2823,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 662,
+      "duplicate_invoice_docs_count": 1616,
+      "ambiguous_line_account_invoice_count": 1034,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [
+        {
+          "supplier_siren": "{'value': '820731115', 'bbox': [343, 3348, 2133, 3403], 'page': 0}",
+          "invoice_number": "7521598",
+          "invoice_date": "30/11/2023",
+          "total_amount": "151.38",
+          "document_type": "INVOICESTATEMENTWITHVAT",
+          "count": 3,
+          "invoice_form_ids": [
+            "fr_bd_890233000:0041d608-391f-4dd0-8a09-1d55a3d31d71",
+            "fr_bd_890233000:873bd35a-6a37-4021-899c-6d448afcd428",
+            "fr_bd_890233000:c4fc9252-bd2c-4679-ac43-5ca905d957b9"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '399114651', 'bbox': [96, 365, 498, 413], 'page': 0}",
+          "invoice_number": "0240002365",
+          "invoice_date": "19/08/2024",
+          "total_amount": "56.34",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_890233000:00613313-7e58-4993-b287-0ac7fbef008e",
+            "fr_bd_890233000:ed162bcf-8c53-4775-8052-aab5e7432808"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '903666139', 'bbox': [660, 202, 809, 226], 'page': 0}",
+          "invoice_number": "FR500MJUF4GAZI",
+          "invoice_date": "25/10/2025",
+          "total_amount": "66.97",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_890233000:006a1b85-fab0-4f55-877b-734ef3e5d183",
+            "fr_bd_890233000:d674becd-6cc3-4b88-8e5c-b22526c5cdec"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '708200993', 'bbox': [452, 2394, 1009, 2430], 'page': 0}",
+          "invoice_number": "307 099",
+          "invoice_date": "24/06/2024",
+          "total_amount": "576.84",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_890233000:00c58acd-bacc-4391-9b95-ead8c959b138",
+            "fr_bd_890233000:e3b6fd84-fdcf-46c5-a7c4-97c8cc2fba37"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '572091817', 'bbox': [89, 402, 1968, 438], 'page': 0}",
+          "invoice_number": "C001918978",
+          "invoice_date": "02/08/2024",
+          "total_amount": "-32.94",
+          "document_type": "CREDITNOTE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_890233000:00dcecac-a437-42b9-acd6-2c161a2818bc",
+            "fr_bd_890233000:ff567f67-f18e-473d-b6b8-199b8c4eeb34"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '382597821', 'bbox': [1535, 223, 2439, 270], 'page': 0}",
+          "invoice_number": "214690854",
+          "invoice_date": "29/09/2025",
+          "total_amount": "161.42",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_890233000:00f45b34-561a-4b7c-8fb9-9b47654b47c5",
+            "fr_bd_890233000:09e178d6-efe7-43b6-9887-0cd574ba32ae"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '890233000', 'bbox': [304, 832, 804, 877], 'page': 0}",
+          "invoice_number": "FR295",
+          "invoice_date": "05/03/2024",
+          "total_amount": "1775.69",
+          "document_type": "INVOICE",
+          "count": 3,
+          "invoice_form_ids": [
+            "fr_bd_890233000:016be10d-3435-4e42-974d-5d33dc8063e3",
+            "fr_bd_890233000:618facbc-52a5-4ba9-a5c5-d6ea704eefe3",
+            "fr_bd_890233000:b302f4be-52fb-465b-bc43-637dffcc886d"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '890233000', 'bbox': [304, 832, 804, 877], 'page': 0}",
+          "invoice_number": "FR405",
+          "invoice_date": "08/08/2024",
+          "total_amount": "74.17",
+          "document_type": "INVOICE",
+          "count": 3,
+          "invoice_form_ids": [
+            "fr_bd_890233000:019abbf7-b11c-46c7-9856-e1c9c2051a3b",
+            "fr_bd_890233000:bda9b132-fa01-4cac-b832-068050d17d2c",
+            "fr_bd_890233000:e2cd9b2a-53f7-4d19-9dd9-dd6b30ae3452"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '399114651', 'bbox': [96, 365, 498, 413], 'page': 0}",
+          "invoice_number": "0250003353",
+          "invoice_date": "03/11/2025",
+          "total_amount": "18.37",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_890233000:01b07bec-70cf-4d61-8cd4-876ec5ab294f",
+            "fr_bd_890233000:0f82bb48-12b5-432f-ade6-3f86461b1703"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '890233000', 'bbox': [304, 832, 804, 877], 'page': 0}",
+          "invoice_number": "FR466",
+          "invoice_date": "03/12/2024",
+          "total_amount": "711.97",
+          "document_type": "INVOICE",
+          "count": 3,
+          "invoice_form_ids": [
+            "fr_bd_890233000:023d755f-90da-46b0-b12f-2c352c3ba72a",
+            "fr_bd_890233000:0b746989-1a83-4ba3-b250-b44606530b60",
+            "fr_bd_890233000:fb5ad73c-f58f-4b11-9859-ed15179e82d2"
+          ]
+        }
+      ],
+      "ambiguous_line_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_890233000:00613313-7e58-4993-b287-0ac7fbef008e",
+          "accounts": [
+            "601",
+            "6063"
+          ],
+          "invoice_number": "0240002365"
+        },
+        {
+          "invoice_form_id": "fr_bd_890233000:006a1b85-fab0-4f55-877b-734ef3e5d183",
+          "accounts": [
+            "606200",
+            "624100"
+          ],
+          "invoice_number": "FR500MJUF4GAZI"
+        },
+        {
+          "invoice_form_id": "fr_bd_890233000:0090f8f5-4e15-418d-887f-dd51a8cdbdd8",
+          "accounts": [
+            "707100",
+            "707200"
+          ],
+          "invoice_number": "FR701"
+        },
+        {
+          "invoice_form_id": "fr_bd_890233000:00c58acd-bacc-4391-9b95-ead8c959b138",
+          "accounts": [
+            "6068",
+            "6011"
+          ],
+          "invoice_number": "307 099"
+        },
+        {
+          "invoice_form_id": "fr_bd_890233000:01cac4b9-785b-4f7b-9b88-9744aa904482",
+          "accounts": [
+            "70710000",
+            "70720000",
+            "70730000",
+            "70740000",
+            "70750000"
+          ],
+          "invoice_number": ""
+        },
+        {
+          "invoice_form_id": "fr_bd_890233000:01fa7ae2-8907-476a-91eb-cb5f3f82517e",
+          "accounts": [
+            "6061",
+            "6588"
+          ],
+          "invoice_number": "10224339530"
+        },
+        {
+          "invoice_form_id": "fr_bd_890233000:0229ec33-65f1-46f6-850c-69c955661a48",
+          "accounts": [
+            "6068",
+            "6061",
+            "6063"
+          ],
+          "invoice_number": "16-24028412"
+        },
+        {
+          "invoice_form_id": "fr_bd_890233000:02900264-75b2-4a8f-808b-67666160887e",
+          "accounts": [
+            "6068",
+            "6011"
+          ],
+          "invoice_number": "0250000151"
+        },
+        {
+          "invoice_form_id": "fr_bd_890233000:02c6f531-081b-4c3c-81e1-5eeb93930a75",
+          "accounts": [
+            "6068",
+            "6011",
+            "6063"
+          ],
+          "invoice_number": "002104129"
+        },
+        {
+          "invoice_form_id": "fr_bd_890233000:02eb5564-f934-462a-a615-a2cc682fb775",
+          "accounts": [
+            "6011",
+            "6025"
+          ],
+          "invoice_number": "FAC2312SIE02435"
+        }
+      ],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_880517875",
+      "client_siren": "880517875",
+      "client_ape": "1071C",
+      "client_ape_source": "recipient",
+      "kmorganisation_doc_id": "fr_bd_880517875:f15faeb9fd0bea3ae628c0fc48c78f3f",
+      "invoice_form_docs_seen": 2115,
+      "inferred_metiers": [
+        "boulangerie"
+      ],
+      "selected_metiers": [
+        "boulangerie"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_880517875:0022a85a-1385-4e66-a811-83d28803a514",
+        "fr_bd_880517875:003735ae-bd85-4813-b2e9-4835e8cf1c0e",
+        "fr_bd_880517875:0060444c-2965-4abb-8632-a350c323fc6f"
+      ],
+      "kmorganisation_copied": 4,
+      "invoice_form_copied": 2115,
+      "entry_copied": 937,
+      "created": 3056,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 399,
+      "duplicate_invoice_docs_count": 829,
+      "ambiguous_line_account_invoice_count": 577,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [
+        {
+          "supplier_siren": "{'value': '351466495', 'bbox': [237, 458, 417, 495], 'page': 0}",
+          "invoice_number": "1402963688",
+          "invoice_date": "03/01/2025",
+          "total_amount": "253.20",
+          "document_type": "INVOICE",
+          "count": 4,
+          "invoice_form_ids": [
+            "fr_bd_880517875:00b2caa1-a6a7-4581-b6ba-381950ecaa3a",
+            "fr_bd_880517875:3ce07138-5747-4523-8b36-5b41cf80c0b1",
+            "fr_bd_880517875:a4cb2966-8912-40a5-8c68-a91de60b644a",
+            "fr_bd_880517875:e7b38787-29ef-4d55-aaad-e9db5225b980"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '312730674', 'bbox': [2041, 3285, 2193, 3322], 'page': 0}",
+          "invoice_number": "240200015456",
+          "invoice_date": "27/02/2024",
+          "total_amount": "125.16",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_880517875:00c74552-aaaf-4480-85a1-d631035bf8d7",
+            "fr_bd_880517875:59859259-da9b-4057-8afa-c517e21096dc"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '421260183', 'bbox': [1458, 398, 1595, 442], 'page': 0}",
+          "invoice_number": "16-24012171",
+          "invoice_date": "16/01/2024",
+          "total_amount": "539.45",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_880517875:00e1b29b-da77-4fff-bfa3-a68438582188",
+            "fr_bd_880517875:972bd9e4-a268-4fd9-b776-62a5a95058b1"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '347849382', 'bbox': [339, 676, 546, 712], 'page': 0}",
+          "invoice_number": "6350017",
+          "invoice_date": "03/05/2024",
+          "total_amount": "43.92",
+          "document_type": "INVOICESTATEMENTWITHVAT",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_880517875:00fc9085-45d0-4485-bd73-f83878db9802",
+            "fr_bd_880517875:4a000605-313f-4164-bc94-0c38a0c5cb9f"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '432497428', 'bbox': [688, 387, 864, 435], 'page': 0}",
+          "invoice_number": "25011545",
+          "invoice_date": "17/05/2024",
+          "total_amount": "0.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_880517875:01144c63-3aea-41d7-a0d7-2d25e5379012",
+            "fr_bd_880517875:7a2bc9c2-e27c-4df6-ba6a-f8d6000560cd"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '351466495', 'bbox': [240, 458, 420, 495], 'page': 0}",
+          "invoice_number": "1402695368",
+          "invoice_date": "02/07/2024",
+          "total_amount": "358.26",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_880517875:012700e8-f92e-4ccd-9336-3144d2f40bd6",
+            "fr_bd_880517875:196e8ee2-eb5e-4a4b-8941-58bbc74c7f1c"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '384560942', 'bbox': [456, 3232, 2091, 3291], 'page': 0}",
+          "invoice_number": "N190916",
+          "invoice_date": "11/11/2024",
+          "total_amount": "448.50",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_880517875:02b3e201-6ea8-4c0c-9212-efcc78d8a831",
+            "fr_bd_880517875:28d4be05-0082-4d77-9695-ae78f461276c"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '351466495', 'bbox': [240, 458, 420, 495], 'page': 0}",
+          "invoice_number": "1402887709",
+          "invoice_date": "13/11/2024",
+          "total_amount": "538.05",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_880517875:03ced341-c6e5-401d-b8d8-25d862246d9d",
+            "fr_bd_880517875:74ce4e4f-e180-4c42-8e03-361547966b33"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '351466495', 'bbox': [242, 458, 420, 495], 'page': 0}",
+          "invoice_number": "1402834521",
+          "invoice_date": "08/10/2024",
+          "total_amount": "391.41",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_880517875:03ffb1fa-20c6-4f95-8163-532920c631be",
+            "fr_bd_880517875:b79c6f51-742e-4bb3-93d7-0656122a0c37"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '347849382', 'bbox': [370, 664, 571, 712], 'page': 0}",
+          "invoice_number": "6469687",
+          "invoice_date": "06/12/2024",
+          "total_amount": "82.50",
+          "document_type": "INVOICESTATEMENTWITHOUTVAT",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_880517875:0458e804-733b-47b7-96ff-d6d754f47565",
+            "fr_bd_880517875:c5fe0630-1559-499e-bd34-6c3f4a933303"
+          ]
+        }
+      ],
+      "ambiguous_line_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_880517875:00d91d03-e922-499d-9622-f7ed3ab9ed33",
+          "accounts": [
+            "6068",
+            "6011"
+          ],
+          "invoice_number": "25006420"
+        },
+        {
+          "invoice_form_id": "fr_bd_880517875:01144c63-3aea-41d7-a0d7-2d25e5379012",
+          "accounts": [
+            "60610000",
+            "60630000"
+          ],
+          "invoice_number": "25011545"
+        },
+        {
+          "invoice_form_id": "fr_bd_880517875:018e8b85-1ff4-4205-8f20-d7b6f6bbcd74",
+          "accounts": [
+            "6068",
+            "6063",
+            "6061",
+            "758"
+          ],
+          "invoice_number": "25027296"
+        },
+        {
+          "invoice_form_id": "fr_bd_880517875:01c7e4e4-ce86-41cc-9fe1-9ca525641c1a",
+          "accounts": [
+            "6061",
+            "6068",
+            "6063",
+            "6064",
+            "607"
+          ],
+          "invoice_number": "25001764"
+        },
+        {
+          "invoice_form_id": "fr_bd_880517875:02a64835-0e0f-4d22-b613-25fb457c41ce",
+          "accounts": [
+            "6011",
+            "60225"
+          ],
+          "invoice_number": "512"
+        },
+        {
+          "invoice_form_id": "fr_bd_880517875:02d8a1b4-e648-45e4-a459-0f11e565fcfc",
+          "accounts": [
+            "6068",
+            "6011",
+            "6061"
+          ],
+          "invoice_number": "16-24032088"
+        },
+        {
+          "invoice_form_id": "fr_bd_880517875:0367d85f-82b2-43fb-895c-165b4d789980",
+          "accounts": [
+            "6061",
+            "6351"
+          ],
+          "invoice_number": "10202723369"
+        },
+        {
+          "invoice_form_id": "fr_bd_880517875:036cec8b-ae48-441c-96c5-32c9d80e6877",
+          "accounts": [
+            "601",
+            "60225"
+          ],
+          "invoice_number": "25009389"
+        },
+        {
+          "invoice_form_id": "fr_bd_880517875:03934302-eca5-4393-80c7-73a738e44761",
+          "accounts": [
+            "6061",
+            "6227"
+          ],
+          "invoice_number": "6434892"
+        },
+        {
+          "invoice_form_id": "fr_bd_880517875:04ccc127-125d-4fe0-8f8a-c667497d184c",
+          "accounts": [
+            "6068",
+            "6063"
+          ],
+          "invoice_number": "2043320754"
+        }
+      ],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_915197842",
+      "client_siren": "915197842",
+      "client_ape": "1071C",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_915197842:cfc0093f40764247a235f5fe10712311",
+      "invoice_form_docs_seen": 36,
+      "inferred_metiers": [
+        "boulangerie"
+      ],
+      "selected_metiers": [
+        "boulangerie"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_915197842:019b0f9e-8651-4ac6-8ee5-45cf954e5ebe",
+        "fr_bd_915197842:02129135-e362-4727-bf8d-e7562fdd536e",
+        "fr_bd_915197842:04571714-beb2-43e5-afd3-21d75cab3d63"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 36,
+      "entry_copied": 0,
+      "created": 37,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 1,
+      "duplicate_invoice_docs_count": 2,
+      "ambiguous_line_account_invoice_count": 24,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [
+        {
+          "supplier_siren": "{'value': '829174218'}",
+          "invoice_number": "F-2025-12-0336",
+          "invoice_date": "31/12/2025",
+          "total_amount": "560.24",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_915197842:2fe84c80-0618-4755-962d-0c2aaaed81ac",
+            "fr_bd_915197842:d4ebe010-7858-424a-a3ce-6a1a5b0aa699"
+          ]
+        }
+      ],
+      "ambiguous_line_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_915197842:019b0f9e-8651-4ac6-8ee5-45cf954e5ebe",
+          "accounts": [
+            "6061",
+            "6063"
+          ],
+          "invoice_number": "0/00150059/000653"
+        },
+        {
+          "invoice_form_id": "fr_bd_915197842:02129135-e362-4727-bf8d-e7562fdd536e",
+          "accounts": [
+            "601",
+            "6068"
+          ],
+          "invoice_number": "3351252876"
+        },
+        {
+          "invoice_form_id": "fr_bd_915197842:1009a63f-fba7-4674-a344-8173f80ee199",
+          "accounts": [
+            "601",
+            "6068"
+          ],
+          "invoice_number": "F-2025-11-0218"
+        },
+        {
+          "invoice_form_id": "fr_bd_915197842:12547817-a6c2-4550-b8d2-6c2d2ceb9798",
+          "accounts": [
+            "601",
+            "6068",
+            "6063"
+          ],
+          "invoice_number": "0/00150062/001780"
+        },
+        {
+          "invoice_form_id": "fr_bd_915197842:2fe84c80-0618-4755-962d-0c2aaaed81ac",
+          "accounts": [
+            "6061",
+            "6068"
+          ],
+          "invoice_number": "F-2025-12-0336"
+        },
+        {
+          "invoice_form_id": "fr_bd_915197842:477702ab-05ef-40cd-91fd-6b41160c635f",
+          "accounts": [
+            "6068",
+            "6011"
+          ],
+          "invoice_number": "F-2025-11-0241"
+        },
+        {
+          "invoice_form_id": "fr_bd_915197842:68806401-d92a-48ed-9ef0-651de6ac81df",
+          "accounts": [
+            "6068",
+            "6011",
+            "6063",
+            "6064"
+          ],
+          "invoice_number": "0/0(015)0064/011902@ (064-019421)"
+        },
+        {
+          "invoice_form_id": "fr_bd_915197842:69c21f29-adb5-4400-ab95-d22989c522f2",
+          "accounts": [
+            "6061",
+            "6062",
+            "6063"
+          ],
+          "invoice_number": "0/00150060/002146"
+        },
+        {
+          "invoice_form_id": "fr_bd_915197842:7229b106-9617-4fa3-825c-d2897eae6bd9",
+          "accounts": [
+            "601",
+            "6063"
+          ],
+          "invoice_number": "0/0(015)0060/000963"
+        },
+        {
+          "invoice_form_id": "fr_bd_915197842:7785e25a-69a7-4769-aae4-31c86c394da9",
+          "accounts": [
+            "601",
+            "6068"
+          ],
+          "invoice_number": "0/0(015)0062/002845"
+        }
+      ],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_903252617",
+      "client_siren": "903252617",
+      "client_ape": "4399C",
+      "client_ape_source": "recipient",
+      "kmorganisation_doc_id": "fr_bd_903252617:1c421bfc0d2c4c74a699573b5c91ce67",
+      "invoice_form_docs_seen": 1228,
+      "inferred_metiers": [
+        "btp"
+      ],
+      "selected_metiers": [
+        "btp"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_903252617:0058da19-195c-4c64-ba3c-23c8ea1d0c4e",
+        "fr_bd_903252617:007af951-cfb4-4d16-bbd2-4f85b3a63c8e",
+        "fr_bd_903252617:00824885-c6f3-4c94-b98d-f9505a91a39a"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 1228,
+      "entry_copied": 0,
+      "created": 1229,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 66,
+      "duplicate_invoice_docs_count": 140,
+      "ambiguous_line_account_invoice_count": 206,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [
+        {
+          "supplier_siren": "{'value': '527737738', 'bbox': [140, 691, 971, 727], 'page': 0}",
+          "invoice_number": "FR01IN-125644",
+          "invoice_date": "23/01/2024",
+          "total_amount": "744.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_903252617:00b37855-3fa7-4a18-9c24-a6b9d2c353f7",
+            "fr_bd_903252617:7f5803aa-48f2-4ffe-aea5-8adeef25f943"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '908108012', 'bbox': [761, 3184, 1717, 3231], 'page': 0}",
+          "invoice_number": "F19122024-SAC015",
+          "invoice_date": "19/12/2024",
+          "total_amount": "14362.20",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_903252617:013467c6-62bb-408d-bf26-1ba73cb20e72",
+            "fr_bd_903252617:9603bf7d-a3b8-430d-a0e9-19dca2feaad9"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '837951383', 'bbox': [247, 435, 653, 471], 'page': 0}",
+          "invoice_number": "448",
+          "invoice_date": "31/08/2023",
+          "total_amount": "1422.72",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_903252617:02686478-ed63-435f-80b6-f8393ad5502b",
+            "fr_bd_903252617:3f014667-ef5a-492a-9f08-780edd7958d4"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '480309624', 'bbox': [99, 796, 739, 852], 'page': 0}",
+          "invoice_number": "202 526 818",
+          "invoice_date": "27/12/2024",
+          "total_amount": "437.01",
+          "document_type": "INVOICE",
+          "count": 3,
+          "invoice_form_ids": [
+            "fr_bd_903252617:04c7a92b-4fac-4586-abad-678284419e2d",
+            "fr_bd_903252617:82c2bbf2-1a20-4343-ac09-32a16de7d488",
+            "fr_bd_903252617:b1fad5e8-131f-42cb-9a63-86447ae3f176"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '069573110', 'bbox': [879, 596, 1211, 643], 'page': 0}",
+          "invoice_number": "10",
+          "invoice_date": "02/01/2024",
+          "total_amount": "480.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_903252617:04e8bfcf-b12a-4c50-a84f-b995146f78fb",
+            "fr_bd_903252617:839f7fcf-1b23-4ce8-9d54-44f3a039b20b"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '908108012', 'bbox': [764, 3184, 1709, 3231], 'page': 0}",
+          "invoice_number": "F31012024-SBG018",
+          "invoice_date": "31/01/2024",
+          "total_amount": "518.70",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_903252617:08214dfa-ef42-49b3-8126-33ce69998335",
+            "fr_bd_903252617:cde59e84-8be9-4fa4-9e1b-6ccb6e4b2e0b"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '445002801', 'bbox': [402, 3410, 2070, 3447], 'page': 0}",
+          "invoice_number": "F20240705-10429",
+          "invoice_date": "05/07/2024",
+          "total_amount": "54000.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_903252617:08cee7c5-1dfb-4103-bb0d-f3c679c8f8a3",
+            "fr_bd_903252617:deac44e8-6af6-4123-a3ee-ece1c3139f7d"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '908108012', 'bbox': [761, 3184, 1717, 3231], 'page': 0}",
+          "invoice_number": "20012024-ANG024",
+          "invoice_date": "20/01/2024",
+          "total_amount": "1564.65",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_903252617:0bb28a23-503a-4a62-be9b-7afc9c9961ff",
+            "fr_bd_903252617:2ceca7c1-44ed-4058-88c0-6bba0c80f903"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '480309624', 'bbox': [99, 793, 739, 852], 'page': 0}",
+          "invoice_number": "202 526 425",
+          "invoice_date": "26/12/2024",
+          "total_amount": "793.96",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_903252617:0cb3cedf-846e-4d91-9af2-8bb485738359",
+            "fr_bd_903252617:76b8af91-ed30-4c88-aa53-70d4a7b3caf5"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '908108012', 'bbox': [761, 3186, 1717, 3234], 'page': 0}",
+          "invoice_number": "F30052024-GRP001",
+          "invoice_date": "30/05/2024",
+          "total_amount": "3600.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_903252617:0e11fc56-8002-4e88-95aa-eba31a8a0836",
+            "fr_bd_903252617:ed05949b-aee1-43e0-b286-da23b7e2b033"
+          ]
+        }
+      ],
+      "ambiguous_line_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_903252617:013c5345-39b8-4f2a-b664-a6856319c308",
+          "accounts": [
+            "6011",
+            "6227"
+          ],
+          "invoice_number": "78263"
+        },
+        {
+          "invoice_form_id": "fr_bd_903252617:015f1445-e115-4680-84d4-4a42a0c477b7",
+          "accounts": [
+            "6011",
+            "6227",
+            "6228"
+          ],
+          "invoice_number": "78263"
+        },
+        {
+          "invoice_form_id": "fr_bd_903252617:044875d5-71a1-41b2-847f-bf1d990a54c1",
+          "accounts": [
+            "6011",
+            "6226"
+          ],
+          "invoice_number": "202461728"
+        },
+        {
+          "invoice_form_id": "fr_bd_903252617:04c7a92b-4fac-4586-abad-678284419e2d",
+          "accounts": [
+            "601",
+            "622"
+          ],
+          "invoice_number": "202 526 818"
+        },
+        {
+          "invoice_form_id": "fr_bd_903252617:05fd552b-a8eb-4778-b4db-26104f4b2100",
+          "accounts": [
+            "6011",
+            "6226"
+          ],
+          "invoice_number": "202 471 933"
+        },
+        {
+          "invoice_form_id": "fr_bd_903252617:068dacf5-9fc4-4bb5-924b-3faac18c747f",
+          "accounts": [
+            "6068",
+            "6061",
+            "6063"
+          ],
+          "invoice_number": "0/0 (011) 0015/035842@ (015-275597) 011/360"
+        },
+        {
+          "invoice_form_id": "fr_bd_903252617:07583f1a-cd39-433a-b1a9-2b24f5470266",
+          "accounts": [
+            "6011",
+            "6227"
+          ],
+          "invoice_number": "202 513023"
+        },
+        {
+          "invoice_form_id": "fr_bd_903252617:09fccf86-a660-429e-a496-8e8e3269c556",
+          "accounts": [
+            "6011",
+            "6226",
+            "6227"
+          ],
+          "invoice_number": "78263"
+        },
+        {
+          "invoice_form_id": "fr_bd_903252617:0c6e30e3-4ea0-4f09-872b-eadf412c6f00",
+          "accounts": [
+            "6011",
+            "6226",
+            "6227",
+            "6228"
+          ],
+          "invoice_number": "278622"
+        },
+        {
+          "invoice_form_id": "fr_bd_903252617:0cb3cedf-846e-4d91-9af2-8bb485738359",
+          "accounts": [
+            "6011",
+            "6226"
+          ],
+          "invoice_number": "202 526 425"
+        }
+      ],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_842785719",
+      "client_siren": "842785719",
+      "client_ape": "4399C",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_842785719:5cd5765a6ead4ee6b480617e4251bbcd",
+      "invoice_form_docs_seen": 985,
+      "inferred_metiers": [
+        "btp"
+      ],
+      "selected_metiers": [
+        "btp"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_842785719:0033c66b-1150-4b6d-a27c-fdd41d36ed17",
+        "fr_bd_842785719:004c082a-52d4-4394-a56a-b001cf1d1a4c",
+        "fr_bd_842785719:009a91a0-9974-4464-b516-4b232de76403"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 985,
+      "entry_copied": 0,
+      "created": 986,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 165,
+      "duplicate_invoice_docs_count": 341,
+      "ambiguous_line_account_invoice_count": 152,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [
+        {
+          "supplier_siren": "{'value': '842785719', 'bbox': [214, 2989, 1026, 3015], 'page': 0}",
+          "invoice_number": "N°2025-046",
+          "invoice_date": "30/10/2025",
+          "total_amount": "37840.00",
+          "document_type": "QUOTE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_842785719:00c0a6d8-138c-4c29-ada4-23d73e7b9141",
+            "fr_bd_842785719:7df8a5cd-8509-452a-9582-a981bd51dc08"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '809844731', 'bbox': [376, 3365, 2103, 3402], 'page': 1}",
+          "invoice_number": "20251103-05348712",
+          "invoice_date": "03/11/2025",
+          "total_amount": "202.65",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_842785719:02101a9a-274c-46fb-9e83-98085dda586b",
+            "fr_bd_842785719:85eb3931-9ade-49d3-b256-87767e38a2ba"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '695680108', 'bbox': [144, 3260, 1912, 3297], 'page': 0}",
+          "invoice_number": "9335337798",
+          "invoice_date": "28/07/2025",
+          "total_amount": "-85.39",
+          "document_type": "INVOICESTATEMENTWITHOUTVAT",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_842785719:0438a81d-c002-4f83-80ab-a575285fd463",
+            "fr_bd_842785719:dcb82768-de29-478c-8d28-30ebe5c4c39a"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '842785719'}",
+          "invoice_number": "20242024T04163",
+          "invoice_date": "11/06/2024",
+          "total_amount": "189600.00",
+          "document_type": "ORDER",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_842785719:043cf82b-79a9-41a8-b167-f241f7ee1562",
+            "fr_bd_842785719:a71f8d6e-49dd-4d99-81e3-cca304d72b2c"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '884023177', 'bbox': [698, 2993, 1780, 3040], 'page': 0}",
+          "invoice_number": "FA-2025-07-0002",
+          "invoice_date": "16/07/2025",
+          "total_amount": "12000.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_842785719:05c83fb0-c390-41ef-a3eb-8d878ccf02bf",
+            "fr_bd_842785719:2a30a931-02d6-4013-8eaf-d9d2b82c36c9"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '842785719', 'bbox': [210, 3224, 1037, 3260], 'page': 0}",
+          "invoice_number": "2025-018",
+          "invoice_date": "04/08/2025",
+          "total_amount": "363800.03",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_842785719:05c9d344-b17b-4387-ab4e-0b7e1eee4680",
+            "fr_bd_842785719:63490861-ea82-4b3e-9c49-f7f33c0d833d"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '572141885', 'bbox': [897, 3384, 1396, 3420], 'page': 0}",
+          "invoice_number": "9360911157",
+          "invoice_date": "09/07/2025",
+          "total_amount": "313.44",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_842785719:0657f9c6-b5a4-4793-9697-d2c9868874a4",
+            "fr_bd_842785719:de7fe562-51a6-4f8b-883f-5aab70125699"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '217500016', 'bbox': [317, 508, 683, 563], 'page': 0}",
+          "invoice_number": "4503218000",
+          "invoice_date": "11/06/2024",
+          "total_amount": "189600.00",
+          "document_type": "ORDER",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_842785719:076d6b48-0a20-4e0e-b813-096f4dc47148",
+            "fr_bd_842785719:997f2995-396b-4b29-9166-0540fe914e1a"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '897535019', 'bbox': [1067, 453, 2045, 501], 'page': 0}",
+          "invoice_number": "49-2025",
+          "invoice_date": "25/07/2025",
+          "total_amount": "2169.66",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_842785719:07b2dc86-72cb-4311-84f9-ae95fd8ea2ab",
+            "fr_bd_842785719:9dbf5f16-cbbf-44c8-ade3-c36c41f50539"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '844820100'}",
+          "invoice_number": "2025-398",
+          "invoice_date": "25/11/2025",
+          "total_amount": "5600.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_842785719:09c8b786-8351-41f8-a457-fad539c722ea",
+            "fr_bd_842785719:e116db1a-6a8e-4246-96eb-c1070476d83c"
+          ]
+        }
+      ],
+      "ambiguous_line_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_842785719:027a2790-ddf5-485d-9bc5-04807a3acd87",
+          "accounts": [
+            "6226",
+            "6227"
+          ],
+          "invoice_number": "#4563454"
+        },
+        {
+          "invoice_form_id": "fr_bd_842785719:05dfaf74-3261-438d-aafe-376631305f1e",
+          "accounts": [
+            "6061",
+            "6227"
+          ],
+          "invoice_number": "10239021995"
+        },
+        {
+          "invoice_form_id": "fr_bd_842785719:06404483-7798-4b65-be46-993528ef6e63",
+          "accounts": [
+            "6062",
+            "6063",
+            "6064"
+          ],
+          "invoice_number": "501C1004064797"
+        },
+        {
+          "invoice_form_id": "fr_bd_842785719:07b2dc86-72cb-4311-84f9-ae95fd8ea2ab",
+          "accounts": [
+            "606200",
+            "622600"
+          ],
+          "invoice_number": "49-2025"
+        },
+        {
+          "invoice_form_id": "fr_bd_842785719:0c5f0b92-e6ff-40d5-ab48-73c219d80766",
+          "accounts": [
+            "6061",
+            "6062"
+          ],
+          "invoice_number": "9036702542"
+        },
+        {
+          "invoice_form_id": "fr_bd_842785719:0c718df1-a1f3-45e6-b28e-cb013b46a330",
+          "accounts": [
+            "6068",
+            "6063"
+          ],
+          "invoice_number": "D59025DF93D7AAF"
+        },
+        {
+          "invoice_form_id": "fr_bd_842785719:0d9040ce-f6db-4722-ae3d-0b560e5c8a20",
+          "accounts": [
+            "6226",
+            "6227"
+          ],
+          "invoice_number": "DEV2280"
+        },
+        {
+          "invoice_form_id": "fr_bd_842785719:0debd17b-2184-4b3a-a384-de07cd2983b7",
+          "accounts": [
+            "606100",
+            "606800"
+          ],
+          "invoice_number": "10239021995"
+        },
+        {
+          "invoice_form_id": "fr_bd_842785719:0ff1e8ee-0739-4b74-a089-6ff537d86cdc",
+          "accounts": [
+            "6061",
+            "6155"
+          ],
+          "invoice_number": "10230460245"
+        },
+        {
+          "invoice_form_id": "fr_bd_842785719:13faa6e4-2556-4cc6-9b46-3504680dcf97",
+          "accounts": [
+            "6061",
+            "6063",
+            "6226"
+          ],
+          "invoice_number": "501C1004060591"
+        }
+      ],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_844858571",
+      "client_siren": "844858571",
+      "client_ape": "4321A",
+      "client_ape_source": "recipient",
+      "kmorganisation_doc_id": "fr_bd_844858571:9d9f239860394961ab3cf12850c68b80",
+      "invoice_form_docs_seen": 929,
+      "inferred_metiers": [
+        "btp"
+      ],
+      "selected_metiers": [
+        "btp"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_844858571:002b5efe-8259-488e-b1eb-98287c73d608",
+        "fr_bd_844858571:0073a9b4-8246-4647-9ae0-ecd9cedc4862",
+        "fr_bd_844858571:00db6b6b-e472-4bfa-9742-51e0a085ff03"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 929,
+      "entry_copied": 0,
+      "created": 930,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 27,
+      "duplicate_invoice_docs_count": 55,
+      "ambiguous_line_account_invoice_count": 213,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [
+        {
+          "supplier_siren": "{'value': '487773327'}",
+          "invoice_number": "DS-AEU-INV-FR-2025-48266200",
+          "invoice_date": "21/03/2025",
+          "total_amount": "14.29",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_844858571:03049c7f-dd1c-4db1-9885-e558be059d08",
+            "fr_bd_844858571:c984d2ae-1e97-407d-9354-4bf4f69722fb"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '347384570'}",
+          "invoice_number": "R014809956",
+          "invoice_date": "16/04/2024",
+          "total_amount": "188.94",
+          "document_type": "QUOTE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_844858571:033e385f-e836-4ebf-a9ba-28083fd4d06c",
+            "fr_bd_844858571:b12afe6f-3c74-429b-a771-7b3df7a6deca"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '487773327'}",
+          "invoice_number": "DS-AEU-INV-FR-2025-91348145",
+          "invoice_date": "02/06/2025",
+          "total_amount": "10.29",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_844858571:056d0eed-08f6-47e4-b1d8-6e46d14ebab6",
+            "fr_bd_844858571:7ade5106-b161-4939-9ddb-c03246af4e5c"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '804164267'}",
+          "invoice_number": "RCN3233SKH",
+          "invoice_date": "08/06/2024",
+          "total_amount": "198.99",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_844858571:05c08078-f209-41a8-a2bb-1388c335f821",
+            "fr_bd_844858571:a0b55d41-a50a-4da6-8020-50e2129b51bd"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '487773327'}",
+          "invoice_number": "DS-AEU-INV-FR-2025-95254690",
+          "invoice_date": "07/06/2025",
+          "total_amount": "19.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_844858571:181a4900-c1f7-4e2b-a6e8-c3a150990602",
+            "fr_bd_844858571:b99712cf-fa6b-431d-bab4-a78f8bad1250"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '804164267'}",
+          "invoice_number": "RCMJ9AWWZJ",
+          "invoice_date": "26/03/2025",
+          "total_amount": "224.48",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_844858571:21b468ce-06b0-4dbd-86c6-4c7fb91e522e",
+            "fr_bd_844858571:85ddb0f1-8784-4473-b6ac-6e8a6a03c54a"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '804164267'}",
+          "invoice_number": "RCFEAXBC8P",
+          "invoice_date": "19/02/2024",
+          "total_amount": "281.20",
+          "document_type": "INVOICE",
+          "count": 3,
+          "invoice_form_ids": [
+            "fr_bd_844858571:2959ce05-d866-4920-97e3-02cfecfcdf2e",
+            "fr_bd_844858571:6495269b-8d37-4fee-966f-5c6e89f58744",
+            "fr_bd_844858571:bac39e41-52d6-4a06-bd84-42d155e5a352"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '804164267'}",
+          "invoice_number": "RCCKWB5ERR",
+          "invoice_date": "19/04/2024",
+          "total_amount": "195.38",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_844858571:29c665c7-2281-4503-9c52-f46376c6f4e2",
+            "fr_bd_844858571:f063ff4b-2621-4b4f-a0da-38bf51bf8061"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '487773327'}",
+          "invoice_number": "DS-AEU-INV-FR-2025-48266199",
+          "invoice_date": "21/03/2025",
+          "total_amount": "19.99",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_844858571:31a2a76c-1372-46f3-8c79-5df60e4e88df",
+            "fr_bd_844858571:cbae3926-71a3-4c95-a909-dfcb84703c78"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '920905049', 'bbox': [535, 3333, 1938, 3388], 'page': 0}",
+          "invoice_number": "223510",
+          "invoice_date": "28/02/2025",
+          "total_amount": "695.50",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_844858571:3d55ee3c-c1bf-416a-b24e-2cfbe4373b6c",
+            "fr_bd_844858571:72526c6a-a810-4960-b57a-cbc33f84cf16"
+          ]
+        }
+      ],
+      "ambiguous_line_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_844858571:01e06d70-5f7d-4ed7-97ff-58275c78d783",
+          "accounts": [
+            "606200",
+            "624100"
+          ],
+          "invoice_number": "INV-DE-UOSS-1576133865-2024-34393"
+        },
+        {
+          "invoice_form_id": "fr_bd_844858571:03049c7f-dd1c-4db1-9885-e558be059d08",
+          "accounts": [
+            "606200",
+            "622600"
+          ],
+          "invoice_number": "DS-AEU-INV-FR-2025-48266200"
+        },
+        {
+          "invoice_form_id": "fr_bd_844858571:03bcdbf6-49b7-477c-b0c5-b8f265cb2f4f",
+          "accounts": [
+            "6226",
+            "6227"
+          ],
+          "invoice_number": "RCJATSDXBT"
+        },
+        {
+          "invoice_form_id": "fr_bd_844858571:04d35dc1-7237-4586-aeea-6a00f8e11149",
+          "accounts": [
+            "6063",
+            "6226"
+          ],
+          "invoice_number": "DS-AEU-INV-FR-2025-145538618"
+        },
+        {
+          "invoice_form_id": "fr_bd_844858571:0559fd44-ff10-4cac-ad29-600a7e29b8e6",
+          "accounts": [
+            "6062",
+            "6227",
+            "6351"
+          ],
+          "invoice_number": "RCQMR5WFJ9"
+        },
+        {
+          "invoice_form_id": "fr_bd_844858571:056d0eed-08f6-47e4-b1d8-6e46d14ebab6",
+          "accounts": [
+            "606200",
+            "624100",
+            "609700"
+          ],
+          "invoice_number": "DS-AEU-INV-FR-2025-91348145"
+        },
+        {
+          "invoice_form_id": "fr_bd_844858571:05c08078-f209-41a8-a2bb-1388c335f821",
+          "accounts": [
+            "6062",
+            "6351"
+          ],
+          "invoice_number": "RCN3233SKH"
+        },
+        {
+          "invoice_form_id": "fr_bd_844858571:08260d62-4320-4cba-b891-ad922168c8ab",
+          "accounts": [
+            "6226",
+            "6227",
+            "6351"
+          ],
+          "invoice_number": "RCPB35QWSR"
+        },
+        {
+          "invoice_form_id": "fr_bd_844858571:0941fae0-3790-4131-877f-8620875c071a",
+          "accounts": [
+            "6123",
+            "6125"
+          ],
+          "invoice_number": ""
+        },
+        {
+          "invoice_form_id": "fr_bd_844858571:0f3c8a26-d089-4dce-98a0-623661b00bbc",
+          "accounts": [
+            "606200",
+            "622600",
+            "709900"
+          ],
+          "invoice_number": "DS-AEU-INV-FR-2025-76989756"
+        }
+      ],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_792041840",
+      "client_siren": "792041840",
+      "client_ape": "4399C",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "",
+      "invoice_form_docs_seen": 143,
+      "inferred_metiers": [
+        "btp"
+      ],
+      "selected_metiers": [
+        "btp"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_792041840:02adbb06-21b9-4e83-96fb-bd453adc16b6",
+        "fr_bd_792041840:03887dd2-e839-4443-94ae-087f84ac5419",
+        "fr_bd_792041840:069e914c-e1d6-4f9d-b408-1ba1d594f88e"
+      ],
+      "kmorganisation_copied": 0,
+      "invoice_form_copied": 143,
+      "entry_copied": 0,
+      "created": 143,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 43,
+      "duplicate_invoice_docs_count": 86,
+      "ambiguous_line_account_invoice_count": 3,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [
+        {
+          "supplier_siren": "{'value': '812800787', 'bbox': [325, 3281, 2130, 3329], 'page': 0}",
+          "invoice_number": "CF25-1347",
+          "invoice_date": "29/04/2025",
+          "total_amount": "1680.00",
+          "document_type": "ORDER",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_792041840:097ce478-7bea-444e-9212-219e3bf478bd",
+            "fr_bd_792041840:583e5f59-2d93-4b5e-89ec-11872b362fa7"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '792041840', 'bbox': [218, 482, 853, 530], 'page': 0}",
+          "invoice_number": "202511",
+          "invoice_date": "30/04/2025",
+          "total_amount": "2800.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_792041840:0989df2d-2a75-4aaf-9a64-8d4d1b061a75",
+            "fr_bd_792041840:ff60393c-1d20-4599-b03e-2a0c7db17afb"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '792041840', 'bbox': [218, 482, 853, 530], 'page': 0}",
+          "invoice_number": "202507",
+          "invoice_date": "31/03/2025",
+          "total_amount": "840.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_792041840:0ce17f2d-9e61-4ca9-8a27-dedb44343047",
+            "fr_bd_792041840:e8238241-79e2-4691-b23a-05168ecbddba"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '792041840', 'bbox': [218, 482, 853, 530], 'page': 0}",
+          "invoice_number": "202520",
+          "invoice_date": "25/07/2025",
+          "total_amount": "1400.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_792041840:0de82eaa-bc35-49f3-a914-50d01ff4e5d7",
+            "fr_bd_792041840:f77f1f21-6fc6-4532-bf8a-cfa24552abd2"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '812800787', 'bbox': [325, 3281, 2130, 3329], 'page': 0}",
+          "invoice_number": "CF25-1348",
+          "invoice_date": "29/04/2025",
+          "total_amount": "280.00",
+          "document_type": "ORDER",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_792041840:112c95b2-0121-4751-be9f-f748b2c3cbfd",
+            "fr_bd_792041840:bd324a46-3b06-4884-86c0-c7c842361783"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '792041840', 'bbox': [218, 482, 853, 530], 'page': 0}",
+          "invoice_number": "202513",
+          "invoice_date": "31/05/2025",
+          "total_amount": "1120.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_792041840:14afa373-5946-4ed6-b50b-b35174ae4367",
+            "fr_bd_792041840:dbaadf66-67b7-4afc-acb3-b1548126e8ed"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '792041840', 'bbox': [218, 482, 853, 530], 'page': 0}",
+          "invoice_number": "202506",
+          "invoice_date": "31/03/2025",
+          "total_amount": "840.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_792041840:1aa45b59-9628-44de-aaf4-bae41637558a",
+            "fr_bd_792041840:a13ed933-fde7-4a1e-873c-6d4be52a8942"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '792041840', 'bbox': [218, 482, 853, 530], 'page': 0}",
+          "invoice_number": "202528",
+          "invoice_date": "30/09/2025",
+          "total_amount": "560.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_792041840:1b5c0c9e-7a6b-4760-99b9-af4cac5a35e5",
+            "fr_bd_792041840:522d3e7d-aeb1-4f3e-910b-7067df6e806e"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '792041840', 'bbox': [218, 482, 853, 530], 'page': 0}",
+          "invoice_number": "202516",
+          "invoice_date": "31/05/2025",
+          "total_amount": "280.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_792041840:1db42f22-de97-40c5-94da-144ada731a27",
+            "fr_bd_792041840:a2b82a87-08ac-495d-9b63-c2ca435d50fa"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '792041840', 'bbox': [218, 479, 849, 526], 'page': 0}",
+          "invoice_number": "202527",
+          "invoice_date": "30/09/2025",
+          "total_amount": "1960.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_792041840:21639108-a41d-4b78-b991-4492235ff837",
+            "fr_bd_792041840:25763a24-4a7e-4963-9e33-499bff0677eb"
+          ]
+        }
+      ],
+      "ambiguous_line_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_792041840:53780c9e-f201-4478-801f-4d4b219a636f",
+          "accounts": [
+            "606100",
+            "615500"
+          ],
+          "invoice_number": "36/2512/104646"
+        },
+        {
+          "invoice_form_id": "fr_bd_792041840:54e77d44-fc16-4b54-9482-35c4239ca48e",
+          "accounts": [
+            "6022",
+            "6155"
+          ],
+          "invoice_number": "153"
+        },
+        {
+          "invoice_form_id": "fr_bd_792041840:8d9d392d-9b67-4607-94d2-b8fb641678f7",
+          "accounts": [
+            "6063",
+            "6062",
+            "6132"
+          ],
+          "invoice_number": ""
+        }
+      ],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_823981568",
+      "client_siren": "823981568",
+      "client_ape": "4399B",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_823981568:8cc8daa27edb438fa6a225141f116520",
+      "invoice_form_docs_seen": 70,
+      "inferred_metiers": [
+        "btp"
+      ],
+      "selected_metiers": [
+        "btp"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_823981568:04a4f8ea-f794-40c6-a3ae-b7dd65f5a27d",
+        "fr_bd_823981568:04af2d06-aaa2-4d93-9733-ac4a70e1402a",
+        "fr_bd_823981568:064863cd-049a-4563-9563-9461e14d85bc"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 70,
+      "entry_copied": 0,
+      "created": 71,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 2,
+      "duplicate_invoice_docs_count": 4,
+      "ambiguous_line_account_invoice_count": 11,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [
+        {
+          "supplier_siren": "{'value': '981949589', 'bbox': [1170, 563, 1702, 610], 'page': 0}",
+          "invoice_number": "01/ 2024",
+          "invoice_date": "31/03/2024",
+          "total_amount": "7112.90",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_823981568:4061a487-d370-452c-bdbd-87dfb9cd9a06",
+            "fr_bd_823981568:c49b1341-317d-4f4f-9c8e-d57b6e0b21cf"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '823981568', 'bbox': [960, 691, 1540, 738], 'page': 0}",
+          "invoice_number": "092024",
+          "invoice_date": "30/09/2024",
+          "total_amount": "9525.60",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_823981568:9dd06f2b-775d-4491-8218-049fb9e24c63",
+            "fr_bd_823981568:dd63fe60-65a9-4f49-b557-f6fa1824bf45"
+          ]
+        }
+      ],
+      "ambiguous_line_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_823981568:16df355c-fdde-4d39-864b-ad56ba7796e6",
+          "accounts": [
+            "606800",
+            "624100"
+          ],
+          "invoice_number": "DS-ASE-INV-FR-2024-72470544"
+        },
+        {
+          "invoice_form_id": "fr_bd_823981568:27ac3d97-26ba-4692-9da1-bd92437e7900",
+          "accounts": [
+            "6062",
+            "6351"
+          ],
+          "invoice_number": "1122"
+        },
+        {
+          "invoice_form_id": "fr_bd_823981568:2bfe525b-8c8e-4b28-8165-a63589ea44ee",
+          "accounts": [
+            "6063",
+            "6226"
+          ],
+          "invoice_number": "10089733"
+        },
+        {
+          "invoice_form_id": "fr_bd_823981568:40c257b5-8792-4b99-8514-40ec62a8432b",
+          "accounts": [
+            "60610000",
+            "62260000"
+          ],
+          "invoice_number": "DS-AEU-INV-FR-2024-41812716"
+        },
+        {
+          "invoice_form_id": "fr_bd_823981568:6c413038-32aa-4f72-989e-b4187778c84b",
+          "accounts": [
+            "606800",
+            "622600",
+            "609700"
+          ],
+          "invoice_number": "INV-FR-1504770685-2024-4562"
+        },
+        {
+          "invoice_form_id": "fr_bd_823981568:72655322-6ca6-485d-a73b-8ad26f3af590",
+          "accounts": [
+            "6063",
+            "624"
+          ],
+          "invoice_number": "DS-ASE-INV-FR-2024-72470602"
+        },
+        {
+          "invoice_form_id": "fr_bd_823981568:793816a6-728a-44fb-bc0f-30ff3b6751ff",
+          "accounts": [
+            "606800",
+            "622600",
+            "709100"
+          ],
+          "invoice_number": "FR41QKLP7AEUI"
+        },
+        {
+          "invoice_form_id": "fr_bd_823981568:902511c1-7a0f-44ba-83a1-1c75ca9ce270",
+          "accounts": [
+            "606200",
+            "622600"
+          ],
+          "invoice_number": "LU42J253WAEUI"
+        },
+        {
+          "invoice_form_id": "fr_bd_823981568:95c22987-1bb4-42c8-8f52-587e24685926",
+          "accounts": [
+            "606200",
+            "624100"
+          ],
+          "invoice_number": "FR48BR5KAEUI"
+        },
+        {
+          "invoice_form_id": "fr_bd_823981568:c463ca9c-3b53-4f60-8377-a06750a4b50c",
+          "accounts": [
+            "60610000",
+            "62260000",
+            "62270000"
+          ],
+          "invoice_number": "F4D05000"
+        }
+      ],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_509118329",
+      "client_siren": "509118329",
+      "client_ape": "4120B",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_509118329:fb3b643350f8424e8c156ab5c4e22e28",
+      "invoice_form_docs_seen": 59,
+      "inferred_metiers": [
+        "btp"
+      ],
+      "selected_metiers": [
+        "btp"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_509118329:01faf90a-9b06-4a21-b8de-8a498e2709c3",
+        "fr_bd_509118329:083379fc-d393-4048-a9a8-a36c61418818",
+        "fr_bd_509118329:11f4d46b-487f-49c2-be3a-03e404d15ebc"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 59,
+      "entry_copied": 0,
+      "created": 60,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 1,
+      "duplicate_invoice_docs_count": 2,
+      "ambiguous_line_account_invoice_count": 6,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [
+        {
+          "supplier_siren": "{'value': '775692932', 'bbox': [140, 479, 1170, 523], 'page': 0}",
+          "invoice_number": "10372052",
+          "invoice_date": "10/07/2024",
+          "total_amount": "133.38",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_509118329:99472ec9-b09e-49ad-85c4-4d1fe5ed6360",
+            "fr_bd_509118329:cb5d9b8b-a1e5-48d5-9520-2f8d3e3fa0df"
+          ]
+        }
+      ],
+      "ambiguous_line_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_509118329:2b465fa2-cfd6-4228-95c7-b82c1f5d6fe4",
+          "accounts": [
+            "606200",
+            "218300"
+          ],
+          "invoice_number": "000145800080353"
+        },
+        {
+          "invoice_form_id": "fr_bd_509118329:3132f508-c36d-4da9-b0a2-e268018b6d11",
+          "accounts": [
+            "607",
+            "44587"
+          ],
+          "invoice_number": "1010855"
+        },
+        {
+          "invoice_form_id": "fr_bd_509118329:8637ed2c-e378-4a8e-9e43-17e9165979b5",
+          "accounts": [
+            "606100",
+            "606300",
+            "622700",
+            "641100",
+            "625100",
+            "606200"
+          ],
+          "invoice_number": "N/A"
+        },
+        {
+          "invoice_form_id": "fr_bd_509118329:88405e12-62ab-499b-8cbc-026bb4a2e512",
+          "accounts": [
+            "60620000",
+            "60110000"
+          ],
+          "invoice_number": "0/00150007/028058"
+        },
+        {
+          "invoice_form_id": "fr_bd_509118329:90a37028-ea12-4bbd-8668-25ff564dcb1b",
+          "accounts": [
+            "60620000",
+            "21830000"
+          ],
+          "invoice_number": "000145800080353"
+        },
+        {
+          "invoice_form_id": "fr_bd_509118329:c23f72a2-3d88-4642-8a9e-2ec7d3c727cf",
+          "accounts": [
+            "6063",
+            "6062"
+          ],
+          "invoice_number": "000145800072451"
+        }
+      ],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_951421064",
+      "client_siren": "951421064",
+      "client_ape": "4322B",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_951421064:430dd5e5552f42858c74da4fe9937a75",
+      "invoice_form_docs_seen": 40,
+      "inferred_metiers": [
+        "btp"
+      ],
+      "selected_metiers": [
+        "btp"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_951421064:0031577a-959f-4319-8b24-42f61ade3118",
+        "fr_bd_951421064:03be0a8b-da8a-42aa-a10d-1f60a58a8dc5",
+        "fr_bd_951421064:1090770d-6810-434c-83d6-2c1217ccfa36"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 40,
+      "entry_copied": 0,
+      "created": 41,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 5,
+      "duplicate_invoice_docs_count": 10,
+      "ambiguous_line_account_invoice_count": 4,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [
+        {
+          "supplier_siren": "{'value': '951421064', 'bbox': [258, 1122, 857, 1170], 'page': 0}",
+          "invoice_number": "2",
+          "invoice_date": "21/10/2024",
+          "total_amount": "5400.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_951421064:1793ec9f-efb2-48a8-8a68-aebbe907b2a5",
+            "fr_bd_951421064:bfae23eb-88c6-430a-8788-619d5d090293"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '951421064', 'bbox': [258, 1122, 857, 1170], 'page': 0}",
+          "invoice_number": "1",
+          "invoice_date": "01/08/2024",
+          "total_amount": "3000.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_951421064:2ba36f54-2779-43fb-8ece-52973a3e1a3f",
+            "fr_bd_951421064:907cd171-c8ab-4a4c-9897-0e19911622a8"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '951421064', 'bbox': [258, 1122, 857, 1170], 'page': 0}",
+          "invoice_number": "4",
+          "invoice_date": "16/12/2024",
+          "total_amount": "5400.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_951421064:2ebb046f-d701-440a-a2e4-86f16bf13a5b",
+            "fr_bd_951421064:693e4038-43bb-4bdb-87ca-e6ed9fd39af7"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '793315490'}",
+          "invoice_number": "103000045215",
+          "invoice_date": "05/10/2024",
+          "total_amount": "25.04",
+          "document_type": "RECEIPT",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_951421064:5389efcf-3e37-48cd-b4bb-5a8609bcd8e5",
+            "fr_bd_951421064:6c16de22-a6b4-4d8b-adca-95cfcdf69bda"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '951421064', 'bbox': [258, 1122, 857, 1170], 'page': 0}",
+          "invoice_number": "3",
+          "invoice_date": "01/12/2024",
+          "total_amount": "5400.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_951421064:69dea3bb-aa55-45cc-b17c-10bdba04b2cd",
+            "fr_bd_951421064:707cb053-c163-4725-933b-630183d72589"
+          ]
+        }
+      ],
+      "ambiguous_line_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_951421064:148fca52-b159-425d-8d1f-89f343a5923e",
+          "accounts": [
+            "60620000",
+            "60610000",
+            "60630000"
+          ],
+          "invoice_number": "N098805"
+        },
+        {
+          "invoice_form_id": "fr_bd_951421064:65c995ca-53b4-4888-9597-51ed6a19773e",
+          "accounts": [
+            "6061",
+            "6068"
+          ],
+          "invoice_number": "N043015"
+        },
+        {
+          "invoice_form_id": "fr_bd_951421064:95a6655a-28e7-45a1-b89c-5cfd3821beba",
+          "accounts": [
+            "60610000",
+            "60630000"
+          ],
+          "invoice_number": "N098157"
+        },
+        {
+          "invoice_form_id": "fr_bd_951421064:d4c0104d-4015-4358-9ace-38407e994124",
+          "accounts": [
+            "6132",
+            "6227"
+          ],
+          "invoice_number": "2024-0049"
+        }
+      ],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_879788230",
+      "client_siren": "879788230",
+      "client_ape": "4399C",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "",
+      "invoice_form_docs_seen": 30,
+      "inferred_metiers": [
+        "btp"
+      ],
+      "selected_metiers": [
+        "btp"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_879788230:02271126-6f0d-44d9-a408-ee97c881f03f",
+        "fr_bd_879788230:056e93bf-5623-4edb-b690-144a388e23f0",
+        "fr_bd_879788230:06e94e07-d7ac-43fc-8b4d-d110a70ef80f"
+      ],
+      "kmorganisation_copied": 0,
+      "invoice_form_copied": 30,
+      "entry_copied": 0,
+      "created": 30,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 0,
+      "duplicate_invoice_docs_count": 0,
+      "ambiguous_line_account_invoice_count": 2,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [],
+      "ambiguous_line_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_879788230:6a27378d-1be0-4e17-a151-228a8f2e3029",
+          "accounts": [
+            "6063",
+            "6061"
+          ],
+          "invoice_number": "9276853081"
+        },
+        {
+          "invoice_form_id": "fr_bd_879788230:ed7d1481-fce1-44ea-9f5d-967774d4702e",
+          "accounts": [
+            "606200",
+            "622600",
+            "624100"
+          ],
+          "invoice_number": "18532009"
+        }
+      ],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_914837463",
+      "client_siren": "914837463",
+      "client_ape": "4321A",
+      "client_ape_source": "recipient",
+      "kmorganisation_doc_id": "",
+      "invoice_form_docs_seen": 23,
+      "inferred_metiers": [
+        "btp"
+      ],
+      "selected_metiers": [
+        "btp"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_914837463:0e236e3c-b46d-4c38-8ea6-91635fc6420b",
+        "fr_bd_914837463:24047fdb-bee2-4645-80ce-12a04fb9a254",
+        "fr_bd_914837463:2b70d17f-2a9f-466f-a58c-ee8f59dc7bd0"
+      ],
+      "kmorganisation_copied": 0,
+      "invoice_form_copied": 23,
+      "entry_copied": 0,
+      "created": 23,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 6,
+      "duplicate_invoice_docs_count": 12,
+      "ambiguous_line_account_invoice_count": 7,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [
+        {
+          "supplier_siren": "{'value': '845151067', 'bbox': [1872, 610, 2293, 658], 'page': 0}",
+          "invoice_number": "72200",
+          "invoice_date": "29/09/2024",
+          "total_amount": "858.00",
+          "document_type": "PROFORMA",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_914837463:0e236e3c-b46d-4c38-8ea6-91635fc6420b",
+            "fr_bd_914837463:372d984c-7258-4297-9afe-4bdfe3733173"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '879272722', 'bbox': [80, 356, 328, 375], 'page': 0}",
+          "invoice_number": "JO-9148-19",
+          "invoice_date": "07/10/2024",
+          "total_amount": "194.40",
+          "document_type": "ORDER",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_914837463:3398281c-342f-4b84-b559-f94543ecd3fb",
+            "fr_bd_914837463:cef51204-e23d-4f11-93ad-0e4612a8195a"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '845151067', 'bbox': [621, 208, 761, 223], 'page': 0}",
+          "invoice_number": "62854",
+          "invoice_date": "30/04/2024",
+          "total_amount": "1296.00",
+          "document_type": "PROFORMA",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_914837463:41459f6c-308c-4652-8f9c-fb7d9183db16",
+            "fr_bd_914837463:91fa0d69-2583-4a2c-82cf-99d9f9f0d8e1"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '920110053', 'bbox': [690, 5694, 3415, 5773], 'page': 0}",
+          "invoice_number": "WLCL-D2024-0042",
+          "invoice_date": "13/02/2024",
+          "total_amount": "501.60",
+          "document_type": "QUOTE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_914837463:58667d5b-8edc-4740-aa54-fe5f4eecaa43",
+            "fr_bd_914837463:590e7515-14a2-493a-a77e-64c00552b0dc"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '879272722', 'bbox': [210, 888, 820, 935], 'page': 0}",
+          "invoice_number": "JO-9148-21",
+          "invoice_date": "14/10/2024",
+          "total_amount": "3396.00",
+          "document_type": "ORDER",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_914837463:6129859d-f805-45cb-9383-ac7d63d6f98b",
+            "fr_bd_914837463:81fc0d8f-ba1b-45a4-b232-8058cf8331c3"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '879272722', 'bbox': [207, 884, 820, 932], 'page': 0}",
+          "invoice_number": "JO-60624-1",
+          "invoice_date": "06/06/2024",
+          "total_amount": "2119.20",
+          "document_type": "ORDER",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_914837463:98d85f4f-e9bc-40c4-a080-bcc72053ba9c",
+            "fr_bd_914837463:e32b38db-14e0-416b-b421-16a4cf6db045"
+          ]
+        }
+      ],
+      "ambiguous_line_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_914837463:3398281c-342f-4b84-b559-f94543ecd3fb",
+          "accounts": [
+            "607",
+            "622"
+          ],
+          "invoice_number": "JO-9148-19"
+        },
+        {
+          "invoice_form_id": "fr_bd_914837463:3dd1e79f-0868-4f2e-920d-e97e7fad6bd7",
+          "accounts": [
+            "60620000",
+            "62260000"
+          ],
+          "invoice_number": "RT-GJZ20240826"
+        },
+        {
+          "invoice_form_id": "fr_bd_914837463:6129859d-f805-45cb-9383-ac7d63d6f98b",
+          "accounts": [
+            "607",
+            "622"
+          ],
+          "invoice_number": "JO-9148-21"
+        },
+        {
+          "invoice_form_id": "fr_bd_914837463:7b2de678-4127-4205-bc21-bb21b5607694",
+          "accounts": [
+            "6063",
+            "6226"
+          ],
+          "invoice_number": "24-119"
+        },
+        {
+          "invoice_form_id": "fr_bd_914837463:81fc0d8f-ba1b-45a4-b232-8058cf8331c3",
+          "accounts": [
+            "60730000",
+            "62260000"
+          ],
+          "invoice_number": "JO-9148-21"
+        },
+        {
+          "invoice_form_id": "fr_bd_914837463:cef51204-e23d-4f11-93ad-0e4612a8195a",
+          "accounts": [
+            "607",
+            "622"
+          ],
+          "invoice_number": "JO-9148-19"
+        },
+        {
+          "invoice_form_id": "fr_bd_914837463:e4157d3a-27d0-4f1f-a256-e32ce2b7ba50",
+          "accounts": [
+            "60620000",
+            "62260000"
+          ],
+          "invoice_number": "RT-GJZ20240826"
+        }
+      ],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_891370595",
+      "client_siren": "891370595",
+      "client_ape": "5610C",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_891370595:6d433a19790045aea8c7ae9ebc1b2994",
+      "invoice_form_docs_seen": 1259,
+      "inferred_metiers": [
+        "restaurant"
+      ],
+      "selected_metiers": [
+        "restaurant"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_891370595:006544e1-533f-41b6-90a4-1effaa1e331b",
+        "fr_bd_891370595:00d767a4-8659-46b1-bc8b-d3f148068ef6",
+        "fr_bd_891370595:011dec4b-99ba-4803-8f86-43aeecfa62aa"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 1259,
+      "entry_copied": 0,
+      "created": 1260,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 81,
+      "duplicate_invoice_docs_count": 163,
+      "ambiguous_line_account_invoice_count": 286,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [
+        {
+          "supplier_siren": "{'value': '881923817', 'bbox': [100, 468, 480, 504], 'page': 0}",
+          "invoice_number": "BL24-27572",
+          "invoice_date": "24/09/2024",
+          "total_amount": "65.41",
+          "document_type": "DELIVERYNOTE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_891370595:03e8861c-2ba1-48e7-bb50-5ee5ed5067cb",
+            "fr_bd_891370595:9831ea9f-282b-4be9-9b65-1bceee923da1"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '881923817', 'bbox': [114, 471, 499, 515], 'page': 0}",
+          "invoice_number": "BL24-18079",
+          "invoice_date": "22/06/2024",
+          "total_amount": "66.47",
+          "document_type": "DELIVERYNOTE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_891370595:088a1a95-efd3-4755-ac08-594c585ef13c",
+            "fr_bd_891370595:0f59f607-fece-46e5-b6cf-4964ee393f1b"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '881923817', 'bbox': [118, 474, 504, 522], 'page': 0}",
+          "invoice_number": "BL24-18079",
+          "invoice_date": "22/06/2024",
+          "total_amount": "66.47",
+          "document_type": "DELIVERYNOTE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_891370595:0a39f818-6deb-4ea6-b5a0-24e295637c63",
+            "fr_bd_891370595:7e2804ad-8cb4-471b-a514-05c7f060b06f"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '881923817', 'bbox': [111, 471, 491, 508], 'page': 0}",
+          "invoice_number": "BL24-15073",
+          "invoice_date": "28/05/2024",
+          "total_amount": "43.26",
+          "document_type": "DELIVERYNOTE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_891370595:0ac8918f-3e89-4e4b-9ae1-0f1931279ba2",
+            "fr_bd_891370595:54ad8887-9041-473d-9e31-198f814757b8"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '888613833', 'bbox': [664, 3372, 1754, 3439], 'page': 0}",
+          "invoice_number": "BL24-00608",
+          "invoice_date": "22/05/2024",
+          "total_amount": "594.49",
+          "document_type": "DELIVERYNOTE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_891370595:0c43bf96-fe3c-4d34-93fd-8f7f02d1699b",
+            "fr_bd_891370595:64c0e6d9-a670-4f3f-a617-d21f9cf0a19b"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '447915430', 'bbox': [742, 3128, 1676, 3165], 'page': 0}",
+          "invoice_number": "FV2503-09706",
+          "invoice_date": "20/03/2025",
+          "total_amount": "131.58",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_891370595:0d3c3641-edf6-456c-a1ba-580cf47694dc",
+            "fr_bd_891370595:7c6918aa-826a-4b14-b96b-9acd9783c541"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '881923817', 'bbox': [81, 460, 469, 516], 'page': 0}",
+          "invoice_number": "BL24-31450",
+          "invoice_date": "29/10/2024",
+          "total_amount": "63.83",
+          "document_type": "DELIVERYNOTE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_891370595:0e636c7c-52e7-450e-974d-be63e0ed19c9",
+            "fr_bd_891370595:b2ee5d56-d855-42c1-b886-52d170490f5c"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '881923817', 'bbox': [81, 453, 469, 504], 'page': 0}",
+          "invoice_number": "BL24-11608",
+          "invoice_date": "27/04/2024",
+          "total_amount": "38.51",
+          "document_type": "DELIVERYNOTE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_891370595:111af089-cddd-4cba-a985-80c10bf3da7e",
+            "fr_bd_891370595:9d8a0b6b-4373-4fe4-8c11-c6631a1c3066"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '399315613', 'bbox': [897, 573, 1263, 625], 'page': 1}",
+          "invoice_number": "006-301624",
+          "invoice_date": "07/02/2025",
+          "total_amount": "294.44",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_891370595:13d7d77c-f5e9-4e31-bafd-410f3173ac77",
+            "fr_bd_891370595:c8c00d90-b1ce-4bc0-b34f-5672630f6e5f"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '881923817', 'bbox': [95, 463, 485, 523], 'page': 0}",
+          "invoice_number": "BL24-33913",
+          "invoice_date": "19/11/2024",
+          "total_amount": "38.51",
+          "document_type": "DELIVERYNOTE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_891370595:17f0e37e-3df3-4c5f-ac5a-08fedae307bd",
+            "fr_bd_891370595:384b31fd-07a7-44e5-8ea0-5d0378a40151"
+          ]
+        }
+      ],
+      "ambiguous_line_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_891370595:0531f2f5-4c32-4ddf-8070-cc60ae37a690",
+          "accounts": [
+            "601",
+            "6063"
+          ],
+          "invoice_number": "020-074265"
+        },
+        {
+          "invoice_form_id": "fr_bd_891370595:055b6bed-7657-467e-9317-993f035bfd3f",
+          "accounts": [
+            "6068",
+            "6061",
+            "6062",
+            "6064"
+          ],
+          "invoice_number": "0/0(015)0010/035388"
+        },
+        {
+          "invoice_form_id": "fr_bd_891370595:05dca79e-f261-4ee1-b50e-173d5ba53fe9",
+          "accounts": [
+            "606200",
+            "606800"
+          ],
+          "invoice_number": "FC41650"
+        },
+        {
+          "invoice_form_id": "fr_bd_891370595:060a78ad-10a3-4d28-94ba-a3092d84ad72",
+          "accounts": [
+            "602",
+            "606"
+          ],
+          "invoice_number": "004-258772"
+        },
+        {
+          "invoice_form_id": "fr_bd_891370595:0647b09b-d83b-47ec-84e9-e6372b140527",
+          "accounts": [
+            "6011",
+            "6012",
+            "6013",
+            "6014"
+          ],
+          "invoice_number": "0/00150020/006757"
+        },
+        {
+          "invoice_form_id": "fr_bd_891370595:06c3d952-edf5-47ac-a5d4-a1066bdfe5da",
+          "accounts": [
+            "6021",
+            "6063"
+          ],
+          "invoice_number": "0/00150011/012727"
+        },
+        {
+          "invoice_form_id": "fr_bd_891370595:08c6ff9f-983d-462c-be5c-0b357cd8fb13",
+          "accounts": [
+            "6068",
+            "6011",
+            "6063"
+          ],
+          "invoice_number": "0/01340025/037350"
+        },
+        {
+          "invoice_form_id": "fr_bd_891370595:0a2f699c-03e9-49f6-b40e-b2c1b3b3ced6",
+          "accounts": [
+            "6061",
+            "6068"
+          ],
+          "invoice_number": "015/9333"
+        },
+        {
+          "invoice_form_id": "fr_bd_891370595:0a402632-3013-4b60-8056-8ca93d99dbce",
+          "accounts": [
+            "6068",
+            "6011",
+            "6063"
+          ],
+          "invoice_number": "0/00150061/008572"
+        },
+        {
+          "invoice_form_id": "fr_bd_891370595:0aca9a75-d004-456e-8712-d0ea5014d73c",
+          "accounts": [
+            "607000",
+            "606800"
+          ],
+          "invoice_number": "006/019657"
+        }
+      ],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_952061570",
+      "client_siren": "952061570",
+      "client_ape": "5610A",
+      "client_ape_source": "recipient",
+      "kmorganisation_doc_id": "fr_bd_952061570:5c29935fa2a34ea5be265d85022fd627",
+      "invoice_form_docs_seen": 989,
+      "inferred_metiers": [
+        "restaurant"
+      ],
+      "selected_metiers": [
+        "restaurant"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_952061570:0011619b-3fe0-4b84-bd10-18b2113b9fb5",
+        "fr_bd_952061570:002ffdee-1b6c-402e-8407-9d5571c6f16b",
+        "fr_bd_952061570:0069bc2a-92a2-4918-9c5d-8d610502db56"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 989,
+      "entry_copied": 0,
+      "created": 990,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 203,
+      "duplicate_invoice_docs_count": 504,
+      "ambiguous_line_account_invoice_count": 369,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [
+        {
+          "supplier_siren": "{'value': '841983828', 'bbox': [402, 3246, 2078, 3293], 'page': 0}",
+          "invoice_number": "UBERFRAEATS-D5C9-14-2024-0000168",
+          "invoice_date": "26/01/2024",
+          "total_amount": "3.17",
+          "document_type": "INVOICE",
+          "count": 3,
+          "invoice_form_ids": [
+            "fr_bd_952061570:002ffdee-1b6c-402e-8407-9d5571c6f16b",
+            "fr_bd_952061570:7ae3fab3-1c78-4478-a305-38d20178e5fd",
+            "fr_bd_952061570:9036386f-bcbe-4f18-87bc-055603f52f62"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '399315613', 'bbox': [933, 548, 1299, 603], 'page': 1}",
+          "invoice_number": "027-023628",
+          "invoice_date": "21/06/2023",
+          "total_amount": "498.80",
+          "document_type": "INVOICE",
+          "count": 3,
+          "invoice_form_ids": [
+            "fr_bd_952061570:00adc1c7-747e-4055-9032-7d5297c6ebb7",
+            "fr_bd_952061570:9ac71e83-87b3-4264-897f-8d85a1f4437f",
+            "fr_bd_952061570:fb533128-2013-4900-9040-20806a695f13"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '810365817', 'bbox': [2931, 613, 3370, 650], 'page': 0}",
+          "invoice_number": "RES-FR-407344-32",
+          "invoice_date": "08/01/2024",
+          "total_amount": "38.58",
+          "document_type": "INVOICE",
+          "count": 3,
+          "invoice_form_ids": [
+            "fr_bd_952061570:0110dff2-9121-4974-a42d-d02c3cfbe9bd",
+            "fr_bd_952061570:1d0c8bda-d5d8-40a1-9aa8-a33a371411e7",
+            "fr_bd_952061570:ef54e8b0-e245-411e-9bc2-db2863420041"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '397480930'}",
+          "invoice_number": "REMISE A ZÉRO",
+          "invoice_date": "16/07/2024",
+          "total_amount": "43.95",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_952061570:0188fbd5-c2d6-4c7d-b759-7a34a5be8c00",
+            "fr_bd_952061570:6370a77f-3101-4052-8c00-82c62011eb61"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '399315613', 'bbox': [933, 552, 1299, 603], 'page': 0}",
+          "invoice_number": "033-015264",
+          "invoice_date": "19/03/2024",
+          "total_amount": "258.01",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_952061570:019a29e7-4619-4c9c-88dc-0f54a9d1a648",
+            "fr_bd_952061570:7473f4fa-9d13-4faa-ad1e-15d0a5eca56a"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '752972075', 'bbox': [188, 3297, 2288, 3334], 'page': 0}",
+          "invoice_number": "FA00104767",
+          "invoice_date": "18/11/2024",
+          "total_amount": "180.00",
+          "document_type": "INVOICE",
+          "count": 3,
+          "invoice_form_ids": [
+            "fr_bd_952061570:01fd5dd1-30c7-4ef5-a004-503e2da28848",
+            "fr_bd_952061570:7371ec27-cd09-4942-9875-1a9a0ed5f1e1",
+            "fr_bd_952061570:b27e8e9b-bd05-4a3e-a0d8-333a0d6377c0"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '399315613', 'bbox': [933, 548, 1299, 603], 'page': 2}",
+          "invoice_number": "134/835",
+          "invoice_date": "11/01/2024",
+          "total_amount": "425.50",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_952061570:02cbdbf7-1a76-4555-8fe1-4539c0e52f0b",
+            "fr_bd_952061570:5cfe6e52-a5ec-4bb1-a69e-6f7bffcd5169"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '399315613', 'bbox': [933, 548, 1299, 603], 'page': 2}",
+          "invoice_number": "134/835",
+          "invoice_date": "18/05/2024",
+          "total_amount": "952.92",
+          "document_type": "INVOICE",
+          "count": 3,
+          "invoice_form_ids": [
+            "fr_bd_952061570:02dc8c29-edf9-4b34-8d2c-8ec737572d7b",
+            "fr_bd_952061570:3c717552-6d9f-4f16-b4e5-4d8975cff920",
+            "fr_bd_952061570:4b2a321d-a6d8-44b0-92e7-24879f2287b8"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '393365135', 'bbox': [1148, 3289, 1333, 3314], 'page': 0}",
+          "invoice_number": "Z24MA02262198",
+          "invoice_date": "01/06/2024",
+          "total_amount": "67.58",
+          "document_type": "INVOICESTATEMENTWITHVAT",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_952061570:042d139e-3ea9-4f0e-80ff-79530028705b",
+            "fr_bd_952061570:d7b70457-ef36-46eb-80a2-c4faa0b0c460"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '399315613', 'bbox': [933, 552, 1299, 603], 'page': 0}",
+          "invoice_number": "134/288",
+          "invoice_date": "04/11/2024",
+          "total_amount": "527.90",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_952061570:04628f37-7537-4a54-a8a3-fc83f4c11ae6",
+            "fr_bd_952061570:109ce813-e304-4589-bf75-42ef35277d88"
+          ]
+        }
+      ],
+      "ambiguous_line_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_952061570:002ffdee-1b6c-402e-8407-9d5571c6f16b",
+          "accounts": [
+            "6228",
+            "6227"
+          ],
+          "invoice_number": "UBERFRAEATS-D5C9-14-2024-0000168"
+        },
+        {
+          "invoice_form_id": "fr_bd_952061570:00adc1c7-747e-4055-9032-7d5297c6ebb7",
+          "accounts": [
+            "6068",
+            "6011",
+            "6063"
+          ],
+          "invoice_number": "027-023628"
+        },
+        {
+          "invoice_form_id": "fr_bd_952061570:0110dff2-9121-4974-a42d-d02c3cfbe9bd",
+          "accounts": [
+            "6226",
+            "6227",
+            "6234"
+          ],
+          "invoice_number": "res-fr-407344-32"
+        },
+        {
+          "invoice_form_id": "fr_bd_952061570:0188fbd5-c2d6-4c7d-b759-7a34a5be8c00",
+          "accounts": [
+            "6062",
+            "6068",
+            "2183"
+          ],
+          "invoice_number": "Remise a zéro"
+        },
+        {
+          "invoice_form_id": "fr_bd_952061570:019a29e7-4619-4c9c-88dc-0f54a9d1a648",
+          "accounts": [
+            "6011",
+            "6061"
+          ],
+          "invoice_number": "033-015264"
+        },
+        {
+          "invoice_form_id": "fr_bd_952061570:02cbdbf7-1a76-4555-8fe1-4539c0e52f0b",
+          "accounts": [
+            "6068",
+            "6011",
+            "6063"
+          ],
+          "invoice_number": "134/835"
+        },
+        {
+          "invoice_form_id": "fr_bd_952061570:02dc8c29-edf9-4b34-8d2c-8ec737572d7b",
+          "accounts": [
+            "6061",
+            "6011",
+            "6068"
+          ],
+          "invoice_number": "134/835"
+        },
+        {
+          "invoice_form_id": "fr_bd_952061570:04628f37-7537-4a54-a8a3-fc83f4c11ae6",
+          "accounts": [
+            "6011",
+            "6012",
+            "6063"
+          ],
+          "invoice_number": "134/288"
+        },
+        {
+          "invoice_form_id": "fr_bd_952061570:0483eaa4-d285-4871-abe6-ae7c01dd5151",
+          "accounts": [
+            "606300",
+            "622600"
+          ],
+          "invoice_number": "DS-ASE-INV-FR-2024-102219933"
+        },
+        {
+          "invoice_form_id": "fr_bd_952061570:04aaf035-150d-4ef7-ade6-c5e824d54e11",
+          "accounts": [
+            "6068",
+            "4097"
+          ],
+          "invoice_number": "134/908"
+        }
+      ],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_929728467",
+      "client_siren": "929728467",
+      "client_ape": "5610C",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_929728467:09fc9879b94a44369447b24d3571ca7d",
+      "invoice_form_docs_seen": 610,
+      "inferred_metiers": [
+        "restaurant"
+      ],
+      "selected_metiers": [
+        "restaurant"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_929728467:017071dd-b06e-485a-b4c2-75f91f34d512",
+        "fr_bd_929728467:01b77d63-f9b7-4a1a-bc8e-004fc25d4906",
+        "fr_bd_929728467:01f93df7-950f-4a5b-8d56-401c8c38bc30"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 610,
+      "entry_copied": 0,
+      "created": 611,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 57,
+      "duplicate_invoice_docs_count": 115,
+      "ambiguous_line_account_invoice_count": 133,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [
+        {
+          "supplier_siren": "{'value': '810365817'}",
+          "invoice_number": "RES-FR-473389-4",
+          "invoice_date": "02/09/2024",
+          "total_amount": "0.00",
+          "document_type": "INVOICESTATEMENTWITHOUTVAT",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_929728467:01b77d63-f9b7-4a1a-bc8e-004fc25d4906",
+            "fr_bd_929728467:0cfa6349-4256-4140-9f61-b1d4479e02f0"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '810365817', 'bbox': [2935, 613, 3370, 650], 'page': 0}",
+          "invoice_number": "RES-FR-473389-27",
+          "invoice_date": "10/02/2025",
+          "total_amount": "0.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_929728467:01f93df7-950f-4a5b-8d56-401c8c38bc30",
+            "fr_bd_929728467:91fac156-8a91-456a-9257-de0d921a1677"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '810365817', 'bbox': [2931, 613, 3370, 650], 'page': 0}",
+          "invoice_number": "RES-FR-473389-20",
+          "invoice_date": "23/12/2024",
+          "total_amount": "22.86",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_929728467:06e80298-144c-44c8-8341-cd3b1118720f",
+            "fr_bd_929728467:edaeb4fc-afb7-4c5f-871c-034eab7feb22"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '810365817'}",
+          "invoice_number": "RES-FR-473389-26",
+          "invoice_date": "03/02/2025",
+          "total_amount": "-113.02",
+          "document_type": "INVOICESTATEMENTWITHOUTVAT",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_929728467:098c8a79-5780-47a3-81b9-11ef48d68c29",
+            "fr_bd_929728467:63413ade-df23-460f-b95e-f08d9ea20155"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '810365817'}",
+          "invoice_number": "RES-FR-473389-12",
+          "invoice_date": "28/10/2024",
+          "total_amount": "-29.46",
+          "document_type": "INVOICESTATEMENTWITHOUTVAT",
+          "count": 3,
+          "invoice_form_ids": [
+            "fr_bd_929728467:0a3f5051-574c-4e7a-8dde-40ba4e73d518",
+            "fr_bd_929728467:dbfc8d07-f23b-4126-80ff-818a9cde72d6",
+            "fr_bd_929728467:f33ecda8-b206-4a16-982d-d7785df083e9"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '810365817', 'bbox': [2935, 613, 3370, 650], 'page': 0}",
+          "invoice_number": "RES-FR-473389-31",
+          "invoice_date": "10/03/2025",
+          "total_amount": "0.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_929728467:0ed35f31-165f-4f68-9bb5-b492e43246ef",
+            "fr_bd_929728467:8934eea8-ae0a-4e8a-9144-b1a9b49965d5"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '810365817', 'bbox': [2931, 613, 3370, 650], 'page': 0}",
+          "invoice_number": "RES-FR-473389-19",
+          "invoice_date": "16/12/2024",
+          "total_amount": "15.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_929728467:0f14cd5b-8b08-4731-b0b8-3cfc74ffa79a",
+            "fr_bd_929728467:80752606-d15b-417c-bec3-12a90c8049be"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '810365817'}",
+          "invoice_number": "RES-FR-473389-5",
+          "invoice_date": "09/09/2024",
+          "total_amount": "0.00",
+          "document_type": "INVOICESTATEMENTWITHOUTVAT",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_929728467:0fb3e194-31de-4c39-b9dc-a01a60d17c30",
+            "fr_bd_929728467:e65d88e1-cc9b-40c7-85ce-4ba817010404"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '810365817'}",
+          "invoice_number": "RES-FR-473389-41",
+          "invoice_date": "19/05/2025",
+          "total_amount": "-9.09",
+          "document_type": "INVOICESTATEMENTWITHOUTVAT",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_929728467:1209cf61-9526-4e20-8589-f6aa45d9ed35",
+            "fr_bd_929728467:d28aaa9e-ef14-4a87-9a80-312419232d84"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '810365817'}",
+          "invoice_number": "RES-FR-473389-34",
+          "invoice_date": "31/03/2025",
+          "total_amount": "-85.41",
+          "document_type": "INVOICESTATEMENTWITHOUTVAT",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_929728467:12e281c2-7e85-4639-90d9-0c633b43a43f",
+            "fr_bd_929728467:65092dae-7a58-496e-af79-1ee9b679e3bd"
+          ]
+        }
+      ],
+      "ambiguous_line_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_929728467:01b77d63-f9b7-4a1a-bc8e-004fc25d4906",
+          "accounts": [
+            "606100",
+            "622700"
+          ],
+          "invoice_number": "res-fr-473389-4"
+        },
+        {
+          "invoice_form_id": "fr_bd_929728467:02bcaed0-710b-4604-9c9a-ecbea966ed1b",
+          "accounts": [
+            "6068",
+            "6011"
+          ],
+          "invoice_number": "F25-01816"
+        },
+        {
+          "invoice_form_id": "fr_bd_929728467:04dfea13-6a18-4478-bbfe-e1d3df20c83e",
+          "accounts": [
+            "6068",
+            "6063"
+          ],
+          "invoice_number": "FAC-2025-1107"
+        },
+        {
+          "invoice_form_id": "fr_bd_929728467:08b1dbea-9995-4e06-bdd4-9a925dea09f0",
+          "accounts": [
+            "606",
+            "622700",
+            "606300"
+          ],
+          "invoice_number": ""
+        },
+        {
+          "invoice_form_id": "fr_bd_929728467:09223d97-95de-4c19-8304-92aa005441a3",
+          "accounts": [
+            "601",
+            "6068"
+          ],
+          "invoice_number": "F25-37342"
+        },
+        {
+          "invoice_form_id": "fr_bd_929728467:0a3f5051-574c-4e7a-8dde-40ba4e73d518",
+          "accounts": [
+            "6226",
+            "6227"
+          ],
+          "invoice_number": "res-fr-473389-12"
+        },
+        {
+          "invoice_form_id": "fr_bd_929728467:0aafde09-d9ee-4a5c-8b75-49233e6b15bf",
+          "accounts": [
+            "6063",
+            "6226"
+          ],
+          "invoice_number": "022-074058"
+        },
+        {
+          "invoice_form_id": "fr_bd_929728467:0cfa6349-4256-4140-9f61-b1d4479e02f0",
+          "accounts": [
+            "606100",
+            "622700",
+            "606"
+          ],
+          "invoice_number": "res-fr-473389-4"
+        },
+        {
+          "invoice_form_id": "fr_bd_929728467:0e719a00-2389-41a9-aae5-1d8a1817861d",
+          "accounts": [
+            "6061",
+            "6068",
+            "6351"
+          ],
+          "invoice_number": "106005358123"
+        },
+        {
+          "invoice_form_id": "fr_bd_929728467:116b7af4-101d-442e-bc50-0f9d435e9e84",
+          "accounts": [
+            "6061",
+            "6351"
+          ],
+          "invoice_number": "125002208170"
+        }
+      ],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_839181104",
+      "client_siren": "839181104",
+      "client_ape": "4932Z",
+      "client_ape_source": "recipient",
+      "kmorganisation_doc_id": "fr_bd_839181104:0beb1c153cdc4ae8bd9beb6ea7af8cd2",
+      "invoice_form_docs_seen": 1806,
+      "inferred_metiers": [
+        "transport"
+      ],
+      "selected_metiers": [
+        "transport"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_839181104:0023b811-8ed4-4d2e-9caa-c6e9b3768723",
+        "fr_bd_839181104:002fb0b3-5c85-4270-a26f-28b236e96d90",
+        "fr_bd_839181104:0065afbd-93f4-4c7e-aad9-6d94b0e49c06"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 1806,
+      "entry_copied": 0,
+      "created": 1807,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 336,
+      "duplicate_invoice_docs_count": 789,
+      "ambiguous_line_account_invoice_count": 75,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [
+        {
+          "supplier_siren": "{'value': '839181104', 'bbox': [306, 354, 1262, 402], 'page': 0}",
+          "invoice_number": "FAC1190",
+          "invoice_date": "31/12/2024",
+          "total_amount": "110.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_839181104:002fb0b3-5c85-4270-a26f-28b236e96d90",
+            "fr_bd_839181104:743ec405-325c-41ff-aeeb-65907124e4b1"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '839181104', 'bbox': [187, 213, 776, 261], 'page': 0}",
+          "invoice_number": "FAC0926",
+          "invoice_date": "26/05/2024",
+          "total_amount": "110.00",
+          "document_type": "INVOICE",
+          "count": 3,
+          "invoice_form_ids": [
+            "fr_bd_839181104:00bbddf0-a363-4db6-93d2-ba9367c07a51",
+            "fr_bd_839181104:0398bd98-aea1-4ef8-9ab0-5246f3bb471d",
+            "fr_bd_839181104:e61e2632-1f56-47f0-b6c9-2f5928949de1"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '839181104', 'bbox': [187, 217, 780, 265], 'page': 0}",
+          "invoice_number": "FAC0952",
+          "invoice_date": "04/06/2024",
+          "total_amount": "1755.00",
+          "document_type": "INVOICE",
+          "count": 3,
+          "invoice_form_ids": [
+            "fr_bd_839181104:02754391-39a5-4fb4-970e-7721efcd1bbc",
+            "fr_bd_839181104:b0456656-dd52-4524-9b2c-418308680a5b",
+            "fr_bd_839181104:ed96957e-c147-4df9-9e76-daa9f0099058"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '810752519', 'bbox': [620, 3029, 1909, 3088], 'page': 0}",
+          "invoice_number": "100965",
+          "invoice_date": "06/09/2024",
+          "total_amount": "250.00",
+          "document_type": "INVOICE",
+          "count": 3,
+          "invoice_form_ids": [
+            "fr_bd_839181104:02fbc2cc-6a06-4f57-b3ba-9244d24cb4d7",
+            "fr_bd_839181104:77990c64-ee14-4a0a-84a4-4d10e88206e1",
+            "fr_bd_839181104:9f304328-d22e-42d5-b4e5-061c6975a329"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '397480930'}",
+          "invoice_number": "REMISE A ZÉRO",
+          "invoice_date": "02/08/2023",
+          "total_amount": "17.99",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_839181104:0300149d-c6a5-4996-a052-92671ad2b48c",
+            "fr_bd_839181104:bdb1d933-0419-4901-82b4-c003cac402d6"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '839181104', 'bbox': [187, 217, 780, 265], 'page': 0}",
+          "invoice_number": "FAC0996",
+          "invoice_date": "28/06/2024",
+          "total_amount": "70.00",
+          "document_type": "INVOICE",
+          "count": 3,
+          "invoice_form_ids": [
+            "fr_bd_839181104:035606ad-33a3-4bd5-89f3-931779b8cb0b",
+            "fr_bd_839181104:39fa418d-a4df-4215-a456-c83b1ed7ea51",
+            "fr_bd_839181104:66eca71a-c9d9-406a-a215-16f1bb53bc59"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '839181104', 'bbox': [187, 213, 776, 261], 'page': 0}",
+          "invoice_number": "FAC1034",
+          "invoice_date": "27/07/2024",
+          "total_amount": "2530.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_839181104:03a9bfb7-8b02-4dcf-b31b-65316ba70fc2",
+            "fr_bd_839181104:bf8a0bd8-3959-4851-be93-b7f76f347688"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '830742326', 'bbox': [266, 340, 1178, 387], 'page': 0}",
+          "invoice_number": "109",
+          "invoice_date": "23/04/2024",
+          "total_amount": "100.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_839181104:0428cb7f-ae6c-41c8-ab26-0c4d0015aa6e",
+            "fr_bd_839181104:e79a761e-ba14-4b42-b088-b416f7f1737d"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '397480930'}",
+          "invoice_number": "11280741390123",
+          "invoice_date": "02/01/2023",
+          "total_amount": "50.98",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_839181104:04efc4a5-0571-450f-9204-15c22d03154f",
+            "fr_bd_839181104:f6174028-f5df-4b93-af84-9128f0d26a88"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '839181104', 'bbox': [187, 217, 780, 265], 'page': 0}",
+          "invoice_number": "FAC1105",
+          "invoice_date": "09/12/2024",
+          "total_amount": "60.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_839181104:04f156cb-3efa-4d28-8233-b8d8024e0840",
+            "fr_bd_839181104:a71cf76c-b0a7-4353-81f3-3ab0258913b4"
+          ]
+        }
+      ],
+      "ambiguous_line_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_839181104:04efc4a5-0571-450f-9204-15c22d03154f",
+          "accounts": [
+            "6062",
+            "6122"
+          ],
+          "invoice_number": "11280741390123"
+        },
+        {
+          "invoice_form_id": "fr_bd_839181104:07255593-e5fa-4d9e-8347-76b59fbce3f3",
+          "accounts": [
+            "606100",
+            "709100"
+          ],
+          "invoice_number": ""
+        },
+        {
+          "invoice_form_id": "fr_bd_839181104:086e27e0-75a0-41a8-85b7-3d67aa761319",
+          "accounts": [
+            "606200",
+            "606800"
+          ],
+          "invoice_number": "23306026"
+        },
+        {
+          "invoice_form_id": "fr_bd_839181104:0bbcd62b-5daa-482d-be3e-5664c2d9615a",
+          "accounts": [
+            "606100",
+            "606300"
+          ],
+          "invoice_number": "694955/02/15/01"
+        },
+        {
+          "invoice_form_id": "fr_bd_839181104:0fbe2a10-0607-4239-888a-7f38d5f7ebbc",
+          "accounts": [
+            "2183",
+            "6068"
+          ],
+          "invoice_number": "INV0001"
+        },
+        {
+          "invoice_form_id": "fr_bd_839181104:11cd6556-6e80-46b2-8c26-f77392c86358",
+          "accounts": [
+            "6068",
+            "6061"
+          ],
+          "invoice_number": "FA183290"
+        },
+        {
+          "invoice_form_id": "fr_bd_839181104:15b91bd9-7d96-474e-a7d8-0e88bdc3c3a1",
+          "accounts": [
+            "2183",
+            "6068"
+          ],
+          "invoice_number": ""
+        },
+        {
+          "invoice_form_id": "fr_bd_839181104:16a681aa-9308-467a-af66-45011d52cecd",
+          "accounts": [
+            "60610000",
+            "62260000"
+          ],
+          "invoice_number": "INV-FR-130539681-2024-7259"
+        },
+        {
+          "invoice_form_id": "fr_bd_839181104:1718373e-c3bb-4168-8317-ec9554fdfcf4",
+          "accounts": [
+            "60610000",
+            "62260000"
+          ],
+          "invoice_number": "INV-FR-130539681-2024-7259"
+        },
+        {
+          "invoice_form_id": "fr_bd_839181104:18a5fae4-4507-431b-9205-30845a6f7bb3",
+          "accounts": [
+            "6062",
+            "6061",
+            "6068"
+          ],
+          "invoice_number": "23300491"
+        }
+      ],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_888020088",
+      "client_siren": "888020088",
+      "client_ape": "4932Z",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_888020088:8844dd904cc74dadb3f7092add30aeb8",
+      "invoice_form_docs_seen": 344,
+      "inferred_metiers": [
+        "transport"
+      ],
+      "selected_metiers": [
+        "transport"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_888020088:00436e74-4b31-4958-bb60-a44c394646f7",
+        "fr_bd_888020088:00f004c9-ab5b-42fc-8f22-54dcc28e238c",
+        "fr_bd_888020088:035e738d-f389-4407-a84c-0d06fb37b404"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 344,
+      "entry_copied": 0,
+      "created": 345,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 21,
+      "duplicate_invoice_docs_count": 43,
+      "ambiguous_line_account_invoice_count": 23,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [
+        {
+          "supplier_siren": "{'value': '888020088', 'bbox': [125, 454, 596, 499], 'page': 0}",
+          "invoice_number": "FAC0004",
+          "invoice_date": "11/02/2024",
+          "total_amount": "220.01",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_888020088:00436e74-4b31-4958-bb60-a44c394646f7",
+            "fr_bd_888020088:4d63b4d6-fcbf-4a76-ada0-e09da16852ff"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '888020088', 'bbox': [675, 536, 1150, 588], 'page': 0}",
+          "invoice_number": "FAC0063",
+          "invoice_date": "06/07/2024",
+          "total_amount": "1170.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_888020088:05fda12c-6830-4c70-a946-dfa512f5e743",
+            "fr_bd_888020088:144c9ccb-e295-452f-8f61-67f1477d0aae"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '888020088', 'bbox': [46, 147, 171, 160], 'page': 0}",
+          "invoice_number": "INV00005",
+          "invoice_date": "08/08/2024",
+          "total_amount": "465.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_888020088:0a6c820e-23f1-4743-be6e-63017ea15576",
+            "fr_bd_888020088:b124db82-8822-4c44-a051-8481d0a40230"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '888020088', 'bbox': [210, 1211, 799, 1273], 'page': 0}",
+          "invoice_number": "INV00006",
+          "invoice_date": "20/10/2024",
+          "total_amount": "430.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_888020088:18626fb5-2831-4d81-bf35-880560389851",
+            "fr_bd_888020088:d7261906-96aa-405e-8f16-a56d722885ab"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '442947859'}",
+          "invoice_number": "700-168265-T0-1",
+          "invoice_date": "22/12/2024",
+          "total_amount": "8.72",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_888020088:1a695055-5154-43cc-af72-23233f53b3f6",
+            "fr_bd_888020088:3718a9e5-ce60-4ea6-82eb-008ef6eadded"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '442947859'}",
+          "invoice_number": "700-835793",
+          "invoice_date": "03/03/2024",
+          "total_amount": "10.56",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_888020088:2558f117-9bfc-4ff1-931a-132d8f1f5f02",
+            "fr_bd_888020088:30a89f36-bf64-4671-9f52-0eb8550a97d5"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '888020088', 'bbox': [187, 543, 658, 588], 'page': 0}",
+          "invoice_number": "FAC0061",
+          "invoice_date": "13/04/2024",
+          "total_amount": "2562.51",
+          "document_type": "INVOICE",
+          "count": 3,
+          "invoice_form_ids": [
+            "fr_bd_888020088:294fa7f1-314b-4b72-be95-ea108bcc7d83",
+            "fr_bd_888020088:a84cef71-1b0c-41c3-a080-21116f15295e",
+            "fr_bd_888020088:ba55a504-d648-40c1-87dc-0ca55aab33ec"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '808959050', 'bbox': [679, 299, 1240, 344], 'page': 0}",
+          "invoice_number": "FAC0064",
+          "invoice_date": "06/07/2024",
+          "total_amount": "100.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_888020088:2a32d1c9-f33a-477b-ad80-f9d4e3b8af7d",
+            "fr_bd_888020088:b1c000fd-eef4-471f-9f0a-ee5132eb00b9"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '888020088', 'bbox': [266, 658, 738, 705], 'page': 0}",
+          "invoice_number": "FAC0064",
+          "invoice_date": "06/07/2024",
+          "total_amount": "100.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_888020088:3027f989-3148-4935-a7b9-537b239e72d2",
+            "fr_bd_888020088:54e2e4f2-71e3-4130-b8ad-59caecba69c1"
+          ]
+        },
+        {
+          "supplier_siren": "{'value': '888020088', 'bbox': [550, 530, 1041, 581], 'page': 0}",
+          "invoice_number": "F 04",
+          "invoice_date": "13/03/2024",
+          "total_amount": "1190.00",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_888020088:36c74b74-47e0-40e5-a21f-15a4a22a68c1",
+            "fr_bd_888020088:b1fe5ba4-fbab-426e-875e-ab51c5047180"
+          ]
+        }
+      ],
+      "ambiguous_line_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_888020088:1017ba21-c59c-4849-ac07-8d001cfba98d",
+          "accounts": [
+            "606800",
+            "606300",
+            "606100"
+          ],
+          "invoice_number": "0224P520007225"
+        },
+        {
+          "invoice_form_id": "fr_bd_888020088:1e733703-0dce-4c67-a30d-b1c5a7b9dbb6",
+          "accounts": [
+            "60610000",
+            "60630000"
+          ],
+          "invoice_number": "NoAUTO663946"
+        },
+        {
+          "invoice_form_id": "fr_bd_888020088:2a96cf19-65b1-4939-8b24-a27e273dda5e",
+          "accounts": [
+            "6226",
+            "6228",
+            "758"
+          ],
+          "invoice_number": ""
+        },
+        {
+          "invoice_form_id": "fr_bd_888020088:4247d7e7-2632-4d97-9c2f-162b06f2df74",
+          "accounts": [
+            "60610000",
+            "60630000"
+          ],
+          "invoice_number": "3627"
+        },
+        {
+          "invoice_form_id": "fr_bd_888020088:42c8732a-1bb7-4460-b51e-1eaaef8bfa0c",
+          "accounts": [
+            "60610000",
+            "60620000"
+          ],
+          "invoice_number": "0005240928008950018"
+        },
+        {
+          "invoice_form_id": "fr_bd_888020088:6b8aa8ec-a36f-44f1-a4eb-4757ff3523ca",
+          "accounts": [
+            "606100",
+            "606300",
+            "606200"
+          ],
+          "invoice_number": "19"
+        },
+        {
+          "invoice_form_id": "fr_bd_888020088:78836ed5-d378-414b-96de-c96044b86519",
+          "accounts": [
+            "606200",
+            "622600"
+          ],
+          "invoice_number": "IT4U31045I1789"
+        },
+        {
+          "invoice_form_id": "fr_bd_888020088:7975047d-7b74-4fe0-92a0-a30925557d7f",
+          "accounts": [
+            "606100",
+            "606300"
+          ],
+          "invoice_number": "18960226"
+        },
+        {
+          "invoice_form_id": "fr_bd_888020088:8b740579-74fb-4f3c-9d6c-cf2744ba8ddd",
+          "accounts": [
+            "606100",
+            "606300"
+          ],
+          "invoice_number": "3901"
+        },
+        {
+          "invoice_form_id": "fr_bd_888020088:98aab0b6-cb8d-4dc3-944e-65d543d780f3",
+          "accounts": [
+            "606200",
+            "622600"
+          ],
+          "invoice_number": "DS-ASE-INV-FR-2023-193197062"
+        }
+      ],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_831060876",
+      "client_siren": "831060876",
+      "client_ape": "4932Z",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "",
+      "invoice_form_docs_seen": 71,
+      "inferred_metiers": [
+        "transport"
+      ],
+      "selected_metiers": [
+        "transport"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_831060876:00d372fc-901a-4cab-bf99-3849fdc1b1a2",
+        "fr_bd_831060876:0b4b8752-dbfb-495f-9910-e40c3bc7e053",
+        "fr_bd_831060876:0e546839-567f-4e0e-beab-2f76ec9e952c"
+      ],
+      "kmorganisation_copied": 0,
+      "invoice_form_copied": 71,
+      "entry_copied": 0,
+      "created": 71,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 1,
+      "duplicate_invoice_docs_count": 2,
+      "ambiguous_line_account_invoice_count": 18,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [
+        {
+          "supplier_siren": "{'value': '949891188'}",
+          "invoice_number": "R25989675",
+          "invoice_date": "05/12/2025",
+          "total_amount": "849.22",
+          "document_type": "INVOICE",
+          "count": 2,
+          "invoice_form_ids": [
+            "fr_bd_831060876:1e818f07-7f4b-4983-a0e3-e81983739b2b",
+            "fr_bd_831060876:99db7a75-4da5-47bb-8d7e-62d35e3bb320"
+          ]
+        }
+      ],
+      "ambiguous_line_account_examples": [
+        {
+          "invoice_form_id": "fr_bd_831060876:1b8a59e0-a771-42dc-b58d-57058f1d71cb",
+          "accounts": [
+            "6062",
+            "2183"
+          ],
+          "invoice_number": "11833640641224"
+        },
+        {
+          "invoice_form_id": "fr_bd_831060876:1e818f07-7f4b-4983-a0e3-e81983739b2b",
+          "accounts": [
+            "6061",
+            "6351"
+          ],
+          "invoice_number": "R25989675"
+        },
+        {
+          "invoice_form_id": "fr_bd_831060876:23481930-fda2-4798-8769-c04d4c787cd6",
+          "accounts": [
+            "6227",
+            "6097"
+          ],
+          "invoice_number": "926372"
+        },
+        {
+          "invoice_form_id": "fr_bd_831060876:261adb81-97b7-4b25-be1f-a9065d7acb56",
+          "accounts": [
+            "6061",
+            "658"
+          ],
+          "invoice_number": "Remise a Zéro"
+        },
+        {
+          "invoice_form_id": "fr_bd_831060876:3070f6c6-bc41-4e4e-a88b-7ff065e4da21",
+          "accounts": [
+            "6062",
+            "2183"
+          ],
+          "invoice_number": "Remise a Zéro"
+        },
+        {
+          "invoice_form_id": "fr_bd_831060876:46ea5973-6c77-4173-9e92-ef4afd62dd31",
+          "accounts": [
+            "6062",
+            "2183"
+          ],
+          "invoice_number": ""
+        },
+        {
+          "invoice_form_id": "fr_bd_831060876:5451a8e3-de6b-4ad4-b3a6-b554a9922a2b",
+          "accounts": [
+            "6061",
+            "658"
+          ],
+          "invoice_number": "Remise a Zéro"
+        },
+        {
+          "invoice_form_id": "fr_bd_831060876:63c7d302-f2f6-4562-8d05-e4b15e1c2ca0",
+          "accounts": [
+            "606100",
+            "606300"
+          ],
+          "invoice_number": ""
+        },
+        {
+          "invoice_form_id": "fr_bd_831060876:67ff46d9-8c01-4e30-b539-55e13df963c5",
+          "accounts": [
+            "6226",
+            "6278",
+            "6063"
+          ],
+          "invoice_number": "Remise a Zéro"
+        },
+        {
+          "invoice_form_id": "fr_bd_831060876:6fc1bd82-d633-4664-98aa-712189c100e4",
+          "accounts": [
+            "6062",
+            "6068",
+            "2183"
+          ],
+          "invoice_number": "11950717170224"
+        }
+      ],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_890852403",
+      "client_siren": "890852403",
+      "client_ape": "4941A",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_890852403:30b1e7e5cefe433182b9049beec695d1",
+      "invoice_form_docs_seen": 11,
+      "inferred_metiers": [
+        "transport"
+      ],
+      "selected_metiers": [
+        "transport"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_890852403:0046a221-c8d5-4b11-916b-5476272db15e",
+        "fr_bd_890852403:0b3ad593-88d4-4344-9144-92b8ddd46c50",
+        "fr_bd_890852403:369906ae-09d0-4a08-a9a8-b9b0c467e9ce"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 11,
+      "entry_copied": 0,
+      "created": 12,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 0,
+      "duplicate_invoice_docs_count": 0,
+      "ambiguous_line_account_invoice_count": 0,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [],
+      "ambiguous_line_account_examples": [],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_904094349",
+      "client_siren": "904094349",
+      "client_ape": "4941B",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_904094349:1bfe94262c4046e4827f9807a91b9fa5",
+      "invoice_form_docs_seen": 4,
+      "inferred_metiers": [
+        "transport"
+      ],
+      "selected_metiers": [
+        "transport"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_904094349:1244255a-6198-4bf7-aab9-49614e810405",
+        "fr_bd_904094349:4b23b968-ef29-47a4-bcdd-13c4324071be",
+        "fr_bd_904094349:652e5653-64b9-4402-a3cd-e5af052ff1c5"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 4,
+      "entry_copied": 0,
+      "created": 5,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 0,
+      "duplicate_invoice_docs_count": 0,
+      "ambiguous_line_account_invoice_count": 0,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [],
+      "ambiguous_line_account_examples": [],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_922040506",
+      "client_siren": "922040506",
+      "client_ape": "4932Z",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_922040506:08466d4d56344ed4a50b398be8c9aa44",
+      "invoice_form_docs_seen": 4,
+      "inferred_metiers": [
+        "transport"
+      ],
+      "selected_metiers": [
+        "transport"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_922040506:1de189ca-fc7b-4324-b536-f1ab8fc96cd4",
+        "fr_bd_922040506:b3de0ebe-1a3c-40f7-803f-1e0afe26d77c",
+        "fr_bd_922040506:cfdb4202-80d8-4ad3-9386-d797d841169c"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 4,
+      "entry_copied": 0,
+      "created": 5,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 0,
+      "duplicate_invoice_docs_count": 0,
+      "ambiguous_line_account_invoice_count": 0,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [],
+      "ambiguous_line_account_examples": [],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_844082156",
+      "client_siren": "844082156",
+      "client_ape": "4932Z",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_844082156:e7503bb0550a45c9a51c5b61c6b74c89",
+      "invoice_form_docs_seen": 3,
+      "inferred_metiers": [
+        "transport"
+      ],
+      "selected_metiers": [
+        "transport"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_844082156:7fe0e039-2165-4035-a88e-eaa8f60124de",
+        "fr_bd_844082156:fa0d3e8e-d40c-4957-9348-98a40735315e",
+        "fr_bd_844082156:fc2eb22b-ee10-43d6-8f94-90361b7613b8"
+      ],
+      "kmorganisation_copied": 2,
+      "invoice_form_copied": 3,
+      "entry_copied": 0,
+      "created": 5,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 0,
+      "duplicate_invoice_docs_count": 0,
+      "ambiguous_line_account_invoice_count": 0,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [],
+      "ambiguous_line_account_examples": [],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_840367817",
+      "client_siren": "840367817",
+      "client_ape": "4932Z",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_840367817:8967f5b1439a411f2d8567d217f029c2",
+      "invoice_form_docs_seen": 2,
+      "inferred_metiers": [
+        "transport"
+      ],
+      "selected_metiers": [
+        "transport"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_840367817:cc89bd59-4a78-4082-a190-96a47a36c1ff",
+        "fr_bd_840367817:dc81f70f-0342-4724-9d9a-bcae9812c1b1"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 2,
+      "entry_copied": 0,
+      "created": 3,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 0,
+      "duplicate_invoice_docs_count": 0,
+      "ambiguous_line_account_invoice_count": 0,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [],
+      "ambiguous_line_account_examples": [],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_979300076",
+      "client_siren": "979300076",
+      "client_ape": "4932Z",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "",
+      "invoice_form_docs_seen": 2,
+      "inferred_metiers": [
+        "transport"
+      ],
+      "selected_metiers": [
+        "transport"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_979300076:e1f084ac-819a-48ee-b44e-7d3947200987",
+        "fr_bd_979300076:e2cf3a37-f68c-49b4-bece-12f4d0a2cf10"
+      ],
+      "kmorganisation_copied": 0,
+      "invoice_form_copied": 2,
+      "entry_copied": 0,
+      "created": 2,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 0,
+      "duplicate_invoice_docs_count": 0,
+      "ambiguous_line_account_invoice_count": 0,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [],
+      "ambiguous_line_account_examples": [],
+      "ambiguous_entry_account_examples": []
+    },
+    {
+      "partition_prefix": "fr_bd_950819938",
+      "client_siren": "950819938",
+      "client_ape": "4941B",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "",
+      "invoice_form_docs_seen": 1,
+      "inferred_metiers": [
+        "transport"
+      ],
+      "selected_metiers": [
+        "transport"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_950819938:a5c5f703-ca57-442d-a0c0-0fc088a90530"
+      ],
+      "kmorganisation_copied": 0,
+      "invoice_form_copied": 1,
+      "entry_copied": 0,
+      "created": 1,
+      "updated": 0,
+      "duplicate_invoice_keys_count": 0,
+      "duplicate_invoice_docs_count": 0,
+      "ambiguous_line_account_invoice_count": 0,
+      "ambiguous_entry_account_invoice_count": 0,
+      "duplicate_invoice_examples": [],
+      "ambiguous_line_account_examples": [],
+      "ambiguous_entry_account_examples": []
+    }
+  ]
+}

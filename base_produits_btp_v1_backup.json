@@ -1,0 +1,4884 @@
+{
+  "meta": {
+    "profile_id": "produits_btp_v1",
+    "metier": "btp",
+    "generated_at": "2026-05-06T09:34:35.523583Z",
+    "items_count": 162,
+    "accounts_alignment_from": "abt3fec2",
+    "selector": "strict_exact_only + manual_btp_shortlist_from_user_clients + exact_btp_expansion_to_200_from_keymanage_accounting",
+    "source_client": "519665103",
+    "updated": "2026-05-18T10:39:52.092618+00:00"
+  },
+  "items": [
+    {
+      "article_source": "Gazole",
+      "article_canonique": "gazole",
+      "mots_cles": [
+        "gazole"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_509118329:05a6aabf-2ade-4502-9e17-1740956eed34",
+        "fr_bd_509118329:06c438f9-5fa6-4823-89df-905c5de44e63",
+        "fr_bd_509118329:07238c2e-3d13-4c11-9604-2eb3df5e3a7c"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "5610C",
+        "4730Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_844858571",
+        "fr_bd_889860938",
+        "fr_bd_879788230",
+        "fr_bd_509118329",
+        "fr_bd_947858304",
+        "fr_bd_914837463",
+        "fr_bd_938751021",
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "DIESEL",
+      "article_canonique": "diesel",
+      "mots_cles": [
+        "diesel"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:2750a911-567b-47dc-ad16-47f54fdfe152",
+        "fr_bd_842785719:47b20ff1-7423-47c8-a274-64a58c8486de",
+        "fr_bd_842785719:a65c081e-ebf1-47f9-a0e5-4bdc24a8d47c"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4511Z",
+        "4730Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_844858571",
+        "fr_bd_889860938",
+        "fr_bd_879788230",
+        "fr_bd_947858304",
+        "fr_bd_914837463",
+        "fr_bd_938751021",
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Palette Lussiana",
+      "article_canonique": "palette lussiana",
+      "mots_cles": [
+        "palette",
+        "lussiana"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:13faa6e4-2556-4cc6-9b46-3504680dcf97",
+        "fr_bd_842785719:16aeb81c-3b73-454a-81bc-ff4f218bc644",
+        "fr_bd_842785719:171adf84-38fe-402e-a520-b8c66e5d3a4f"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304",
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "CONSIGNE PALETTE",
+      "article_canonique": "consigne palette",
+      "mots_cles": [
+        "consigne",
+        "palette"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:1246e547-a15b-4cb4-a489-493b0c127e65",
+        "fr_bd_842785719:19d5e7f0-8803-4c16-b567-f0e6e18fcdc9",
+        "fr_bd_842785719:22db91d2-a855-4252-85d8-d5219fee9fd2"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6022",
+      "compte_comptable_libelle": "Approvisionnements",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "SAC A GRAVAT PP TISSE BLANC 55X95 COLIS 10U",
+      "article_canonique": "sac gravat pp tisse blanc 55x95 colis 10u",
+      "mots_cles": [
+        "sac",
+        "gravat",
+        "pp",
+        "tisse",
+        "blanc",
+        "55x95",
+        "colis",
+        "10u"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:081cb2a8-9ee4-4878-8607-32c626f90ea0",
+        "fr_bd_842785719:125e45cc-d2ca-40fa-87a9-497b81928486",
+        "fr_bd_842785719:1ab55525-0417-46d2-b69f-743461a3cd9a"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Sac à gravat tissé 60x100cm paquet de 10 pièces",
+      "article_canonique": "sac gravat tisse 60x100cm paquet 10 pieces",
+      "mots_cles": [
+        "sac",
+        "gravat",
+        "tisse",
+        "60x100cm",
+        "paquet",
+        "10",
+        "pieces"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:2ee7c702-b3e7-473b-847e-9b9ce35e7044",
+        "fr_bd_842785719:35ea35b0-cd41-4458-9994-86c49d948d5e",
+        "fr_bd_842785719:741105f6-bf9f-497e-93bb-fb5ba87dc47a"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304",
+        "fr_bd_879788230",
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "PALETTE CONSIGNEE - SLM - SPC - VD OU LIVRAISON",
+      "article_canonique": "palette consignee slm spc vd ou livraison",
+      "mots_cles": [
+        "palette",
+        "consignee",
+        "slm",
+        "spc",
+        "vd",
+        "ou",
+        "livraison"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:1bb0944b-53c8-4102-b672-e00e40878e4a",
+        "fr_bd_842785719:2aa8d765-4c9e-419f-ad46-61cc728cba78",
+        "fr_bd_842785719:2c4de533-7a1c-4ce2-adb3-dcd177b131f7"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6021",
+      "compte_comptable_libelle": "Matières consommables",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Carburant",
+      "article_canonique": "carburant",
+      "mots_cles": [
+        "carburant"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_509118329:46c7d6fb-06ce-493f-8b49-34400db1c013",
+        "fr_bd_842785719:27800127-6c1b-4d26-8cb8-259aa312f3d8",
+        "fr_bd_842785719:83db184a-c867-4d7b-8762-6587b110027b"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4730Z",
+        "4671Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_844858571",
+        "fr_bd_879788230",
+        "fr_bd_509118329",
+        "fr_bd_914837463",
+        "fr_bd_938751021",
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "BLOC CREUX DE 500X200X200 B40 (70U/P) - VD SLM SEMI LGC NOISY",
+      "article_canonique": "bloc creux 500x200x200 b40 70u p vd slm",
+      "mots_cles": [
+        "bloc",
+        "creux",
+        "500x200x200",
+        "b40",
+        "70u",
+        "p",
+        "vd",
+        "slm"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:1bb0944b-53c8-4102-b672-e00e40878e4a",
+        "fr_bd_842785719:2aa8d765-4c9e-419f-ad46-61cc728cba78",
+        "fr_bd_842785719:2c4de533-7a1c-4ce2-adb3-dcd177b131f7"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "SCOTCH MSK6143 50MMX50M CARTON 24 UNITE",
+      "article_canonique": "scotch msk6143 50mmx50m carton 24 unite",
+      "mots_cles": [
+        "scotch",
+        "msk6143",
+        "50mmx50m",
+        "carton",
+        "24",
+        "unite"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:081cb2a8-9ee4-4878-8607-32c626f90ea0",
+        "fr_bd_842785719:1369ceb9-f52e-4818-94c0-0606bf0dbc24",
+        "fr_bd_842785719:1ab55525-0417-46d2-b69f-743461a3cd9a"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "ISOCOL MORTIER SAC 25 KG",
+      "article_canonique": "isocol mortier sac 25 kg",
+      "mots_cles": [
+        "isocol",
+        "mortier",
+        "sac",
+        "25",
+        "kg"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:081cb2a8-9ee4-4878-8607-32c626f90ea0",
+        "fr_bd_842785719:093cdcf5-e12c-4f5c-8534-c0a3c987be13",
+        "fr_bd_842785719:24d17929-4062-4d7d-89b9-6a4d98e114dc"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "ACTIPRO RUBAN DE MASQUAGE SUPERIEUR 48MMX50M",
+      "article_canonique": "actipro ruban masquage superieur 48mmx50m",
+      "mots_cles": [
+        "actipro",
+        "ruban",
+        "masquage",
+        "superieur",
+        "48mmx50m"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_879788230:02a7a311-b5df-4902-ae2f-1c114ad90697",
+        "fr_bd_879788230:02bc737f-6dd0-4bfc-b988-57eab61b8fef",
+        "fr_bd_879788230:1560ec6c-0f4e-49f4-98b2-80b202930c56"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4711F",
+        "4673B"
+      ],
+      "partitions_sources": [
+        "fr_bd_879788230"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "BIG BAG VIDE 1.T400",
+      "article_canonique": "big bag vide 1 t400",
+      "mots_cles": [
+        "big",
+        "bag",
+        "vide",
+        "1",
+        "t400"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:1ab55525-0417-46d2-b69f-743461a3cd9a",
+        "fr_bd_842785719:727227b3-a351-4c3f-a347-5826ad42a7fa",
+        "fr_bd_842785719:93545124-d4a2-4707-a0f9-63d4a44b860c"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "GO (Gazole)",
+      "article_canonique": "go gazole",
+      "mots_cles": [
+        "go",
+        "gazole"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:8eb6e66c-9573-4ae3-9dad-b4a4909141a7",
+        "fr_bd_842785719:d5f6707a-05be-4bb4-aeab-e914403d4bc7",
+        "fr_bd_842785719:f94e2361-c9d8-48e8-9788-6c9f9f50bbd4"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4730Z",
+        "4511Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_844858571",
+        "fr_bd_879788230",
+        "fr_bd_947858304",
+        "fr_bd_914837463",
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "PALET SEAC",
+      "article_canonique": "palet seac",
+      "mots_cles": [
+        "palet",
+        "seac"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:29c3e1c4-ccac-4609-ad7f-a555fc4ab4fc",
+        "fr_bd_842785719:a354b631-9cee-417a-b9bf-be5a9f8406d6",
+        "fr_bd_842785719:c508b6d2-2e26-4a83-b8f8-23ef349207bc"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "PALETTE EQIOM GRANULATS",
+      "article_canonique": "palette eqiom granulats",
+      "mots_cles": [
+        "palette",
+        "eqiom",
+        "granulats"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:13faa6e4-2556-4cc6-9b46-3504680dcf97",
+        "fr_bd_842785719:28cc72c0-dea0-49b1-afb0-333a9ff42aed",
+        "fr_bd_842785719:5144e9b7-18c0-4e74-b4c3-d813cf468740"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "WEBER THERM XM 25 KG",
+      "article_canonique": "weber therm xm 25 kg",
+      "mots_cles": [
+        "weber",
+        "therm",
+        "xm",
+        "25",
+        "kg"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:0b08bf24-ad29-41d6-b5a6-a18b86225e73",
+        "fr_bd_842785719:14006a14-c9a0-4127-a1eb-dd5f7af957fe",
+        "fr_bd_842785719:1a674a22-b2cc-4cee-a6ed-e8ee05ebd925"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "AQUALINE VELOURS EVO 16L BLANC",
+      "article_canonique": "aqualine velours evo 16l blanc",
+      "mots_cles": [
+        "aqualine",
+        "velours",
+        "evo",
+        "16l",
+        "blanc"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_879788230:1eed3ea3-bd4e-47b5-a814-3a728603d134",
+        "fr_bd_879788230:51e4573b-c5ba-482b-9e0e-adb909d68f54",
+        "fr_bd_879788230:5f753e07-eeca-4751-bafd-e439a5a228f8"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4711F"
+      ],
+      "partitions_sources": [
+        "fr_bd_879788230"
+      ],
+      "compte_comptable": "6021",
+      "compte_comptable_libelle": "Matières consommables",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "BA13 STANDARD 1.2 X 2.5M",
+      "article_canonique": "ba13 standard 1 2 2 5m",
+      "mots_cles": [
+        "ba13",
+        "standard",
+        "1",
+        "2",
+        "2",
+        "5m"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:093cdcf5-e12c-4f5c-8534-c0a3c987be13",
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f",
+        "fr_bd_842785719:5b9893bd-cbe8-4c2d-bd9f-cc1f7120ed56"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4779Z",
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "PARPAINGS PLEINS ALLEGES B80 500X200X200 SEAC",
+      "article_canonique": "parpaings pleins alleges b80 500x200x200 seac",
+      "mots_cles": [
+        "parpaings",
+        "pleins",
+        "alleges",
+        "b80",
+        "500x200x200",
+        "seac"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:29c3e1c4-ccac-4609-ad7f-a555fc4ab4fc",
+        "fr_bd_842785719:a354b631-9cee-417a-b9bf-be5a9f8406d6",
+        "fr_bd_842785719:c508b6d2-2e26-4a83-b8f8-23ef349207bc"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "RAIL 48 3ML",
+      "article_canonique": "rail 48 3ml",
+      "mots_cles": [
+        "rail",
+        "48",
+        "3ml"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f",
+        "fr_bd_842785719:5b9893bd-cbe8-4c2d-bd9f-cc1f7120ed56",
+        "fr_bd_842785719:a2454c12-57c9-4ce1-8198-7bbe63dc2cf1"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "VDE CIMENT CEM II/A-LL 42.5 N CE CP2 NF (25kg)",
+      "article_canonique": "vde ciment cem ii ll 42 5 n",
+      "mots_cles": [
+        "vde",
+        "ciment",
+        "cem",
+        "ii",
+        "ll",
+        "42",
+        "5",
+        "n"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f",
+        "fr_bd_842785719:5b9893bd-cbe8-4c2d-bd9f-cc1f7120ed56",
+        "fr_bd_842785719:a1157358-e6a5-4933-befd-79f4ef05eb04"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4779Z",
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "VIS PLACO 3.5X25 PL35025 BOITE DE 1000U",
+      "article_canonique": "vis placo 3 5x25 pl35025 boite 1000u",
+      "mots_cles": [
+        "vis",
+        "placo",
+        "3",
+        "5x25",
+        "pl35025",
+        "boite",
+        "1000u"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:1ab55525-0417-46d2-b69f-743461a3cd9a",
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f",
+        "fr_bd_842785719:a2454c12-57c9-4ce1-8198-7bbe63dc2cf1"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "ACTIPRO MASTIC ACRYLIQUE EVO SNJF BLC 300ML",
+      "article_canonique": "actipro mastic acrylique evo snjf blc 300ml",
+      "mots_cles": [
+        "actipro",
+        "mastic",
+        "acrylique",
+        "evo",
+        "snjf",
+        "blc",
+        "300ml"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_879788230:02a7a311-b5df-4902-ae2f-1c114ad90697",
+        "fr_bd_879788230:11196077-054a-44d2-b35b-68b1676392e9",
+        "fr_bd_879788230:1a49512b-7163-4734-a84f-26b1781ed956"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4711F",
+        "4673B"
+      ],
+      "partitions_sources": [
+        "fr_bd_879788230"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "CUTTER STANDARD 18MM AVEC 3 LAMES NOIR",
+      "article_canonique": "cutter standard 18mm 3 lames noir",
+      "mots_cles": [
+        "cutter",
+        "standard",
+        "18mm",
+        "3",
+        "lames",
+        "noir"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:081cb2a8-9ee4-4878-8607-32c626f90ea0",
+        "fr_bd_842785719:10e50eec-1bfd-40f6-80c9-dbc994b4f7f1",
+        "fr_bd_842785719:3241f88f-5965-48c6-a3a4-49db77ea326b"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4779Z",
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "GANT LATEX ACTVE GRIP G1170 ROUGE / NOIR TAILLE 10",
+      "article_canonique": "gant latex actve grip g1170 rouge noir taille 10",
+      "mots_cles": [
+        "gant",
+        "latex",
+        "actve",
+        "grip",
+        "g1170",
+        "rouge",
+        "noir",
+        "taille"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:081cb2a8-9ee4-4878-8607-32c626f90ea0",
+        "fr_bd_842785719:1ab55525-0417-46d2-b69f-743461a3cd9a",
+        "fr_bd_842785719:4882b079-be43-4b49-8f1d-0a9ac15e874c"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Gasoil",
+      "article_canonique": "gasoil",
+      "mots_cles": [
+        "gasoil"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_844858571:353aafa1-ce30-4c5c-a7fa-13cce3064e7f",
+        "fr_bd_844858571:cccaa832-573f-46fb-bfec-6fdc9b61ecc1",
+        "fr_bd_844858571:d87cb8a7-3672-48d9-a475-228bab0e79ae"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4711F",
+        "4711C"
+      ],
+      "partitions_sources": [
+        "fr_bd_844858571",
+        "fr_bd_889860938",
+        "fr_bd_879788230",
+        "fr_bd_947858304",
+        "fr_bd_914837463"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Mortier adhésif plaque de platre DELTAPRO sac 25kg",
+      "article_canonique": "mortier adhesif plaque platre deltapro sac 25kg",
+      "mots_cles": [
+        "mortier",
+        "adhesif",
+        "plaque",
+        "platre",
+        "deltapro",
+        "sac",
+        "25kg"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:0386f2ab-e362-43bc-a250-e0729c8e9c03",
+        "fr_bd_842785719:1eb9d7ab-27df-47f9-bdd3-2ed14be81c24",
+        "fr_bd_842785719:66e8e9dd-0c02-4798-94d9-c297a662fcfc"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_879788230",
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "PLATOIR A JOINTER NOIR 280X140X8 TALIA STOCK",
+      "article_canonique": "platoir jointer noir 280x140x8 talia stock",
+      "mots_cles": [
+        "platoir",
+        "jointer",
+        "noir",
+        "280x140x8",
+        "talia",
+        "stock"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:1bb0944b-53c8-4102-b672-e00e40878e4a",
+        "fr_bd_842785719:2aa8d765-4c9e-419f-ad46-61cc728cba78",
+        "fr_bd_842785719:4b367277-e0b0-482c-8b30-aa5f476d1f18"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6021",
+      "compte_comptable_libelle": "Matières consommables",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Rond à béton TOR(cranté) HLE FeE500 Soudable diamètre 10 mm barre 6m",
+      "article_canonique": "rond beton tor crante hle fee500 soudable diametre 10mm",
+      "mots_cles": [
+        "rond",
+        "beton",
+        "tor",
+        "crante",
+        "hle",
+        "fee500",
+        "soudable",
+        "diametre"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:28cc72c0-dea0-49b1-afb0-333a9ff42aed",
+        "fr_bd_842785719:42517579-e642-4013-aed8-3774ac62a41d",
+        "fr_bd_842785719:5144e9b7-18c0-4e74-b4c3-d813cf468740"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304",
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "SAC A GRAVATS BLANC 55X95 10 UNITES STOCK",
+      "article_canonique": "sac gravats blanc 55x95 10 unites stock",
+      "mots_cles": [
+        "sac",
+        "gravats",
+        "blanc",
+        "55x95",
+        "10",
+        "unites",
+        "stock"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:081c766e-58c8-492a-8bd5-46420aeef88a",
+        "fr_bd_842785719:165151b4-4540-495d-96c2-1437058a82ce",
+        "fr_bd_842785719:1bb0944b-53c8-4102-b672-e00e40878e4a"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Treillis soudé en panneau pour dallage Ultibat en format 3,34 x 1,99m - maille 150 x 150 fil 7 mm",
+      "article_canonique": "treillis soude panneau dallage ultibat format 3 34",
+      "mots_cles": [
+        "treillis",
+        "soude",
+        "panneau",
+        "dallage",
+        "ultibat",
+        "format",
+        "3",
+        "34"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:28cc72c0-dea0-49b1-afb0-333a9ff42aed",
+        "fr_bd_842785719:4665c652-e55f-4804-9471-907b6e8dfe16",
+        "fr_bd_842785719:5144e9b7-18c0-4e74-b4c3-d813cf468740"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "VEDAFRANCE BOURRELET DGV10951 Cordon Coupe Feu VEDAFEU C 30 mm p/JD d'ouv. de 14 ä 20 mm STOCK (Sac de 1 Rlx x 30 ml)",
+      "article_canonique": "vedafrance bourrelet dgv10951 cordon coupe feu vedafeu c",
+      "mots_cles": [
+        "vedafrance",
+        "bourrelet",
+        "dgv10951",
+        "cordon",
+        "coupe",
+        "feu",
+        "vedafeu",
+        "c"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:024ec225-418f-4003-bae5-07f80a8309ee",
+        "fr_bd_842785719:1bb0944b-53c8-4102-b672-e00e40878e4a",
+        "fr_bd_842785719:6b1bf333-6653-4988-852b-0470c3b20d74"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6021",
+      "compte_comptable_libelle": "Matières consommables",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "5 SAC A GRAVATS",
+      "article_canonique": "5 sac gravats",
+      "mots_cles": [
+        "5",
+        "sac",
+        "gravats"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_947858304:0f2ce440-7400-4930-b5d2-b4665ec55c57",
+        "fr_bd_947858304:2554522f-10f8-4c9e-b585-121f356b80ba",
+        "fr_bd_947858304:2c901944-0f6d-4d56-b5c9-7cf5cd6c8b5f"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "BACHE PROTEC SOL 3X15M",
+      "article_canonique": "bache protec sol 3x15m",
+      "mots_cles": [
+        "bache",
+        "protec",
+        "sol",
+        "3x15m"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_947858304:1e7c155f-510e-4d0c-9a0a-8b4076baaaa3",
+        "fr_bd_947858304:2c901944-0f6d-4d56-b5c9-7cf5cd6c8b5f",
+        "fr_bd_947858304:63595276-12cf-4b21-838b-cfe1ee799c4e"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "CHEV.NORD.10X50 X8",
+      "article_canonique": "chev nord 10x50 x8",
+      "mots_cles": [
+        "chev",
+        "nord",
+        "10x50",
+        "x8"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_879788230:096d44cd-a6dc-4db2-ac96-a27693323961",
+        "fr_bd_879788230:92930762-1a75-4a2e-a099-44d1ad47e741",
+        "fr_bd_879788230:f39c90dc-e39a-44c1-ab49-a7c777552558"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4730Z",
+        "4752A"
+      ],
+      "partitions_sources": [
+        "fr_bd_879788230"
+      ],
+      "compte_comptable": "606",
+      "compte_comptable_libelle": "Achats non stockés de matières et fournitures",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Gazole Premier",
+      "article_canonique": "gazole premier",
+      "mots_cles": [
+        "gazole",
+        "premier"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:d3847d45-7339-4930-8163-75692a678c04",
+        "fr_bd_947858304:383fe69b-ddf4-43a7-b92f-1695757a0db4",
+        "fr_bd_947858304:4524623d-f91a-4b65-b28e-ea8105626a08"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4671Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304",
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "MELANGE POUR BETON M3 EN BIG",
+      "article_canonique": "melange beton m3 big",
+      "mots_cles": [
+        "melange",
+        "beton",
+        "m3",
+        "big"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:19d5e7f0-8803-4c16-b567-f0e6e18fcdc9",
+        "fr_bd_842785719:22db91d2-a855-4252-85d8-d5219fee9fd2",
+        "fr_bd_842785719:44218119-6d7b-4501-97de-a311fcd727d0"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "PALETTE CONSIGNEE - SLM - SPC - STOCK",
+      "article_canonique": "palette consignee slm spc stock",
+      "mots_cles": [
+        "palette",
+        "consignee",
+        "slm",
+        "spc",
+        "stock"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:1bb0944b-53c8-4102-b672-e00e40878e4a",
+        "fr_bd_842785719:2aa8d765-4c9e-419f-ad46-61cc728cba78",
+        "fr_bd_842785719:3e667fec-9661-491c-ade5-6595aed0fe41"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6021",
+      "compte_comptable_libelle": "Matières consommables",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "PALETTE SEAC",
+      "article_canonique": "palette seac",
+      "mots_cles": [
+        "palette",
+        "seac"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:08921364-8ca8-43e6-9847-a99c6a3f4c37",
+        "fr_bd_842785719:29c3e1c4-ccac-4609-ad7f-a555fc4ab4fc",
+        "fr_bd_842785719:7e218b34-4e58-4c41-b758-85bc17ab2ea7"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "POLYANE PETIT TYPE 150 FILMEX 150M2",
+      "article_canonique": "polyane petit type 150 filmex 150m2",
+      "mots_cles": [
+        "polyane",
+        "petit",
+        "type",
+        "150",
+        "filmex",
+        "150m2"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:081cb2a8-9ee4-4878-8607-32c626f90ea0",
+        "fr_bd_842785719:1ab55525-0417-46d2-b69f-743461a3cd9a",
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "1PX COLLE CARREAUX PLATRE BLANC 25 KG",
+      "article_canonique": "1px colle carreaux platre blanc 25 kg",
+      "mots_cles": [
+        "1px",
+        "colle",
+        "carreaux",
+        "platre",
+        "blanc",
+        "25",
+        "kg"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_879788230:09be3867-f939-4d07-94d4-85055a112bb7",
+        "fr_bd_879788230:46b4fe09-f579-44f3-97f2-e6251e620b1c",
+        "fr_bd_889860938:2912e41e-ae57-4de8-b973-df29f7db333e"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_879788230",
+        "fr_bd_889860938"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "65CL TRADITION FIS",
+      "article_canonique": "65cl tradition fis",
+      "mots_cles": [
+        "65cl",
+        "tradition",
+        "fis"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_879788230:05dd1836-08a1-48cf-8836-904724280ada",
+        "fr_bd_879788230:5a0c2e74-e4ca-49d6-94e8-27d805b3d98b",
+        "fr_bd_879788230:dc29803d-d1bd-4bff-baf5-f031fd38b6e7"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4639B"
+      ],
+      "partitions_sources": [
+        "fr_bd_879788230"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 5.5,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "BLOC COFFRAGE 500X200X200",
+      "article_canonique": "bloc coffrage 500x200x200",
+      "mots_cles": [
+        "bloc",
+        "coffrage",
+        "500x200x200"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:44218119-6d7b-4501-97de-a311fcd727d0",
+        "fr_bd_842785719:4c73af7c-3cef-4fd7-a852-0b0f5c3ac10f",
+        "fr_bd_842785719:6299e978-d901-4389-9145-2006563f2e06"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "CUTTER 18MM STANDARD AVEC 3 LAMES NOIR ATLAS",
+      "article_canonique": "cutter 18mm standard 3 lames noir atlas",
+      "mots_cles": [
+        "cutter",
+        "18mm",
+        "standard",
+        "3",
+        "lames",
+        "noir",
+        "atlas"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:024ec225-418f-4003-bae5-07f80a8309ee",
+        "fr_bd_842785719:43d0b2ab-b270-47ba-a753-3b9c51a28ea8",
+        "fr_bd_842785719:4da9c029-48fa-4d0f-b5d9-88d542187c3e"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6021",
+      "compte_comptable_libelle": "Matières consommables",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "LOT DE 5 MICROFIBRE",
+      "article_canonique": "lot 5 microfibre",
+      "mots_cles": [
+        "lot",
+        "5",
+        "microfibre"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_947858304:0f2ce440-7400-4930-b5d2-b4665ec55c57",
+        "fr_bd_947858304:15410aff-788d-4748-a0d8-e32d5075c6de",
+        "fr_bd_947858304:1aba8594-cf17-4190-b40b-6cee0d2c2780"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "PLQ PLATRE HYDRO H1 NORGIPS 250X120 B13",
+      "article_canonique": "plq platre hydro h1 norgips 250x120 b13",
+      "mots_cles": [
+        "plq",
+        "platre",
+        "hydro",
+        "h1",
+        "norgips",
+        "250x120",
+        "b13"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_879788230:091e2a4b-fef3-4f0b-8588-65068505b5a1",
+        "fr_bd_879788230:2b2cfac4-a2a4-43a3-b51d-cd48df8c8358",
+        "fr_bd_879788230:2f086381-6cb8-4914-b553-45ba70efc3fd"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_879788230",
+        "fr_bd_889860938"
+      ],
+      "compte_comptable": "601",
+      "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "PROTEGE ANGLE CARREAUX PLATRE 2.5M",
+      "article_canonique": "protege angle carreaux platre 2 5m",
+      "mots_cles": [
+        "protege",
+        "angle",
+        "carreaux",
+        "platre",
+        "2",
+        "5m"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_879788230:86da94b0-d58c-4781-bef5-c0f66f69b64d",
+        "fr_bd_879788230:b264b11a-7102-4f50-ba47-a332a3cd03e7",
+        "fr_bd_879788230:c31ea6f7-4398-44b9-a729-3c1c3b9ff2a1"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_879788230",
+        "fr_bd_889860938"
+      ],
+      "compte_comptable": "601",
+      "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "SEAU 11L ANSE",
+      "article_canonique": "seau 11l anse",
+      "mots_cles": [
+        "seau",
+        "11l",
+        "anse"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:081cb2a8-9ee4-4878-8607-32c626f90ea0",
+        "fr_bd_842785719:1ab55525-0417-46d2-b69f-743461a3cd9a",
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Supreme+SP98",
+      "article_canonique": "supreme sp98",
+      "mots_cles": [
+        "supreme",
+        "sp98"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_844858571:187992fb-2782-468b-9ce8-c79f785dde4e",
+        "fr_bd_844858571:46e598a9-1f87-4325-87fa-516133323e1e",
+        "fr_bd_844858571:4996a1b2-09fd-4485-bcf9-9260708c6988"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4730Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_844858571"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "TALOCHE EPONGE 14X28",
+      "article_canonique": "taloche eponge 14x28",
+      "mots_cles": [
+        "taloche",
+        "eponge",
+        "14x28"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:081cb2a8-9ee4-4878-8607-32c626f90ea0",
+        "fr_bd_842785719:437b82d4-10c1-4516-94f1-49cf5bf55bda",
+        "fr_bd_842785719:4888e9ce-0f33-413f-9afc-369ac9bb0e4a"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Armature de poteau hauteur d'étage dimension 10cmx10cm 4HA10 avec cadre HA5 espacement variable longueur 3m réf PN41010X10",
+      "article_canonique": "armature poteau hauteur d etage dimension 10cmx10cm 4ha10",
+      "mots_cles": [
+        "armature",
+        "poteau",
+        "hauteur",
+        "d",
+        "etage",
+        "dimension",
+        "10cmx10cm",
+        "4ha10"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:060a56a0-2657-4136-a94c-f2090fd4505c",
+        "fr_bd_842785719:2ad78c58-b5e8-4460-8dd4-b090882106fb",
+        "fr_bd_842785719:402e81f2-f7b9-4a7d-aae8-9e82f685c3c0"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "BALAI COCO 29 CM DOUILE RESINE",
+      "article_canonique": "balai coco 29 cm douile resine",
+      "mots_cles": [
+        "balai",
+        "coco",
+        "29",
+        "cm",
+        "douile",
+        "resine"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:081cb2a8-9ee4-4878-8607-32c626f90ea0",
+        "fr_bd_842785719:1ab55525-0417-46d2-b69f-743461a3cd9a",
+        "fr_bd_842785719:3241f88f-5965-48c6-a3a4-49db77ea326b"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "BROSSE PLATE BATIMENT 60",
+      "article_canonique": "brosse plate batiment 60",
+      "mots_cles": [
+        "brosse",
+        "plate",
+        "batiment",
+        "60"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:081cb2a8-9ee4-4878-8607-32c626f90ea0",
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f",
+        "fr_bd_842785719:54e7acbe-1f76-4cf6-874d-a42acf58c716"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Bastaing Sapin/Epicéa traité classe 2 63x160mm longueur 3,00m",
+      "article_canonique": "bastaing sapin epicea traite classe 2 63x160mm longueur",
+      "mots_cles": [
+        "bastaing",
+        "sapin",
+        "epicea",
+        "traite",
+        "classe",
+        "2",
+        "63x160mm",
+        "longueur"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:2ee7c702-b3e7-473b-847e-9b9ce35e7044",
+        "fr_bd_842785719:4c314ee1-ea87-4aa4-bf12-c915088d750a",
+        "fr_bd_842785719:4dfc3ef5-ffb8-47b9-9843-801aa99168ae"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Bloc creux chainage vertical Ultibat CE Lussiana 500 200 200 mm",
+      "article_canonique": "bloc creux chainage vertical ultibat ce lussiana 500",
+      "mots_cles": [
+        "bloc",
+        "creux",
+        "chainage",
+        "vertical",
+        "ultibat",
+        "ce",
+        "lussiana",
+        "500"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:2f4c699b-4c11-4d9c-8ee2-f15af15bd7b3",
+        "fr_bd_842785719:97199c0e-fecb-410a-9226-3e3429bf028c",
+        "fr_bd_842785719:9c764ef9-5667-48b0-ba2b-3bdfdb9560c7"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "CIMENT GRIS 25 KG",
+      "article_canonique": "ciment gris 25 kg",
+      "mots_cles": [
+        "ciment",
+        "gris",
+        "25",
+        "kg"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:19d5e7f0-8803-4c16-b567-f0e6e18fcdc9",
+        "fr_bd_842785719:22db91d2-a855-4252-85d8-d5219fee9fd2",
+        "fr_bd_842785719:44218119-6d7b-4501-97de-a311fcd727d0"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "CLOU BETON 3.5X60 1KG",
+      "article_canonique": "clou beton 3 5x60 1kg",
+      "mots_cles": [
+        "clou",
+        "beton",
+        "3",
+        "5x60",
+        "1kg"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:21d9a38d-1270-494a-bedd-9b1e738ad7e1",
+        "fr_bd_842785719:4e27f368-055b-4bce-87f1-ea8b6be05773",
+        "fr_bd_842785719:716546fe-9ea6-44aa-8dad-10b757498e00"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4779Z",
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "CUTTER ECO 18MM",
+      "article_canonique": "cutter eco 18mm",
+      "mots_cles": [
+        "cutter",
+        "eco",
+        "18mm"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:437b82d4-10c1-4516-94f1-49cf5bf55bda",
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f",
+        "fr_bd_842785719:4e27f368-055b-4bce-87f1-ea8b6be05773"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4779Z",
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Couvre joint",
+      "article_canonique": "couvre joint",
+      "mots_cles": [
+        "couvre",
+        "joint"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:d5dfa7ec-e4d9-4ce8-a893-196b52ac21b4"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "EC 3 COLLE A CARREAUX 20KG",
+      "article_canonique": "ec 3 colle carreaux 20kg",
+      "mots_cles": [
+        "ec",
+        "3",
+        "colle",
+        "carreaux",
+        "20kg"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_879788230:0d066087-d0db-44ae-b50a-d2e024c66221",
+        "fr_bd_879788230:26db8a2d-ed6a-4c58-bc38-fd315aeed6eb",
+        "fr_bd_879788230:51e4573b-c5ba-482b-9e0e-adb909d68f54"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673B",
+        "4711F"
+      ],
+      "partitions_sources": [
+        "fr_bd_879788230"
+      ],
+      "compte_comptable": "601",
+      "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "MANCHE DE BALAI COCO PIN DOUILLE PLASTIQUE 120/24",
+      "article_canonique": "manche balai coco pin douille plastique 120 24",
+      "mots_cles": [
+        "manche",
+        "balai",
+        "coco",
+        "pin",
+        "douille",
+        "plastique",
+        "120",
+        "24"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:081cb2a8-9ee4-4878-8607-32c626f90ea0",
+        "fr_bd_842785719:1ab55525-0417-46d2-b69f-743461a3cd9a",
+        "fr_bd_842785719:3241f88f-5965-48c6-a3a4-49db77ea326b"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "MONTANT M48 2.5ML",
+      "article_canonique": "montant m48 2 5ml",
+      "mots_cles": [
+        "montant",
+        "m48",
+        "2",
+        "5ml"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f",
+        "fr_bd_842785719:5b9893bd-cbe8-4c2d-bd9f-cc1f7120ed56",
+        "fr_bd_842785719:a2454c12-57c9-4ce1-8198-7bbe63dc2cf1"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "MORTIER COLLE EXTERIEUR GRIS FLEX 25KG",
+      "article_canonique": "mortier colle exterieur gris flex 25kg",
+      "mots_cles": [
+        "mortier",
+        "colle",
+        "exterieur",
+        "gris",
+        "flex",
+        "25kg"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_879788230:0979969c-71e4-4110-a580-1bd16efb51ce",
+        "fr_bd_879788230:3659709d-a60b-4e30-a7d9-191915133cc4",
+        "fr_bd_879788230:4e2f1512-0644-409a-82ec-dcd52c4b9cc0"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_879788230"
+      ],
+      "compte_comptable": "601",
+      "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Mortier toutes maçonneries ULTIBAT M20 sac de 25kg",
+      "article_canonique": "mortier toutes maconneries ultibat m20 sac 25kg",
+      "mots_cles": [
+        "mortier",
+        "toutes",
+        "maconneries",
+        "ultibat",
+        "m20",
+        "sac",
+        "25kg"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:340acfae-cdf3-45da-b626-af654186ed65",
+        "fr_bd_842785719:4f6d0c73-8648-4e5d-9b3b-ab7e40b48017",
+        "fr_bd_842785719:5ad52b66-90d6-4d15-89cb-3f8a95d6d841"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304",
+        "fr_bd_879788230",
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "PLQ PLATRE LM 250X120 BA13 ENTRAXE 60 KN",
+      "article_canonique": "plq platre lm 250x120 ba13 entraxe 60 kn",
+      "mots_cles": [
+        "plq",
+        "platre",
+        "lm",
+        "250x120",
+        "ba13",
+        "entraxe",
+        "60",
+        "kn"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_879788230:2b2cfac4-a2a4-43a3-b51d-cd48df8c8358",
+        "fr_bd_879788230:2f086381-6cb8-4914-b553-45ba70efc3fd",
+        "fr_bd_879788230:3e440693-0032-46ff-8bb3-524882aed0b5"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_879788230"
+      ],
+      "compte_comptable": "601",
+      "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "POTEAUX 6M 10X10 4 FILANTS DIAM 10",
+      "article_canonique": "poteaux 6m 10x10 4 filants diam 10",
+      "mots_cles": [
+        "poteaux",
+        "6m",
+        "10x10",
+        "4",
+        "filants",
+        "diam",
+        "10"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:08921364-8ca8-43e6-9847-a99c6a3f4c37",
+        "fr_bd_842785719:a354b631-9cee-417a-b9bf-be5a9f8406d6",
+        "fr_bd_842785719:c508b6d2-2e26-4a83-b8f8-23ef349207bc"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "601",
+      "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "RECHARGE CAMION 14L PQT DE 5 2684",
+      "article_canonique": "recharge camion 14l pqt 5 2684",
+      "mots_cles": [
+        "recharge",
+        "camion",
+        "14l",
+        "pqt",
+        "5",
+        "2684"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_879788230:1f419323-5f21-4b50-ab07-4962f6a10292",
+        "fr_bd_879788230:232a99c4-43c7-402e-b2be-0871b6207157",
+        "fr_bd_879788230:38884c7e-2a39-415d-9499-81a42da6a073"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4711F",
+        "4673B"
+      ],
+      "partitions_sources": [
+        "fr_bd_879788230"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "RECHARGE LAME CUTTER ECO 18MM (10U)",
+      "article_canonique": "recharge lame cutter eco 18mm 10u",
+      "mots_cles": [
+        "recharge",
+        "lame",
+        "cutter",
+        "eco",
+        "18mm",
+        "10u"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:437b82d4-10c1-4516-94f1-49cf5bf55bda",
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f",
+        "fr_bd_842785719:4e27f368-055b-4bce-87f1-ea8b6be05773"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4779Z",
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "SEAU 200 TAP-VIS 6 / 10 / 40 + MECHE A991760",
+      "article_canonique": "seau 200 tap vis 6 10 40 meche",
+      "mots_cles": [
+        "seau",
+        "200",
+        "tap",
+        "vis",
+        "6",
+        "10",
+        "40",
+        "meche"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:1ab55525-0417-46d2-b69f-743461a3cd9a",
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f",
+        "fr_bd_842785719:a2454c12-57c9-4ce1-8198-7bbe63dc2cf1"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "3 ROULEAUX MASQU 50X48",
+      "article_canonique": "3 rouleaux masqu 50x48",
+      "mots_cles": [
+        "3",
+        "rouleaux",
+        "masqu",
+        "50x48"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_947858304:1e7c155f-510e-4d0c-9a0a-8b4076baaaa3",
+        "fr_bd_947858304:63595276-12cf-4b21-838b-cfe1ee799c4e",
+        "fr_bd_947858304:6aa8077a-abef-40b5-9149-d8432e3b0b22"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "BANDE GRILLAGEE 45 ML X 55 SEMIN STOCK",
+      "article_canonique": "bande grillagee 45 ml 55 semin stock",
+      "mots_cles": [
+        "bande",
+        "grillagee",
+        "45",
+        "ml",
+        "55",
+        "semin",
+        "stock"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:1bb0944b-53c8-4102-b672-e00e40878e4a",
+        "fr_bd_842785719:39564fac-427c-4997-8779-fb1fd0b2077c",
+        "fr_bd_842785719:43d0b2ab-b270-47ba-a753-3b9c51a28ea8"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "BIG BAG 1T400 0/10 MELANGE",
+      "article_canonique": "big bag 1t400 0 10 melange",
+      "mots_cles": [
+        "big",
+        "bag",
+        "1t400",
+        "0",
+        "10",
+        "melange"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:505817fb-3b6f-43f2-bb56-bae551e8c6dd",
+        "fr_bd_842785719:5b9893bd-cbe8-4c2d-bd9f-cc1f7120ed56",
+        "fr_bd_842785719:94fb52ae-9f66-42a4-93a9-d328e9a673d8"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6021",
+      "compte_comptable_libelle": "Matières consommables",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "BLOC CREUX 20*20*50 B40 CE 70/ PAL",
+      "article_canonique": "bloc creux 20 20 50 b40 ce 70",
+      "mots_cles": [
+        "bloc",
+        "creux",
+        "20",
+        "20",
+        "50",
+        "b40",
+        "ce",
+        "70"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:1246e547-a15b-4cb4-a489-493b0c127e65",
+        "fr_bd_842785719:19d5e7f0-8803-4c16-b567-f0e6e18fcdc9",
+        "fr_bd_842785719:8eb97e6e-7eab-44de-9b8e-30ff951bf9d9"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "BOBINEAU BACHE DEXTER 40 MICRONS 15X3M",
+      "article_canonique": "bobineau bache dexter 40 microns 15x3m",
+      "mots_cles": [
+        "bobineau",
+        "bache",
+        "dexter",
+        "40",
+        "microns",
+        "15x3m"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_844858571:8e5b98f0-788c-43dc-a014-94ac2f902581",
+        "fr_bd_889860938:7db525b5-d6e4-4acd-90b1-db466ca75a22",
+        "fr_bd_889860938:8938c059-4eba-46d9-b278-67226626d799"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_844858571",
+        "fr_bd_938751021",
+        "fr_bd_889860938",
+        "fr_bd_947858304"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "COUDE 87.30 DEGRES FF D40",
+      "article_canonique": "coude 87 30 degres ff d40",
+      "mots_cles": [
+        "coude",
+        "87",
+        "30",
+        "degres",
+        "ff",
+        "d40"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_879788230:caf1422f-ce66-4a65-8a96-dfecaea5af64",
+        "fr_bd_879788230:ec2e612f-9ab2-4c59-8b51-c3e58b3a6244",
+        "fr_bd_889860938:3686b36d-e5d5-47a4-a202-9270ebb347cb"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304",
+        "fr_bd_879788230",
+        "fr_bd_889860938"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "LISSE METRIX STANDARD 100 NF",
+      "article_canonique": "lisse metrix standard 100 nf",
+      "mots_cles": [
+        "lisse",
+        "metrix",
+        "standard",
+        "100",
+        "nf"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:06f43be7-531e-4fd4-a590-22ae5fc46330",
+        "fr_bd_842785719:2b5041b4-9076-4de6-89d3-c1e62bd96eb6",
+        "fr_bd_842785719:4108b502-922d-448a-972c-a39f1ed70a2e"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4663Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "LOT 10 MONTANTS 48/35 EN 2.49M NF SEMIN",
+      "article_canonique": "lot 10 montants 48 35 2 49m nf",
+      "mots_cles": [
+        "lot",
+        "10",
+        "montants",
+        "48",
+        "35",
+        "2",
+        "49m",
+        "nf"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_879788230:14f2c8c4-54c5-447c-b6ed-597e8e0362ff",
+        "fr_bd_879788230:3bafc32e-e083-4250-8b0a-ece70fbfcd09",
+        "fr_bd_879788230:5775a28e-f0d9-486f-99ac-d87528173737"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_879788230",
+        "fr_bd_889860938"
+      ],
+      "compte_comptable": "601",
+      "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "MANCHON ANTIGOUTTE EXTRA 180MM",
+      "article_canonique": "manchon antigoutte extra 180mm",
+      "mots_cles": [
+        "manchon",
+        "antigoutte",
+        "extra",
+        "180mm"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:081cb2a8-9ee4-4878-8607-32c626f90ea0",
+        "fr_bd_842785719:1ab55525-0417-46d2-b69f-743461a3cd9a",
+        "fr_bd_842785719:54e7acbe-1f76-4cf6-874d-a42acf58c716"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "MANCHON FF D40",
+      "article_canonique": "manchon ff d40",
+      "mots_cles": [
+        "manchon",
+        "ff",
+        "d40"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_879788230:caf1422f-ce66-4a65-8a96-dfecaea5af64",
+        "fr_bd_879788230:ec2e612f-9ab2-4c59-8b51-c3e58b3a6244",
+        "fr_bd_889860938:3686b36d-e5d5-47a4-a202-9270ebb347cb"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304",
+        "fr_bd_879788230",
+        "fr_bd_889860938"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "MOYEN SACHET VISSERIE",
+      "article_canonique": "moyen sachet visserie",
+      "mots_cles": [
+        "moyen",
+        "sachet",
+        "visserie"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_947858304:0005e2fd-1c9d-4b3f-8746-759923e36df9",
+        "fr_bd_947858304:023091ee-1758-4068-9360-776ba91506b9",
+        "fr_bd_947858304:1ce6e4fe-5cf6-44e5-9eee-c0312ca1cf3d"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Melange 0/20 godet n*11 de environ 500 litres",
+      "article_canonique": "melange 0 20 godet n 11 environ 500",
+      "mots_cles": [
+        "melange",
+        "0",
+        "20",
+        "godet",
+        "n",
+        "11",
+        "environ",
+        "500"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:2e2d4513-b1d7-47af-98c8-6e31cc020593",
+        "fr_bd_842785719:30f727a4-f5ad-45ff-8a7d-249c1b66f8f8",
+        "fr_bd_842785719:589356be-73d0-46af-92e4-b0551ac7bfc2"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "PALETTE BEMACO",
+      "article_canonique": "palette bemaco",
+      "mots_cles": [
+        "palette",
+        "bemaco"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:08921364-8ca8-43e6-9847-a99c6a3f4c37",
+        "fr_bd_842785719:29c3e1c4-ccac-4609-ad7f-a555fc4ab4fc",
+        "fr_bd_842785719:c508b6d2-2e26-4a83-b8f8-23ef349207bc"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "606",
+      "compte_comptable_libelle": "Achats non stockés de matières et fournitures",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Pattes de fixation avec réhausse",
+      "article_canonique": "pattes fixation rehausse",
+      "mots_cles": [
+        "pattes",
+        "fixation",
+        "rehausse"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:d5dfa7ec-e4d9-4ce8-a893-196b52ac21b4"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "ROND A BETON HA10 - 6.00 ML",
+      "article_canonique": "rond beton ha10 6 00 ml",
+      "mots_cles": [
+        "rond",
+        "beton",
+        "ha10",
+        "6",
+        "00",
+        "ml"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:08921364-8ca8-43e6-9847-a99c6a3f4c37",
+        "fr_bd_842785719:a354b631-9cee-417a-b9bf-be5a9f8406d6",
+        "fr_bd_842785719:c508b6d2-2e26-4a83-b8f8-23ef349207bc"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "601",
+      "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "SAC PAPIER KRAFT BRICOMAN",
+      "article_canonique": "sac papier kraft bricoman",
+      "mots_cles": [
+        "sac",
+        "papier",
+        "kraft",
+        "bricoman"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_889860938:0c0399b6-3ec6-41f1-92f8-376d8a46706c",
+        "fr_bd_889860938:0ec3e0cd-81c7-4cf7-a862-457705986483",
+        "fr_bd_889860938:2ea48c8c-328b-46a7-bb61-278b1e0af0ff"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304",
+        "fr_bd_889860938"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "SEAU DOSEUR 12 LITRES",
+      "article_canonique": "seau doseur 12 litres",
+      "mots_cles": [
+        "seau",
+        "doseur",
+        "12",
+        "litres"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_947858304:59d4705e-b351-4814-9f2d-ee4de2246a79",
+        "fr_bd_947858304:6aa8077a-abef-40b5-9149-d8432e3b0b22",
+        "fr_bd_947858304:a4a99f0b-e20d-4903-977e-4889445723c7"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "SET DE MICROFIBRE X4 MULTI COULEUR",
+      "article_canonique": "set microfibre x4 multi couleur",
+      "mots_cles": [
+        "set",
+        "microfibre",
+        "x4",
+        "multi",
+        "couleur"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_889860938:8938c059-4eba-46d9-b278-67226626d799",
+        "fr_bd_947858304:1bc47af0-4b4b-40ae-9aa7-d28bfc919f25",
+        "fr_bd_947858304:34535c91-89b1-4dca-b621-d65d4f405784"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304",
+        "fr_bd_889860938"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Sable 0/4 0/5 godet n° 11 de environ 500 litres",
+      "article_canonique": "sable 0 4 0 5 godet n 11",
+      "mots_cles": [
+        "sable",
+        "0",
+        "4",
+        "0",
+        "5",
+        "godet",
+        "n",
+        "11"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:2600d220-fc13-4f46-bc2c-5b3e5d52ec64",
+        "fr_bd_842785719:97199c0e-fecb-410a-9226-3e3429bf028c",
+        "fr_bd_842785719:9df34a86-e8ba-4d96-8fcd-88f78ba2474b"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304",
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "TRUELLE LISSEUSE BOUT ROND 18CM MANCHE BI-MATIERE",
+      "article_canonique": "truelle lisseuse bout rond 18cm manche bi matiere",
+      "mots_cles": [
+        "truelle",
+        "lisseuse",
+        "bout",
+        "rond",
+        "18cm",
+        "manche",
+        "bi",
+        "matiere"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f",
+        "fr_bd_842785719:4e27f368-055b-4bce-87f1-ea8b6be05773",
+        "fr_bd_842785719:a23180f0-b62c-424b-bf81-43ba515020c1"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "VERIN 38/600 PAS ROND GALVA",
+      "article_canonique": "verin 38 600 pas rond galva",
+      "mots_cles": [
+        "verin",
+        "38",
+        "600",
+        "pas",
+        "rond",
+        "galva"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:2b5041b4-9076-4de6-89d3-c1e62bd96eb6",
+        "fr_bd_842785719:2db5a3ff-3920-4d88-8f60-2b51f5232338",
+        "fr_bd_842785719:4108b502-922d-448a-972c-a39f1ed70a2e"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4663Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "colle SILICATE vedacolle 7kg STOCK",
+      "article_canonique": "colle silicate vedacolle 7kg stock",
+      "mots_cles": [
+        "colle",
+        "silicate",
+        "vedacolle",
+        "7kg",
+        "stock"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:024ec225-418f-4003-bae5-07f80a8309ee",
+        "fr_bd_842785719:1bb0944b-53c8-4102-b672-e00e40878e4a",
+        "fr_bd_842785719:43d0b2ab-b270-47ba-a753-3b9c51a28ea8"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Adhésif de masquage lisse Novipro 50 m x 48 mm",
+      "article_canonique": "adhesif masquage lisse novipro 50 m 48 mm",
+      "mots_cles": [
+        "adhesif",
+        "masquage",
+        "lisse",
+        "novipro",
+        "50",
+        "m",
+        "48",
+        "mm"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:1f7e597d-d788-4252-a03f-024431187046",
+        "fr_bd_842785719:dd5fc8e3-ead1-4b9f-9691-fa765a377ede",
+        "fr_bd_842785719:e24260cc-2832-4bfa-a582-a956660d5ceb"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304",
+        "fr_bd_879788230",
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "BACHE FEUTRE 1X10M",
+      "article_canonique": "bache feutre 1x10m",
+      "mots_cles": [
+        "bache",
+        "feutre",
+        "1x10m"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_947858304:1e7c155f-510e-4d0c-9a0a-8b4076baaaa3",
+        "fr_bd_947858304:2554522f-10f8-4c9e-b585-121f356b80ba",
+        "fr_bd_947858304:8d74a4a3-c23c-41cf-9e91-5c8f197cb148"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "BALAI CANTONNIER 31 CM PVC ROUGE DOUILLE METAL",
+      "article_canonique": "balai cantonnier 31 cm pvc rouge douille metal",
+      "mots_cles": [
+        "balai",
+        "cantonnier",
+        "31",
+        "cm",
+        "pvc",
+        "rouge",
+        "douille",
+        "metal"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:1ab55525-0417-46d2-b69f-743461a3cd9a",
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f",
+        "fr_bd_842785719:727227b3-a351-4c3f-a347-5826ad42a7fa"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "BLOC CRX CH VRT CE NF 500X200X200",
+      "article_canonique": "bloc crx ch vrt ce nf 500x200x200",
+      "mots_cles": [
+        "bloc",
+        "crx",
+        "ch",
+        "vrt",
+        "ce",
+        "nf",
+        "500x200x200"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:13faa6e4-2556-4cc6-9b46-3504680dcf97",
+        "fr_bd_842785719:bbf29b72-280a-46ab-ae4b-b1b0fab40dd5",
+        "fr_bd_842785719:c90a514b-c5e5-480f-ade9-11d6d9553207"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "CANTILLANA Mortier M5 Mur 8/4 NF EN 998-2 bigbag de 1T2",
+      "article_canonique": "cantillana mortier m5 mur 8 4 nf 998",
+      "mots_cles": [
+        "cantillana",
+        "mortier",
+        "m5",
+        "mur",
+        "8",
+        "4",
+        "nf",
+        "998"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:1bb0944b-53c8-4102-b672-e00e40878e4a",
+        "fr_bd_842785719:2aa8d765-4c9e-419f-ad46-61cc728cba78",
+        "fr_bd_842785719:43d0b2ab-b270-47ba-a753-3b9c51a28ea8"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "COMPLICE C3 VELOURS BLANC 15L TEINTE=",
+      "article_canonique": "complice c3 velours blanc 15l teinte",
+      "mots_cles": [
+        "complice",
+        "c3",
+        "velours",
+        "blanc",
+        "15l",
+        "teinte"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_947858304:189ffa67-f9d8-493c-aadb-edb5ec73a54a",
+        "fr_bd_947858304:60f6b6ab-bb1e-4d22-852e-2df4b03e74cf",
+        "fr_bd_947858304:6f789be8-6d83-40c2-94ed-1c768aca16d3"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304"
+      ],
+      "compte_comptable": "601",
+      "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "CORNIERE ACIER 24X34MM CR2 EP 3M",
+      "article_canonique": "corniere acier 24x34mm cr2 ep 3m",
+      "mots_cles": [
+        "corniere",
+        "acier",
+        "24x34mm",
+        "cr2",
+        "ep",
+        "3m"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_879788230:09be3867-f939-4d07-94d4-85055a112bb7",
+        "fr_bd_879788230:14f2c8c4-54c5-447c-b6ed-597e8e0362ff",
+        "fr_bd_879788230:3bafc32e-e083-4250-8b0a-ece70fbfcd09"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_879788230",
+        "fr_bd_889860938"
+      ],
+      "compte_comptable": "601",
+      "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Ciment Technocem CEM II/B-M 32,5 R CP2 CE NF - Calcia Gaurain - sac de 25kg",
+      "article_canonique": "ciment technocem cem iib m 32 5 calcia gaurain 25kg",
+      "mots_cles": [
+        "ciment",
+        "technocem",
+        "cem",
+        "ii",
+        "b",
+        "m",
+        "32",
+        "5"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:340d7aa1-fb80-4494-8d2f-549306c46ad9",
+        "fr_bd_842785719:489fd03a-90ed-4910-a180-0c331ba152a1",
+        "fr_bd_842785719:5418a7c3-1cb9-461e-b452-04803b26a866"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "DIESEL B10",
+      "article_canonique": "diesel b10",
+      "mots_cles": [
+        "diesel",
+        "b10"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:0058da3e-80f1-459b-b94d-30bcd763697d",
+        "fr_bd_842785719:3dc523e3-acea-4436-a11d-93e73ad806a0",
+        "fr_bd_842785719:c50d2167-5dcb-4ea3-a308-44ddb954b153"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4671Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_844858571",
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "ETUI PORTE MARTEAU",
+      "article_canonique": "etui porte marteau",
+      "mots_cles": [
+        "etui",
+        "porte",
+        "marteau"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:0ac31e47-c839-4974-af65-595f2b158559",
+        "fr_bd_842785719:4e27f368-055b-4bce-87f1-ea8b6be05773",
+        "fr_bd_842785719:ac75e6b9-3a08-4cbf-8213-47a2d11a046d"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "FORET MARTEAU BOOSTER+ D12 L310 DIAGER STOCK",
+      "article_canonique": "foret marteau booster d12 l310 diager stock",
+      "mots_cles": [
+        "foret",
+        "marteau",
+        "booster",
+        "d12",
+        "l310",
+        "diager",
+        "stock"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:6b1bf333-6653-4988-852b-0470c3b20d74",
+        "fr_bd_842785719:939dcea3-1269-4796-9291-b7c6e2e45797",
+        "fr_bd_842785719:96e5f481-0546-41b8-a6b1-eadfaaf4e083"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Film polyéthylène bâtiment R415-75 3M PL4 SD 150 rouleau de 75 m2",
+      "article_canonique": "film polyethylene batiment r415 75 3m pl4 sd",
+      "mots_cles": [
+        "film",
+        "polyethylene",
+        "batiment",
+        "r415",
+        "75",
+        "3m",
+        "pl4",
+        "sd"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:354e4e63-de06-416d-828e-b72471c788d9",
+        "fr_bd_842785719:4c530287-a5f2-428d-8178-745652545f07",
+        "fr_bd_842785719:7beb5477-f15d-44af-8d24-cc70c2570522"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "GANTS BEYBI POLYAMIDE ROUGE + T10 XL A LA PAIRE (1pqt = 12 paires) STOCK",
+      "article_canonique": "gants beybi polyamide rouge t10 xl paire 1pqt",
+      "mots_cles": [
+        "gants",
+        "beybi",
+        "polyamide",
+        "rouge",
+        "t10",
+        "xl",
+        "paire",
+        "1pqt"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:024ec225-418f-4003-bae5-07f80a8309ee",
+        "fr_bd_842785719:43d0b2ab-b270-47ba-a753-3b9c51a28ea8",
+        "fr_bd_842785719:61ce6b32-6ddd-4a87-a22e-6f9695cfb4d9"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "IT-Livanto OL",
+      "article_canonique": "it livanto ol",
+      "mots_cles": [
+        "it",
+        "livanto",
+        "ol"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_844858571:29b1ed91-0006-4443-aca0-200322101c5a",
+        "fr_bd_844858571:69d938a8-b60d-4efa-8f49-09213a844f35",
+        "fr_bd_844858571:7fe1e1a5-01db-4f3a-a538-2c03260d955f"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4729Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_844858571"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+      "taux_tva": 5.5,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "LAME CUTTER 18MM OLFA LB10 (156) ETUI /10",
+      "article_canonique": "lame cutter 18mm olfa lb10 156 etui 10",
+      "mots_cles": [
+        "lame",
+        "cutter",
+        "18mm",
+        "olfa",
+        "lb10",
+        "156",
+        "etui",
+        "10"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_879788230:16278251-affb-4469-900a-d70e37797b02",
+        "fr_bd_879788230:1a49512b-7163-4734-a84f-26b1781ed956",
+        "fr_bd_879788230:5dee2210-acdb-47cd-ae3c-7b9586e78377"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4711F",
+        "4673B"
+      ],
+      "partitions_sources": [
+        "fr_bd_879788230"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "LANKOREP RAPID 770 25KG",
+      "article_canonique": "lankorep rapid 770 25kg",
+      "mots_cles": [
+        "lankorep",
+        "rapid",
+        "770",
+        "25kg"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:091fd5e1-8af6-4bc0-ab41-9f4e90961980",
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f",
+        "fr_bd_842785719:4e27f368-055b-4bce-87f1-ea8b6be05773"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4779Z",
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "MARTEAU DE COFFREUR 700GR MANCHE TRIMAX",
+      "article_canonique": "marteau coffreur 700gr manche trimax",
+      "mots_cles": [
+        "marteau",
+        "coffreur",
+        "700gr",
+        "manche",
+        "trimax"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:0ac31e47-c839-4974-af65-595f2b158559",
+        "fr_bd_842785719:4e27f368-055b-4bce-87f1-ea8b6be05773",
+        "fr_bd_842785719:ac75e6b9-3a08-4cbf-8213-47a2d11a046d"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "MONTANT M48 3ML",
+      "article_canonique": "montant m48 3ml",
+      "mots_cles": [
+        "montant",
+        "m48",
+        "3ml"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f",
+        "fr_bd_842785719:5b9893bd-cbe8-4c2d-bd9f-cc1f7120ed56",
+        "fr_bd_842785719:a2454c12-57c9-4ce1-8198-7bbe63dc2cf1"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "MONTURE CLIP POLYPRO 250MM 967",
+      "article_canonique": "monture clip polypro 250mm 967",
+      "mots_cles": [
+        "monture",
+        "clip",
+        "polypro",
+        "250mm",
+        "967"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:07bc1417-206e-430d-8b0c-9b8a2da2d394",
+        "fr_bd_842785719:1ab55525-0417-46d2-b69f-743461a3cd9a",
+        "fr_bd_842785719:4e27f368-055b-4bce-87f1-ea8b6be05773"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4779Z",
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6022",
+      "compte_comptable_libelle": "Approvisionnements",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "PETIT SAC DE CAISSE",
+      "article_canonique": "petit sac caisse",
+      "mots_cles": [
+        "petit",
+        "sac",
+        "caisse"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_889860938:f4b73b33-72e7-46fc-9a3c-d695a8fcdb2b",
+        "fr_bd_947858304:0f2ce440-7400-4930-b5d2-b4665ec55c57",
+        "fr_bd_947858304:2554522f-10f8-4c9e-b585-121f356b80ba"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304",
+        "fr_bd_889860938"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "PISTOLET SQUELETTE",
+      "article_canonique": "pistolet squelette",
+      "mots_cles": [
+        "pistolet",
+        "squelette"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f",
+        "fr_bd_842785719:716546fe-9ea6-44aa-8dad-10b757498e00",
+        "fr_bd_842785719:a2454c12-57c9-4ce1-8198-7bbe63dc2cf1"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304",
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "PLACOPLATRE BA13 250X120",
+      "article_canonique": "placoplatre ba13 250x120",
+      "mots_cles": [
+        "placoplatre",
+        "ba13",
+        "250x120"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_879788230:b4010527-602f-4c2f-bb87-10c31112c5fa",
+        "fr_bd_879788230:d416365c-20e5-4b24-8f8e-7a74a36001b2",
+        "fr_bd_879788230:e205fd01-9067-4981-ac79-b099d8543479"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304",
+        "fr_bd_879788230",
+        "fr_bd_889860938"
+      ],
+      "compte_comptable": "601",
+      "compte_comptable_libelle": "Achats stockés - Matières premières (et fournitures)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "PLAN TRAV BASIC BLANC 200X60X2.8 1PX",
+      "article_canonique": "plan trav basic blanc 200x60x2 8 1px",
+      "mots_cles": [
+        "plan",
+        "trav",
+        "basic",
+        "blanc",
+        "200x60x2",
+        "8",
+        "1px"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_947858304:16dc80d0-cda4-4c85-acfa-d0f7e3f89e30",
+        "fr_bd_947858304:213d07c8-5311-4eff-9687-b7b4ecbe73b8",
+        "fr_bd_947858304:7ee79ad6-083b-414b-b29f-cf8011964d9d"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "PLATOIR A LISSER 35CM INOX DKR094",
+      "article_canonique": "platoir lisser 35cm inox dkr094",
+      "mots_cles": [
+        "platoir",
+        "lisser",
+        "35cm",
+        "inox",
+        "dkr094"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:081cb2a8-9ee4-4878-8607-32c626f90ea0",
+        "fr_bd_842785719:1ab55525-0417-46d2-b69f-743461a3cd9a",
+        "fr_bd_842785719:54e7acbe-1f76-4cf6-874d-a42acf58c716"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Palette Big Big Lafarge Granulats",
+      "article_canonique": "palette big big lafarge granulats",
+      "mots_cles": [
+        "palette",
+        "big",
+        "big",
+        "lafarge",
+        "granulats"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:11131a73-a753-4af9-a4b7-03d3b58abc4f",
+        "fr_bd_842785719:2b42bf90-9b95-405e-b63d-6be0317ff9de",
+        "fr_bd_842785719:5418a7c3-1cb9-461e-b452-04803b26a866"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Pliage couvertine en alu 20/10 ral 1013",
+      "article_canonique": "pliage couvertine alu 20 10 ral 1013",
+      "mots_cles": [
+        "pliage",
+        "couvertine",
+        "alu",
+        "20",
+        "10",
+        "ral",
+        "1013"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:d5dfa7ec-e4d9-4ce8-a893-196b52ac21b4"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "RAIL NF 48/28 3M ISOLPRO",
+      "article_canonique": "rail nf 48 28 3m isolpro",
+      "mots_cles": [
+        "rail",
+        "nf",
+        "48",
+        "28",
+        "3m",
+        "isolpro"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_889860938:23f571e9-953a-4bda-aadb-41de7ae29086",
+        "fr_bd_889860938:37f15cb2-453c-4468-92ad-70102a05276f",
+        "fr_bd_889860938:39eeaf04-bb25-4475-a3c1-3a465849f3c5"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304",
+        "fr_bd_889860938"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Rond à béton TOR(cranté) HLE FeE500 Soudable diamètre 8 mm barre 6m",
+      "article_canonique": "rond beton tor crante hle fee500 soudable diametre 8mm",
+      "mots_cles": [
+        "rond",
+        "beton",
+        "tor",
+        "crante",
+        "hle",
+        "fee500",
+        "soudable",
+        "diametre"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:28cc72c0-dea0-49b1-afb0-333a9ff42aed",
+        "fr_bd_842785719:5418a7c3-1cb9-461e-b452-04803b26a866",
+        "fr_bd_842785719:b9939047-6fe2-4228-aac0-92613ad0eff6"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304",
+        "fr_bd_879788230",
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "SAC MATIERE RECYCLEE PDB",
+      "article_canonique": "sac matiere recyclee pdb",
+      "mots_cles": [
+        "sac",
+        "matiere",
+        "recyclee",
+        "pdb"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_509118329:8a8c03da-f446-48f0-b958-b062317b1879",
+        "fr_bd_509118329:b7489da6-96f7-4510-b5b5-a0fbe3347f5c",
+        "fr_bd_509118329:d32ecec0-a2ae-4f6b-983e-07ca89c40b28"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_879788230",
+        "fr_bd_842785719",
+        "fr_bd_509118329"
+      ],
+      "compte_comptable": "607",
+      "compte_comptable_libelle": "Achats de marchandises",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "SIKAFLEX PRO 11 FC CARTOUCHE 300ML BLANC",
+      "article_canonique": "sikaflex pro 11 fc cartouche 300ml blanc",
+      "mots_cles": [
+        "sikaflex",
+        "pro",
+        "11",
+        "fc",
+        "cartouche",
+        "300ml",
+        "blanc"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:081cb2a8-9ee4-4878-8607-32c626f90ea0",
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f",
+        "fr_bd_842785719:94fb52ae-9f66-42a4-93a9-d328e9a673d8"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "ULTABOND ECO V4SP SEAU14KG",
+      "article_canonique": "ultabond eco v4sp seau14kg",
+      "mots_cles": [
+        "ultabond",
+        "eco",
+        "v4sp",
+        "seau14kg"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_947858304:189ffa67-f9d8-493c-aadb-edb5ec73a54a",
+        "fr_bd_947858304:35742dcc-377d-460f-936a-450941f5451c",
+        "fr_bd_947858304:56cdfca2-fdca-4bd9-aff6-1bd0b1659956"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304"
+      ],
+      "compte_comptable": "6021",
+      "compte_comptable_libelle": "Matières consommables",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "VIS PLACO 3.5X35 PL35035 BOITE DE 1000U",
+      "article_canonique": "vis placo 3 5x35 pl35035 boite 1000u",
+      "mots_cles": [
+        "vis",
+        "placo",
+        "3",
+        "5x35",
+        "pl35035",
+        "boite",
+        "1000u"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:1ab55525-0417-46d2-b69f-743461a3cd9a",
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f",
+        "fr_bd_842785719:a2454c12-57c9-4ce1-8198-7bbe63dc2cf1"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "5 GANTS TVX GRIS SITE",
+      "article_canonique": "5 gants tvx gris site",
+      "mots_cles": [
+        "5",
+        "gants",
+        "tvx",
+        "gris",
+        "site"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_947858304:0f2ce440-7400-4930-b5d2-b4665ec55c57",
+        "fr_bd_947858304:3a601160-dd02-474a-b0e5-7d19f6469426",
+        "fr_bd_947858304:73f303e1-e8bb-490f-bdc4-25d0441753e1"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "BA13 FLAM 1.2 X 2.5M",
+      "article_canonique": "ba13 flam 1 2 2 5m",
+      "mots_cles": [
+        "ba13",
+        "flam",
+        "1",
+        "2",
+        "2",
+        "5m"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:081cb2a8-9ee4-4878-8607-32c626f90ea0",
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f",
+        "fr_bd_842785719:5b978621-da20-4fd2-848d-ea857d86856d"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "BARRE FER 6 ML DIAM 10",
+      "article_canonique": "barre fer 6 ml diam 10",
+      "mots_cles": [
+        "barre",
+        "fer",
+        "6",
+        "ml",
+        "diam",
+        "10"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:44218119-6d7b-4501-97de-a311fcd727d0",
+        "fr_bd_842785719:4c73af7c-3cef-4fd7-a852-0b0f5c3ac10f",
+        "fr_bd_842785719:6299e978-d901-4389-9145-2006563f2e06"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "BIG BAG 1M3 MELANGE V2",
+      "article_canonique": "big bag 1m3 melange v2",
+      "mots_cles": [
+        "big",
+        "bag",
+        "1m3",
+        "melange",
+        "v2"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:07041ecd-9395-4dda-91f1-6ed12c0ad725",
+        "fr_bd_842785719:46765ec1-3bef-4423-9445-cdf26532ac39",
+        "fr_bd_842785719:47da0f3b-8963-4629-83d5-dc89f5514bec"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "BLOC ANGLE 20*20*50 CE 70/ PAL",
+      "article_canonique": "bloc angle 20 20 50 ce 70 pal",
+      "mots_cles": [
+        "bloc",
+        "angle",
+        "20",
+        "20",
+        "50",
+        "ce",
+        "70",
+        "pal"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:1246e547-a15b-4cb4-a489-493b0c127e65",
+        "fr_bd_842785719:8eb97e6e-7eab-44de-9b8e-30ff951bf9d9",
+        "fr_bd_842785719:e76baef3-c22f-44b7-aa46-3f7787516381"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "BLOC CRX CE NF B40 500X200X200LUS",
+      "article_canonique": "bloc crx ce nf b40 500x200x200lus",
+      "mots_cles": [
+        "bloc",
+        "crx",
+        "ce",
+        "nf",
+        "b40",
+        "500x200x200lus"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:13faa6e4-2556-4cc6-9b46-3504680dcf97",
+        "fr_bd_842785719:bbf29b72-280a-46ab-ae4b-b1b0fab40dd5",
+        "fr_bd_842785719:c90a514b-c5e5-480f-ade9-11d6d9553207"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "BOBINEAU BACHE DEXTER PRO 80 MICRO 15X3",
+      "article_canonique": "bobineau bache dexter pro 80 micro 15x3",
+      "mots_cles": [
+        "bobineau",
+        "bache",
+        "dexter",
+        "pro",
+        "80",
+        "micro",
+        "15x3"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_889860938:631bbe3c-0ae4-4368-b91f-dd4fc7483bdb",
+        "fr_bd_889860938:7db525b5-d6e4-4acd-90b1-db466ca75a22",
+        "fr_bd_889860938:c5a1fb1c-1653-45d0-a398-38c13b7a1c72"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304",
+        "fr_bd_889860938"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "BOUCHON D40",
+      "article_canonique": "bouchon d40",
+      "mots_cles": [
+        "bouchon",
+        "d40"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_889860938:c74ffa52-f0c7-4c6f-aded-338fe29edab3",
+        "fr_bd_947858304:61ba2f24-3d8a-4557-a2c7-7b7504b7fbff",
+        "fr_bd_947858304:7c262534-69ee-448b-95ab-615156ce0192"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304",
+        "fr_bd_889860938"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Bande à joint microperforée et prépliée Deltapro pour plaque de platre - rouleau de 150 m",
+      "article_canonique": "bande joint microperforee prepliee deltapro plaque platre rouleau",
+      "mots_cles": [
+        "bande",
+        "joint",
+        "microperforee",
+        "prepliee",
+        "deltapro",
+        "plaque",
+        "platre",
+        "rouleau"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:305846c4-6103-440b-9e2a-8ddebea70b69",
+        "fr_bd_879788230:34eccd29-9162-4a0c-b47d-201c6aac0dd2",
+        "fr_bd_879788230:419cd5ee-35ac-47f2-95ef-6635d48d50c1"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_879788230",
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "602",
+      "compte_comptable_libelle": "Achats stockés - Autres approvisionnements",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Big-bag sable 0/4 volume maxi 750L (3/4M3) poids approximatif 1,2T en fonct du tx d'hygrométrie & la nat des agrégats",
+      "article_canonique": "big bag sable 0 4 volume maxi 750l",
+      "mots_cles": [
+        "big",
+        "bag",
+        "sable",
+        "0",
+        "4",
+        "volume",
+        "maxi",
+        "750l"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:2b42bf90-9b95-405e-b63d-6be0317ff9de",
+        "fr_bd_842785719:86f060fc-5987-4633-bcb9-ea53c475f30a",
+        "fr_bd_842785719:bf2db614-3af1-43ec-9853-ef1189d0eb76"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Bloc creux UltibatCE 2+ NF classe de résistance B40 LUSSIANA 500 200 200 mm",
+      "article_canonique": "bloc creux ultibatce 2 nf classe resistance b40",
+      "mots_cles": [
+        "bloc",
+        "creux",
+        "ultibatce",
+        "2",
+        "nf",
+        "classe",
+        "resistance",
+        "b40"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:86f060fc-5987-4633-bcb9-ea53c475f30a",
+        "fr_bd_842785719:b6c43d2a-f588-4baf-9eca-c8cf3b4ccdc9",
+        "fr_bd_842785719:bf2db614-3af1-43ec-9853-ef1189d0eb76"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "C/SEAU 11 L PLASTIQUE NOIR",
+      "article_canonique": "c seau 11 plastique noir",
+      "mots_cles": [
+        "c",
+        "seau",
+        "11",
+        "plastique",
+        "noir"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_889860938:365674db-1fc1-4e86-82f8-bf0bf16c519d",
+        "fr_bd_889860938:37f15cb2-453c-4468-92ad-70102a05276f",
+        "fr_bd_947858304:11b98cb2-fe9b-4e09-a60c-eb75d01d902e"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304",
+        "fr_bd_889860938"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "CLOU BETON 3.5X60 1KG BE350601",
+      "article_canonique": "clou beton 3 5x60 1kg be350601",
+      "mots_cles": [
+        "clou",
+        "beton",
+        "3",
+        "5x60",
+        "1kg",
+        "be350601"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f",
+        "fr_bd_842785719:a2454c12-57c9-4ce1-8198-7bbe63dc2cf1"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "COUDE 87.30 DEGRES FF D32",
+      "article_canonique": "coude 87 30 degres ff d32",
+      "mots_cles": [
+        "coude",
+        "87",
+        "30",
+        "degres",
+        "ff",
+        "d32"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_889860938:45e2c065-137e-4e62-bcd9-b8ff8b1bc7b7",
+        "fr_bd_889860938:74f886e4-3b38-4421-8c28-f7f41e6ebd9f",
+        "fr_bd_947858304:0509b60d-a340-41a8-92a6-7113fdda451b"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304",
+        "fr_bd_889860938"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "CUTTER A LAME CASSABLE 25 MM d213",
+      "article_canonique": "cutter lame cassable 25 mm d213",
+      "mots_cles": [
+        "cutter",
+        "lame",
+        "cassable",
+        "25",
+        "mm",
+        "d213"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:081cb2a8-9ee4-4878-8607-32c626f90ea0",
+        "fr_bd_842785719:54e7acbe-1f76-4cf6-874d-a42acf58c716",
+        "fr_bd_842785719:e7564c60-b39f-4bb5-b3eb-ad78f9dc50f7"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Carte **0172 ESSO ARCUEIL",
+      "article_canonique": "carte 0172 esso arcueil",
+      "mots_cles": [
+        "carte",
+        "0172",
+        "esso",
+        "arcueil"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_509118329:8637ed2c-e378-4a8e-9e43-17e9165979b5"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4730Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_509118329"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "Ciment Technocem CEM II/B-M 32,5 R CP2 CE NF - Heidelberg Materials Gaurain - sac de 25kg",
+      "article_canonique": "ciment technocem cem iib m 32 5 heidelberg gaurain 25kg",
+      "mots_cles": [
+        "ciment",
+        "technocem",
+        "cem",
+        "ii",
+        "b",
+        "m",
+        "32",
+        "5"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:6a2b3682-4f4e-4d54-83fb-b033e67c73cd",
+        "fr_bd_842785719:793feea2-fb79-42c2-86e4-d017650b2301",
+        "fr_bd_842785719:93f8e518-8c74-4aea-b3a5-06d8ae1dd3cd"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "DETAFLEX 4000 BLANC 310ML COLIS 25 CARTOUCHE",
+      "article_canonique": "detaflex 4000 blanc 310ml colis 25 cartouche",
+      "mots_cles": [
+        "detaflex",
+        "4000",
+        "blanc",
+        "310ml",
+        "colis",
+        "25",
+        "cartouche"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:1456e1a0-9a6a-4995-a514-06c10dcf6e67",
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f",
+        "fr_bd_842785719:a2454c12-57c9-4ce1-8198-7bbe63dc2cf1"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "EPONGE VEGETALE ABRASIVE",
+      "article_canonique": "eponge vegetale abrasive",
+      "mots_cles": [
+        "eponge",
+        "vegetale",
+        "abrasive"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:081cb2a8-9ee4-4878-8607-32c626f90ea0",
+        "fr_bd_842785719:54e7acbe-1f76-4cf6-874d-a42acf58c716",
+        "fr_bd_842785719:94fb52ae-9f66-42a4-93a9-d328e9a673d8"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "EVAC COUDE 87 FF 40",
+      "article_canonique": "evac coude 87 ff 40",
+      "mots_cles": [
+        "evac",
+        "coude",
+        "87",
+        "ff",
+        "40"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_889860938:0c0399b6-3ec6-41f1-92f8-376d8a46706c",
+        "fr_bd_889860938:11bdbace-fdb2-4297-9f36-fd1f8cc84cb3",
+        "fr_bd_889860938:a652c78e-fa2b-4c3f-9b60-970737610cf7"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304",
+        "fr_bd_889860938"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "EVOLUTEX SAT BC BASE SEP 5L",
+      "article_canonique": "evolutex sat bc base sep 5l",
+      "mots_cles": [
+        "evolutex",
+        "sat",
+        "bc",
+        "base",
+        "sep",
+        "5l"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_947858304:103c5625-c49a-41af-abb3-6d098b42129d",
+        "fr_bd_947858304:64aff921-165c-4be9-b765-f191ea2e9118",
+        "fr_bd_947858304:92108abe-8688-4601-8c1f-fec40148122f"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "FIMUREX ROND A BETON HLE D10 MM 6ML - STOCK",
+      "article_canonique": "fimurex rond beton hle d10 mm 6ml stock",
+      "mots_cles": [
+        "fimurex",
+        "rond",
+        "beton",
+        "hle",
+        "d10",
+        "mm",
+        "6ml",
+        "stock"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:1bb0944b-53c8-4102-b672-e00e40878e4a",
+        "fr_bd_842785719:2aa8d765-4c9e-419f-ad46-61cc728cba78",
+        "fr_bd_842785719:5f1b89fa-c429-47ce-b28f-7a3e01ab7b8e"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "GANT LATEX ACTVE GRIP G1170 ROUGE / NOIR TAILLE 9",
+      "article_canonique": "gant latex actve grip g1170 rouge noir taille 9",
+      "mots_cles": [
+        "gant",
+        "latex",
+        "actve",
+        "grip",
+        "g1170",
+        "rouge",
+        "noir",
+        "taille"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:1ab55525-0417-46d2-b69f-743461a3cd9a",
+        "fr_bd_842785719:716546fe-9ea6-44aa-8dad-10b757498e00",
+        "fr_bd_842785719:dac60292-a3e9-4995-b016-d845209e7a57"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6022",
+      "compte_comptable_libelle": "Approvisionnements",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "GANT LE DIEGO NOIR ET ROUGE SUR CARTE T09 - KELI",
+      "article_canonique": "gant diego noir rouge carte t09 keli",
+      "mots_cles": [
+        "gant",
+        "diego",
+        "noir",
+        "rouge",
+        "carte",
+        "t09",
+        "keli"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:08921364-8ca8-43e6-9847-a99c6a3f4c37",
+        "fr_bd_842785719:a354b631-9cee-417a-b9bf-be5a9f8406d6",
+        "fr_bd_842785719:c508b6d2-2e26-4a83-b8f8-23ef349207bc"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "606",
+      "compte_comptable_libelle": "Achats non stockés de matières et fournitures",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "GANT LE DIEGO NOIR ET ROUGE SUR CARTE T10 - KELI",
+      "article_canonique": "gant diego noir rouge carte t10 keli",
+      "mots_cles": [
+        "gant",
+        "diego",
+        "noir",
+        "rouge",
+        "carte",
+        "t10",
+        "keli"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:08921364-8ca8-43e6-9847-a99c6a3f4c37",
+        "fr_bd_842785719:c508b6d2-2e26-4a83-b8f8-23ef349207bc",
+        "fr_bd_842785719:edf3ed3c-2b9f-43e2-8d1e-8c1418ef5c90"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "GEBSOPLAST GEL PLUS colle pour raccord en PVC rigide boite de 500ml avec pinceau réf 504749",
+      "article_canonique": "gebsoplast gel plus colle raccord pvc rigide boite",
+      "mots_cles": [
+        "gebsoplast",
+        "gel",
+        "plus",
+        "colle",
+        "raccord",
+        "pvc",
+        "rigide",
+        "boite"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_879788230:3504eea0-6068-4f13-bcfe-a27b32882d07",
+        "fr_bd_879788230:535e07fc-71bd-451a-9403-1299816be189",
+        "fr_bd_879788230:98321783-db75-4da6-aa3f-a341d3b05604"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_879788230"
+      ],
+      "compte_comptable": "606",
+      "compte_comptable_libelle": "Achats non stockés de matières et fournitures",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "GRATTOIR RENFORCE 30CM + MANCHE BOIS 110CM MERCIER STOCK",
+      "article_canonique": "grattoir renforce 30cm manche bois 110cm mercier stock",
+      "mots_cles": [
+        "grattoir",
+        "renforce",
+        "30cm",
+        "manche",
+        "bois",
+        "110cm",
+        "mercier",
+        "stock"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:1bb0944b-53c8-4102-b672-e00e40878e4a",
+        "fr_bd_842785719:6b1bf333-6653-4988-852b-0470c3b20d74",
+        "fr_bd_842785719:7608837f-f425-4b22-9534-332046be8b57"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6021",
+      "compte_comptable_libelle": "Matières consommables",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "GRILLE CARRE SANS MOUSTIQUAIRE 217X217 GN2222B",
+      "article_canonique": "grille carre sans moustiquaire 217x217 gn2222b",
+      "mots_cles": [
+        "grille",
+        "carre",
+        "sans",
+        "moustiquaire",
+        "217x217",
+        "gn2222b"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:1456e1a0-9a6a-4995-a514-06c10dcf6e67",
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f",
+        "fr_bd_842785719:a2454c12-57c9-4ce1-8198-7bbe63dc2cf1"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "INEO KRYL IMPRESS 20KG",
+      "article_canonique": "ineo kryl impress 20kg",
+      "mots_cles": [
+        "ineo",
+        "kryl",
+        "impress",
+        "20kg"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_879788230:1f419323-5f21-4b50-ab07-4962f6a10292",
+        "fr_bd_879788230:69561171-c37e-411a-9223-9d164db4a9b6",
+        "fr_bd_879788230:6ed4e437-9704-44d0-bc42-bf8330d510fa"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673B"
+      ],
+      "partitions_sources": [
+        "fr_bd_879788230"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "JONCTION A COLLER DE 25 SABLE",
+      "article_canonique": "jonction coller 25 sable",
+      "mots_cles": [
+        "jonction",
+        "coller",
+        "25",
+        "sable"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f",
+        "fr_bd_842785719:4e27f368-055b-4bce-87f1-ea8b6be05773",
+        "fr_bd_842785719:a2454c12-57c9-4ce1-8198-7bbe63dc2cf1"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "LOT 3 MASQUAGE DEXTER 48MMX50M",
+      "article_canonique": "lot 3 masquage dexter 48mmx50m",
+      "mots_cles": [
+        "lot",
+        "3",
+        "masquage",
+        "dexter",
+        "48mmx50m"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_879788230:05b393ea-d357-41b9-9004-be4aea61f01c",
+        "fr_bd_879788230:974c3cee-fa7e-4b93-8668-07e113d02510",
+        "fr_bd_947858304:1a33ff5b-5744-434f-8157-f63eb6e5fc99"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304",
+        "fr_bd_879788230"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "MANCHON 100MM 50.680 RADIATEUR MICROFIBRES MICROSTAR 10",
+      "article_canonique": "manchon 100mm 50 680 radiateur microfibres microstar 10",
+      "mots_cles": [
+        "manchon",
+        "100mm",
+        "50",
+        "680",
+        "radiateur",
+        "microfibres",
+        "microstar",
+        "10"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_879788230:1f419323-5f21-4b50-ab07-4962f6a10292",
+        "fr_bd_879788230:41bd4171-6fa3-4633-8b90-d16216be44f0",
+        "fr_bd_879788230:6ed4e437-9704-44d0-bc42-bf8330d510fa"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673B",
+        "4711F"
+      ],
+      "partitions_sources": [
+        "fr_bd_879788230"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "MANCHON FF D100",
+      "article_canonique": "manchon ff d100",
+      "mots_cles": [
+        "manchon",
+        "ff",
+        "d100"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_879788230:efd80a10-a82a-4670-99dd-effcf62a9d4e",
+        "fr_bd_889860938:6c024b9f-0dec-4d1a-a61a-87b8b2767f03",
+        "fr_bd_889860938:bb95c85d-aad8-45e3-9802-ed2c7e1eaba2"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4752B"
+      ],
+      "partitions_sources": [
+        "fr_bd_947858304",
+        "fr_bd_879788230",
+        "fr_bd_889860938"
+      ],
+      "compte_comptable": "6063",
+      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "MASETTE BATIPRO 1.0KG LEBORGNE STOCK",
+      "article_canonique": "masette batipro 1 0kg leborgne stock",
+      "mots_cles": [
+        "masette",
+        "batipro",
+        "1",
+        "0kg",
+        "leborgne",
+        "stock"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:024ec225-418f-4003-bae5-07f80a8309ee",
+        "fr_bd_842785719:1bb0944b-53c8-4102-b672-e00e40878e4a",
+        "fr_bd_842785719:6b1bf333-6653-4988-852b-0470c3b20d74"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6021",
+      "compte_comptable_libelle": "Matières consommables",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "NAIS.CT.BI-SYSTEM DN.80 DE 25 SABLE G125",
+      "article_canonique": "nais ct bi system dn 80 25 sable",
+      "mots_cles": [
+        "nais",
+        "ct",
+        "bi",
+        "system",
+        "dn",
+        "80",
+        "25",
+        "sable"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f",
+        "fr_bd_842785719:4e27f368-055b-4bce-87f1-ea8b6be05773",
+        "fr_bd_842785719:a2454c12-57c9-4ce1-8198-7bbe63dc2cf1"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A",
+        "4779Z"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "PALETTE BIG BAG LAFARGE GRANULATS",
+      "article_canonique": "palette big bag lafarge granulats",
+      "mots_cles": [
+        "palette",
+        "big",
+        "bag",
+        "lafarge",
+        "granulats"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:c90a514b-c5e5-480f-ade9-11d6d9553207"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "PALETTE CONSIGNE FABEMI",
+      "article_canonique": "palette consigne fabemi",
+      "mots_cles": [
+        "palette",
+        "consigne",
+        "fabemi"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:48e646b0-ed28-411d-b896-1af1dbc12c1f",
+        "fr_bd_842785719:a2454c12-57c9-4ce1-8198-7bbe63dc2cf1"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    },
+    {
+      "article_source": "PALETTE FABEMI",
+      "article_canonique": "palette fabemi",
+      "mots_cles": [
+        "palette",
+        "fabemi"
+      ],
+      "source_invoice_ids": [
+        "fr_bd_842785719:08921364-8ca8-43e6-9847-a99c6a3f4c37",
+        "fr_bd_842785719:c508b6d2-2e26-4a83-b8f8-23ef349207bc",
+        "fr_bd_842785719:edf3ed3c-2b9f-43e2-8d1e-8c1418ef5c90"
+      ],
+      "invoice_paths_sources": [],
+      "ape_context": [
+        "4673A"
+      ],
+      "partitions_sources": [
+        "fr_bd_842785719"
+      ],
+      "compte_comptable": "6011",
+      "compte_comptable_libelle": "Achats stockés - Matières premières",
+      "taux_tva": 20.0,
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "type_fournisseur": "fournisseur_materiaux"
+    }
+  ]
+}

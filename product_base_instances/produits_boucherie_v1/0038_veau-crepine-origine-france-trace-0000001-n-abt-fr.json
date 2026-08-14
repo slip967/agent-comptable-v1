@@ -1,0 +1,151 @@
+{
+  "_id": "fr_bd_519665103:product-instance:produits_boucherie_v1:ceedf990eab4",
+  "p": "product_base_instance",
+  "data": {
+    "collection": "ProductBaseInstance",
+    "type": "ProductArticle",
+    "sub_type": "boucherie"
+  },
+  "instance_kind": "product_article_source",
+  "profile_id": "produits_boucherie_v1",
+  "metier": "boucherie",
+  "client_siren": "519665103",
+  "partition_prefix": "fr_bd_519665103",
+  "source_file": "base_produits_boucherie_v1.json",
+  "source_profile_meta": {
+    "profile_id": "produits_boucherie_v1",
+    "metier": "boucherie",
+    "client_siren": "519665103",
+    "partition_prefix": "fr_bd_519665103",
+    "version": "v1",
+    "status": "draft",
+    "items_count": 40,
+    "cleanup_note": "Nettoyage manuel: suppression charges_externes en base metier + dedoublonnage produits.",
+    "source_invoice_ids_note": "Jusqu a 30 invoice_id source par article_source depuis invoice_form.",
+    "accounts_enrichment": {
+      "reference_file": "v1_519665103_reference_base_exploitation_v1.json",
+      "matched_items": 2,
+      "unmatched_items": 0,
+      "already_present": 0
+    },
+    "source_invoice_year_filter": "2024",
+    "accounts_alignment_from_abt3fec2": {
+      "db": "abt3fec2",
+      "selector": "p=entry + invoice exists + _id not contains generated",
+      "changed_items": 0,
+      "unchanged_items": 0,
+      "no_signal_items": 2,
+      "min_confidence": 0.55
+    },
+    "invoice_source_enrichment": {
+      "db_factures": "abt3",
+      "match_rule": "invoice_form.line_items.description == article_source (normalise)",
+      "year_filter": "none",
+      "changed_items": 1,
+      "added_invoice_ids_total": 5
+    },
+    "boucherie_expansion_from_invoice_form": {
+      "added_items": 38,
+      "target_total": 40,
+      "source": "invoice_form",
+      "rule": "scope=boucherie template + account startswith 60 + lexical quality filters"
+    },
+    "keywords_cleanup_single_char_and_zero_v1": {
+      "removed_single_char_keywords": 1,
+      "fixed_ocr_zero_to_o_keywords": 0,
+      "deduplicated_keywords": 0,
+      "items_touched": 1,
+      "total_keywords_before": 147,
+      "total_keywords_after": 146,
+      "rules": [
+        "remove keywords with length <= 1",
+        "replace 0 with o only when 0 is adjacent to letters"
+      ]
+    },
+    "text_normalization_v2": {
+      "updated_at": "2026-04-13T17:20:47.388289Z",
+      "rows_touched": 0,
+      "article_source_updated": 0,
+      "article_canonique_updated": 0,
+      "mots_cles_updated": 0,
+      "rule": "remove special chars (including % * +), fix OCR 0/O in words, normalize canon + keywords"
+    },
+    "account_normalization_v1": {
+      "rule": "trim trailing zeros for padded compte_comptable values when length > 3",
+      "changed_items": 1,
+      "normalized_pairs": {
+        "old": "606200",
+        "new": "6062",
+        "count": 1
+      }
+    },
+    "account_verification_v1": {
+      "class_6_only": true,
+      "suspicious_accounts": []
+    }
+  },
+  "item_index": 38,
+  "article_source": "VEAU CREPINE ORIGINE:FRANCE TRACE: 0000001 N ABT: FR",
+  "article_source_normalized": "veau crepine origine france trace 0000001 n abt fr",
+  "article_canonique": "veau crepine origine france trace 0000001 n abt fr",
+  "categorie": "exploitation_metier",
+  "sous_categorie": "matiere_premiere",
+  "compte_comptable": "6011",
+  "tva_rate": 5.5,
+  "mots_cles": [
+    "veau",
+    "crepine",
+    "origine",
+    "france",
+    "trace",
+    "0000001"
+  ],
+  "source_invoice_ids": [
+    "fr_bd_519665103:4383c4dd-0ca3-46e3-9411-dd9a8015f567",
+    "fr_bd_519665103:5bab5fc8-7c48-4649-8c53-6378d86c1fe5",
+    "fr_bd_519665103:da8d7279-3d35-4ab3-a65d-ac6fdf5ada3b",
+    "fr_bd_519665103:73aa0e50-5cb7-455c-b50e-096bf9ef077b",
+    "fr_bd_519665103:f7cb63db-0d5e-43c0-bff9-63c0dd1d4eb0",
+    "fr_bd_519665103:ee2e0155-fa5f-4a13-b7a3-fa4665899985",
+    "fr_bd_519665103:3ea80df5-1f96-4d23-9c19-9bb7b8c671d1",
+    "fr_bd_519665103:9567ff9d-2ef6-4c6e-bdde-81db1564d93c",
+    "fr_bd_519665103:b59f290b-6cbd-4026-8d84-b3e790be3635",
+    "fr_bd_519665103:a809947a-2cc9-4d15-b6ad-ab44a7eb338b"
+  ],
+  "payload": {
+    "article_source": "VEAU CREPINE ORIGINE:FRANCE TRACE: 0000001 N ABT: FR",
+    "article_canonique": "veau crepine origine france trace 0000001 n abt fr",
+    "categorie": "exploitation_metier",
+    "sous_categorie": "matiere_premiere",
+    "tva_rate": 5.5,
+    "mots_cles": [
+      "veau",
+      "crepine",
+      "origine",
+      "france",
+      "trace",
+      "0000001"
+    ],
+    "fournisseur_type": "fournisseur alimentaire",
+    "ape_context": [],
+    "notes": "Pre-rempli auto depuis invoice_form boucherie (occurrences=38)",
+    "source_invoice_ids": [
+      "fr_bd_519665103:4383c4dd-0ca3-46e3-9411-dd9a8015f567",
+      "fr_bd_519665103:5bab5fc8-7c48-4649-8c53-6378d86c1fe5",
+      "fr_bd_519665103:da8d7279-3d35-4ab3-a65d-ac6fdf5ada3b",
+      "fr_bd_519665103:73aa0e50-5cb7-455c-b50e-096bf9ef077b",
+      "fr_bd_519665103:f7cb63db-0d5e-43c0-bff9-63c0dd1d4eb0",
+      "fr_bd_519665103:ee2e0155-fa5f-4a13-b7a3-fa4665899985",
+      "fr_bd_519665103:3ea80df5-1f96-4d23-9c19-9bb7b8c671d1",
+      "fr_bd_519665103:9567ff9d-2ef6-4c6e-bdde-81db1564d93c",
+      "fr_bd_519665103:b59f290b-6cbd-4026-8d84-b3e790be3635",
+      "fr_bd_519665103:a809947a-2cc9-4d15-b6ad-ab44a7eb338b"
+    ],
+    "compte_comptable": "6011",
+    "compte_comptable_source": "invoice_form_reference_v1",
+    "compte_comptable_match_score": 288,
+    "compte_comptable_match_reason": "from_invoice_form_boucherie_scope"
+  },
+  "created_at": "2026-04-21T15:42:42.627853Z",
+  "updated_at": "2026-04-21T15:42:42.627873Z"
+}

@@ -1,0 +1,20 @@
+{
+  "base_charges_externes_v1.json": {
+    "added_items": 1,
+    "added_item_labels": [
+      "Forfait Spécial client 20Go 5G Av. smartphone"
+    ],
+    "items_count": 211,
+    "a_valider_count": 0,
+    "total_entries_count": 211
+  },
+  "base_charges_externes_v1_with_accounts.json": {
+    "added_items": 1,
+    "added_item_labels": [
+      "Forfait Spécial client 20Go 5G Av. smartphone"
+    ],
+    "items_count": 200,
+    "a_valider_count": 0,
+    "total_entries_count": 200
+  }
+}

@@ -1,0 +1,3453 @@
+{
+  "meta": {
+    "profile_id": "produits_transport_v1",
+    "metier": "transport",
+    "client_siren": "519665103",
+    "partition_prefix": "fr_bd_519665103",
+    "version": "v1",
+    "status": "draft",
+    "source_note": "Pre-rempli automatiquement depuis invoice_form CouchDB; validation metier requise.",
+    "generated_at": "2026-04-02T12:40:27.917794Z",
+    "items_count": 134,
+    "cleanup_note": "Nettoyage manuel: suppression lignes erronees/telecom et conservation des lignes transport utiles.",
+    "source_invoice_ids_note": "Jusqu a 30 invoice_id source par article_source depuis invoice_form.",
+    "accounts_enrichment": {
+      "reference_file": "v1_519665103_reference_base_exploitation_v1.json",
+      "matched_items": 1,
+      "unmatched_items": 0,
+      "already_present": 0
+    },
+    "source_invoice_year_filter": "2024",
+    "accounts_alignment_from_abt3fec2": {
+      "db": "abt3fec2",
+      "selector": "p=entry + invoice exists + _id not contains generated",
+      "changed_items": 0,
+      "unchanged_items": 0,
+      "no_signal_items": 1,
+      "min_confidence": 0.55
+    },
+    "invoice_source_enrichment": {
+      "db_factures": "abt3",
+      "match_rule": "invoice_form.line_items.description == article_source (normalise)",
+      "year_filter": "none",
+      "changed_items": 0,
+      "added_invoice_ids_total": 0
+    },
+    "transport_expansion_from_invoice_form": {
+      "added_items": 1,
+      "target_total": 5,
+      "source": "invoice_form",
+      "rule": "account startswith 60 + metier keyword filters + lexical quality"
+    },
+    "keywords_cleanup_single_char_and_zero_v1": {
+      "removed_single_char_keywords": 0,
+      "fixed_ocr_zero_to_o_keywords": 0,
+      "deduplicated_keywords": 0,
+      "items_touched": 0,
+      "total_keywords_before": 10,
+      "total_keywords_after": 10,
+      "rules": [
+        "remove keywords with length <= 1",
+        "replace 0 with o only when 0 is adjacent to letters"
+      ]
+    },
+    "text_normalization_v2": {
+      "updated_at": "2026-04-13T17:20:47.970463Z",
+      "rows_touched": 1,
+      "article_source_updated": 1,
+      "article_canonique_updated": 0,
+      "mots_cles_updated": 0,
+      "rule": "remove special chars (including % * +), fix OCR 0/O in words, normalize canon + keywords"
+    },
+    "account_normalization_v1": {
+      "rule": "trim trailing zeros for padded compte_comptable values when length > 3",
+      "changed_items": 0,
+      "normalized_pairs": {}
+    },
+    "account_verification_v1": {
+      "class_6_only": true,
+      "suspicious_accounts": []
+    },
+    "triage_manual_integration_v1": {
+      "updated_at": "2026-04-28T16:38:13.558151Z",
+      "source_triage": "transport_top_50_triage.md",
+      "added_items": 25,
+      "skipped_existing": 0
+    },
+    "triage_manual_tva_refresh_v1": {
+      "updated_at": "2026-04-28T16:39:58.071112Z",
+      "rule": "fix default beverage heuristic so token eau does not match agneau/veau",
+      "changed_items": 0
+    },
+    "transport_pdf_reclass_v1": {
+      "updated_at": "2026-04-29T18:10:48.360618Z",
+      "moved_from_items_to_a_valider": 15,
+      "target": "charges_externes/telecom_et_abonnements",
+      "source_csv": "a_reclasser_hors_base_produits_selon_pdf.csv"
+    },
+    "account_normalization_v2": {
+      "updated_at": "2026-05-05T08:49:04Z",
+      "rule": "normalize selected padded account codes to canonical form",
+      "changed_items": 1,
+      "normalized_pairs": {
+        "60630000->6063": 1
+      }
+    },
+    "auto_filtered_second_wave_v1": {
+      "updated_at": "2026-04-30T18:11:52.864320Z",
+      "added_items": 0,
+      "skipped_existing": 0,
+      "selection_mode": "auto_filtered_second_wave"
+    },
+    "a_valider_count": 0,
+    "manual_third_wave_v1": {
+      "items": {
+        "updated_at": "2026-05-05T08:49:05.254921Z",
+        "added_items": 9,
+        "skipped_existing": 0,
+        "added_labels": [
+          "SP98 EXCELLIUM",
+          "TS CART. FILTRE A HUILE",
+          "GARNITURE FREIN A DISQUE",
+          "CAPTEUR D'USURE",
+          "FILTRE A HUILE",
+          "PATE POUR FREINS (PDP)",
+          "PLAQUETTE FREIN BOSCH",
+          "DISQUE DE FREIN COMPOSITE",
+          "DISQUE DE FREIN VENTILE"
+        ]
+      },
+      "a_valider": {
+        "updated_at": "2026-05-05T08:49:05.260409Z",
+        "added_items": 22,
+        "skipped_existing": 0,
+        "added_labels": [
+          "Vos abonnements, forfaits et options",
+          "Bbox - location équipement (du 02/05 au 01/06)",
+          "Bbox - location équipement (du 02/12 au 01/01)",
+          "Vos communications (du 02/12 au 01/01)",
+          "Appels a tarification majorée (Numéros spéciaux)",
+          "Appels tarification majorée - Numéros spéciaux",
+          "Applications - contenus - services",
+          "Avantage Internet 100Go",
+          "Bbox - location équipement (du 02/02 au 01/03)",
+          "Bbox - location équipement (du 02/10 au 01/11)",
+          "Bbox - location équipement (du 02/11 au 01/12)",
+          "Bbox fibre jusqu'a1 Gb/s (du 02/05 au 01/06)",
+          "Bbox fibre jusqu'a1 Gb/s (du 02/07 au 01/08)",
+          "Bbox fibre jusqu'a1 Gb/s (du 02/12 au 01/01)",
+          "Evolution d'offre - Appels illimités mobiles France_ (du 02/07 au 01/08)",
+          "Forfait Sensation client 70Go",
+          "Internet 10Go France",
+          "Multi-TV FTTH (du 02/05 au 01/06)",
+          "Multi-TV FTTH (du 02/12 au 01/01)",
+          "Services de télécommunications (forfait, communications, autres services)",
+          "Vos communications (du 02/07 au 01/08)",
+          "Vos communications (du 02/09 au 01/10)"
+        ]
+      }
+    },
+    "transport_btp_a_valider_reclass_v1": {
+      "updated_at": "2026-05-05T09:03:50.341616Z",
+      "removed_from_a_valider": 37,
+      "moved_labels": [
+        "Forfait Client B&You 260Go 5G",
+        "Communications vers l'international",
+        "Forfait Client B&You 230Go",
+        "Forfait Spécial client 350Go 5G Av. smartphone",
+        "Solutions Sécurité Smartphone avec Norton",
+        "Avantage Internet 60Go",
+        "Forfait Sensation 150Go 5G Avantages Smartphone",
+        "Option multi-SIM Internet",
+        "Avantage Internet 80Go",
+        "Bbox - location équipement (du 02/07 au 01/08)",
+        "Bbox - location équipement (du 02/09 au 01/10)",
+        "Pack sécurité Norton",
+        "Multi-TV FTTH (du 02/07 au 01/08)",
+        "Multi-TV FTTH (du 02/09 au 01/10)",
+        "Option Week-end internet illimité",
+        "Vos abonnements, forfaits et options",
+        "Bbox - location équipement (du 02/05 au 01/06)",
+        "Bbox - location équipement (du 02/12 au 01/01)",
+        "Vos communications (du 02/12 au 01/01)",
+        "Appels a tarification majorée (Numéros spéciaux)",
+        "Appels tarification majorée - Numéros spéciaux",
+        "Applications - contenus - services",
+        "Avantage Internet 100Go",
+        "Bbox - location équipement (du 02/02 au 01/03)",
+        "Bbox - location équipement (du 02/10 au 01/11)",
+        "Bbox - location équipement (du 02/11 au 01/12)",
+        "Bbox fibre jusqu'a1 Gb/s (du 02/05 au 01/06)",
+        "Bbox fibre jusqu'a1 Gb/s (du 02/07 au 01/08)",
+        "Bbox fibre jusqu'a1 Gb/s (du 02/12 au 01/01)",
+        "Evolution d'offre - Appels illimités mobiles France_ (du 02/07 au 01/08)",
+        "Forfait Sensation client 70Go",
+        "Internet 10Go France",
+        "Multi-TV FTTH (du 02/05 au 01/06)",
+        "Multi-TV FTTH (du 02/12 au 01/01)",
+        "Services de télécommunications (forfait, communications, autres services)",
+        "Vos communications (du 02/07 au 01/08)",
+        "Vos communications (du 02/09 au 01/10)"
+      ],
+      "target": "base_charges_externes_v1.json"
+    },
+    "manual_fourth_wave_v1": {
+      "updated_at": "2026-05-05T09:08:21.558609Z",
+      "added_items": 6,
+      "skipped_existing": 0,
+      "added_labels": [
+        "CAPTEUR RADAR",
+        "CARTER D'HUILE",
+        "HUILE BVA 725 1L (PDP)",
+        "VIS DISQUE",
+        "HUILE MOT 229-52 v rac 5W30",
+        "240filtre huile nor auto"
+      ]
+    },
+    "manual_fifth_wave_v1": {
+      "updated_at": "2026-05-05T09:45:46.988087Z",
+      "added_items": 1,
+      "skipped_existing": 0,
+      "added_labels": [
+        "AMORTISSEUR DE CHOC"
+      ]
+    },
+    "manual_sixth_wave_v1": {
+      "updated_at": "2026-05-05T09:51:32.432263Z",
+      "added_items": 0,
+      "skipped_existing": 0,
+      "added_labels": []
+    },
+    "manual_eighth_wave_vtc_reference_v1": {
+      "updated_at": "2026-05-05T10:35:05.452406Z",
+      "added_items": 26,
+      "skipped_existing": 0,
+      "added_labels": [
+        "GALET DE RENVOI",
+        "SYSTEME REGULATION D AIR",
+        "TRAVERSE",
+        "SUPPORT",
+        "CADRE DE CALANDRE",
+        "POMPE A EAU",
+        "GARNITURE FREIN A DI",
+        "FILTRE POUSSIERE",
+        "JEU PCES GARNITURE FREIN",
+        "ANTIGEL ROUGE 1L (PDP)",
+        "ANTIGEL ROUGE 5L (PDP)",
+        "COURROIE TRAPEZOIDALE",
+        "TENDEUR DE COURROIE",
+        "ADBLUE vraC",
+        "ADBLUE 10L (PDP)",
+        "CAPUCHON DE VALVE",
+        "ELEMENT DE FILTRE D'HUILE",
+        "GRAISSE NOIRE CARDAN",
+        "RIVET",
+        "RIVET SYSTEME REGULATION D AIR",
+        "AILE AVANT",
+        "BOUCHON",
+        "GRILLE DE PROTECTION",
+        "TUBE ENTRETOISE",
+        "BATTERIE DE DEMARRAGE",
+        "Radiateur de refroidissement"
+      ]
+    },
+    "manual_ninth_wave_transport_v1": {
+      "updated_at": "2026-05-05T10:38:27.397102Z",
+      "added_items": 13,
+      "skipped_existing": 0,
+      "added_labels": [
+        "Gazole Excellium",
+        "Gazole Premier",
+        "AdBlue Pompe",
+        "[JANTE] R19x8.5 5X112 ET 43 66.6 B1048 MB",
+        "[JANTE] R19x8.5 5X112 ET 43 66.6 B1048",
+        "[PNEUS] 245 40 19 (98y)",
+        "[PNEUS] 275 35 19 (100y)",
+        "[ACCESSOIRES] BOULON POUR JANTES / ROUES M14X1.50 28mm",
+        "LIQUIDE DE FREIN",
+        "CARTOUCHE DE FILTRE A AIR",
+        "FILTRE A POUSSIERES",
+        "FILTRE POUSSIERE FIN",
+        "FILTRE AIR"
+      ]
+    },
+    "manual_tenth_wave_transport_v1": {
+      "updated_at": "2026-05-05T10:43:18.350092Z",
+      "added_items": 13,
+      "skipped_existing": 0,
+      "added_labels": [
+        "KIT DE REPARATION SUPPORT BAGUETTE ENJOLIVEUSE",
+        "022 H.MOT 229.71 1 L OW20/HUILE M CSVP",
+        "J.PC.CARTOUCH.FILTR.HUILE",
+        "JOINT TORIQUE, 39.8X2.2",
+        "REPARPNEU",
+        "RONDELLE DE BOUCHON DE",
+        "SILENTBLOC",
+        "VIS DE FERMETURE TS CART. FILTRE A HUILE",
+        "120186/CONSOLE TRAVERSE",
+        "CAPTEUR D'USURE PLAQUETTE",
+        "GARNITURE DE FREIN",
+        "GARNITURE FREINA DISQUE",
+        "OML MUL NETT. FREIN 50"
+      ]
+    },
+    "manual_eleventh_wave_transport_v1": {
+      "updated_at": "2026-05-05T10:55:54.212960Z",
+      "added_items": 3,
+      "skipped_existing": 6,
+      "added_labels": [
+        "HABILLAGE PARE-CHOCS",
+        "PATE POUR FREINS",
+        "CPT USURE GARNITURES FR"
+      ]
+    },
+    "manual_twelfth_wave_transport_v1": {
+      "updated_at": "2026-05-05T11:01:44.062330Z",
+      "added_items": 8,
+      "skipped_existing": 0,
+      "added_labels": [
+        "Bouclier avant complet remplacer",
+        "Traverse avant remplacer (pare-chocs déposé)",
+        "Filtre à air, remplacer",
+        "Filtre à carburant, remplacer",
+        "ESOE60ES B: remplacer le liquide de frein",
+        "Supplément a la maintenance: faire l'appoint d'AdBlue (R)",
+        "REMPLACEMENT DES PLAQUETTES DE FREIN AR",
+        "Remplacer la batterie du reseau de bord (Apres controle)"
+      ]
+    },
+    "manual_final_wave_transport_v1": {
+      "updated_at": "2026-05-05T11:04:31.543252Z",
+      "added_items": 1,
+      "skipped_existing": 5,
+      "added_labels": [
+        "SET BATTERIE 5AH ET CHARGEUR STERWINS"
+      ]
+    },
+    "total_entries_count": 160,
+    "raise_to_200_transport_v1": {
+      "updated_at": "2026-05-05T11:15:09.958378Z",
+      "added_items": 27,
+      "added_a_valider": 53,
+      "added_item_labels": [
+        "POLISSEUSE12V BATT.OA3000TR/MN",
+        "GACHE",
+        "KIT DE PROTECTION",
+        "ACCESSOIRES Écrous antivols de roue / M14 x1.5MM28MM",
+        "ANN: KIT EMBRAYAGE VOLANT LUK 600 0328 00 (600032800)",
+        "BOOSTER LITHIUM FV 1200 garantie 2 An(s) dont éco-part. 0,14",
+        "CAPUCHON (BG14)",
+        "CAPUCHON DE VAL",
+        "CARTOUCHE DE FILTRE Facturé selon bareme de temps Facturé selon temps passé",
+        "Chauffage du volant",
+        "Chauffage pour lave-glaces",
+        "DEGRIPPANT 300ML",
+        "DRUSTINE CHAMPIGNON 6mm",
+        "ECROU DOUZE PANS A BRIDE",
+        "ELEMENT PORTEUR",
+        "GRAISSE SYNTHETIQUE",
+        "GRAISSE TOIT ET SIEGE(PDP)",
+        "LITRE MOBIL SUPER 3000 XE",
+        "MASSE A COLLER-12 X 5G-NOIR",
+        "Rénovation 3 jantes de Mercedes classe S en 21 pouces bi-couleur",
+        "Rénovation 4 jantes de 21 pouces bi-couleur/ Mercedes classe S",
+        "Rénovation 4 jantes de Mercedes classe E en 20 pouces bi-couleur Dévoilages",
+        "BuTure Booster Batterie 2500A 20000Mah Démarreurs De Batterie avec Compresseur (Jusqu'a 8 Essence Ou Diesel), avec Écran LCD, Compresseur d'air Portable avec Gonfleur De Pneus Voiture 150psi",
+        "Rénovation 4 jantes de 21 pouces en bi couleur / Mercedes classe S",
+        "VIDANGE MOTEUR FILTRE",
+        "Fourniture et pose capteur",
+        "Vidange huile moteur fourniture et pose filtre à huile Plaquettes de freins AV AR"
+      ],
+      "added_a_valider_labels": [
+        "Effectuer un essai sur route",
+        "Effectuer un test rapide",
+        "Déposer, poser, remplacer selon constat 4 garnitures de frein de l'essieu avant (Roues completes démontées) Sur véh. avec étrier fixe",
+        "Bloc optique avant droit remplacer",
+        "Bouclier avant complet desassembler, assembler, selon constat rempi. piece(s). (pare-chocs depose)",
+        "Deposer, poser completement le pare-chocs avant",
+        "Deposer, poser les inserts decoratifs et les pieces rapportees, concerne pour remise en etat. carrosserie/ mise en peinture",
+        "Déposer, poser 2 blocs optiques avant",
+        "Effectuer la maintenance A avec pack plus",
+        "Ingrédients Peinture",
+        "Peindre aile avant droite niveau 1-M MET/UNI (peinture deux couches)",
+        "Peindre la porte avant droite niveau 1-M MET/UNI (peinture deux couches)",
+        "Pose kit réparation optique avant gauche",
+        "Remplacer les garnitures de frein et les disques de frein de l'essieu avant (roues complètes démontées) sur véh. avec étrier fixe",
+        "Revêtement du bouclier avant appliquer peinture finition et marier teintes par pistolage véh. avec pack Carrosserie AMG",
+        "CC: REVISION A7 Maintenance VIDANGE MOTEUR FILTRE",
+        "Demonter, monter 4 roues completes",
+        "Deposer, poser, remplacer selon besoin la pompe a liquide de refroidissement (Moteur depose)",
+        "Deposer, poser, remplacer selon besoin tous les habillages du compartiment moteur et toutes les garnitures sur soubassement",
+        "Deposer, poser, remplacer selon constat 4 garnitures de frein de l'essieu arriere (Roues completes demontees)",
+        "Direction assistee remplacer",
+        "Effectuer la dépose de roue pour la roue complete",
+        "Effectuer la maintenance B avec pack plus",
+        "Maintenance A avec pack plus",
+        "Paliers (tous) pour suspension du moteur remplacer (Moteur depose)",
+        "Peindre l'aile avant gauche niveau 1-M MET/UNI (peinture deux couches)",
+        "Programmer et coder le calculateur (Apres test rapide)",
+        "Regler le projecteur a LED",
+        "Remplacement(s): huile moteur, filtre a huile moteur, filtre ä huile d'embrayage",
+        "Remplacer la jambe de suspension gauche de l'essieu avant sur veh. a suspension electrohydrauligue",
+        "Remplacer le bloc optique avant gauche",
+        "Remplacer le liquide de refroidissement avec antigel, controler l'etancheite",
+        "Revetement du bouclier avant appliquer peinture finition et marier teintes par pistolage",
+        "Supplement a la maintenance remplacer le filtre a poussieres",
+        "Supplement a la maintenance: Vous allez recevoir un email 5 Etoiles",
+        "Supplement a la maintenance: remplacer la cartouche de filtre a air",
+        "Supplément a la maintenance: Facturé selon temps passé",
+        "Supplément ä la maintenance",
+        "demonter, monter 2 roues",
+        "B: remplacer le liquide de frein",
+        "B: remplacer le liquide de frein - Supplément a la maintenance",
+        "Deposer, poser, selon constat 4 garnitures de frein de l'essieu arriere (Roues completes demontees)",
+        "Démonter, monter 2 roues complètes",
+        "Effectuer la maintenance avec pack plus",
+        "Ingrédient peinture",
+        "LUBRIFIANT TOIT OUVRANT(PDP)",
+        "Main d'oeuvre atelier",
+        "Pack Remote - Commande à distance vitres/toit ouvrant 360 jours, Verrouillage et déverrouillage à distance des portes 360 jours, Alerte voiturier 360 jours, Personnalisation 360 jours, Emplacement du véhicule 360 jours, Géolocalisation du véhicule 360 jours, Localiser le véhicule 360 jours, Localisation du véhicule 360 jours. Chassis: WDD2130041A652450. Ce produit est valable un an à partir de la date d'activation",
+        "Regler le projecteur a LED (Apres test rapide)",
+        "Remplacer les garnitures de frein et les disques de frein de l'essieu arrière (roues complètes démontées)",
+        "Réparation selon rapport d'expertise - Travaux effectués: Contrôle des trains avant et arrière, Remplacement, peinture (Aile avant droite, Capot moteur avant, Charnière droite de capot, Pare-chocs avant, Support avant d'aile avant droit, Pare boue avant droit partie avant, Pare boue avant droit partie arrière, Tirant de bras de suspension avant droit, Bras inférieur de suspension avant, Protection sous moteur, Boîtier de direction, Equilibreur droit de capot, Jante avant droite, Porte moyeu avant droit, Bras supérieur de suspension, Amortisseur avant droit et avant gauche, Pneumatique avant droit, Projecteur droit, Support de capteur latéral droit d'aide au stationnement, Joint de porte avant droite, Rétroviseur droit, Répétiteur de rétroviseur), Réparation, peinture (Haut de caisse droit, Elargisseur de bas de caisse, Porte avant droite, Doublure de passage de roue avant droit)",
+        "Supplément a la maintenance B: effectuer la vidange d'huile dans la boite de vitesses automatique Sur véh. avec boite de vitesses 725.0",
+        "Supplément a la maintenance: Nettoyer, graisser le mécanisme de toit ouvrant panoramique"
+      ]
+    },
+    "top_up_target_200_transport_v1": {
+      "updated_at": "2026-05-05T11:16:44.401618Z",
+      "added_a_valider": 20,
+      "added_a_valider_labels": [
+        "Visite technique périodique",
+        "NCS, MO-S",
+        "RENOV.ULTIME MEGUIARS 473 ML (PROMO)",
+        "ULTIM.BRILLANCE MEGUIARS 709ML (PROMO)",
+        "VIS DE FERMETURE",
+        "022 H.MOT 229-52 v rac 5W30",
+        "022 H.MOT 229-52 vrac 5W30",
+        "120186/CONSOLE",
+        "Cloison sous aile avant gauche remplacer",
+        "H.MOT 229.5 1L OW40",
+        "JEU DE CART. FILTR. CARB",
+        "Lavage express",
+        "Polish",
+        "RAIL DE RECOUVREMENT",
+        "RESSORT",
+        "Remplacer la pile de la clé-émetteur 022 PILE 2032",
+        "TUBE DE GUIDAGE",
+        "TUBE DE TROP-PLEIN",
+        "VIS",
+        "VIS 6 PANS AVEC BRIDE"
+      ]
+    },
+    "article_source_cleanup_v1": {
+      "updated_at": "2026-05-05T11:31:51.288620Z",
+      "changed_count": 18,
+      "collision_count": 1
+    },
+    "final_btp_transport_triage_v1": {
+      "updated_at": "2026-05-05T16:45:49.646495Z",
+      "promoted_to_items": [
+        "Garnitures de frein essieu avant",
+        "Bloc optique avant droit remplacer",
+        "Bouclier avant complet",
+        "Inserts décoratifs carrosserie",
+        "Ingrédients Peinture",
+        "Garnitures et disques de frein essieu avant",
+        "Habillages compartiment moteur",
+        "Garnitures de frein essieu arrière",
+        "Paliers (tous) pour suspension du moteur remplacer (Moteur depose)",
+        "Remplacement(s): huile moteur, filtre a huile moteur, filtre ä huile d'embrayage",
+        "Jambe de suspension gauche",
+        "Remplacer le bloc optique avant gauche",
+        "Supplement a la maintenance remplacer le filtre a poussieres",
+        "Supplement a la maintenance: remplacer la cartouche de filtre a air",
+        "B: remplacer le liquide de frein",
+        "Ingrédient peinture",
+        "LUBRIFIANT TOIT OUVRANT(PDP)",
+        "Garnitures et disques de frein essieu arrière",
+        "RENOV.ULTIME MEGUIARS 473 ML (PROMO)",
+        "ULTIM.BRILLANCE MEGUIARS 709ML (PROMO)",
+        "VIS DE FERMETURE",
+        "022 H.MOT 229-52 vrac 5W30",
+        "120186/CONSOLE",
+        "Cloison sous aile avant gauche remplacer",
+        "H.MOT 229.5 1L OW40",
+        "JEU DE CART. FILTR. CARB",
+        "Polish",
+        "RAIL DE RECOUVREMENT",
+        "RESSORT",
+        "Remplacer la pile de la clé-émetteur 022 PILE 2032",
+        "TUBE DE GUIDAGE",
+        "TUBE DE TROP-PLEIN",
+        "VIS 6 PANS AVEC BRIDE"
+      ],
+      "moved_to_charges_externes": [
+        "Effectuer un essai sur route",
+        "Effectuer un test rapide",
+        "Deposer, poser completement le pare-chocs avant",
+        "Déposer, poser 2 blocs optiques avant",
+        "Effectuer la maintenance A avec pack plus",
+        "Peindre aile avant droite niveau 1-M MET/UNI (peinture deux couches)",
+        "Peindre la porte avant droite niveau 1-M MET/UNI (peinture deux couches)",
+        "Pose kit réparation optique avant gauche",
+        "Revêtement du bouclier avant appliquer peinture finition et marier teintes par pistolage véh. avec pack Carrosserie AMG",
+        "REVISION A7 VIDANGE MOTEUR FILTRE",
+        "Demonter, monter 4 roues completes",
+        "Deposer, poser, remplacer selon besoin la pompe a liquide de refroidissement (Moteur depose)",
+        "Direction assistee remplacer",
+        "Effectuer la dépose de roue pour la roue complete",
+        "Effectuer la maintenance B avec pack plus",
+        "Maintenance A avec pack plus",
+        "Peindre l'aile avant gauche niveau 1-M MET/UNI (peinture deux couches)",
+        "Programmer et coder le calculateur (Apres test rapide)",
+        "Regler le projecteur a LED",
+        "Remplacer le liquide de refroidissement avec antigel, controler l'etancheite",
+        "Revetement du bouclier avant appliquer peinture finition et marier teintes par pistolage",
+        "Supplément a la maintenance: Facturé selon temps passé",
+        "Supplément ä la maintenance",
+        "demonter, monter 2 roues",
+        "B: remplacer le liquide de frein - Supplément a la maintenance",
+        "Deposer, poser, selon constat 4 garnitures de frein de l'essieu arriere (Roues completes demontees)",
+        "Démonter, monter 2 roues complètes",
+        "Effectuer la maintenance avec pack plus",
+        "Main d'oeuvre atelier",
+        "Pack Remote - Commande à distance vitres/toit ouvrant 360 jours, Verrouillage et déverrouillage à distance des portes 360 jours, Alerte voiturier 360 jours, Personnalisation 360 jours, Emplacement du véhicule 360 jours, Géolocalisation du véhicule 360 jours, Localiser le véhicule 360 jours, Localisation du véhicule 360 jours. Chassis: WDD2130041A652450. Ce produit est valable un an à partir de la date d'activation",
+        "Regler le projecteur a LED (Apres test rapide)",
+        "Réparation carrosserie avant droit",
+        "Vidange boite de vitesses automatique",
+        "Nettoyage mécanisme toit ouvrant",
+        "Visite technique périodique",
+        "Lavage express"
+      ],
+      "excluded": [
+        "Supplement a la maintenance: Vous allez recevoir un email 5 Etoiles",
+        "NCS, MO-S",
+        "VIS"
+      ],
+      "duplicates_removed": [
+        "022 H.MOT 229-52 vrac 5W30"
+      ],
+      "charges_target": "base_charges_externes_v1.json"
+    },
+    "cleanup_auto_v2": {
+      "updated_at": "2026-05-05T17:13:44.814455Z",
+      "source_file": "base_produits_transport_v1.json",
+      "kind": "product",
+      "metier": "transport",
+      "items_before": 160,
+      "a_valider_before": 0,
+      "account_normalized": 0,
+      "canonical_rebuilt": 0,
+      "keywords_rebuilt": 57,
+      "auto_moved_to_charges": 26,
+      "charge_fields_refreshed": 0,
+      "items_after": 134,
+      "a_valider_after": 0,
+      "duplicates_merged": 0,
+      "manual_review_count": 0
+    },
+    "cleanup_corrected_v3": {
+      "updated_at": "2026-05-05T17:30:00.516416Z",
+      "source_file": "base_produits_transport_clean_v2.json",
+      "items_after": 134,
+      "moved_to_charges_count": 0,
+      "note": "Version corrigée prête à injecter: comptes normalisés, mots-clés reconstruits, charges déplacées."
+    }
+  },
+  "items": [
+    {
+      "article_source": "Entree CTTE (Camionnette)",
+      "article_canonique": "entree ctte camionnette",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "entree",
+        "ctte",
+        "camionnette"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4941A"
+      ],
+      "notes": "Nettoye manuellement depuis extraction invoice_form",
+      "source_invoice_ids": [
+        "fr_bd_519665103:0c493dc6-a22b-4fff-88ee-b53354b25880",
+        "fr_bd_519665103:4ac0c8f5-6b07-4a95-a66b-dfec2f1e3284",
+        "fr_bd_519665103:573bb3f0-76d4-4268-ada5-28c03e2b76bb",
+        "fr_bd_519665103:5e07b412-e2ee-47cd-b0e3-7acb45e080c8",
+        "fr_bd_519665103:3810ce6d-c1f4-46c7-bd58-c9f0bd8e2156"
+      ],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 484,
+      "compte_comptable_match_reason": "invoice_id_overlap=2, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "Entrée CTTE (Camionnette) (Abatt: 100)",
+      "article_canonique": "entree ctte camionnette abatt 100",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "entree",
+        "ctte",
+        "camionnette",
+        "abatt"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+      "source_invoice_ids": [
+        "fr_bd_519665103:0c493dc6-a22b-4fff-88ee-b53354b25880"
+      ],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 251,
+      "compte_comptable_match_reason": "from_invoice_form_keyword_scope"
+    },
+    {
+      "article_source": "Gazole",
+      "article_canonique": "gazole",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "gazole"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=71, line_occurrences=71)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 413,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=71; occurrences=71"
+    },
+    {
+      "article_source": "Carburant GO",
+      "article_canonique": "carburant go",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "carburant",
+        "go"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=18, line_occurrences=18)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 254,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=18; occurrences=18"
+    },
+    {
+      "article_source": "Carburant",
+      "article_canonique": "carburant",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "carburant"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=17, line_occurrences=17)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 251,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=17; occurrences=17"
+    },
+    {
+      "article_source": "DIESEL",
+      "article_canonique": "diesel",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "diesel"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=11, line_occurrences=11)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 233,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=11; occurrences=11"
+    },
+    {
+      "article_source": "GO (Carburant)",
+      "article_canonique": "go carburant",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "go",
+        "carburant"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=10, line_occurrences=10)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 230,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=10; occurrences=10"
+    },
+    {
+      "article_source": "Série Speciale B&YOU 200Go",
+      "article_canonique": "serie speciale b you 200go",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "serie",
+        "speciale",
+        "you"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=10, line_occurrences=10)",
+      "source_invoice_ids": [],
+      "compte_comptable": "606",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 230,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=606; invoices=10; occurrences=10"
+    },
+    {
+      "article_source": "ADblue",
+      "article_canonique": "adblue",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "adblue"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=6, line_occurrences=6)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 218,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=60620000; invoices=6; occurrences=6"
+    },
+    {
+      "article_source": "SMS/MMS vers l'international",
+      "article_canonique": "sms mms vers l international",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "sms",
+        "mms",
+        "vers",
+        "international"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=6, line_occurrences=6)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 218,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=6; occurrences=6"
+    },
+    {
+      "article_source": "DIESEL B10",
+      "article_canonique": "diesel b10",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "diesel",
+        "b10"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=5, line_occurrences=5)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 215,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=5; occurrences=5"
+    },
+    {
+      "article_source": "GAZOLE Carburant",
+      "article_canonique": "gazole carburant",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "gazole",
+        "carburant"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=3, line_occurrences=3) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 209,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=3; occurrences=3",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "Supreme+ Go (Carburant)",
+      "article_canonique": "supreme go carburant",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "supreme",
+        "go",
+        "carburant"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=3, line_occurrences=3) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 209,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=3; occurrences=3",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "Carburant GO (Gazole)",
+      "article_canonique": "carburant go gazole",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "carburant",
+        "go",
+        "gazole"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=60630000; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "Carburant GO - Pompe 06",
+      "article_canonique": "carburant go pompe 06",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "carburant",
+        "go",
+        "pompe"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "GO (Gazole)",
+      "article_canonique": "go gazole",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "go",
+        "gazole"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "SP98 EXCELLIUM",
+      "article_canonique": "sp98 excellium",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "sp98",
+        "excellium"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=4, line_occurrences=4) | Ajout manuel 3e vague depuis candidate pack nettoye.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 212,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=4; occurrences=4",
+      "selection_source": "manual_third_wave_active_v1"
+    },
+    {
+      "article_source": "TS CART. FILTRE A HUILE",
+      "article_canonique": "ts cart filtre a huile",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "ts",
+        "cart",
+        "filtre",
+        "huile"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=4, line_occurrences=4) | Ajout manuel 3e vague depuis candidate pack nettoye.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 212,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=4; occurrences=4",
+      "selection_source": "manual_third_wave_active_v1"
+    },
+    {
+      "article_source": "GARNITURE FREIN A DISQUE",
+      "article_canonique": "garniture frein a disque",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "garniture",
+        "frein",
+        "disque"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=3, line_occurrences=6) | Ajout manuel 3e vague depuis candidate pack nettoye.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 212,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=3; occurrences=6",
+      "selection_source": "manual_third_wave_active_v1"
+    },
+    {
+      "article_source": "CAPTEUR D'USURE",
+      "article_canonique": "capteur d usure",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "capteur",
+        "usure"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=3, line_occurrences=4) | Ajout manuel 3e vague depuis candidate pack nettoye.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 210,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=3; occurrences=4",
+      "selection_source": "manual_third_wave_active_v1"
+    },
+    {
+      "article_source": "FILTRE A HUILE",
+      "article_canonique": "filtre a huile",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "filtre",
+        "huile"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=2, line_occurrences=2) | Ajout manuel 3e vague depuis candidate pack nettoye.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_third_wave_active_v1"
+    },
+    {
+      "article_source": "PATE POUR FREINS (PDP)",
+      "article_canonique": "pate pour freins pdp",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "pate",
+        "freins",
+        "pdp"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=2, line_occurrences=2) | Ajout manuel 3e vague depuis candidate pack nettoye.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_third_wave_active_v1"
+    },
+    {
+      "article_source": "PLAQUETTE FREIN BOSCH",
+      "article_canonique": "plaquette frein bosch",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "plaquette",
+        "frein",
+        "bosch"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=2, line_occurrences=2) | Ajout manuel 3e vague depuis candidate pack nettoye.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "manual_third_wave_active_v1"
+    },
+    {
+      "article_source": "DISQUE DE FREIN COMPOSITE",
+      "article_canonique": "disque de frein composite",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "disque",
+        "frein",
+        "composite"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=2, line_occurrences=2) | Ajout manuel 3e vague depuis candidate pack nettoye.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_third_wave_active_v1"
+    },
+    {
+      "article_source": "DISQUE DE FREIN VENTILE",
+      "article_canonique": "disque de frein ventile",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "disque",
+        "frein",
+        "ventile"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=2, line_occurrences=2) | Ajout manuel 3e vague depuis candidate pack nettoye.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_third_wave_active_v1"
+    },
+    {
+      "article_source": "CAPTEUR RADAR",
+      "article_canonique": "capteur radar",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "capteur",
+        "radar"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=2, line_occurrences=2) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "CARTER D'HUILE",
+      "article_canonique": "carter d huile",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "carter",
+        "huile"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=2, line_occurrences=2) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "HUILE BVA 725 1L (PDP)",
+      "article_canonique": "huile bva 725 1l pdp",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "huile",
+        "bva",
+        "pdp"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=2, line_occurrences=2) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "VIS DISQUE",
+      "article_canonique": "vis disque",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "vis",
+        "disque"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=2, line_occurrences=2) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "HUILE MOT 229-52 vrac 5W30",
+      "article_canonique": "huile mot 229 52 vrac 5w30",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "huile",
+        "mot",
+        "vrac",
+        "5w30"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=1, line_occurrences=2) | Ajout manuel 4e vague depuis candidate pack nettoyé. | article_source_cleanup_v1",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 204,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=1; occurrences=2",
+      "selection_source": "manual_fourth_wave_v1",
+      "article_source_original": "HUILE MOT 229-52 v rac 5W30"
+    },
+    {
+      "article_source": "240filtre huile nor auto",
+      "article_canonique": "240filtre huile nor auto",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "240filtre",
+        "huile",
+        "nor",
+        "auto"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=1, line_occurrences=1) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=1; occurrences=1",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "AMORTISSEUR DE CHOC",
+      "article_canonique": "amortisseur de choc",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "amortisseur",
+        "choc"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [
+        "4932Z"
+      ],
+      "notes": "Integre depuis triage manuel transport (invoice_count=2, line_occurrences=2) | Ajout manuel 5e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_fifth_wave_v1"
+    },
+    {
+      "article_source": "GALET DE RENVOI",
+      "article_canonique": "galet de renvoi",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "galet",
+        "renvoi"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=257, line_occurrences=257) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=257; occurrences=257",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "SYSTEME REGULATION D AIR",
+      "article_canonique": "systeme regulation d air",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "systeme",
+        "regulation",
+        "air"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=256, line_occurrences=256) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=256; occurrences=256",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "TRAVERSE",
+      "article_canonique": "traverse",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "traverse"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=256, line_occurrences=256) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=256; occurrences=256",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "SUPPORT",
+      "article_canonique": "support",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "support"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=256, line_occurrences=256) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=256; occurrences=256",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "CADRE DE CALANDRE",
+      "article_canonique": "cadre de calandre",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "cadre",
+        "calandre"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=256, line_occurrences=256) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=256; occurrences=256",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "POMPE A EAU",
+      "article_canonique": "pompe a eau",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "pompe",
+        "eau"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=254, line_occurrences=254) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=254; occurrences=254",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "GARNITURE FREIN A DI",
+      "article_canonique": "garniture frein a di",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "garniture",
+        "frein",
+        "di"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=254, line_occurrences=254) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=254; occurrences=254",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "FILTRE POUSSIERE",
+      "article_canonique": "filtre poussiere",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "filtre",
+        "poussiere"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=626; invoices=252; occurrences=252",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "JEU PCES GARNITURE FREIN",
+      "article_canonique": "jeu pces garniture frein",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "jeu",
+        "pces",
+        "garniture",
+        "frein"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=252; occurrences=252",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "ANTIGEL ROUGE 1L (PDP)",
+      "article_canonique": "antigel rouge 1l pdp",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "antigel",
+        "rouge",
+        "pdp"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=252; occurrences=252",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "ANTIGEL ROUGE 5L (PDP)",
+      "article_canonique": "antigel rouge 5l pdp",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "antigel",
+        "rouge",
+        "pdp"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=252; occurrences=252",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "COURROIE TRAPEZOIDALE",
+      "article_canonique": "courroie trapezoidale",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "courroie",
+        "trapezoidale"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=252; occurrences=252",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "TENDEUR DE COURROIE",
+      "article_canonique": "tendeur de courroie",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "tendeur",
+        "courroie"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=252; occurrences=252",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "ADBLUE vrac",
+      "article_canonique": "adblue vrac",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "adblue",
+        "vrac"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json. | article_source_cleanup_v1",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1",
+      "article_source_original": "ADBLUE vraC"
+    },
+    {
+      "article_source": "ADBLUE 10L (PDP)",
+      "article_canonique": "adblue 10l pdp",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "adblue",
+        "pdp"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "CAPUCHON DE VALVE",
+      "article_canonique": "capuchon de valve",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "capuchon",
+        "valve"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "ELEMENT DE FILTRE D'HUILE",
+      "article_canonique": "element de filtre d huile",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "element",
+        "filtre",
+        "huile"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "GRAISSE NOIRE CARDAN",
+      "article_canonique": "graisse noire cardan",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "graisse",
+        "noire",
+        "cardan"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=253, line_occurrences=253) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=253; occurrences=253",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "RIVET",
+      "article_canonique": "rivet",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "rivet"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=253, line_occurrences=253) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=253; occurrences=253",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "RIVET SYSTEME REGULATION D AIR",
+      "article_canonique": "rivet systeme regulation d air",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "rivet",
+        "systeme",
+        "regulation",
+        "air"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=253, line_occurrences=253) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=253; occurrences=253",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "AILE AVANT",
+      "article_canonique": "aile avant",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "aile",
+        "avant"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=253, line_occurrences=253) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=253; occurrences=253",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "BOUCHON",
+      "article_canonique": "bouchon",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "bouchon"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=253, line_occurrences=253) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=253; occurrences=253",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "GRILLE DE PROTECTION",
+      "article_canonique": "grille de protection",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "grille",
+        "protection"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=253, line_occurrences=253) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=253; occurrences=253",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "TUBE ENTRETOISE",
+      "article_canonique": "tube entretoise",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "tube",
+        "entretoise"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=253, line_occurrences=253) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=253; occurrences=253",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "BATTERIE DE DEMARRAGE",
+      "article_canonique": "batterie de demarrage",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "batterie",
+        "demarrage"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=615; invoices=252; occurrences=252",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "Radiateur de refroidissement",
+      "article_canonique": "radiateur de refroidissement",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "radiateur",
+        "refroidissement"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=251, line_occurrences=251) | Ajout manuel 8e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=251; occurrences=251",
+      "selection_source": "manual_eighth_wave_vtc_reference_v1"
+    },
+    {
+      "article_source": "Gazole Excellium",
+      "article_canonique": "gazole excellium",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "gazole",
+        "excellium"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=266, line_occurrences=266) | Ajout manuel 9e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6227; invoices=266; occurrences=266",
+      "selection_source": "manual_ninth_wave_transport_v1"
+    },
+    {
+      "article_source": "Gazole Premier",
+      "article_canonique": "gazole premier",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "gazole",
+        "premier"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=256, line_occurrences=256) | Ajout manuel 9e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6227; invoices=256; occurrences=256",
+      "selection_source": "manual_ninth_wave_transport_v1"
+    },
+    {
+      "article_source": "AdBlue Pompe",
+      "article_canonique": "adblue pompe",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "adblue",
+        "pompe"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=255, line_occurrences=255) | Ajout manuel 9e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6227; invoices=255; occurrences=255",
+      "selection_source": "manual_ninth_wave_transport_v1"
+    },
+    {
+      "article_source": "[JANTE] R19x8.5 5X112 ET 43 66.6 B1048 MB",
+      "article_canonique": "jante r19x8 5 5x112 et 43 66 6 b1048 mb",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "jante",
+        "r19x8",
+        "b1048",
+        "mb"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=2, line_occurrences=2) | Ajout manuel 9e vague depuis v1_824332985_reference_base_exploitation_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_ninth_wave_transport_v1"
+    },
+    {
+      "article_source": "[JANTE] R19x8.5 5X112 ET 43 66.6 B1048",
+      "article_canonique": "jante r19x8 5 5x112 et 43 66 6 b1048",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "jante",
+        "r19x8",
+        "b1048"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=2, line_occurrences=2) | Ajout manuel 9e vague depuis v1_824332985_reference_base_exploitation_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_ninth_wave_transport_v1"
+    },
+    {
+      "article_source": "[PNEUS] 245 40 19 (98y)",
+      "article_canonique": "pneus 245 40 19 98y",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "pneus",
+        "98y"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=2, line_occurrences=2) | Ajout manuel 9e vague depuis v1_824332985_reference_base_exploitation_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_ninth_wave_transport_v1"
+    },
+    {
+      "article_source": "[PNEUS] 275 35 19 (100y)",
+      "article_canonique": "pneus 275 35 19 100y",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "pneus",
+        "100y"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=2, line_occurrences=2) | Ajout manuel 9e vague depuis v1_824332985_reference_base_exploitation_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_ninth_wave_transport_v1"
+    },
+    {
+      "article_source": "[ACCESSOIRES] BOULON POUR JANTES / ROUES M14X1.50 28mm",
+      "article_canonique": "accessoires boulon pour jantes roues m14x1 50 28mm",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "accessoires",
+        "boulon",
+        "jantes",
+        "roues",
+        "m14x1"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=2, line_occurrences=2) | Ajout manuel 9e vague depuis v1_824332985_reference_base_exploitation_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_ninth_wave_transport_v1"
+    },
+    {
+      "article_source": "LIQUIDE DE FREIN",
+      "article_canonique": "liquide de frein",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "liquide",
+        "frein"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout manuel 9e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=615; invoices=252; occurrences=252",
+      "selection_source": "manual_ninth_wave_transport_v1"
+    },
+    {
+      "article_source": "CARTOUCHE DE FILTRE A AIR",
+      "article_canonique": "cartouche de filtre a air",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "cartouche",
+        "filtre",
+        "air"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout manuel 9e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=615; invoices=252; occurrences=252",
+      "selection_source": "manual_ninth_wave_transport_v1"
+    },
+    {
+      "article_source": "FILTRE A POUSSIERES",
+      "article_canonique": "filtre a poussieres",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "filtre",
+        "poussieres"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout manuel 9e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=615; invoices=252; occurrences=252",
+      "selection_source": "manual_ninth_wave_transport_v1"
+    },
+    {
+      "article_source": "FILTRE POUSSIERE FIN",
+      "article_canonique": "filtre poussiere fin",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "filtre",
+        "poussiere",
+        "fin"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout manuel 9e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=615; invoices=252; occurrences=252",
+      "selection_source": "manual_ninth_wave_transport_v1"
+    },
+    {
+      "article_source": "FILTRE AIR",
+      "article_canonique": "filtre air",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "filtre",
+        "air"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=251, line_occurrences=251) | Ajout manuel 9e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=615; invoices=251; occurrences=251",
+      "selection_source": "manual_ninth_wave_transport_v1"
+    },
+    {
+      "article_source": "022 H.MOT 229.71 1 L OW20/HUILE M CSVP",
+      "article_canonique": "022 h mot 229 71 1 l ow20 huile m csvp",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "mot",
+        "ow20",
+        "huile",
+        "csvp"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout manuel 10e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "manual_tenth_wave_transport_v1"
+    },
+    {
+      "article_source": "J.PC.CARTOUCH.FILTR.HUILE",
+      "article_canonique": "j pc cartouch filtr huile",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "pc",
+        "cartouch",
+        "filtr",
+        "huile"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout manuel 10e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=615; invoices=252; occurrences=252",
+      "selection_source": "manual_tenth_wave_transport_v1"
+    },
+    {
+      "article_source": "JOINT TORIQUE, 39.8X2.2",
+      "article_canonique": "joint torique 39 8x2 2",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "joint",
+        "torique"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout manuel 10e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "manual_tenth_wave_transport_v1"
+    },
+    {
+      "article_source": "REPARPNEU",
+      "article_canonique": "reparpneu",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "reparpneu"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout manuel 10e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "manual_tenth_wave_transport_v1"
+    },
+    {
+      "article_source": "RONDELLE DE BOUCHON DE",
+      "article_canonique": "rondelle de bouchon de",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "rondelle",
+        "bouchon"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout manuel 10e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "manual_tenth_wave_transport_v1"
+    },
+    {
+      "article_source": "SILENTBLOC",
+      "article_canonique": "silentbloc",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "silentbloc"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout manuel 10e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=252; occurrences=252",
+      "selection_source": "manual_tenth_wave_transport_v1"
+    },
+    {
+      "article_source": "VIS DE FERMETURE TS CART. FILTRE A HUILE",
+      "article_canonique": "vis de fermeture ts cart filtre a huile",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "vis",
+        "fermeture",
+        "ts",
+        "cart",
+        "filtre",
+        "huile"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout manuel 10e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "manual_tenth_wave_transport_v1"
+    },
+    {
+      "article_source": "120186/CONSOLE TRAVERSE",
+      "article_canonique": "120186 console traverse",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "console",
+        "traverse"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=251, line_occurrences=251) | Ajout manuel 10e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=251; occurrences=251",
+      "selection_source": "manual_tenth_wave_transport_v1"
+    },
+    {
+      "article_source": "CAPTEUR D'USURE PLAQUETTE",
+      "article_canonique": "capteur d usure plaquette",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "capteur",
+        "usure",
+        "plaquette"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=251, line_occurrences=251) | Ajout manuel 10e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=615; invoices=251; occurrences=251",
+      "selection_source": "manual_tenth_wave_transport_v1"
+    },
+    {
+      "article_source": "GARNITURE DE FREIN",
+      "article_canonique": "garniture de frein",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "garniture",
+        "frein"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=251, line_occurrences=251) | Ajout manuel 10e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=626; invoices=251; occurrences=251",
+      "selection_source": "manual_tenth_wave_transport_v1"
+    },
+    {
+      "article_source": "GARNITURE FREINA DISQUE",
+      "article_canonique": "garniture freina disque",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "garniture",
+        "freina",
+        "disque"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=251, line_occurrences=251) | Ajout manuel 10e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=615; invoices=251; occurrences=251",
+      "selection_source": "manual_tenth_wave_transport_v1"
+    },
+    {
+      "article_source": "OML MUL NETT. FREIN 50",
+      "article_canonique": "oml mul nett frein 50",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "oml",
+        "mul",
+        "nett",
+        "frein"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=251, line_occurrences=251) | Ajout manuel 10e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=251; occurrences=251",
+      "selection_source": "manual_tenth_wave_transport_v1"
+    },
+    {
+      "article_source": "HABILLAGE PARE-CHOCS",
+      "article_canonique": "habillage pare chocs",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "habillage",
+        "pare",
+        "chocs"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=253, line_occurrences=253) | Ajout manuel 11e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=253; occurrences=253",
+      "selection_source": "manual_eleventh_wave_transport_v1"
+    },
+    {
+      "article_source": "PATE POUR FREINS",
+      "article_canonique": "pate pour freins",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "pate",
+        "freins"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=251, line_occurrences=251) | Ajout manuel 11e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "626",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=626; invoices=251; occurrences=251",
+      "selection_source": "manual_eleventh_wave_transport_v1"
+    },
+    {
+      "article_source": "REMPLACEMENT DES PLAQUETTES DE FREIN AR",
+      "article_canonique": "remplacement des plaquettes de frein ar",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "remplacement",
+        "plaquettes",
+        "frein",
+        "ar"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=251, line_occurrences=251) | Ajout manuel 12e vague depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=626; invoices=251; occurrences=251",
+      "selection_source": "manual_twelfth_wave_transport_v1"
+    },
+    {
+      "article_source": "SET BATTERIE 5AH ET CHARGEUR STERWINS",
+      "article_canonique": "set batterie 5ah et chargeur sterwins",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "set",
+        "batterie",
+        "chargeur",
+        "sterwins"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=100, line_occurrences=100) | Ajout manuel vague finale depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 500,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=100; occurrences=100",
+      "selection_source": "manual_final_wave_transport_v1"
+    },
+    {
+      "article_source": "POLISSEUSE12V BATT.OA3000TR/MN",
+      "article_canonique": "polisseuse12v batt oa3000tr mn",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "polisseuse12v",
+        "batt",
+        "oa3000tr",
+        "mn"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=254, line_occurrences=254) | Ajout cible 200 depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=254; occurrences=254",
+      "selection_source": "raise_to_200_transport_active_v1"
+    },
+    {
+      "article_source": "GACHE",
+      "article_canonique": "gache",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "gache"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=253, line_occurrences=253) | Ajout cible 200 depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=253; occurrences=253",
+      "selection_source": "raise_to_200_transport_active_v1"
+    },
+    {
+      "article_source": "KIT DE PROTECTION",
+      "article_canonique": "kit de protection",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "kit",
+        "protection"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=253, line_occurrences=253) | Ajout cible 200 depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=253; occurrences=253",
+      "selection_source": "raise_to_200_transport_active_v1"
+    },
+    {
+      "article_source": "ACCESSOIRES Écrous antivols de roue / M14 x1.5MM28MM",
+      "article_canonique": "accessoires ecrous antivols de roue m14 x1 5mm28mm",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "accessoires",
+        "ecrous",
+        "antivols",
+        "roue",
+        "m14",
+        "x1",
+        "5mm28mm"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout cible 200 depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "raise_to_200_transport_active_v1"
+    },
+    {
+      "article_source": "ANN: KIT EMBRAYAGE VOLANT LUK 600 0328 00 (600032800)",
+      "article_canonique": "ann kit embrayage volant luk 600 0328 00 600032800",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "ann",
+        "kit",
+        "embrayage",
+        "volant",
+        "luk"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout cible 200 depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=252; occurrences=252",
+      "selection_source": "raise_to_200_transport_active_v1"
+    },
+    {
+      "article_source": "BOOSTER LITHIUM FV 1200 garantie 2 An(s) dont éco-part. 0,14",
+      "article_canonique": "booster lithium fv 1200 garantie 2 an s dont eco part 0 14",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "booster",
+        "lithium",
+        "fv",
+        "garantie",
+        "an",
+        "dont",
+        "eco",
+        "part"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout cible 200 depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=252; occurrences=252",
+      "selection_source": "raise_to_200_transport_active_v1"
+    },
+    {
+      "article_source": "CAPUCHON (BG14)",
+      "article_canonique": "capuchon bg14",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "capuchon",
+        "bg14"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout cible 200 depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "raise_to_200_transport_active_v1"
+    },
+    {
+      "article_source": "CAPUCHON DE VAL",
+      "article_canonique": "capuchon de val",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "capuchon",
+        "val"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout cible 200 depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "raise_to_200_transport_active_v1"
+    },
+    {
+      "article_source": "CARTOUCHE DE FILTRE",
+      "article_canonique": "cartouche de filtre",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "cartouche",
+        "filtre"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout cible 200 depuis base_produits_vtc_v1.json. | article_source_cleanup_v1",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "raise_to_200_transport_active_v1",
+      "article_source_original": "CARTOUCHE DE FILTRE Facturé selon bareme de temps Facturé selon temps passé"
+    },
+    {
+      "article_source": "Chauffage du volant",
+      "article_canonique": "chauffage du volant",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "chauffage",
+        "volant"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout cible 200 depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=252; occurrences=252",
+      "selection_source": "raise_to_200_transport_active_v1"
+    },
+    {
+      "article_source": "Chauffage pour lave-glaces",
+      "article_canonique": "chauffage pour lave glaces",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "chauffage",
+        "lave",
+        "glaces"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout cible 200 depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=252; occurrences=252",
+      "selection_source": "raise_to_200_transport_active_v1"
+    },
+    {
+      "article_source": "DEGRIPPANT 300ML",
+      "article_canonique": "degrippant 300ml",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "degrippant"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout cible 200 depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=252; occurrences=252",
+      "selection_source": "raise_to_200_transport_active_v1"
+    },
+    {
+      "article_source": "DRUSTINE CHAMPIGNON 6mm",
+      "article_canonique": "drustine champignon 6mm",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "drustine",
+        "champignon"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout cible 200 depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "raise_to_200_transport_active_v1"
+    },
+    {
+      "article_source": "ECROU DOUZE PANS A BRIDE",
+      "article_canonique": "ecrou douze pans a bride",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "ecrou",
+        "douze",
+        "pans",
+        "bride"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout cible 200 depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "raise_to_200_transport_active_v1"
+    },
+    {
+      "article_source": "ELEMENT PORTEUR",
+      "article_canonique": "element porteur",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "element",
+        "porteur"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout cible 200 depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=252; occurrences=252",
+      "selection_source": "raise_to_200_transport_active_v1"
+    },
+    {
+      "article_source": "GRAISSE TOIT ET SIEGE(PDP)",
+      "article_canonique": "graisse toit et siege pdp",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "graisse",
+        "toit",
+        "siege",
+        "pdp"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout cible 200 depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "raise_to_200_transport_active_v1"
+    },
+    {
+      "article_source": "LITRE MOBIL SUPER 3000 XE",
+      "article_canonique": "litre mobil super 3000 xe",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "litre",
+        "mobil",
+        "super",
+        "xe"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout cible 200 depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "raise_to_200_transport_active_v1"
+    },
+    {
+      "article_source": "MASSE A COLLER-12 X 5G-NOIR",
+      "article_canonique": "masse a coller 12 x 5g noir",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "masse",
+        "coller",
+        "noir"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout cible 200 depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "raise_to_200_transport_active_v1"
+    },
+    {
+      "article_source": "Rénovation 3 jantes de Mercedes classe S en 21 pouces bi-couleur",
+      "article_canonique": "renovation 3 jantes de mercedes classe s en 21 pouces bi couleur",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "renovation",
+        "jantes",
+        "mercedes",
+        "classe",
+        "pouces",
+        "bi",
+        "couleur"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout cible 200 depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6068; invoices=252; occurrences=252",
+      "selection_source": "raise_to_200_transport_active_v1"
+    },
+    {
+      "article_source": "Rénovation 4 jantes de 21 pouces bi-couleur/ Mercedes classe S",
+      "article_canonique": "renovation 4 jantes de 21 pouces bi couleur mercedes classe s",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "renovation",
+        "jantes",
+        "pouces",
+        "bi",
+        "couleur",
+        "mercedes",
+        "classe"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout cible 200 depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6068; invoices=252; occurrences=252",
+      "selection_source": "raise_to_200_transport_active_v1"
+    },
+    {
+      "article_source": "Rénovation 4 jantes de Mercedes classe E en 20 pouces bi-couleur Dévoilages",
+      "article_canonique": "renovation 4 jantes de mercedes classe e en 20 pouces bi couleur devoilages",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "renovation",
+        "jantes",
+        "mercedes",
+        "classe",
+        "pouces",
+        "bi",
+        "couleur",
+        "devoilages"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout cible 200 depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6068; invoices=252; occurrences=252",
+      "selection_source": "raise_to_200_transport_active_v1"
+    },
+    {
+      "article_source": "Booster Batterie 2500A 20000mAh avec compresseur",
+      "article_canonique": "booster batterie 2500a 20000mah avec compresseur",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "booster",
+        "batterie",
+        "2500a",
+        "20000mah",
+        "compresseur"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=251, line_occurrences=251) | Ajout cible 200 depuis base_produits_vtc_v1.json. | article_source_cleanup_v1",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=251; occurrences=251",
+      "selection_source": "raise_to_200_transport_active_v1",
+      "article_source_original": "BuTure Booster Batterie 2500A 20000Mah Démarreurs De Batterie avec Compresseur (Jusqu'a 8 Essence Ou Diesel), avec Écran LCD, Compresseur d'air Portable avec Gonfleur De Pneus Voiture 150psi"
+    },
+    {
+      "article_source": "Rénovation 4 jantes de 21 pouces en bi couleur / Mercedes classe S",
+      "article_canonique": "renovation 4 jantes de 21 pouces en bi couleur mercedes classe s",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "renovation",
+        "jantes",
+        "pouces",
+        "bi",
+        "couleur",
+        "mercedes",
+        "classe"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=251, line_occurrences=251) | Ajout cible 200 depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=251; occurrences=251",
+      "selection_source": "raise_to_200_transport_active_v1"
+    },
+    {
+      "article_source": "Fourniture et pose capteur",
+      "article_canonique": "fourniture et pose capteur",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "fourniture",
+        "pose",
+        "capteur"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=100, line_occurrences=100) | Ajout cible 200 depuis base_produits_vtc_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 500,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=100; occurrences=100",
+      "selection_source": "raise_to_200_transport_active_v1"
+    },
+    {
+      "article_source": "Garnitures de frein essieu avant",
+      "article_canonique": "garnitures de frein essieu avant",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "garnitures",
+        "frein",
+        "essieu",
+        "avant"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=254, line_occurrences=254) | Ajout cible 200 depuis base_produits_vtc_v1.json. | article_source_cleanup_v1 | Promu depuis a_valider vers items apres triage final transport.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=254; occurrences=254",
+      "selection_source": "raise_to_200_transport_pending_v1",
+      "article_source_original": "Déposer, poser, remplacer selon constat 4 garnitures de frein de l'essieu avant (Roues completes démontées) Sur véh. avec étrier fixe",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "Bouclier avant complet",
+      "article_canonique": "bouclier avant complet",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "bouclier",
+        "avant",
+        "complet"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=253, line_occurrences=253) | Ajout cible 200 depuis base_produits_vtc_v1.json. | article_source_cleanup_v1 | Promu depuis a_valider vers items apres triage final transport.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=253; occurrences=253",
+      "selection_source": "raise_to_200_transport_pending_v1",
+      "article_source_original": "Bouclier avant complet desassembler, assembler, selon constat rempi. piece(s). (pare-chocs depose)",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "Inserts décoratifs carrosserie",
+      "article_canonique": "inserts decoratifs carrosserie",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "inserts",
+        "decoratifs",
+        "carrosserie"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=253, line_occurrences=253) | Ajout cible 200 depuis base_produits_vtc_v1.json. | article_source_cleanup_v1 | Promu depuis a_valider vers items apres triage final transport.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=253; occurrences=253",
+      "selection_source": "raise_to_200_transport_pending_v1",
+      "article_source_original": "Deposer, poser les inserts decoratifs et les pieces rapportees, concerne pour remise en etat. carrosserie/ mise en peinture",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "Ingrédients Peinture",
+      "article_canonique": "ingredients peinture",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "ingredients",
+        "peinture"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=253, line_occurrences=253) | Ajout cible 200 depuis base_produits_vtc_v1.json. | Promu depuis a_valider vers items apres triage final transport.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=253; occurrences=253",
+      "selection_source": "raise_to_200_transport_pending_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "Garnitures et disques de frein essieu avant",
+      "article_canonique": "garnitures et disques de frein essieu avant",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "garnitures",
+        "disques",
+        "frein",
+        "essieu",
+        "avant"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=253, line_occurrences=253) | Ajout cible 200 depuis base_produits_vtc_v1.json. | article_source_cleanup_v1 | Promu depuis a_valider vers items apres triage final transport.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=253; occurrences=253",
+      "selection_source": "raise_to_200_transport_pending_v1",
+      "article_source_original": "Remplacer les garnitures de frein et les disques de frein de l'essieu avant (roues complètes démontées) sur véh. avec étrier fixe",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "Habillages compartiment moteur",
+      "article_canonique": "habillages compartiment moteur",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "habillages",
+        "compartiment",
+        "moteur"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout cible 200 depuis base_produits_vtc_v1.json. | article_source_cleanup_v1 | Promu depuis a_valider vers items apres triage final transport.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "raise_to_200_transport_pending_v1",
+      "article_source_original": "Deposer, poser, remplacer selon besoin tous les habillages du compartiment moteur et toutes les garnitures sur soubassement",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "Garnitures de frein essieu arrière",
+      "article_canonique": "garnitures de frein essieu arriere",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "garnitures",
+        "frein",
+        "essieu",
+        "arriere"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout cible 200 depuis base_produits_vtc_v1.json. | article_source_cleanup_v1 | Promu depuis a_valider vers items apres triage final transport.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "raise_to_200_transport_pending_v1",
+      "article_source_original": "Deposer, poser, remplacer selon constat 4 garnitures de frein de l'essieu arriere (Roues completes demontees)",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "Remplacement(s): huile moteur, filtre a huile moteur, filtre ä huile d'embrayage",
+      "article_canonique": "remplacement s huile moteur filtre a huile moteur filtre a huile d embrayage",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "remplacement",
+        "huile",
+        "moteur",
+        "filtre",
+        "embrayage"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout cible 200 depuis base_produits_vtc_v1.json. | Promu depuis a_valider vers items apres triage final transport.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "raise_to_200_transport_pending_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "Jambe de suspension gauche",
+      "article_canonique": "jambe de suspension gauche",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "jambe",
+        "suspension",
+        "gauche"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Ajout cible 200 depuis base_produits_vtc_v1.json. | article_source_cleanup_v1 | Promu depuis a_valider vers items apres triage final transport.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "raise_to_200_transport_pending_v1",
+      "article_source_original": "Remplacer la jambe de suspension gauche de l'essieu avant sur veh. a suspension electrohydrauligue",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "Ingrédient peinture",
+      "article_canonique": "ingredient peinture",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "ingredient",
+        "peinture"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=251, line_occurrences=251) | Ajout cible 200 depuis base_produits_vtc_v1.json. | Promu depuis a_valider vers items apres triage final transport.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=251; occurrences=251",
+      "selection_source": "raise_to_200_transport_pending_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "LUBRIFIANT TOIT OUVRANT(PDP)",
+      "article_canonique": "lubrifiant toit ouvrant pdp",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "lubrifiant",
+        "toit",
+        "ouvrant",
+        "pdp"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=251, line_occurrences=251) | Ajout cible 200 depuis base_produits_vtc_v1.json. | Promu depuis a_valider vers items apres triage final transport.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=251; occurrences=251",
+      "selection_source": "raise_to_200_transport_pending_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "Garnitures et disques de frein essieu arrière",
+      "article_canonique": "garnitures et disques de frein essieu arriere",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "garnitures",
+        "disques",
+        "frein",
+        "essieu",
+        "arriere"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=251, line_occurrences=251) | Ajout cible 200 depuis base_produits_vtc_v1.json. | article_source_cleanup_v1 | Promu depuis a_valider vers items apres triage final transport.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=251; occurrences=251",
+      "selection_source": "raise_to_200_transport_pending_v1",
+      "article_source_original": "Remplacer les garnitures de frein et les disques de frein de l'essieu arrière (roues complètes démontées)",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "RENOV.ULTIME MEGUIARS 473 ML (PROMO)",
+      "article_canonique": "renov ultime meguiars 473 ml promo",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "renov",
+        "ultime",
+        "meguiars",
+        "ml",
+        "promo"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=254, line_occurrences=254) | Top-up final cible 200 depuis base_produits_vtc_v1.json | Promu depuis a_valider vers items apres triage final transport.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=254; occurrences=254",
+      "selection_source": "top_up_target_200_transport_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "ULTIM.BRILLANCE MEGUIARS 709ML (PROMO)",
+      "article_canonique": "ultim brillance meguiars 709ml promo",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "ultim",
+        "brillance",
+        "meguiars",
+        "promo"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=254, line_occurrences=254) | Top-up final cible 200 depuis base_produits_vtc_v1.json | Promu depuis a_valider vers items apres triage final transport.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=254; occurrences=254",
+      "selection_source": "top_up_target_200_transport_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "022 H.MOT 229-52 vrac 5W30",
+      "article_canonique": "022 h mot 229 52 vrac 5w30",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "mot",
+        "vrac",
+        "5w30"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Top-up final cible 200 depuis base_produits_vtc_v1.json | article_source_cleanup_v1 | Promu depuis a_valider vers items apres triage final transport.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "top_up_target_200_transport_v1",
+      "article_source_original": "022 H.MOT 229-52 v rac 5W30",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "120186/CONSOLE",
+      "article_canonique": "120186 console",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "console"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Top-up final cible 200 depuis base_produits_vtc_v1.json | Promu depuis a_valider vers items apres triage final transport.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "top_up_target_200_transport_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "H.MOT 229.5 1L OW40",
+      "article_canonique": "h mot 229 5 1l ow40",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "mot",
+        "ow40"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Top-up final cible 200 depuis base_produits_vtc_v1.json | Promu depuis a_valider vers items apres triage final transport.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=252; occurrences=252",
+      "selection_source": "top_up_target_200_transport_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "Polish",
+      "article_canonique": "polish",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "polish"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Top-up final cible 200 depuis base_produits_vtc_v1.json | Promu depuis a_valider vers items apres triage final transport.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "top_up_target_200_transport_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "RAIL DE RECOUVREMENT",
+      "article_canonique": "rail de recouvrement",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "rail",
+        "recouvrement"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Top-up final cible 200 depuis base_produits_vtc_v1.json | Promu depuis a_valider vers items apres triage final transport.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "top_up_target_200_transport_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "RESSORT",
+      "article_canonique": "ressort",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "ressort"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Top-up final cible 200 depuis base_produits_vtc_v1.json | Promu depuis a_valider vers items apres triage final transport.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "top_up_target_200_transport_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "TUBE DE GUIDAGE",
+      "article_canonique": "tube de guidage",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "tube",
+        "guidage"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Top-up final cible 200 depuis base_produits_vtc_v1.json | Promu depuis a_valider vers items apres triage final transport.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "top_up_target_200_transport_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "TUBE DE TROP-PLEIN",
+      "article_canonique": "tube de trop plein",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "tube",
+        "trop",
+        "plein"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Top-up final cible 200 depuis base_produits_vtc_v1.json | Promu depuis a_valider vers items apres triage final transport.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "top_up_target_200_transport_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "VIS 6 PANS AVEC BRIDE",
+      "article_canonique": "vis 6 pans avec bride",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "vis",
+        "pans",
+        "bride"
+      ],
+      "fournisseur_type": "service_transport",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel transport (invoice_count=252, line_occurrences=252) | Top-up final cible 200 depuis base_produits_vtc_v1.json | Promu depuis a_valider vers items apres triage final transport.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 600,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=252; occurrences=252",
+      "selection_source": "top_up_target_200_transport_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    }
+  ],
+  "a_valider": []
+}

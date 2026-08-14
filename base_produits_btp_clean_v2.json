@@ -1,0 +1,4311 @@
+{
+  "meta": {
+    "profile_id": "produits_btp_v1",
+    "metier": "btp",
+    "client_siren": "519665103",
+    "partition_prefix": "fr_bd_519665103",
+    "version": "v1",
+    "status": "draft",
+    "source_note": "Pre-rempli automatiquement depuis invoice_form CouchDB; validation metier requise.",
+    "generated_at": "2026-04-02T12:40:27.903835Z",
+    "items_count": 163,
+    "cleanup_note": "Nettoyage manuel: suppression charges_externes en base metier + dedoublonnage produits.",
+    "source_invoice_ids_note": "Jusqu a 3 invoice_id source par article_source depuis invoice_form.",
+    "accounts_enrichment": {
+      "reference_file": "v1_519665103_reference_base_exploitation_v1.json",
+      "matched_items": 9,
+      "unmatched_items": 0,
+      "already_present": 0
+    },
+    "source_invoice_year_filter": "2024",
+    "accounts_alignment_from_abt3fec2": {
+      "db": "abt3fec2",
+      "selector": "p=entry + invoice exists + _id not contains generated",
+      "changed_items": 0,
+      "unchanged_items": 0,
+      "no_signal_items": 9,
+      "min_confidence": 0.55
+    },
+    "keywords_cleanup_single_char_and_zero_v1": {
+      "removed_single_char_keywords": 0,
+      "fixed_ocr_zero_to_o_keywords": 0,
+      "deduplicated_keywords": 0,
+      "items_touched": 0,
+      "total_keywords_before": 34,
+      "total_keywords_after": 34,
+      "rules": [
+        "remove keywords with length <= 1",
+        "replace 0 with o only when 0 is adjacent to letters"
+      ]
+    },
+    "text_normalization_v2": {
+      "updated_at": "2026-04-13T17:20:47.397971Z",
+      "rows_touched": 0,
+      "article_source_updated": 0,
+      "article_canonique_updated": 0,
+      "mots_cles_updated": 0,
+      "rule": "remove special chars (including % * +), fix OCR 0/O in words, normalize canon + keywords"
+    },
+    "account_normalization_v1": {
+      "rule": "trim trailing zeros for padded compte_comptable values when length > 3",
+      "changed_items": 0,
+      "normalized_pairs": {}
+    },
+    "account_verification_v1": {
+      "class_6_only": true,
+      "suspicious_accounts": []
+    },
+    "triage_manual_integration_v1": {
+      "updated_at": "2026-04-28T16:38:13.578431Z",
+      "source_triage": "btp_top_50_triage.md",
+      "added_items": 12,
+      "skipped_existing": 0
+    },
+    "triage_manual_tva_refresh_v1": {
+      "updated_at": "2026-04-28T16:39:58.089990Z",
+      "rule": "fix default beverage heuristic so token eau does not match agneau/veau",
+      "changed_items": 0
+    },
+    "account_normalization_v2": {
+      "updated_at": "2026-05-05T08:49:04Z",
+      "rule": "normalize selected padded account codes to canonical form",
+      "changed_items": 1,
+      "normalized_pairs": {
+        "606800->6068": 1
+      }
+    },
+    "auto_filtered_second_wave_v1": {
+      "updated_at": "2026-04-30T18:11:52.831628Z",
+      "added_items": 25,
+      "skipped_existing": 0,
+      "selection_mode": "auto_filtered_second_wave"
+    },
+    "a_valider_count": 0,
+    "manual_third_wave_v1": {
+      "items": {
+        "updated_at": "2026-05-05T08:49:05.338505Z",
+        "added_items": 12,
+        "skipped_existing": 0,
+        "added_labels": [
+          "CUTTER STANDARD 18MM AVEC 3 LAMES NOIR",
+          "Sac a gravat tissé 60x100cm paquet de 10 pièces",
+          "PROMACURE S -Cure des bétons,phase solvant -BIDON DE 20 LITRES",
+          "ROND A BETON TOR HLE FE5005 6MM 3M",
+          "Rabot à béton essence",
+          "PARKING Coulage Radier",
+          "PLANCHER SUPERSTRUCTURE ( 100 % ) Finition brut",
+          "BPS C25/30 CEMI SR5+Cv D20 S3 XF1",
+          "Passerelle",
+          "vanne thermostatique connectée",
+          "CUTTER A LAME CASSABLE 25 MM d213",
+          "CUTTER NOVI LAME RETRACT 18MM"
+        ]
+      },
+      "a_valider": {
+        "updated_at": "2026-05-05T08:49:05.347698Z",
+        "added_items": 4,
+        "skipped_existing": 0,
+        "added_labels": [
+          "Essai de contrôle sur un micropieu de l'ouvrage selon EC7",
+          "Travaux de terrassement et étanchéité de la zone comportant des infiltrations d'eau",
+          "Amenée-repli de l'atelier de forage des micropieux",
+          "Implantation des micropieux"
+        ]
+      }
+    },
+    "transport_btp_a_valider_reclass_v1": {
+      "updated_at": "2026-05-05T09:03:50.388900Z",
+      "removed_from_a_valider": 4,
+      "moved_labels": [
+        "Essai de contrôle sur un micropieu de l'ouvrage selon EC7",
+        "Travaux de terrassement et étanchéité de la zone comportant des infiltrations d'eau",
+        "Amenée-repli de l'atelier de forage des micropieux",
+        "Implantation des micropieux"
+      ],
+      "target": "base_charges_externes_v1.json"
+    },
+    "manual_fourth_wave_v1": {
+      "updated_at": "2026-05-05T09:08:21.590035Z",
+      "added_items": 3,
+      "skipped_existing": 0,
+      "added_labels": [
+        "Fourniture des outils de forage perdus",
+        "TERRE GRAVAT",
+        "Passerelle( avec ethernet)"
+      ]
+    },
+    "manual_fifth_wave_v1": {
+      "updated_at": "2026-05-05T09:45:47.022031Z",
+      "added_items": 2,
+      "skipped_existing": 0,
+      "added_labels": [
+        "POUR PANNEAUX FIBRE CIMENT POUR SYSTEME UNI RIVET 11MM",
+        "Palette HMFC ciments 95x115 cm"
+      ]
+    },
+    "manual_sixth_wave_v1": {
+      "updated_at": "2026-05-05T09:51:32.459279Z",
+      "added_items": 2,
+      "skipped_existing": 0,
+      "added_labels": [
+        "PALETTE EQIOM GRANULATS",
+        "CARRELAGE SDB 60*120 GRIS DU MARAIS BEIGE Epaisseur 7mm. Emballé par 3 soit 216 m2/Bte 64.80 m2/Palette 35.82 kg/Bte"
+      ]
+    },
+    "manual_eighth_wave_btp_v1": {
+      "updated_at": "2026-05-05T10:35:05.462675Z",
+      "added_items": 2,
+      "skipped_existing": 0,
+      "added_labels": [
+        "PALETTE LUSSIANA",
+        "PALETTE CONSIGNE SLM OPL SPC"
+      ]
+    },
+    "manual_ninth_wave_btp_v1": {
+      "updated_at": "2026-05-05T10:38:27.430338Z",
+      "added_items": 13,
+      "skipped_existing": 0,
+      "added_labels": [
+        "1PX LOT 10 TUBE TULIPE IRL D16 GRIS 2.4M",
+        "BASTAING BOIS 65x163 3 ML",
+        "Brique lisse pleine rouge rieussequel 220 105 50 mm",
+        "CARRELAGES REVETEMENTS - Nez de marche en aluminium avec insert en L en intérieur - localisation : Escalier RDC et RDJ - (marches - contre marches paliers)",
+        "DISQUE DIAMASTER 160X3,2/2,40X20 Z4 COUPE PANNEAUX ETERNIT",
+        "Disque à tronconner les métaux -Novipro- Diam 125x1,6x22,2mm",
+        "GANTS MANUT HAUTE VISIBILTE T10 JAUNE",
+        "POCHE A JOINT BLISTER",
+        "PRESTONETT FIN ENDUIT EN POUDRE POUR FINITION INTERIEURE SAC DE 25KG",
+        "PROF 1/4 RD FERME PVC ROG8Ql 8MM ROG801 2,5ML BLANC",
+        "RONDELLE POINT FIXE ROUGE UNI RIVET",
+        "PAREX MAITE BLANC SAC DE 25 KG (PAL 48)",
+        "Clôture Grillagée Provisoire - Ht 2.00ml"
+      ]
+    },
+    "manual_tenth_wave_btp_v1": {
+      "updated_at": "2026-05-05T10:43:18.383119Z",
+      "added_items": 10,
+      "skipped_existing": 0,
+      "added_labels": [
+        "PLIAGE ALUMINIUM 10/10 ANODISE + PERFO (DETAIL 5) Long : 2000 Dev : 320",
+        "ADH PVC ORANGE NOVIPRO (3) 33MX50MM",
+        "CHAINE ACIER LONGUEUR 1000MM 8MM DIAM 8016EURD",
+        "CHAINE ACIER LONGUEUR 1500MM 8MM DIAM 8017EURD",
+        "Couteau à enduire type américain manche plastique inox 150mm noir",
+        "Gants anti-dérapant Netceed 2.1.3.1 Taille 8",
+        "Lot 6 p gants easy grip t9 Réf.89163",
+        "PLIAGE ALUMINIUM 10/10 ANODISE + PERFO (DETAIL 2 LARGEUR 350 Long : 2000 Dev : 442 Eco contribution",
+        "PLIAGE ALUMINIUM 10/10 ANODISE + PINCE COUDE (DETAIL 5 Long : 2000 Dev : 170 Eco contribution",
+        "PLIAGE ALUMINIUM 10/10 ANODISE + PLI ECRASE (DETAIL 5) Long : 2000 Dev : 170"
+      ]
+    },
+    "manual_eleventh_wave_btp_v1": {
+      "updated_at": "2026-05-05T10:55:54.234169Z",
+      "added_items": 7,
+      "skipped_existing": 0,
+      "added_labels": [
+        "MANCHE DE BALAI COCO PIN DOUILLE PLASTIQUE 120/24",
+        "BALAI COCO 29 CM DOUILE RESINE",
+        "BALAI COCO 29CM A VIS NOVIPRO",
+        "BALANCE VRAC CODE A CLOU VIS BOULON KG",
+        "DE RIVETEUSE UNIRIVET ALU",
+        "MANCHE BALAI VIS ET ATTACHE PLASTIQ",
+        "PLIAGE ALUMINIUM 10/10 ANODISE + PERFO (DETAIL 5) Long : 2000 Dev : 320 Eco contribution"
+      ]
+    },
+    "manual_twelfth_wave_btp_v1": {
+      "updated_at": "2026-05-05T11:01:44.080731Z",
+      "added_items": 2,
+      "skipped_existing": 0,
+      "added_labels": [
+        "SAC MATIERE RECYCLEE PDB",
+        "TERRE"
+      ]
+    },
+    "total_entries_count": 170,
+    "raise_to_200_btp_v1": {
+      "updated_at": "2026-05-05T11:15:09.798220Z",
+      "added_items": 31,
+      "added_a_valider": 32,
+      "added_item_labels": [
+        "Armature de poteau hauteur d'étage dimension 10cmx10cm 4HA10 avec cadre HA5 espacement variable longueur 3m réf PN41010X10",
+        "BIG BAG VIDE 1.T400",
+        "CABLE d*accélérateur (=10508) 140g",
+        "CASQ CHANTIER RB40 BLC T53-61CM",
+        "ECO CONTRIBUTION VALOBAT 0805017 ROBINETTERIE ET MESURE CHAUFFAGE",
+        "Fourniture et mise en œuvre des platines de scellement 20*20_e=20mm",
+        "Gant manutention générale - milieu humide - tous travaux - taille 8 Novipro",
+        "PETITES FOURNITURES",
+        "TECHNOCE CEM II/B-LL 32,5R 25KG COU",
+        "VIS 5x10 poulie tal.(5382080=164412)wur",
+        "AMPOULE",
+        "APPLICATEUR LUKO AVEC 3 EPONGES UN BAC = ENVIRON 250 M2",
+        "BA13 FLAM 1.2 X 2.5M",
+        "BACHE PRO POLYPROTEC ACTI 1000X25MM",
+        "BIG BAG 1T400 0/10 MELANGE",
+        "BIG BAG 1T400 0/4 SABLE",
+        "BLOC CRX CE NF B40 500X200X200LUS",
+        "BLOC CRX CH VRT CE NF 500X200X200",
+        "BROSSE PLATE BATIMENT 60",
+        "Balai coco 29 cm Novipro",
+        "Bastaing Sapin/Epicéa traité classe 2 63x160mm longueur 3,00m",
+        "Botte sécurité SAFETY T42",
+        "Botte sécurité SAFETY T43",
+        "Bottes de sécurité Panther S5 taille 42",
+        "CLOU TP LISSE 3.1X55MM 5KG",
+        "Cable accélérateur p/TM loche Mecanique",
+        "Casque de sécurité blanc, NF EN 397",
+        "Cheminement de cäbles CFO/CFA sur facade - Suivant CCTP",
+        "ECO PARTICIPATION ACIERS 0.014",
+        "GANT LATEX S/JERSEY COT BL ADH T10",
+        "GRAVE 0/10 MM BIG BAG 3/4M3"
+      ],
+      "added_a_valider_labels": [
+        "Travaux de terrassement et étanchéité de la zone comportant des infiltrations d'eau",
+        "Amenée-repli de l'atelier de forage des micropieux",
+        "Dépose et repose cheminement de cables",
+        "Dépose et repose de luminaires au dessus des acces",
+        "Dépose et repose de luminaires plafond des porches",
+        "Dépose et repose des anémométres pour store",
+        "ECO PARTICIPATION PMCB BPE",
+        "Fo et pose d'un coffret d'installation électrique provisoire",
+        "Fo et pose de cable 3G2,5",
+        "Fo et pose de cäble 3G6",
+        "Fo et pose de cäble 5G16",
+        "Fo et pose de fourreau diamétre 25",
+        "Fo et pose de fourreau diamétre 40",
+        "Réalisation de la Mission G3",
+        "Réalisation de réseaux enterrés pour passage de câbles",
+        "Travaux de sous-traitance - électricité",
+        "Travaux exécutés - Sous-traitance",
+        "Casque de chantier Océanic 2 RB40 taille 53-61 cm blanc",
+        "Démontage et remontage de filins acier inox",
+        "Dépose / repose des fixations des filins acier inox",
+        "Implantation des micropieux",
+        "Installation de chantier",
+        "Jugulaire sans mentonniére pour casque SC5101 et SC5101A3",
+        "Luminaires au dessus des accés - Suivant CCTP",
+        "Luminaires plafond des porches - Suivant CCTP",
+        "Montage d'échafaudage - CHANTIER 5 RUE DE L'ABBE DELHOTEL 55600 AVIOTH",
+        "PLIAGE GALVA 15/10 EXCEDENTAIRE (PATTES ANTI RELEVE DETAIL 3 Long : 3000 Dev : 227",
+        "PLIAGE GALVA 15/10 EXCEDENTAIRE 30X30X30 Long : 4000 Dev : 90",
+        "PLIAGE GALVA 15/10 EXCEDENTAIRE OMEGA Long : 4000 Dev : 147",
+        "PN CHANTIER INTERDIT 330X200 621209",
+        "Plaque de platre BA13 Placoflam A2 2,5x1,2m R=0,04 m2.k/w",
+        "Prestation de sous traitance"
+      ]
+    },
+    "top_up_target_200_btp_v1": {
+      "updated_at": "2026-05-05T11:16:44.392570Z",
+      "added_a_valider": 13,
+      "added_a_valider_labels": [
+        "Essai de contrôle sur un micropieu de l'ouvrage selon EC7",
+        "Amenée-repli de l'atelier de l'injection",
+        "Electricité",
+        "Fo et pose de grosse boites de dérivation",
+        "Jour de location",
+        "TA-E 80X60 W0 GOUL DISTRI AU METRE",
+        "Anémométre pour store - suivant CCTP",
+        "Ascenseur",
+        "BAST SAP/EPI TRCL2 63X160 3M00",
+        "BOB. PROTECT. ULTIBAT 75M.",
+        "Campagne de test d'arrachement",
+        "CONTRE PLAQUE FILME PLUS 15MM 250X125X15MM",
+        "CROISILLONS EN T 3MM 250 PIECES"
+      ]
+    },
+    "article_source_cleanup_v1": {
+      "updated_at": "2026-05-05T11:31:51.249749Z",
+      "changed_count": 0,
+      "collision_count": 0
+    },
+    "final_btp_transport_triage_v1": {
+      "updated_at": "2026-05-05T16:45:49.539471Z",
+      "promoted_to_items": [
+        "Casque de chantier Océanic 2 RB40 taille 53-61 cm blanc",
+        "Jugulaire sans mentonniére pour casque SC5101 et SC5101A3",
+        "Luminaires au dessus des accés - Suivant CCTP",
+        "Luminaires plafond des porches - Suivant CCTP",
+        "PLIAGE GALVA 15/10 EXCEDENTAIRE (PATTES ANTI RELEVE DETAIL 3 Long : 3000 Dev : 227",
+        "PLIAGE GALVA 15/10 EXCEDENTAIRE 30X30X30 Long : 4000 Dev : 90",
+        "PLIAGE GALVA 15/10 EXCEDENTAIRE OMEGA Long : 4000 Dev : 147",
+        "PN CHANTIER INTERDIT 330X200 621209",
+        "Plaque de platre BA13 Placoflam A2 2,5x1,2m R=0,04 m2.k/w",
+        "TA-E 80X60 W0 GOUL DISTRI AU METRE",
+        "Anémométre pour store - suivant CCTP",
+        "BAST SAP/EPI TRCL2 63X160 3M00",
+        "BOB. PROTECT. ULTIBAT 75M.",
+        "CONTRE PLAQUE FILME PLUS 15MM 250X125X15MM",
+        "CROISILLONS EN T 3MM 250 PIECES"
+      ],
+      "moved_to_charges_externes": [
+        "Dépose et repose cheminement de cables",
+        "Dépose et repose de luminaires au dessus des acces",
+        "Dépose et repose de luminaires plafond des porches",
+        "Dépose et repose des anémométres pour store",
+        "ECO PARTICIPATION PMCB BPE",
+        "Fo et pose d'un coffret d'installation électrique provisoire",
+        "Fo et pose de cable 3G2,5",
+        "Fo et pose de cäble 3G6",
+        "Fo et pose de cäble 5G16",
+        "Fo et pose de fourreau diamétre 25",
+        "Fo et pose de fourreau diamétre 40",
+        "Réalisation de la Mission G3",
+        "Réalisation de réseaux enterrés pour passage de câbles",
+        "Travaux de sous-traitance - électricité",
+        "Travaux exécutés - Sous-traitance",
+        "Démontage et remontage de filins acier inox",
+        "Dépose / repose des fixations des filins acier inox",
+        "Installation de chantier",
+        "Montage d'échafaudage - CHANTIER 5 RUE DE L'ABBE DELHOTEL 55600 AVIOTH",
+        "Prestation de sous traitance",
+        "Amenée-repli de l'atelier de l'injection",
+        "Fo et pose de grosse boites de dérivation",
+        "Jour de location",
+        "Campagne de test d'arrachement"
+      ],
+      "excluded": [
+        "Electricité",
+        "Ascenseur"
+      ],
+      "duplicates_removed": [
+        "Travaux de terrassement et étanchéité de la zone comportant des infiltrations d'eau",
+        "Amenée-repli de l'atelier de forage des micropieux",
+        "Implantation des micropieux",
+        "Essai de contrôle sur un micropieu de l'ouvrage selon EC7"
+      ],
+      "charges_target": "base_charges_externes_v1.json"
+    },
+    "cleanup_auto_v2": {
+      "updated_at": "2026-05-05T17:13:44.792720Z",
+      "source_file": "base_produits_btp_v1.json",
+      "kind": "product",
+      "metier": "btp",
+      "items_before": 170,
+      "a_valider_before": 0,
+      "account_normalized": 0,
+      "canonical_rebuilt": 0,
+      "keywords_rebuilt": 99,
+      "auto_moved_to_charges": 7,
+      "charge_fields_refreshed": 0,
+      "items_after": 163,
+      "a_valider_after": 0,
+      "duplicates_merged": 0,
+      "manual_review_count": 0
+    }
+  },
+  "items": [
+    {
+      "article_source": "1PX COLLE POUDRE INT MAX30X30CM GRIS25KG",
+      "article_canonique": "1px colle poudre int max30x30cm gris25kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "1px",
+        "colle",
+        "poudre",
+        "int",
+        "max30x30cm",
+        "gris25kg"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4120A"
+      ],
+      "notes": "Pre-rempli auto depuis invoice_form (1 occurrences)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 361,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "1PX RAGREAGE POUDRE 3A10MM INT/EXT 25KG",
+      "article_canonique": "1px ragreage poudre 3a10mm int ext 25kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "1px",
+        "ragreage",
+        "poudre",
+        "3a10mm",
+        "int",
+        "ext",
+        "25kg"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4120A"
+      ],
+      "notes": "Pre-rempli auto depuis invoice_form (1 occurrences)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 301,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_canonique_exact, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "5 SACS A GRAVATS 56X96CM TISSE 60L BLC",
+      "article_canonique": "5 sacs a gravats 56x96cm tisse 60l blc",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "emballage",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "sacs",
+        "gravats",
+        "56x96cm",
+        "tisse",
+        "60l",
+        "blc"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4120A"
+      ],
+      "notes": "Pre-rempli auto depuis invoice_form (1 occurrences)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 301,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_canonique_exact, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "JOINT AXTON EASY CHOCOLAT 2KG",
+      "article_canonique": "joint axton easy chocolat 2kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "joint",
+        "axton",
+        "easy",
+        "chocolat",
+        "2kg"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4120A"
+      ],
+      "notes": "Pre-rempli auto depuis invoice_form (1 occurrences)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 361,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "KIT POSE CARRELAGE",
+      "article_canonique": "kit pose carrelage",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "kit",
+        "pose",
+        "carrelage"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4120A"
+      ],
+      "notes": "Pre-rempli auto depuis invoice_form (1 occurrences)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 361,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "KIT100AUTONIVELANT CROIS CALE 1.5MM DXTR",
+      "article_canonique": "kit100autonivelant crois cale 1 5mm dxtr",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "kit100autonivelant",
+        "crois",
+        "cale",
+        "5mm",
+        "dxtr"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4120A"
+      ],
+      "notes": "Pre-rempli auto depuis invoice_form (1 occurrences)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 301,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_canonique_exact, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "MALAXEUR PEINTDEXTER 500X90 EX8 PERCEUSE",
+      "article_canonique": "malaxeur peintdexter 500x90 ex8 perceuse",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "malaxeur",
+        "peintdexter",
+        "500x90",
+        "ex8",
+        "perceuse"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4120A"
+      ],
+      "notes": "Pre-rempli auto depuis invoice_form (1 occurrences)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 361,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "PRIMAIRE AXTON INTERIEUR SEC EN 2-4H 4L",
+      "article_canonique": "primaire axton interieur sec en 2 4h 4l",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "primaire",
+        "axton",
+        "interieur",
+        "sec",
+        "4h",
+        "4l"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4120A"
+      ],
+      "notes": "Pre-rempli auto depuis invoice_form (1 occurrences)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 301,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_canonique_exact, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "ROUL ACIER MUR PLAF LISSE DEXTER180MM",
+      "article_canonique": "roul acier mur plaf lisse dexter180mm",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "roul",
+        "acier",
+        "mur",
+        "plaf",
+        "lisse",
+        "dexter180mm"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4120A"
+      ],
+      "notes": "Pre-rempli auto depuis invoice_form (1 occurrences)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 361,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "Béton pompé",
+      "article_canonique": "beton pompe",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "beton",
+        "pompe"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=14, line_occurrences=14)",
+      "source_invoice_ids": [],
+      "compte_comptable": "604",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 242,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=604; invoices=14; occurrences=14"
+    },
+    {
+      "article_source": "COFFRAGE, SCIAGE, PONCAGE.",
+      "article_canonique": "coffrage sciage poncage",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coffrage",
+        "sciage",
+        "poncage"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=14, line_occurrences=14)",
+      "source_invoice_ids": [],
+      "compte_comptable": "606",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 242,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=606; invoices=14; occurrences=14"
+    },
+    {
+      "article_source": "COULAGE PLANCHER",
+      "article_canonique": "coulage plancher",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "plancher"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=13, line_occurrences=20)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 246,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=13; occurrences=20"
+    },
+    {
+      "article_source": "SURFAQUARTZ GRIS NATUREL",
+      "article_canonique": "surfaquartz gris naturel",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "surfaquartz",
+        "gris",
+        "naturel"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=10, line_occurrences=10)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 230,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=60610000; invoices=10; occurrences=10"
+    },
+    {
+      "article_source": "COULAGE PLANCHER finition brut",
+      "article_canonique": "coulage plancher finition brut",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "plancher",
+        "finition",
+        "brut"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=9, line_occurrences=24)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 242,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=9; occurrences=24"
+    },
+    {
+      "article_source": "Tuyaux",
+      "article_canonique": "tuyaux",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "tuyaux"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=9, line_occurrences=9)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 227,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=9; occurrences=9"
+    },
+    {
+      "article_source": "Béton pompé (en m3)",
+      "article_canonique": "beton pompe en m3",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "beton",
+        "pompe"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=8, line_occurrences=8)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 224,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=8; occurrences=8"
+    },
+    {
+      "article_source": "COURONNE.250MM.COREX GR 16Q 68",
+      "article_canonique": "couronne 250mm corex gr 16q 68",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "couronne",
+        "250mm",
+        "corex",
+        "16q"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=7, line_occurrences=7)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 221,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=7; occurrences=7"
+    },
+    {
+      "article_source": "Ingrédients Peinture",
+      "article_canonique": "ingredients peinture",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "ingredients",
+        "peinture"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=0, line_occurrences=1)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 260,
+      "compte_comptable_match_reason": "manual_triage_keep; fallback_account=6068 from similar btp paint/chantier consumables; invoices=0; occurrences=1"
+    },
+    {
+      "article_source": "COULAGE DALLAGE finition hélicoptére",
+      "article_canonique": "coulage dallage finition helicoptere",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "dallage",
+        "finition",
+        "helicoptere"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=6, line_occurrences=6)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 218,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=6; occurrences=6"
+    },
+    {
+      "article_source": "GO 05 pompe",
+      "article_canonique": "go 05 pompe",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "pompe"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=5, line_occurrences=5) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 215,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6068; invoices=5; occurrences=5",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "DALLE PORTÉE finition hélicoptére",
+      "article_canonique": "dalle portee finition helicoptere",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "dalle",
+        "portee",
+        "finition",
+        "helicoptere"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=4, line_occurrences=6) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 214,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=4; occurrences=6",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "COULAGE PH RDC",
+      "article_canonique": "coulage ph rdc",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "ph",
+        "rdc"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=4, line_occurrences=5) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 213,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=4; occurrences=5",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "COULAGE DALLE BETON Finition hélicoptére",
+      "article_canonique": "coulage dalle beton finition helicoptere",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "dalle",
+        "beton",
+        "finition",
+        "helicoptere"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=4, line_occurrences=4) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 212,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=4; occurrences=4",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "ISOCOL MORTIER SAC 25 KG",
+      "article_canonique": "isocol mortier sac 25 kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "emballage",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "isocol",
+        "mortier",
+        "sac"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=4, line_occurrences=4) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 212,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=4; occurrences=4",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "COULAGE PARKING S/SOL",
+      "article_canonique": "coulage parking s sol",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "parking",
+        "sol"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=5) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 211,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=3; occurrences=5",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "COULAGE DALLAGE",
+      "article_canonique": "coulage dallage",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "dallage"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=4) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 210,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=3; occurrences=4",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "Coulage PH R-1 ( finition hélicoptére )",
+      "article_canonique": "coulage ph r 1 finition helicoptere",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "ph",
+        "finition",
+        "helicoptere"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=4) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 210,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=3; occurrences=4",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "COULAGE PLANCHER FORFAIT",
+      "article_canonique": "coulage plancher forfait",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "plancher",
+        "forfait"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=3) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 209,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=3; occurrences=3",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "(03/05/2023) Coulage PH RDC BAT 11",
+      "article_canonique": "03 05 2023 coulage ph rdc bat 11",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "ph",
+        "rdc",
+        "bat"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=4) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 208,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=4",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "DALLAGE finition hélicoptére",
+      "article_canonique": "dallage finition helicoptere",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "dallage",
+        "finition",
+        "helicoptere"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=4) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 208,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=4",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "Réalisation de plancher béton à MANTES LA JOLIE",
+      "article_canonique": "realisation de plancher beton a mantes la jolie",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "realisation",
+        "plancher",
+        "beton",
+        "mantes",
+        "jolie"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=3) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 207,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=3",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "(05/05/2023) Coulage PH RDC BAT 11",
+      "article_canonique": "05 05 2023 coulage ph rdc bat 11",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "ph",
+        "rdc",
+        "bat"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "(12/05/2023) Coulage PH R+2 BAT 8",
+      "article_canonique": "12 05 2023 coulage ph r 2 bat 8",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "ph",
+        "bat"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "(19/05/2023) Coulage PH R+1 BAT 14",
+      "article_canonique": "19 05 2023 coulage ph r 1 bat 14",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "ph",
+        "bat"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "(23/05/2023) Coulage PH RDC BAT 10",
+      "article_canonique": "23 05 2023 coulage ph rdc bat 10",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "ph",
+        "rdc",
+        "bat"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "(31/05/2023) Coulage PH R+2 BAT 6",
+      "article_canonique": "31 05 2023 coulage ph r 2 bat 6",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "ph",
+        "bat"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "01/12/2023 COULAGE PLANCHER",
+      "article_canonique": "01 12 2023 coulage plancher",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "plancher"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "BLOC COFF BETON 500X200X200LUS",
+      "article_canonique": "bloc coff beton 500x200x200lus",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "bloc",
+        "coff",
+        "beton",
+        "500x200x200lus"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "COFFRAGE, PONCAGE",
+      "article_canonique": "coffrage poncage",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coffrage",
+        "poncage"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "COULAGE DALLAGE / PLANCHERS - PH BAT B",
+      "article_canonique": "coulage dallage planchers ph bat b",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "dallage",
+        "planchers",
+        "ph",
+        "bat"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "COULAGE DALLAGE/ PLANCHERS - PH RDC BAT A",
+      "article_canonique": "coulage dallage planchers ph rdc bat a",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "dallage",
+        "planchers",
+        "ph",
+        "rdc",
+        "bat"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "COULAGE DALLAGE/ PLANCHERS PH BAT A",
+      "article_canonique": "coulage dallage planchers ph bat a",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "dallage",
+        "planchers",
+        "ph",
+        "bat"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "COULAGE PH R+1 BAT A",
+      "article_canonique": "coulage ph r 1 bat a",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "ph",
+        "bat"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "COULAGE PLANCHER PH R+2 Finition brut",
+      "article_canonique": "coulage plancher ph r 2 finition brut",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "plancher",
+        "ph",
+        "finition",
+        "brut"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "COULAGE PLANCHER finition hélicoptére",
+      "article_canonique": "coulage plancher finition helicoptere",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "plancher",
+        "finition",
+        "helicoptere"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "Carreau béton cellulaire 7/50 CXE 625x500x70mm - SIPOREX",
+      "article_canonique": "carreau beton cellulaire 7 50 cxe 625x500x70mm siporex",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "carreau",
+        "beton",
+        "cellulaire",
+        "cxe",
+        "625x500x70mm",
+        "siporex"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "Colle béton cellulaire sac de 5kg",
+      "article_canonique": "colle beton cellulaire sac de 5kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "colle",
+        "beton",
+        "cellulaire",
+        "sac",
+        "5kg"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "Cordon Jointofeu diamètre 30 rouleau de 20m",
+      "article_canonique": "cordon jointofeu diametre 30 rouleau de 20m",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "cordon",
+        "jointofeu",
+        "diametre",
+        "rouleau",
+        "20m"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "Coulage DALLAGE Finition hélicoptére avec Surfaquartz",
+      "article_canonique": "coulage dallage finition helicoptere avec surfaquartz",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "dallage",
+        "finition",
+        "helicoptere",
+        "surfaquartz"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "Coulage DALLE BASSE (avec Surfaquartz)",
+      "article_canonique": "coulage dalle basse avec surfaquartz",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "dalle",
+        "basse",
+        "surfaquartz"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "Coulage PH R+2 BATIMENT 4",
+      "article_canonique": "coulage ph r 2 batiment 4",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "ph",
+        "batiment"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "604",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=604; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "Coulage planchers infra",
+      "article_canonique": "coulage planchers infra",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "planchers",
+        "infra"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "Création dalle pour cantilvers",
+      "article_canonique": "creation dalle pour cantilvers",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "creation",
+        "dalle",
+        "cantilvers"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "DALLAGE finition hélicoptére aVec SURFAQUARTZ + PRODUIT DE CURE + SCIAGE",
+      "article_canonique": "dallage finition helicoptere avec surfaquartz produit de cure sciage",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "dallage",
+        "finition",
+        "helicoptere",
+        "surfaquartz",
+        "produit",
+        "cure",
+        "sciage"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "DALLE PORTEE - Plancher bas du S/Sol",
+      "article_canonique": "dalle portee plancher bas du s sol",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "dalle",
+        "portee",
+        "plancher",
+        "bas",
+        "sol"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "DALLE PORTéE finition brut",
+      "article_canonique": "dalle portee finition brut",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "dalle",
+        "portee",
+        "finition",
+        "brut"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "Dallage Finition helicoptére avec Surfaquartz",
+      "article_canonique": "dallage finition helicoptere avec surfaquartz",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "dallage",
+        "finition",
+        "helicoptere",
+        "surfaquartz"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "FORFAIT COULAGE DALLAGE Finition hélicoptére",
+      "article_canonique": "forfait coulage dallage finition helicoptere",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "forfait",
+        "coulage",
+        "dallage",
+        "finition",
+        "helicoptere"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "Finition hélicoptére PH S/SOL finition brut",
+      "article_canonique": "finition helicoptere ph s sol finition brut",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "finition",
+        "helicoptere",
+        "ph",
+        "sol",
+        "brut"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "GO pompe 05",
+      "article_canonique": "go pompe 05",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "pompe"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6068; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "GO pompe 07",
+      "article_canonique": "go pompe 07",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "pompe"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=606800; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "GRAVATS : Briques, terre, ciment, béton, pierres, sable. En cas de présence de déchets l'ensemble de la benne sera déclassé en DIB. DIB : Bois, platre, Placoplatre, ferraille, plastique, meubles, papier, cartons, déchets verts. Bon N° FQ-18954 08/11/2025 - Autre PARIS",
+      "article_canonique": "gravats briques terre ciment beton pierres sable en cas de presence de dechets l ensemble de la benne sera declasse en dib dib bois platre placoplatre ferraille plastique meubles papier cartons dechets verts bon n fq 18954 08 11 2025 autre paris",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "gravats",
+        "briques",
+        "terre",
+        "ciment",
+        "beton",
+        "pierres",
+        "sable",
+        "cas",
+        "presence",
+        "dechets",
+        "ensemble",
+        "benne",
+        "sera",
+        "declasse",
+        "dib",
+        "bois",
+        "platre",
+        "placoplatre",
+        "ferraille",
+        "plastique",
+        "meubles",
+        "papier",
+        "cartons",
+        "verts",
+        "bon",
+        "fq",
+        "18954",
+        "autre",
+        "paris"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6068; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "M.A.D Pompe Béton (FORFAIT)",
+      "article_canonique": "m a d pompe beton forfait",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "pompe",
+        "beton",
+        "forfait"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "M3 POMPE Ni repris ni échangé",
+      "article_canonique": "m3 pompe ni repris ni echange",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "pompe",
+        "ni",
+        "repris",
+        "echange"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "OUATE BLANCHE GAUFREE COLLEE 1000 FORMATS 23X25",
+      "article_canonique": "ouate blanche gaufree collee 1000 formats 23x25",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "ouate",
+        "blanche",
+        "gaufree",
+        "collee",
+        "formats",
+        "23x25"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "CUTTER STANDARD 18MM AVEC 3 LAMES NOIR",
+      "article_canonique": "cutter standard 18mm avec 3 lames noir",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "cutter",
+        "standard",
+        "18mm",
+        "lames",
+        "noir"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=4, line_occurrences=4) | Ajout manuel 3e vague depuis candidate pack nettoye.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 212,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=4; occurrences=4",
+      "selection_source": "manual_third_wave_active_v1"
+    },
+    {
+      "article_source": "Sac a gravat tissé 60x100cm paquet de 10 pièces",
+      "article_canonique": "sac a gravat tisse 60x100cm paquet de 10 pieces",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "emballage",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "sac",
+        "gravat",
+        "tisse",
+        "60x100cm",
+        "paquet"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=4, line_occurrences=4) | Ajout manuel 3e vague depuis candidate pack nettoye.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 212,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=4; occurrences=4",
+      "selection_source": "manual_third_wave_active_v1"
+    },
+    {
+      "article_source": "PROMACURE S -Cure des bétons,phase solvant -BIDON DE 20 LITRES",
+      "article_canonique": "promacure s cure des betons phase solvant bidon de 20 litres",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "promacure",
+        "cure",
+        "betons",
+        "phase",
+        "solvant",
+        "bidon",
+        "litres"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 3e vague depuis candidate pack nettoye.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "manual_third_wave_active_v1"
+    },
+    {
+      "article_source": "ROND A BETON TOR HLE FE5005 6MM 3M",
+      "article_canonique": "rond a beton tor hle fe5005 6mm 3m",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "rond",
+        "beton",
+        "tor",
+        "hle",
+        "fe5005",
+        "6mm",
+        "3m"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 3e vague depuis candidate pack nettoye.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=2; occurrences=2",
+      "selection_source": "manual_third_wave_active_v1"
+    },
+    {
+      "article_source": "Rabot à béton essence",
+      "article_canonique": "rabot a beton essence",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "rabot",
+        "beton",
+        "essence"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 3e vague depuis candidate pack nettoye.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "manual_third_wave_active_v1"
+    },
+    {
+      "article_source": "PARKING Coulage Radier",
+      "article_canonique": "parking coulage radier",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "parking",
+        "coulage",
+        "radier"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 3e vague depuis candidate pack nettoye.",
+      "source_invoice_ids": [],
+      "compte_comptable": "604",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=604; invoices=2; occurrences=2",
+      "selection_source": "manual_third_wave_active_v1"
+    },
+    {
+      "article_source": "PLANCHER SUPERSTRUCTURE ( 100 % ) Finition brut",
+      "article_canonique": "plancher superstructure 100 finition brut",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "plancher",
+        "superstructure",
+        "finition",
+        "brut"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 3e vague depuis candidate pack nettoye.",
+      "source_invoice_ids": [],
+      "compte_comptable": "604",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=604; invoices=2; occurrences=2",
+      "selection_source": "manual_third_wave_active_v1"
+    },
+    {
+      "article_source": "BPS C25/30 CEMI SR5+Cv D20 S3 XF1",
+      "article_canonique": "bps c25 30 cemi sr5 cv d20 s3 xf1",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "bps",
+        "c25",
+        "cemi",
+        "sr5",
+        "cv",
+        "d20",
+        "s3",
+        "xf1"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=4, line_occurrences=4) | Ajout manuel 3e vague depuis candidate pack nettoye.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 212,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=4; occurrences=4",
+      "selection_source": "manual_third_wave_active_v1"
+    },
+    {
+      "article_source": "Passerelle",
+      "article_canonique": "passerelle",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "passerelle"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4321A"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=5) | Ajout manuel 3e vague depuis candidate pack nettoye.",
+      "source_invoice_ids": [],
+      "compte_comptable": "607",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 211,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=607; invoices=3; occurrences=5",
+      "selection_source": "manual_third_wave_active_v1"
+    },
+    {
+      "article_source": "vanne thermostatique connectée",
+      "article_canonique": "vanne thermostatique connectee",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "vanne",
+        "thermostatique",
+        "connectee"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4321A"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=5) | Ajout manuel 3e vague depuis candidate pack nettoye.",
+      "source_invoice_ids": [],
+      "compte_comptable": "607",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 211,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=607; invoices=3; occurrences=5",
+      "selection_source": "manual_third_wave_active_v1"
+    },
+    {
+      "article_source": "CUTTER A LAME CASSABLE 25 MM d213",
+      "article_canonique": "cutter a lame cassable 25 mm d213",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "cutter",
+        "lame",
+        "cassable",
+        "d213"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 3e vague depuis candidate pack nettoye.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_third_wave_active_v1"
+    },
+    {
+      "article_source": "CUTTER NOVI LAME RETRACT 18MM",
+      "article_canonique": "cutter novi lame retract 18mm",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "cutter",
+        "novi",
+        "lame",
+        "retract",
+        "18mm"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 3e vague depuis candidate pack nettoye.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_third_wave_active_v1"
+    },
+    {
+      "article_source": "Fourniture des outils de forage perdus",
+      "article_canonique": "fourniture des outils de forage perdus",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "fourniture",
+        "outils",
+        "forage",
+        "perdus"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=3) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 209,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=3; occurrences=3",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "TERRE GRAVAT",
+      "article_canonique": "terre gravat",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "terre",
+        "gravat"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=3) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 209,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6068; invoices=3; occurrences=3",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "Passerelle( avec ethernet)",
+      "article_canonique": "passerelle avec ethernet",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "passerelle",
+        "ethernet"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4321A"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "607",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=607; invoices=2; occurrences=2",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "POUR PANNEAUX FIBRE CIMENT POUR SYSTEME UNI RIVET 11MM",
+      "article_canonique": "pour panneaux fibre ciment pour systeme uni rivet 11mm",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "panneaux",
+        "fibre",
+        "ciment",
+        "systeme",
+        "uni",
+        "rivet",
+        "11mm"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 5e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "manual_fifth_wave_v1"
+    },
+    {
+      "article_source": "Palette HMFC ciments 95x115 cm",
+      "article_canonique": "palette hmfc ciments 95x115 cm",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "palette",
+        "hmfc",
+        "ciments",
+        "95x115"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 5e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "manual_fifth_wave_v1"
+    },
+    {
+      "article_source": "PALETTE EQIOM GRANULATS",
+      "article_canonique": "palette eqiom granulats",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "palette",
+        "eqiom",
+        "granulats"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=7) | Ajout manuel 6e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 211,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=7",
+      "selection_source": "manual_sixth_wave_v1"
+    },
+    {
+      "article_source": "CARRELAGE SDB 60*120 GRIS DU MARAIS BEIGE Epaisseur 7mm. Emballé par 3 soit 216 m2/Bte 64.80 m2/Palette 35.82 kg/Bte",
+      "article_canonique": "carrelage sdb 60 120 gris du marais beige epaisseur 7mm emballe par 3 soit 216 m2 bte 64 80 m2 palette 35 82 kg bte",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "emballage",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "carrelage",
+        "sdb",
+        "gris",
+        "marais",
+        "beige",
+        "epaisseur",
+        "7mm",
+        "emballe",
+        "soit",
+        "bte",
+        "palette"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4321A"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 6e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_sixth_wave_v1"
+    },
+    {
+      "article_source": "PALETTE LUSSIANA",
+      "article_canonique": "palette lussiana",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "palette",
+        "lussiana"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=3) | Ajout manuel 8e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 209,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=3; occurrences=3",
+      "selection_source": "manual_eighth_wave_btp_v1"
+    },
+    {
+      "article_source": "PALETTE CONSIGNE SLM OPL SPC",
+      "article_canonique": "palette consigne slm opl spc",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "palette",
+        "consigne",
+        "slm",
+        "opl",
+        "spc"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 8e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6022",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6022; invoices=2; occurrences=2",
+      "selection_source": "manual_eighth_wave_btp_v1"
+    },
+    {
+      "article_source": "1PX LOT 10 TUBE TULIPE IRL D16 GRIS 2.4M",
+      "article_canonique": "1px lot 10 tube tulipe irl d16 gris 2 4m",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "1px",
+        "lot",
+        "tube",
+        "tulipe",
+        "irl",
+        "d16",
+        "gris",
+        "4m"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 9e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_ninth_wave_btp_v1"
+    },
+    {
+      "article_source": "BASTAING BOIS 65x163 3 ML",
+      "article_canonique": "bastaing bois 65x163 3 ml",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "bastaing",
+        "bois",
+        "65x163"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 9e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=2; occurrences=2",
+      "selection_source": "manual_ninth_wave_btp_v1"
+    },
+    {
+      "article_source": "Brique lisse pleine rouge rieussequel 220 105 50 mm",
+      "article_canonique": "brique lisse pleine rouge rieussequel 220 105 50 mm",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "brique",
+        "lisse",
+        "pleine",
+        "rouge",
+        "rieussequel"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 9e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "manual_ninth_wave_btp_v1"
+    },
+    {
+      "article_source": "CARRELAGES REVETEMENTS - Nez de marche en aluminium avec insert en L en intérieur - localisation : Escalier RDC et RDJ - (marches - contre marches paliers)",
+      "article_canonique": "carrelages revetements nez de marche en aluminium avec insert en l en interieur localisation escalier rdc et rdj marches contre marches paliers",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "carrelages",
+        "revetements",
+        "nez",
+        "marche",
+        "aluminium",
+        "insert",
+        "interieur",
+        "localisation",
+        "escalier",
+        "rdc",
+        "rdj",
+        "marches",
+        "contre",
+        "paliers"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 9e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "manual_ninth_wave_btp_v1"
+    },
+    {
+      "article_source": "DISQUE DIAMASTER 160X3,2/2,40X20 Z4 COUPE PANNEAUX ETERNIT",
+      "article_canonique": "disque diamaster 160x3 2 2 40x20 z4 coupe panneaux eternit",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "disque",
+        "diamaster",
+        "160x3",
+        "40x20",
+        "z4",
+        "coupe",
+        "panneaux",
+        "eternit"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 9e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "manual_ninth_wave_btp_v1"
+    },
+    {
+      "article_source": "Disque à tronconner les métaux -Novipro- Diam 125x1,6x22,2mm",
+      "article_canonique": "disque a tronconner les metaux novipro diam 125x1 6x22 2mm",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "disque",
+        "tronconner",
+        "metaux",
+        "novipro",
+        "diam",
+        "125x1",
+        "6x22",
+        "2mm"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 9e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "manual_ninth_wave_btp_v1"
+    },
+    {
+      "article_source": "GANTS MANUT HAUTE VISIBILTE T10 JAUNE",
+      "article_canonique": "gants manut haute visibilte t10 jaune",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "gants",
+        "manut",
+        "haute",
+        "visibilte",
+        "t10",
+        "jaune"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 9e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "manual_ninth_wave_btp_v1"
+    },
+    {
+      "article_source": "POCHE A JOINT BLISTER",
+      "article_canonique": "poche a joint blister",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "poche",
+        "joint",
+        "blister"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 9e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_ninth_wave_btp_v1"
+    },
+    {
+      "article_source": "PRESTONETT FIN ENDUIT EN POUDRE POUR FINITION INTERIEURE SAC DE 25KG",
+      "article_canonique": "prestonett fin enduit en poudre pour finition interieure sac de 25kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "emballage",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "prestonett",
+        "fin",
+        "enduit",
+        "poudre",
+        "finition",
+        "interieure",
+        "sac",
+        "25kg"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 9e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "607",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=607; invoices=2; occurrences=2",
+      "selection_source": "manual_ninth_wave_btp_v1"
+    },
+    {
+      "article_source": "PROF 1/4 RD FERME PVC ROG8Ql 8MM ROG801 2,5ML BLANC",
+      "article_canonique": "prof 1 4 rd ferme pvc rog8ql 8mm rog801 2 5ml blanc",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "prof",
+        "rd",
+        "ferme",
+        "pvc",
+        "rog8ql",
+        "8mm",
+        "rog801",
+        "5ml",
+        "blanc"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 9e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_ninth_wave_btp_v1"
+    },
+    {
+      "article_source": "RONDELLE POINT FIXE ROUGE UNI RIVET",
+      "article_canonique": "rondelle point fixe rouge uni rivet",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "rondelle",
+        "point",
+        "fixe",
+        "rouge",
+        "uni",
+        "rivet"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 9e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "manual_ninth_wave_btp_v1"
+    },
+    {
+      "article_source": "PAREX MAITE BLANC SAC DE 25 KG (PAL 48)",
+      "article_canonique": "parex maite blanc sac de 25 kg pal 48",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "emballage",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "parex",
+        "maite",
+        "blanc",
+        "sac",
+        "pal"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 9e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=2; occurrences=2",
+      "selection_source": "manual_ninth_wave_btp_v1"
+    },
+    {
+      "article_source": "Clôture Grillagée Provisoire - Ht 2.00ml",
+      "article_canonique": "cloture grillagee provisoire ht 2 00ml",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "cloture",
+        "grillagee",
+        "provisoire",
+        "00ml"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 9e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "manual_ninth_wave_btp_v1"
+    },
+    {
+      "article_source": "PLIAGE ALUMINIUM 10/10 ANODISE + PERFO (DETAIL 5) Long : 2000 Dev : 320",
+      "article_canonique": "pliage aluminium 10 10 anodise perfo detail 5 long 2000 dev 320",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "pliage",
+        "aluminium",
+        "anodise",
+        "perfo",
+        "detail",
+        "long",
+        "dev"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=3) | Ajout manuel 10e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 209,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=3; occurrences=3",
+      "selection_source": "manual_tenth_wave_btp_v1"
+    },
+    {
+      "article_source": "ADH PVC ORANGE NOVIPRO (3) 33MX50MM",
+      "article_canonique": "adh pvc orange novipro 3 33mx50mm",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "adh",
+        "pvc",
+        "orange",
+        "novipro",
+        "33mx50mm"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 10e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6068; invoices=2; occurrences=2",
+      "selection_source": "manual_tenth_wave_btp_v1"
+    },
+    {
+      "article_source": "CHAINE ACIER LONGUEUR 1000MM 8MM DIAM 8016EURD",
+      "article_canonique": "chaine acier longueur 1000mm 8mm diam 8016eurd",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "chaine",
+        "acier",
+        "longueur",
+        "1000mm",
+        "8mm",
+        "diam",
+        "8016eurd"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 10e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_tenth_wave_btp_v1"
+    },
+    {
+      "article_source": "CHAINE ACIER LONGUEUR 1500MM 8MM DIAM 8017EURD",
+      "article_canonique": "chaine acier longueur 1500mm 8mm diam 8017eurd",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "chaine",
+        "acier",
+        "longueur",
+        "1500mm",
+        "8mm",
+        "diam",
+        "8017eurd"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 10e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_tenth_wave_btp_v1"
+    },
+    {
+      "article_source": "Couteau à enduire type américain manche plastique inox 150mm noir",
+      "article_canonique": "couteau a enduire type americain manche plastique inox 150mm noir",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "couteau",
+        "enduire",
+        "type",
+        "americain",
+        "manche",
+        "plastique",
+        "inox",
+        "150mm",
+        "noir"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 10e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=2; occurrences=2",
+      "selection_source": "manual_tenth_wave_btp_v1"
+    },
+    {
+      "article_source": "Gants anti-dérapant Netceed 2.1.3.1 Taille 8",
+      "article_canonique": "gants anti derapant netceed 2 1 3 1 taille 8",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "gants",
+        "anti",
+        "derapant",
+        "netceed",
+        "taille"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 10e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_tenth_wave_btp_v1"
+    },
+    {
+      "article_source": "Lot 6 p gants easy grip t9 Réf.89163",
+      "article_canonique": "lot 6 p gants easy grip t9 ref 89163",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "lot",
+        "gants",
+        "easy",
+        "grip",
+        "t9",
+        "ref",
+        "89163"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 10e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "manual_tenth_wave_btp_v1"
+    },
+    {
+      "article_source": "PLIAGE ALUMINIUM 10/10 ANODISE + PERFO (DETAIL 2 LARGEUR 350 Long : 2000 Dev : 442 Eco contribution",
+      "article_canonique": "pliage aluminium 10 10 anodise perfo detail 2 largeur 350 long 2000 dev 442 eco contribution",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "pliage",
+        "aluminium",
+        "anodise",
+        "perfo",
+        "detail",
+        "largeur",
+        "long",
+        "dev",
+        "eco",
+        "contribution"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 10e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_tenth_wave_btp_v1"
+    },
+    {
+      "article_source": "PLIAGE ALUMINIUM 10/10 ANODISE + PINCE COUDE (DETAIL 5 Long : 2000 Dev : 170 Eco contribution",
+      "article_canonique": "pliage aluminium 10 10 anodise pince coude detail 5 long 2000 dev 170 eco contribution",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "pliage",
+        "aluminium",
+        "anodise",
+        "pince",
+        "coude",
+        "detail",
+        "long",
+        "dev",
+        "eco",
+        "contribution"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 10e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_tenth_wave_btp_v1"
+    },
+    {
+      "article_source": "PLIAGE ALUMINIUM 10/10 ANODISE + PLI ECRASE (DETAIL 5) Long : 2000 Dev : 170",
+      "article_canonique": "pliage aluminium 10 10 anodise pli ecrase detail 5 long 2000 dev 170",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "pliage",
+        "aluminium",
+        "anodise",
+        "pli",
+        "ecrase",
+        "detail",
+        "long",
+        "dev"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 10e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_tenth_wave_btp_v1"
+    },
+    {
+      "article_source": "MANCHE DE BALAI COCO PIN DOUILLE PLASTIQUE 120/24",
+      "article_canonique": "manche de balai coco pin douille plastique 120 24",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "manche",
+        "balai",
+        "coco",
+        "pin",
+        "douille",
+        "plastique"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=4, line_occurrences=4) | Ajout manuel 11e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 212,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=4; occurrences=4",
+      "selection_source": "manual_eleventh_wave_btp_v1"
+    },
+    {
+      "article_source": "BALAI COCO 29 CM DOUILE RESINE",
+      "article_canonique": "balai coco 29 cm douile resine",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "balai",
+        "coco",
+        "douile",
+        "resine"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 11e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_eleventh_wave_btp_v1"
+    },
+    {
+      "article_source": "BALAI COCO 29CM A VIS NOVIPRO",
+      "article_canonique": "balai coco 29cm a vis novipro",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "balai",
+        "coco",
+        "29cm",
+        "vis",
+        "novipro"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 11e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "manual_eleventh_wave_btp_v1"
+    },
+    {
+      "article_source": "BALANCE VRAC CODE A CLOU VIS BOULON KG",
+      "article_canonique": "balance vrac code a clou vis boulon kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "balance",
+        "vrac",
+        "code",
+        "clou",
+        "vis",
+        "boulon"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 11e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_eleventh_wave_btp_v1"
+    },
+    {
+      "article_source": "DE RIVETEUSE UNIRIVET ALU",
+      "article_canonique": "de riveteuse unirivet alu",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "riveteuse",
+        "unirivet",
+        "alu"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 11e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "manual_eleventh_wave_btp_v1"
+    },
+    {
+      "article_source": "MANCHE BALAI VIS ET ATTACHE PLASTIQ",
+      "article_canonique": "manche balai vis et attache plastiq",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "manche",
+        "balai",
+        "vis",
+        "attache",
+        "plastiq"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 11e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "manual_eleventh_wave_btp_v1"
+    },
+    {
+      "article_source": "PLIAGE ALUMINIUM 10/10 ANODISE + PERFO (DETAIL 5) Long : 2000 Dev : 320 Eco contribution",
+      "article_canonique": "pliage aluminium 10 10 anodise perfo detail 5 long 2000 dev 320 eco contribution",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "pliage",
+        "aluminium",
+        "anodise",
+        "perfo",
+        "detail",
+        "long",
+        "dev",
+        "eco",
+        "contribution"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 11e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "manual_eleventh_wave_btp_v1"
+    },
+    {
+      "article_source": "SAC MATIERE RECYCLEE PDB",
+      "article_canonique": "sac matiere recyclee pdb",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "emballage",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "sac",
+        "matiere",
+        "recyclee",
+        "pdb"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=5, line_occurrences=5) | Ajout manuel 12e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "607",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 215,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=607; invoices=5; occurrences=5",
+      "selection_source": "manual_twelfth_wave_btp_v1"
+    },
+    {
+      "article_source": "TERRE",
+      "article_canonique": "terre",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "terre"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=4, line_occurrences=4) | Ajout manuel 12e vague depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 212,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6068; invoices=4; occurrences=4",
+      "selection_source": "manual_twelfth_wave_btp_v1"
+    },
+    {
+      "article_source": "Armature de poteau hauteur d'étage dimension 10cmx10cm 4HA10 avec cadre HA5 espacement variable longueur 3m réf PN41010X10",
+      "article_canonique": "armature de poteau hauteur d etage dimension 10cmx10cm 4ha10 avec cadre ha5 espacement variable longueur 3m ref pn41010x10",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "armature",
+        "poteau",
+        "hauteur",
+        "etage",
+        "dimension",
+        "10cmx10cm",
+        "4ha10",
+        "cadre",
+        "ha5",
+        "espacement",
+        "variable",
+        "longueur",
+        "3m",
+        "ref",
+        "pn41010x10"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=3) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 209,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=3; occurrences=3",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "BIG BAG VIDE 1.T400",
+      "article_canonique": "big bag vide 1 t400",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "big",
+        "bag",
+        "vide",
+        "t400"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=3) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 209,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=3; occurrences=3",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "CABLE d*accélérateur (=10508) 140g",
+      "article_canonique": "cable d accelerateur 10508 140g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "cable",
+        "accelerateur",
+        "10508",
+        "140g"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=3) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 209,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=3; occurrences=3",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "CASQ CHANTIER RB40 BLC T53-61CM",
+      "article_canonique": "casq chantier rb40 blc t53 61cm",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "casq",
+        "chantier",
+        "rb40",
+        "blc",
+        "t53",
+        "61cm"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=3) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6064",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 209,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6064; invoices=3; occurrences=3",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "ECO CONTRIBUTION VALOBAT 0805017 ROBINETTERIE ET MESURE CHAUFFAGE",
+      "article_canonique": "eco contribution valobat 0805017 robinetterie et mesure chauffage",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "eco",
+        "contribution",
+        "valobat",
+        "0805017",
+        "robinetterie",
+        "mesure",
+        "chauffage"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=3) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 209,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=3; occurrences=3",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "Fourniture et mise en œuvre des platines de scellement 20*20_e=20mm",
+      "article_canonique": "fourniture et mise en uvre des platines de scellement 20 20 e 20mm",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "fourniture",
+        "mise",
+        "uvre",
+        "platines",
+        "scellement",
+        "20mm"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=3) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 209,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=3; occurrences=3",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "PETITES FOURNITURES",
+      "article_canonique": "petites fournitures",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "petites",
+        "fournitures"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=3) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 209,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6068; invoices=3; occurrences=3",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "TECHNOCE CEM II/B-LL 32,5R 25KG COU",
+      "article_canonique": "technoce cem ii b ll 32 5r 25kg cou",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "technoce",
+        "cem",
+        "ii",
+        "ll",
+        "5r",
+        "25kg",
+        "cou"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=3) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6021",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 209,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6021; invoices=3; occurrences=3",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "VIS 5x10 poulie tal.(5382080=164412)wur",
+      "article_canonique": "vis 5x10 poulie tal 5382080 164412 wur",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "vis",
+        "5x10",
+        "poulie",
+        "tal",
+        "5382080",
+        "164412",
+        "wur"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=3) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 209,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=3; occurrences=3",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "AMPOULE",
+      "article_canonique": "ampoule",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "ampoule"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "APPLICATEUR LUKO AVEC 3 EPONGES UN BAC = ENVIRON 250 M2",
+      "article_canonique": "applicateur luko avec 3 eponges un bac environ 250 m2",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "applicateur",
+        "luko",
+        "eponges",
+        "un",
+        "bac",
+        "environ"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "BA13 FLAM 1.2 X 2.5M",
+      "article_canonique": "ba13 flam 1 2 x 2 5m",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "ba13",
+        "flam",
+        "5m"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "BACHE PRO POLYPROTEC ACTI 1000X25MM",
+      "article_canonique": "bache pro polyprotec acti 1000x25mm",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "bache",
+        "pro",
+        "polyprotec",
+        "acti",
+        "1000x25mm"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "BIG BAG 1T400 0/10 MELANGE",
+      "article_canonique": "big bag 1t400 0 10 melange",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "big",
+        "bag",
+        "1t400",
+        "melange"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6022",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6022; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "BIG BAG 1T400 0/4 SABLE",
+      "article_canonique": "big bag 1t400 0 4 sable",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "big",
+        "bag",
+        "1t400",
+        "sable"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6022",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6022; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "BLOC CRX CE NF B40 500X200X200LUS",
+      "article_canonique": "bloc crx ce nf b40 500x200x200lus",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "bloc",
+        "crx",
+        "ce",
+        "nf",
+        "b40",
+        "500x200x200lus"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "BLOC CRX CH VRT CE NF 500X200X200",
+      "article_canonique": "bloc crx ch vrt ce nf 500x200x200",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "bloc",
+        "crx",
+        "ch",
+        "vrt",
+        "ce",
+        "nf",
+        "500x200x200"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6021",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6021; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "BROSSE PLATE BATIMENT 60",
+      "article_canonique": "brosse plate batiment 60",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "brosse",
+        "plate",
+        "batiment"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "Balai coco 29 cm Novipro",
+      "article_canonique": "balai coco 29 cm novipro",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "balai",
+        "coco",
+        "novipro"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "Bastaing Sapin/Epicéa traité classe 2 63x160mm longueur 3,00m",
+      "article_canonique": "bastaing sapin epicea traite classe 2 63x160mm longueur 3 00m",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "bastaing",
+        "sapin",
+        "epicea",
+        "traite",
+        "classe",
+        "63x160mm",
+        "longueur",
+        "00m"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "Botte sécurité SAFETY T42",
+      "article_canonique": "botte securite safety t42",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "botte",
+        "securite",
+        "safety",
+        "t42"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "Botte sécurité SAFETY T43",
+      "article_canonique": "botte securite safety t43",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "botte",
+        "securite",
+        "safety",
+        "t43"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "Bottes de sécurité Panther S5 taille 42",
+      "article_canonique": "bottes de securite panther s5 taille 42",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "bottes",
+        "securite",
+        "panther",
+        "s5",
+        "taille"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "CLOU TP LISSE 3.1X55MM 5KG",
+      "article_canonique": "clou tp lisse 3 1x55mm 5kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "clou",
+        "tp",
+        "lisse",
+        "1x55mm",
+        "5kg"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "Cable accélérateur p/TM loche Mecanique",
+      "article_canonique": "cable accelerateur p tm loche mecanique",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "cable",
+        "accelerateur",
+        "tm",
+        "loche",
+        "mecanique"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "Casque de sécurité blanc, NF EN 397",
+      "article_canonique": "casque de securite blanc nf en 397",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "casque",
+        "securite",
+        "blanc",
+        "nf"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "Cheminement de cäbles CFO/CFA sur facade - Suivant CCTP",
+      "article_canonique": "cheminement de cables cfo cfa sur facade suivant cctp",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "cheminement",
+        "cables",
+        "cfo",
+        "cfa",
+        "facade",
+        "suivant",
+        "cctp"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6065",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6065; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "ECO PARTICIPATION ACIERS 0.014",
+      "article_canonique": "eco participation aciers 0 014",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "eco",
+        "participation",
+        "aciers"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6058",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6058; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "GANT LATEX S/JERSEY COT BL ADH T10",
+      "article_canonique": "gant latex s jersey cot bl adh t10",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "gant",
+        "latex",
+        "jersey",
+        "cot",
+        "bl",
+        "adh",
+        "t10"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "GRAVE 0/10 MM BIG BAG 3/4M3",
+      "article_canonique": "grave 0 10 mm big bag 3 4m3",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "grave",
+        "big",
+        "bag",
+        "4m3"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6021",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6021; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_active_v1"
+    },
+    {
+      "article_source": "Casque de chantier Océanic 2 RB40 taille 53-61 cm blanc",
+      "article_canonique": "casque de chantier oceanic 2 rb40 taille 53 61 cm blanc",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "casque",
+        "chantier",
+        "oceanic",
+        "rb40",
+        "taille",
+        "blanc"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv. | Promu depuis a_valider vers items apres triage final btp.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_pending_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "Jugulaire sans mentonniére pour casque SC5101 et SC5101A3",
+      "article_canonique": "jugulaire sans mentonniere pour casque sc5101 et sc5101a3",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "jugulaire",
+        "sans",
+        "mentonniere",
+        "casque",
+        "sc5101",
+        "sc5101a3"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv. | Promu depuis a_valider vers items apres triage final btp.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_pending_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "Luminaires au dessus des accés - Suivant CCTP",
+      "article_canonique": "luminaires au dessus des acces suivant cctp",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "luminaires",
+        "dessus",
+        "acces",
+        "suivant",
+        "cctp"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv. | Promu depuis a_valider vers items apres triage final btp.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6065",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6065; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_pending_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "Luminaires plafond des porches - Suivant CCTP",
+      "article_canonique": "luminaires plafond des porches suivant cctp",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "luminaires",
+        "plafond",
+        "porches",
+        "suivant",
+        "cctp"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv. | Promu depuis a_valider vers items apres triage final btp.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6065",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6065; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_pending_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "PLIAGE GALVA 15/10 EXCEDENTAIRE (PATTES ANTI RELEVE DETAIL 3 Long : 3000 Dev : 227",
+      "article_canonique": "pliage galva 15 10 excedentaire pattes anti releve detail 3 long 3000 dev 227",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "pliage",
+        "galva",
+        "excedentaire",
+        "pattes",
+        "anti",
+        "releve",
+        "detail",
+        "long",
+        "dev"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv. | Promu depuis a_valider vers items apres triage final btp.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_pending_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "PLIAGE GALVA 15/10 EXCEDENTAIRE 30X30X30 Long : 4000 Dev : 90",
+      "article_canonique": "pliage galva 15 10 excedentaire 30x30x30 long 4000 dev 90",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "pliage",
+        "galva",
+        "excedentaire",
+        "30x30x30",
+        "long",
+        "dev"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv. | Promu depuis a_valider vers items apres triage final btp.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_pending_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "PLIAGE GALVA 15/10 EXCEDENTAIRE OMEGA Long : 4000 Dev : 147",
+      "article_canonique": "pliage galva 15 10 excedentaire omega long 4000 dev 147",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "pliage",
+        "galva",
+        "excedentaire",
+        "omega",
+        "long",
+        "dev"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv. | Promu depuis a_valider vers items apres triage final btp.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_pending_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "PN CHANTIER INTERDIT 330X200 621209",
+      "article_canonique": "pn chantier interdit 330x200 621209",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "pn",
+        "chantier",
+        "interdit",
+        "330x200",
+        "621209"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv. | Promu depuis a_valider vers items apres triage final btp.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6068; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_pending_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "Plaque de platre BA13 Placoflam A2 2,5x1,2m R=0,04 m2.k/w",
+      "article_canonique": "plaque de platre ba13 placoflam a2 2 5x1 2m r 0 04 m2 k w",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "plaque",
+        "platre",
+        "ba13",
+        "placoflam",
+        "a2",
+        "5x1",
+        "2m"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv. | Promu depuis a_valider vers items apres triage final btp.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=2; occurrences=2",
+      "selection_source": "raise_to_200_btp_pending_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "TA-E 80X60 W0 GOUL DISTRI AU METRE",
+      "article_canonique": "ta e 80x60 w0 goul distri au metre",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "ta",
+        "80x60",
+        "w0",
+        "goul",
+        "distri",
+        "metre"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=3) | Top-up final cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv | Promu depuis a_valider vers items apres triage final btp.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 209,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=3; occurrences=3",
+      "selection_source": "top_up_target_200_btp_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "Anémométre pour store - suivant CCTP",
+      "article_canonique": "anemometre pour store suivant cctp",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "anemometre",
+        "store",
+        "suivant",
+        "cctp"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Top-up final cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv | Promu depuis a_valider vers items apres triage final btp.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6068; invoices=2; occurrences=2",
+      "selection_source": "top_up_target_200_btp_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "BAST SAP/EPI TRCL2 63X160 3M00",
+      "article_canonique": "bast sap epi trcl2 63x160 3m00",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "bast",
+        "sap",
+        "epi",
+        "trcl2",
+        "63x160",
+        "3m00"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Top-up final cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv | Promu depuis a_valider vers items apres triage final btp.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "top_up_target_200_btp_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "BOB. PROTECT. ULTIBAT 75M.",
+      "article_canonique": "bob protect ultibat 75m",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "bob",
+        "protect",
+        "ultibat",
+        "75m"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Top-up final cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv | Promu depuis a_valider vers items apres triage final btp.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "top_up_target_200_btp_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "CONTRE PLAQUE FILME PLUS 15MM 250X125X15MM",
+      "article_canonique": "contre plaque filme plus 15mm 250x125x15mm",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "contre",
+        "plaque",
+        "filme",
+        "plus",
+        "15mm",
+        "250x125x15mm"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Top-up final cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv | Promu depuis a_valider vers items apres triage final btp.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=2; occurrences=2",
+      "selection_source": "top_up_target_200_btp_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    },
+    {
+      "article_source": "CROISILLONS EN T 3MM 250 PIECES",
+      "article_canonique": "croisillons en t 3mm 250 pieces",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "croisillons",
+        "3mm"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Top-up final cible 200 depuis candidate_packs_metier/btp_top_500_cleaned_candidates.csv | Promu depuis a_valider vers items apres triage final btp.",
+      "source_invoice_ids": [],
+      "compte_comptable": "607",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=607; invoices=2; occurrences=2",
+      "selection_source": "top_up_target_200_btp_v1",
+      "promotion_source": "final_btp_transport_triage_v1"
+    }
+  ],
+  "a_valider": []
+}

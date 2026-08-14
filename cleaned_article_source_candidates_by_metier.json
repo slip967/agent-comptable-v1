@@ -1,0 +1,3286 @@
+{
+  "generated_from": "copy_keymanage_metier_docs_report_quality_v3.json",
+  "source_db": "keymanage_accounting",
+  "read_only": true,
+  "filters": {
+    "dedupe_invoices_by": [
+      "supplier_siren",
+      "invoice_number",
+      "invoice_date",
+      "total_amount",
+      "document_type"
+    ],
+    "account_prefix_required": "60",
+    "exclude_external_like_tokens": [
+      "abonnement",
+      "cotisation",
+      "entretien",
+      "frais",
+      "loyer",
+      "maintenance",
+      "port",
+      "relance",
+      "sortie",
+      "terme",
+      "transport"
+    ],
+    "exclude_generic_noise_labels": [
+      "article",
+      "articles",
+      "divers",
+      "diverse",
+      "diverses",
+      "forfait",
+      "forfaits",
+      "marchandises",
+      "prestation",
+      "prestations",
+      "produit",
+      "produits",
+      "service",
+      "services"
+    ],
+    "min_alpha_chars": 4,
+    "reject_single_short_token": true,
+    "reject_digit_heavy_noise": true,
+    "dedupe_article_source_by": "normalized_label"
+  },
+  "metiers": {
+    "boulangerie": {
+      "partitions_count": 4,
+      "invoice_forms_seen": 8062,
+      "invoice_forms_kept_after_dedup": 5960,
+      "invoice_forms_skipped_as_duplicate": 2102,
+      "base_current_distinct": 25,
+      "cleaned_distinct_article_source": 9073,
+      "cleaned_already_in_base": 22,
+      "cleaned_new_candidates": 9051,
+      "top_all": [
+        {
+          "article_source": "CUISSE DE POULET FERMIER HALAL",
+          "normalized_label": "cuisse de poulet fermier halal",
+          "invoice_count": 211,
+          "line_occurrences": 314,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "BASSE SANS POITRINE DE VEAU",
+          "normalized_label": "basse sans poitrine de veau",
+          "invoice_count": 184,
+          "line_occurrences": 247,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET DE POULET FERMIER HALAL",
+          "normalized_label": "filet de poulet fermier halal",
+          "invoice_count": 167,
+          "line_occurrences": 167,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "COQUELET HALAL",
+          "normalized_label": "coquelet halal",
+          "invoice_count": 159,
+          "line_occurrences": 162,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CUISSE POULET HALAL CEE 10KG",
+          "normalized_label": "cuisse poulet halal cee 10kg",
+          "invoice_count": 135,
+          "line_occurrences": 135,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "POULET PAC HALAL",
+          "normalized_label": "poulet pac halal",
+          "invoice_count": 130,
+          "line_occurrences": 180,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "POULET FERMIER HALAL PAC",
+          "normalized_label": "poulet fermier halal pac",
+          "invoice_count": 124,
+          "line_occurrences": 149,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET DE POULET HALAL CEE",
+          "normalized_label": "filet de poulet halal cee",
+          "invoice_count": 116,
+          "line_occurrences": 116,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CARRE DE VEAU SANS ROGNONS",
+          "normalized_label": "carre de veau sans rognons",
+          "invoice_count": 109,
+          "line_occurrences": 122,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET DE DINDE HALAL",
+          "normalized_label": "filet de dinde halal",
+          "invoice_count": 107,
+          "line_occurrences": 107,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET DE POULET HALAL UE",
+          "normalized_label": "filet de poulet halal ue",
+          "invoice_count": 103,
+          "line_occurrences": 103,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CUISSE DE POULET HALAL UE 10KG",
+          "normalized_label": "cuisse de poulet halal ue 10kg",
+          "invoice_count": 96,
+          "line_occurrences": 101,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CRISTALI 50CL PET",
+          "normalized_label": "cristali 50cl pet",
+          "invoice_count": 93,
+          "line_occurrences": 93,
+          "partitions": [
+            "fr_bd_880517875",
+            "fr_bd_890233000",
+            "fr_bd_915197842"
+          ],
+          "sample_account": "6068"
+        },
+        {
+          "article_source": "PILONS DE POULET ID HALAL",
+          "normalized_label": "pilons de poulet id halal",
+          "invoice_count": 90,
+          "line_occurrences": 92,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CHICKEN WINGS HALAL",
+          "normalized_label": "chicken wings halal",
+          "invoice_count": 89,
+          "line_occurrences": 92,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CRISTALINE 50CL P/24",
+          "normalized_label": "cristaline 50cl p 24",
+          "invoice_count": 78,
+          "line_occurrences": 92,
+          "partitions": [
+            "fr_bd_880517875"
+          ],
+          "sample_account": "6068"
+        },
+        {
+          "article_source": "POMME DE TERRE GRENAILLE",
+          "normalized_label": "pomme de terre grenaille",
+          "invoice_count": 78,
+          "line_occurrences": 79,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "SPICY HALAL",
+          "normalized_label": "spicy halal",
+          "invoice_count": 78,
+          "line_occurrences": 78,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FOIE DE POULET CEE HALAL",
+          "normalized_label": "foie de poulet cee halal",
+          "invoice_count": 76,
+          "line_occurrences": 76,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FOIE DE POULET HALAL UE",
+          "normalized_label": "foie de poulet halal ue",
+          "invoice_count": 76,
+          "line_occurrences": 76,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "OEUF COQUILLE TEINTE GROS 63/73 CT 360",
+          "normalized_label": "oeuf coquille teinte gros 63 73 ct 360",
+          "invoice_count": 75,
+          "line_occurrences": 75,
+          "partitions": [
+            "fr_bd_890233000"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "BEURRE GD TOURAGE FLECHARD CT 5X2KG",
+          "normalized_label": "beurre gd tourage flechard ct 5x2kg",
+          "invoice_count": 74,
+          "line_occurrences": 74,
+          "partitions": [
+            "fr_bd_890233000"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "AGNEAU MOINS DE 12 MOIS",
+          "normalized_label": "agneau moins de 12 mois",
+          "invoice_count": 73,
+          "line_occurrences": 103,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "SUCRE CRISTAL FIN SAC 25KG",
+          "normalized_label": "sucre cristal fin sac 25kg",
+          "invoice_count": 72,
+          "line_occurrences": 72,
+          "partitions": [
+            "fr_bd_880517875"
+          ],
+          "sample_account": "601"
+        },
+        {
+          "article_source": "FARINE LABEL ROUGE L EMOTION 100 % IDF SAC 25 KG",
+          "normalized_label": "farine label rouge l emotion 100 idf sac 25 kg",
+          "invoice_count": 71,
+          "line_occurrences": 73,
+          "partitions": [
+            "fr_bd_890233000"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "BASSE COTE VIANDE HALLAL",
+          "normalized_label": "basse cote viande hallal",
+          "invoice_count": 69,
+          "line_occurrences": 104,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "PILON DE POULET ID HALAL",
+          "normalized_label": "pilon de poulet id halal",
+          "invoice_count": 68,
+          "line_occurrences": 72,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CRISTAL T65 25KG",
+          "normalized_label": "cristal t65 25kg",
+          "invoice_count": 68,
+          "line_occurrences": 71,
+          "partitions": [
+            "fr_bd_880517875"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "LAIT UHT 1/2 ECREME BRIQ PACK 12X1L",
+          "normalized_label": "lait uht 1 2 ecreme briq pack 12x1l",
+          "invoice_count": 67,
+          "line_occurrences": 67,
+          "partitions": [
+            "fr_bd_880517875",
+            "fr_bd_890233000"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "BANANE",
+          "normalized_label": "banane",
+          "invoice_count": 65,
+          "line_occurrences": 67,
+          "partitions": [
+            "fr_bd_880517875",
+            "fr_bd_890233000"
+          ],
+          "sample_account": "601"
+        }
+      ],
+      "top_new_to_inject": [
+        {
+          "article_source": "CUISSE DE POULET FERMIER HALAL",
+          "normalized_label": "cuisse de poulet fermier halal",
+          "invoice_count": 211,
+          "line_occurrences": 314,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "BASSE SANS POITRINE DE VEAU",
+          "normalized_label": "basse sans poitrine de veau",
+          "invoice_count": 184,
+          "line_occurrences": 247,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET DE POULET FERMIER HALAL",
+          "normalized_label": "filet de poulet fermier halal",
+          "invoice_count": 167,
+          "line_occurrences": 167,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "COQUELET HALAL",
+          "normalized_label": "coquelet halal",
+          "invoice_count": 159,
+          "line_occurrences": 162,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CUISSE POULET HALAL CEE 10KG",
+          "normalized_label": "cuisse poulet halal cee 10kg",
+          "invoice_count": 135,
+          "line_occurrences": 135,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "POULET PAC HALAL",
+          "normalized_label": "poulet pac halal",
+          "invoice_count": 130,
+          "line_occurrences": 180,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "POULET FERMIER HALAL PAC",
+          "normalized_label": "poulet fermier halal pac",
+          "invoice_count": 124,
+          "line_occurrences": 149,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET DE POULET HALAL CEE",
+          "normalized_label": "filet de poulet halal cee",
+          "invoice_count": 116,
+          "line_occurrences": 116,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CARRE DE VEAU SANS ROGNONS",
+          "normalized_label": "carre de veau sans rognons",
+          "invoice_count": 109,
+          "line_occurrences": 122,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET DE DINDE HALAL",
+          "normalized_label": "filet de dinde halal",
+          "invoice_count": 107,
+          "line_occurrences": 107,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET DE POULET HALAL UE",
+          "normalized_label": "filet de poulet halal ue",
+          "invoice_count": 103,
+          "line_occurrences": 103,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CUISSE DE POULET HALAL UE 10KG",
+          "normalized_label": "cuisse de poulet halal ue 10kg",
+          "invoice_count": 96,
+          "line_occurrences": 101,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CRISTALI 50CL PET",
+          "normalized_label": "cristali 50cl pet",
+          "invoice_count": 93,
+          "line_occurrences": 93,
+          "partitions": [
+            "fr_bd_880517875",
+            "fr_bd_890233000",
+            "fr_bd_915197842"
+          ],
+          "sample_account": "6068"
+        },
+        {
+          "article_source": "PILONS DE POULET ID HALAL",
+          "normalized_label": "pilons de poulet id halal",
+          "invoice_count": 90,
+          "line_occurrences": 92,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CHICKEN WINGS HALAL",
+          "normalized_label": "chicken wings halal",
+          "invoice_count": 89,
+          "line_occurrences": 92,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CRISTALINE 50CL P/24",
+          "normalized_label": "cristaline 50cl p 24",
+          "invoice_count": 78,
+          "line_occurrences": 92,
+          "partitions": [
+            "fr_bd_880517875"
+          ],
+          "sample_account": "6068"
+        },
+        {
+          "article_source": "POMME DE TERRE GRENAILLE",
+          "normalized_label": "pomme de terre grenaille",
+          "invoice_count": 78,
+          "line_occurrences": 79,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "SPICY HALAL",
+          "normalized_label": "spicy halal",
+          "invoice_count": 78,
+          "line_occurrences": 78,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FOIE DE POULET CEE HALAL",
+          "normalized_label": "foie de poulet cee halal",
+          "invoice_count": 76,
+          "line_occurrences": 76,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FOIE DE POULET HALAL UE",
+          "normalized_label": "foie de poulet halal ue",
+          "invoice_count": 76,
+          "line_occurrences": 76,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "OEUF COQUILLE TEINTE GROS 63/73 CT 360",
+          "normalized_label": "oeuf coquille teinte gros 63 73 ct 360",
+          "invoice_count": 75,
+          "line_occurrences": 75,
+          "partitions": [
+            "fr_bd_890233000"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "BEURRE GD TOURAGE FLECHARD CT 5X2KG",
+          "normalized_label": "beurre gd tourage flechard ct 5x2kg",
+          "invoice_count": 74,
+          "line_occurrences": 74,
+          "partitions": [
+            "fr_bd_890233000"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "AGNEAU MOINS DE 12 MOIS",
+          "normalized_label": "agneau moins de 12 mois",
+          "invoice_count": 73,
+          "line_occurrences": 103,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "SUCRE CRISTAL FIN SAC 25KG",
+          "normalized_label": "sucre cristal fin sac 25kg",
+          "invoice_count": 72,
+          "line_occurrences": 72,
+          "partitions": [
+            "fr_bd_880517875"
+          ],
+          "sample_account": "601"
+        },
+        {
+          "article_source": "FARINE LABEL ROUGE L EMOTION 100 % IDF SAC 25 KG",
+          "normalized_label": "farine label rouge l emotion 100 idf sac 25 kg",
+          "invoice_count": 71,
+          "line_occurrences": 73,
+          "partitions": [
+            "fr_bd_890233000"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "BASSE COTE VIANDE HALLAL",
+          "normalized_label": "basse cote viande hallal",
+          "invoice_count": 69,
+          "line_occurrences": 104,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "PILON DE POULET ID HALAL",
+          "normalized_label": "pilon de poulet id halal",
+          "invoice_count": 68,
+          "line_occurrences": 72,
+          "partitions": [
+            "fr_bd_519665103"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CRISTAL T65 25KG",
+          "normalized_label": "cristal t65 25kg",
+          "invoice_count": 68,
+          "line_occurrences": 71,
+          "partitions": [
+            "fr_bd_880517875"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "LAIT UHT 1/2 ECREME BRIQ PACK 12X1L",
+          "normalized_label": "lait uht 1 2 ecreme briq pack 12x1l",
+          "invoice_count": 67,
+          "line_occurrences": 67,
+          "partitions": [
+            "fr_bd_880517875",
+            "fr_bd_890233000"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "BANANE",
+          "normalized_label": "banane",
+          "invoice_count": 65,
+          "line_occurrences": 67,
+          "partitions": [
+            "fr_bd_880517875",
+            "fr_bd_890233000"
+          ],
+          "sample_account": "601"
+        }
+      ]
+    },
+    "boucherie": {
+      "partitions_count": 5,
+      "invoice_forms_seen": 22809,
+      "invoice_forms_kept_after_dedup": 16123,
+      "invoice_forms_skipped_as_duplicate": 6686,
+      "base_current_distinct": 40,
+      "cleaned_distinct_article_source": 21037,
+      "cleaned_already_in_base": 40,
+      "cleaned_new_candidates": 20997,
+      "top_all": [
+        {
+          "article_source": "CUISSE DE POULET FERMIER HALAL",
+          "normalized_label": "cuisse de poulet fermier halal",
+          "invoice_count": 844,
+          "line_occurrences": 1190,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "POULET PAC HALAL",
+          "normalized_label": "poulet pac halal",
+          "invoice_count": 773,
+          "line_occurrences": 1099,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "COQUELET HALAL",
+          "normalized_label": "coquelet halal",
+          "invoice_count": 692,
+          "line_occurrences": 735,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET DE POULET HALAL UE",
+          "normalized_label": "filet de poulet halal ue",
+          "invoice_count": 673,
+          "line_occurrences": 697,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET DE POULET FERMIER HALAL",
+          "normalized_label": "filet de poulet fermier halal",
+          "invoice_count": 627,
+          "line_occurrences": 796,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "BASSE SANS POITRINE DE VEAU",
+          "normalized_label": "basse sans poitrine de veau",
+          "invoice_count": 608,
+          "line_occurrences": 838,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET DE DINDE HALAL",
+          "normalized_label": "filet de dinde halal",
+          "invoice_count": 601,
+          "line_occurrences": 624,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "POULET FERMIER HALAL PAC",
+          "normalized_label": "poulet fermier halal pac",
+          "invoice_count": 508,
+          "line_occurrences": 632,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CARRE DE VEAU SANS ROGNONS",
+          "normalized_label": "carre de veau sans rognons",
+          "invoice_count": 493,
+          "line_occurrences": 600,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CHICKEN WINGS HALAL",
+          "normalized_label": "chicken wings halal",
+          "invoice_count": 434,
+          "line_occurrences": 460,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "PILON DE POULET HALAL UE",
+          "normalized_label": "pilon de poulet halal ue",
+          "invoice_count": 384,
+          "line_occurrences": 411,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "AILE DE POULET HALAL UE",
+          "normalized_label": "aile de poulet halal ue",
+          "invoice_count": 370,
+          "line_occurrences": 376,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "AGNEAU",
+          "normalized_label": "agneau",
+          "invoice_count": 368,
+          "line_occurrences": 589,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CUISSE POULET HALAL CEE 10KG",
+          "normalized_label": "cuisse poulet halal cee 10kg",
+          "invoice_count": 365,
+          "line_occurrences": 370,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET DE POULET HALAL CEE",
+          "normalized_label": "filet de poulet halal cee",
+          "invoice_count": 343,
+          "line_occurrences": 366,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CUISSE DE POULET HALAL UE",
+          "normalized_label": "cuisse de poulet halal ue",
+          "invoice_count": 306,
+          "line_occurrences": 310,
+          "partitions": [
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "POULET FERMIER JAUNE PAC HALAL",
+          "normalized_label": "poulet fermier jaune pac halal",
+          "invoice_count": 290,
+          "line_occurrences": 338,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CORDON BLEU DE POULET AUTHENTIC HALAL",
+          "normalized_label": "cordon bleu de poulet authentic halal",
+          "invoice_count": 288,
+          "line_occurrences": 331,
+          "partitions": [
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FOIE DE POULET HALAL UE",
+          "normalized_label": "foie de poulet halal ue",
+          "invoice_count": 232,
+          "line_occurrences": 232,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FOIE DE VEAU",
+          "normalized_label": "foie de veau",
+          "invoice_count": 229,
+          "line_occurrences": 293,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "AGNEAU MOINS DE 12 MOIS",
+          "normalized_label": "agneau moins de 12 mois",
+          "invoice_count": 228,
+          "line_occurrences": 654,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CUISSE DE POULET HALAL UE 10KG",
+          "normalized_label": "cuisse de poulet halal ue 10kg",
+          "invoice_count": 227,
+          "line_occurrences": 235,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "PILON DE POULET ID HALAL",
+          "normalized_label": "pilon de poulet id halal",
+          "invoice_count": 215,
+          "line_occurrences": 229,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CUISSEAU DE VEAU",
+          "normalized_label": "cuisseau de veau",
+          "invoice_count": 212,
+          "line_occurrences": 333,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FOIE DE POULET HALAL",
+          "normalized_label": "foie de poulet halal",
+          "invoice_count": 211,
+          "line_occurrences": 211,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "POMME DE TERRE GRATIN DAUPHINOIS",
+          "normalized_label": "pomme de terre gratin dauphinois",
+          "invoice_count": 208,
+          "line_occurrences": 209,
+          "partitions": [
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FRESSURE DE MOUTON CARCASSE ABATS",
+          "normalized_label": "fressure de mouton carcasse abats",
+          "invoice_count": 202,
+          "line_occurrences": 248,
+          "partitions": [
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "PILONS DE POULET ID HALAL",
+          "normalized_label": "pilons de poulet id halal",
+          "invoice_count": 201,
+          "line_occurrences": 211,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FOIE DE VEAU CARCASSE ABATS",
+          "normalized_label": "foie de veau carcasse abats",
+          "invoice_count": 195,
+          "line_occurrences": 233,
+          "partitions": [
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "BASSE COTE",
+          "normalized_label": "basse cote",
+          "invoice_count": 194,
+          "line_occurrences": 197,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        }
+      ],
+      "top_new_to_inject": [
+        {
+          "article_source": "PILON DE POULET HALAL UE",
+          "normalized_label": "pilon de poulet halal ue",
+          "invoice_count": 384,
+          "line_occurrences": 411,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CUISSE DE POULET HALAL UE",
+          "normalized_label": "cuisse de poulet halal ue",
+          "invoice_count": 306,
+          "line_occurrences": 310,
+          "partitions": [
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "POULET FERMIER JAUNE PAC HALAL",
+          "normalized_label": "poulet fermier jaune pac halal",
+          "invoice_count": 290,
+          "line_occurrences": 338,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CORDON BLEU DE POULET AUTHENTIC HALAL",
+          "normalized_label": "cordon bleu de poulet authentic halal",
+          "invoice_count": 288,
+          "line_occurrences": 331,
+          "partitions": [
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FOIE DE VEAU",
+          "normalized_label": "foie de veau",
+          "invoice_count": 229,
+          "line_occurrences": 293,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CUISSEAU DE VEAU",
+          "normalized_label": "cuisseau de veau",
+          "invoice_count": 212,
+          "line_occurrences": 333,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FOIE DE POULET HALAL",
+          "normalized_label": "foie de poulet halal",
+          "invoice_count": 211,
+          "line_occurrences": 211,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "POMME DE TERRE GRATIN DAUPHINOIS",
+          "normalized_label": "pomme de terre gratin dauphinois",
+          "invoice_count": 208,
+          "line_occurrences": 209,
+          "partitions": [
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FRESSURE DE MOUTON CARCASSE ABATS",
+          "normalized_label": "fressure de mouton carcasse abats",
+          "invoice_count": 202,
+          "line_occurrences": 248,
+          "partitions": [
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FOIE DE VEAU CARCASSE ABATS",
+          "normalized_label": "foie de veau carcasse abats",
+          "invoice_count": 195,
+          "line_occurrences": 233,
+          "partitions": [
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "BASSE COTE",
+          "normalized_label": "basse cote",
+          "invoice_count": 194,
+          "line_occurrences": 197,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "POITRINE DE VEAU",
+          "normalized_label": "poitrine de veau",
+          "invoice_count": 184,
+          "line_occurrences": 207,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "POULET FERMIER BIO PAC HALAL",
+          "normalized_label": "poulet fermier bio pac halal",
+          "invoice_count": 183,
+          "line_occurrences": 188,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "PANÉ DE VOLAILLE HALAL UE MILANESE",
+          "normalized_label": "pane de volaille halal ue milanese",
+          "invoice_count": 177,
+          "line_occurrences": 183,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CUISSE DE DINDE HALAL",
+          "normalized_label": "cuisse de dinde halal",
+          "invoice_count": 166,
+          "line_occurrences": 166,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FRESSURE DE MOUTON",
+          "normalized_label": "fressure de mouton",
+          "invoice_count": 165,
+          "line_occurrences": 227,
+          "partitions": [
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CORDON BLEU PLT AUTHENTIC HALAL",
+          "normalized_label": "cordon bleu plt authentic halal",
+          "invoice_count": 164,
+          "line_occurrences": 192,
+          "partitions": [
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "TENDER CE HALAL",
+          "normalized_label": "tender ce halal",
+          "invoice_count": 164,
+          "line_occurrences": 165,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CUISSE DE POULET HALAL",
+          "normalized_label": "cuisse de poulet halal",
+          "invoice_count": 146,
+          "line_occurrences": 151,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "RUMSTEACK BLANC BLEU BELGE",
+          "normalized_label": "rumsteack blanc bleu belge",
+          "invoice_count": 144,
+          "line_occurrences": 266,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CREPINE DE VEAU",
+          "normalized_label": "crepine de veau",
+          "invoice_count": 144,
+          "line_occurrences": 168,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "RUMSTEACK BLANC BLEU BELGE VIANDE HALLAL",
+          "normalized_label": "rumsteack blanc bleu belge viande hallal",
+          "invoice_count": 136,
+          "line_occurrences": 279,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "DONUT DE FILET DE POULET",
+          "normalized_label": "donut de filet de poulet",
+          "invoice_count": 135,
+          "line_occurrences": 136,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "PIED DE VEAU",
+          "normalized_label": "pied de veau",
+          "invoice_count": 132,
+          "line_occurrences": 167,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "QUEUE DE BOEUF CARCASSE ABATS",
+          "normalized_label": "queue de boeuf carcasse abats",
+          "invoice_count": 130,
+          "line_occurrences": 146,
+          "partitions": [
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "PANSE D'OVIN SALE",
+          "normalized_label": "panse d ovin sale",
+          "invoice_count": 129,
+          "line_occurrences": 151,
+          "partitions": [
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CREPINE DE VEAU CARCASSE ABATS",
+          "normalized_label": "crepine de veau carcasse abats",
+          "invoice_count": 127,
+          "line_occurrences": 143,
+          "partitions": [
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "PDT GRATIN DAUPHINOIS",
+          "normalized_label": "pdt gratin dauphinois",
+          "invoice_count": 127,
+          "line_occurrences": 127,
+          "partitions": [
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "GÉSIER DE POULET HALAL",
+          "normalized_label": "gesier de poulet halal",
+          "invoice_count": 126,
+          "line_occurrences": 126,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "BAVETTE ALOYAU BLANC BLEU BELGE VIANDE HALLAL",
+          "normalized_label": "bavette aloyau blanc bleu belge viande hallal",
+          "invoice_count": 120,
+          "line_occurrences": 351,
+          "partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "sample_account": "6011"
+        }
+      ]
+    },
+    "restaurant": {
+      "partitions_count": 3,
+      "invoice_forms_seen": 2858,
+      "invoice_forms_kept_after_dedup": 2347,
+      "invoice_forms_skipped_as_duplicate": 511,
+      "base_current_distinct": 45,
+      "cleaned_distinct_article_source": 4095,
+      "cleaned_already_in_base": 0,
+      "cleaned_new_candidates": 4095,
+      "top_all": [
+        {
+          "article_source": "POULET PAC HALAL",
+          "normalized_label": "poulet pac halal",
+          "invoice_count": 87,
+          "line_occurrences": 136,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "Tiramisu Choco-nut",
+          "normalized_label": "tiramisu choco nut",
+          "invoice_count": 87,
+          "line_occurrences": 102,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "601"
+        },
+        {
+          "article_source": "Diplomate Fraise",
+          "normalized_label": "diplomate fraise",
+          "invoice_count": 85,
+          "line_occurrences": 97,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "601"
+        },
+        {
+          "article_source": "SAUCISSE WUDY XXL HALAL",
+          "normalized_label": "saucisse wudy xxl halal",
+          "invoice_count": 81,
+          "line_occurrences": 90,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "Tiramisu Caramel Beurre-salé",
+          "normalized_label": "tiramisu caramel beurre sale",
+          "invoice_count": 75,
+          "line_occurrences": 90,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "601"
+        },
+        {
+          "article_source": "Misu Coco-Rocher",
+          "normalized_label": "misu coco rocher",
+          "invoice_count": 64,
+          "line_occurrences": 72,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6068"
+        },
+        {
+          "article_source": "50 COUV BTE SALADE KRAFT GM",
+          "normalized_label": "50 couv bte salade kraft gm",
+          "invoice_count": 56,
+          "line_occurrences": 56,
+          "partitions": [
+            "fr_bd_952061570"
+          ],
+          "sample_account": "6063"
+        },
+        {
+          "article_source": "CUISSE POULET HALAL CEE 10KG",
+          "normalized_label": "cuisse poulet halal cee 10kg",
+          "invoice_count": 56,
+          "line_occurrences": 56,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "DONUTS FILET POULET",
+          "normalized_label": "donuts filet poulet",
+          "invoice_count": 55,
+          "line_occurrences": 59,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CAROTTE MC 5KG 20/40 GB40 FR C1france",
+          "normalized_label": "carotte mc 5kg 20 40 gb40 fr c1france",
+          "invoice_count": 55,
+          "line_occurrences": 55,
+          "partitions": [
+            "fr_bd_891370595",
+            "fr_bd_952061570"
+          ],
+          "sample_account": "601"
+        },
+        {
+          "article_source": "CUISSE DE POULET HALAL UE 10KG",
+          "normalized_label": "cuisse de poulet halal ue 10kg",
+          "invoice_count": 55,
+          "line_occurrences": 55,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "DONUT DE FILET DE POULET",
+          "normalized_label": "donut de filet de poulet",
+          "invoice_count": 54,
+          "line_occurrences": 57,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET DE POULET HALAL UE",
+          "normalized_label": "filet de poulet halal ue",
+          "invoice_count": 54,
+          "line_occurrences": 54,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "COCACOLA BOITE SLIM 33CL",
+          "normalized_label": "cocacola boite slim 33cl",
+          "invoice_count": 53,
+          "line_occurrences": 53,
+          "partitions": [
+            "fr_bd_891370595",
+            "fr_bd_952061570"
+          ],
+          "sample_account": "6068"
+        },
+        {
+          "article_source": "PILONS DE POULET ID HALAL",
+          "normalized_label": "pilons de poulet id halal",
+          "invoice_count": 52,
+          "line_occurrences": 55,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET DE POULET HALAL CEE",
+          "normalized_label": "filet de poulet halal cee",
+          "invoice_count": 51,
+          "line_occurrences": 52,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CRISTALI 50CL PET",
+          "normalized_label": "cristali 50cl pet",
+          "invoice_count": 51,
+          "line_occurrences": 51,
+          "partitions": [
+            "fr_bd_891370595",
+            "fr_bd_952061570"
+          ],
+          "sample_account": "6068"
+        },
+        {
+          "article_source": "PILON DE POULET ID HALAL",
+          "normalized_label": "pilon de poulet id halal",
+          "invoice_count": 50,
+          "line_occurrences": 55,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "MPRO BOBINE 2P 450F X6",
+          "normalized_label": "mpro bobine 2p 450f x6",
+          "invoice_count": 48,
+          "line_occurrences": 48,
+          "partitions": [
+            "fr_bd_891370595",
+            "fr_bd_952061570"
+          ],
+          "sample_account": "6063"
+        },
+        {
+          "article_source": "MERGUEZ BOEUF/AGN HALAL",
+          "normalized_label": "merguez boeuf agn halal",
+          "invoice_count": 42,
+          "line_occurrences": 43,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "MERGUEZ DE BOEUF/AGN HALAL",
+          "normalized_label": "merguez de boeuf agn halal",
+          "invoice_count": 42,
+          "line_occurrences": 43,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "AILE DE POULET 3 PHALANGES HALAL UE",
+          "normalized_label": "aile de poulet 3 phalanges halal ue",
+          "invoice_count": 42,
+          "line_occurrences": 42,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "COCA COLA VC 33CL",
+          "normalized_label": "coca cola vc 33cl",
+          "invoice_count": 42,
+          "line_occurrences": 42,
+          "partitions": [
+            "fr_bd_952061570"
+          ],
+          "sample_account": "6068"
+        },
+        {
+          "article_source": "OASIS TROPICAL SLIM BTE 33CL",
+          "normalized_label": "oasis tropical slim bte 33cl",
+          "invoice_count": 42,
+          "line_occurrences": 42,
+          "partitions": [
+            "fr_bd_891370595",
+            "fr_bd_952061570"
+          ],
+          "sample_account": "6068"
+        },
+        {
+          "article_source": "AILES DE POULET 3 PHALANGES HALAL CEE",
+          "normalized_label": "ailes de poulet 3 phalanges halal cee",
+          "invoice_count": 41,
+          "line_occurrences": 41,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "MC PENNE RIGATE 5KG",
+          "normalized_label": "mc penne rigate 5kg",
+          "invoice_count": 41,
+          "line_occurrences": 41,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "Tiramisu Toffee-Choc",
+          "normalized_label": "tiramisu toffee choc",
+          "invoice_count": 40,
+          "line_occurrences": 42,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6068"
+        },
+        {
+          "article_source": "MC OLIV.VERTES RONDELLE A10",
+          "normalized_label": "mc oliv vertes rondelle a10",
+          "invoice_count": 40,
+          "line_occurrences": 40,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "601"
+        },
+        {
+          "article_source": "BOUCHERIE",
+          "normalized_label": "boucherie",
+          "invoice_count": 39,
+          "line_occurrences": 645,
+          "partitions": [
+            "fr_bd_952061570"
+          ],
+          "sample_account": "601"
+        },
+        {
+          "article_source": "50 BTE SALADE KRAFT 1300ML",
+          "normalized_label": "50 bte salade kraft 1300ml",
+          "invoice_count": 38,
+          "line_occurrences": 38,
+          "partitions": [
+            "fr_bd_952061570"
+          ],
+          "sample_account": "6063"
+        }
+      ],
+      "top_new_to_inject": [
+        {
+          "article_source": "POULET PAC HALAL",
+          "normalized_label": "poulet pac halal",
+          "invoice_count": 87,
+          "line_occurrences": 136,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "Tiramisu Choco-nut",
+          "normalized_label": "tiramisu choco nut",
+          "invoice_count": 87,
+          "line_occurrences": 102,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "601"
+        },
+        {
+          "article_source": "Diplomate Fraise",
+          "normalized_label": "diplomate fraise",
+          "invoice_count": 85,
+          "line_occurrences": 97,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "601"
+        },
+        {
+          "article_source": "SAUCISSE WUDY XXL HALAL",
+          "normalized_label": "saucisse wudy xxl halal",
+          "invoice_count": 81,
+          "line_occurrences": 90,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "Tiramisu Caramel Beurre-salé",
+          "normalized_label": "tiramisu caramel beurre sale",
+          "invoice_count": 75,
+          "line_occurrences": 90,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "601"
+        },
+        {
+          "article_source": "Misu Coco-Rocher",
+          "normalized_label": "misu coco rocher",
+          "invoice_count": 64,
+          "line_occurrences": 72,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6068"
+        },
+        {
+          "article_source": "50 COUV BTE SALADE KRAFT GM",
+          "normalized_label": "50 couv bte salade kraft gm",
+          "invoice_count": 56,
+          "line_occurrences": 56,
+          "partitions": [
+            "fr_bd_952061570"
+          ],
+          "sample_account": "6063"
+        },
+        {
+          "article_source": "CUISSE POULET HALAL CEE 10KG",
+          "normalized_label": "cuisse poulet halal cee 10kg",
+          "invoice_count": 56,
+          "line_occurrences": 56,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "DONUTS FILET POULET",
+          "normalized_label": "donuts filet poulet",
+          "invoice_count": 55,
+          "line_occurrences": 59,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CAROTTE MC 5KG 20/40 GB40 FR C1france",
+          "normalized_label": "carotte mc 5kg 20 40 gb40 fr c1france",
+          "invoice_count": 55,
+          "line_occurrences": 55,
+          "partitions": [
+            "fr_bd_891370595",
+            "fr_bd_952061570"
+          ],
+          "sample_account": "601"
+        },
+        {
+          "article_source": "CUISSE DE POULET HALAL UE 10KG",
+          "normalized_label": "cuisse de poulet halal ue 10kg",
+          "invoice_count": 55,
+          "line_occurrences": 55,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "DONUT DE FILET DE POULET",
+          "normalized_label": "donut de filet de poulet",
+          "invoice_count": 54,
+          "line_occurrences": 57,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET DE POULET HALAL UE",
+          "normalized_label": "filet de poulet halal ue",
+          "invoice_count": 54,
+          "line_occurrences": 54,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "COCACOLA BOITE SLIM 33CL",
+          "normalized_label": "cocacola boite slim 33cl",
+          "invoice_count": 53,
+          "line_occurrences": 53,
+          "partitions": [
+            "fr_bd_891370595",
+            "fr_bd_952061570"
+          ],
+          "sample_account": "6068"
+        },
+        {
+          "article_source": "PILONS DE POULET ID HALAL",
+          "normalized_label": "pilons de poulet id halal",
+          "invoice_count": 52,
+          "line_occurrences": 55,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET DE POULET HALAL CEE",
+          "normalized_label": "filet de poulet halal cee",
+          "invoice_count": 51,
+          "line_occurrences": 52,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CRISTALI 50CL PET",
+          "normalized_label": "cristali 50cl pet",
+          "invoice_count": 51,
+          "line_occurrences": 51,
+          "partitions": [
+            "fr_bd_891370595",
+            "fr_bd_952061570"
+          ],
+          "sample_account": "6068"
+        },
+        {
+          "article_source": "PILON DE POULET ID HALAL",
+          "normalized_label": "pilon de poulet id halal",
+          "invoice_count": 50,
+          "line_occurrences": 55,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "MPRO BOBINE 2P 450F X6",
+          "normalized_label": "mpro bobine 2p 450f x6",
+          "invoice_count": 48,
+          "line_occurrences": 48,
+          "partitions": [
+            "fr_bd_891370595",
+            "fr_bd_952061570"
+          ],
+          "sample_account": "6063"
+        },
+        {
+          "article_source": "MERGUEZ BOEUF/AGN HALAL",
+          "normalized_label": "merguez boeuf agn halal",
+          "invoice_count": 42,
+          "line_occurrences": 43,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "MERGUEZ DE BOEUF/AGN HALAL",
+          "normalized_label": "merguez de boeuf agn halal",
+          "invoice_count": 42,
+          "line_occurrences": 43,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "AILE DE POULET 3 PHALANGES HALAL UE",
+          "normalized_label": "aile de poulet 3 phalanges halal ue",
+          "invoice_count": 42,
+          "line_occurrences": 42,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "COCA COLA VC 33CL",
+          "normalized_label": "coca cola vc 33cl",
+          "invoice_count": 42,
+          "line_occurrences": 42,
+          "partitions": [
+            "fr_bd_952061570"
+          ],
+          "sample_account": "6068"
+        },
+        {
+          "article_source": "OASIS TROPICAL SLIM BTE 33CL",
+          "normalized_label": "oasis tropical slim bte 33cl",
+          "invoice_count": 42,
+          "line_occurrences": 42,
+          "partitions": [
+            "fr_bd_891370595",
+            "fr_bd_952061570"
+          ],
+          "sample_account": "6068"
+        },
+        {
+          "article_source": "AILES DE POULET 3 PHALANGES HALAL CEE",
+          "normalized_label": "ailes de poulet 3 phalanges halal cee",
+          "invoice_count": 41,
+          "line_occurrences": 41,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "MC PENNE RIGATE 5KG",
+          "normalized_label": "mc penne rigate 5kg",
+          "invoice_count": 41,
+          "line_occurrences": 41,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "Tiramisu Toffee-Choc",
+          "normalized_label": "tiramisu toffee choc",
+          "invoice_count": 40,
+          "line_occurrences": 42,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "6068"
+        },
+        {
+          "article_source": "MC OLIV.VERTES RONDELLE A10",
+          "normalized_label": "mc oliv vertes rondelle a10",
+          "invoice_count": 40,
+          "line_occurrences": 40,
+          "partitions": [
+            "fr_bd_891370595"
+          ],
+          "sample_account": "601"
+        },
+        {
+          "article_source": "BOUCHERIE",
+          "normalized_label": "boucherie",
+          "invoice_count": 39,
+          "line_occurrences": 645,
+          "partitions": [
+            "fr_bd_952061570"
+          ],
+          "sample_account": "601"
+        },
+        {
+          "article_source": "50 BTE SALADE KRAFT 1300ML",
+          "normalized_label": "50 bte salade kraft 1300ml",
+          "invoice_count": 38,
+          "line_occurrences": 38,
+          "partitions": [
+            "fr_bd_952061570"
+          ],
+          "sample_account": "6063"
+        }
+      ]
+    },
+    "transport": {
+      "partitions_count": 10,
+      "invoice_forms_seen": 2248,
+      "invoice_forms_kept_after_dedup": 1762,
+      "invoice_forms_skipped_as_duplicate": 486,
+      "base_current_distinct": 3,
+      "cleaned_distinct_article_source": 2043,
+      "cleaned_already_in_base": 0,
+      "cleaned_new_candidates": 2043,
+      "top_all": [
+        {
+          "article_source": "Gazole",
+          "normalized_label": "gazole",
+          "invoice_count": 71,
+          "line_occurrences": 71,
+          "partitions": [
+            "fr_bd_839181104",
+            "fr_bd_888020088",
+            "fr_bd_922040506"
+          ],
+          "sample_account": "6063"
+        },
+        {
+          "article_source": "Forfait Client B&You 260Go 5G",
+          "normalized_label": "forfait client b you 260go 5g",
+          "invoice_count": 27,
+          "line_occurrences": 27,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "6062"
+        },
+        {
+          "article_source": "Remise Forfait",
+          "normalized_label": "remise forfait",
+          "invoice_count": 23,
+          "line_occurrences": 23,
+          "partitions": [
+            "fr_bd_831060876",
+            "fr_bd_839181104"
+          ],
+          "sample_account": "6062"
+        },
+        {
+          "article_source": "Avantage client box",
+          "normalized_label": "avantage client box",
+          "invoice_count": 22,
+          "line_occurrences": 22,
+          "partitions": [
+            "fr_bd_831060876",
+            "fr_bd_839181104"
+          ],
+          "sample_account": "6061"
+        },
+        {
+          "article_source": "Achat non détaillé",
+          "normalized_label": "achat non detaille",
+          "invoice_count": 21,
+          "line_occurrences": 21,
+          "partitions": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ],
+          "sample_account": "606800"
+        },
+        {
+          "article_source": "Carburant GO",
+          "normalized_label": "carburant go",
+          "invoice_count": 18,
+          "line_occurrences": 18,
+          "partitions": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ],
+          "sample_account": "6063"
+        },
+        {
+          "article_source": "Carburant",
+          "normalized_label": "carburant",
+          "invoice_count": 17,
+          "line_occurrences": 17,
+          "partitions": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ],
+          "sample_account": "6063"
+        },
+        {
+          "article_source": "Sacs",
+          "normalized_label": "sacs",
+          "invoice_count": 16,
+          "line_occurrences": 16,
+          "partitions": [
+            "fr_bd_888020088"
+          ],
+          "sample_account": "6068"
+        },
+        {
+          "article_source": "BANANE DESSERT",
+          "normalized_label": "banane dessert",
+          "invoice_count": 15,
+          "line_occurrences": 15,
+          "partitions": [
+            "fr_bd_888020088"
+          ],
+          "sample_account": "6068"
+        },
+        {
+          "article_source": "Communications vers l'international",
+          "normalized_label": "communications vers l international",
+          "invoice_count": 12,
+          "line_occurrences": 12,
+          "partitions": [
+            "fr_bd_831060876",
+            "fr_bd_839181104"
+          ],
+          "sample_account": "6062"
+        },
+        {
+          "article_source": "Forfait Client B&You 230Go",
+          "normalized_label": "forfait client b you 230go",
+          "invoice_count": 12,
+          "line_occurrences": 12,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "6062"
+        },
+        {
+          "article_source": "REPAS",
+          "normalized_label": "repas",
+          "invoice_count": 12,
+          "line_occurrences": 12,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "606100"
+        },
+        {
+          "article_source": "DIESEL",
+          "normalized_label": "diesel",
+          "invoice_count": 11,
+          "line_occurrences": 11,
+          "partitions": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ],
+          "sample_account": "6063"
+        },
+        {
+          "article_source": "Forfait Spécial client 350Go 5G Av. smartphone",
+          "normalized_label": "forfait special client 350go 5g av smartphone",
+          "invoice_count": 11,
+          "line_occurrences": 11,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "6061"
+        },
+        {
+          "article_source": "Solutions Sécurité Smartphone avec Norton",
+          "normalized_label": "solutions securite smartphone avec norton",
+          "invoice_count": 11,
+          "line_occurrences": 11,
+          "partitions": [
+            "fr_bd_831060876",
+            "fr_bd_839181104"
+          ],
+          "sample_account": "6061"
+        },
+        {
+          "article_source": "GO (Carburant)",
+          "normalized_label": "go carburant",
+          "invoice_count": 10,
+          "line_occurrences": 10,
+          "partitions": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ],
+          "sample_account": "6063"
+        },
+        {
+          "article_source": "Série Speciale B&YOU 200Go",
+          "normalized_label": "serie speciale b you 200go",
+          "invoice_count": 10,
+          "line_occurrences": 10,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "606"
+        },
+        {
+          "article_source": "Vos services fournis par votre opérateur",
+          "normalized_label": "vos services fournis par votre operateur",
+          "invoice_count": 10,
+          "line_occurrences": 10,
+          "partitions": [
+            "fr_bd_831060876",
+            "fr_bd_839181104"
+          ],
+          "sample_account": "606100"
+        },
+        {
+          "article_source": "Avantage Internet 60Go",
+          "normalized_label": "avantage internet 60go",
+          "invoice_count": 8,
+          "line_occurrences": 8,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "606100"
+        },
+        {
+          "article_source": "Remise Forfait B&YOU",
+          "normalized_label": "remise forfait b you",
+          "invoice_count": 8,
+          "line_occurrences": 8,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "606"
+        },
+        {
+          "article_source": "Repas complet",
+          "normalized_label": "repas complet",
+          "invoice_count": 8,
+          "line_occurrences": 8,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "606100"
+        },
+        {
+          "article_source": "Vos abonnements, forfaits et options",
+          "normalized_label": "vos abonnements forfaits et options",
+          "invoice_count": 8,
+          "line_occurrences": 8,
+          "partitions": [
+            "fr_bd_831060876",
+            "fr_bd_839181104",
+            "fr_bd_890852403"
+          ],
+          "sample_account": "606100"
+        },
+        {
+          "article_source": "Article non spécifié",
+          "normalized_label": "article non specifie",
+          "invoice_count": 7,
+          "line_occurrences": 8,
+          "partitions": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ],
+          "sample_account": "606100"
+        },
+        {
+          "article_source": "BAGUETTE/PIDE/SOMON",
+          "normalized_label": "baguette pide somon",
+          "invoice_count": 7,
+          "line_occurrences": 7,
+          "partitions": [
+            "fr_bd_888020088"
+          ],
+          "sample_account": "60610000"
+        },
+        {
+          "article_source": "x7 Chicken Dips",
+          "normalized_label": "x7 chicken dips",
+          "invoice_count": 6,
+          "line_occurrences": 8,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "606100"
+        },
+        {
+          "article_source": "ADblue",
+          "normalized_label": "adblue",
+          "invoice_count": 6,
+          "line_occurrences": 6,
+          "partitions": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ],
+          "sample_account": "60620000"
+        },
+        {
+          "article_source": "Effectuer un essai sur route",
+          "normalized_label": "effectuer un essai sur route",
+          "invoice_count": 6,
+          "line_occurrences": 6,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "606200"
+        },
+        {
+          "article_source": "Effectuer un test rapide",
+          "normalized_label": "effectuer un test rapide",
+          "invoice_count": 6,
+          "line_occurrences": 6,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "6062"
+        },
+        {
+          "article_source": "Forfait Sensation 150Go 5G Avantages Smartphone",
+          "normalized_label": "forfait sensation 150go 5g avantages smartphone",
+          "invoice_count": 6,
+          "line_occurrences": 6,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "6061"
+        },
+        {
+          "article_source": "Marlboro 100rge.rd20",
+          "normalized_label": "marlboro 100rge rd20",
+          "invoice_count": 6,
+          "line_occurrences": 6,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "606300"
+        }
+      ],
+      "top_new_to_inject": [
+        {
+          "article_source": "Gazole",
+          "normalized_label": "gazole",
+          "invoice_count": 71,
+          "line_occurrences": 71,
+          "partitions": [
+            "fr_bd_839181104",
+            "fr_bd_888020088",
+            "fr_bd_922040506"
+          ],
+          "sample_account": "6063"
+        },
+        {
+          "article_source": "Forfait Client B&You 260Go 5G",
+          "normalized_label": "forfait client b you 260go 5g",
+          "invoice_count": 27,
+          "line_occurrences": 27,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "6062"
+        },
+        {
+          "article_source": "Remise Forfait",
+          "normalized_label": "remise forfait",
+          "invoice_count": 23,
+          "line_occurrences": 23,
+          "partitions": [
+            "fr_bd_831060876",
+            "fr_bd_839181104"
+          ],
+          "sample_account": "6062"
+        },
+        {
+          "article_source": "Avantage client box",
+          "normalized_label": "avantage client box",
+          "invoice_count": 22,
+          "line_occurrences": 22,
+          "partitions": [
+            "fr_bd_831060876",
+            "fr_bd_839181104"
+          ],
+          "sample_account": "6061"
+        },
+        {
+          "article_source": "Achat non détaillé",
+          "normalized_label": "achat non detaille",
+          "invoice_count": 21,
+          "line_occurrences": 21,
+          "partitions": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ],
+          "sample_account": "606800"
+        },
+        {
+          "article_source": "Carburant GO",
+          "normalized_label": "carburant go",
+          "invoice_count": 18,
+          "line_occurrences": 18,
+          "partitions": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ],
+          "sample_account": "6063"
+        },
+        {
+          "article_source": "Carburant",
+          "normalized_label": "carburant",
+          "invoice_count": 17,
+          "line_occurrences": 17,
+          "partitions": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ],
+          "sample_account": "6063"
+        },
+        {
+          "article_source": "Sacs",
+          "normalized_label": "sacs",
+          "invoice_count": 16,
+          "line_occurrences": 16,
+          "partitions": [
+            "fr_bd_888020088"
+          ],
+          "sample_account": "6068"
+        },
+        {
+          "article_source": "BANANE DESSERT",
+          "normalized_label": "banane dessert",
+          "invoice_count": 15,
+          "line_occurrences": 15,
+          "partitions": [
+            "fr_bd_888020088"
+          ],
+          "sample_account": "6068"
+        },
+        {
+          "article_source": "Communications vers l'international",
+          "normalized_label": "communications vers l international",
+          "invoice_count": 12,
+          "line_occurrences": 12,
+          "partitions": [
+            "fr_bd_831060876",
+            "fr_bd_839181104"
+          ],
+          "sample_account": "6062"
+        },
+        {
+          "article_source": "Forfait Client B&You 230Go",
+          "normalized_label": "forfait client b you 230go",
+          "invoice_count": 12,
+          "line_occurrences": 12,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "6062"
+        },
+        {
+          "article_source": "REPAS",
+          "normalized_label": "repas",
+          "invoice_count": 12,
+          "line_occurrences": 12,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "606100"
+        },
+        {
+          "article_source": "DIESEL",
+          "normalized_label": "diesel",
+          "invoice_count": 11,
+          "line_occurrences": 11,
+          "partitions": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ],
+          "sample_account": "6063"
+        },
+        {
+          "article_source": "Forfait Spécial client 350Go 5G Av. smartphone",
+          "normalized_label": "forfait special client 350go 5g av smartphone",
+          "invoice_count": 11,
+          "line_occurrences": 11,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "6061"
+        },
+        {
+          "article_source": "Solutions Sécurité Smartphone avec Norton",
+          "normalized_label": "solutions securite smartphone avec norton",
+          "invoice_count": 11,
+          "line_occurrences": 11,
+          "partitions": [
+            "fr_bd_831060876",
+            "fr_bd_839181104"
+          ],
+          "sample_account": "6061"
+        },
+        {
+          "article_source": "GO (Carburant)",
+          "normalized_label": "go carburant",
+          "invoice_count": 10,
+          "line_occurrences": 10,
+          "partitions": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ],
+          "sample_account": "6063"
+        },
+        {
+          "article_source": "Série Speciale B&YOU 200Go",
+          "normalized_label": "serie speciale b you 200go",
+          "invoice_count": 10,
+          "line_occurrences": 10,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "606"
+        },
+        {
+          "article_source": "Vos services fournis par votre opérateur",
+          "normalized_label": "vos services fournis par votre operateur",
+          "invoice_count": 10,
+          "line_occurrences": 10,
+          "partitions": [
+            "fr_bd_831060876",
+            "fr_bd_839181104"
+          ],
+          "sample_account": "606100"
+        },
+        {
+          "article_source": "Avantage Internet 60Go",
+          "normalized_label": "avantage internet 60go",
+          "invoice_count": 8,
+          "line_occurrences": 8,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "606100"
+        },
+        {
+          "article_source": "Remise Forfait B&YOU",
+          "normalized_label": "remise forfait b you",
+          "invoice_count": 8,
+          "line_occurrences": 8,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "606"
+        },
+        {
+          "article_source": "Repas complet",
+          "normalized_label": "repas complet",
+          "invoice_count": 8,
+          "line_occurrences": 8,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "606100"
+        },
+        {
+          "article_source": "Vos abonnements, forfaits et options",
+          "normalized_label": "vos abonnements forfaits et options",
+          "invoice_count": 8,
+          "line_occurrences": 8,
+          "partitions": [
+            "fr_bd_831060876",
+            "fr_bd_839181104",
+            "fr_bd_890852403"
+          ],
+          "sample_account": "606100"
+        },
+        {
+          "article_source": "Article non spécifié",
+          "normalized_label": "article non specifie",
+          "invoice_count": 7,
+          "line_occurrences": 8,
+          "partitions": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ],
+          "sample_account": "606100"
+        },
+        {
+          "article_source": "BAGUETTE/PIDE/SOMON",
+          "normalized_label": "baguette pide somon",
+          "invoice_count": 7,
+          "line_occurrences": 7,
+          "partitions": [
+            "fr_bd_888020088"
+          ],
+          "sample_account": "60610000"
+        },
+        {
+          "article_source": "x7 Chicken Dips",
+          "normalized_label": "x7 chicken dips",
+          "invoice_count": 6,
+          "line_occurrences": 8,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "606100"
+        },
+        {
+          "article_source": "ADblue",
+          "normalized_label": "adblue",
+          "invoice_count": 6,
+          "line_occurrences": 6,
+          "partitions": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ],
+          "sample_account": "60620000"
+        },
+        {
+          "article_source": "Effectuer un essai sur route",
+          "normalized_label": "effectuer un essai sur route",
+          "invoice_count": 6,
+          "line_occurrences": 6,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "606200"
+        },
+        {
+          "article_source": "Effectuer un test rapide",
+          "normalized_label": "effectuer un test rapide",
+          "invoice_count": 6,
+          "line_occurrences": 6,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "6062"
+        },
+        {
+          "article_source": "Forfait Sensation 150Go 5G Avantages Smartphone",
+          "normalized_label": "forfait sensation 150go 5g avantages smartphone",
+          "invoice_count": 6,
+          "line_occurrences": 6,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "6061"
+        },
+        {
+          "article_source": "Marlboro 100rge.rd20",
+          "normalized_label": "marlboro 100rge rd20",
+          "invoice_count": 6,
+          "line_occurrences": 6,
+          "partitions": [
+            "fr_bd_839181104"
+          ],
+          "sample_account": "606300"
+        }
+      ]
+    },
+    "btp": {
+      "partitions_count": 9,
+      "invoice_forms_seen": 3507,
+      "invoice_forms_kept_after_dedup": 3119,
+      "invoice_forms_skipped_as_duplicate": 388,
+      "base_current_distinct": 9,
+      "cleaned_distinct_article_source": 3464,
+      "cleaned_already_in_base": 0,
+      "cleaned_new_candidates": 3464,
+      "top_all": [
+        {
+          "article_source": "CUISSE POULET HALAL *10 KG BELGE",
+          "normalized_label": "cuisse poulet halal 10 kg belge",
+          "invoice_count": 130,
+          "line_occurrences": 150,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "AILE POULET HALAL BLANC BELGE",
+          "normalized_label": "aile poulet halal blanc belge",
+          "invoice_count": 89,
+          "line_occurrences": 94,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "PILON POULET HALAL VRAC BELGE",
+          "normalized_label": "pilon poulet halal vrac belge",
+          "invoice_count": 78,
+          "line_occurrences": 79,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET POULET HALAL*10 KG Roumanie",
+          "normalized_label": "filet poulet halal 10 kg roumanie",
+          "invoice_count": 76,
+          "line_occurrences": 85,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FOIE VOLAILLE HALAL BELGE",
+          "normalized_label": "foie volaille halal belge",
+          "invoice_count": 72,
+          "line_occurrences": 78,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET POULET HALAL*10 KG S/AT BELGE",
+          "normalized_label": "filet poulet halal 10 kg s at belge",
+          "invoice_count": 70,
+          "line_occurrences": 80,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "ESCALOPE VOLAILLE MILANESE Halal ITALIEN",
+          "normalized_label": "escalope volaille milanese halal italien",
+          "invoice_count": 60,
+          "line_occurrences": 60,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CORDON BLEU VOLAILLE HALAL 1000G S/AT",
+          "normalized_label": "cordon bleu volaille halal 1000g s at",
+          "invoice_count": 48,
+          "line_occurrences": 48,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "POULET Label Rouge HALAL",
+          "normalized_label": "poulet label rouge halal",
+          "invoice_count": 44,
+          "line_occurrences": 46,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET DINDE HALAL Import",
+          "normalized_label": "filet dinde halal import",
+          "invoice_count": 41,
+          "line_occurrences": 42,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CUISSE POULET Label Rouge Halal Blanche",
+          "normalized_label": "cuisse poulet label rouge halal blanche",
+          "invoice_count": 40,
+          "line_occurrences": 43,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET DINDE HALAL *10 KG FRANCE",
+          "normalized_label": "filet dinde halal 10 kg france",
+          "invoice_count": 40,
+          "line_occurrences": 41,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "Carburant GO",
+          "normalized_label": "carburant go",
+          "invoice_count": 28,
+          "line_occurrences": 28,
+          "partitions": [
+            "fr_bd_903252617",
+            "fr_bd_951421064"
+          ],
+          "sample_account": "606300"
+        },
+        {
+          "article_source": "Carburant",
+          "normalized_label": "carburant",
+          "invoice_count": 26,
+          "line_occurrences": 26,
+          "partitions": [
+            "fr_bd_792041840",
+            "fr_bd_842785719",
+            "fr_bd_844858571",
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6063"
+        },
+        {
+          "article_source": "DIESEL",
+          "normalized_label": "diesel",
+          "invoice_count": 22,
+          "line_occurrences": 22,
+          "partitions": [
+            "fr_bd_844858571",
+            "fr_bd_903252617",
+            "fr_bd_951421064"
+          ],
+          "sample_account": "6068"
+        },
+        {
+          "article_source": "POULET PAC HALAL 1200G",
+          "normalized_label": "poulet pac halal 1200g",
+          "invoice_count": 21,
+          "line_occurrences": 22,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "PILON POULET HALAL FRANCE",
+          "normalized_label": "pilon poulet halal france",
+          "invoice_count": 18,
+          "line_occurrences": 19,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "POULET PAC HALAL 1300G",
+          "normalized_label": "poulet pac halal 1300g",
+          "invoice_count": 18,
+          "line_occurrences": 19,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "Gazole",
+          "normalized_label": "gazole",
+          "invoice_count": 17,
+          "line_occurrences": 17,
+          "partitions": [
+            "fr_bd_842785719",
+            "fr_bd_844858571",
+            "fr_bd_903252617",
+            "fr_bd_951421064"
+          ],
+          "sample_account": "6063"
+        },
+        {
+          "article_source": "Remise",
+          "normalized_label": "remise",
+          "invoice_count": 17,
+          "line_occurrences": 17,
+          "partitions": [
+            "fr_bd_823981568",
+            "fr_bd_844858571"
+          ],
+          "sample_account": "60970000"
+        },
+        {
+          "article_source": "Utilisateur standard",
+          "normalized_label": "utilisateur standard",
+          "invoice_count": 17,
+          "line_occurrences": 17,
+          "partitions": [
+            "fr_bd_844858571"
+          ],
+          "sample_account": "606100"
+        },
+        {
+          "article_source": "CUISSE POULET DesOsse*10 KG BELGE",
+          "normalized_label": "cuisse poulet desosse 10 kg belge",
+          "invoice_count": 15,
+          "line_occurrences": 17,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CUISSE DINDE HALAL",
+          "normalized_label": "cuisse dinde halal",
+          "invoice_count": 15,
+          "line_occurrences": 16,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CUISSE POULET Label Rouge Halal JAUNE",
+          "normalized_label": "cuisse poulet label rouge halal jaune",
+          "invoice_count": 14,
+          "line_occurrences": 15,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "Béton pompé",
+          "normalized_label": "beton pompe",
+          "invoice_count": 14,
+          "line_occurrences": 14,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "604"
+        },
+        {
+          "article_source": "COFFRAGE, SCIAGE, PONCAGE.",
+          "normalized_label": "coffrage sciage poncage",
+          "invoice_count": 14,
+          "line_occurrences": 14,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "606"
+        },
+        {
+          "article_source": "Mise à disposition",
+          "normalized_label": "mise a disposition",
+          "invoice_count": 14,
+          "line_occurrences": 14,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "606200"
+        },
+        {
+          "article_source": "COULAGE PLANCHER",
+          "normalized_label": "coulage plancher",
+          "invoice_count": 13,
+          "line_occurrences": 20,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6063"
+        },
+        {
+          "article_source": "FILET POULET*5KG BELGE",
+          "normalized_label": "filet poulet 5kg belge",
+          "invoice_count": 12,
+          "line_occurrences": 13,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "POULET PAC HALAL",
+          "normalized_label": "poulet pac halal",
+          "invoice_count": 12,
+          "line_occurrences": 13,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        }
+      ],
+      "top_new_to_inject": [
+        {
+          "article_source": "CUISSE POULET HALAL *10 KG BELGE",
+          "normalized_label": "cuisse poulet halal 10 kg belge",
+          "invoice_count": 130,
+          "line_occurrences": 150,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "AILE POULET HALAL BLANC BELGE",
+          "normalized_label": "aile poulet halal blanc belge",
+          "invoice_count": 89,
+          "line_occurrences": 94,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "PILON POULET HALAL VRAC BELGE",
+          "normalized_label": "pilon poulet halal vrac belge",
+          "invoice_count": 78,
+          "line_occurrences": 79,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET POULET HALAL*10 KG Roumanie",
+          "normalized_label": "filet poulet halal 10 kg roumanie",
+          "invoice_count": 76,
+          "line_occurrences": 85,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FOIE VOLAILLE HALAL BELGE",
+          "normalized_label": "foie volaille halal belge",
+          "invoice_count": 72,
+          "line_occurrences": 78,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET POULET HALAL*10 KG S/AT BELGE",
+          "normalized_label": "filet poulet halal 10 kg s at belge",
+          "invoice_count": 70,
+          "line_occurrences": 80,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "ESCALOPE VOLAILLE MILANESE Halal ITALIEN",
+          "normalized_label": "escalope volaille milanese halal italien",
+          "invoice_count": 60,
+          "line_occurrences": 60,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CORDON BLEU VOLAILLE HALAL 1000G S/AT",
+          "normalized_label": "cordon bleu volaille halal 1000g s at",
+          "invoice_count": 48,
+          "line_occurrences": 48,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "POULET Label Rouge HALAL",
+          "normalized_label": "poulet label rouge halal",
+          "invoice_count": 44,
+          "line_occurrences": 46,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET DINDE HALAL Import",
+          "normalized_label": "filet dinde halal import",
+          "invoice_count": 41,
+          "line_occurrences": 42,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CUISSE POULET Label Rouge Halal Blanche",
+          "normalized_label": "cuisse poulet label rouge halal blanche",
+          "invoice_count": 40,
+          "line_occurrences": 43,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "FILET DINDE HALAL *10 KG FRANCE",
+          "normalized_label": "filet dinde halal 10 kg france",
+          "invoice_count": 40,
+          "line_occurrences": 41,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "Carburant GO",
+          "normalized_label": "carburant go",
+          "invoice_count": 28,
+          "line_occurrences": 28,
+          "partitions": [
+            "fr_bd_903252617",
+            "fr_bd_951421064"
+          ],
+          "sample_account": "606300"
+        },
+        {
+          "article_source": "Carburant",
+          "normalized_label": "carburant",
+          "invoice_count": 26,
+          "line_occurrences": 26,
+          "partitions": [
+            "fr_bd_792041840",
+            "fr_bd_842785719",
+            "fr_bd_844858571",
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6063"
+        },
+        {
+          "article_source": "DIESEL",
+          "normalized_label": "diesel",
+          "invoice_count": 22,
+          "line_occurrences": 22,
+          "partitions": [
+            "fr_bd_844858571",
+            "fr_bd_903252617",
+            "fr_bd_951421064"
+          ],
+          "sample_account": "6068"
+        },
+        {
+          "article_source": "POULET PAC HALAL 1200G",
+          "normalized_label": "poulet pac halal 1200g",
+          "invoice_count": 21,
+          "line_occurrences": 22,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "PILON POULET HALAL FRANCE",
+          "normalized_label": "pilon poulet halal france",
+          "invoice_count": 18,
+          "line_occurrences": 19,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "POULET PAC HALAL 1300G",
+          "normalized_label": "poulet pac halal 1300g",
+          "invoice_count": 18,
+          "line_occurrences": 19,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "Gazole",
+          "normalized_label": "gazole",
+          "invoice_count": 17,
+          "line_occurrences": 17,
+          "partitions": [
+            "fr_bd_842785719",
+            "fr_bd_844858571",
+            "fr_bd_903252617",
+            "fr_bd_951421064"
+          ],
+          "sample_account": "6063"
+        },
+        {
+          "article_source": "Remise",
+          "normalized_label": "remise",
+          "invoice_count": 17,
+          "line_occurrences": 17,
+          "partitions": [
+            "fr_bd_823981568",
+            "fr_bd_844858571"
+          ],
+          "sample_account": "60970000"
+        },
+        {
+          "article_source": "Utilisateur standard",
+          "normalized_label": "utilisateur standard",
+          "invoice_count": 17,
+          "line_occurrences": 17,
+          "partitions": [
+            "fr_bd_844858571"
+          ],
+          "sample_account": "606100"
+        },
+        {
+          "article_source": "CUISSE POULET DesOsse*10 KG BELGE",
+          "normalized_label": "cuisse poulet desosse 10 kg belge",
+          "invoice_count": 15,
+          "line_occurrences": 17,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CUISSE DINDE HALAL",
+          "normalized_label": "cuisse dinde halal",
+          "invoice_count": 15,
+          "line_occurrences": 16,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "CUISSE POULET Label Rouge Halal JAUNE",
+          "normalized_label": "cuisse poulet label rouge halal jaune",
+          "invoice_count": 14,
+          "line_occurrences": 15,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "Béton pompé",
+          "normalized_label": "beton pompe",
+          "invoice_count": 14,
+          "line_occurrences": 14,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "604"
+        },
+        {
+          "article_source": "COFFRAGE, SCIAGE, PONCAGE.",
+          "normalized_label": "coffrage sciage poncage",
+          "invoice_count": 14,
+          "line_occurrences": 14,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "606"
+        },
+        {
+          "article_source": "Mise à disposition",
+          "normalized_label": "mise a disposition",
+          "invoice_count": 14,
+          "line_occurrences": 14,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "606200"
+        },
+        {
+          "article_source": "COULAGE PLANCHER",
+          "normalized_label": "coulage plancher",
+          "invoice_count": 13,
+          "line_occurrences": 20,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6063"
+        },
+        {
+          "article_source": "FILET POULET*5KG BELGE",
+          "normalized_label": "filet poulet 5kg belge",
+          "invoice_count": 12,
+          "line_occurrences": 13,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        },
+        {
+          "article_source": "POULET PAC HALAL",
+          "normalized_label": "poulet pac halal",
+          "invoice_count": 12,
+          "line_occurrences": 13,
+          "partitions": [
+            "fr_bd_903252617"
+          ],
+          "sample_account": "6011"
+        }
+      ]
+    }
+  }
+}

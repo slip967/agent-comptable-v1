@@ -1,0 +1,1565 @@
+{
+  "generated_at": "2026-05-06T03:21:52.505450Z",
+  "files": [
+    {
+      "file": "base_charges_externes_v1.json",
+      "items_changed": 267,
+      "a_valider_changed": 36,
+      "removed_key_counts": {
+        "ids_factures_sources": 303,
+        "contexte_ape": 303,
+        "ape_context": 303,
+        "source_partition_ids": 303
+      },
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "COTI.RSD",
+          "source_invoice_ids": [
+            "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+            "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385",
+            "fr_bd_519665103:6b649b52-1cff-4146-a224-47f59839575f"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "FRAIS FIXES",
+          "source_invoice_ids": [
+            "fr_bd_828612630:17790d84-a4e0-46d4-8129-3b8195449ded",
+            "fr_bd_828612630:44fbd09f-3e6e-464c-9c9c-446b8a7d944f",
+            "fr_bd_828612630:d6f31984-8ca0-466a-aa12-7cb9cf527b9f"
+          ],
+          "partitions_sources": [
+            "fr_bd_828612630"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "INTERBEV",
+          "source_invoice_ids": [
+            "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+            "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Entretien parking",
+          "source_invoice_ids": [
+            "fr_bd_837602275:7728f6ec-4ae5-4c96-88b7-128226d7edad",
+            "fr_bd_837602275:af1d34d6-d34f-4eab-a80e-e81065f35cba",
+            "fr_bd_837602275:6865320b-80a7-4c7f-9f29-4d92023d7664"
+          ],
+          "partitions_sources": [
+            "fr_bd_837602275"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "ABONNEMENT TRIM. MOBITPE MOBILE du 01/04/25 au 30/06/25",
+          "source_invoice_ids": [
+            "fr_bd_519665103:b3742730-2748-49f2-acad-1d8d2a7d33a1",
+            "fr_bd_880517875:eb721816-2c89-469d-ad84-fa1698048f1b"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103",
+            "fr_bd_880517875"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "ABONNEMENT TRIM. SIMS CARTE SIM du 01/04/25 au 30/06/25",
+          "source_invoice_ids": [
+            "fr_bd_519665103:b3742730-2748-49f2-acad-1d8d2a7d33a1"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "DECRO",
+          "source_invoice_ids": [
+            "fr_bd_519665103:003f5876-a443-42e2-9d69-60c58f89afa5",
+            "fr_bd_519665103:02d5e7c2-3877-40fc-b589-cc7daf4784ec",
+            "fr_bd_519665103:0417048a-9942-4273-a5f6-4a1dc7e9c12c"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "F. FIXE",
+          "source_invoice_ids": [
+            "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+            "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385",
+            "fr_bd_519665103:6b649b52-1cff-4146-a224-47f59839575f"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_boucherie_v1.json",
+      "items_changed": 212,
+      "a_valider_changed": 0,
+      "removed_key_counts": {
+        "ids_factures_sources": 212,
+        "contexte_ape": 212,
+        "ape_context": 212,
+        "source_partition_ids": 212
+      },
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "BASSE COTE BOEUF",
+          "source_invoice_ids": [
+            "fr_bd_519665103:319e6e59-d89a-4823-9f23-3b16b7d4c307",
+            "fr_bd_519665103:45c56387-c07c-4751-97a3-6c541adeb22b",
+            "fr_bd_519665103:5c6613fd-eed7-466c-9684-fda4c4563713"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "FILM ALIMENTAIRE 45CM X 300M EN BOITE DISTRIBUTRICE AVEC LAME",
+          "source_invoice_ids": [
+            "fr_bd_519665103:2b654cc7-770b-4ca9-8013-83c3e2e8795f"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "CUISSE DE POULET FERMIER HALAL",
+          "source_invoice_ids": [
+            "fr_bd_519665103:36b6c940-ca33-489a-90f5-5b1fdbdf25c2",
+            "fr_bd_519665103:06b57208-10e0-4d08-899a-27ec6b8b083d",
+            "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "BASSE SANS POITRINE DE VEAU",
+          "source_invoice_ids": [
+            "fr_bd_519665103:1fa088a2-1f5a-41b5-a5c7-277d685679c8",
+            "fr_bd_519665103:8a93439c-88b3-4da1-ac86-b5bc937f207c",
+            "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "FILET DE POULET FERMIER HALAL",
+          "source_invoice_ids": [
+            "fr_bd_519665103:06b57208-10e0-4d08-899a-27ec6b8b083d",
+            "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d",
+            "fr_bd_519665103:3b9a3d8b-8637-4c29-9738-7c118f0dcfd9"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "COQUELET HALAL",
+          "source_invoice_ids": [
+            "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d",
+            "fr_bd_519665103:3b9a3d8b-8637-4c29-9738-7c118f0dcfd9",
+            "fr_bd_519665103:834e8468-4ed8-419d-a6bf-e0c28b5f330b"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "POULET PAC HALAL",
+          "source_invoice_ids": [
+            "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d",
+            "fr_bd_519665103:3b9a3d8b-8637-4c29-9738-7c118f0dcfd9",
+            "fr_bd_519665103:d0e6827e-58bd-42be-9cb4-a12371bfbda1"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "CUISSE POULET HALAL CEE 10KG",
+          "source_invoice_ids": [
+            "fr_bd_519665103:02a613fe-ddaf-4c57-8ceb-0bd9fc1661be",
+            "fr_bd_519665103:36b6c940-ca33-489a-90f5-5b1fdbdf25c2",
+            "fr_bd_519665103:06b57208-10e0-4d08-899a-27ec6b8b083d"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_boulangerie_v1.json",
+      "items_changed": 200,
+      "a_valider_changed": 0,
+      "removed_key_counts": {
+        "ids_factures_sources": 200,
+        "contexte_ape": 200,
+        "ape_context": 200,
+        "source_partition_ids": 200
+      },
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "CANADIENNE D'OEUFS X180",
+          "source_invoice_ids": [
+            "fr_bd_519665103:9d697358-768f-4d30-87bc-6bd1ee15dc92"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "FARINE DE POIS CHICHE",
+          "source_invoice_ids": [
+            "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f",
+            "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Farine Pois Chiches 500g",
+          "source_invoice_ids": [
+            "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HUILE D'OLIVE EL HORA",
+          "source_invoice_ids": [
+            "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+            "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Huile d'olive TASSOURT 1L",
+          "source_invoice_ids": [
+            "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HUILE TOURNESOL 1L x15 MAUREL",
+          "source_invoice_ids": [
+            "fr_bd_519665103:07bd8534-6098-40a4-8bdf-d90d05a04de1",
+            "fr_bd_519665103:18253df1-7756-45e6-a507-e571c6d48cde"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HUILE TOURNESOL 25L MAUREL BIDON",
+          "source_invoice_ids": [
+            "fr_bd_519665103:aa749506-46e5-4227-b000-3dc0e7fd8ba2"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "LAIT FERMENTE CHERGUI 10 X 1L",
+          "source_invoice_ids": [
+            "fr_bd_519665103:196cca26-bc04-43f9-b988-6bdad87fbc56",
+            "fr_bd_519665103:4dfa1f0d-13be-4459-8303-ef42102d4ad3",
+            "fr_bd_519665103:bcb12536-25b0-47ae-b440-1ad4abeb6c2a"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_btp_v1.json",
+      "items_changed": 134,
+      "a_valider_changed": 0,
+      "removed_key_counts": {
+        "ids_factures_sources": 134,
+        "contexte_ape": 134,
+        "ape_context": 134,
+        "source_partition_ids": 134
+      },
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "1PX COLLE POUDRE INT MAX30X30CM GRIS25KG",
+          "source_invoice_ids": [],
+          "partitions_sources": []
+        },
+        {
+          "section": "items",
+          "article_source": "1PX RAGREAGE POUDRE 3A10MM INT/EXT 25KG",
+          "source_invoice_ids": [],
+          "partitions_sources": []
+        },
+        {
+          "section": "items",
+          "article_source": "5 SACS A GRAVATS 56X96CM TISSE 60L BLC",
+          "source_invoice_ids": [],
+          "partitions_sources": []
+        },
+        {
+          "section": "items",
+          "article_source": "JOINT AXTON EASY CHOCOLAT 2KG",
+          "source_invoice_ids": [],
+          "partitions_sources": []
+        },
+        {
+          "section": "items",
+          "article_source": "KIT POSE CARRELAGE",
+          "source_invoice_ids": [],
+          "partitions_sources": []
+        },
+        {
+          "section": "items",
+          "article_source": "KIT100AUTONIVELANT CROIS CALE 1.5MM DXTR",
+          "source_invoice_ids": [],
+          "partitions_sources": []
+        },
+        {
+          "section": "items",
+          "article_source": "MALAXEUR PEINTDEXTER 500X90 EX8 PERCEUSE",
+          "source_invoice_ids": [],
+          "partitions_sources": []
+        },
+        {
+          "section": "items",
+          "article_source": "PRIMAIRE AXTON INTERIEUR SEC EN 2-4H 4L",
+          "source_invoice_ids": [],
+          "partitions_sources": []
+        }
+      ]
+    },
+    {
+      "file": "base_produits_epicerie_v1.json",
+      "items_changed": 500,
+      "a_valider_changed": 0,
+      "removed_key_counts": {
+        "ids_factures_sources": 500,
+        "contexte_ape": 500,
+        "ape_context": 500,
+        "source_partition_ids": 500
+      },
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "Transaction CHATTOLA",
+          "source_invoice_ids": [
+            "fr_bd_904981941:4f2e4c77-5b1e-47c3-9746-7acab1db5d88"
+          ],
+          "partitions_sources": [
+            "fr_bd_904981941"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "SEMOULE YA PEMBE HIBOU BLANCHE 5KG",
+          "source_invoice_ids": [
+            "fr_bd_904981941:14097778-cc2b-4622-ae39-fe9752e485c3",
+            "fr_bd_904981941:5613fa69-2cde-4da4-a8ce-aa1ce7446462",
+            "fr_bd_904981941:88d6d368-018b-4e86-a548-17bb5eed36c4"
+          ],
+          "partitions_sources": [
+            "fr_bd_904981941"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "TOMATE VRAC MAROC",
+          "source_invoice_ids": [
+            "fr_bd_904981941:50faea2f-9851-4428-ad72-fe2ee039063d",
+            "fr_bd_904981941:7a672d23-a3c8-4417-985a-60ec8097ca1e",
+            "fr_bd_904981941:8de91157-feef-43a9-b367-d6de2301adea"
+          ],
+          "partitions_sources": [
+            "fr_bd_904981941"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "GOMBO 5KG HONDURAS",
+          "source_invoice_ids": [
+            "fr_bd_904981941:7a672d23-a3c8-4417-985a-60ec8097ca1e",
+            "fr_bd_904981941:83f7da60-8393-406c-89c4-778442c542f9",
+            "fr_bd_904981941:95327e11-a050-4608-a71e-a0184a027e56"
+          ],
+          "partitions_sources": [
+            "fr_bd_904981941"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "AROMES DIVERS 3 LIONS X 12 SENEGAL",
+          "source_invoice_ids": [
+            "fr_bd_904981941:0591e558-221c-459b-8c9b-4474255ec9c9",
+            "fr_bd_904981941:50faea2f-9851-4428-ad72-fe2ee039063d",
+            "fr_bd_904981941:699ace8f-8abc-4738-b9d9-2d18aa490f5f"
+          ],
+          "partitions_sources": [
+            "fr_bd_904981941"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "OEUFS MOYENS BLANCS 10 30",
+          "source_invoice_ids": [
+            "fr_bd_904981941:07b6f1c9-6ae3-4cbb-a827-393e7cc7b221",
+            "fr_bd_904981941:196a27d5-3636-4edc-95cb-affc54e0a20d",
+            "fr_bd_904981941:3b03b3a0-1a44-42bb-8c49-fd57fbaae021"
+          ],
+          "partitions_sources": [
+            "fr_bd_904981941"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "OEUFS MOYENS TEINTES (10X30)",
+          "source_invoice_ids": [
+            "fr_bd_904981941:07b6f1c9-6ae3-4cbb-a827-393e7cc7b221",
+            "fr_bd_904981941:196a27d5-3636-4edc-95cb-affc54e0a20d",
+            "fr_bd_904981941:3b03b3a0-1a44-42bb-8c49-fd57fbaae021"
+          ],
+          "partitions_sources": [
+            "fr_bd_904981941"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "SPRING ROLL pastry Pate a Samoussa 30 pcs/sht x 550g",
+          "source_invoice_ids": [
+            "fr_bd_904981941:0e6158d6-c2fe-485a-a34c-7a16dd6a0e4c",
+            "fr_bd_904981941:9cf2cb2d-62b1-4077-9d2e-c546ac6f1091"
+          ],
+          "partitions_sources": [
+            "fr_bd_904981941"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_restaurant_v1.json",
+      "items_changed": 221,
+      "a_valider_changed": 0,
+      "removed_key_counts": {
+        "ids_factures_sources": 221,
+        "contexte_ape": 221,
+        "ape_context": 221,
+        "source_partition_ids": 221
+      },
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "FILM ALIMENTAIRE 45CM X 300M EN BOITE DISTRIBUTRICE AVEC LAME",
+          "source_invoice_ids": [
+            "fr_bd_519665103:2b654cc7-770b-4ca9-8013-83c3e2e8795f"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HUILE TOURNESOL 1L x15 MAUREL",
+          "source_invoice_ids": [
+            "fr_bd_519665103:07bd8534-6098-40a4-8bdf-d90d05a04de1",
+            "fr_bd_519665103:18253df1-7756-45e6-a507-e571c6d48cde"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HARISSA 1/2",
+          "source_invoice_ids": [
+            "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+            "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618",
+            "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HARISSA 1/6",
+          "source_invoice_ids": [
+            "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f",
+            "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4",
+            "fr_bd_519665103:64cfb123-6244-4010-9c48-8a3e3d1d5d0b"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HARISSA TUBE 70g",
+          "source_invoice_ids": [
+            "fr_bd_519665103:75334608-dc1c-4605-bb88-1b7ca0b5b8fd",
+            "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+            "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "OLIVE VERTE DENOYAUTEE",
+          "source_invoice_ids": [
+            "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+            "fr_bd_519665103:e4345936-ed42-4d14-85d1-69bd52325db9",
+            "fr_bd_519665103:65afe443-ded1-4f32-a87e-3e226e82b376"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HARISSA 4/4",
+          "source_invoice_ids": [
+            "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f",
+            "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618",
+            "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "OLIVE NOIRE FACON GRECE 8KG",
+          "source_invoice_ids": [
+            "fr_bd_519665103:e9224be4-4f30-4e81-a798-82ce078859f3",
+            "fr_bd_519665103:08771ce5-6789-496f-b2d8-7aed273ff81d",
+            "fr_bd_519665103:daf56281-e414-4b70-bc05-8ecbdbfd7be9"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_transport_v1.json",
+      "items_changed": 160,
+      "a_valider_changed": 0,
+      "removed_key_counts": {
+        "ids_factures_sources": 160,
+        "contexte_ape": 160,
+        "ape_context": 160,
+        "source_partition_ids": 160
+      },
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "Entree CTTE (Camionnette)",
+          "source_invoice_ids": [
+            "fr_bd_519665103:0c493dc6-a22b-4fff-88ee-b53354b25880",
+            "fr_bd_519665103:4ac0c8f5-6b07-4a95-a66b-dfec2f1e3284",
+            "fr_bd_519665103:573bb3f0-76d4-4268-ada5-28c03e2b76bb"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Entrée CTTE (Camionnette) (Abatt: 100)",
+          "source_invoice_ids": [
+            "fr_bd_519665103:0c493dc6-a22b-4fff-88ee-b53354b25880"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Condition de livraison",
+          "source_invoice_ids": [
+            "fr_bd_519665103:b160ab12-5762-4d18-970d-60372121d30e"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Gazole",
+          "source_invoice_ids": [],
+          "partitions_sources": [
+            "fr_bd_839181104",
+            "fr_bd_888020088",
+            "fr_bd_922040506"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Carburant GO",
+          "source_invoice_ids": [],
+          "partitions_sources": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Carburant",
+          "source_invoice_ids": [],
+          "partitions_sources": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "DIESEL",
+          "source_invoice_ids": [],
+          "partitions_sources": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "GO (Carburant)",
+          "source_invoice_ids": [],
+          "partitions_sources": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_vtc_v1.json",
+      "items_changed": 500,
+      "a_valider_changed": 0,
+      "removed_key_counts": {
+        "ids_factures_sources": 500,
+        "contexte_ape": 500,
+        "ape_context": 500,
+        "source_partition_ids": 500
+      },
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "Multi-TV FTTH (du 02/12 au 01/01)",
+          "source_invoice_ids": [
+            "fr_bd_839181104:03fc6bcc-6b53-49f0-9c46-d0783d08b417",
+            "fr_bd_839181104:1046821c-9f2c-43cb-8148-035b44beaf92",
+            "fr_bd_839181104:12a8582a-3a3e-46f9-ba6d-7df7728f4078"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Remise sur abonnement - Bbox (du 02/12 au 01/01)",
+          "source_invoice_ids": [
+            "fr_bd_839181104:03fc6bcc-6b53-49f0-9c46-d0783d08b417",
+            "fr_bd_839181104:1046821c-9f2c-43cb-8148-035b44beaf92",
+            "fr_bd_839181104:12a8582a-3a3e-46f9-ba6d-7df7728f4078"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Bbox - location équipement (du 02/12 au 01/01)",
+          "source_invoice_ids": [
+            "fr_bd_839181104:03fc6bcc-6b53-49f0-9c46-d0783d08b417",
+            "fr_bd_839181104:1046821c-9f2c-43cb-8148-035b44beaf92",
+            "fr_bd_839181104:12a8582a-3a3e-46f9-ba6d-7df7728f4078"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Bbox fibre jusqu'a 1 Gb/s (du 02/11 au 01/12)",
+          "source_invoice_ids": [
+            "fr_bd_839181104:03fc6bcc-6b53-49f0-9c46-d0783d08b417",
+            "fr_bd_839181104:1046821c-9f2c-43cb-8148-035b44beaf92",
+            "fr_bd_839181104:13e8d4c0-938a-4ae2-bfcc-40c9327e0620"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Offre Spéciale Appels illimités mobiles Europe (du 02/11 au 01/12)",
+          "source_invoice_ids": [
+            "fr_bd_839181104:03fc6bcc-6b53-49f0-9c46-d0783d08b417",
+            "fr_bd_839181104:1046821c-9f2c-43cb-8148-035b44beaf92",
+            "fr_bd_839181104:13e8d4c0-938a-4ae2-bfcc-40c9327e0620"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Consommation d'énergie électrique - Semaine Heures Pleines du 17/1/2024 au 1/12/2024",
+          "source_invoice_ids": [
+            "fr_bd_831060876:31a158a2-574f-45f6-997f-cf687b6a0b55"
+          ],
+          "partitions_sources": [
+            "fr_bd_831060876"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Consommation d'énergie électrique - Week-end Heures Pleines du 17/1/2024 au 16/12/2024",
+          "source_invoice_ids": [
+            "fr_bd_831060876:31a158a2-574f-45f6-997f-cf687b6a0b55"
+          ],
+          "partitions_sources": [
+            "fr_bd_831060876"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Forfait Client B You 260Go 5G",
+          "source_invoice_ids": [
+            "fr_bd_839181104:05dc335f-de44-488c-ad1c-9112d519eef9",
+            "fr_bd_839181104:22c6688b-acb6-46a6-8169-ad24b29ca83f",
+            "fr_bd_839181104:27e18405-38db-4481-b990-01bd5a65cda9"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_charges_externes_v1_with_accounts.json",
+      "items_changed": 256,
+      "a_valider_changed": 36,
+      "removed_key_counts": {
+        "ids_factures_sources": 292,
+        "contexte_ape": 292,
+        "ape_context": 292,
+        "source_partition_ids": 292
+      },
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "COTI.RSD",
+          "source_invoice_ids": [
+            "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+            "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385",
+            "fr_bd_519665103:6b649b52-1cff-4146-a224-47f59839575f"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "FRAIS FIXES",
+          "source_invoice_ids": [
+            "fr_bd_828612630:17790d84-a4e0-46d4-8129-3b8195449ded",
+            "fr_bd_828612630:44fbd09f-3e6e-464c-9c9c-446b8a7d944f",
+            "fr_bd_828612630:d6f31984-8ca0-466a-aa12-7cb9cf527b9f"
+          ],
+          "partitions_sources": [
+            "fr_bd_828612630"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "INTERBEV",
+          "source_invoice_ids": [
+            "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+            "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Entretien parking",
+          "source_invoice_ids": [
+            "fr_bd_837602275:7728f6ec-4ae5-4c96-88b7-128226d7edad",
+            "fr_bd_837602275:af1d34d6-d34f-4eab-a80e-e81065f35cba",
+            "fr_bd_837602275:6865320b-80a7-4c7f-9f29-4d92023d7664"
+          ],
+          "partitions_sources": [
+            "fr_bd_837602275"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "ABONNEMENT TRIM. MOBITPE MOBILE du 01/04/25 au 30/06/25",
+          "source_invoice_ids": [
+            "fr_bd_519665103:b3742730-2748-49f2-acad-1d8d2a7d33a1",
+            "fr_bd_880517875:eb721816-2c89-469d-ad84-fa1698048f1b"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103",
+            "fr_bd_880517875"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "ABONNEMENT TRIM. SIMS CARTE SIM du 01/04/25 au 30/06/25",
+          "source_invoice_ids": [
+            "fr_bd_519665103:b3742730-2748-49f2-acad-1d8d2a7d33a1"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "DECRO",
+          "source_invoice_ids": [
+            "fr_bd_519665103:003f5876-a443-42e2-9d69-60c58f89afa5",
+            "fr_bd_519665103:02d5e7c2-3877-40fc-b589-cc7daf4784ec",
+            "fr_bd_519665103:0417048a-9942-4273-a5f6-4a1dc7e9c12c"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "F. FIXE",
+          "source_invoice_ids": [
+            "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
+            "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385",
+            "fr_bd_519665103:6b649b52-1cff-4146-a224-47f59839575f"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_boucherie_v1_with_accounts.json",
+      "items_changed": 212,
+      "a_valider_changed": 0,
+      "removed_key_counts": {
+        "ids_factures_sources": 212,
+        "contexte_ape": 212,
+        "ape_context": 212,
+        "source_partition_ids": 212
+      },
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "BASSE COTE BOEUF",
+          "source_invoice_ids": [
+            "fr_bd_519665103:319e6e59-d89a-4823-9f23-3b16b7d4c307",
+            "fr_bd_519665103:45c56387-c07c-4751-97a3-6c541adeb22b",
+            "fr_bd_519665103:5c6613fd-eed7-466c-9684-fda4c4563713"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "FILM ALIMENTAIRE 45CM X 300M EN BOITE DISTRIBUTRICE AVEC LAME",
+          "source_invoice_ids": [
+            "fr_bd_519665103:2b654cc7-770b-4ca9-8013-83c3e2e8795f"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "CUISSE DE POULET FERMIER HALAL",
+          "source_invoice_ids": [
+            "fr_bd_519665103:36b6c940-ca33-489a-90f5-5b1fdbdf25c2",
+            "fr_bd_519665103:06b57208-10e0-4d08-899a-27ec6b8b083d",
+            "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "BASSE SANS POITRINE DE VEAU",
+          "source_invoice_ids": [
+            "fr_bd_519665103:1fa088a2-1f5a-41b5-a5c7-277d685679c8",
+            "fr_bd_519665103:8a93439c-88b3-4da1-ac86-b5bc937f207c",
+            "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "FILET DE POULET FERMIER HALAL",
+          "source_invoice_ids": [
+            "fr_bd_519665103:06b57208-10e0-4d08-899a-27ec6b8b083d",
+            "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d",
+            "fr_bd_519665103:3b9a3d8b-8637-4c29-9738-7c118f0dcfd9"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "COQUELET HALAL",
+          "source_invoice_ids": [
+            "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d",
+            "fr_bd_519665103:3b9a3d8b-8637-4c29-9738-7c118f0dcfd9",
+            "fr_bd_519665103:834e8468-4ed8-419d-a6bf-e0c28b5f330b"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "POULET PAC HALAL",
+          "source_invoice_ids": [
+            "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d",
+            "fr_bd_519665103:3b9a3d8b-8637-4c29-9738-7c118f0dcfd9",
+            "fr_bd_519665103:d0e6827e-58bd-42be-9cb4-a12371bfbda1"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "CUISSE POULET HALAL CEE 10KG",
+          "source_invoice_ids": [
+            "fr_bd_519665103:02a613fe-ddaf-4c57-8ceb-0bd9fc1661be",
+            "fr_bd_519665103:36b6c940-ca33-489a-90f5-5b1fdbdf25c2",
+            "fr_bd_519665103:06b57208-10e0-4d08-899a-27ec6b8b083d"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_boulangerie_v1_with_accounts.json",
+      "items_changed": 200,
+      "a_valider_changed": 0,
+      "removed_key_counts": {
+        "ids_factures_sources": 200,
+        "contexte_ape": 200,
+        "ape_context": 200,
+        "source_partition_ids": 200
+      },
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "CANADIENNE D'OEUFS X180",
+          "source_invoice_ids": [
+            "fr_bd_519665103:9d697358-768f-4d30-87bc-6bd1ee15dc92"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "FARINE DE POIS CHICHE",
+          "source_invoice_ids": [
+            "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f",
+            "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Farine Pois Chiches 500g",
+          "source_invoice_ids": [
+            "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HUILE D'OLIVE EL HORA",
+          "source_invoice_ids": [
+            "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+            "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Huile d'olive TASSOURT 1L",
+          "source_invoice_ids": [
+            "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HUILE TOURNESOL 1L x15 MAUREL",
+          "source_invoice_ids": [
+            "fr_bd_519665103:07bd8534-6098-40a4-8bdf-d90d05a04de1",
+            "fr_bd_519665103:18253df1-7756-45e6-a507-e571c6d48cde"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HUILE TOURNESOL 25L MAUREL BIDON",
+          "source_invoice_ids": [
+            "fr_bd_519665103:aa749506-46e5-4227-b000-3dc0e7fd8ba2"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "LAIT FERMENTE CHERGUI 10 X 1L",
+          "source_invoice_ids": [
+            "fr_bd_519665103:196cca26-bc04-43f9-b988-6bdad87fbc56",
+            "fr_bd_519665103:4dfa1f0d-13be-4459-8303-ef42102d4ad3",
+            "fr_bd_519665103:bcb12536-25b0-47ae-b440-1ad4abeb6c2a"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_btp_v1_with_accounts.json",
+      "items_changed": 134,
+      "a_valider_changed": 0,
+      "removed_key_counts": {
+        "ids_factures_sources": 134,
+        "contexte_ape": 134,
+        "ape_context": 134,
+        "source_partition_ids": 134
+      },
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "1PX COLLE POUDRE INT MAX30X30CM GRIS25KG",
+          "source_invoice_ids": [],
+          "partitions_sources": []
+        },
+        {
+          "section": "items",
+          "article_source": "1PX RAGREAGE POUDRE 3A10MM INT/EXT 25KG",
+          "source_invoice_ids": [],
+          "partitions_sources": []
+        },
+        {
+          "section": "items",
+          "article_source": "5 SACS A GRAVATS 56X96CM TISSE 60L BLC",
+          "source_invoice_ids": [],
+          "partitions_sources": []
+        },
+        {
+          "section": "items",
+          "article_source": "JOINT AXTON EASY CHOCOLAT 2KG",
+          "source_invoice_ids": [],
+          "partitions_sources": []
+        },
+        {
+          "section": "items",
+          "article_source": "KIT POSE CARRELAGE",
+          "source_invoice_ids": [],
+          "partitions_sources": []
+        },
+        {
+          "section": "items",
+          "article_source": "KIT100AUTONIVELANT CROIS CALE 1.5MM DXTR",
+          "source_invoice_ids": [],
+          "partitions_sources": []
+        },
+        {
+          "section": "items",
+          "article_source": "MALAXEUR PEINTDEXTER 500X90 EX8 PERCEUSE",
+          "source_invoice_ids": [],
+          "partitions_sources": []
+        },
+        {
+          "section": "items",
+          "article_source": "PRIMAIRE AXTON INTERIEUR SEC EN 2-4H 4L",
+          "source_invoice_ids": [],
+          "partitions_sources": []
+        }
+      ]
+    },
+    {
+      "file": "base_produits_epicerie_v1_with_accounts.json",
+      "items_changed": 500,
+      "a_valider_changed": 0,
+      "removed_key_counts": {
+        "ids_factures_sources": 500,
+        "contexte_ape": 500,
+        "ape_context": 500,
+        "source_partition_ids": 500
+      },
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "Transaction CHATTOLA",
+          "source_invoice_ids": [
+            "fr_bd_904981941:4f2e4c77-5b1e-47c3-9746-7acab1db5d88"
+          ],
+          "partitions_sources": [
+            "fr_bd_904981941"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "SEMOULE YA PEMBE HIBOU BLANCHE 5KG",
+          "source_invoice_ids": [
+            "fr_bd_904981941:14097778-cc2b-4622-ae39-fe9752e485c3",
+            "fr_bd_904981941:5613fa69-2cde-4da4-a8ce-aa1ce7446462",
+            "fr_bd_904981941:88d6d368-018b-4e86-a548-17bb5eed36c4"
+          ],
+          "partitions_sources": [
+            "fr_bd_904981941"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "TOMATE VRAC MAROC",
+          "source_invoice_ids": [
+            "fr_bd_904981941:50faea2f-9851-4428-ad72-fe2ee039063d",
+            "fr_bd_904981941:7a672d23-a3c8-4417-985a-60ec8097ca1e",
+            "fr_bd_904981941:8de91157-feef-43a9-b367-d6de2301adea"
+          ],
+          "partitions_sources": [
+            "fr_bd_904981941"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "GOMBO 5KG HONDURAS",
+          "source_invoice_ids": [
+            "fr_bd_904981941:7a672d23-a3c8-4417-985a-60ec8097ca1e",
+            "fr_bd_904981941:83f7da60-8393-406c-89c4-778442c542f9",
+            "fr_bd_904981941:95327e11-a050-4608-a71e-a0184a027e56"
+          ],
+          "partitions_sources": [
+            "fr_bd_904981941"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "AROMES DIVERS 3 LIONS X 12 SENEGAL",
+          "source_invoice_ids": [
+            "fr_bd_904981941:0591e558-221c-459b-8c9b-4474255ec9c9",
+            "fr_bd_904981941:50faea2f-9851-4428-ad72-fe2ee039063d",
+            "fr_bd_904981941:699ace8f-8abc-4738-b9d9-2d18aa490f5f"
+          ],
+          "partitions_sources": [
+            "fr_bd_904981941"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "OEUFS MOYENS BLANCS 10 30",
+          "source_invoice_ids": [
+            "fr_bd_904981941:07b6f1c9-6ae3-4cbb-a827-393e7cc7b221",
+            "fr_bd_904981941:196a27d5-3636-4edc-95cb-affc54e0a20d",
+            "fr_bd_904981941:3b03b3a0-1a44-42bb-8c49-fd57fbaae021"
+          ],
+          "partitions_sources": [
+            "fr_bd_904981941"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "OEUFS MOYENS TEINTES (10X30)",
+          "source_invoice_ids": [
+            "fr_bd_904981941:07b6f1c9-6ae3-4cbb-a827-393e7cc7b221",
+            "fr_bd_904981941:196a27d5-3636-4edc-95cb-affc54e0a20d",
+            "fr_bd_904981941:3b03b3a0-1a44-42bb-8c49-fd57fbaae021"
+          ],
+          "partitions_sources": [
+            "fr_bd_904981941"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "SPRING ROLL pastry Pate a Samoussa 30 pcs/sht x 550g",
+          "source_invoice_ids": [
+            "fr_bd_904981941:0e6158d6-c2fe-485a-a34c-7a16dd6a0e4c",
+            "fr_bd_904981941:9cf2cb2d-62b1-4077-9d2e-c546ac6f1091"
+          ],
+          "partitions_sources": [
+            "fr_bd_904981941"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_restaurant_v1_with_accounts.json",
+      "items_changed": 221,
+      "a_valider_changed": 0,
+      "removed_key_counts": {
+        "ids_factures_sources": 221,
+        "contexte_ape": 221,
+        "ape_context": 221,
+        "source_partition_ids": 221
+      },
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "FILM ALIMENTAIRE 45CM X 300M EN BOITE DISTRIBUTRICE AVEC LAME",
+          "source_invoice_ids": [
+            "fr_bd_519665103:2b654cc7-770b-4ca9-8013-83c3e2e8795f"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HUILE TOURNESOL 1L x15 MAUREL",
+          "source_invoice_ids": [
+            "fr_bd_519665103:07bd8534-6098-40a4-8bdf-d90d05a04de1",
+            "fr_bd_519665103:18253df1-7756-45e6-a507-e571c6d48cde"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HARISSA 1/2",
+          "source_invoice_ids": [
+            "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+            "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618",
+            "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HARISSA 1/6",
+          "source_invoice_ids": [
+            "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f",
+            "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4",
+            "fr_bd_519665103:64cfb123-6244-4010-9c48-8a3e3d1d5d0b"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HARISSA TUBE 70g",
+          "source_invoice_ids": [
+            "fr_bd_519665103:75334608-dc1c-4605-bb88-1b7ca0b5b8fd",
+            "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+            "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "OLIVE VERTE DENOYAUTEE",
+          "source_invoice_ids": [
+            "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+            "fr_bd_519665103:e4345936-ed42-4d14-85d1-69bd52325db9",
+            "fr_bd_519665103:65afe443-ded1-4f32-a87e-3e226e82b376"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HARISSA 4/4",
+          "source_invoice_ids": [
+            "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f",
+            "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618",
+            "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "OLIVE NOIRE FACON GRECE 8KG",
+          "source_invoice_ids": [
+            "fr_bd_519665103:e9224be4-4f30-4e81-a798-82ce078859f3",
+            "fr_bd_519665103:08771ce5-6789-496f-b2d8-7aed273ff81d",
+            "fr_bd_519665103:daf56281-e414-4b70-bc05-8ecbdbfd7be9"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_transport_v1_with_accounts.json",
+      "items_changed": 160,
+      "a_valider_changed": 0,
+      "removed_key_counts": {
+        "ids_factures_sources": 160,
+        "contexte_ape": 160,
+        "ape_context": 160,
+        "source_partition_ids": 160
+      },
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "Entree CTTE (Camionnette)",
+          "source_invoice_ids": [
+            "fr_bd_519665103:0c493dc6-a22b-4fff-88ee-b53354b25880",
+            "fr_bd_519665103:4ac0c8f5-6b07-4a95-a66b-dfec2f1e3284",
+            "fr_bd_519665103:573bb3f0-76d4-4268-ada5-28c03e2b76bb"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Entrée CTTE (Camionnette) (Abatt: 100)",
+          "source_invoice_ids": [
+            "fr_bd_519665103:0c493dc6-a22b-4fff-88ee-b53354b25880"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Condition de livraison",
+          "source_invoice_ids": [
+            "fr_bd_519665103:b160ab12-5762-4d18-970d-60372121d30e"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Gazole",
+          "source_invoice_ids": [],
+          "partitions_sources": [
+            "fr_bd_839181104",
+            "fr_bd_888020088",
+            "fr_bd_922040506"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Carburant GO",
+          "source_invoice_ids": [],
+          "partitions_sources": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Carburant",
+          "source_invoice_ids": [],
+          "partitions_sources": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "DIESEL",
+          "source_invoice_ids": [],
+          "partitions_sources": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "GO (Carburant)",
+          "source_invoice_ids": [],
+          "partitions_sources": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_vtc_v1_with_accounts.json",
+      "items_changed": 500,
+      "a_valider_changed": 0,
+      "removed_key_counts": {
+        "ids_factures_sources": 500,
+        "contexte_ape": 500,
+        "ape_context": 500,
+        "source_partition_ids": 500
+      },
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "Multi-TV FTTH (du 02/12 au 01/01)",
+          "source_invoice_ids": [
+            "fr_bd_839181104:03fc6bcc-6b53-49f0-9c46-d0783d08b417",
+            "fr_bd_839181104:1046821c-9f2c-43cb-8148-035b44beaf92",
+            "fr_bd_839181104:12a8582a-3a3e-46f9-ba6d-7df7728f4078"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Remise sur abonnement - Bbox (du 02/12 au 01/01)",
+          "source_invoice_ids": [
+            "fr_bd_839181104:03fc6bcc-6b53-49f0-9c46-d0783d08b417",
+            "fr_bd_839181104:1046821c-9f2c-43cb-8148-035b44beaf92",
+            "fr_bd_839181104:12a8582a-3a3e-46f9-ba6d-7df7728f4078"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Bbox - location équipement (du 02/12 au 01/01)",
+          "source_invoice_ids": [
+            "fr_bd_839181104:03fc6bcc-6b53-49f0-9c46-d0783d08b417",
+            "fr_bd_839181104:1046821c-9f2c-43cb-8148-035b44beaf92",
+            "fr_bd_839181104:12a8582a-3a3e-46f9-ba6d-7df7728f4078"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Bbox fibre jusqu'a 1 Gb/s (du 02/11 au 01/12)",
+          "source_invoice_ids": [
+            "fr_bd_839181104:03fc6bcc-6b53-49f0-9c46-d0783d08b417",
+            "fr_bd_839181104:1046821c-9f2c-43cb-8148-035b44beaf92",
+            "fr_bd_839181104:13e8d4c0-938a-4ae2-bfcc-40c9327e0620"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Offre Spéciale Appels illimités mobiles Europe (du 02/11 au 01/12)",
+          "source_invoice_ids": [
+            "fr_bd_839181104:03fc6bcc-6b53-49f0-9c46-d0783d08b417",
+            "fr_bd_839181104:1046821c-9f2c-43cb-8148-035b44beaf92",
+            "fr_bd_839181104:13e8d4c0-938a-4ae2-bfcc-40c9327e0620"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Consommation d'énergie électrique - Semaine Heures Pleines du 17/1/2024 au 1/12/2024",
+          "source_invoice_ids": [
+            "fr_bd_831060876:31a158a2-574f-45f6-997f-cf687b6a0b55"
+          ],
+          "partitions_sources": [
+            "fr_bd_831060876"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Consommation d'énergie électrique - Week-end Heures Pleines du 17/1/2024 au 16/12/2024",
+          "source_invoice_ids": [
+            "fr_bd_831060876:31a158a2-574f-45f6-997f-cf687b6a0b55"
+          ],
+          "partitions_sources": [
+            "fr_bd_831060876"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Forfait Client B You 260Go 5G",
+          "source_invoice_ids": [
+            "fr_bd_839181104:05dc335f-de44-488c-ad1c-9112d519eef9",
+            "fr_bd_839181104:22c6688b-acb6-46a6-8169-ad24b29ca83f",
+            "fr_bd_839181104:27e18405-38db-4481-b990-01bd5a65cda9"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        }
+      ]
+    }
+  ]
+}

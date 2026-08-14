@@ -1,0 +1,206 @@
+{
+  "applied_at": "2026-05-11T11:08:48.167720Z",
+  "source_db_factures": [
+    "abt3",
+    "keymanage_accounting"
+  ],
+  "files_updated": 16,
+  "source_invoice_ids_total": 2140,
+  "invoice_ids_resolved_remote": 2136,
+  "invoice_ids_resolved_local_pdf": 4,
+  "invoice_ids_unresolved": 0,
+  "files": [
+    {
+      "file": "base_produits_boucherie_v1.json",
+      "items": {
+        "rows_total": 206,
+        "rows_changed": 0,
+        "rows_with_paths": 206,
+        "paths_added": 595,
+        "resolved_source_ids": 595,
+        "unresolved_source_ids": 0
+      },
+      "a_valider": {}
+    },
+    {
+      "file": "base_produits_boulangerie_v1.json",
+      "items": {
+        "rows_total": 201,
+        "rows_changed": 1,
+        "rows_with_paths": 201,
+        "paths_added": 546,
+        "resolved_source_ids": 546,
+        "unresolved_source_ids": 0
+      },
+      "a_valider": {}
+    },
+    {
+      "file": "base_produits_btp_v1.json",
+      "items": {
+        "rows_total": 202,
+        "rows_changed": 2,
+        "rows_with_paths": 202,
+        "paths_added": 492,
+        "resolved_source_ids": 493,
+        "unresolved_source_ids": 0
+      },
+      "a_valider": {}
+    },
+    {
+      "file": "base_produits_epicerie_v1.json",
+      "items": {
+        "rows_total": 494,
+        "rows_changed": 0,
+        "rows_with_paths": 494,
+        "paths_added": 1414,
+        "resolved_source_ids": 1432,
+        "unresolved_source_ids": 0
+      },
+      "a_valider": {}
+    },
+    {
+      "file": "base_produits_restaurant_v1.json",
+      "items": {
+        "rows_total": 200,
+        "rows_changed": 0,
+        "rows_with_paths": 200,
+        "paths_added": 529,
+        "resolved_source_ids": 530,
+        "unresolved_source_ids": 0
+      },
+      "a_valider": {}
+    },
+    {
+      "file": "base_produits_transport_v1.json",
+      "items": {
+        "rows_total": 199,
+        "rows_changed": 0,
+        "rows_with_paths": 199,
+        "paths_added": 420,
+        "resolved_source_ids": 473,
+        "unresolved_source_ids": 0
+      },
+      "a_valider": {}
+    },
+    {
+      "file": "base_produits_vtc_v1.json",
+      "items": {
+        "rows_total": 417,
+        "rows_changed": 0,
+        "rows_with_paths": 417,
+        "paths_added": 752,
+        "resolved_source_ids": 828,
+        "unresolved_source_ids": 0
+      },
+      "a_valider": {}
+    },
+    {
+      "file": "base_charges_externes_v1.json",
+      "items": {
+        "rows_total": 218,
+        "rows_changed": 0,
+        "rows_with_paths": 218,
+        "paths_added": 550,
+        "resolved_source_ids": 556,
+        "unresolved_source_ids": 0
+      },
+      "a_valider": {}
+    },
+    {
+      "file": "base_produits_boucherie_v1_with_accounts.json",
+      "items": {
+        "rows_total": 206,
+        "rows_changed": 0,
+        "rows_with_paths": 206,
+        "paths_added": 595,
+        "resolved_source_ids": 595,
+        "unresolved_source_ids": 0
+      },
+      "a_valider": {}
+    },
+    {
+      "file": "base_produits_boulangerie_v1_with_accounts.json",
+      "items": {
+        "rows_total": 201,
+        "rows_changed": 1,
+        "rows_with_paths": 201,
+        "paths_added": 546,
+        "resolved_source_ids": 546,
+        "unresolved_source_ids": 0
+      },
+      "a_valider": {}
+    },
+    {
+      "file": "base_produits_btp_v1_with_accounts.json",
+      "items": {
+        "rows_total": 202,
+        "rows_changed": 2,
+        "rows_with_paths": 202,
+        "paths_added": 492,
+        "resolved_source_ids": 493,
+        "unresolved_source_ids": 0
+      },
+      "a_valider": {}
+    },
+    {
+      "file": "base_produits_epicerie_v1_with_accounts.json",
+      "items": {
+        "rows_total": 494,
+        "rows_changed": 0,
+        "rows_with_paths": 494,
+        "paths_added": 1414,
+        "resolved_source_ids": 1432,
+        "unresolved_source_ids": 0
+      },
+      "a_valider": {}
+    },
+    {
+      "file": "base_produits_restaurant_v1_with_accounts.json",
+      "items": {
+        "rows_total": 200,
+        "rows_changed": 0,
+        "rows_with_paths": 200,
+        "paths_added": 529,
+        "resolved_source_ids": 530,
+        "unresolved_source_ids": 0
+      },
+      "a_valider": {}
+    },
+    {
+      "file": "base_produits_transport_v1_with_accounts.json",
+      "items": {
+        "rows_total": 199,
+        "rows_changed": 0,
+        "rows_with_paths": 199,
+        "paths_added": 420,
+        "resolved_source_ids": 473,
+        "unresolved_source_ids": 0
+      },
+      "a_valider": {}
+    },
+    {
+      "file": "base_produits_vtc_v1_with_accounts.json",
+      "items": {
+        "rows_total": 417,
+        "rows_changed": 0,
+        "rows_with_paths": 417,
+        "paths_added": 752,
+        "resolved_source_ids": 828,
+        "unresolved_source_ids": 0
+      },
+      "a_valider": {}
+    },
+    {
+      "file": "base_charges_externes_v1_with_accounts.json",
+      "items": {
+        "rows_total": 218,
+        "rows_changed": 0,
+        "rows_with_paths": 218,
+        "paths_added": 546,
+        "resolved_source_ids": 556,
+        "unresolved_source_ids": 0
+      },
+      "a_valider": {}
+    }
+  ]
+}

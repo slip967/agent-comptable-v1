@@ -1,0 +1,83 @@
+{
+  "transport": {
+    "requested_active": [
+      "AMORTISSEUR DE CHOC"
+    ],
+    "missing": [],
+    "files": [
+      {
+        "file": "base_produits_transport_v1.json",
+        "added": 1,
+        "skipped_existing": 0,
+        "added_labels": [
+          "AMORTISSEUR DE CHOC"
+        ]
+      },
+      {
+        "file": "base_produits_transport_v1_with_accounts.json",
+        "added": 1,
+        "skipped_existing": 0,
+        "added_labels": [
+          "AMORTISSEUR DE CHOC"
+        ]
+      }
+    ]
+  },
+  "btp": {
+    "requested_active": [
+      "POUR PANNEAUX FIBRE CIMENT POUR SYSTEME UNI RIVET 11MM",
+      "Palette HMFC ciments 95x115 cm"
+    ],
+    "missing": [],
+    "files": [
+      {
+        "file": "base_produits_btp_v1.json",
+        "added": 2,
+        "skipped_existing": 0,
+        "added_labels": [
+          "POUR PANNEAUX FIBRE CIMENT POUR SYSTEME UNI RIVET 11MM",
+          "Palette HMFC ciments 95x115 cm"
+        ]
+      },
+      {
+        "file": "base_produits_btp_v1_with_accounts.json",
+        "added": 2,
+        "skipped_existing": 0,
+        "added_labels": [
+          "POUR PANNEAUX FIBRE CIMENT POUR SYSTEME UNI RIVET 11MM",
+          "Palette HMFC ciments 95x115 cm"
+        ]
+      }
+    ]
+  },
+  "transport_to_charges": {
+    "requested_labels": [
+      "Déposer, poser, remplacer selon constat 4 garnitures de frein de l'essieu arrière (Roues complètes démontées)",
+      "Remplacer les garnitures de frein et les disques de frein de l'essieu arriere (roues complètes démontées)",
+      "Remplacer les garnitures de frein et les disques de frein de l'essieu avant (roues complètes démontées) sur véh. avec étrier fixe"
+    ],
+    "missing": [],
+    "files": [
+      {
+        "file": "base_charges_externes_v1.json",
+        "added": 3,
+        "skipped_existing": 0,
+        "added_labels": [
+          "Déposer, poser, remplacer selon constat 4 garnitures de frein de l'essieu arrière (Roues complètes démontées)",
+          "Remplacer les garnitures de frein et les disques de frein de l'essieu arriere (roues complètes démontées)",
+          "Remplacer les garnitures de frein et les disques de frein de l'essieu avant (roues complètes démontées) sur véh. avec étrier fixe"
+        ]
+      },
+      {
+        "file": "base_charges_externes_v1_with_accounts.json",
+        "added": 3,
+        "skipped_existing": 0,
+        "added_labels": [
+          "Déposer, poser, remplacer selon constat 4 garnitures de frein de l'essieu arrière (Roues complètes démontées)",
+          "Remplacer les garnitures de frein et les disques de frein de l'essieu arriere (roues complètes démontées)",
+          "Remplacer les garnitures de frein et les disques de frein de l'essieu avant (roues complètes démontées) sur véh. avec étrier fixe"
+        ]
+      }
+    ]
+  }
+}

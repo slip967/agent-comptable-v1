@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-05-05T17:48:36.260270+00:00",
+  "source_dir": "C:\\Users\\Dell\\Downloads\\scripts-master\\scripts-master\\prepared_corrected_v3_injection",
+  "target_dir": "C:\\Users\\Dell\\Downloads\\scripts-master\\scripts-master\\prepared_corrected_v3_injection_strict",
+  "included_files": [
+    {
+      "file": "base_produits_boucherie_corrected_v3.json",
+      "items_count": 212
+    },
+    {
+      "file": "base_produits_boulangerie_corrected_v3.json",
+      "items_count": 200
+    },
+    {
+      "file": "base_produits_restaurant_corrected_v3.json",
+      "items_count": 219
+    },
+    {
+      "file": "base_produits_btp_corrected_v3.json",
+      "items_count": 133
+    },
+    {
+      "file": "base_produits_transport_corrected_v3.json",
+      "items_count": 134
+    },
+    {
+      "file": "base_charges_externes_corrected_v3.json",
+      "items_count": 512
+    }
+  ],
+  "excluded_files": [
+    "base_produits_epicerie_corrected_v3.json",
+    "base_produits_vtc_corrected_v3.json"
+  ],
+  "changes_count": 41,
+  "dry_run_ready": true,
+  "excluded_btp_items_count": 30
+}

@@ -1,0 +1,501 @@
+﻿article_source,normalized_label,invoice_count,line_occurrences,sample_account,already_in_base,partitions
+CUISSE POULET HALAL *10 KG BELGE,cuisse poulet halal 10 kg belge,130,150,6011,False,fr_bd_903252617
+AILE POULET HALAL BLANC BELGE,aile poulet halal blanc belge,89,94,6011,False,fr_bd_903252617
+PILON POULET HALAL VRAC BELGE,pilon poulet halal vrac belge,78,79,6011,False,fr_bd_903252617
+FILET POULET HALAL*10 KG Roumanie,filet poulet halal 10 kg roumanie,76,85,6011,False,fr_bd_903252617
+FOIE VOLAILLE HALAL BELGE,foie volaille halal belge,72,78,6011,False,fr_bd_903252617
+FILET POULET HALAL*10 KG S/AT BELGE,filet poulet halal 10 kg s at belge,70,80,6011,False,fr_bd_903252617
+ESCALOPE VOLAILLE MILANESE Halal ITALIEN,escalope volaille milanese halal italien,60,60,6011,False,fr_bd_903252617
+CORDON BLEU VOLAILLE HALAL 1000G S/AT,cordon bleu volaille halal 1000g s at,48,48,6011,False,fr_bd_903252617
+POULET Label Rouge HALAL,poulet label rouge halal,44,46,6011,False,fr_bd_903252617
+FILET DINDE HALAL Import,filet dinde halal import,41,42,6011,False,fr_bd_903252617
+CUISSE POULET Label Rouge Halal Blanche,cuisse poulet label rouge halal blanche,40,43,6011,False,fr_bd_903252617
+FILET DINDE HALAL *10 KG FRANCE,filet dinde halal 10 kg france,40,41,6011,False,fr_bd_903252617
+Gazole,gazole,32,35,6061,False,fr_bd_509118329 | fr_bd_792041840 | fr_bd_842785719 | fr_bd_844858571 | fr_bd_903252617 | fr_bd_951421064
+Carburant GO,carburant go,28,28,606300,False,fr_bd_903252617 | fr_bd_951421064
+Carburant,carburant,27,27,6063,False,fr_bd_509118329 | fr_bd_792041840 | fr_bd_842785719 | fr_bd_844858571 | fr_bd_903252617
+DIESEL,diesel,22,22,6068,False,fr_bd_844858571 | fr_bd_903252617 | fr_bd_951421064
+POULET PAC HALAL 1200G,poulet pac halal 1200g,21,22,6011,False,fr_bd_903252617
+PILON POULET HALAL FRANCE,pilon poulet halal france,18,19,6011,False,fr_bd_903252617
+POULET PAC HALAL 1300G,poulet pac halal 1300g,18,19,6011,False,fr_bd_903252617
+Remise,remise,17,17,60970000,False,fr_bd_823981568 | fr_bd_844858571
+Utilisateur standard,utilisateur standard,17,17,606100,False,fr_bd_844858571
+CUISSE POULET DesOsse*10 KG BELGE,cuisse poulet desosse 10 kg belge,15,17,6011,False,fr_bd_903252617
+CUISSE DINDE HALAL,cuisse dinde halal,15,16,6011,False,fr_bd_903252617
+CUISSE POULET Label Rouge Halal JAUNE,cuisse poulet label rouge halal jaune,14,15,6011,False,fr_bd_903252617
+Béton pompé,beton pompe,14,14,604,False,fr_bd_903252617
+"COFFRAGE, SCIAGE, PONCAGE.",coffrage sciage poncage,14,14,606,False,fr_bd_903252617
+Mise à disposition,mise a disposition,14,14,606200,False,fr_bd_903252617
+COULAGE PLANCHER,coulage plancher,13,20,6063,False,fr_bd_903252617
+FILET POULET*5KG BELGE,filet poulet 5kg belge,12,13,6011,False,fr_bd_903252617
+POULET PAC HALAL,poulet pac halal,12,13,6011,False,fr_bd_903252617
+SURFAQUARTZ GRIS NATUREL,surfaquartz gris naturel,10,10,60610000,False,fr_bd_903252617
+COULAGE PLANCHER finition brut,coulage plancher finition brut,9,24,6063,False,fr_bd_903252617
+GazoleB8,gazoleb8,9,9,606300,False,fr_bd_903252617
+PILON POULET HALAL VRAC BELGE - Origine Belgique,pilon poulet halal vrac belge origine belgique,9,9,6011,False,fr_bd_903252617
+Tuyaux,tuyaux,9,9,6063,False,fr_bd_903252617
+Article non spécifié,article non specifie,8,14,606100,False,fr_bd_509118329 | fr_bd_844858571 | fr_bd_903252617
+COLLIER BASSE COTE - ORIGINE:BELGIQUE - VACHE BLANC BLEU BELGE,collier basse cote origine belgique vache blanc bleu belge,8,10,6011,False,fr_bd_903252617
+AGNEAU - ORIGINE:ROYAUME-UNI - AGNEAU MOINS DE 12 M - VIANDE HALLAL,agneau origine royaume uni agneau moins de 12 m viande hallal,8,8,6011,False,fr_bd_903252617
+Béton pompé (en m3),beton pompe en m3,8,8,6061,False,fr_bd_903252617
+CUISSE POULET HALAL *10 KG BELGE Origine:Belgique,cuisse poulet halal 10 kg belge origine belgique,8,8,601,False,fr_bd_903252617
+Eco contribution,eco contribution,7,14,6068,False,fr_bd_842785719
+COURONNE.250MM.COREX GR 16Q 68,couronne 250mm corex gr 16q 68,7,7,6063,False,fr_bd_903252617
+Forfait 2h 100 Mo,forfait 2h 100 mo,7,7,606100,False,fr_bd_842785719
+Offre Spéciale - Réduction sur la position 1,offre speciale reduction sur la position 1,7,7,606100,False,fr_bd_903252617
+Repas,repas,7,7,606100,False,fr_bd_844858571 | fr_bd_879788230 | fr_bd_903252617
+ECO-PART DEEE,eco part deee,6,12,60610000,False,fr_bd_509118329 | fr_bd_844858571 | fr_bd_903252617 | fr_bd_951421064
+CUISSE POULET HALAL *10 KG BELGE Origine France N abattoir 89.069.001,cuisse poulet halal 10 kg belge origine france n abattoir 89 069 001,6,7,6011,False,fr_bd_903252617
+FILET POULET HALAL * 10 KG S/AT BELGE Origine : Belgique,filet poulet halal 10 kg s at belge origine belgique,6,7,6011,False,fr_bd_903252617
+Avantage SFR Family! - Contrôle parental,avantage sfr family controle parental,6,6,606100,False,fr_bd_842785719
+COULAGE DALLAGE finition hélicoptére,coulage dallage finition helicoptere,6,6,6063,False,fr_bd_903252617
+"E-Services (Espace client, Bilan annuel, Auto-relevé)",e services espace client bilan annuel auto releve,6,6,6061,False,fr_bd_903252617
+Forfait 150 Go 5G,forfait 150 go 5g,6,6,606100,False,fr_bd_842785719
+IT-Livanto OL,it livanto ol,6,6,60610000,False,fr_bd_844858571
+Mise a disposition d'une Pompe Béton (FORFAIT),mise a disposition d une pompe beton forfait,6,6,6063,False,fr_bd_903252617
+POULET PAC HALAL 1200G - Origine:France - N°abattoir:44.003.002,poulet pac halal 1200g origine france n abattoir 44 003 002,6,6,601,False,fr_bd_903252617
+POULET PAC HALAL 1300G - Origine : France - N° abattoir : 44.003.002,poulet pac halal 1300g origine france n abattoir 44 003 002,6,6,6011,False,fr_bd_903252617
+Supreme+ 98,supreme 98,5,6,6061,False,fr_bd_792041840 | fr_bd_903252617
+CORDON BLEU VOLAILLE HALAL1000G S/AT,cordon bleu volaille halal1000g s at,5,5,6011,False,fr_bd_903252617
+ESCALOPE VOLAILLE MILANESE Halal ITALIEN - Origine : Italie - N°abattoir : IT 0851MCE,escalope volaille milanese halal italien origine italie n abattoir it 0851mce,5,5,601,False,fr_bd_903252617
+FILET DINDE HALAL Import Origine: Italie N°abattoir IT021MCE,filet dinde halal import origine italie n abattoir it021mce,5,5,6011,False,fr_bd_903252617
+GO 05 pompe,go 05 pompe,5,5,6068,False,fr_bd_903252617
+IT-Venezia OL,it venezia ol,5,5,60610000,False,fr_bd_844858571
+Internet garanti,internet garanti,5,5,606100,False,fr_bd_903252617
+Prestations de services.,prestations de services,5,5,606200,False,fr_bd_509118329
+Protect Avancé,protect avance,5,5,606100,False,fr_bd_842785719
+Repas complet,repas complet,5,5,606100,False,fr_bd_844858571
+SAC MATIERE RECYCLEE PDB,sac matiere recyclee pdb,5,5,607,False,fr_bd_509118329 | fr_bd_842785719
+SAUCISSE VOLAILLE Herbes Halal S/AT,saucisse volaille herbes halal s at,5,5,6011,False,fr_bd_903252617
+WE-Rio de Janeiro Espr,we rio de janeiro espr,5,5,60610000,False,fr_bd_844858571
+Désignation non spécifiée,designation non specifiee,4,12,606100,False,fr_bd_903252617
+Internet Mobile 50Go Eco,internet mobile 50go eco,4,9,6068,False,fr_bd_842785719
+Internet Mobile 1Go Eco,internet mobile 1go eco,4,7,6068,False,fr_bd_842785719
+DALLE PORTÉE finition hélicoptére,dalle portee finition helicoptere,4,6,6063,False,fr_bd_903252617
+COLLIER BASSE COTE - ORIGINE : BELGIQUE - BLANC BLEU BELGE - VACHE,collier basse cote origine belgique blanc bleu belge vache,4,5,6011,False,fr_bd_903252617
+COULAGE PH RDC,coulage ph rdc,4,5,6063,False,fr_bd_903252617
+4 nuits à Perpignan,4 nuits a perpignan,4,4,6062,False,fr_bd_844858571
+AGNEAU - VIANDE HALLAL - AGNEAU MOINS DE 12 M - ORIGINE : ROYAUME-UNI,agneau viande hallal agneau moins de 12 m origine royaume uni,4,4,6011,False,fr_bd_903252617
+AILE POULET HALAL BLANC BELGE - N°abattoir:BE E2039 EG - Origine:Belgique,aile poulet halal blanc belge n abattoir be e2039 eg origine belgique,4,4,6011,False,fr_bd_903252617
+Abonnements souscrits auprès de tiers,abonnements souscrits aupres de tiers,4,4,606100,False,fr_bd_842785719
+Achat carte bancaire,achat carte bancaire,4,4,606100,False,fr_bd_844858571 | fr_bd_903252617
+Acrobat Pro,acrobat pro,4,4,606800,False,fr_bd_842785719
+BPS C25/30 CEMI SR5+Cv D20 S3 XF1,bps c25 30 cemi sr5 cv d20 s3 xf1,4,4,6063,False,fr_bd_903252617
+CORDON BLEU VOLAILLE HALAL 1000G S/AT - Origine : France - N° abattoir : 56.109.001,cordon bleu volaille halal 1000g s at origine france n abattoir 56 109 001,4,4,6071,False,fr_bd_903252617
+COULAGE DALLE BETON Finition hélicoptére,coulage dalle beton finition helicoptere,4,4,606200,False,fr_bd_903252617
+CUTTER STANDARD 18MM AVEC 3 LAMES NOIR,cutter standard 18mm avec 3 lames noir,4,4,606200,False,fr_bd_842785719
+Carburant SP98,carburant sp98,4,4,606300,False,fr_bd_844858571 | fr_bd_903252617
+Contribution Tarifaire d'Acheminement,contribution tarifaire d acheminement,4,4,6061,False,fr_bd_842785719 | fr_bd_903252617
+DEMONTAGE et REMONTAGE,demontage et remontage,4,4,606200,False,fr_bd_903252617
+DIESEL B10,diesel b10,4,4,60610000,False,fr_bd_844858571 | fr_bd_903252617
+Essai de contrôle sur un micropieu de l'ouvrage selon EC7,essai de controle sur un micropieu de l ouvrage selon ec7,4,4,6063,False,fr_bd_842785719
+"FILET DINDE HALAL * 10 KG FRANCE, Origine : France, N°abattoir :FR49.063.001CE",filet dinde halal 10 kg france origine france n abattoir fr49 063 001ce,4,4,6071,False,fr_bd_903252617
+FILET POULET HALAL * 10 KG S/AT BELGE - Origine : Belgique - N°abattoir:BE E2039 EG,filet poulet halal 10 kg s at belge origine belgique n abattoir be e2039 eg,4,4,601,False,fr_bd_903252617
+FORFAIT - MISE A DISPOSITION POMPE A BÉTON,forfait mise a disposition pompe a beton,4,4,606200,False,fr_bd_903252617
+Forfait Pro 200Go 5G Av. Smartphone,forfait pro 200go 5g av smartphone,4,4,6068,False,fr_bd_842785719
+Fourniture d'électricité,fourniture d electricite,4,4,6061,False,fr_bd_842785719
+GESIER DE POULET BELGE,gesier de poulet belge,4,4,6011,False,fr_bd_903252617
+GO (Carburant),go carburant,4,4,606300,False,fr_bd_903252617
+ISOCOL MORTIER SAC 25 KG,isocol mortier sac 25 kg,4,4,6062,False,fr_bd_842785719
+MANCHE DE BALAI COCO PIN DOUILLE PLASTIQUE 120/24,manche de balai coco pin douille plastique 120 24,4,4,606200,False,fr_bd_842785719
+MISE A DISPOSITION < COULAGE / SCIAGE > Forfait 2 ouvriers / jours,mise a disposition coulage sciage forfait 2 ouvriers jours,4,4,606200,False,fr_bd_903252617
+MOLETTE HUS CARBUREX84 FORF/JR,molette hus carburex84 forf jr,4,4,6063,False,fr_bd_903252617
+PLAT - VACHE - BLANC BLEU BELGE - ORIGINE:BELGIQUE,plat vache blanc bleu belge origine belgique,4,4,6011,False,fr_bd_903252617
+PLUS DIVERS,plus divers,4,4,606200,False,fr_bd_903252617
+POMME DE TERRE SOUS VIDE,pomme de terre sous vide,4,4,6011,False,fr_bd_903252617
+POULET PAC HALAL1200G,poulet pac halal1200g,4,4,6011,False,fr_bd_903252617
+POULET PACHALAL,poulet pachalal,4,4,6011,False,fr_bd_903252617
+Sac a gravat tissé 60x100cm paquet de 10 pièces,sac a gravat tisse 60x100cm paquet de 10 pieces,4,4,6063,False,fr_bd_842785719 | fr_bd_879788230
+Sandwich kebab,sandwich kebab,4,4,606100,False,fr_bd_842785719
+TERRE,terre,4,4,6068,False,fr_bd_842785719
+Travaux de terrassement et étanchéité de la zone comportant des infiltrations d'eau,travaux de terrassement et etancheite de la zone comportant des infiltrations d eau,4,4,6063,False,fr_bd_792041840
+VEAU COEUR ORIGINE :FRANCE TRACE:0000001 N°ABT:FR,veau coeur origine france trace 0000001 n abt fr,4,4,6011,False,fr_bd_903252617
+cafe,cafe,4,4,606100,False,fr_bd_844858571 | fr_bd_903252617
+PALETTE LUSSIANA,palette lussiana,3,12,6063,False,fr_bd_842785719
+Forfait Mobile 5G Illimité,forfait mobile 5g illimite,3,6,6068,False,fr_bd_842785719
+COULAGE PARKING S/SOL,coulage parking s sol,3,5,60620000,False,fr_bd_903252617
+EXACOMPTA,exacompta,3,5,60610000,False,fr_bd_903252617
+Passerelle,passerelle,3,5,607,False,fr_bd_914837463
+vanne thermostatique connectée,vanne thermostatique connectee,3,5,607,False,fr_bd_914837463
+COULAGE DALLAGE,coulage dallage,3,4,6063,False,fr_bd_903252617
+"Collier basse côte, Vache, Blanc Bleu Belge, Origine: Belgique",collier basse cote vache blanc bleu belge origine belgique,3,4,6011,False,fr_bd_903252617
+Coulage PH R-1 ( finition hélicoptére ),coulage ph r 1 finition helicoptere,3,4,6063,False,fr_bd_903252617
+RAMPE (FORFAITAIRE),rampe forfaitaire,3,4,6068,False,fr_bd_903252617
+"TECHNOCE CEM II/B-LL 32,5R 25KG COU",technoce cem ii b ll 32 5r 25kg cou,3,4,6021,False,fr_bd_842785719
+Taxe de Séjour,taxe de sejour,3,4,6062,False,fr_bd_844858571 | fr_bd_903252617
+4 nuits à Lorient,4 nuits a lorient,3,3,6062,False,fr_bd_844858571
+AGNEAU FRESSURE ORIGINE :FRANCE TRACE:0000001 N°ABT: FR,agneau fressure origine france trace 0000001 n abt fr,3,3,6011,False,fr_bd_903252617
+ALOYAU MILIEU TRAIN - VACHE - BLANC BLEU BELGE - ORIGINE:BELGIQUE,aloyau milieu train vache blanc bleu belge origine belgique,3,3,6011,False,fr_bd_903252617
+ARRIERE 8 COTES - ORIGINE:BELGIQUE - VACHE BLANC BLEU BELGE,arriere 8 cotes origine belgique vache blanc bleu belge,3,3,6011,False,fr_bd_903252617
+"Abonnements, options et services télécoms",abonnements options et services telecoms,3,3,6062,False,fr_bd_842785719
+Achat divers - Ticket de caisse,achat divers ticket de caisse,3,3,606800,False,fr_bd_844858571 | fr_bd_903252617
+Achat non détaillé,achat non detaille,3,3,606,False,fr_bd_844858571 | fr_bd_903252617
+Amenée-repli de l'atelier de forage des micropieux,amenee repli de l atelier de forage des micropieux,3,3,6063,False,fr_bd_842785719
+Amenée-repli de l'atelier de l'injection,amenee repli de l atelier de l injection,3,3,6063,False,fr_bd_842785719
+Armature de poteau hauteur d'étage dimension 10cmx10cm 4HA10 avec cadre HA5 espacement variable longueur 3m réf PN41010X10,armature de poteau hauteur d etage dimension 10cmx10cm 4ha10 avec cadre ha5 espacement variable longueur 3m ref pn41010x10,3,3,6061,False,fr_bd_842785719
+BASSE SANS POITRINE VEAU-8M VIANDE HALLAL ORIGINE : PAYS-BAS,basse sans poitrine veau 8m viande hallal origine pays bas,3,3,6011,False,fr_bd_903252617
+BIG BAG VIDE 1.T400,big bag vide 1 t400,3,3,6061,False,fr_bd_842785719
+BLOC DE FOIE GRAS CANARD 290 Gr HALAL,bloc de foie gras canard 290 gr halal,3,3,6011,False,fr_bd_903252617
+CABLE d*accélérateur (=10508) 140g,cable d accelerateur 10508 140g,3,3,606200,False,fr_bd_903252617
+CASQ CHANTIER RB40 BLC T53-61CM,casq chantier rb40 blc t53 61cm,3,3,6064,False,fr_bd_842785719
+CONTRIBUTION CARBONE,contribution carbone,3,3,6063,False,fr_bd_903252617
+CONTRIBUTION ENVIRONNEMENTALE,contribution environnementale,3,3,6063,False,fr_bd_903252617
+COULAGE PLANCHER FORFAIT,coulage plancher forfait,3,3,606200,False,fr_bd_903252617
+CUISSE POULET Desosse*10 KG BELGE Origine:Belgique Nabattoir:BE E2039EG,cuisse poulet desosse 10 kg belge origine belgique nabattoir be e2039eg,3,3,607,False,fr_bd_903252617
+CUISSE POULET HALAL*10KG BELGE Origine:Belgique,cuisse poulet halal 10kg belge origine belgique,3,3,6011,False,fr_bd_903252617
+Carburant SP95E10,carburant sp95e10,3,3,606300,False,fr_bd_903252617
+Coca cola zéro c 33 cl,coca cola zero c 33 cl,3,3,606100,False,fr_bd_842785719
+Contribution Tarifaire d'Acheminement électricité (CTA),contribution tarifaire d acheminement electricite cta,3,3,6061,False,fr_bd_842785719
+Contribution au Service Public de l'Electricité,contribution au service public de l electricite,3,3,6061,False,fr_bd_903252617
+Dépose et repose cheminement de cables,depose et repose cheminement de cables,3,3,6061,False,fr_bd_842785719
+Dépose et repose de luminaires au dessus des acces,depose et repose de luminaires au dessus des acces,3,3,6061,False,fr_bd_842785719
+Dépose et repose de luminaires plafond des porches,depose et repose de luminaires plafond des porches,3,3,6061,False,fr_bd_842785719
+Dépose et repose des anémométres pour store,depose et repose des anemometres pour store,3,3,6061,False,fr_bd_842785719
+Dépose et repose des enceintes de sono,depose et repose des enceintes de sono,3,3,6061,False,fr_bd_842785719
+ECO CONTRIBUTION VALOBAT 0805017 ROBINETTERIE ET MESURE CHAUFFAGE,eco contribution valobat 0805017 robinetterie et mesure chauffage,3,3,6063,False,fr_bd_509118329
+ECO PARTICIPATION PMCB BPE,eco participation pmcb bpe,3,3,6063,False,fr_bd_903252617
+Electricité,electricite,3,3,6061,False,fr_bd_842785719
+FACTURE 276038,facture 276038,3,3,607,False,fr_bd_903252617
+FILTRE A AIR,filtre a air,3,3,606200,False,fr_bd_844858571 | fr_bd_903252617
+Fo et pose d'un coffret d'installation électrique provisoire,fo et pose d un coffret d installation electrique provisoire,3,3,6061,False,fr_bd_842785719
+"Fo et pose de cable 3G2,5",fo et pose de cable 3g2 5,3,3,6061,False,fr_bd_842785719
+Fo et pose de cäble 3G6,fo et pose de cable 3g6,3,3,6061,False,fr_bd_842785719
+Fo et pose de cäble 5G16,fo et pose de cable 5g16,3,3,6061,False,fr_bd_842785719
+Fo et pose de fourreau diamétre 25,fo et pose de fourreau diametre 25,3,3,6061,False,fr_bd_842785719
+Fo et pose de fourreau diamétre 40,fo et pose de fourreau diametre 40,3,3,6061,False,fr_bd_842785719
+Fo et pose de grosse boites de dérivation,fo et pose de grosse boites de derivation,3,3,6061,False,fr_bd_842785719
+Fourniture des outils de forage perdus,fourniture des outils de forage perdus,3,3,6063,False,fr_bd_842785719
+Fourniture et mise en œuvre des platines de scellement 20*20_e=20mm,fourniture et mise en uvre des platines de scellement 20 20 e 20mm,3,3,6063,False,fr_bd_842785719
+GO (Gazole),go gazole,3,3,606100,False,fr_bd_903252617
+Gant manutention générale - milieu humide - tous travaux - taille 8 Novipro,gant manutention generale milieu humide tous travaux taille 8 novipro,3,3,6063,False,fr_bd_842785719
+HEURE MAIN D'CEUVRE,heure main d ceuvre,3,3,606,False,fr_bd_903252617
+Huile Moteur 15W40,huile moteur 15w40,3,3,6063,False,fr_bd_903252617
+Jour de location,jour de location,3,3,6063,False,fr_bd_844858571
+LAVAGE OFFERT,lavage offert,3,3,606200,False,fr_bd_792041840 | fr_bd_844858571
+MISE A DISPOSITION < REGIE > Forfait 2 ouvriers / jours,mise a disposition regie forfait 2 ouvriers jours,3,3,606200,False,fr_bd_903252617
+MO - Nicaragua OL,mo nicaragua ol,3,3,60610000,False,fr_bd_844858571
+Mensualité de votre facilité de paiement pour votre équipement,mensualite de votre facilite de paiement pour votre equipement,3,3,606100,False,fr_bd_842785719
+Option 5G,option 5g,3,3,606100,False,fr_bd_842785719
+PETITES FOURNITURES,petites fournitures,3,3,6068,False,fr_bd_792041840 | fr_bd_844858571
+PLIAGE ALUMINIUM 10/10 ANODISE + PERFO (DETAIL 5) Long : 2000 Dev : 320,pliage aluminium 10 10 anodise perfo detail 5 long 2000 dev 320,3,3,6062,False,fr_bd_842785719
+POULET Label Rouge HALAL - Origine : France - N° abattoir : 56.017.001,poulet label rouge halal origine france n abattoir 56 017 001,3,3,601,False,fr_bd_903252617
+POULET PAC HALAL 1100G,poulet pac halal 1100g,3,3,6011,False,fr_bd_903252617
+"POULET PAC HALAL 1300G, N°abattoir : 44.003.002, Origine : France",poulet pac halal 1300g n abattoir 44 003 002 origine france,3,3,6071,False,fr_bd_903252617
+POULET PAC HALAL 1400 Gr,poulet pac halal 1400 gr,3,3,6011,False,fr_bd_903252617
+POULET PAC HALAL1400 Gr,poulet pac halal1400 gr,3,3,6011,False,fr_bd_903252617
+Protection vol et collision,protection vol et collision,3,3,6063,False,fr_bd_844858571
+RECYCLAGE DECHETS,recyclage dechets,3,3,606200,False,fr_bd_844858571 | fr_bd_903252617
+Redevance OTC,redevance otc,3,3,6068,False,fr_bd_509118329 | fr_bd_844858571
+Remise pro 7€/mois pdt 12 mois Livebox Pro Fibre,remise pro 7 mois pdt 12 mois livebox pro fibre,3,3,6061,False,fr_bd_842785719
+Réalisation de la Mission G3,realisation de la mission g3,3,3,6063,False,fr_bd_842785719
+Réalisation de réseaux enterrés pour passage de câbles,realisation de reseaux enterres pour passage de cables,3,3,6062,False,fr_bd_792041840
+Supreme+SP98,supreme sp98,3,3,6068,False,fr_bd_792041840 | fr_bd_844858571
+TA-E 80X60 W0 GOUL DISTRI AU METRE,ta e 80x60 w0 goul distri au metre,3,3,60610000,False,fr_bd_844858571
+TERRE GRAVAT,terre gravat,3,3,6068,False,fr_bd_842785719
+Thermostat connecté,thermostat connecte,3,3,607,False,fr_bd_914837463
+Travaux de sous-traitance - électricité,travaux de sous traitance electricite,3,3,6041,False,fr_bd_842785719
+Travaux exécutés - Sous-traitance,travaux executes sous traitance,3,3,604,False,fr_bd_842785719
+VANNE EGR,vanne egr,3,3,6068,False,fr_bd_844858571 | fr_bd_903252617
+VEAU COEUR ORIGINE:FRANCE TRACE:0000001NABT:FR,veau coeur origine france trace 0000001nabt fr,3,3,6011,False,fr_bd_903252617
+VIS 5x10 poulie tal.(5382080=164412)wur,vis 5x10 poulie tal 5382080 164412 wur,3,3,606200,False,fr_bd_903252617
+WE-Istanbul Espresso,we istanbul espresso,3,3,60610000,False,fr_bd_844858571
+WHISKY JB 40D 1L,whisky jb 40d 1l,3,3,6068,False,fr_bd_903252617
+PALETTE EQIOM GRANULATS,palette eqiom granulats,2,7,6063,False,fr_bd_842785719
+(03/05/2023) Coulage PH RDC BAT 11,03 05 2023 coulage ph rdc bat 11,2,4,6063,False,fr_bd_903252617
+DALLAGE finition hélicoptére,dallage finition helicoptere,2,4,606200,False,fr_bd_903252617
+ECO PARTICAPATION 0.001,eco particapation 0 001,2,4,6061,False,fr_bd_842785719
+Essai / vérification de bon fonctionnement,essai verification de bon fonctionnement,2,4,6061,False,fr_bd_842785719
+FILET DINDE HALAL S/V FR,filet dinde halal s v fr,2,4,6061,False,fr_bd_509118329
+PAREX MAITE BLANC SAC DE 25 KG (PAL 48),parex maite blanc sac de 25 kg pal 48,2,4,6061,False,fr_bd_842785719
+PLT LR PAC JN S/F 1.7+ MC,plt lr pac jn s f 1 7 mc,2,4,60110000,False,fr_bd_903252617
+Thermostat,thermostat,2,4,60620000,False,fr_bd_914837463
+WEBER THERM XM 25 KG,weber therm xm 25 kg,2,4,6061,False,fr_bd_842785719
+Anémométre pour store - suivant CCTP,anemometre pour store suivant cctp,2,3,6068,False,fr_bd_842785719
+BALAI COCO 29CM A VIS NOVIPRO,balai coco 29cm a vis novipro,2,3,6063,False,fr_bd_842785719
+BLOC CRX CH VRT CE NF 500X200X200,bloc crx ch vrt ce nf 500x200x200,2,3,6021,False,fr_bd_842785719
+CUISSE POULET Label Rouge Halal Blanche - Origine France - N°abattoir : 56.017.001,cuisse poulet label rouge halal blanche origine france n abattoir 56 017 001,2,3,601,False,fr_bd_903252617
+ECO CONTRIBUTION SOPREMA,eco contribution soprema,2,3,6068,False,fr_bd_842785719
+FORFAIT - MISE A DISPOSITION POMPE A BETON - F/éche 28 m,forfait mise a disposition pompe a beton f eche 28 m,2,3,6063,False,fr_bd_903252617
+FRITES,frites,2,3,60610000,False,fr_bd_844858571 | fr_bd_903252617
+GRAVE 0/10 MM BIG BAG 3/4M3,grave 0 10 mm big bag 3 4m3,2,3,6021,False,fr_bd_842785719
+MANCHE BALAI VIS ET ATTACHE PLASTIQ,manche balai vis et attache plastiq,2,3,6063,False,fr_bd_842785719
+MOmor,momor,2,3,6068,False,fr_bd_842785719
+PH S/SOL BAT 2,ph s sol bat 2,2,3,6063,False,fr_bd_903252617
+Réalisation de plancher béton à MANTES LA JOLIE,realisation de plancher beton a mantes la jolie,2,3,606200,False,fr_bd_903252617
+(05/05/2023) Coulage PH RDC BAT 11,05 05 2023 coulage ph rdc bat 11,2,2,6063,False,fr_bd_903252617
+(12/05/2023) Coulage PH R+2 BAT 8,12 05 2023 coulage ph r 2 bat 8,2,2,6063,False,fr_bd_903252617
+(19/05/2023) Coulage PH R+1 BAT 14,19 05 2023 coulage ph r 1 bat 14,2,2,6063,False,fr_bd_903252617
+(23/05/2023) Coulage PH RDC BAT 10,23 05 2023 coulage ph rdc bat 10,2,2,6063,False,fr_bd_903252617
+(31/05/2023) Coulage PH R+2 BAT 6,31 05 2023 coulage ph r 2 bat 6,2,2,6063,False,fr_bd_903252617
+01/12/2023 COULAGE PLANCHER,01 12 2023 coulage plancher,2,2,6063,False,fr_bd_903252617
+1PX LOT 10 TUBE TULIPE IRL D16 GRIS 2.4M,1px lot 10 tube tulipe irl d16 gris 2 4m,2,2,60620000,False,fr_bd_844858571
+4 nuits a Charleville-Mézieres,4 nuits a charleville mezieres,2,2,6062,False,fr_bd_844858571
+4 nuits a Mauléon,4 nuits a mauleon,2,2,606200,False,fr_bd_844858571
+4 nuits à Laigneville,4 nuits a laigneville,2,2,606200,False,fr_bd_844858571
+4 nuits à Liancourt,4 nuits a liancourt,2,2,606300,False,fr_bd_844858571
+ADH PVC ORANGE NOVIPRO (3) 33MX50MM,adh pvc orange novipro 3 33mx50mm,2,2,6068,False,fr_bd_842785719
+AGNEAU FRESSURE ORIGINE:FRANCE,agneau fressure origine france,2,2,6011,False,fr_bd_903252617
+AGNEAU FRESSURE ORIGINE:FRANCE TRACE:0000001N°ABT:FR,agneau fressure origine france trace 0000001n abt fr,2,2,6011,False,fr_bd_903252617
+AGNEAU FRESSURE ORIGINE:ROYAUME-UNI TRACE : 0000001 N ABT :UK,agneau fressure origine royaume uni trace 0000001 n abt uk,2,2,601,False,fr_bd_903252617
+"AGNEAU, ORIGINE : ROYAUME-UNI, VIANDE HALLAL, AGNEAU MOINS DE 12 M",agneau origine royaume uni viande hallal agneau moins de 12 m,2,2,6011,False,fr_bd_903252617
+ALFFREUDE 20 pcs Kit Demontage Autoradio Outil de Démontage Voiture Autoradio Outil de Suppression de Radio avec Sac de Rangement pour Radio Navi,alffreude 20 pcs kit demontage autoradio outil de demontage voiture autoradio outil de suppression de radio avec sac de rangement pour radio navi,2,2,60630000,False,fr_bd_844858571
+AMPOULE,ampoule,2,2,606200,False,fr_bd_509118329
+APPLICATEUR LUKO AVEC 3 EPONGES UN BAC = ENVIRON 250 M2,applicateur luko avec 3 eponges un bac environ 250 m2,2,2,6063,False,fr_bd_842785719
+ARMAT POT 10X10 4HA10 E VAR 3M,armat pot 10x10 4ha10 e var 3m,2,2,6062,False,fr_bd_842785719
+ARO CONCENTRE TOMA 4/4,aro concentre toma 4 4,2,2,6061,False,fr_bd_509118329
+ARRIERETRAITE 8 COTES - BLANC BLEU BELGE VACHE,arrieretraite 8 cotes blanc bleu belge vache,2,2,6011,False,fr_bd_903252617
+Abonnements à des services via Internet+ : 5 débits,abonnements a des services via internet 5 debits,2,2,606100,False,fr_bd_842785719
+Accise sur l'électricité,accise sur l electricite,2,2,606100,False,fr_bd_842785719
+Achat carburant / station-service,achat carburant station service,2,2,606800,False,fr_bd_844858571 | fr_bd_903252617
+Achats par SMS - Services du quotidien,achats par sms services du quotidien,2,2,6068,False,fr_bd_842785719
+Ascenseur,ascenseur,2,2,604,False,fr_bd_842785719
+Avantage client box,avantage client box,2,2,6068,False,fr_bd_842785719
+BA13 FLAM 1.2 X 2.5M,ba13 flam 1 2 x 2 5m,2,2,6061,False,fr_bd_842785719
+BACHE PRO POLYPROTEC ACTI 1000X25MM,bache pro polyprotec acti 1000x25mm,2,2,6062,False,fr_bd_842785719
+BALAI COCO 29 CM DOUILE RESINE,balai coco 29 cm douile resine,2,2,606200,False,fr_bd_842785719
+BALANCE VRAC CODE A CLOU VIS BOULON KG,balance vrac code a clou vis boulon kg,2,2,6062,False,fr_bd_844858571
+BAST SAP/EPI TRCL2 63X160 3M00,bast sap epi trcl2 63x160 3m00,2,2,6063,False,fr_bd_842785719
+BASTAING BOIS 65x163 3 ML,bastaing bois 65x163 3 ml,2,2,6061,False,fr_bd_842785719
+BIENS_SERVICE,biens service,2,2,606,False,fr_bd_842785719 | fr_bd_844858571
+BIG BAG 1T400 0/10 MELANGE,big bag 1t400 0 10 melange,2,2,6022,False,fr_bd_842785719
+BIG BAG 1T400 0/4 SABLE,big bag 1t400 0 4 sable,2,2,6022,False,fr_bd_842785719
+BLOC COFF BETON 500X200X200LUS,bloc coff beton 500x200x200lus,2,2,6061,False,fr_bd_842785719
+BLOC CRX CE NF B40 500X200X200LUS,bloc crx ce nf b40 500x200x200lus,2,2,6061,False,fr_bd_842785719
+BOB. PROTECT. ULTIBAT 75M.,bob protect ultibat 75m,2,2,6062,False,fr_bd_842785719
+BOEUF CUISSE FLANCH ORIGINE:BELGIQUE VACHE BLANC BLEU BELGE,boeuf cuisse flanch origine belgique vache blanc bleu belge,2,2,6011,False,fr_bd_903252617
+BON STOCK SERVICE : VdINSAF B Titulaire:01 YILDIZ MUSA Descript.: ECOLOGIC MCABCO,bon stock service vdinsaf b titulaire 01 yildiz musa descript ecologic mcabco,2,2,6068,False,fr_bd_842785719
+BROSSE PLATE BATIMENT 60,brosse plate batiment 60,2,2,6063,False,fr_bd_842785719
+Balai coco 29 cm Novipro,balai coco 29 cm novipro,2,2,6061,False,fr_bd_842785719
+"Bastaing Sapin/Epicéa traité classe 2 63x160mm longueur 3,00m",bastaing sapin epicea traite classe 2 63x160mm longueur 3 00m,2,2,6063,False,fr_bd_842785719
+Big Mac L.Combo,big mac l combo,2,2,606100,False,fr_bd_844858571
+Botte sécurité SAFETY T42,botte securite safety t42,2,2,606300,False,fr_bd_903252617
+Botte sécurité SAFETY T43,botte securite safety t43,2,2,606300,False,fr_bd_903252617
+Bottes de sécurité Panther S5 taille 42,bottes de securite panther s5 taille 42,2,2,6063,False,fr_bd_842785719
+Brique lisse pleine rouge rieussequel 220 105 50 mm,brique lisse pleine rouge rieussequel 220 105 50 mm,2,2,6063,False,fr_bd_842785719
+CADENAS COMBINAISON 40MM 4 CHIFFRES 7640EURDBLK,cadenas combinaison 40mm 4 chiffres 7640eurdblk,2,2,6062,False,fr_bd_842785719
+CARRELAGE SDB 60*120 GRIS DU MARAIS BEIGE Epaisseur 7mm. Emballé par 3 soit 216 m2/Bte 64.80 m2/Palette 35.82 kg/Bte,carrelage sdb 60 120 gris du marais beige epaisseur 7mm emballe par 3 soit 216 m2 bte 64 80 m2 palette 35 82 kg bte,2,2,60620000,False,fr_bd_844858571
+CARRELAGES REVETEMENTS - Nez de marche en aluminium avec insert en L en intérieur - localisation : Escalier RDC et RDJ - (marches - contre marches paliers),carrelages revetements nez de marche en aluminium avec insert en l en interieur localisation escalier rdc et rdj marches contre marches paliers,2,2,6063,False,fr_bd_842785719
+CH BATAILLEY 16 PAUIL 75CL,ch batailley 16 pauil 75cl,2,2,60710000,False,fr_bd_903252617
+CHAINE ACIER LONGUEUR 1000MM 8MM DIAM 8016EURD,chaine acier longueur 1000mm 8mm diam 8016eurd,2,2,6062,False,fr_bd_842785719
+CHAINE ACIER LONGUEUR 1500MM 8MM DIAM 8017EURD,chaine acier longueur 1500mm 8mm diam 8017eurd,2,2,6062,False,fr_bd_842785719
+CHARCUTERIE VOLAILLE ( kg ) HALAL - Origine : France - N°abattoir : FR94-065-072-CE,charcuterie volaille kg halal origine france n abattoir fr94 065 072 ce,2,2,601,False,fr_bd_903252617
+CLOU TP LISSE 3.1X55MM 5KG,clou tp lisse 3 1x55mm 5kg,2,2,6061,False,fr_bd_842785719
+"COFFRAGE, PONCAGE",coffrage poncage,2,2,6063,False,fr_bd_903252617
+COLLIER BASSE COTE - ORIGINE:FRANCE - VIANDE BOVINE FRANCAISE VACHE LIMOUSINE,collier basse cote origine france viande bovine francaise vache limousine,2,2,6011,False,fr_bd_903252617
+COLOR'O PREMIUM VELOURS M5 15L BLANC,color o premium velours m5 15l blanc,2,2,6063,False,fr_bd_509118329
+COMPRESSIVE ADHESIVE EN MOUSSE DE 15ML,compressive adhesive en mousse de 15ml,2,2,6063,False,fr_bd_842785719
+CONTRE PLAQUE FILME PLUS 15MM 250X125X15MM,contre plaque filme plus 15mm 250x125x15mm,2,2,6061,False,fr_bd_842785719
+CONTRIBUTION VERTE,contribution verte,2,2,6068,False,fr_bd_842785719
+CORDON BLEU VOLAILLE HALAL 1000G S/AT N°abattoir : 56.109.001 Origine France,cordon bleu volaille halal 1000g s at n abattoir 56 109 001 origine france,2,2,6011,False,fr_bd_903252617
+CORDON BLEU VOLAILLE HALAL VRAC,cordon bleu volaille halal vrac,2,2,6011,False,fr_bd_903252617
+COULAGE DALLAGE / PLANCHERS - PH BAT B,coulage dallage planchers ph bat b,2,2,6063,False,fr_bd_903252617
+COULAGE DALLAGE/ PLANCHERS - PH RDC BAT A,coulage dallage planchers ph rdc bat a,2,2,6063,False,fr_bd_903252617
+COULAGE DALLAGE/ PLANCHERS PH BAT A,coulage dallage planchers ph bat a,2,2,6063,False,fr_bd_903252617
+COULAGE PH R+1 BAT A,coulage ph r 1 bat a,2,2,606200,False,fr_bd_903252617
+COULAGE PLANCHER PH R+2 Finition brut,coulage plancher ph r 2 finition brut,2,2,6063,False,fr_bd_903252617
+COULAGE PLANCHER finition hélicoptére,coulage plancher finition helicoptere,2,2,6063,False,fr_bd_903252617
+CP FILM PRIMO PEUP ASIE 250X125 15,cp film primo peup asie 250x125 15,2,2,6062,False,fr_bd_842785719
+CRISPY Tenders POULET POLOGNE,crispy tenders poulet pologne,2,2,6011,False,fr_bd_903252617
+CROISILLONS EN T 3MM 250 PIECES,croisillons en t 3mm 250 pieces,2,2,607,False,fr_bd_509118329
+CROISSANT,croissant,2,2,606100,False,fr_bd_844858571
+CUISSE DINDE HALAL Origine:Italie N°abattoir:IT021MCE,cuisse dinde halal origine italie n abattoir it021mce,2,2,601,False,fr_bd_903252617
+"CUISSE POULET HALAL * 10 KG BELGE, N°abattoir : 89.069.001, Origine : France",cuisse poulet halal 10 kg belge n abattoir 89 069 001 origine france,2,2,6071,False,fr_bd_903252617
+CUISSE POULET Label Rouge Halal Blanche N°abattoir : 56.017.001 Origine France,cuisse poulet label rouge halal blanche n abattoir 56 017 001 origine france,2,2,6011,False,fr_bd_903252617
+CUTTER A LAME CASSABLE 25 MM d213,cutter a lame cassable 25 mm d213,2,2,606200,False,fr_bd_842785719
+CUTTER NOVI LAME RETRACT 18MM,cutter novi lame retract 18mm,2,2,60620000,False,fr_bd_842785719
+CX3 CT HC 230V 2F 25A,cx3 ct hc 230v 2f 25a,2,2,6061,False,fr_bd_844858571
+Cable accélérateur p/TM loche Mecanique,cable accelerateur p tm loche mecanique,2,2,60630000,False,fr_bd_903252617
+Campagne de test d'arrachement,campagne de test d arrachement,2,2,6062,False,fr_bd_842785719
+Carreau béton cellulaire 7/50 CXE 625x500x70mm - SIPOREX,carreau beton cellulaire 7 50 cxe 625x500x70mm siporex,2,2,6063,False,fr_bd_842785719
+Carré sans rognons - Veau -8M - Viande Hallal - Origine: Pays-Bas,carre sans rognons veau 8m viande hallal origine pays bas,2,2,6011,False,fr_bd_903252617
+Carte additionnelle,carte additionnelle,2,2,606100,False,fr_bd_844858571
+Casque de chantier Océanic 2 RB40 taille 53-61 cm blanc,casque de chantier oceanic 2 rb40 taille 53 61 cm blanc,2,2,6062,False,fr_bd_842785719
+"Casque de sécurité blanc, NF EN 397",casque de securite blanc nf en 397,2,2,60620000,False,fr_bd_844858571
+Chaussures basse Aries S3 T42 Réf. 42882,chaussures basse aries s3 t42 ref 42882,2,2,6063,False,fr_bd_842785719
+Cheminement de cäbles CFO/CFA sur facade - Suivant CCTP,cheminement de cables cfo cfa sur facade suivant cctp,2,2,6065,False,fr_bd_842785719
+Ciseaux Kevlar - Netceed,ciseaux kevlar netceed,2,2,60620000,False,fr_bd_844858571
+Clôture Grillagée Provisoire - Ht 2.00ml,cloture grillagee provisoire ht 2 00ml,2,2,6063,False,fr_bd_842785719
+Colle béton cellulaire sac de 5kg,colle beton cellulaire sac de 5kg,2,2,6063,False,fr_bd_842785719
+Collier rapide,collier rapide,2,2,60630000,False,fr_bd_903252617
+Compte prorata,compte prorata,2,2,6063,False,fr_bd_842785719
+Cone de balisage - H = 50cm,cone de balisage h 50cm,2,2,60620000,False,fr_bd_844858571
+Contrat Flexible Electricité - Fourniture d'électricité et acheminement,contrat flexible electricite fourniture d electricite et acheminement,2,2,6061,False,fr_bd_903252617
+Contreplaqué filmé Primo tout peuplier ASIE A/A collage extérieur format 250x125cm épaisseur 15 mm CE,contreplaque filme primo tout peuplier asie a a collage exterieur format 250x125cm epaisseur 15 mm ce,2,2,6063,False,fr_bd_842785719
+Cordon Jointofeu diamètre 30 rouleau de 20m,cordon jointofeu diametre 30 rouleau de 20m,2,2,6061,False,fr_bd_842785719
+Coude male femelle 45° diamètre 125mm UCX4,coude male femelle 45 diametre 125mm ucx4,2,2,6061,False,fr_bd_842785719
+Coulage DALLAGE Finition hélicoptére avec Surfaquartz,coulage dallage finition helicoptere avec surfaquartz,2,2,6063,False,fr_bd_903252617
+Coulage DALLE BASSE (avec Surfaquartz),coulage dalle basse avec surfaquartz,2,2,6063,False,fr_bd_903252617
+Coulage PH R+2 BATIMENT 4,coulage ph r 2 batiment 4,2,2,604,False,fr_bd_903252617
+Coulage planchers infra,coulage planchers infra,2,2,6062,False,fr_bd_903252617
+Courroie AX23,courroie ax23,2,2,606300,False,fr_bd_903252617
+Course UberX,course uberx,2,2,606100,False,fr_bd_823981568 | fr_bd_844858571
+Couteau à enduire type américain manche plastique inox 150mm noir,couteau a enduire type americain manche plastique inox 150mm noir,2,2,6061,False,fr_bd_842785719
+Crudités Salade,crudites salade,2,2,606100,False,fr_bd_842785719
+Crudités Tomates,crudites tomates,2,2,606100,False,fr_bd_842785719
+Création dalle pour cantilvers,creation dalle pour cantilvers,2,2,6063,False,fr_bd_792041840
+DALLAGE finition hélicoptére aVec SURFAQUARTZ + PRODUIT DE CURE + SCIAGE,dallage finition helicoptere avec surfaquartz produit de cure sciage,2,2,6063,False,fr_bd_903252617
+DALLE PORTEE - Plancher bas du S/Sol,dalle portee plancher bas du s sol,2,2,6063,False,fr_bd_903252617
+DALLE PORTéE finition brut,dalle portee finition brut,2,2,606200,False,fr_bd_903252617
+DE 5 MECHES DE REMPLACEMENT POUR UNIPERCEUSE DE CENTRAGE,de 5 meches de remplacement pour uniperceuse de centrage,2,2,6063,False,fr_bd_842785719
+DE RIVETEUSE UNIRIVET ALU,de riveteuse unirivet alu,2,2,6063,False,fr_bd_842785719
+DEBITMETRE AIR,debitmetre air,2,2,6068,False,fr_bd_903252617
+DECOUPE DROITE DE TABLETTE,decoupe droite de tablette,2,2,6063,False,fr_bd_509118329
+DEDUCTION DU MOIS PRECEDENT,deduction du mois precedent,2,2,604,False,fr_bd_842785719
+"DISQUE DIAMASTER 160X3,2/2,40X20 Z4 COUPE PANNEAUX ETERNIT",disque diamaster 160x3 2 2 40x20 z4 coupe panneaux eternit,2,2,6063,False,fr_bd_842785719
+Dallage Finition helicoptére avec Surfaquartz,dallage finition helicoptere avec surfaquartz,2,2,6063,False,fr_bd_903252617
+Dimck R%!,dimck r,2,2,60610000,False,fr_bd_903252617
+"Disque à tronconner les métaux -Novipro- Diam 125x1,6x22,2mm",disque a tronconner les metaux novipro diam 125x1 6x22 2mm,2,2,6063,False,fr_bd_842785719
+Démolition abri,demolition abri,2,2,6063,False,fr_bd_792041840
+Démolition ilot parking Novotel Vaugirard et dépose stop-parks,demolition ilot parking novotel vaugirard et depose stop parks,2,2,6063,False,fr_bd_792041840
+Démontage et remontage de filins acier inox,demontage et remontage de filins acier inox,2,2,6062,False,fr_bd_842785719
+Dépose / repose de descentes EP existantes,depose repose de descentes ep existantes,2,2,6061,False,fr_bd_842785719
+Dépose / repose de descentes EP ä neuf,depose repose de descentes ep a neuf,2,2,6061,False,fr_bd_842785719
+Dépose / repose des fixations des filins acier inox,depose repose des fixations des filins acier inox,2,2,6062,False,fr_bd_842785719
+Dépose de végétaux en pied des façades,depose de vegetaux en pied des facades,2,2,6063,False,fr_bd_842785719
+Dépose des couvertines en téte d'acrotéres haut - TT R+3,depose des couvertines en tete d acroteres haut tt r 3,2,2,6064,False,fr_bd_842785719
+Dépose soignée de la toile tendue,depose soignee de la toile tendue,2,2,6063,False,fr_bd_842785719
+ECHANGEUR,echangeur,2,2,6068,False,fr_bd_903252617
+ECO CONTRIBUTION VALDELIA 2A2 PRODUITS SUP 95 MASSE METAL,eco contribution valdelia 2a2 produits sup 95 masse metal,2,2,606,False,fr_bd_509118329
+ECO PARTICAPATION 0.091,eco particapation 0 091,2,2,6058,False,fr_bd_842785719
+ECO PARTICIPATION,eco participation,2,2,6058,False,fr_bd_842785719
+ECO PARTICIPATION 0.143,eco participation 0 143,2,2,6058,False,fr_bd_842785719
+ECO PARTICIPATION 0.28,eco participation 0 28,2,2,6058,False,fr_bd_842785719
+ECO PARTICIPATION ACIERS 0.014,eco participation aciers 0 014,2,2,6058,False,fr_bd_842785719
+ECROU 3 OREILLES PR TIGE 15/17,ecrou 3 oreilles pr tige 15 17,2,2,6063,False,fr_bd_842785719
+"ELEMENT, FILTRE A HU",element filtre a hu,2,2,6022,False,fr_bd_792041840
+EPONGE VEGETALE ABRASIVE,eponge vegetale abrasive,2,2,6062,False,fr_bd_842785719
+ESCALOPE VOLAILLE MILANESE Halal ITALIEN - N° abattoir : IT 0851MCE - Origine : Italie,escalope volaille milanese halal italien n abattoir it 0851mce origine italie,2,2,6071,False,fr_bd_903252617
+ESSAI ROUTIER,essai routier,2,2,6068,False,fr_bd_903252617
+Echantillons,echantillons,2,2,6063,False,fr_bd_842785719
+FACTURE 276627,facture 276627,2,2,607,False,fr_bd_903252617
+FACTURE 276723,facture 276723,2,2,607,False,fr_bd_903252617
+FILET DINDE HALAL Import - N°abattoir IT021MCE - Origine: Italie,filet dinde halal import n abattoir it021mce origine italie,2,2,6071,False,fr_bd_903252617
+FILET POULET HALAL*10 KG - Origine: Roumanie,filet poulet halal 10 kg origine roumanie,2,2,6071,False,fr_bd_903252617
+FILTRE A CARBURANT,filtre a carburant,2,2,6063,False,fr_bd_844858571
+FILTRE HABITACLE,filtre habitacle,2,2,606200,False,fr_bd_844858571
+FOIE VOLAILLE HALAL BELGE - Origine : Belgique - Nabattoir:E2001,foie volaille halal belge origine belgique nabattoir e2001,2,2,6071,False,fr_bd_903252617
+FORET BET 6X160 3 TAILLANTS SDS+,foret bet 6x160 3 taillants sds,2,2,6063,False,fr_bd_842785719
+FORET SDS 8*160,foret sds 8 160,2,2,6063,False,fr_bd_842785719
+FORF P.STAT WEB,forf p stat web,2,2,606100,False,fr_bd_844858571
+FORFAIT - MISE A DISPOSITION POMPE A BETON Inclus dans le forfait : Fléche 28m M-a-d 4 heures,forfait mise a disposition pompe a beton inclus dans le forfait fleche 28m m a d 4 heures,2,2,6063,False,fr_bd_903252617
+FORFAIT COULAGE DALLAGE Finition hélicoptére,forfait coulage dallage finition helicoptere,2,2,606200,False,fr_bd_903252617
+FTU bc t,ftu bc t,2,2,607,False,fr_bd_903252617
+Finition hélicoptére PH S/SOL finition brut,finition helicoptere ph s sol finition brut,2,2,6063,False,fr_bd_903252617
+Forfait Mobile 5G limité,forfait mobile 5g limite,2,2,606100,False,fr_bd_842785719
+GANT LATEX S/JERSEY COT BL ADH T10,gant latex s jersey cot bl adh t10,2,2,60620000,False,fr_bd_842785719
+GANTS MANUT HAUTE VISIBILTE T10 JAUNE,gants manut haute visibilte t10 jaune,2,2,6063,False,fr_bd_903252617
+GAZOLE Carburant,gazole carburant,2,2,6061,False,fr_bd_792041840
+"GC GRANIT NORDIC 29,8X29,8 GRIS LISSE R10B EP8MM",gc granit nordic 29 8x29 8 gris lisse r10b ep8mm,2,2,60620000,False,fr_bd_842785719
+"GC GRANIT NORDIC 8X29,8 GRIS PLINTHE GORGE EP8MM",gc granit nordic 8x29 8 gris plinthe gorge ep8mm,2,2,60620000,False,fr_bd_842785719
+GC GRANIT NORDIC AR PG H8 GRIS ANGLE RENTRANT PLINTHE/GORGE H8,gc granit nordic ar pg h8 gris angle rentrant plinthe gorge h8,2,2,60620000,False,fr_bd_842785719
+GC GRANIT NORDIC AS PG H8 GRIS ANGLE SORTANT PLINTHE GORGE H8,gc granit nordic as pg h8 gris angle sortant plinthe gorge h8,2,2,60620000,False,fr_bd_842785719
+GH PINCEAU PLAT MURS&PLAF 13M,gh pinceau plat murs plaf 13m,2,2,60620000,False,fr_bd_844858571
+GO pompe 05,go pompe 05,2,2,6068,False,fr_bd_903252617
+GO pompe 07,go pompe 07,2,2,606800,False,fr_bd_903252617
+"GRAVATS : Briques, terre, ciment, béton, pierres, sable. En cas de présence de déchets l'ensemble de la benne sera déclassé en DIB. DIB : Bois, platre, Placoplatre, ferraille, plastique, meubles, papier, cartons, déchets verts. Bon N° FQ-18954 08/11/2025 - Autre PARIS",gravats briques terre ciment beton pierres sable en cas de presence de dechets l ensemble de la benne sera declasse en dib dib bois platre placoplatre ferraille plastique meubles papier cartons dechets verts bon n fq 18954 08 11 2025 autre paris,2,2,6068,False,fr_bd_842785719
+Gants anti-dérapant Netceed 2.1.3.1 Taille 8,gants anti derapant netceed 2 1 3 1 taille 8,2,2,60620000,False,fr_bd_844858571
+Gateway,gateway,2,2,60620000,False,fr_bd_914837463
+Google Workspace Business Starter : Utilisation de 11 seats,google workspace business starter utilisation de 11 seats,2,2,606100,False,fr_bd_842785719
+Graissage,graissage,2,2,60620000,False,fr_bd_903252617
+HARIS FLAM CAP BON 1/2 380GR,haris flam cap bon 1 2 380gr,2,2,6061,False,fr_bd_509118329
+HO mOnO HIGH DNE WO 20 HX63-LW 902C,ho mono high dne wo 20 hx63 lw 902c,2,2,6068,False,fr_bd_842785719
+HONO HIGHDNEM20MX631902C,hono highdnem20mx631902c,2,2,6068,False,fr_bd_842785719
+Huile litre MOTEUR réparation 15w-40 Haf,huile litre moteur reparation 15w 40 haf,2,2,6062,False,fr_bd_903252617
+Implantation des micropieux,implantation des micropieux,2,2,6063,False,fr_bd_842785719
+Insta0Laton_f:brc opHoe,insta0laton f brc ophoe,2,2,60610000,False,fr_bd_844858571
+Installation de chantier,installation de chantier,2,2,6063,False,fr_bd_842785719
+Installation fibre optique,installation fibre optique,2,2,60620000,False,fr_bd_844858571
+Internet garanti - 1er mois offert (jusqu'au 02/03/2024),internet garanti 1er mois offert jusqu au 02 03 2024,2,2,606100,False,fr_bd_903252617
+JEU de Lisseuses D/ 75 Mosk(f75416m)2,jeu de lisseuses d 75 mosk f75416m 2,2,2,606,False,fr_bd_903252617
+Jeu de Lisseuses 120,jeu de lisseuses 120,2,2,606300,False,fr_bd_903252617
+Jeu de Lisseuses 60 B4,jeu de lisseuses 60 b4,2,2,607,False,fr_bd_903252617
+Jeu de Lisseuses 75,jeu de lisseuses 75,2,2,607,False,fr_bd_903252617
+Jeu de Lisseuses 90,jeu de lisseuses 90,2,2,606300,False,fr_bd_903252617
+Jugulaire sans mentonniére pour casque SC5101 et SC5101A3,jugulaire sans mentonniere pour casque sc5101 et sc5101a3,2,2,60620000,False,fr_bd_844858571
+LAME SCIE SABRE UNIVERSELLE 150 MM,lame scie sabre universelle 150 mm,2,2,6063,False,fr_bd_842785719
+LFries L.Combo,lfries l combo,2,2,606100,False,fr_bd_844858571
+"LIQUIDE IMPREGNATION LUKO 0,5L UN POT = ENVIRON 250 M2",liquide impregnation luko 0 5l un pot environ 250 m2,2,2,6063,False,fr_bd_842785719
+Location Livebox pro,location livebox pro,2,2,6061,False,fr_bd_842785719
+Logement entier - 4 nuits à Mende,logement entier 4 nuits a mende,2,2,6062,False,fr_bd_844858571
+Lot 6 p gants easy grip t9 Réf.89163,lot 6 p gants easy grip t9 ref 89163,2,2,6063,False,fr_bd_842785719
+Luminaires au dessus des accés - Suivant CCTP,luminaires au dessus des acces suivant cctp,2,2,6065,False,fr_bd_842785719
+Luminaires plafond des porches - Suivant CCTP,luminaires plafond des porches suivant cctp,2,2,6065,False,fr_bd_842785719
+M.A.D Pompe Béton (FORFAIT),m a d pompe beton forfait,2,2,6063,False,fr_bd_903252617
+M3 POMPE Ni repris ni échangé,m3 pompe ni repris ni echange,2,2,6063,False,fr_bd_842785719
+MAGRET CND FR 380/480 *6 TB SV,magret cnd fr 380 480 6 tb sv,2,2,60110000,False,fr_bd_903252617
+MAIN D'OEUVRE ATELIER,main d oeuvre atelier,2,2,6041,False,fr_bd_792041840
+MAIND'OEUVRE T1,maind oeuvre t1,2,2,6068,False,fr_bd_903252617
+MALLETTE 1ER SECOURS 560001,mallette 1er secours 560001,2,2,6063,False,fr_bd_842785719
+MANCHON ANTIGOUTTE EXTRA 180MM,manchon antigoutte extra 180mm,2,2,6062,False,fr_bd_842785719
+MARTEAU DEMOLISSEUR 15KG,marteau demolisseur 15kg,2,2,6062,False,fr_bd_842785719
+MAUREL HLE TOURNESOL 10L,maurel hle tournesol 10l,2,2,6061,False,fr_bd_509118329
+METALITH HYDRO M5 15L TEINTE PASTEL,metalith hydro m5 15l teinte pastel,2,2,606,False,fr_bd_509118329
+MONTANT M48 3ML 10U/P,montant m48 3ml 10u p,2,2,6061,False,fr_bd_842785719
+MOmONO HIGH ONEMNO20KX63-L.W902C,momono high onemno20kx63 l w902c,2,2,6068,False,fr_bd_842785719
+MOmOnO HIGONE HX63-W 902C,momono higone hx63 w 902c,2,2,6068,False,fr_bd_842785719
+MP 6 TASSE CAFE JULIA BLC 10CL,mp 6 tasse cafe julia blc 10cl,2,2,60630000,False,fr_bd_903252617
+MULTIPRISE CHANT 4P 3M NOVIPRO,multiprise chant 4p 3m novipro,2,2,6063,False,fr_bd_842785719
+Mallette 1er secours réf 560001,mallette 1er secours ref 560001,2,2,6068,False,fr_bd_842785719
+Manchon femelle femelle diamètre 125mm UM2X,manchon femelle femelle diametre 125mm um2x,2,2,6061,False,fr_bd_842785719
+McCafe Americano (L),mccafe americano l,2,2,606100,False,fr_bd_844858571
+Mensualité facilité de paiement équipement,mensualite facilite de paiement equipement,2,2,6068,False,fr_bd_842785719
+Minéralisant Guard@ HO 5L,mineralisant guard ho 5l,2,2,6062,False,fr_bd_842785719
+Montage d'échafaudage - CHANTIER 5 RUE DE L'ABBE DELHOTEL 55600 AVIOTH,montage d echafaudage chantier 5 rue de l abbe delhotel 55600 avioth,2,2,6062,False,fr_bd_823981568
+NATURPROPX NATURA PRO BRUT NU211 GRIS 8MM,naturpropx natura pro brut nu211 gris 8mm,2,2,6063,False,fr_bd_842785719
+NETTOYANT FREINS,nettoyant freins,2,2,6022,False,fr_bd_792041840
+NIVEAU RECT 60CM NOVIPRO,niveau rect 60cm novipro,2,2,6063,False,fr_bd_842785719
+OS (FTM) - Travaux supplémentaires,os ftm travaux supplementaires,2,2,606,False,fr_bd_842785719
+OUATE BLANCHE GAUFREE COLLEE 1000 FORMATS 23X25,ouate blanche gaufree collee 1000 formats 23x25,2,2,6061,False,fr_bd_842785719
+PALETTE CONSIGNE SLM OPL SPC,palette consigne slm opl spc,2,2,6022,False,fr_bd_842785719
+PARE PLUIE FILMEX MOB 50X3M,pare pluie filmex mob 50x3m,2,2,6061,False,fr_bd_842785719
+PARKING Coulage Radier,parking coulage radier,2,2,604,False,fr_bd_903252617
+PERcAGE et FILTAGE des BRAS,percage et filtage des bras,2,2,6062,False,fr_bd_903252617
+PH RDC finition brut,ph rdc finition brut,2,2,606200,False,fr_bd_903252617
+"PH S-SOL, Finition brut",ph s sol finition brut,2,2,6063,False,fr_bd_903252617
+PILON POULET HALAL VRAC BELGE OrigineBelgique,pilon poulet halal vrac belge originebelgique,2,2,6011,False,fr_bd_903252617
+PITON ECHAFF 300MM,piton echaff 300mm,2,2,6063,False,fr_bd_842785719
+PLANCHER SUPERSTRUCTURE ( 100 % ) Finition brut,plancher superstructure 100 finition brut,2,2,604,False,fr_bd_903252617
+PLANELLE BET 500X50X200 CE,planelle bet 500x50x200 ce,2,2,6061,False,fr_bd_842785719
+PLAT - VIANDE BOVINE FRANCAISE VACHE LIMOUSINE,plat viande bovine francaise vache limousine,2,2,6011,False,fr_bd_903252617
+"PLAT, ORIGINE: BELGIQUE, TRACE :0000001, N°ABT:136, VACHE, BLANC BLEU BELGE",plat origine belgique trace 0000001 n abt 136 vache blanc bleu belge,2,2,6011,False,fr_bd_903252617
+PLATOIR A LISSER 35CM INOX DKR094,platoir a lisser 35cm inox dkr094,2,2,6061,False,fr_bd_842785719
+PLIAGE ALUMINIUM 10/10 ANODISE + PERFO (DETAIL 2 LARGEUR 350 Long : 2000 Dev : 442 Eco contribution,pliage aluminium 10 10 anodise perfo detail 2 largeur 350 long 2000 dev 442 eco contribution,2,2,60620000,False,fr_bd_842785719
+PLIAGE ALUMINIUM 10/10 ANODISE + PERFO (DETAIL 5) Long : 2000 Dev : 320 Eco contribution,pliage aluminium 10 10 anodise perfo detail 5 long 2000 dev 320 eco contribution,2,2,60620000,False,fr_bd_842785719
+PLIAGE ALUMINIUM 10/10 ANODISE + PINCE COUDE (DETAIL 5 Long : 2000 Dev : 170 Eco contribution,pliage aluminium 10 10 anodise pince coude detail 5 long 2000 dev 170 eco contribution,2,2,60620000,False,fr_bd_842785719
+PLIAGE ALUMINIUM 10/10 ANODISE + PLI ECRASE (DETAIL 5) Long : 2000 Dev : 170,pliage aluminium 10 10 anodise pli ecrase detail 5 long 2000 dev 170,2,2,6062,False,fr_bd_842785719
+PLIAGE GALVA 15/10 EXCEDENTAIRE (PATTES ANTI RELEVE DETAIL 3 Long : 3000 Dev : 227,pliage galva 15 10 excedentaire pattes anti releve detail 3 long 3000 dev 227,2,2,6062,False,fr_bd_842785719
+PLIAGE GALVA 15/10 EXCEDENTAIRE 30X30X30 Long : 4000 Dev : 90,pliage galva 15 10 excedentaire 30x30x30 long 4000 dev 90,2,2,6062,False,fr_bd_842785719
+PLIAGE GALVA 15/10 EXCEDENTAIRE OMEGA Long : 4000 Dev : 147,pliage galva 15 10 excedentaire omega long 4000 dev 147,2,2,6062,False,fr_bd_842785719
+PN CHANTIER INTERDIT 330X200 621209,pn chantier interdit 330x200 621209,2,2,6068,False,fr_bd_842785719
+PN DANGER TRAVAUX 330x200 621322,pn danger travaux 330x200 621322,2,2,6068,False,fr_bd_842785719
+POCHE A JOINT BLISTER,poche a joint blister,2,2,60620000,False,fr_bd_842785719
+POLYANE 15/100 RLX 150M2 3M PLIE 4 PAL 44 U,polyane 15 100 rlx 150m2 3m plie 4 pal 44 u,2,2,6061,False,fr_bd_842785719
+POULET PAC HALAL Origine:France,poulet pac halal origine france,2,2,6011,False,fr_bd_903252617
+POULET PACHALAL 1200G,poulet pachalal 1200g,2,2,6011,False,fr_bd_903252617
+POULET PACHALAL 1300G,poulet pachalal 1300g,2,2,6011,False,fr_bd_903252617
+POUR PANNEAUX FIBRE CIMENT POUR SYSTEME UNI RIVET 11MM,pour panneaux fibre ciment pour systeme uni rivet 11mm,2,2,6063,False,fr_bd_842785719
+"PREGYTHERM R1,15 10+40 2,5X1,2M",pregytherm r1 15 10 40 2 5x1 2m,2,2,6062,False,fr_bd_842785719
+PRESTONETT FIN ENDUIT EN POUDRE POUR FINITION INTERIEURE SAC DE 25KG,prestonett fin enduit en poudre pour finition interieure sac de 25kg,2,2,607,False,fr_bd_509118329
+"PROF 1/4 RD FERME PVC ROG8Ql 8MM ROG801 2,5ML BLANC",prof 1 4 rd ferme pvc rog8ql 8mm rog801 2 5ml blanc,2,2,60620000,False,fr_bd_842785719
+"PROMACURE S -Cure des bétons,phase solvant -BIDON DE 20 LITRES",promacure s cure des betons phase solvant bidon de 20 litres,2,2,6063,False,fr_bd_903252617
+Pack Service Assurance Casse Vol Calendaire,pack service assurance casse vol calendaire,2,2,6063,False,fr_bd_844858571 | fr_bd_903252617
+Pain Chocolat,pain chocolat,2,2,606100,False,fr_bd_844858571
+Palette HMFC ciments 95x115 cm,palette hmfc ciments 95x115 cm,2,2,6063,False,fr_bd_842785719
+Passerelle( avec ethernet),passerelle avec ethernet,2,2,607,False,fr_bd_914837463
+"Planete au Naturel Huile de Coco Bio - 500 ml - Vierge, Pure et Biologique Végétale",planete au naturel huile de coco bio 500 ml vierge pure et biologique vegetale,2,2,60630000,False,fr_bd_844858571
+"Plaque de platre BA13 Placoflam A2 2,5x1,2m R=0,04 m2.k/w",plaque de platre ba13 placoflam a2 2 5x1 2m r 0 04 m2 k w,2,2,6061,False,fr_bd_842785719
+Pov l) bhon(PAc),pov l bhon pac,2,2,60610000,False,fr_bd_903252617
+Prestation de sous traitance,prestation de sous traitance,2,2,604,False,fr_bd_903252617
+Prototypes,prototypes,2,2,6063,False,fr_bd_842785719
+R fmi Cops,r fmi cops,2,2,607,False,fr_bd_903252617
+RACINE fictive pour établir RESA ou CONTRAT de consommables,racine fictive pour etablir resa ou contrat de consommables,2,2,6068,False,fr_bd_903252617
+RAIL 48 3ML 10U/P,rail 48 3ml 10u p,2,2,6061,False,fr_bd_842785719
+RAIL DEPART ALU 150MM 2.5ML LE ML,rail depart alu 150mm 2 5ml le ml,2,2,6062,False,fr_bd_842785719
+RECHERCHE DE PANNE,recherche de panne,2,2,6068,False,fr_bd_903252617
+REGLAGE DES BRAS,reglage des bras,2,2,6062,False,fr_bd_903252617
+ROBOT FOND ROBOTCLEAN ONE MAX 10X6M,robot fond robotclean one max 10x6m,2,2,606200,False,fr_bd_509118329
+ROND A BETON TOR HLE FE5005 6MM 3M,rond a beton tor hle fe5005 6mm 3m,2,2,6061,False,fr_bd_842785719
+RONDELLE POINT FIXE ROUGE UNI RIVET,rondelle point fixe rouge uni rivet,2,2,6063,False,fr_bd_842785719
+Rabot à béton essence,rabot a beton essence,2,2,6063,False,fr_bd_903252617
+Raccordement de I'ensemble + essais,raccordement de i ensemble essais,2,2,6061,False,fr_bd_842785719
+Rampe finition balayée (Forfaitaire),rampe finition balayee forfaitaire,2,2,60620000,False,fr_bd_903252617

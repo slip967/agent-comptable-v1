@@ -1,0 +1,501 @@
+﻿article_source,normalized_label,invoice_count,line_occurrences,sample_account,already_in_base,partitions
+CUISSE DE POULET FERMIER HALAL,cuisse de poulet fermier halal,211,314,6011,False,fr_bd_519665103
+BASSE SANS POITRINE DE VEAU,basse sans poitrine de veau,184,247,6011,False,fr_bd_519665103
+FILET DE POULET FERMIER HALAL,filet de poulet fermier halal,167,167,6011,False,fr_bd_519665103
+COQUELET HALAL,coquelet halal,159,162,6011,False,fr_bd_519665103
+CUISSE POULET HALAL CEE 10KG,cuisse poulet halal cee 10kg,135,135,6011,False,fr_bd_519665103
+POULET PAC HALAL,poulet pac halal,130,180,6011,False,fr_bd_519665103
+POULET FERMIER HALAL PAC,poulet fermier halal pac,124,149,6011,False,fr_bd_519665103
+FILET DE POULET HALAL CEE,filet de poulet halal cee,116,116,6011,False,fr_bd_519665103
+CARRE DE VEAU SANS ROGNONS,carre de veau sans rognons,109,122,6011,False,fr_bd_519665103
+FILET DE DINDE HALAL,filet de dinde halal,107,107,6011,False,fr_bd_519665103
+FILET DE POULET HALAL UE,filet de poulet halal ue,103,103,6011,False,fr_bd_519665103
+CUISSE DE POULET HALAL UE 10KG,cuisse de poulet halal ue 10kg,96,101,6011,False,fr_bd_519665103
+CRISTALI 50CL PET,cristali 50cl pet,93,93,6068,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+PILONS DE POULET ID HALAL,pilons de poulet id halal,90,92,6011,False,fr_bd_519665103
+CHICKEN WINGS HALAL,chicken wings halal,89,92,6011,False,fr_bd_519665103
+CRISTALINE 50CL P/24,cristaline 50cl p 24,78,92,6068,False,fr_bd_880517875
+POMME DE TERRE GRENAILLE,pomme de terre grenaille,78,79,6011,False,fr_bd_519665103
+SPICY HALAL,spicy halal,78,78,6011,False,fr_bd_519665103
+FOIE DE POULET CEE HALAL,foie de poulet cee halal,76,76,6011,False,fr_bd_519665103
+FOIE DE POULET HALAL UE,foie de poulet halal ue,76,76,6011,False,fr_bd_519665103
+OEUF COQUILLE TEINTE GROS 63/73 CT 360,oeuf coquille teinte gros 63 73 ct 360,75,75,6011,False,fr_bd_890233000
+BEURRE GD TOURAGE FLECHARD CT 5X2KG,beurre gd tourage flechard ct 5x2kg,74,74,6011,False,fr_bd_890233000
+AGNEAU MOINS DE 12 MOIS,agneau moins de 12 mois,73,103,6011,False,fr_bd_519665103
+SUCRE CRISTAL FIN SAC 25KG,sucre cristal fin sac 25kg,72,72,601,False,fr_bd_880517875
+FARINE LABEL ROUGE L EMOTION 100 % IDF SAC 25 KG,farine label rouge l emotion 100 idf sac 25 kg,71,73,6011,False,fr_bd_890233000
+BASSE COTE VIANDE HALLAL,basse cote viande hallal,69,104,6011,False,fr_bd_519665103
+PILON DE POULET ID HALAL,pilon de poulet id halal,68,72,6011,False,fr_bd_519665103
+CRISTAL T65 25KG,cristal t65 25kg,68,71,6011,False,fr_bd_880517875
+LAIT UHT 1/2 ECREME BRIQ PACK 12X1L,lait uht 1 2 ecreme briq pack 12x1l,67,67,6011,False,fr_bd_880517875 | fr_bd_890233000
+BANANE,banane,65,67,601,False,fr_bd_880517875 | fr_bd_890233000
+POULET PAC HALAL CEE,poulet pac halal cee,64,115,6011,False,fr_bd_519665103
+CHEVRE BUCHETTE 180G LA PIECE,chevre buchette 180g la piece,64,64,601,False,fr_bd_880517875
+AILE DE POULET HALAL UE,aile de poulet halal ue,63,63,6011,False,fr_bd_519665103
+FROMAGE BLANC 2.8%MG SEAU 5KG,fromage blanc 2 8 mg seau 5kg,63,63,6011,False,fr_bd_880517875 | fr_bd_890233000
+CHORIZO TR BQ 500G,chorizo tr bq 500g,62,62,6011,False,fr_bd_880517875 | fr_bd_890233000
+COCACOLA BOITE SLIM 33CL,cocacola boite slim 33cl,61,61,6068,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+DECRO,decro,60,60,6068,False,fr_bd_519665103
+EMMENTAL RAPE UE 1KG,emmental rape ue 1kg,60,60,6011,False,fr_bd_880517875 | fr_bd_890233000
+SAL ICEBERG MC PC DEMIPALX28 C1 ESESPAGNE,sal iceberg mc pc demipalx28 c1 esespagne,59,59,601,False,fr_bd_890233000
+EAU CRISTALINE PET 6X1.5L,eau cristaline pet 6x1 5l,58,58,6068,False,fr_bd_890233000
+PAIN CHOCOLAT BEURRE 75G *,pain chocolat beurre 75g,57,62,601,False,fr_bd_880517875
+BEURRE DOUX 82% BLOC 25KG,beurre doux 82 bloc 25kg,57,57,6011,False,fr_bd_880517875 | fr_bd_890233000
+CREME UHT 35% 1L MC BK AP,creme uht 35 1l mc bk ap,57,57,601,False,fr_bd_890233000
+SEL FIN DE 25 KG,sel fin de 25 kg,57,57,6011,False,fr_bd_880517875
+BEURRE SEC G.TOUR 2KG FLECH,beurre sec g tour 2kg flech,56,59,6011,False,fr_bd_890233000
+BLANC OEUF LIQUIDE FERME DU PRE 1KG,blanc oeuf liquide ferme du pre 1kg,56,56,6011,False,fr_bd_880517875 | fr_bd_890233000
+SAUMON FUME TRANCHE 800G,saumon fume tranche 800g,56,56,601,False,fr_bd_880517875
+CROISSANT BEURRE 65G *,croissant beurre 65g,55,57,601,False,fr_bd_880517875
+Vente LeParisien,vente leparisien,53,76,6068,False,fr_bd_880517875
+Vente EQUIPE SEM,vente equipe sem,53,58,6068,False,fr_bd_880517875
+AILES DE POULET HALAL CEE,ailes de poulet halal cee,51,52,6011,False,fr_bd_519665103
+Vente LP DIM,vente lp dim,51,51,6068,False,fr_bd_880517875
+CORDON DE VOLAILLE HALAL,cordon de volaille halal,50,50,6011,False,fr_bd_519665103
+JAUNE OEUF LIQUIDE FERME DU PRE 1KG,jaune oeuf liquide ferme du pre 1kg,50,50,6011,False,fr_bd_890233000
+LIPTON PECHE BTE 33CL SLIM,lipton peche bte 33cl slim,49,49,6068,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+VEAU CREPINE ORIGINE :FRANCE,veau crepine origine france,49,49,6011,False,fr_bd_519665103
+VEAU FOIE ORIGINE :PAYS-BAS,veau foie origine pays bas,49,49,6011,False,fr_bd_519665103
+JAVEL EXTRAIT 2.6% BIDON 5L,javel extrait 2 6 bidon 5l,48,48,6063,False,fr_bd_890233000
+GROSEILLE RGE 125G PAYS-BAS C1 PAYS BAS,groseille rge 125g pays bas c1 pays bas,47,47,601,False,fr_bd_890233000
+LEVURE LEVAMAX ECOPACK (30x500G) 15 KG,levure levamax ecopack 30x500g 15 kg,47,47,601,False,fr_bd_880517875
+POULET FERM. JAUNE PAC HALAL,poulet ferm jaune pac halal,47,47,6011,False,fr_bd_519665103
+CRISTALI 1.5L,cristali 1 5l,46,46,6068,False,fr_bd_880517875 | fr_bd_890233000
+EMMENTAL RAPE EXTRA FIN 1 KG UE,emmental rape extra fin 1 kg ue,45,47,601,False,fr_bd_880517875
+FOIE DE VEAU UE (V),foie de veau ue v,45,45,6011,False,fr_bd_519665103
+GÉSIER DE POULET CEE HALAL,gesier de poulet cee halal,45,45,6011,False,fr_bd_519665103
+JAMBON DD 16 TRANCHES LE PAQUET,jambon dd 16 tranches le paquet,45,45,601,False,fr_bd_880517875
+MAYONNAISE ALLEGEE GYMA 4.7KG,mayonnaise allegee gyma 4 7kg,45,45,601,False,fr_bd_880517875
+Vente EQUIPE DIM,vente equipe dim,44,45,6068,False,fr_bd_880517875
+BATONNETS FUME 1KG REF956,batonnets fume 1kg ref956,44,44,601,False,fr_bd_880517875
+SELEC PLATINE LR CRC 25KG,selec platine lr crc 25kg,44,44,6011,False,fr_bd_880517875
+VEAU FOIE,veau foie,44,44,607000,False,fr_bd_519665103
+COCA SANS SUCRES 33CL,coca sans sucres 33cl,43,43,6068,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+OEUF BLANC LIQ.1KG SERVIS OEUF-OR.FRANCE,oeuf blanc liq 1kg servis oeuf or france,43,43,601,False,fr_bd_880517875
+"PATE A TARTINER 2,5KG MC",pate a tartiner 2 5kg mc,43,43,6011,False,fr_bd_890233000
+PILON DE POULET HALAL UE,pilon de poulet halal ue,42,42,6011,False,fr_bd_519665103
+SACHETS 4 BAGUETTES VGDP x 500,sachets 4 baguettes vgdp x 500,42,42,60225,False,fr_bd_880517875
+AGNEAU,agneau,41,63,6011,False,fr_bd_519665103
+BEURRE TARTINABLE DOUX 1KG,beurre tartinable doux 1kg,41,41,601,False,fr_bd_880517875
+BUCHETTE MELANGE 850G GUSTINE,buchette melange 850g gustine,41,41,601,False,fr_bd_890233000
+CUISSE DE DINDE HALAL,cuisse de dinde halal,41,41,6011,False,fr_bd_519665103
+"LEVURE 500G*5 HIRONDELLE 2,5KG",levure 500g 5 hirondelle 2 5kg,41,41,6011,False,fr_bd_890233000
+CHAMPIGNON DE PARIS ECO+ 200G,champignon de paris eco 200g,40,49,601,False,fr_bd_890233000
+POMME DE TERRE QUARTIER,pomme de terre quartier,40,44,6011,False,fr_bd_519665103
+FOND PLIE RAINE OR/NOIR 13X4.5CM PQT 200,fond plie raine or noir 13x4 5cm pqt 200,40,40,6061,False,fr_bd_880517875 | fr_bd_890233000
+RUSTI CARACTERE SAC 25 KG,rusti caractere sac 25 kg,40,40,6011,False,fr_bd_890233000
+SUCRE CRISTAL SAC 25KG,sucre cristal sac 25kg,40,40,6011,False,fr_bd_880517875 | fr_bd_890233000
+REX BUCHERON SAC DE 25KG IREKS 111.3,rex bucheron sac de 25kg ireks 111 3,39,43,601,False,fr_bd_880517875
+PANÉS DE VOLAILLE CEE HALAL,panes de volaille cee halal,39,39,6011,False,fr_bd_519665103
+PILON DE POULET HALAL CEE,pilon de poulet halal cee,39,39,6011,False,fr_bd_519665103
+RUMSTEACK VIANDE HALLAL BLANC BLEU BELGE,rumsteack viande hallal blanc bleu belge,38,55,6011,False,fr_bd_519665103
+CORDON BLEU S/AT HALAL,cordon bleu s at halal,38,38,6011,False,fr_bd_519665103
+AGNEAU TETE ORIGINE :FRANCE,agneau tete origine france,37,37,6011,False,fr_bd_519665103
+COMPOTE PATIS.26% 5/1,compote patis 26 5 1,37,37,601,False,fr_bd_880517875
+OASIS TROPICAL SLIM BTE 33CL,oasis tropical slim bte 33cl,37,37,6068,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+VEAU CREPINE,veau crepine,37,37,607000,False,fr_bd_519665103
+VGDP SACH 1 BAGU X500,vgdp sach 1 bagu x500,37,37,60225,False,fr_bd_880517875
+AGNEAU FRESSURE ORIGINE :FRANCE,agneau fressure origine france,36,36,6011,False,fr_bd_519665103
+MARG BOMAR BRIOCHE INCORP PAIN 500G P/20,marg bomar brioche incorp pain 500g p 20,36,36,6011,False,fr_bd_880517875
+MYRTILLE BQ 125G PEROU C1 PEROU,myrtille bq 125g perou c1 perou,36,36,6011,False,fr_bd_890233000
+POULET ESCALOPE CRU 190G X10KG HALAL,poulet escalope cru 190g x10kg halal,36,36,601,False,fr_bd_880517875
+RIOBA ABC ORANGE TO 25CL,rioba abc orange to 25cl,36,36,6068,False,fr_bd_880517875 | fr_bd_890233000
+RUMSTEACK BLANC BLEU BELGE VIANDE HALLAL,rumsteack blanc bleu belge viande hallal,35,54,6011,False,fr_bd_519665103
+CUBES DE BLEU 14X14MM 1.3KG SURGELE IQF,cubes de bleu 14x14mm 1 3kg surgele iqf,35,35,601,False,fr_bd_880517875
+EMMENTAL TRANCHE 15x5 1KG,emmental tranche 15x5 1kg,34,34,601,False,fr_bd_880517875
+HUILE D'OLIVE EXTRA VIERGE 5L,huile d olive extra vierge 5l,34,34,601,False,fr_bd_880517875
+LAIT 1/2 ECREME FRANCAIS P/6 UHT,lait 1 2 ecreme francais p 6 uht,34,34,601,False,fr_bd_880517875
+LARDONS NATURES 1KG MC,lardons natures 1kg mc,34,34,6011,False,fr_bd_890233000
+VEAU CREPINE ORIGINE :FRANCE TRACE : 0000001 N° ABT : FR,veau crepine origine france trace 0000001 n abt fr,33,35,6011,False,fr_bd_519665103
+BEURRE SEC TOURAGE 1KG FLECHAR,beurre sec tourage 1kg flechar,33,34,6011,False,fr_bd_890233000
+CHORIZO TRANCHE 1KG SURGELE DIAM 42,chorizo tranche 1kg surgele diam 42,33,33,601,False,fr_bd_880517875
+MOZZARELLA COSSETTE 2KG,mozzarella cossette 2kg,33,33,601,False,fr_bd_880517875
+CREME MASCARPONE 40%MG POT 500G,creme mascarpone 40 mg pot 500g,32,32,6011,False,fr_bd_890233000
+CREPINE VEAU,crepine veau,32,32,6011,False,fr_bd_519665103
+DONUTS FILET POULET,donuts filet poulet,32,32,6011,False,fr_bd_519665103
+FRAISE BQ 500G BELGIQUE C1BELGIQUE,fraise bq 500g belgique c1belgique,32,32,601,False,fr_bd_880517875 | fr_bd_890233000
+ORANGINA SLIM BOITE JAUN 33CL,orangina slim boite jaun 33cl,32,32,6068,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+BASSE SANS POITRINE DE VEAU - VIANDE HALLAL,basse sans poitrine de veau viande hallal,31,54,6011,False,fr_bd_519665103
+LAIT UHT 1/2ECR 1L PPX BK (D,lait uht 1 2ecr 1l ppx bk d,31,31,601,False,fr_bd_890233000
+CHEVREAU HALAL,chevreau halal,30,32,6011,False,fr_bd_519665103
+100 SACS DE REGROUPEMENT,100 sacs de regroupement,30,30,60225,False,fr_bd_890233000
+ABRICOT OREILLONS 3/1 BROVER,abricot oreillons 3 1 brover,30,30,6061,False,fr_bd_880517875
+AROME VANILLE GOURMET BTLE 1L,arome vanille gourmet btle 1l,30,30,6011,False,fr_bd_880517875 | fr_bd_890233000
+BASSE COTE,basse cote,30,30,6011,False,fr_bd_519665103
+Commission sur vente EQUIPE SEM,commission sur vente equipe sem,30,30,6068,False,fr_bd_880517875
+MC OLIV. VERTES RONDELLE A10,mc oliv vertes rondelle a10,30,30,601,False,fr_bd_890233000
+TESTICULE AGNEAU,testicule agneau,30,30,6011,False,fr_bd_519665103
+"CREME FRAICHE 15%,DELISSE,202G",creme fraiche 15 delisse 202g,29,63,601,False,fr_bd_890233000
+CASQUE AGNEAU,casque agneau,29,35,6011,False,fr_bd_519665103
+BUN'N'ROLL BF PAC SURG CT 50X85G,bun n roll bf pac surg ct 50x85g,29,30,6011,False,fr_bd_890233000
+AGNEAU CREPINE,agneau crepine,29,29,607000,False,fr_bd_519665103
+AMANDE POUDRE 10KG,amande poudre 10kg,29,29,601,False,fr_bd_880517875
+CONCOMBRE,concombre,29,29,601,False,fr_bd_880517875 | fr_bd_890233000
+CUISSE POULET HALAL CEE 10KG origine : NL,cuisse poulet halal cee 10kg origine nl,29,29,6071,False,fr_bd_519665103
+*SUCRE GRAIN N6 BS SAC 5KG,sucre grain n6 bs sac 5kg,28,28,601,False,fr_bd_890233000
+CARTH'AGRUME CITRON 1L,carth agrume citron 1l,28,28,6061,False,fr_bd_880517875
+FRESSURE AGNEAU PIECE provenan,fressure agneau piece provenan,28,28,6011,False,fr_bd_519665103
+GARNITURE PIZZA 4/4,garniture pizza 4 4,28,28,601,False,fr_bd_880517875
+L'EQUIPE SEMAINE,l equipe semaine,28,28,6068,False,fr_bd_880517875
+LEVURE BOULANGERE,levure boulangere,28,28,6011,False,fr_bd_890233000
+OLIVE VERTE RONDELLE BTE 3/1,olive verte rondelle bte 3 1,28,28,6011,False,fr_bd_880517875 | fr_bd_890233000
+POIRE 3/1,poire 3 1,28,28,601,False,fr_bd_880517875
+POULET FERMIER JAUNE PAC HALAL,poulet fermier jaune pac halal,28,28,6011,False,fr_bd_519665103
+RUSTI CARACTERE EN 25 KG,rusti caractere en 25 kg,28,28,6011,False,fr_bd_890233000
+Vente Le JDD,vente le jdd,28,28,6068,False,fr_bd_880517875
+AGNEAU PANSE VERTE SALEE,agneau panse verte salee,27,27,607000,False,fr_bd_519665103
+CHAUSSON POMMES 100G *,chausson pommes 100g,27,27,601,False,fr_bd_880517875
+FOIE DE POULET HALAL,foie de poulet halal,27,27,6011,False,fr_bd_519665103
+GÉSIER DE POULET HALAL UE,gesier de poulet halal ue,27,27,6011,False,fr_bd_519665103
+OEUF 360 M PPX,oeuf 360 m ppx,27,27,601,False,fr_bd_890233000
+PATE PISTACHE COLOREE MANE 1KG,pate pistache coloree mane 1kg,27,27,601,False,fr_bd_880517875
+SCHWEPPES AGRUM SLIM 33CL,schweppes agrum slim 33cl,27,27,6068,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+CHOCOLAT BLANC 30% DGF CT 10KG,chocolat blanc 30 dgf ct 10kg,26,26,601,False,fr_bd_890233000
+Fourniture d'électricité,fourniture d electricite,26,26,6061,False,fr_bd_880517875 | fr_bd_890233000
+LARDONS FUMES ALLUMETTES,lardons fumes allumettes,26,26,601,False,fr_bd_890233000
+MC 500 BATONS 1.6KG 44%,mc 500 batons 1 6kg 44,26,26,601,False,fr_bd_890233000
+OEUF 360 G PPX,oeuf 360 g ppx,26,26,601,False,fr_bd_890233000
+OEUF LIQ. BLANC BD 5KG OVOTEAM,oeuf liq blanc bd 5kg ovoteam,26,26,601,False,fr_bd_880517875 | fr_bd_890233000
+ROSETTE DE LYON EN TRANCHE 500G,rosette de lyon en tranche 500g,26,26,601,False,fr_bd_880517875
+POULET PAC HALAL UE,poulet pac halal ue,25,36,6011,False,fr_bd_519665103
+FAR CAMPAILLETTE GRD SIECLE 25KG,far campaillette grd siecle 25kg,25,26,6011,False,fr_bd_880517875
+AGNEAU FRESSURE ORIGINE :FRANCE TRACE : 0000001 N° ABT : FR,agneau fressure origine france trace 0000001 n abt fr,25,25,6011,False,fr_bd_519665103
+CREPINE AGNEAU,crepine agneau,25,25,6011,False,fr_bd_519665103
+CUISSE DE POULET HALAL,cuisse de poulet halal,25,25,6011,False,fr_bd_519665103
+FRAISE 1K PLT C1 ESESPAGNE,fraise 1k plt c1 esespagne,25,25,601,False,fr_bd_880517875 | fr_bd_890233000
+FROM TARTINER NATURE 1KG MC,from tartiner nature 1kg mc,25,25,601,False,fr_bd_880517875 | fr_bd_890233000
+GRAINES DE MAIS DECOR Sac 500gr,graines de mais decor sac 500gr,25,25,6011,False,fr_bd_890233000 | fr_bd_915197842
+LAIT UHT 1/2ECR 1L PPX BK,lait uht 1 2ecr 1l ppx bk,25,25,601,False,fr_bd_890233000 | fr_bd_915197842
+LP VAL DE MARNE,lp val de marne,25,25,6068,False,fr_bd_880517875
+MARGARINE GOURMANDINE CROIS/FEUILL 5X2KG,margarine gourmandine crois feuill 5x2kg,25,25,6011,False,fr_bd_880517875 | fr_bd_890233000
+MINI CROISSANT 25G P/200 DELIFR 74953,mini croissant 25g p 200 delifr 74953,25,25,6011,False,fr_bd_880517875
+SAC PLAST BIO JAUNE 120X50X350 P/200,sac plast bio jaune 120x50x350 p 200,25,25,6063,False,fr_bd_880517875
+SPECULOS BRISURE MOULU 750 gr 64695,speculos brisure moulu 750 gr 64695,25,25,601,False,fr_bd_880517875
+SUCRE CALIBRE TRES FIN,sucre calibre tres fin,25,25,601,False,fr_bd_890233000
+VEAU FOIE ORIGINE :PAYS-BAS TRACE : 0000001 N° ABT : NL,veau foie origine pays bas trace 0000001 n abt nl,25,25,6011,False,fr_bd_519665103
+VEAU PIED ORIGINE :FRANCE,veau pied origine france,24,25,6011,False,fr_bd_519665103
+BEIGNET LONG MASCOT NATURE 90G/30 502558,beignet long mascot nature 90g 30 502558,24,24,601,False,fr_bd_880517875
+BOITE Forte 50 capsules,boite forte 50 capsules,24,24,6068,False,fr_bd_890233000
+CRISTAL SAC 20KG ARO,cristal sac 20kg aro,24,24,6011,False,fr_bd_890233000
+LOT DE 100 SACS DE REGROUPEMENT,lot de 100 sacs de regroupement,24,24,60225,False,fr_bd_890233000
+MPRO BOBINE 2P 450F X6,mpro bobine 2p 450f x6,24,24,6063,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+PERRIER BOITE SLIM 33CL,perrier boite slim 33cl,24,24,6068,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+SAUMON FUME TRANCHE S/PEAU,saumon fume tranche s peau,24,24,601,False,fr_bd_890233000
+ACTIMEL.NATURE.SUCRE,actimel nature sucre,23,32,601,False,fr_bd_880517875
+"CREME FRAICHE 15% 500G,DELISSE",creme fraiche 15 500g delisse,23,26,601,False,fr_bd_890233000
+AGNEAU TESTICULES - ORIGINE :FRANCE,agneau testicules origine france,23,23,6011,False,fr_bd_519665103
+CREME 35% (PATISSIERE) UHT 1L,creme 35 patissiere uht 1l,23,23,6011,False,fr_bd_890233000
+EMMENTAL TRANCHE 15x5 1 KG,emmental tranche 15x5 1 kg,23,23,601,False,fr_bd_880517875
+GRAINE FLOCON AVOINE SAC 1KG,graine flocon avoine sac 1kg,23,23,6011,False,fr_bd_880517875 | fr_bd_890233000
+JAMBON CUIT SUP DD VPF BQ 16X45G,jambon cuit sup dd vpf bq 16x45g,23,23,6011,False,fr_bd_880517875 | fr_bd_890233000
+LEVURE SPRINGER CT 20X500G,levure springer ct 20x500g,23,23,6011,False,fr_bd_890233000
+MARG BOMAR FEUILLETAGE PLAQUE 5X2KG,marg bomar feuilletage plaque 5x2kg,23,23,601,False,fr_bd_880517875
+MINI PAIN CHOC ARTISAN FAI CRU 200X28G,mini pain choc artisan fai cru 200x28g,23,23,601,False,fr_bd_880517875 | fr_bd_890233000
+NOIX INVALIDES 1KG ARLEQUIN,noix invalides 1kg arlequin,23,23,6061,False,fr_bd_880517875
+ORIGINALE T65,originale t65,23,23,6011,False,fr_bd_890233000
+PUREE MANGUE 100% FRUIT MC,puree mangue 100 fruit mc,23,23,601,False,fr_bd_890233000
+"S/KRAFT BRUN AMBIANT 80G,1P",s kraft brun ambiant 80g 1p,23,23,601,False,fr_bd_890233000
+VANILLE AROME ARTIFICIEL PET 1L,vanille arome artificiel pet 1l,23,23,6061,False,fr_bd_880517875
+"LIQ.VAISS.MAIN PX SENS,A,750ML",liq vaiss main px sens a 750ml,22,29,6068,False,fr_bd_890233000
+BOUQUET DE MACHE,bouquet de mache,22,27,601,False,fr_bd_890233000
+FRAMBOISE PANIER DU PRIMEUR BAR,framboise panier du primeur bar,22,25,601,False,fr_bd_890233000
+COMCOMBRE GROS,comcombre gros,22,23,601,False,fr_bd_880517875
+AGNEAU FRESSURE,agneau fressure,22,22,6011,False,fr_bd_519665103
+BOITE Ristretto 50 capsules,boite ristretto 50 capsules,22,22,6068,False,fr_bd_890233000
+CHEVRE BUCHE KG 50% MG,chevre buche kg 50 mg,22,22,601,False,fr_bd_890233000
+Commission sur vente LP DIM,commission sur vente lp dim,22,22,6068,False,fr_bd_880517875
+Commission sur vente LeParisien,commission sur vente leparisien,22,22,6068,False,fr_bd_880517875
+FONDANT SEAU EN 15 KG,fondant seau en 15 kg,22,22,6061,False,fr_bd_880517875
+FRAMBOISE 125G ESPAGNE C1ESPAGNE,framboise 125g espagne c1espagne,22,22,601,False,fr_bd_880517875 | fr_bd_890233000
+MC POUDRE D'AMANDE BLANCHE 5KG,mc poudre d amande blanche 5kg,22,22,601,False,fr_bd_890233000
+MELANGE 5 GRAINES 10KG,melange 5 graines 10kg,22,22,6061,False,fr_bd_880517875
+MINI BEIGNET CACAO/NOISETTE 21G *,mini beignet cacao noisette 21g,22,22,601,False,fr_bd_880517875
+NAPPAGE BLOND PRO SEAU 14 KG,nappage blond pro seau 14 kg,22,22,601,False,fr_bd_880517875
+OLIVES VERTE RONDELLE 3/1,olives verte rondelle 3 1,22,22,601,False,fr_bd_880517875
+POULET FILET HALAL CRU 190G SURG 5KG,poulet filet halal cru 190g surg 5kg,22,22,601,False,fr_bd_880517875 | fr_bd_890233000
+SAC PLAST BIO BEIGE 230X40X400 P/200,sac plast bio beige 230x40x400 p 200,22,22,6063,False,fr_bd_880517875
+SAN PELL BOITE SLIM 33CL,san pell boite slim 33cl,22,22,6068,False,fr_bd_890233000 | fr_bd_915197842
+SAUMON FUME ATLANTIQU TRANCHE BANDE 800G,saumon fume atlantiqu tranche bande 800g,22,22,6011,False,fr_bd_880517875 | fr_bd_890233000
+CUISSEAU DE VEAU,cuisseau de veau,21,28,6011,False,fr_bd_519665103
+SELLE AGNEAU,selle agneau,21,26,6011,False,fr_bd_519665103
+"POINTE BRIE,LES CROISES,200G",pointe brie les croises 200g,21,25,601,False,fr_bd_890233000
+AGNEAU TETE KG,agneau tete kg,21,22,607000,False,fr_bd_519665103
+AGNEAU FRESSURE KG,agneau fressure kg,21,21,607000,False,fr_bd_519665103
+BOMBE GRAISSE UNL 600ML PIECE,bombe graisse unl 600ml piece,21,21,6011,False,fr_bd_880517875
+CAMPAILLETTE POINTE PAYSANNE 25KG,campaillette pointe paysanne 25kg,21,21,6011,False,fr_bd_880517875
+FRAISE PLT 1KG ESP C1 ESPAGNE,fraise plt 1kg esp c1 espagne,21,21,601,False,fr_bd_890233000
+"FROMAGE BLC 2,8% 5KG MC",fromage blc 2 8 5kg mc,21,21,6011,False,fr_bd_890233000
+Farine Sérénité Label Rouge T65,farine serenite label rouge t65,21,21,6011,False,fr_bd_890233000
+GÉSIER DE POULET HALAL,gesier de poulet halal,21,21,6011,False,fr_bd_519665103
+MINI BEIGNET CHOCO BLANC 21G *,mini beignet choco blanc 21g,21,21,601,False,fr_bd_880517875
+MINI PAIN RAIS FAI CRU ARTISAN 200X30G,mini pain rais fai cru artisan 200x30g,21,21,6011,False,fr_bd_890233000
+MINUTE MAID MULTIFR SLIM 33CL,minute maid multifr slim 33cl,21,21,6068,False,fr_bd_880517875 | fr_bd_890233000
+MURE BQ 125G PORTUGAL C1PORTUGAL,mure bq 125g portugal c1portugal,21,21,6011,False,fr_bd_880517875 | fr_bd_890233000
+NOISETTE GRISE POUDRE BRUT 1KG,noisette grise poudre brut 1kg,21,21,6011,False,fr_bd_880517875
+OEUF COQUILLE TEINTE MOYEN 53/63 CT 360,oeuf coquille teinte moyen 53 63 ct 360,21,21,6061,False,fr_bd_880517875 | fr_bd_890233000
+PHYSALIS 100G BQ12 C1 COCOLOMBIE,physalis 100g bq12 c1 cocolombie,21,21,6011,False,fr_bd_880517875 | fr_bd_890233000
+SPECIAL COMPLET 25KG,special complet 25kg,21,21,6011,False,fr_bd_880517875
+"PARMIGIANO REGGIANO ,60G",parmigiano reggiano 60g,20,32,601,False,fr_bd_890233000
+PLAT BLANC BLEU BELGE VIANDE HALLAL,plat blanc bleu belge viande hallal,20,26,6011,False,fr_bd_519665103
+FARINE GRUAU DELICE TYPE 65 SAC 25 KG,farine gruau delice type 65 sac 25 kg,20,21,6011,False,fr_bd_890233000
+TOMATE CERISE ROUGE ECO+,tomate cerise rouge eco,20,21,6011,False,fr_bd_890233000
+AGNEAU PANSE VERTE SALEE ORIGINE :FRANCE,agneau panse verte salee origine france,20,20,6011,False,fr_bd_519665103
+BEURRE CUBE 25 KG FRIESLAND CAMPINA,beurre cube 25 kg friesland campina,20,20,601,False,fr_bd_880517875
+CHOC LAIT 33% DGF 10KG,choc lait 33 dgf 10kg,20,20,601,False,fr_bd_880517875 | fr_bd_890233000
+CRISTALINE 50 CL X 24,cristaline 50 cl x 24,20,20,601,False,fr_bd_880517875
+DONUT DE FILET DE POULET,donut de filet de poulet,20,20,6011,False,fr_bd_519665103
+FANTA ORANGE BTE SLIM 33CL,fanta orange bte slim 33cl,20,20,6068,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+LAIT 1/2 ECREME FRANCAIS X6 UHT,lait 1 2 ecreme francais x6 uht,20,20,6061,False,fr_bd_880517875
+MINUTE MAID POMME SLIM 33CL,minute maid pomme slim 33cl,20,20,6068,False,fr_bd_880517875 | fr_bd_890233000
+OEUF BLANC LIQUIDE 1L SERVIS OEUF,oeuf blanc liquide 1l servis oeuf,20,20,601100,False,fr_bd_880517875
+PANÉ DE VOLAILLE HALAL UE MILANESE,pane de volaille halal ue milanese,20,20,6011,False,fr_bd_519665103
+PATE DE PISTACH 1KG CRESCO,pate de pistach 1kg cresco,20,20,6011,False,fr_bd_880517875 | fr_bd_890233000
+PHYSALIS BQ 100g COLOMBIE,physalis bq 100g colombie,20,20,6011,False,fr_bd_880517875 | fr_bd_890233000
+SAC KRAFT AVEC ANSE 22+10X28 P/250,sac kraft avec anse 22 10x28 p 250,20,20,6068,False,fr_bd_880517875
+SEL FIN SECHE FOURNISEL SAC 25KG,sel fin seche fournisel sac 25kg,20,20,6011,False,fr_bd_880517875 | fr_bd_890233000
+PLAT VIANDE HALLAL BLANC BLEU BELGE,plat viande hallal blanc bleu belge,19,24,6011,False,fr_bd_519665103
+CARRE DE VEAU SANS ROGNONS - VIANDE HALLAL,carre de veau sans rognons viande hallal,19,23,6011,False,fr_bd_519665103
+SACS PAIN 1F H.700MM (X50),sacs pain 1f h 700mm x50,19,23,6025,False,fr_bd_890233000
+EAU CRISTALINE PET 24X50CL,eau cristaline pet 24x50cl,19,22,6068,False,fr_bd_880517875
+"EAU DE SOURCE,6X1.5L CRISTALINE",eau de source 6x1 5l cristaline,19,20,6068,False,fr_bd_890233000
+20 RLX 57X40X12 THERM SBPA,20 rlx 57x40x12 therm sbpa,19,19,6063,False,fr_bd_880517875 | fr_bd_890233000
+AMANDE POUDRE BLANCHE CT 10KG,amande poudre blanche ct 10kg,19,19,6011,False,fr_bd_880517875 | fr_bd_890233000
+Acheminement d'électricité,acheminement d electricite,19,19,6061,False,fr_bd_890233000
+BOEUF QUEUE SOUS-VIDE ORIGINE :FRANCE,boeuf queue sous vide origine france,19,19,6011,False,fr_bd_519665103
+CREME FRAICHE EPAISSE 30% 5KG ISIGNY,creme fraiche epaisse 30 5kg isigny,19,19,601,False,fr_bd_880517875
+CREME VEGETALE SWEET SUCRE 1L P/12,creme vegetale sweet sucre 1l p 12,19,19,601,False,fr_bd_880517875
+Contribution Tarifaire d'Acheminement électricité (CTA),contribution tarifaire d acheminement electricite cta,19,19,6061,False,fr_bd_890233000
+MPRO 50 BTE PATIS BLANC 18X8CM,mpro 50 bte patis blanc 18x8cm,19,19,6063,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+PUREE PASSION 100% MC 1KG,puree passion 100 mc 1kg,19,19,601,False,fr_bd_890233000 | fr_bd_915197842
+SAL ICEBERG MC DEMIPAL PC280 C1 ESESPAGNE,sal iceberg mc demipal pc280 c1 esespagne,19,19,601,False,fr_bd_890233000
+SAL ICEBERG MC PC DEMIPALX28,sal iceberg mc pc demipalx28,19,19,6011,False,fr_bd_890233000
+SAUMON FUME 600/900G ARO,saumon fume 600 900g aro,19,19,601,False,fr_bd_890233000
+TENDER CE HALAL,tender ce halal,19,19,6011,False,fr_bd_519665103
+VEAU PIED,veau pied,19,19,607000,False,fr_bd_519665103
+VEAU QUEUE SOUS-VIDE ORIGINE :FRANCE,veau queue sous vide origine france,19,19,6011,False,fr_bd_519665103
+"50 LINGETTES MULTI USAGE, ECO+",50 lingettes multi usage eco,18,33,6068,False,fr_bd_890233000
+CULOTTE AGNEAU,culotte agneau,18,22,6011,False,fr_bd_519665103
+AGNEAU TESTICULES,agneau testicules,18,18,607000,False,fr_bd_519665103
+AGNEAU TETE ORIGINE :FRANCE TRACE : 0000001 N° ABT : FR,agneau tete origine france trace 0000001 n abt fr,18,18,6011,False,fr_bd_519665103
+BEURRE DOUX CUBE 25KG,beurre doux cube 25kg,18,18,601,False,fr_bd_890233000
+BEURRE DX PAT BLOC 10KG FLECH,beurre dx pat bloc 10kg flech,18,18,6011,False,fr_bd_890233000
+CRISTAL SAC 2OKG ARO,cristal sac 2okg aro,18,18,601,False,fr_bd_890233000
+ESSUIE MAINS MAXI 2P BLC 19X22 BOB X6,essuie mains maxi 2p blc 19x22 bob x6,18,18,6063,False,fr_bd_890233000
+FILET POULET HALAL +170GR IQF,filet poulet halal 170gr iqf,18,18,6011,False,fr_bd_890233000
+GRIOTTE DENOYAUTEE DGF 1L,griotte denoyautee dgf 1l,18,18,6011,False,fr_bd_890233000
+GROSEILLE RGE 125G FR C1 FRANCE,groseille rge 125g fr c1 france,18,18,6011,False,fr_bd_880517875 | fr_bd_890233000
+LARDONS FUME CRU VPF SS AT BQ 1KG,lardons fume cru vpf ss at bq 1kg,18,18,6011,False,fr_bd_880517875 | fr_bd_890233000
+MPRO 50 BTE PATIS BLANC 22X8CM,mpro 50 bte patis blanc 22x8cm,18,18,6063,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+POIRE WILLIAM DEMI SIROP DGF 3/1,poire william demi sirop dgf 3 1,18,18,6011,False,fr_bd_880517875 | fr_bd_890233000
+QUEUE BOEUF provenance FR,queue boeuf provenance fr,18,18,607,False,fr_bd_519665103
+QUEUE VEAU (V) provenance FR,queue veau v provenance fr,18,18,607,False,fr_bd_519665103
+RUSTI 6 CEREALES SAC 25 KG,rusti 6 cereales sac 25 kg,18,18,6011,False,fr_bd_890233000 | fr_bd_915197842
+FILET BLANC BLEU BELGE VIANDE HALLAL,filet blanc bleu belge viande hallal,17,19,6011,False,fr_bd_519665103
+50 SAC KRAFT S PLANETE 32X16X39,50 sac kraft s planete 32x16x39,17,17,6063,False,fr_bd_880517875
+ABRICOT SEC DES 8/10MM SAC 1KG,abricot sec des 8 10mm sac 1kg,17,17,601,False,fr_bd_890233000
+AILE DE POULET HALAL,aile de poulet halal,17,17,6011,False,fr_bd_519665103
+ARO ABRICOT PELE SIR LG 5/1,aro abricot pele sir lg 5 1,17,17,6011,False,fr_bd_890233000
+ARO DEMI-POIRES SIROP LG 5/1,aro demi poires sirop lg 5 1,17,17,6011,False,fr_bd_890233000
+CAGETTE 658X425X95 CART,cagette 658x425x95 cart,17,17,6063,False,fr_bd_890233000
+CORIANDRE,coriandre,17,17,601,False,fr_bd_880517875
+CORNE VERTE,corne verte,17,17,601,False,fr_bd_880517875
+Contribution Tarifaire d'Acheminement part distribution,contribution tarifaire d acheminement part distribution,17,17,6061,False,fr_bd_880517875
+DEMI.CARCASSE DE VEAU,demi carcasse de veau,17,17,6011,False,fr_bd_519665103
+GROSEILLE RGE 125G PAYS-BAS,groseille rge 125g pays bas,17,17,6011,False,fr_bd_890233000
+MINI BEIGNET CHOC NOISET.25G /140 520019,mini beignet choc noiset 25g 140 520019,17,17,601,False,fr_bd_880517875
+MINI LUNCH LENOTRE PAC X90,mini lunch lenotre pac x90,17,17,6011,False,fr_bd_880517875 | fr_bd_890233000
+MINI PIMENT VERT,mini piment vert,17,17,601,False,fr_bd_880517875
+MINUTE MAID ORANGE SLIM 33CL,minute maid orange slim 33cl,17,17,6068,False,fr_bd_880517875 | fr_bd_890233000
+OASIS POM/CASS/FRAM SLIM 33CL,oasis pom cass fram slim 33cl,17,17,6068,False,fr_bd_880517875 | fr_bd_890233000
+OLIVES VERTE RONDELLE 3/1 33644,olives verte rondelle 3 1 33644,17,17,601,False,fr_bd_880517875
+PUREE MANGUE 1KG RAVIFRUIT,puree mangue 1kg ravifruit,17,17,601,False,fr_bd_890233000
+RIOBA NECTAR ABRICOT TO 25CL,rioba nectar abricot to 25cl,17,17,607,False,fr_bd_880517875
+BASSE COTE BOEUF,basse cote boeuf,16,17,6011,False,fr_bd_519665103
+TOMATE RONDE MOYENNE,tomate ronde moyenne,16,17,601,False,fr_bd_880517875
+AGNEAU PANSE VERTE SALEE ORIGINE :FRANCE TRACE : 0000001 N° ABT : FR,agneau panse verte salee origine france trace 0000001 n abt fr,16,16,6011,False,fr_bd_519665103
+ARRIERE 8 COTES - VIANDE HALLAL BLANC BLEU BELGE,arriere 8 cotes viande hallal blanc bleu belge,16,16,6011,False,fr_bd_519665103
+ASSIETTE 9cm NOIR/OR CARTON,assiette 9cm noir or carton,16,16,6063,False,fr_bd_890233000
+BEIGNET MASCOTTE NATURE,beignet mascotte nature,16,16,601,False,fr_bd_890233000
+BEURRE DOUX LACTIQUE 82% BLOC 25KG,beurre doux lactique 82 bloc 25kg,16,16,6011,False,fr_bd_880517875 | fr_bd_890233000
+CORNICHONS VINAIGRE 3/1.80/119 BOCAL PLA,cornichons vinaigre 3 1 80 119 bocal pla,16,16,6061,False,fr_bd_880517875
+EMMENTAL 40 TRANCHES,emmental 40 tranches,16,16,6011,False,fr_bd_890233000
+FILET DE POULET HALAL CEE origine : NL,filet de poulet halal cee origine nl,16,16,6011,False,fr_bd_519665103
+FRAISE 500G BQ8 C1 BEBELGIQUE,fraise 500g bq8 c1 bebelgique,16,16,6011,False,fr_bd_890233000 | fr_bd_915197842
+GRAINE DE SESAME 1KG,graine de sesame 1kg,16,16,601,False,fr_bd_880517875
+JAMBON DD 16 TRANCHES VPF LE PAQUET,jambon dd 16 tranches vpf le paquet,16,16,601,False,fr_bd_880517875
+JAMBON SERRANO TRANCHE,jambon serrano tranche,16,16,6011,False,fr_bd_890233000
+L'EXPERT -1 AMELIORANT 25KG IREKS 002,l expert 1 ameliorant 25kg ireks 002,16,16,6068,False,fr_bd_880517875
+LE COMPLET CLASSIQUE SAC 25 KG,le complet classique sac 25 kg,16,16,6011,False,fr_bd_890233000 | fr_bd_915197842
+LES GRAINES DE MON MEUNIER SAC 10 KG,les graines de mon meunier sac 10 kg,16,16,6011,False,fr_bd_890233000
+LES GRAINES DE MON MEUNIER SAC 10KG,les graines de mon meunier sac 10kg,16,16,601,False,fr_bd_890233000
+Location Livebox Pro,location livebox pro,16,16,6062,False,fr_bd_890233000
+MAYONNAISE 5 LITRES,mayonnaise 5 litres,16,16,6011,False,fr_bd_890233000
+MC PRALIN AMANDE/NOISETTE 5KG,mc pralin amande noisette 5kg,16,16,6011,False,fr_bd_890233000 | fr_bd_915197842
+MINI CROISSANT FAI CRU ARTISAN 270X25G,mini croissant fai cru artisan 270x25g,16,16,6011,False,fr_bd_890233000
+MINUT MAID MULTFRT BT33CLX240S,minut maid multfrt bt33clx240s,16,16,6068,False,fr_bd_880517875 | fr_bd_890233000
+ROGNON BOEUF,rognon boeuf,16,16,6011,False,fr_bd_519665103
+TETE AGNEAU ECHAUDEES provenan,tete agneau echaudees provenan,16,16,6011,False,fr_bd_519665103
+COEUR DE ROMAINE SAC,coeur de romaine sac,15,23,601,False,fr_bd_880517875
+"NOIX CAJOU GRILL SALEE,TO,125G",noix cajou grill salee to 125g,15,20,601,False,fr_bd_890233000
+"LIQ.VAISSELLE ROMARIN,ARB,750M",liq vaisselle romarin arb 750m,15,19,6068,False,fr_bd_890233000
+COLLIER AGNEAU MOINS DE 12 MOIS,collier agneau moins de 12 mois,15,17,6011,False,fr_bd_519665103
+CAROTTE SACHET 2KG,carotte sachet 2kg,15,16,601,False,fr_bd_880517875
+COLESLAW MOUTARDE 320G,coleslaw moutarde 320g,15,16,601,False,fr_bd_890233000
+MAMIE NOVA CREME AMANDES 2X150G,mamie nova creme amandes 2x150g,15,16,601,False,fr_bd_890233000
+1000 ETUIS L EMOTION,1000 etuis l emotion,15,15,6025,False,fr_bd_890233000
+ABRICOT SIROP GRECE DGF BTE 3/1,abricot sirop grece dgf bte 3 1,15,15,6011,False,fr_bd_880517875
+BEIGNET MASCOTTE NATURE LONG,beignet mascotte nature long,15,15,601,False,fr_bd_880517875
+CAROTTE ECO+ CAT-2- SACHET 2 KG,carotte eco cat 2 sachet 2 kg,15,15,6011,False,fr_bd_890233000
+CERVELLE VEAU UE (V),cervelle veau ue v,15,15,6011,False,fr_bd_519665103
+CONCOMBRE FROMAGE BLC 320G,concombre fromage blc 320g,15,15,601,False,fr_bd_890233000
+CREM.PATISSIERE CHAUD 5K ANCEL,crem patissiere chaud 5k ancel,15,15,601,False,fr_bd_890233000
+CREME MASCARPONE POT 500G,creme mascarpone pot 500g,15,15,601,False,fr_bd_890233000
+CROISSANT RMB 65G *,croissant rmb 65g,15,15,601,False,fr_bd_880517875
+Commission sur vente EQUIPE DIM,commission sur vente equipe dim,15,15,6068,False,fr_bd_880517875
+Contribution au Service Public de l'Electricité (CSPE),contribution au service public de l electricite cspe,15,15,6061,False,fr_bd_890233000
+EMMENTAL RAPE 1KG ARO,emmental rape 1kg aro,15,15,6011,False,fr_bd_890233000
+FILET DE DINDE CEE HALAL,filet de dinde cee halal,15,15,6013,False,fr_bd_519665103
+FILM ETIRABLE BOITE DISTRIB 45CMX300M,film etirable boite distrib 45cmx300m,15,15,6061,False,fr_bd_880517875 | fr_bd_890233000
+MARG BOMAR BRIOCHE INCORP PAIN 20X0.5KG,marg bomar brioche incorp pain 20x0 5kg,15,15,6061,False,fr_bd_880517875
+MINI BEIGNET SUCRE FAI SURG 70X19G,mini beignet sucre fai surg 70x19g,15,15,6011,False,fr_bd_890233000
+MURE 125G BQ12 C1 PTPORTUGAL,mure 125g bq12 c1 ptportugal,15,15,601,False,fr_bd_890233000 | fr_bd_915197842
+NOISETTE AVEC PEAU DECORT 1KG 13/15,noisette avec peau decort 1kg 13 15,15,15,601,False,fr_bd_880517875
+OLIVES NOIRE RONDELLE 3/1 A10,olives noire rondelle 3 1 a10,15,15,6061,False,fr_bd_880517875
+PUREE PASSION 1KG RAVIFRUIT,puree passion 1kg ravifruit,15,15,601,False,fr_bd_890233000
+QUEUE BOEUF FRAICHE,queue boeuf fraiche,15,15,6011,False,fr_bd_519665103
+REX BUCHERON 50% IREKS SAC 25KG,rex bucheron 50 ireks sac 25kg,15,15,6011,False,fr_bd_880517875 | fr_bd_890233000
+ROSETTE 50T 2X250G MC,rosette 50t 2x250g mc,15,15,601,False,fr_bd_890233000
+SACS KRAFT AVEC ANSE 22+10X28 X250,sacs kraft avec anse 22 10x28 x250,15,15,606200,False,fr_bd_880517875
+SUCRE GRAIN GROS N°6 10KG C25,sucre grain gros n 6 10kg c25,15,15,6061,False,fr_bd_880517875
+OIGNON JAUNE FILET 1,oignon jaune filet 1,14,19,601,False,fr_bd_880517875
+BEURRE 1/2 SEL PAYSAN BRETON,beurre 1 2 sel paysan breton,14,16,601,False,fr_bd_890233000
+AROME PATE PISTACHE COLORE,arome pate pistache colore,14,14,6011,False,fr_bd_890233000
+AVANT DROIT 5 COTES - VIANDE HALLAL BLANC BLEU BELGE,avant droit 5 cotes viande hallal blanc bleu belge,14,14,6011,False,fr_bd_519665103
+BEIGNET LONG NATURE FAI SURG 30X90G,beignet long nature fai surg 30x90g,14,14,6011,False,fr_bd_890233000
+BOITE BLANCHE 18X8 P/50,boite blanche 18x8 p 50,14,14,6063,False,fr_bd_880517875
+BOITE Decaffeinato 50 capsules,boite decaffeinato 50 capsules,14,14,6068,False,fr_bd_890233000
+BOITE PAT BLANCHE VERNI 18X8 PQT 50,boite pat blanche verni 18x8 pqt 50,14,14,6063,False,fr_bd_880517875 | fr_bd_890233000
+BRISURE CREPE PUR BEURRE 2.5KG (pailleté feuilletine),brisure crepe pur beurre 2 5kg paillete feuilletine,14,14,601,False,fr_bd_880517875
+CREME 35% LESCURE 1L P/6,creme 35 lescure 1l p 6,14,14,601,False,fr_bd_880517875
+EMMENTAL TRANCHETTE 5X15CM BQ 1KG,emmental tranchette 5x15cm bq 1kg,14,14,601,False,fr_bd_880517875 | fr_bd_890233000
+FILET DE POULET HALAL UE origine : NL,filet de poulet halal ue origine nl,14,14,6011,False,fr_bd_519665103
+FROMAGE CREME TARTIMALIN BQ 1KG,fromage creme tartimalin bq 1kg,14,14,6011,False,fr_bd_880517875 | fr_bd_890233000
+LAIT UHT 1/2 ECREME FR BRIQ PACK 12X1L,lait uht 1 2 ecreme fr briq pack 12x1l,14,14,6011,False,fr_bd_890233000
+LAPIN X4 HALAL,lapin x4 halal,14,14,607,False,fr_bd_519665103
+MC PALET CHOCO BLANC 30% 5KG,mc palet choco blanc 30 5kg,14,14,6011,False,fr_bd_890233000
+MG 60% CUIS/PAT PLQ 500G ARO,mg 60 cuis pat plq 500g aro,14,14,6011,False,fr_bd_890233000
+MINI BEIGNET CARAMEL FAI 70X25G,mini beignet caramel fai 70x25g,14,14,601,False,fr_bd_890233000
+MINI BEIGNET CHOC NOISET FAI SURG 70X25G,mini beignet choc noiset fai surg 70x25g,14,14,6011,False,fr_bd_890233000
+MIRABELLES DE LORRAINE 2/1,mirabelles de lorraine 2 1,14,14,601,False,fr_bd_880517875
+PATE DE SPECULOS 1.6KG LOTUS,pate de speculos 1 6kg lotus,14,14,601,False,fr_bd_880517875
+PAVILLON DE LA TRIPERIE FR.94.065.501.CE,pavillon de la triperie fr 94 065 501 ce,14,14,601,False,fr_bd_519665103
+PIED VEAU provenance FR,pied veau provenance fr,14,14,6011,False,fr_bd_519665103
+PIZZA RISTORANTE AU THON,pizza ristorante au thon,14,14,601,False,fr_bd_890233000
+POIRE 3/1 la boite,poire 3 1 la boite,14,14,6061,False,fr_bd_880517875
+POULET ESCALOPE CRU 190G X5KG HALAL,poulet escalope cru 190g x5kg halal,14,14,6061,False,fr_bd_880517875
+REX BUCHERON SAC DE 25KG IREKS,rex bucheron sac de 25kg ireks,14,14,601,False,fr_bd_880517875
+RUBAN ADHESIF SCELLEUSE ROUGE LA PIECE,ruban adhesif scelleuse rouge la piece,14,14,6063,False,fr_bd_880517875
+RUSTI MAIS EN 25 KG,rusti mais en 25 kg,14,14,601,False,fr_bd_890233000
+RUSTI MAIS SAC 25 KG,rusti mais sac 25 kg,14,14,6011,False,fr_bd_890233000 | fr_bd_915197842
+SEL GROS ESSORE 25KG SALINS,sel gros essore 25kg salins,14,14,6011,False,fr_bd_890233000
+SUISSE 120G *,suisse 120g,14,14,601,False,fr_bd_880517875
+ESSUIE TOUT X3=9 #.C.O+,essuie tout x3 9 c o,13,24,6063,False,fr_bd_890233000
+TRANCHE DOUBLE - VIANDE HALLAL BLANC BLEU BELGE,tranche double viande hallal blanc bleu belge,13,17,6011,False,fr_bd_519665103
+VEAU,veau,13,17,6011,False,fr_bd_519665103
+4TR.DELICE DINDE ISLA DELICE,4tr delice dinde isla delice,13,14,601,False,fr_bd_890233000
+CASQUE AGNEAU MOINS DE 12 MOIS,casque agneau moins de 12 mois,13,14,6011,False,fr_bd_519665103
+AILES DE POULET 3 PHALANGES HALAL CEE,ailes de poulet 3 phalanges halal cee,13,13,6011,False,fr_bd_519665103
+BEURRE CUBE 25 KG,beurre cube 25 kg,13,13,6011,False,fr_bd_880517875
+BOITE BLANCHE 20X8 P/50,boite blanche 20x8 p 50,13,13,6063,False,fr_bd_880517875
+BOITE BLANCHE 29X8 P/25,boite blanche 29x8 p 25,13,13,6063,False,fr_bd_880517875
+BOITE PAT BLANCHE 16X5 PQT 50,boite pat blanche 16x5 pqt 50,13,13,6063,False,fr_bd_880517875 | fr_bd_890233000
+BOITE PAT BLANCHE 20X8 PQT 50,boite pat blanche 20x8 pqt 50,13,13,6063,False,fr_bd_890233000
+CHEVRE BUCHE AFFIN CABRIFIN 23%MG 180G,chevre buche affin cabrifin 23 mg 180g,13,13,6061,False,fr_bd_880517875 | fr_bd_890233000
+COCA COLA BTE SLIM 33CLX30 0S,coca cola bte slim 33clx30 0s,13,13,6068,False,fr_bd_880517875 | fr_bd_890233000
+CREPINE VEAU -V,crepine veau v,13,13,6011,False,fr_bd_519665103
+DEMI ROSBIF AGNEAU,demi rosbif agneau,13,13,6011,False,fr_bd_519665103
+FILET PLT BLC 150/220G HAL 5KG UE,filet plt blc 150 220g hal 5kg ue,13,13,6011,False,fr_bd_890233000
+FILET VEAU SP SV UE,filet veau sp sv ue,13,13,6011,False,fr_bd_890233000
+FRAISE BARQ.1KG,fraise barq 1kg,13,13,601,False,fr_bd_880517875
+FRAISE BQ 500G PAYS-BAS C1 PAYS BAS,fraise bq 500g pays bas c1 pays bas,13,13,6011,False,fr_bd_890233000
+FRAMBOISE,framboise,13,13,601,False,fr_bd_880517875
+FRESSURE AGNEAU,fressure agneau,13,13,6011,False,fr_bd_519665103
+GD SAC REGROUP PAIN 39X20X76CM,gd sac regroup pain 39x20x76cm,13,13,60225,False,fr_bd_880517875
+JAMBON DD CHOIX 25TR,jambon dd choix 25tr,13,13,6011,False,fr_bd_890233000
+JAMBON SERRANO TRANCHES 500G 11MOIS AFFI,jambon serrano tranches 500g 11mois affi,13,13,601,False,fr_bd_880517875
+JUS ORANGE PULPE RAUCH VP 24X20CL,jus orange pulpe rauch vp 24x20cl,13,13,6068,False,fr_bd_890233000
+KREM D'AROME CACAO SEAU BARRY 5KG,krem d arome cacao seau barry 5kg,13,13,60610000,False,fr_bd_880517875
+"LAIT FERMENTE ""LUXLAIT "" 8 X 1L",lait fermente luxlait 8 x 1l,13,13,6068,False,fr_bd_519665103
+MC NOISETTE PDRE BLANCHE 1KG,mc noisette pdre blanche 1kg,13,13,6011,False,fr_bd_890233000
+MINI GOUTTE BLANCHE 10KG,mini goutte blanche 10kg,13,13,6061,False,fr_bd_880517875
+NOISETTE POUDRE BRUT DGF 1KG,noisette poudre brut dgf 1kg,13,13,601,False,fr_bd_880517875 | fr_bd_890233000
+OEUF LIQ JAUNE BD 2KG ATLANTIC,oeuf liq jaune bd 2kg atlantic,13,13,6011,False,fr_bd_890233000
+ORANGE GROSSE,orange grosse,13,13,601,False,fr_bd_880517875
+P'TIT LOUIS NAT FILET 12PO 240G,p tit louis nat filet 12po 240g,13,13,6011,False,fr_bd_890233000
+PAIN SUEDOIS ROND 55 GR X 72 UVI1,pain suedois rond 55 gr x 72 uvi1,13,13,6061,False,fr_bd_880517875
+PANSETTE AGNEAU VERTE,pansette agneau verte,13,13,6011,False,fr_bd_519665103
+PASTEL DE NATA PAC 68G P/80 500823,pastel de nata pac 68g p 80 500823,13,13,6011,False,fr_bd_880517875
+PATE PISTACHE COLOREE MANE 1KG GR,pate pistache coloree mane 1kg gr,13,13,6061,False,fr_bd_880517875
+POUDRE DE LAIT ENTIER INST. 28% X 25KG,poudre de lait entier inst 28 x 25kg,13,13,601,False,fr_bd_880517875
+QUINOGRAIN 10KG,quinograin 10kg,13,13,6011,False,fr_bd_880517875
+"RAPE AUX 3 FROMAGES,200G",rape aux 3 fromages 200g,13,13,601,False,fr_bd_890233000
+RUSTI CAMPAGNE LES MOULINS FAMILIAUX SAC 25 KG,rusti campagne les moulins familiaux sac 25 kg,13,13,6011,False,fr_bd_890233000
+RUSTI PANIF PLUS FROID SAC 10 KG,rusti panif plus froid sac 10 kg,13,13,6011,False,fr_bd_890233000 | fr_bd_915197842
+SACS PLAST BIO BEIGE X200 230/40/400,sacs plast bio beige x200 230 40 400,13,13,6068,False,fr_bd_880517875
+Services divers,services divers,13,13,6061,False,fr_bd_890233000
+TRANCHE SLICES HAMBURGER ENV 1KG 88TR,tranche slices hamburger env 1kg 88tr,13,13,601,False,fr_bd_880517875
+VEAU PIED KG,veau pied kg,13,13,607000,False,fr_bd_519665103
+VEAU PIED ORIGINE :FRANCE TRACE : 0000001 N° ABT : FR,veau pied origine france trace 0000001 n abt fr,13,13,6011,False,fr_bd_519665103
+LVZ 4 OZ SW TAKE AWAY CUP TRIMAN,lvz 4 oz sw take away cup triman,12,18,6068,False,fr_bd_880517875
+COLLIER AGNEAU,collier agneau,12,16,6011,False,fr_bd_519665103
+SELLE AGNEAU MOINS DE 12 MOIS,selle agneau moins de 12 mois,12,16,6011,False,fr_bd_519665103
+FEUILLETE HOT DOG FAI SURG 35X150G,feuillete hot dog fai surg 35x150g,12,13,601,False,fr_bd_890233000
+VITTEL.6X1.5L,vittel 6x1 5l,12,13,6068,False,fr_bd_890233000
+250 SAC PAIN VERT 16X10X35,250 sac pain vert 16x10x35,12,12,6063,False,fr_bd_890233000
+ABRICOT OREILLON 3/1 espagne,abricot oreillon 3 1 espagne,12,12,601,False,fr_bd_880517875
+AMANDE POUDRE 10 KG ORIGINE CALIFORNIE,amande poudre 10 kg origine californie,12,12,6061,False,fr_bd_880517875
+BAKING POWDER LEVA16 1KG,baking powder leva16 1kg,12,12,6011,False,fr_bd_880517875
+BEURRE CUBE UE 25 KG,beurre cube ue 25 kg,12,12,601100,False,fr_bd_880517875
+BISCOFF PATE LOTUS POT 1.6KG,biscoff pate lotus pot 1 6kg,12,12,6011,False,fr_bd_880517875 | fr_bd_890233000
+BOITE BLANCHE 23X8 P/50,boite blanche 23x8 p 50,12,12,6063,False,fr_bd_880517875
+BOITE PAT BLANCHE 16X8 PQT 50,boite pat blanche 16x8 pqt 50,12,12,6063,False,fr_bd_890233000
+BOITE PAT BLANCHE VERNI 22X8 PQT 50,boite pat blanche verni 22x8 pqt 50,12,12,6063,False,fr_bd_880517875 | fr_bd_890233000
+CAFE GILB INT. 6 DECA MOULU KG,cafe gilb int 6 deca moulu kg,12,12,6061,False,fr_bd_890233000
+CHORIZ0 PP TRANCHE 2X500G,choriz0 pp tranche 2x500g,12,12,6011,False,fr_bd_890233000
+COCA-COLA PET 50CLX24 PROMO,coca cola pet 50clx24 promo,12,12,6068,False,fr_bd_880517875 | fr_bd_915197842
+COCACOLA CHERRY SLIM 33CL,cocacola cherry slim 33cl,12,12,6068,False,fr_bd_890233000
+COURGETTE FILET 1 KG,courgette filet 1 kg,12,12,601,False,fr_bd_880517875
+CRANBERRIE SECHEE SACHET 1KG,cranberrie sechee sachet 1kg,12,12,6011,False,fr_bd_890233000
+CREME UHT CAMPINA 35%MG 12X1L,creme uht campina 35 mg 12x1l,12,12,6011,False,fr_bd_880517875 | fr_bd_890233000
+CROQUE MONSIEUR JAMBON,croque monsieur jambon,12,12,6011,False,fr_bd_890233000
+CROUSTI CHOC LAIT NOIR BLC DGF POT 450G,crousti choc lait noir blc dgf pot 450g,12,12,601,False,fr_bd_890233000
+CUISSE DE POULET HALAL UE 10KG origine : NL,cuisse de poulet halal ue 10kg origine nl,12,12,6011,False,fr_bd_519665103
+DÉLICE DE DINDE HALAL,delice de dinde halal,12,12,607,False,fr_bd_519665103
+DÉLICE DE POULET NATURE HALAL,delice de poulet nature halal,12,12,607,False,fr_bd_519665103
+FIGUE DES 8MM SAC 1KG,figue des 8mm sac 1kg,12,12,601,False,fr_bd_880517875 | fr_bd_890233000
+FIGUES CUBE SACHET DE 1KG,figues cube sachet de 1kg,12,12,6011,False,fr_bd_880517875
+FILET - VIANDE HALLAL BLANC BLEU BELGE,filet viande hallal blanc bleu belge,12,12,6011,False,fr_bd_519665103
+FILET DE POULET HALAL CEE origine:BE,filet de poulet halal cee origine be,12,12,6071,False,fr_bd_519665103
+FRAMBOISE 125G BQ12 C1 ESESPAGNE,framboise 125g bq12 c1 esespagne,12,12,601,False,fr_bd_890233000
+FRAMBOISE 125G MAROC C1 PieceMAROC,framboise 125g maroc c1 piecemaroc,12,12,601,False,fr_bd_880517875 | fr_bd_890233000
+FROMAGE BLC 20% 5KG MC,fromage blc 20 5kg mc,12,12,601,False,fr_bd_890233000
+Forfait Client B&You 270Go 5G,forfait client b you 270go 5g,12,12,6062,False,fr_bd_890233000
+GELATINE 200BLOOM POUDRE BOVIN 1KG,gelatine 200bloom poudre bovin 1kg,12,12,601,False,fr_bd_880517875
+GROSEILLE RGE 125G C1 FR FRANCE,groseille rge 125g c1 fr france,12,12,6011,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+IGP MED RGE C.DAUPHINS 25CL,igp med rge c dauphins 25cl,12,12,6068,False,fr_bd_880517875
+MAXI PAIN RAISINS BEURRE 140G *,maxi pain raisins beurre 140g,12,12,601,False,fr_bd_880517875
+MINI BEIGNET FOURRAGE SAVEUR FRAISE 21G *,mini beignet fourrage saveur fraise 21g,12,12,601,False,fr_bd_880517875
+ORANGE FEUILLES,orange feuilles,12,12,601,False,fr_bd_890233000
+PHYSALIS BQ 100g COLOMBIE C1 COLOMBIE,physalis bq 100g colombie c1 colombie,12,12,6011,False,fr_bd_890233000
+PILON DE POULET HALAL CEE origine : NL,pilon de poulet halal cee origine nl,12,12,6011,False,fr_bd_519665103
+SAC PAIN TR BEIG BAGO PUR 230/40X420X200,sac pain tr beig bago pur 230 40x420x200,12,12,6063,False,fr_bd_880517875
+SAC PAIN TR JAUN BAGO PUR 120/50X350X200,sac pain tr jaun bago pur 120 50x350x200,12,12,6063,False,fr_bd_880517875 | fr_bd_890233000
+SAN PELL B0ITE SLIM 33CL,san pell b0ite slim 33cl,12,12,6068,False,fr_bd_890233000
+THON POCHE 650G,thon poche 650g,12,12,6011,False,fr_bd_880517875
+TOM RDE MC 6K C.67+ PAL56 C1 FR FRANCE,tom rde mc 6k c 67 pal56 c1 fr france,12,12,6011,False,fr_bd_890233000
+"LIQ.VAIS.AMDE DCE/ABRI,A,750ML",liq vais amde dce abri a 750ml,11,17,6068,False,fr_bd_890233000
+LVZ 8 OZ SW TAKE AWAY CUP TRIMAN,lvz 8 oz sw take away cup triman,11,17,60680000,False,fr_bd_880517875
+TOMATE GRAPPE,tomate grappe,11,14,601,False,fr_bd_880517875 | fr_bd_890233000
+CULOTTE AGNEAU MOINS DE 12 MOIS,culotte agneau moins de 12 mois,11,13,6011,False,fr_bd_519665103
+AGNEAU TESTICULES ORIGINE :FRANCE TRACE : 0000001 N° ABT : FR,agneau testicules origine france trace 0000001 n abt fr,11,11,6011,False,fr_bd_519665103
+BATON CHOCO 44 TYPE 300 1.6KG,baton choco 44 type 300 1 6kg,11,11,601,False,fr_bd_890233000

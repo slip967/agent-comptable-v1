@@ -1,0 +1,220 @@
+# Second Wave Metier Expansion Summary
+
+Date: 2026-04-30
+
+Selection mode: auto-filtered second wave from cleaned candidate packs.
+
+## boucherie
+
+- added_candidates: `45`
+- rejected_reasons: `{'already_present': 76, 'deny_term': 171, 'missing_allow_term': 183}`
+- base_produits_boucherie_v1.json: added=`45` skipped=`0`
+- base_produits_boucherie_v1_with_accounts.json: added=`45` skipped=`0`
+- selected_labels:
+  - `ENTRECOTE DE BOEUF` | invoices=`23` | account=`6011`
+  - `AILES DE POULET ID HALAL` | invoices=`22` | account=`6011`
+  - `ROULADE DE VOLAILLE FINES HERBES HALAL` | invoices=`22` | account=`6011`
+  - `RUMSTEACK BLANC BLEU BELGE PRODUITS REFRIGERES` | invoices=`22` | account=`6011`
+  - `FILET DE POULET FERMIER HALAL A S/AT` | invoices=`19` | account=`6011`
+  - `Roulade poulet nature Halal` | invoices=`18` | account=`601`
+  - `TRAIN DE COTE DE BOEUF "ANGUS" HALAL` | invoices=`18` | account=`6011`
+  - `RUMSTEACK CARCASSE BEUF` | invoices=`17` | account=`6011`
+  - `CUISSE DE DINDE HALAL UE` | invoices=`17` | account=`6011`
+  - `BOEUF CUISSE FLANCH CARCASSE BEUF` | invoices=`16` | account=`6011`
+  - `POULET FERMIER HALAL EFFILÉ` | invoices=`16` | account=`6011`
+  - `COPPA BOEUF HALAL` | invoices=`16` | account=`6011`
+  - `Forme Poulet Fumé Halal en Bloc` | invoices=`16` | account=`601`
+  - `Jambon de Dinde Halal 5 kg Premier Choix` | invoices=`16` | account=`601`
+  - `Manutention et approvisionnement. Approvisionnement à pied d'œuvre des différents matériaux.` | invoices=`16` | account=`6068`
+  - `QUEUE BOEUF FRAICHE` | invoices=`16` | account=`6011`
+  - `ROGNON BOEUF` | invoices=`16` | account=`6011`
+  - `AILES DE POULET HALAL` | invoices=`15` | account=`6011`
+  - `EPICES POULET ROTI par 10 KILO` | invoices=`15` | account=`601`
+  - `JAMBON DE DINDE FUME 1/2 HALAL` | invoices=`15` | account=`6011`
+  - `JAMBON DE POULET` | invoices=`15` | account=`6011`
+  - `FOIE GRAS DE CANARD DEVEINE HALAL` | invoices=`14` | account=`6011`
+  - `BACON DE DINDE 1/2 HALAL` | invoices=`14` | account=`6011`
+  - `FILET DE POULET 10KG PLUDIS` | invoices=`14` | account=`6011`
+  - `FRESSURE OVIN` | invoices=`14` | account=`6011`
+  - `INTERBEV Boeuf` | invoices=`14` | account=`6068`
+  - `BASSE-COTE DE BOEUF HALAL "ANGUS"` | invoices=`13` | account=`6011`
+  - `BOUILLON KNORR MOUTON MAROC 648G` | invoices=`13` | account=`601`
+  - `Manutention et approvisionnement. Approvisionnement à pied d'oeuvre des différents matériaux.` | invoices=`13` | account=`6068`
+  - `BOUILLON KNORR BOEUF MAROC 648G` | invoices=`12` | account=`601`
+  - `BOYAU NATUREL DE MOUTON SIMPLE 22/24 HALAL` | invoices=`12` | account=`6011`
+  - `Délice de poulet Halal Nature forme poulet` | invoices=`12` | account=`601`
+  - `Délice de poulet olives Halal en forme de poulet` | invoices=`12` | account=`601`
+  - `JAMBON DE DINDE PERSILLÉ HALAL` | invoices=`12` | account=`6011`
+  - `MOSAIQUE DE VOLAILLE PIMENTÉE` | invoices=`12` | account=`6011`
+  - `SAUCISSON BOEUF SÉCHÉ HALAL` | invoices=`12` | account=`6011`
+  - `FILET CARCASSE BEUF` | invoices=`11` | account=`6011`
+  - `PASTRAMI BOEUF SPICY HALAL` | invoices=`11` | account=`6011`
+  - `BASSE-COTE DE BOEUF HALAL` | invoices=`11` | account=`6011`
+  - `BLANC DE POULET FUMÉ IMPORT HALAL` | invoices=`11` | account=`6011`
+  - `DELICE DE POULET FUMÉ HALAL` | invoices=`11` | account=`601`
+  - `Dinde Olive Poivrons Halal en Bloc (Sévillana)` | invoices=`11` | account=`601`
+  - `FILET DE DINDE HALAL UE` | invoices=`11` | account=`6011`
+  - `FRESSURE A LA PIECE` | invoices=`11` | account=`6011`
+  - `JOUE DE BOEUF - CARCASSE ABATS` | invoices=`11` | account=`6011`
+
+## restaurant
+
+- added_candidates: `70`
+- rejected_reasons: `{'already_present': 119, 'deny_term': 11}`
+- base_produits_restaurant_v1.json: added=`70` skipped=`0`
+- base_produits_restaurant_v1_with_accounts.json: added=`70` skipped=`0`
+- selected_labels:
+  - `LESIEUR MAYO HAUTE FERMETE 5L` | invoices=`13` | account=`601`
+  - `MC MAYO HTE FERMETE 4.7KG` | invoices=`13` | account=`6011`
+  - `PDT GRE AGATA GBOX24 5KG C1 FR FRANCE` | invoices=`13` | account=`6011`
+  - `SELECTO SODA 1.5L PET` | invoices=`13` | account=`6068`
+  - `TROPICO FR EXOTIQUE 33CL x 24` | invoices=`13` | account=`6068`
+  - `GIGOT AGN S/0S S/V NZ HAL` | invoices=`12` | account=`6061`
+  - `CAIS.SANPELLEGR 12X100CL VIDE` | invoices=`12` | account=`6068`
+  - `CASABLANCA 5D 33CL` | invoices=`12` | account=`6011`
+  - `HP10 BLANC ECO RECYCLABLE 100PCS` | invoices=`12` | account=`6068`
+  - `MPRO ESSUIE-MAIN PL.Z 200F X15` | invoices=`12` | account=`6063`
+  - `Navet x 5 Kg Net Cat 1 France` | invoices=`12` | account=`601`
+  - `Option Energie Verte` | invoices=`12` | account=`6061`
+  - `POMME DE TERRE AGHATA 5 KG` | invoices=`12` | account=`601`
+  - `POULET OUVERT 1KG HALLAL - 5 CX` | invoices=`12` | account=`601`
+  - `SCHWEPPE AGRUME 25CL VC` | invoices=`12` | account=`6068`
+  - `SCHWEPPES AGRUM SLIM 33CL` | invoices=`12` | account=`6068`
+  - `GIGOT AGN A/0S HAL PAC S/V NZ` | invoices=`11` | account=`6011`
+  - `EPICERIE` | invoices=`11` | account=`601`
+  - `SCHWEPPES AGRUM24X25CL PLEIN` | invoices=`11` | account=`6068`
+  - `50 COUV BOL A SOUPE KRAFT PM` | invoices=`11` | account=`6063`
+  - `Achat non détaillé` | invoices=`11` | account=`6061`
+  - `BOITE RETANCLE+COUV 500G 50P` | invoices=`11` | account=`6062`
+  - `COCA COLA REG PET 1.25L` | invoices=`11` | account=`6068`
+  - `COCA COLAS 25CL VP` | invoices=`11` | account=`6068`
+  - `CRISTAL SAC 20KG ARO` | invoices=`11` | account=`6011`
+  - `Carotte Grosse x 10 Kg net Cat 1 France` | invoices=`11` | account=`601`
+  - `EMMENTAL FR RAPE 1KG MC` | invoices=`11` | account=`601`
+  - `FILET DE POULET AVS AU KG` | invoices=`11` | account=`601`
+  - `MC MAY0 HTE FERMETE 4.7KG` | invoices=`11` | account=`6011`
+  - `MOZZA/EMMENT RAPE SACH 2,5KGMC` | invoices=`11` | account=`6011`
+  - `OASIS FRAISE FRAMBOISE 33cl*24` | invoices=`11` | account=`601`
+  - `OIGNON JAUNE 5 KILOS` | invoices=`11` | account=`601`
+  - `Paiements supplémentaires` | invoices=`11` | account=`606`
+  - `SAN PELL 1L VC` | invoices=`11` | account=`6068`
+  - `TRANCHES D'AVOCAT 500G` | invoices=`11` | account=`601`
+  - `GIGOT AGN S/0S HALAL S/V NZ` | invoices=`10` | account=`6061`
+  - `9854. EVIAN-BAD. 20X50STUB. PLEIN` | invoices=`10` | account=`6061`
+  - `ARO TOMATE ENTIERE PELEE 1/2` | invoices=`10` | account=`6011`
+  - `50 BTE SALADE KRAFT 1000ML` | invoices=`10` | account=`6063`
+  - `AILES DE POULET HALAL CEE` | invoices=`10` | account=`6011`
+  - `BADOIT 1L VC` | invoices=`10` | account=`6061`
+  - `GRANINI ABRICOT 25CL` | invoices=`10` | account=`6068`
+  - `Gazole` | invoices=`10` | account=`6063`
+  - `MC HUILE FRITURE 25L` | invoices=`10` | account=`6061`
+  - `MPRO 50 COU RPET BOL SAL PM` | invoices=`10` | account=`6063`
+  - `MPRO DECAP FOUR 5L` | invoices=`10` | account=`6063`
+  - `NAVET ROND GROS 5KG FR FRANCE` | invoices=`10` | account=`6011`
+  - `OIG CHARC MC 7/10 8KG C1 FR 66FRANCE` | invoices=`10` | account=`6012`
+  - `Obligations` | invoices=`10` | account=`6061`
+  - `PERSIL FLOCONS SAC 500G` | invoices=`10` | account=`601`
+  - `PILON` | invoices=`10` | account=`6061`
+  - `PREPA TIRAMISU 1L MC` | invoices=`10` | account=`6011`
+  - `Promotions sur les articles` | invoices=`10` | account=`606`
+  - `Revenus en titre-restaurant` | invoices=`10` | account=`606`
+  - `SAUCE` | invoices=`10` | account=`6061`
+  - `SAUCE TOMATE TABANA` | invoices=`10` | account=`601`
+  - `SAUCISSE` | invoices=`10` | account=`6061`
+  - `Vos services fournis par votre opérateur` | invoices=`10` | account=`606`
+  - `Article non spécifié` | invoices=`9` | account=`606`
+  - `Fourniture d'électricité - Consommation` | invoices=`9` | account=`6061`
+  - `0IG CHARC MC 7/10 8KG C1 FR 66FRANCE` | invoices=`9` | account=`6011`
+  - `Avantage client box` | invoices=`9` | account=`6062`
+  - `BOITE A PIZZA 40CM MARRON 50PCS` | invoices=`9` | account=`6068`
+  - `CAIS.SANPELLEGR 12X100CL PLEIN` | invoices=`9` | account=`6068`
+  - `CANETTE` | invoices=`9` | account=`6061`
+  - `CORDON BLEU DE VOLAILLE ADEN PL 1KG` | invoices=`9` | account=`601`
+  - `DONUTS` | invoices=`9` | account=`6061`
+  - `ESSUIE MAIN GAUFFRE 450 FORMAT X6` | invoices=`9` | account=`6068`
+  - `FILET PLT BLC HAL 5KG UE SAT` | invoices=`9` | account=`6011`
+  - `FROMAGE BLANC 3,1% 1KG` | invoices=`9` | account=`601`
+
+## boulangerie
+
+- added_candidates: `35`
+- rejected_reasons: `{'deny_term': 99, 'already_present': 58, 'missing_allow_term': 167}`
+- base_produits_boulangerie_v1.json: added=`35` skipped=`0`
+- base_produits_boulangerie_v1_with_accounts.json: added=`35` skipped=`0`
+- selected_labels:
+  - `MINI PAIN CHOC ARTISAN FAI CRU 200X28G` | invoices=`23` | account=`601`
+  - `CHEVRE BUCHE KG 50% MG` | invoices=`22` | account=`601`
+  - `FONDANT SEAU EN 15 KG` | invoices=`22` | account=`6061`
+  - `NAPPAGE BLOND PRO SEAU 14 KG` | invoices=`22` | account=`601`
+  - `SAUMON FUME ATLANTIQU TRANCHE BANDE 800G` | invoices=`22` | account=`6011`
+  - `FROMAGE BLC 2,8% 5KG MC` | invoices=`21` | account=`6011`
+  - `Farine Sérénité Label Rouge T65` | invoices=`21` | account=`6011`
+  - `MINI PAIN RAIS FAI CRU ARTISAN 200X30G` | invoices=`21` | account=`6011`
+  - `OEUF COQUILLE TEINTE MOYEN 53/63 CT 360` | invoices=`21` | account=`6061`
+  - `FARINE GRUAU DELICE TYPE 65 SAC 25 KG` | invoices=`20` | account=`6011`
+  - `BEURRE CUBE 25 KG FRIESLAND CAMPINA` | invoices=`20` | account=`601`
+  - `CHOC LAIT 33% DGF 10KG` | invoices=`20` | account=`601`
+  - `LAIT 1/2 ECREME FRANCAIS X6 UHT` | invoices=`20` | account=`6061`
+  - `OEUF BLANC LIQUIDE 1L SERVIS OEUF` | invoices=`20` | account=`601100`
+  - `PATE DE PISTACH 1KG CRESCO` | invoices=`20` | account=`6011`
+  - `SACS PAIN 1F H.700MM (X50)` | invoices=`19` | account=`6025`
+  - `EAU CRISTALINE PET 24X50CL` | invoices=`19` | account=`6068`
+  - `EAU DE SOURCE,6X1.5L CRISTALINE` | invoices=`19` | account=`6068`
+  - `CREME FRAICHE EPAISSE 30% 5KG ISIGNY` | invoices=`19` | account=`601`
+  - `CREME VEGETALE SWEET SUCRE 1L P/12` | invoices=`19` | account=`601`
+  - `SAUMON FUME 600/900G ARO` | invoices=`19` | account=`601`
+  - `BEURRE DOUX CUBE 25KG` | invoices=`18` | account=`601`
+  - `BEURRE DX PAT BLOC 10KG FLECH` | invoices=`18` | account=`6011`
+  - `GROSEILLE RGE 125G FR C1 FRANCE` | invoices=`18` | account=`6011`
+  - `GROSEILLE RGE 125G PAYS-BAS` | invoices=`17` | account=`6011`
+  - `BEURRE DOUX LACTIQUE 82% BLOC 25KG` | invoices=`16` | account=`6011`
+  - `EMMENTAL 40 TRANCHES` | invoices=`16` | account=`6011`
+  - `MINI CROISSANT FAI CRU ARTISAN 270X25G` | invoices=`16` | account=`6011`
+  - `MAMIE NOVA CREME AMANDES 2X150G` | invoices=`15` | account=`601`
+  - `CONCOMBRE FROMAGE BLC 320G` | invoices=`15` | account=`601`
+  - `CREME MASCARPONE POT 500G` | invoices=`15` | account=`601`
+  - `CROISSANT RMB 65G *` | invoices=`15` | account=`601`
+  - `EMMENTAL RAPE 1KG ARO` | invoices=`15` | account=`6011`
+  - `MARG BOMAR BRIOCHE INCORP PAIN 20X0.5KG` | invoices=`15` | account=`6061`
+  - `MINI BEIGNET SUCRE FAI SURG 70X19G` | invoices=`15` | account=`6011`
+
+## btp
+
+- added_candidates: `25`
+- rejected_reasons: `{'account_prefix_not_allowed': 105, 'deny_term': 23, 'missing_allow_term': 258, 'already_present': 36}`
+- base_produits_btp_v1.json: added=`25` skipped=`0`
+- base_produits_btp_v1_with_accounts.json: added=`25` skipped=`0`
+- selected_labels:
+  - `COULAGE DALLAGE/ PLANCHERS PH BAT A` | invoices=`2` | account=`6063`
+  - `COULAGE PH R+1 BAT A` | invoices=`2` | account=`6062`
+  - `COULAGE PLANCHER PH R+2 Finition brut` | invoices=`2` | account=`6063`
+  - `COULAGE PLANCHER finition hélicoptére` | invoices=`2` | account=`6063`
+  - `Carreau béton cellulaire 7/50 CXE 625x500x70mm - SIPOREX` | invoices=`2` | account=`6063`
+  - `Colle béton cellulaire sac de 5kg` | invoices=`2` | account=`6063`
+  - `Cordon Jointofeu diamètre 30 rouleau de 20m` | invoices=`2` | account=`6061`
+  - `Coulage DALLAGE Finition hélicoptére avec Surfaquartz` | invoices=`2` | account=`6063`
+  - `Coulage DALLE BASSE (avec Surfaquartz)` | invoices=`2` | account=`6063`
+  - `Coulage PH R+2 BATIMENT 4` | invoices=`2` | account=`604`
+  - `Coulage planchers infra` | invoices=`2` | account=`6062`
+  - `Création dalle pour cantilvers` | invoices=`2` | account=`6063`
+  - `DALLAGE finition hélicoptére aVec SURFAQUARTZ + PRODUIT DE CURE + SCIAGE` | invoices=`2` | account=`6063`
+  - `DALLE PORTEE - Plancher bas du S/Sol` | invoices=`2` | account=`6063`
+  - `DALLE PORTéE finition brut` | invoices=`2` | account=`6062`
+  - `Dallage Finition helicoptére avec Surfaquartz` | invoices=`2` | account=`6063`
+  - `FORFAIT - MISE A DISPOSITION POMPE A BETON Inclus dans le forfait : Fléche 28m M-a-d 4 heures` | invoices=`2` | account=`6063`
+  - `FORFAIT COULAGE DALLAGE Finition hélicoptére` | invoices=`2` | account=`6062`
+  - `Finition hélicoptére PH S/SOL finition brut` | invoices=`2` | account=`6063`
+  - `GO pompe 05` | invoices=`2` | account=`6068`
+  - `GO pompe 07` | invoices=`2` | account=`606800`
+  - `GRAVATS : Briques, terre, ciment, béton, pierres, sable. En cas de présence de déchets l'ensemble de la benne sera déclassé en DIB. DIB : Bois, platre, Placoplatre, ferraille, plastique, meubles, papier, cartons, déchets verts. Bon N° FQ-18954 08/11/2025 - Autre PARIS` | invoices=`2` | account=`6068`
+  - `M.A.D Pompe Béton (FORFAIT)` | invoices=`2` | account=`6063`
+  - `M3 POMPE Ni repris ni échangé` | invoices=`2` | account=`6063`
+  - `OUATE BLANCHE GAUFREE COLLEE 1000 FORMATS 23X25` | invoices=`2` | account=`6061`
+
+## transport
+
+- added_candidates: `0`
+- rejected_reasons: `{'already_present': 32, 'deny_term': 58, 'missing_allow_term': 248, 'account_prefix_not_allowed': 2, 'invoice_count_too_low': 160}`
+- base_produits_transport_v1.json: added=`0` skipped=`0`
+- base_produits_transport_v1_with_accounts.json: added=`0` skipped=`0`
+

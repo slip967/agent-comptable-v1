@@ -1,0 +1,26 @@
+{
+  "base_produits_vtc_v1.json": {
+    "items_count": 488,
+    "a_valider_count": 12,
+    "total_entries_count": 500,
+    "removed_items_count": 91
+  },
+  "base_produits_vtc_v1_with_accounts.json": {
+    "items_count": 488,
+    "a_valider_count": 12,
+    "total_entries_count": 500,
+    "removed_items_count": 91
+  },
+  "base_produits_epicerie_v1.json": {
+    "items_count": 500,
+    "a_valider_count": 0,
+    "total_entries_count": 500,
+    "removed_items_count": 1415
+  },
+  "base_produits_epicerie_v1_with_accounts.json": {
+    "items_count": 500,
+    "a_valider_count": 0,
+    "total_entries_count": 500,
+    "removed_items_count": 1415
+  }
+}

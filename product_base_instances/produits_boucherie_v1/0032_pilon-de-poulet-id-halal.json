@@ -1,0 +1,147 @@
+{
+  "_id": "fr_bd_519665103:product-instance:produits_boucherie_v1:544e292931f5",
+  "p": "product_base_instance",
+  "data": {
+    "collection": "ProductBaseInstance",
+    "type": "ProductArticle",
+    "sub_type": "boucherie"
+  },
+  "instance_kind": "product_article_source",
+  "profile_id": "produits_boucherie_v1",
+  "metier": "boucherie",
+  "client_siren": "519665103",
+  "partition_prefix": "fr_bd_519665103",
+  "source_file": "base_produits_boucherie_v1.json",
+  "source_profile_meta": {
+    "profile_id": "produits_boucherie_v1",
+    "metier": "boucherie",
+    "client_siren": "519665103",
+    "partition_prefix": "fr_bd_519665103",
+    "version": "v1",
+    "status": "draft",
+    "items_count": 40,
+    "cleanup_note": "Nettoyage manuel: suppression charges_externes en base metier + dedoublonnage produits.",
+    "source_invoice_ids_note": "Jusqu a 30 invoice_id source par article_source depuis invoice_form.",
+    "accounts_enrichment": {
+      "reference_file": "v1_519665103_reference_base_exploitation_v1.json",
+      "matched_items": 2,
+      "unmatched_items": 0,
+      "already_present": 0
+    },
+    "source_invoice_year_filter": "2024",
+    "accounts_alignment_from_abt3fec2": {
+      "db": "abt3fec2",
+      "selector": "p=entry + invoice exists + _id not contains generated",
+      "changed_items": 0,
+      "unchanged_items": 0,
+      "no_signal_items": 2,
+      "min_confidence": 0.55
+    },
+    "invoice_source_enrichment": {
+      "db_factures": "abt3",
+      "match_rule": "invoice_form.line_items.description == article_source (normalise)",
+      "year_filter": "none",
+      "changed_items": 1,
+      "added_invoice_ids_total": 5
+    },
+    "boucherie_expansion_from_invoice_form": {
+      "added_items": 38,
+      "target_total": 40,
+      "source": "invoice_form",
+      "rule": "scope=boucherie template + account startswith 60 + lexical quality filters"
+    },
+    "keywords_cleanup_single_char_and_zero_v1": {
+      "removed_single_char_keywords": 1,
+      "fixed_ocr_zero_to_o_keywords": 0,
+      "deduplicated_keywords": 0,
+      "items_touched": 1,
+      "total_keywords_before": 147,
+      "total_keywords_after": 146,
+      "rules": [
+        "remove keywords with length <= 1",
+        "replace 0 with o only when 0 is adjacent to letters"
+      ]
+    },
+    "text_normalization_v2": {
+      "updated_at": "2026-04-13T17:20:47.388289Z",
+      "rows_touched": 0,
+      "article_source_updated": 0,
+      "article_canonique_updated": 0,
+      "mots_cles_updated": 0,
+      "rule": "remove special chars (including % * +), fix OCR 0/O in words, normalize canon + keywords"
+    },
+    "account_normalization_v1": {
+      "rule": "trim trailing zeros for padded compte_comptable values when length > 3",
+      "changed_items": 1,
+      "normalized_pairs": {
+        "old": "606200",
+        "new": "6062",
+        "count": 1
+      }
+    },
+    "account_verification_v1": {
+      "class_6_only": true,
+      "suspicious_accounts": []
+    }
+  },
+  "item_index": 32,
+  "article_source": "PILON DE POULET ID HALAL",
+  "article_source_normalized": "pilon de poulet id halal",
+  "article_canonique": "pilon de poulet id halal",
+  "categorie": "exploitation_metier",
+  "sous_categorie": "matiere_premiere",
+  "compte_comptable": "6011",
+  "tva_rate": 5.5,
+  "mots_cles": [
+    "pilon",
+    "poulet",
+    "id",
+    "halal"
+  ],
+  "source_invoice_ids": [
+    "fr_bd_519665103:9bdf0e85-3421-4dbf-87c0-96cc21f007b5",
+    "fr_bd_519665103:a215f2d5-82b9-4013-b18f-2c668192fd70",
+    "fr_bd_519665103:d83db36d-bf1f-44f9-8334-91a691463056",
+    "fr_bd_519665103:1a04e8b9-fa95-4be3-8cc2-7fb4f6956e98",
+    "fr_bd_519665103:9e9458a4-7068-49d1-b8a0-31fe5d55bafa",
+    "fr_bd_519665103:93740b00-19d4-4b4f-a574-39b7da47a111",
+    "fr_bd_519665103:e8e6c09f-94f6-4f6e-9f49-c4971b11753d",
+    "fr_bd_519665103:949e60a4-e21e-4013-aa75-76cbe7636645",
+    "fr_bd_519665103:d18be335-871c-4c15-93bf-d11bc64e11d3",
+    "fr_bd_519665103:1119a444-f912-4cf5-b498-9a4b4daad839"
+  ],
+  "payload": {
+    "article_source": "PILON DE POULET ID HALAL",
+    "article_canonique": "pilon de poulet id halal",
+    "categorie": "exploitation_metier",
+    "sous_categorie": "matiere_premiere",
+    "tva_rate": 5.5,
+    "mots_cles": [
+      "pilon",
+      "poulet",
+      "id",
+      "halal"
+    ],
+    "fournisseur_type": "fournisseur alimentaire",
+    "ape_context": [],
+    "notes": "Pre-rempli auto depuis invoice_form boucherie (occurrences=44)",
+    "source_invoice_ids": [
+      "fr_bd_519665103:9bdf0e85-3421-4dbf-87c0-96cc21f007b5",
+      "fr_bd_519665103:a215f2d5-82b9-4013-b18f-2c668192fd70",
+      "fr_bd_519665103:d83db36d-bf1f-44f9-8334-91a691463056",
+      "fr_bd_519665103:1a04e8b9-fa95-4be3-8cc2-7fb4f6956e98",
+      "fr_bd_519665103:9e9458a4-7068-49d1-b8a0-31fe5d55bafa",
+      "fr_bd_519665103:93740b00-19d4-4b4f-a574-39b7da47a111",
+      "fr_bd_519665103:e8e6c09f-94f6-4f6e-9f49-c4971b11753d",
+      "fr_bd_519665103:949e60a4-e21e-4013-aa75-76cbe7636645",
+      "fr_bd_519665103:d18be335-871c-4c15-93bf-d11bc64e11d3",
+      "fr_bd_519665103:1119a444-f912-4cf5-b498-9a4b4daad839"
+    ],
+    "compte_comptable": "6011",
+    "compte_comptable_source": "invoice_form_reference_v1",
+    "compte_comptable_match_score": 294,
+    "compte_comptable_match_reason": "from_invoice_form_boucherie_scope"
+  },
+  "created_at": "2026-04-21T15:42:42.619984Z",
+  "updated_at": "2026-04-21T15:42:42.620001Z"
+}

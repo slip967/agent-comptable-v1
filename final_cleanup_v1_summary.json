@@ -1,0 +1,50 @@
+{
+  "base_produits_boucherie_v1.json": {
+    "applied_at": "2026-05-05T22:53:15.038802+00:00",
+    "generated_at_filled": true,
+    "duplicates_removed_items": 0,
+    "duplicates_removed_a_valider": 0
+  },
+  "base_produits_boucherie_v1_with_accounts.json": {
+    "applied_at": "2026-05-05T22:53:15.049053+00:00",
+    "generated_at_filled": true,
+    "duplicates_removed_items": 0,
+    "duplicates_removed_a_valider": 0
+  },
+  "base_produits_boulangerie_v1.json": {
+    "applied_at": "2026-05-05T22:53:15.059995+00:00",
+    "generated_at_filled": true,
+    "duplicates_removed_items": 0,
+    "duplicates_removed_a_valider": 0
+  },
+  "base_produits_boulangerie_v1_with_accounts.json": {
+    "applied_at": "2026-05-05T22:53:15.070341+00:00",
+    "generated_at_filled": true,
+    "duplicates_removed_items": 0,
+    "duplicates_removed_a_valider": 0
+  },
+  "base_produits_restaurant_v1.json": {
+    "applied_at": "2026-05-05T22:53:15.081584+00:00",
+    "generated_at_filled": true,
+    "duplicates_removed_items": 1,
+    "duplicates_removed_a_valider": 0
+  },
+  "base_produits_restaurant_v1_with_accounts.json": {
+    "applied_at": "2026-05-05T22:53:15.094213+00:00",
+    "generated_at_filled": true,
+    "duplicates_removed_items": 1,
+    "duplicates_removed_a_valider": 0
+  },
+  "base_charges_externes_v1.json": {
+    "applied_at": "2026-05-05T22:53:15.114879+00:00",
+    "generated_at_filled": false,
+    "duplicates_removed_items": 4,
+    "duplicates_removed_a_valider": 0
+  },
+  "base_charges_externes_v1_with_accounts.json": {
+    "applied_at": "2026-05-05T22:53:15.135049+00:00",
+    "generated_at_filled": false,
+    "duplicates_removed_items": 4,
+    "duplicates_removed_a_valider": 0
+  }
+}

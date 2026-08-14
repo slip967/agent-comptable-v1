@@ -1,0 +1,66 @@
+{
+  "base_produits_boucherie_v1.json": {
+    "items": 212,
+    "a_valider": 0
+  },
+  "base_produits_boucherie_v1_with_accounts.json": {
+    "items": 212,
+    "a_valider": 0
+  },
+  "base_produits_boulangerie_v1.json": {
+    "items": 200,
+    "a_valider": 0
+  },
+  "base_produits_boulangerie_v1_with_accounts.json": {
+    "items": 200,
+    "a_valider": 0
+  },
+  "base_produits_restaurant_v1.json": {
+    "items": 222,
+    "a_valider": 0
+  },
+  "base_produits_restaurant_v1_with_accounts.json": {
+    "items": 222,
+    "a_valider": 0
+  },
+  "base_produits_transport_v1.json": {
+    "items": 160,
+    "a_valider": 0
+  },
+  "base_produits_transport_v1_with_accounts.json": {
+    "items": 160,
+    "a_valider": 0
+  },
+  "base_produits_btp_v1.json": {
+    "items": 134,
+    "a_valider": 0
+  },
+  "base_produits_btp_v1_with_accounts.json": {
+    "items": 134,
+    "a_valider": 0
+  },
+  "base_produits_vtc_v1.json": {
+    "items": 500,
+    "a_valider": 0
+  },
+  "base_produits_vtc_v1_with_accounts.json": {
+    "items": 500,
+    "a_valider": 0
+  },
+  "base_produits_epicerie_v1.json": {
+    "items": 500,
+    "a_valider": 0
+  },
+  "base_produits_epicerie_v1_with_accounts.json": {
+    "items": 500,
+    "a_valider": 0
+  },
+  "base_charges_externes_v1.json": {
+    "items": 271,
+    "a_valider": 36
+  },
+  "base_charges_externes_v1_with_accounts.json": {
+    "items": 260,
+    "a_valider": 36
+  }
+}

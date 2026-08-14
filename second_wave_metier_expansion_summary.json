@@ -1,0 +1,988 @@
+{
+  "boucherie": {
+    "selected_count": 45,
+    "selected_labels": [
+      {
+        "article_source": "ENTRECOTE DE BOEUF",
+        "invoice_count": 23,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "AILES DE POULET ID HALAL",
+        "invoice_count": 22,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "ROULADE DE VOLAILLE FINES HERBES HALAL",
+        "invoice_count": 22,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "RUMSTEACK BLANC BLEU BELGE PRODUITS REFRIGERES",
+        "invoice_count": 22,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "FILET DE POULET FERMIER HALAL A S/AT",
+        "invoice_count": 19,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "Roulade poulet nature Halal",
+        "invoice_count": 18,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "TRAIN DE COTE DE BOEUF \"ANGUS\" HALAL",
+        "invoice_count": 18,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "RUMSTEACK CARCASSE BEUF",
+        "invoice_count": 17,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "CUISSE DE DINDE HALAL UE",
+        "invoice_count": 17,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "BOEUF CUISSE FLANCH CARCASSE BEUF",
+        "invoice_count": 16,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "POULET FERMIER HALAL EFFILÉ",
+        "invoice_count": 16,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "COPPA BOEUF HALAL",
+        "invoice_count": 16,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "Forme Poulet Fumé Halal en Bloc",
+        "invoice_count": 16,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "Jambon de Dinde Halal 5 kg Premier Choix",
+        "invoice_count": 16,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "Manutention et approvisionnement. Approvisionnement à pied d'œuvre des différents matériaux.",
+        "invoice_count": 16,
+        "sample_account": "6068"
+      },
+      {
+        "article_source": "QUEUE BOEUF FRAICHE",
+        "invoice_count": 16,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "ROGNON BOEUF",
+        "invoice_count": 16,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "AILES DE POULET HALAL",
+        "invoice_count": 15,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "EPICES POULET ROTI par 10 KILO",
+        "invoice_count": 15,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "JAMBON DE DINDE FUME 1/2 HALAL",
+        "invoice_count": 15,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "JAMBON DE POULET",
+        "invoice_count": 15,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "FOIE GRAS DE CANARD DEVEINE HALAL",
+        "invoice_count": 14,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "BACON DE DINDE 1/2 HALAL",
+        "invoice_count": 14,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "FILET DE POULET 10KG PLUDIS",
+        "invoice_count": 14,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "FRESSURE OVIN",
+        "invoice_count": 14,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "INTERBEV Boeuf",
+        "invoice_count": 14,
+        "sample_account": "6068"
+      },
+      {
+        "article_source": "BASSE-COTE DE BOEUF HALAL \"ANGUS\"",
+        "invoice_count": 13,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "BOUILLON KNORR MOUTON MAROC 648G",
+        "invoice_count": 13,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "Manutention et approvisionnement. Approvisionnement à pied d'oeuvre des différents matériaux.",
+        "invoice_count": 13,
+        "sample_account": "6068"
+      },
+      {
+        "article_source": "BOUILLON KNORR BOEUF MAROC 648G",
+        "invoice_count": 12,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "BOYAU NATUREL DE MOUTON SIMPLE 22/24 HALAL",
+        "invoice_count": 12,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "Délice de poulet Halal Nature forme poulet",
+        "invoice_count": 12,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "Délice de poulet olives Halal en forme de poulet",
+        "invoice_count": 12,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "JAMBON DE DINDE PERSILLÉ HALAL",
+        "invoice_count": 12,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "MOSAIQUE DE VOLAILLE PIMENTÉE",
+        "invoice_count": 12,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "SAUCISSON BOEUF SÉCHÉ HALAL",
+        "invoice_count": 12,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "FILET CARCASSE BEUF",
+        "invoice_count": 11,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "PASTRAMI BOEUF SPICY HALAL",
+        "invoice_count": 11,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "BASSE-COTE DE BOEUF HALAL",
+        "invoice_count": 11,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "BLANC DE POULET FUMÉ IMPORT HALAL",
+        "invoice_count": 11,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "DELICE DE POULET FUMÉ HALAL",
+        "invoice_count": 11,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "Dinde Olive Poivrons Halal en Bloc (Sévillana)",
+        "invoice_count": 11,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "FILET DE DINDE HALAL UE",
+        "invoice_count": 11,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "FRESSURE A LA PIECE",
+        "invoice_count": 11,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "JOUE DE BOEUF - CARCASSE ABATS",
+        "invoice_count": 11,
+        "sample_account": "6011"
+      }
+    ],
+    "rejected_reasons": {
+      "already_present": 76,
+      "deny_term": 171,
+      "missing_allow_term": 183
+    },
+    "files": [
+      {
+        "file": "base_produits_boucherie_v1.json",
+        "added": 45,
+        "skipped_existing": 0
+      },
+      {
+        "file": "base_produits_boucherie_v1_with_accounts.json",
+        "added": 45,
+        "skipped_existing": 0
+      }
+    ]
+  },
+  "restaurant": {
+    "selected_count": 70,
+    "selected_labels": [
+      {
+        "article_source": "LESIEUR MAYO HAUTE FERMETE 5L",
+        "invoice_count": 13,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "MC MAYO HTE FERMETE 4.7KG",
+        "invoice_count": 13,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "PDT GRE AGATA GBOX24 5KG C1 FR FRANCE",
+        "invoice_count": 13,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "SELECTO SODA 1.5L PET",
+        "invoice_count": 13,
+        "sample_account": "6068"
+      },
+      {
+        "article_source": "TROPICO FR EXOTIQUE 33CL x 24",
+        "invoice_count": 13,
+        "sample_account": "6068"
+      },
+      {
+        "article_source": "GIGOT AGN S/0S S/V NZ HAL",
+        "invoice_count": 12,
+        "sample_account": "6061"
+      },
+      {
+        "article_source": "CAIS.SANPELLEGR 12X100CL VIDE",
+        "invoice_count": 12,
+        "sample_account": "6068"
+      },
+      {
+        "article_source": "CASABLANCA 5D 33CL",
+        "invoice_count": 12,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "HP10 BLANC ECO RECYCLABLE 100PCS",
+        "invoice_count": 12,
+        "sample_account": "6068"
+      },
+      {
+        "article_source": "MPRO ESSUIE-MAIN PL.Z 200F X15",
+        "invoice_count": 12,
+        "sample_account": "6063"
+      },
+      {
+        "article_source": "Navet x 5 Kg Net Cat 1 France",
+        "invoice_count": 12,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "Option Energie Verte",
+        "invoice_count": 12,
+        "sample_account": "6061"
+      },
+      {
+        "article_source": "POMME DE TERRE AGHATA 5 KG",
+        "invoice_count": 12,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "POULET OUVERT 1KG HALLAL - 5 CX",
+        "invoice_count": 12,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "SCHWEPPE AGRUME 25CL VC",
+        "invoice_count": 12,
+        "sample_account": "6068"
+      },
+      {
+        "article_source": "SCHWEPPES AGRUM SLIM 33CL",
+        "invoice_count": 12,
+        "sample_account": "6068"
+      },
+      {
+        "article_source": "GIGOT AGN A/0S HAL PAC S/V NZ",
+        "invoice_count": 11,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "EPICERIE",
+        "invoice_count": 11,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "SCHWEPPES AGRUM24X25CL PLEIN",
+        "invoice_count": 11,
+        "sample_account": "6068"
+      },
+      {
+        "article_source": "50 COUV BOL A SOUPE KRAFT PM",
+        "invoice_count": 11,
+        "sample_account": "6063"
+      },
+      {
+        "article_source": "Achat non détaillé",
+        "invoice_count": 11,
+        "sample_account": "6061"
+      },
+      {
+        "article_source": "BOITE RETANCLE+COUV 500G 50P",
+        "invoice_count": 11,
+        "sample_account": "6062"
+      },
+      {
+        "article_source": "COCA COLA REG PET 1.25L",
+        "invoice_count": 11,
+        "sample_account": "6068"
+      },
+      {
+        "article_source": "COCA COLAS 25CL VP",
+        "invoice_count": 11,
+        "sample_account": "6068"
+      },
+      {
+        "article_source": "CRISTAL SAC 20KG ARO",
+        "invoice_count": 11,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "Carotte Grosse x 10 Kg net Cat 1 France",
+        "invoice_count": 11,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "EMMENTAL FR RAPE 1KG MC",
+        "invoice_count": 11,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "FILET DE POULET AVS AU KG",
+        "invoice_count": 11,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "MC MAY0 HTE FERMETE 4.7KG",
+        "invoice_count": 11,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "MOZZA/EMMENT RAPE SACH 2,5KGMC",
+        "invoice_count": 11,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "OASIS FRAISE FRAMBOISE 33cl*24",
+        "invoice_count": 11,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "OIGNON JAUNE 5 KILOS",
+        "invoice_count": 11,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "Paiements supplémentaires",
+        "invoice_count": 11,
+        "sample_account": "606"
+      },
+      {
+        "article_source": "SAN PELL 1L VC",
+        "invoice_count": 11,
+        "sample_account": "6068"
+      },
+      {
+        "article_source": "TRANCHES D'AVOCAT 500G",
+        "invoice_count": 11,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "GIGOT AGN S/0S HALAL S/V NZ",
+        "invoice_count": 10,
+        "sample_account": "6061"
+      },
+      {
+        "article_source": "9854. EVIAN-BAD. 20X50STUB. PLEIN",
+        "invoice_count": 10,
+        "sample_account": "6061"
+      },
+      {
+        "article_source": "ARO TOMATE ENTIERE PELEE 1/2",
+        "invoice_count": 10,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "50 BTE SALADE KRAFT 1000ML",
+        "invoice_count": 10,
+        "sample_account": "6063"
+      },
+      {
+        "article_source": "AILES DE POULET HALAL CEE",
+        "invoice_count": 10,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "BADOIT 1L VC",
+        "invoice_count": 10,
+        "sample_account": "6061"
+      },
+      {
+        "article_source": "GRANINI ABRICOT 25CL",
+        "invoice_count": 10,
+        "sample_account": "6068"
+      },
+      {
+        "article_source": "Gazole",
+        "invoice_count": 10,
+        "sample_account": "6063"
+      },
+      {
+        "article_source": "MC HUILE FRITURE 25L",
+        "invoice_count": 10,
+        "sample_account": "6061"
+      },
+      {
+        "article_source": "MPRO 50 COU RPET BOL SAL PM",
+        "invoice_count": 10,
+        "sample_account": "6063"
+      },
+      {
+        "article_source": "MPRO DECAP FOUR 5L",
+        "invoice_count": 10,
+        "sample_account": "6063"
+      },
+      {
+        "article_source": "NAVET ROND GROS 5KG FR FRANCE",
+        "invoice_count": 10,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "OIG CHARC MC 7/10 8KG C1 FR 66FRANCE",
+        "invoice_count": 10,
+        "sample_account": "6012"
+      },
+      {
+        "article_source": "Obligations",
+        "invoice_count": 10,
+        "sample_account": "6061"
+      },
+      {
+        "article_source": "PERSIL FLOCONS SAC 500G",
+        "invoice_count": 10,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "PILON",
+        "invoice_count": 10,
+        "sample_account": "6061"
+      },
+      {
+        "article_source": "PREPA TIRAMISU 1L MC",
+        "invoice_count": 10,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "Promotions sur les articles",
+        "invoice_count": 10,
+        "sample_account": "606"
+      },
+      {
+        "article_source": "Revenus en titre-restaurant",
+        "invoice_count": 10,
+        "sample_account": "606"
+      },
+      {
+        "article_source": "SAUCE",
+        "invoice_count": 10,
+        "sample_account": "6061"
+      },
+      {
+        "article_source": "SAUCE TOMATE TABANA",
+        "invoice_count": 10,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "SAUCISSE",
+        "invoice_count": 10,
+        "sample_account": "6061"
+      },
+      {
+        "article_source": "Vos services fournis par votre opérateur",
+        "invoice_count": 10,
+        "sample_account": "606"
+      },
+      {
+        "article_source": "Article non spécifié",
+        "invoice_count": 9,
+        "sample_account": "606"
+      },
+      {
+        "article_source": "Fourniture d'électricité - Consommation",
+        "invoice_count": 9,
+        "sample_account": "6061"
+      },
+      {
+        "article_source": "0IG CHARC MC 7/10 8KG C1 FR 66FRANCE",
+        "invoice_count": 9,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "Avantage client box",
+        "invoice_count": 9,
+        "sample_account": "6062"
+      },
+      {
+        "article_source": "BOITE A PIZZA 40CM MARRON 50PCS",
+        "invoice_count": 9,
+        "sample_account": "6068"
+      },
+      {
+        "article_source": "CAIS.SANPELLEGR 12X100CL PLEIN",
+        "invoice_count": 9,
+        "sample_account": "6068"
+      },
+      {
+        "article_source": "CANETTE",
+        "invoice_count": 9,
+        "sample_account": "6061"
+      },
+      {
+        "article_source": "CORDON BLEU DE VOLAILLE ADEN PL 1KG",
+        "invoice_count": 9,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "DONUTS",
+        "invoice_count": 9,
+        "sample_account": "6061"
+      },
+      {
+        "article_source": "ESSUIE MAIN GAUFFRE 450 FORMAT X6",
+        "invoice_count": 9,
+        "sample_account": "6068"
+      },
+      {
+        "article_source": "FILET PLT BLC HAL 5KG UE SAT",
+        "invoice_count": 9,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "FROMAGE BLANC 3,1% 1KG",
+        "invoice_count": 9,
+        "sample_account": "601"
+      }
+    ],
+    "rejected_reasons": {
+      "already_present": 119,
+      "deny_term": 11
+    },
+    "files": [
+      {
+        "file": "base_produits_restaurant_v1.json",
+        "added": 70,
+        "skipped_existing": 0
+      },
+      {
+        "file": "base_produits_restaurant_v1_with_accounts.json",
+        "added": 70,
+        "skipped_existing": 0
+      }
+    ]
+  },
+  "boulangerie": {
+    "selected_count": 35,
+    "selected_labels": [
+      {
+        "article_source": "MINI PAIN CHOC ARTISAN FAI CRU 200X28G",
+        "invoice_count": 23,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "CHEVRE BUCHE KG 50% MG",
+        "invoice_count": 22,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "FONDANT SEAU EN 15 KG",
+        "invoice_count": 22,
+        "sample_account": "6061"
+      },
+      {
+        "article_source": "NAPPAGE BLOND PRO SEAU 14 KG",
+        "invoice_count": 22,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "SAUMON FUME ATLANTIQU TRANCHE BANDE 800G",
+        "invoice_count": 22,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "FROMAGE BLC 2,8% 5KG MC",
+        "invoice_count": 21,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "Farine Sérénité Label Rouge T65",
+        "invoice_count": 21,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "MINI PAIN RAIS FAI CRU ARTISAN 200X30G",
+        "invoice_count": 21,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "OEUF COQUILLE TEINTE MOYEN 53/63 CT 360",
+        "invoice_count": 21,
+        "sample_account": "6061"
+      },
+      {
+        "article_source": "FARINE GRUAU DELICE TYPE 65 SAC 25 KG",
+        "invoice_count": 20,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "BEURRE CUBE 25 KG FRIESLAND CAMPINA",
+        "invoice_count": 20,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "CHOC LAIT 33% DGF 10KG",
+        "invoice_count": 20,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "LAIT 1/2 ECREME FRANCAIS X6 UHT",
+        "invoice_count": 20,
+        "sample_account": "6061"
+      },
+      {
+        "article_source": "OEUF BLANC LIQUIDE 1L SERVIS OEUF",
+        "invoice_count": 20,
+        "sample_account": "601100"
+      },
+      {
+        "article_source": "PATE DE PISTACH 1KG CRESCO",
+        "invoice_count": 20,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "SACS PAIN 1F H.700MM (X50)",
+        "invoice_count": 19,
+        "sample_account": "6025"
+      },
+      {
+        "article_source": "EAU CRISTALINE PET 24X50CL",
+        "invoice_count": 19,
+        "sample_account": "6068"
+      },
+      {
+        "article_source": "EAU DE SOURCE,6X1.5L CRISTALINE",
+        "invoice_count": 19,
+        "sample_account": "6068"
+      },
+      {
+        "article_source": "CREME FRAICHE EPAISSE 30% 5KG ISIGNY",
+        "invoice_count": 19,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "CREME VEGETALE SWEET SUCRE 1L P/12",
+        "invoice_count": 19,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "SAUMON FUME 600/900G ARO",
+        "invoice_count": 19,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "BEURRE DOUX CUBE 25KG",
+        "invoice_count": 18,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "BEURRE DX PAT BLOC 10KG FLECH",
+        "invoice_count": 18,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "GROSEILLE RGE 125G FR C1 FRANCE",
+        "invoice_count": 18,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "GROSEILLE RGE 125G PAYS-BAS",
+        "invoice_count": 17,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "BEURRE DOUX LACTIQUE 82% BLOC 25KG",
+        "invoice_count": 16,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "EMMENTAL 40 TRANCHES",
+        "invoice_count": 16,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "MINI CROISSANT FAI CRU ARTISAN 270X25G",
+        "invoice_count": 16,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "MAMIE NOVA CREME AMANDES 2X150G",
+        "invoice_count": 15,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "CONCOMBRE FROMAGE BLC 320G",
+        "invoice_count": 15,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "CREME MASCARPONE POT 500G",
+        "invoice_count": 15,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "CROISSANT RMB 65G *",
+        "invoice_count": 15,
+        "sample_account": "601"
+      },
+      {
+        "article_source": "EMMENTAL RAPE 1KG ARO",
+        "invoice_count": 15,
+        "sample_account": "6011"
+      },
+      {
+        "article_source": "MARG BOMAR BRIOCHE INCORP PAIN 20X0.5KG",
+        "invoice_count": 15,
+        "sample_account": "6061"
+      },
+      {
+        "article_source": "MINI BEIGNET SUCRE FAI SURG 70X19G",
+        "invoice_count": 15,
+        "sample_account": "6011"
+      }
+    ],
+    "rejected_reasons": {
+      "deny_term": 99,
+      "already_present": 58,
+      "missing_allow_term": 167
+    },
+    "files": [
+      {
+        "file": "base_produits_boulangerie_v1.json",
+        "added": 35,
+        "skipped_existing": 0
+      },
+      {
+        "file": "base_produits_boulangerie_v1_with_accounts.json",
+        "added": 35,
+        "skipped_existing": 0
+      }
+    ]
+  },
+  "btp": {
+    "selected_count": 25,
+    "selected_labels": [
+      {
+        "article_source": "COULAGE DALLAGE/ PLANCHERS PH BAT A",
+        "invoice_count": 2,
+        "sample_account": "6063"
+      },
+      {
+        "article_source": "COULAGE PH R+1 BAT A",
+        "invoice_count": 2,
+        "sample_account": "6062"
+      },
+      {
+        "article_source": "COULAGE PLANCHER PH R+2 Finition brut",
+        "invoice_count": 2,
+        "sample_account": "6063"
+      },
+      {
+        "article_source": "COULAGE PLANCHER finition hélicoptére",
+        "invoice_count": 2,
+        "sample_account": "6063"
+      },
+      {
+        "article_source": "Carreau béton cellulaire 7/50 CXE 625x500x70mm - SIPOREX",
+        "invoice_count": 2,
+        "sample_account": "6063"
+      },
+      {
+        "article_source": "Colle béton cellulaire sac de 5kg",
+        "invoice_count": 2,
+        "sample_account": "6063"
+      },
+      {
+        "article_source": "Cordon Jointofeu diamètre 30 rouleau de 20m",
+        "invoice_count": 2,
+        "sample_account": "6061"
+      },
+      {
+        "article_source": "Coulage DALLAGE Finition hélicoptére avec Surfaquartz",
+        "invoice_count": 2,
+        "sample_account": "6063"
+      },
+      {
+        "article_source": "Coulage DALLE BASSE (avec Surfaquartz)",
+        "invoice_count": 2,
+        "sample_account": "6063"
+      },
+      {
+        "article_source": "Coulage PH R+2 BATIMENT 4",
+        "invoice_count": 2,
+        "sample_account": "604"
+      },
+      {
+        "article_source": "Coulage planchers infra",
+        "invoice_count": 2,
+        "sample_account": "6062"
+      },
+      {
+        "article_source": "Création dalle pour cantilvers",
+        "invoice_count": 2,
+        "sample_account": "6063"
+      },
+      {
+        "article_source": "DALLAGE finition hélicoptére aVec SURFAQUARTZ + PRODUIT DE CURE + SCIAGE",
+        "invoice_count": 2,
+        "sample_account": "6063"
+      },
+      {
+        "article_source": "DALLE PORTEE - Plancher bas du S/Sol",
+        "invoice_count": 2,
+        "sample_account": "6063"
+      },
+      {
+        "article_source": "DALLE PORTéE finition brut",
+        "invoice_count": 2,
+        "sample_account": "6062"
+      },
+      {
+        "article_source": "Dallage Finition helicoptére avec Surfaquartz",
+        "invoice_count": 2,
+        "sample_account": "6063"
+      },
+      {
+        "article_source": "FORFAIT - MISE A DISPOSITION POMPE A BETON Inclus dans le forfait : Fléche 28m M-a-d 4 heures",
+        "invoice_count": 2,
+        "sample_account": "6063"
+      },
+      {
+        "article_source": "FORFAIT COULAGE DALLAGE Finition hélicoptére",
+        "invoice_count": 2,
+        "sample_account": "6062"
+      },
+      {
+        "article_source": "Finition hélicoptére PH S/SOL finition brut",
+        "invoice_count": 2,
+        "sample_account": "6063"
+      },
+      {
+        "article_source": "GO pompe 05",
+        "invoice_count": 2,
+        "sample_account": "6068"
+      },
+      {
+        "article_source": "GO pompe 07",
+        "invoice_count": 2,
+        "sample_account": "606800"
+      },
+      {
+        "article_source": "GRAVATS : Briques, terre, ciment, béton, pierres, sable. En cas de présence de déchets l'ensemble de la benne sera déclassé en DIB. DIB : Bois, platre, Placoplatre, ferraille, plastique, meubles, papier, cartons, déchets verts. Bon N° FQ-18954 08/11/2025 - Autre PARIS",
+        "invoice_count": 2,
+        "sample_account": "6068"
+      },
+      {
+        "article_source": "M.A.D Pompe Béton (FORFAIT)",
+        "invoice_count": 2,
+        "sample_account": "6063"
+      },
+      {
+        "article_source": "M3 POMPE Ni repris ni échangé",
+        "invoice_count": 2,
+        "sample_account": "6063"
+      },
+      {
+        "article_source": "OUATE BLANCHE GAUFREE COLLEE 1000 FORMATS 23X25",
+        "invoice_count": 2,
+        "sample_account": "6061"
+      }
+    ],
+    "rejected_reasons": {
+      "account_prefix_not_allowed": 105,
+      "deny_term": 23,
+      "missing_allow_term": 258,
+      "already_present": 36
+    },
+    "files": [
+      {
+        "file": "base_produits_btp_v1.json",
+        "added": 25,
+        "skipped_existing": 0
+      },
+      {
+        "file": "base_produits_btp_v1_with_accounts.json",
+        "added": 25,
+        "skipped_existing": 0
+      }
+    ]
+  },
+  "transport": {
+    "selected_count": 0,
+    "selected_labels": [],
+    "rejected_reasons": {
+      "already_present": 32,
+      "deny_term": 58,
+      "missing_allow_term": 248,
+      "account_prefix_not_allowed": 2,
+      "invoice_count_too_low": 160
+    },
+    "files": [
+      {
+        "file": "base_produits_transport_v1.json",
+        "added": 0,
+        "skipped_existing": 0
+      },
+      {
+        "file": "base_produits_transport_v1_with_accounts.json",
+        "added": 0,
+        "skipped_existing": 0
+      }
+    ]
+  }
+}

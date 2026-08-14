@@ -1,0 +1,80 @@
+{
+  "transport": {
+    "requested_active": [
+      "HABILLAGE PARE-CHOCS",
+      "ACCESSOIRES BOULON POUR JANTES / ROUES M14X1.50 28mm",
+      "JANTE R19x8.5 5X112 ET 43 66.6 B1048",
+      "JANTE R19x8.5 5X112 ET 43 66.6 B1048 MB",
+      "PNEUS 245 40 19 (98y)",
+      "PNEUS 275 35 19 (100y)",
+      "PATE POUR FREINS",
+      "CPT USURE GARNITURES FR",
+      "OML [MUL] NETT. FREIN 50"
+    ],
+    "missing": [],
+    "files": [
+      {
+        "file": "base_produits_transport_v1.json",
+        "added": 3,
+        "skipped_existing": 6,
+        "added_labels": [
+          "HABILLAGE PARE-CHOCS",
+          "PATE POUR FREINS",
+          "CPT USURE GARNITURES FR"
+        ]
+      },
+      {
+        "file": "base_produits_transport_v1_with_accounts.json",
+        "added": 3,
+        "skipped_existing": 6,
+        "added_labels": [
+          "HABILLAGE PARE-CHOCS",
+          "PATE POUR FREINS",
+          "CPT USURE GARNITURES FR"
+        ]
+      }
+    ]
+  },
+  "btp": {
+    "requested_active": [
+      "MANCHE DE BALAI COCO PIN DOUILLE PLASTIQUE 120/24",
+      "BALAI COCO 29 CM DOUILE RESINE",
+      "BALAI COCO 29CM A VIS NOVIPRO",
+      "BALANCE VRAC CODE A CLOU VIS BOULON KG",
+      "DE RIVETEUSE UNIRIVET ALU",
+      "MANCHE BALAI VIS ET ATTACHE PLASTIQ",
+      "PLIAGE ALUMINIUM 10/10 ANODISE + PERFO (DETAIL 5) Long : 2000 Dev : 320 Eco contribution"
+    ],
+    "missing": [],
+    "files": [
+      {
+        "file": "base_produits_btp_v1.json",
+        "added": 7,
+        "skipped_existing": 0,
+        "added_labels": [
+          "MANCHE DE BALAI COCO PIN DOUILLE PLASTIQUE 120/24",
+          "BALAI COCO 29 CM DOUILE RESINE",
+          "BALAI COCO 29CM A VIS NOVIPRO",
+          "BALANCE VRAC CODE A CLOU VIS BOULON KG",
+          "DE RIVETEUSE UNIRIVET ALU",
+          "MANCHE BALAI VIS ET ATTACHE PLASTIQ",
+          "PLIAGE ALUMINIUM 10/10 ANODISE + PERFO (DETAIL 5) Long : 2000 Dev : 320 Eco contribution"
+        ]
+      },
+      {
+        "file": "base_produits_btp_v1_with_accounts.json",
+        "added": 7,
+        "skipped_existing": 0,
+        "added_labels": [
+          "MANCHE DE BALAI COCO PIN DOUILLE PLASTIQUE 120/24",
+          "BALAI COCO 29 CM DOUILE RESINE",
+          "BALAI COCO 29CM A VIS NOVIPRO",
+          "BALANCE VRAC CODE A CLOU VIS BOULON KG",
+          "DE RIVETEUSE UNIRIVET ALU",
+          "MANCHE BALAI VIS ET ATTACHE PLASTIQ",
+          "PLIAGE ALUMINIUM 10/10 ANODISE + PERFO (DETAIL 5) Long : 2000 Dev : 320 Eco contribution"
+        ]
+      }
+    ]
+  }
+}

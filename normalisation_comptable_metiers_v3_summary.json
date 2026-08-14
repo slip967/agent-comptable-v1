@@ -1,0 +1,130 @@
+{
+  "generated_at": "2026-05-06T03:15:03.726955Z",
+  "files": [
+    {
+      "file": "base_produits_transport_v1.json",
+      "metier": "transport",
+      "changed": 0,
+      "by_rule": {},
+      "by_transition": {},
+      "examples": []
+    },
+    {
+      "file": "base_produits_transport_v1_with_accounts.json",
+      "metier": "transport",
+      "changed": 0,
+      "by_rule": {},
+      "by_transition": {},
+      "examples": []
+    },
+    {
+      "file": "base_produits_vtc_v1.json",
+      "metier": "vtc",
+      "changed": 3,
+      "by_rule": {
+        "restauration_correction_ciblee": 3
+      },
+      "by_transition": {
+        "6261->6068": 1,
+        "6261->6063": 2
+      },
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "OPPO Find X3 Pro 5G 256Go Noir",
+          "old": "6261",
+          "new": "6068",
+          "rule": "restauration_correction_ciblee"
+        },
+        {
+          "section": "items",
+          "article_source": "Galaxy S24 Indigo 128 Go, IMEI: 355680657471025",
+          "old": "6261",
+          "new": "6063",
+          "rule": "restauration_correction_ciblee"
+        },
+        {
+          "section": "items",
+          "article_source": "SanDisk Ultra 128 Go Clé USB 3.0 jusqu'à 130 Mo/s",
+          "old": "6261",
+          "new": "6063",
+          "rule": "restauration_correction_ciblee"
+        }
+      ]
+    },
+    {
+      "file": "base_produits_vtc_v1_with_accounts.json",
+      "metier": "vtc",
+      "changed": 3,
+      "by_rule": {
+        "restauration_correction_ciblee": 3
+      },
+      "by_transition": {
+        "6261->6068": 1,
+        "6261->6063": 2
+      },
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "OPPO Find X3 Pro 5G 256Go Noir",
+          "old": "6261",
+          "new": "6068",
+          "rule": "restauration_correction_ciblee"
+        },
+        {
+          "section": "items",
+          "article_source": "Galaxy S24 Indigo 128 Go, IMEI: 355680657471025",
+          "old": "6261",
+          "new": "6063",
+          "rule": "restauration_correction_ciblee"
+        },
+        {
+          "section": "items",
+          "article_source": "SanDisk Ultra 128 Go Clé USB 3.0 jusqu'à 130 Mo/s",
+          "old": "6261",
+          "new": "6063",
+          "rule": "restauration_correction_ciblee"
+        }
+      ]
+    },
+    {
+      "file": "base_produits_restaurant_v1.json",
+      "metier": "restaurant",
+      "changed": 0,
+      "by_rule": {},
+      "by_transition": {},
+      "examples": []
+    },
+    {
+      "file": "base_produits_restaurant_v1_with_accounts.json",
+      "metier": "restaurant",
+      "changed": 0,
+      "by_rule": {},
+      "by_transition": {},
+      "examples": []
+    },
+    {
+      "file": "base_produits_epicerie_v1.json",
+      "metier": "epicerie",
+      "changed": 0,
+      "by_rule": {},
+      "by_transition": {},
+      "examples": []
+    },
+    {
+      "file": "base_produits_epicerie_v1_with_accounts.json",
+      "metier": "epicerie",
+      "changed": 0,
+      "by_rule": {},
+      "by_transition": {},
+      "examples": []
+    }
+  ],
+  "total_changed": 6,
+  "by_metier": {
+    "transport": 0,
+    "vtc": 6,
+    "restaurant": 0,
+    "epicerie": 0
+  }
+}

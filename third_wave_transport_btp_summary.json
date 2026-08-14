@@ -1,0 +1,223 @@
+{
+  "transport": {
+    "requested_active": [
+      "SP98 EXCELLIUM",
+      "TS CART. FILTRE A HUILE",
+      "GARNITURE FREIN A DISQUE",
+      "CAPTEUR D'USURE",
+      "FILTRE A HUILE",
+      "PATE POUR FREINS (PDP)",
+      "PLAQUETTE FREIN BOSCH",
+      "DISQUE DE FREIN COMPOSITE",
+      "DISQUE DE FREIN VENTILE"
+    ],
+    "requested_a_valider": [
+      "Vos abonnements, forfaits et options",
+      "Bbox - location équipement (du 02/05 au 01/06)",
+      "Bbox - location équipement (du 02/12 au 01/01)",
+      "Vos communications (du 02/12 au 01/01)",
+      "Appels a tarification majorée (Numéros spéciaux)",
+      "Appels tarification majorée - Numéros spéciaux",
+      "Applications - contenus - services",
+      "Avantage Internet 100Go",
+      "Bbox - location équipement (du 02/02 au 01/03)",
+      "Bbox - location équipement (du 02/10 au 01/11)",
+      "Bbox - location équipement (du 02/11 au 01/12)",
+      "Bbox fibre jusqu'a1 Gb/s (du 02/05 au 01/06)",
+      "Bbox fibre jusqu'a1 Gb/s (du 02/07 au 01/08)",
+      "Bbox fibre jusqu'a1 Gb/s (du 02/12 au 01/01)",
+      "Evolution d'offre - Appels illimités mobiles France_ (du 02/07 au 01/08)",
+      "Forfait Sensation client 70Go",
+      "Internet 10Go France",
+      "Multi-TV FTTH (du 02/05 au 01/06)",
+      "Multi-TV FTTH (du 02/12 au 01/01)",
+      "Services de télécommunications (forfait, communications, autres services)",
+      "Vos communications (du 02/07 au 01/08)",
+      "Vos communications (du 02/09 au 01/10)"
+    ],
+    "missing_active": [],
+    "missing_a_valider": [],
+    "files": [
+      {
+        "file": "base_produits_transport_v1.json",
+        "items": {
+          "added": 9,
+          "skipped_existing": 0,
+          "added_labels": [
+            "SP98 EXCELLIUM",
+            "TS CART. FILTRE A HUILE",
+            "GARNITURE FREIN A DISQUE",
+            "CAPTEUR D'USURE",
+            "FILTRE A HUILE",
+            "PATE POUR FREINS (PDP)",
+            "PLAQUETTE FREIN BOSCH",
+            "DISQUE DE FREIN COMPOSITE",
+            "DISQUE DE FREIN VENTILE"
+          ]
+        },
+        "a_valider": {
+          "added": 22,
+          "skipped_existing": 0,
+          "added_labels": [
+            "Vos abonnements, forfaits et options",
+            "Bbox - location équipement (du 02/05 au 01/06)",
+            "Bbox - location équipement (du 02/12 au 01/01)",
+            "Vos communications (du 02/12 au 01/01)",
+            "Appels a tarification majorée (Numéros spéciaux)",
+            "Appels tarification majorée - Numéros spéciaux",
+            "Applications - contenus - services",
+            "Avantage Internet 100Go",
+            "Bbox - location équipement (du 02/02 au 01/03)",
+            "Bbox - location équipement (du 02/10 au 01/11)",
+            "Bbox - location équipement (du 02/11 au 01/12)",
+            "Bbox fibre jusqu'a1 Gb/s (du 02/05 au 01/06)",
+            "Bbox fibre jusqu'a1 Gb/s (du 02/07 au 01/08)",
+            "Bbox fibre jusqu'a1 Gb/s (du 02/12 au 01/01)",
+            "Evolution d'offre - Appels illimités mobiles France_ (du 02/07 au 01/08)",
+            "Forfait Sensation client 70Go",
+            "Internet 10Go France",
+            "Multi-TV FTTH (du 02/05 au 01/06)",
+            "Multi-TV FTTH (du 02/12 au 01/01)",
+            "Services de télécommunications (forfait, communications, autres services)",
+            "Vos communications (du 02/07 au 01/08)",
+            "Vos communications (du 02/09 au 01/10)"
+          ]
+        }
+      },
+      {
+        "file": "base_produits_transport_v1_with_accounts.json",
+        "items": {
+          "added": 9,
+          "skipped_existing": 0,
+          "added_labels": [
+            "SP98 EXCELLIUM",
+            "TS CART. FILTRE A HUILE",
+            "GARNITURE FREIN A DISQUE",
+            "CAPTEUR D'USURE",
+            "FILTRE A HUILE",
+            "PATE POUR FREINS (PDP)",
+            "PLAQUETTE FREIN BOSCH",
+            "DISQUE DE FREIN COMPOSITE",
+            "DISQUE DE FREIN VENTILE"
+          ]
+        },
+        "a_valider": {
+          "added": 22,
+          "skipped_existing": 0,
+          "added_labels": [
+            "Vos abonnements, forfaits et options",
+            "Bbox - location équipement (du 02/05 au 01/06)",
+            "Bbox - location équipement (du 02/12 au 01/01)",
+            "Vos communications (du 02/12 au 01/01)",
+            "Appels a tarification majorée (Numéros spéciaux)",
+            "Appels tarification majorée - Numéros spéciaux",
+            "Applications - contenus - services",
+            "Avantage Internet 100Go",
+            "Bbox - location équipement (du 02/02 au 01/03)",
+            "Bbox - location équipement (du 02/10 au 01/11)",
+            "Bbox - location équipement (du 02/11 au 01/12)",
+            "Bbox fibre jusqu'a1 Gb/s (du 02/05 au 01/06)",
+            "Bbox fibre jusqu'a1 Gb/s (du 02/07 au 01/08)",
+            "Bbox fibre jusqu'a1 Gb/s (du 02/12 au 01/01)",
+            "Evolution d'offre - Appels illimités mobiles France_ (du 02/07 au 01/08)",
+            "Forfait Sensation client 70Go",
+            "Internet 10Go France",
+            "Multi-TV FTTH (du 02/05 au 01/06)",
+            "Multi-TV FTTH (du 02/12 au 01/01)",
+            "Services de télécommunications (forfait, communications, autres services)",
+            "Vos communications (du 02/07 au 01/08)",
+            "Vos communications (du 02/09 au 01/10)"
+          ]
+        }
+      }
+    ]
+  },
+  "btp": {
+    "requested_active": [
+      "CUTTER STANDARD 18MM AVEC 3 LAMES NOIR",
+      "Sac a gravat tissé 60x100cm paquet de 10 pièces",
+      "PROMACURE S -Cure des bétons,phase solvant -BIDON DE 20 LITRES",
+      "ROND A BETON TOR HLE FE5005 6MM 3M",
+      "Rabot à béton essence",
+      "PARKING Coulage Radier",
+      "PLANCHER SUPERSTRUCTURE ( 100 % ) Finition brut",
+      "BPS C25/30 CEMI SR5+Cv D20 S3 XF1",
+      "Passerelle",
+      "vanne thermostatique connectée",
+      "CUTTER A LAME CASSABLE 25 MM d213",
+      "CUTTER NOVI LAME RETRACT 18MM"
+    ],
+    "requested_a_valider": [
+      "Essai de contrôle sur un micropieu de l'ouvrage selon EC7",
+      "Travaux de terrassement et étanchéité de la zone comportant des infiltrations d'eau",
+      "Amenée-repli de l'atelier de forage des micropieux",
+      "Implantation des micropieux"
+    ],
+    "missing_active": [],
+    "missing_a_valider": [],
+    "files": [
+      {
+        "file": "base_produits_btp_v1.json",
+        "items": {
+          "added": 12,
+          "skipped_existing": 0,
+          "added_labels": [
+            "CUTTER STANDARD 18MM AVEC 3 LAMES NOIR",
+            "Sac a gravat tissé 60x100cm paquet de 10 pièces",
+            "PROMACURE S -Cure des bétons,phase solvant -BIDON DE 20 LITRES",
+            "ROND A BETON TOR HLE FE5005 6MM 3M",
+            "Rabot à béton essence",
+            "PARKING Coulage Radier",
+            "PLANCHER SUPERSTRUCTURE ( 100 % ) Finition brut",
+            "BPS C25/30 CEMI SR5+Cv D20 S3 XF1",
+            "Passerelle",
+            "vanne thermostatique connectée",
+            "CUTTER A LAME CASSABLE 25 MM d213",
+            "CUTTER NOVI LAME RETRACT 18MM"
+          ]
+        },
+        "a_valider": {
+          "added": 4,
+          "skipped_existing": 0,
+          "added_labels": [
+            "Essai de contrôle sur un micropieu de l'ouvrage selon EC7",
+            "Travaux de terrassement et étanchéité de la zone comportant des infiltrations d'eau",
+            "Amenée-repli de l'atelier de forage des micropieux",
+            "Implantation des micropieux"
+          ]
+        }
+      },
+      {
+        "file": "base_produits_btp_v1_with_accounts.json",
+        "items": {
+          "added": 12,
+          "skipped_existing": 0,
+          "added_labels": [
+            "CUTTER STANDARD 18MM AVEC 3 LAMES NOIR",
+            "Sac a gravat tissé 60x100cm paquet de 10 pièces",
+            "PROMACURE S -Cure des bétons,phase solvant -BIDON DE 20 LITRES",
+            "ROND A BETON TOR HLE FE5005 6MM 3M",
+            "Rabot à béton essence",
+            "PARKING Coulage Radier",
+            "PLANCHER SUPERSTRUCTURE ( 100 % ) Finition brut",
+            "BPS C25/30 CEMI SR5+Cv D20 S3 XF1",
+            "Passerelle",
+            "vanne thermostatique connectée",
+            "CUTTER A LAME CASSABLE 25 MM d213",
+            "CUTTER NOVI LAME RETRACT 18MM"
+          ]
+        },
+        "a_valider": {
+          "added": 4,
+          "skipped_existing": 0,
+          "added_labels": [
+            "Essai de contrôle sur un micropieu de l'ouvrage selon EC7",
+            "Travaux de terrassement et étanchéité de la zone comportant des infiltrations d'eau",
+            "Amenée-repli de l'atelier de forage des micropieux",
+            "Implantation des micropieux"
+          ]
+        }
+      }
+    ]
+  }
+}

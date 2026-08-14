@@ -1,0 +1,1039 @@
+{
+  "changes": [
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "Béton pompé",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "COULAGE PLANCHER",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "COULAGE PLANCHER finition brut",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "COULAGE DALLAGE finition hélicoptére",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "COULAGE PH RDC",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "COULAGE DALLE BETON Finition hélicoptére",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "COULAGE PARKING S/SOL",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "COULAGE DALLAGE",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "Coulage PH R-1 ( finition hélicoptére )",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "COULAGE PLANCHER FORFAIT",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "(03/05/2023) Coulage PH RDC BAT 11",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "(05/05/2023) Coulage PH RDC BAT 11",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "(12/05/2023) Coulage PH R+2 BAT 8",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "(19/05/2023) Coulage PH R+1 BAT 14",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "(23/05/2023) Coulage PH RDC BAT 10",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "(31/05/2023) Coulage PH R+2 BAT 6",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "01/12/2023 COULAGE PLANCHER",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "COULAGE DALLAGE / PLANCHERS - PH BAT B",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "COULAGE DALLAGE/ PLANCHERS - PH RDC BAT A",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "COULAGE DALLAGE/ PLANCHERS PH BAT A",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "COULAGE PH R+1 BAT A",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "COULAGE PLANCHER PH R+2 Finition brut",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "COULAGE PLANCHER finition hélicoptére",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "Coulage DALLAGE Finition hélicoptére avec Surfaquartz",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "Coulage DALLE BASSE (avec Surfaquartz)",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "Coulage PH R+2 BATIMENT 4",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "Coulage planchers infra",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "FORFAIT COULAGE DALLAGE Finition hélicoptére",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "M.A.D Pompe Béton (FORFAIT)",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_btp_corrected_v3.json",
+      "action": "exclude_from_strict_product_injection",
+      "article_source": "PARKING Coulage Radier",
+      "old_account": "6063",
+      "new_account": "",
+      "reason": "btp_service_like_label"
+    },
+    {
+      "base": "base_produits_transport_corrected_v3.json",
+      "action": "account_fix",
+      "article_source": "Gazole",
+      "old_account": "6061",
+      "new_account": "6063",
+      "reason": "fuel_or_vehicle_supply_strict_review"
+    },
+    {
+      "base": "base_produits_transport_corrected_v3.json",
+      "action": "account_fix",
+      "article_source": "ADblue",
+      "old_account": "6061",
+      "new_account": "6063",
+      "reason": "fuel_or_vehicle_supply_strict_review"
+    },
+    {
+      "base": "base_produits_transport_corrected_v3.json",
+      "action": "account_fix",
+      "article_source": "GAZOLE Carburant",
+      "old_account": "6061",
+      "new_account": "6063",
+      "reason": "fuel_or_vehicle_supply_strict_review"
+    },
+    {
+      "base": "base_produits_transport_corrected_v3.json",
+      "action": "account_fix",
+      "article_source": "Carburant GO (Gazole)",
+      "old_account": "6061",
+      "new_account": "6063",
+      "reason": "fuel_or_vehicle_supply_strict_review"
+    },
+    {
+      "base": "base_produits_transport_corrected_v3.json",
+      "action": "account_fix",
+      "article_source": "GO (Gazole)",
+      "old_account": "6061",
+      "new_account": "6063",
+      "reason": "fuel_or_vehicle_supply_strict_review"
+    },
+    {
+      "base": "base_produits_transport_corrected_v3.json",
+      "action": "account_fix",
+      "article_source": "ADBLUE vrac",
+      "old_account": "6061",
+      "new_account": "6063",
+      "reason": "fuel_or_vehicle_supply_strict_review"
+    },
+    {
+      "base": "base_produits_transport_corrected_v3.json",
+      "action": "account_fix",
+      "article_source": "ADBLUE 10L (PDP)",
+      "old_account": "6061",
+      "new_account": "6063",
+      "reason": "fuel_or_vehicle_supply_strict_review"
+    },
+    {
+      "base": "base_produits_transport_corrected_v3.json",
+      "action": "account_fix",
+      "article_source": "Gazole Excellium",
+      "old_account": "6061",
+      "new_account": "6063",
+      "reason": "fuel_or_vehicle_supply_strict_review"
+    },
+    {
+      "base": "base_produits_transport_corrected_v3.json",
+      "action": "account_fix",
+      "article_source": "Gazole Premier",
+      "old_account": "6061",
+      "new_account": "6063",
+      "reason": "fuel_or_vehicle_supply_strict_review"
+    },
+    {
+      "base": "base_produits_transport_corrected_v3.json",
+      "action": "account_fix",
+      "article_source": "AdBlue Pompe",
+      "old_account": "6061",
+      "new_account": "6063",
+      "reason": "fuel_or_vehicle_supply_strict_review"
+    },
+    {
+      "base": "base_produits_transport_corrected_v3.json",
+      "action": "account_fix",
+      "article_source": "PATE POUR FREINS",
+      "old_account": "626",
+      "new_account": "6062",
+      "reason": "fuel_or_vehicle_supply_strict_review"
+    }
+  ],
+  "excluded_btp_items": [
+    {
+      "article_source": "Béton pompé",
+      "article_canonique": "beton pompe",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "beton",
+        "pompe"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=14, line_occurrences=14)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 242,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=604; invoices=14; occurrences=14"
+    },
+    {
+      "article_source": "COULAGE PLANCHER",
+      "article_canonique": "coulage plancher",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "plancher"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=13, line_occurrences=20)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 246,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=13; occurrences=20"
+    },
+    {
+      "article_source": "COULAGE PLANCHER finition brut",
+      "article_canonique": "coulage plancher finition brut",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "plancher",
+        "finition",
+        "brut"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=9, line_occurrences=24)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 242,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=9; occurrences=24"
+    },
+    {
+      "article_source": "COULAGE DALLAGE finition hélicoptére",
+      "article_canonique": "coulage dallage finition helicoptere",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "dallage",
+        "finition",
+        "helicoptere"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=6, line_occurrences=6)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 218,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=6; occurrences=6"
+    },
+    {
+      "article_source": "COULAGE PH RDC",
+      "article_canonique": "coulage ph rdc",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "ph",
+        "rdc"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=4, line_occurrences=5) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 213,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=4; occurrences=5",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "COULAGE DALLE BETON Finition hélicoptére",
+      "article_canonique": "coulage dalle beton finition helicoptere",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "dalle",
+        "beton",
+        "finition",
+        "helicoptere"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=4, line_occurrences=4) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 212,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=4; occurrences=4",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "COULAGE PARKING S/SOL",
+      "article_canonique": "coulage parking s sol",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "parking",
+        "sol"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=5) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 211,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=3; occurrences=5",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "COULAGE DALLAGE",
+      "article_canonique": "coulage dallage",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "dallage"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=4) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 210,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=3; occurrences=4",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "Coulage PH R-1 ( finition hélicoptére )",
+      "article_canonique": "coulage ph r 1 finition helicoptere",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "ph",
+        "finition",
+        "helicoptere"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=4) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 210,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=3; occurrences=4",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "COULAGE PLANCHER FORFAIT",
+      "article_canonique": "coulage plancher forfait",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "plancher",
+        "forfait"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=3, line_occurrences=3) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 209,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=3; occurrences=3",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "(03/05/2023) Coulage PH RDC BAT 11",
+      "article_canonique": "03 05 2023 coulage ph rdc bat 11",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "ph",
+        "rdc",
+        "bat"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=4) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 208,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=4",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "(05/05/2023) Coulage PH RDC BAT 11",
+      "article_canonique": "05 05 2023 coulage ph rdc bat 11",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "ph",
+        "rdc",
+        "bat"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "(12/05/2023) Coulage PH R+2 BAT 8",
+      "article_canonique": "12 05 2023 coulage ph r 2 bat 8",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "ph",
+        "bat"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "(19/05/2023) Coulage PH R+1 BAT 14",
+      "article_canonique": "19 05 2023 coulage ph r 1 bat 14",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "ph",
+        "bat"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "(23/05/2023) Coulage PH RDC BAT 10",
+      "article_canonique": "23 05 2023 coulage ph rdc bat 10",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "ph",
+        "rdc",
+        "bat"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "(31/05/2023) Coulage PH R+2 BAT 6",
+      "article_canonique": "31 05 2023 coulage ph r 2 bat 6",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "ph",
+        "bat"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "01/12/2023 COULAGE PLANCHER",
+      "article_canonique": "01 12 2023 coulage plancher",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "plancher"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "COULAGE DALLAGE / PLANCHERS - PH BAT B",
+      "article_canonique": "coulage dallage planchers ph bat b",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "dallage",
+        "planchers",
+        "ph",
+        "bat"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "COULAGE DALLAGE/ PLANCHERS - PH RDC BAT A",
+      "article_canonique": "coulage dallage planchers ph rdc bat a",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "dallage",
+        "planchers",
+        "ph",
+        "rdc",
+        "bat"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "COULAGE DALLAGE/ PLANCHERS PH BAT A",
+      "article_canonique": "coulage dallage planchers ph bat a",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "dallage",
+        "planchers",
+        "ph",
+        "bat"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "COULAGE PH R+1 BAT A",
+      "article_canonique": "coulage ph r 1 bat a",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "ph",
+        "bat"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "COULAGE PLANCHER PH R+2 Finition brut",
+      "article_canonique": "coulage plancher ph r 2 finition brut",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "plancher",
+        "ph",
+        "finition",
+        "brut"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "COULAGE PLANCHER finition hélicoptére",
+      "article_canonique": "coulage plancher finition helicoptere",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "plancher",
+        "finition",
+        "helicoptere"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "Coulage DALLAGE Finition hélicoptére avec Surfaquartz",
+      "article_canonique": "coulage dallage finition helicoptere avec surfaquartz",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "dallage",
+        "finition",
+        "helicoptere",
+        "surfaquartz"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "Coulage DALLE BASSE (avec Surfaquartz)",
+      "article_canonique": "coulage dalle basse avec surfaquartz",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "dalle",
+        "basse",
+        "surfaquartz"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "Coulage PH R+2 BATIMENT 4",
+      "article_canonique": "coulage ph r 2 batiment 4",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "ph",
+        "batiment"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=604; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "Coulage planchers infra",
+      "article_canonique": "coulage planchers infra",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coulage",
+        "planchers",
+        "infra"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "FORFAIT COULAGE DALLAGE Finition hélicoptére",
+      "article_canonique": "forfait coulage dallage finition helicoptere",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "forfait",
+        "coulage",
+        "dallage",
+        "finition",
+        "helicoptere"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "M.A.D Pompe Béton (FORFAIT)",
+      "article_canonique": "m a d pompe beton forfait",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "pompe",
+        "beton",
+        "forfait"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=2; occurrences=2",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "PARKING Coulage Radier",
+      "article_canonique": "parking coulage radier",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "consommable_chantier",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "parking",
+        "coulage",
+        "radier"
+      ],
+      "fournisseur_type": "fournisseur_materiaux",
+      "ape_context": [
+        "4399C"
+      ],
+      "notes": "Integre depuis triage manuel btp (invoice_count=2, line_occurrences=2) | Ajout manuel 3e vague depuis candidate pack nettoye.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 206,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=604; invoices=2; occurrences=2",
+      "selection_source": "manual_third_wave_active_v1"
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "boucherie": {
+    "requested_active": [
+      "CREPINE DE VEAU CARCASSE ABATS",
+      "PIED DE VEAU - CARCASSE ABATS",
+      "QUEUE DE VEAU CARCASSE ABATS",
+      "PAN.DOUBLE DE VEAU",
+      "LANGUE DE VEAU",
+      "CREPINE VEAU",
+      "NERVEUX SOUS VIDE VEAU",
+      "PAN.SIMPLE DE VEAU",
+      "FRESSURE AGNEAU PIECE",
+      "TESTICULE AGNEAU",
+      "LANGUE DE VEAU CARCASSE ABATS",
+      "SOURIS AGNEAU CARTON SOUS VIDE AGNEAU",
+      "DEMI.CARCASSE DE VEAU",
+      "CASQUE AGNEAU",
+      "CREPINE AGNEAU",
+      "CARRE AGNEAU MOINS DE 12 MOIS",
+      "CERVELLE DE VEAU",
+      "ROGNON BLANC OVIN",
+      "COLLIER AGNEAU MOINS DE 12 MOIS",
+      "SELLE AGNEAU",
+      "EPAULE AGNEAU",
+      "LANGUE AGNEAU provenance FR"
+    ],
+    "missing": [],
+    "files": [
+      {
+        "file": "base_produits_boucherie_v1.json",
+        "added": 22,
+        "skipped_existing": 0,
+        "added_labels": [
+          "CREPINE DE VEAU CARCASSE ABATS",
+          "PIED DE VEAU - CARCASSE ABATS",
+          "QUEUE DE VEAU CARCASSE ABATS",
+          "PAN.DOUBLE DE VEAU",
+          "LANGUE DE VEAU",
+          "CREPINE VEAU",
+          "NERVEUX SOUS VIDE VEAU",
+          "PAN.SIMPLE DE VEAU",
+          "FRESSURE AGNEAU PIECE",
+          "TESTICULE AGNEAU",
+          "LANGUE DE VEAU CARCASSE ABATS",
+          "SOURIS AGNEAU CARTON SOUS VIDE AGNEAU",
+          "DEMI.CARCASSE DE VEAU",
+          "CASQUE AGNEAU",
+          "CREPINE AGNEAU",
+          "CARRE AGNEAU MOINS DE 12 MOIS",
+          "CERVELLE DE VEAU",
+          "ROGNON BLANC OVIN",
+          "COLLIER AGNEAU MOINS DE 12 MOIS",
+          "SELLE AGNEAU",
+          "EPAULE AGNEAU",
+          "LANGUE AGNEAU provenance FR"
+        ]
+      },
+      {
+        "file": "base_produits_boucherie_v1_with_accounts.json",
+        "added": 22,
+        "skipped_existing": 0,
+        "added_labels": [
+          "CREPINE DE VEAU CARCASSE ABATS",
+          "PIED DE VEAU - CARCASSE ABATS",
+          "QUEUE DE VEAU CARCASSE ABATS",
+          "PAN.DOUBLE DE VEAU",
+          "LANGUE DE VEAU",
+          "CREPINE VEAU",
+          "NERVEUX SOUS VIDE VEAU",
+          "PAN.SIMPLE DE VEAU",
+          "FRESSURE AGNEAU PIECE",
+          "TESTICULE AGNEAU",
+          "LANGUE DE VEAU CARCASSE ABATS",
+          "SOURIS AGNEAU CARTON SOUS VIDE AGNEAU",
+          "DEMI.CARCASSE DE VEAU",
+          "CASQUE AGNEAU",
+          "CREPINE AGNEAU",
+          "CARRE AGNEAU MOINS DE 12 MOIS",
+          "CERVELLE DE VEAU",
+          "ROGNON BLANC OVIN",
+          "COLLIER AGNEAU MOINS DE 12 MOIS",
+          "SELLE AGNEAU",
+          "EPAULE AGNEAU",
+          "LANGUE AGNEAU provenance FR"
+        ]
+      }
+    ]
+  },
+  "boulangerie": {
+    "requested_active": [
+      "BEIGNET LONG MASCOT NATURE 90G/30 502558",
+      "MINI BEIGNET CACAO/NOISETTE 21G *",
+      "MINI BEIGNET CHOCO BLANC 21G *",
+      "MINI BEIGNET CHOC NOISET.25G /140 520019",
+      "BEIGNET MASCOTTE NATURE",
+      "BEIGNET MASCOTTE NATURE LONG",
+      "SUCRE GRAIN GROS N°6 10KG C25",
+      "BEURRE 1/2 SEL PAYSAN BRETON",
+      "AROME PATE PISTACHE COLORE",
+      "BEIGNET LONG NATURE FAI SURG 30X90G",
+      "BRISURE CREPE PUR BEURRE 2.5KG (pailleté feuilletine)",
+      "CREME 35% LESCURE 1L P/6",
+      "EMMENTAL TRANCHETTE 5X15CM BQ 1KG",
+      "FROMAGE CREME TARTIMALIN BQ 1KG",
+      "LAIT UHT 1/2 ECREME FR BRIQ PACK 12X1L",
+      "MINI BEIGNET CARAMEL FAI 70X25G",
+      "MINI BEIGNET CHOC NOISET FAI SURG 70X25G",
+      "PATE DE SPECULOS 1.6KG LOTUS",
+      "BEURRE CUBE 25 KG",
+      "OEUF LIQ JAUNE BD 2KG ATLANTIC",
+      "POUDRE DE LAIT ENTIER INST. 28% X 25KG",
+      "RAPE AUX 3 FROMAGES,200G",
+      "BISCOFF PATE LOTUS POT 1.6KG",
+      "CREME UHT CAMPINA 35%MG 12X1L",
+      "FROMAGE BLC 20% 5KG MC",
+      "MAXI PAIN RAISINS BEURRE 140G *",
+      "BEURRE CUBE UE 25 KG"
+    ],
+    "missing": [],
+    "files": [
+      {
+        "file": "base_produits_boulangerie_v1.json",
+        "added": 27,
+        "skipped_existing": 0,
+        "added_labels": [
+          "BEIGNET LONG MASCOT NATURE 90G/30 502558",
+          "MINI BEIGNET CACAO/NOISETTE 21G *",
+          "MINI BEIGNET CHOCO BLANC 21G *",
+          "MINI BEIGNET CHOC NOISET.25G /140 520019",
+          "BEIGNET MASCOTTE NATURE",
+          "BEIGNET MASCOTTE NATURE LONG",
+          "SUCRE GRAIN GROS N°6 10KG C25",
+          "BEURRE 1/2 SEL PAYSAN BRETON",
+          "AROME PATE PISTACHE COLORE",
+          "BEIGNET LONG NATURE FAI SURG 30X90G",
+          "BRISURE CREPE PUR BEURRE 2.5KG (pailleté feuilletine)",
+          "CREME 35% LESCURE 1L P/6",
+          "EMMENTAL TRANCHETTE 5X15CM BQ 1KG",
+          "FROMAGE CREME TARTIMALIN BQ 1KG",
+          "LAIT UHT 1/2 ECREME FR BRIQ PACK 12X1L",
+          "MINI BEIGNET CARAMEL FAI 70X25G",
+          "MINI BEIGNET CHOC NOISET FAI SURG 70X25G",
+          "PATE DE SPECULOS 1.6KG LOTUS",
+          "BEURRE CUBE 25 KG",
+          "OEUF LIQ JAUNE BD 2KG ATLANTIC",
+          "POUDRE DE LAIT ENTIER INST. 28% X 25KG",
+          "RAPE AUX 3 FROMAGES,200G",
+          "BISCOFF PATE LOTUS POT 1.6KG",
+          "CREME UHT CAMPINA 35%MG 12X1L",
+          "FROMAGE BLC 20% 5KG MC",
+          "MAXI PAIN RAISINS BEURRE 140G *",
+          "BEURRE CUBE UE 25 KG"
+        ]
+      },
+      {
+        "file": "base_produits_boulangerie_v1_with_accounts.json",
+        "added": 27,
+        "skipped_existing": 0,
+        "added_labels": [
+          "BEIGNET LONG MASCOT NATURE 90G/30 502558",
+          "MINI BEIGNET CACAO/NOISETTE 21G *",
+          "MINI BEIGNET CHOCO BLANC 21G *",
+          "MINI BEIGNET CHOC NOISET.25G /140 520019",
+          "BEIGNET MASCOTTE NATURE",
+          "BEIGNET MASCOTTE NATURE LONG",
+          "SUCRE GRAIN GROS N°6 10KG C25",
+          "BEURRE 1/2 SEL PAYSAN BRETON",
+          "AROME PATE PISTACHE COLORE",
+          "BEIGNET LONG NATURE FAI SURG 30X90G",
+          "BRISURE CREPE PUR BEURRE 2.5KG (pailleté feuilletine)",
+          "CREME 35% LESCURE 1L P/6",
+          "EMMENTAL TRANCHETTE 5X15CM BQ 1KG",
+          "FROMAGE CREME TARTIMALIN BQ 1KG",
+          "LAIT UHT 1/2 ECREME FR BRIQ PACK 12X1L",
+          "MINI BEIGNET CARAMEL FAI 70X25G",
+          "MINI BEIGNET CHOC NOISET FAI SURG 70X25G",
+          "PATE DE SPECULOS 1.6KG LOTUS",
+          "BEURRE CUBE 25 KG",
+          "OEUF LIQ JAUNE BD 2KG ATLANTIC",
+          "POUDRE DE LAIT ENTIER INST. 28% X 25KG",
+          "RAPE AUX 3 FROMAGES,200G",
+          "BISCOFF PATE LOTUS POT 1.6KG",
+          "CREME UHT CAMPINA 35%MG 12X1L",
+          "FROMAGE BLC 20% 5KG MC",
+          "MAXI PAIN RAISINS BEURRE 140G *",
+          "BEURRE CUBE UE 25 KG"
+        ]
+      }
+    ]
+  },
+  "transport": {
+    "requested_active": [
+      "CAPTEUR RADAR",
+      "CARTER D'HUILE",
+      "HUILE BVA 725 1L (PDP)",
+      "VIS DISQUE",
+      "HUILE MOT 229-52 v rac 5W30",
+      "240filtre huile nor auto"
+    ],
+    "missing": [],
+    "files": [
+      {
+        "file": "base_produits_transport_v1.json",
+        "added": 6,
+        "skipped_existing": 0,
+        "added_labels": [
+          "CAPTEUR RADAR",
+          "CARTER D'HUILE",
+          "HUILE BVA 725 1L (PDP)",
+          "VIS DISQUE",
+          "HUILE MOT 229-52 v rac 5W30",
+          "240filtre huile nor auto"
+        ]
+      },
+      {
+        "file": "base_produits_transport_v1_with_accounts.json",
+        "added": 6,
+        "skipped_existing": 0,
+        "added_labels": [
+          "CAPTEUR RADAR",
+          "CARTER D'HUILE",
+          "HUILE BVA 725 1L (PDP)",
+          "VIS DISQUE",
+          "HUILE MOT 229-52 v rac 5W30",
+          "240filtre huile nor auto"
+        ]
+      }
+    ]
+  },
+  "btp": {
+    "requested_active": [
+      "Fourniture des outils de forage perdus",
+      "TERRE GRAVAT",
+      "Passerelle( avec ethernet)"
+    ],
+    "missing": [],
+    "files": [
+      {
+        "file": "base_produits_btp_v1.json",
+        "added": 3,
+        "skipped_existing": 0,
+        "added_labels": [
+          "Fourniture des outils de forage perdus",
+          "TERRE GRAVAT",
+          "Passerelle( avec ethernet)"
+        ]
+      },
+      {
+        "file": "base_produits_btp_v1_with_accounts.json",
+        "added": 3,
+        "skipped_existing": 0,
+        "added_labels": [
+          "Fourniture des outils de forage perdus",
+          "TERRE GRAVAT",
+          "Passerelle( avec ethernet)"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "generated_at": "2026-06-04T17:47:13.433688",
+  "client": "ASSAINIS",
+  "siren": "878523547",
+  "tested_candidates": [
+    "ASSAINIS"
+  ],
+  "selected_candidate": "ASSAINIS",
+  "total_invoices_found": 3,
+  "total_invoices_analyzed": 3,
+  "total_lines": 5,
+  "global_summary": {
+    "auto_ok": 0,
+    "validation_humaine": 2,
+    "rejected": 3,
+    "non_comptable": 0,
+    "average_confidence": 57.1
+  },
+  "invoices": [
+    {
+      "invoice_id": "fr_bd_878523547:00177ada-9dbc-4af8-829c-0aaa26c6892f",
+      "invoice_number": "FA-0005352",
+      "date": "31/08/2025",
+      "supplier": "ASSAINIS",
+      "client": "ASSAINIS",
+      "line_count": 2,
+      "proposal_status": "validation_required",
+      "summary": {
+        "total_lines": 2,
+        "auto_ok": 0,
+        "validation_humaine": 0,
+        "rejected": 2,
+        "non_comptable": 0,
+        "average_confidence": 48.7
+      },
+      "accounting_proposal": {
+        "invoice_id": "fr_bd_878523547:00177ada-9dbc-4af8-829c-0aaa26c6892f",
+        "invoice_number": "FA-0005352",
+        "supplier": "ASSAINIS",
+        "client": "SCI LES ECRINS",
+        "proposal_status": "validation_required",
+        "summary": {
+          "total_lines": 2,
+          "auto_ok": 0,
+          "validation_humaine": 0,
+          "rejected": 2,
+          "non_comptable": 0,
+          "average_confidence": 48.7
+        },
+        "lines": [
+          {
+            "line_id": "line_1",
+            "raw_text": "CABINE AUTONOME STD - Votre location comprend un nettoyage hebdomadaire",
+            "cleaned_text": "cabine autonome std votre location comprend un nettoyage hebdomadaire",
+            "amount_ht": 52.8,
+            "amount_ttc": 63.36,
+            "tva": 20.0,
+            "recommended_account": "6068",
+            "account_label": "Autres matières et fournitures",
+            "confidence": 37.91,
+            "risk_level": "eleve",
+            "decision": "rejeter",
+            "referential_status": "unknown",
+            "evidence_status": "complete",
+            "reason": "Article absent du référentiel et aucun candidat assez fiable n'a été retenu. Enrichissement futur à étudier.",
+            "can_auto_post": false,
+            "requires_human_validation": true
+          },
+          {
+            "line_id": "line_2",
+            "raw_text": "TRANS/ALL - TRANSPORT ALLER WC",
+            "cleaned_text": "trans all transport aller wc",
+            "amount_ht": 55.0,
+            "amount_ttc": 66.0,
+            "tva": 20.0,
+            "recommended_account": "624",
+            "account_label": "Transports de biens",
+            "confidence": 59.5,
+            "risk_level": "eleve",
+            "decision": "rejeter",
+            "referential_status": "unknown",
+            "evidence_status": "complete",
+            "reason": "Article absent du référentiel et aucun candidat assez fiable n'a été retenu. Enrichissement futur à étudier.",
+            "can_auto_post": false,
+            "requires_human_validation": true
+          }
+        ]
+      }
+    },
+    {
+      "invoice_id": "fr_bd_878523547:003a8055-494a-49b6-aaa6-1c5e77e379f2",
+      "invoice_number": "C1108421",
+      "date": "29/09/2025",
+      "supplier": "LA PALETTE",
+      "client": "ASSAINIS",
+      "line_count": 2,
+      "proposal_status": "validation_required",
+      "summary": {
+        "total_lines": 2,
+        "auto_ok": 0,
+        "validation_humaine": 1,
+        "rejected": 1,
+        "non_comptable": 0,
+        "average_confidence": 60.48
+      },
+      "accounting_proposal": {
+        "invoice_id": "fr_bd_878523547:003a8055-494a-49b6-aaa6-1c5e77e379f2",
+        "invoice_number": "C1108421",
+        "supplier": "LA PALETTE",
+        "client": "ASSAINIS",
+        "proposal_status": "validation_required",
+        "summary": {
+          "total_lines": 2,
+          "auto_ok": 0,
+          "validation_humaine": 1,
+          "rejected": 1,
+          "non_comptable": 0,
+          "average_confidence": 60.48
+        },
+        "lines": [
+          {
+            "line_id": "line_1",
+            "raw_text": "PROJECTEUR HALOGENE 400W SUR PIEDS",
+            "cleaned_text": "projecteur halogene 400w sur pieds",
+            "amount_ht": 70.0,
+            "amount_ttc": 84.0,
+            "tva": 20.0,
+            "recommended_account": "6061",
+            "account_label": "Fournitures non stockables (eau, énergie)",
+            "confidence": 54.5,
+            "risk_level": "eleve",
+            "decision": "rejeter",
+            "referential_status": "unknown",
+            "evidence_status": "partial",
+            "reason": "Article absent du référentiel et aucun candidat assez fiable n'a été retenu. Enrichissement futur à étudier.",
+            "can_auto_post": false,
+            "requires_human_validation": true
+          },
+          {
+            "line_id": "line_2",
+            "raw_text": "10 SACS GRAVATS TISSES 10U",
+            "cleaned_text": "10 sacs gravats tisses 10u",
+            "amount_ht": 31.1,
+            "amount_ttc": 37.32,
+            "tva": 20.0,
+            "recommended_account": "6063",
+            "account_label": "Fournitures d'entretien et de petit équipement",
+            "confidence": 66.45,
+            "risk_level": "moyen",
+            "decision": "validation_humaine",
+            "referential_status": "found_fuzzy",
+            "evidence_status": "partial",
+            "reason": "Article proche d'une référence connue (SAC A GRAVATS BLANC 55X95 10 UNITES STOCK) avec un score de 66.5. Validation humaine requise.",
+            "can_auto_post": false,
+            "requires_human_validation": true
+          }
+        ]
+      }
+    },
+    {
+      "invoice_id": "fr_bd_878523547:0044d4e3-9bec-47a4-809e-79098e071c67",
+      "invoice_number": "202538691702",
+      "date": "12/01/2025",
+      "supplier": "IONOS",
+      "client": "ASSAINIS",
+      "line_count": 1,
+      "proposal_status": "validation_required",
+      "summary": {
+        "total_lines": 1,
+        "auto_ok": 0,
+        "validation_humaine": 1,
+        "rejected": 0,
+        "non_comptable": 0,
+        "average_confidence": 62.19
+      },
+      "accounting_proposal": {
+        "invoice_id": "fr_bd_878523547:0044d4e3-9bec-47a4-809e-79098e071c67",
+        "invoice_number": "202538691702",
+        "supplier": "IONOS",
+        "client": "ASSAINIS",
+        "proposal_status": "validation_required",
+        "summary": {
+          "total_lines": 1,
+          "auto_ok": 0,
+          "validation_humaine": 1,
+          "rejected": 0,
+          "non_comptable": 0,
+          "average_confidence": 62.19
+        },
+        "lines": [
+          {
+            "line_id": "line_1",
+            "raw_text": "Frais d'abonnement - Contrat : 83812539 - IONOS List Local Essential (11.01.2025-11.02.2025)",
+            "cleaned_text": "frais d abonnement contrat 83812539 ionos list local essential 11 01 2025 11 02 2025",
+            "amount_ht": 22.0,
+            "amount_ttc": 26.4,
+            "tva": 20.0,
+            "recommended_account": "6227",
+            "account_label": "Frais d'actes et de contentieux",
+            "confidence": 62.19,
+            "risk_level": "moyen",
+            "decision": "validation_humaine",
+            "referential_status": "found_fuzzy",
+            "evidence_status": "complete",
+            "reason": "Article proche d'une référence connue (Frais d'abonnement) avec un score de 62.2. Validation humaine requise.",
+            "can_auto_post": false,
+            "requires_human_validation": true
+          }
+        ]
+      }
+    }
+  ],
+  "errors_or_skipped": []
+}

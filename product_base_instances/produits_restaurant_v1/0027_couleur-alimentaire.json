@@ -1,0 +1,147 @@
+{
+  "_id": "fr_bd_519665103:product-instance:produits_restaurant_v1:831fdf8fed40",
+  "p": "product_base_instance",
+  "data": {
+    "collection": "ProductBaseInstance",
+    "type": "ProductArticle",
+    "sub_type": "restaurant"
+  },
+  "instance_kind": "product_article_source",
+  "profile_id": "produits_restaurant_v1",
+  "metier": "restaurant",
+  "client_siren": "519665103",
+  "partition_prefix": "fr_bd_519665103",
+  "source_file": "base_produits_restaurant_v1.json",
+  "source_profile_meta": {
+    "profile_id": "produits_restaurant_v1",
+    "metier": "restaurant",
+    "client_siren": "519665103",
+    "partition_prefix": "fr_bd_519665103",
+    "version": "v1",
+    "status": "draft",
+    "items_count": 97,
+    "cleanup_note": "Nettoyage manuel: suppression charges_externes en base metier + dedoublonnage produits.",
+    "source_invoice_ids_note": "Jusqu a 30 invoice_id source par article_source depuis invoice_form.",
+    "accounts_enrichment": {
+      "reference_file": "v1_519665103_reference_base_exploitation_v1.json",
+      "matched_items": 2,
+      "unmatched_items": 0,
+      "already_present": 0
+    },
+    "accounts_alignment_from_abt3fec2": {
+      "db": "abt3fec2",
+      "selector": "p=entry + invoice exists + _id not contains generated",
+      "changed_items": 1,
+      "unchanged_items": 0,
+      "no_signal_items": 1,
+      "min_confidence": 0.55
+    },
+    "invoice_source_enrichment": {
+      "db_factures": "abt3",
+      "match_rule": "invoice_form.line_items.description == article_source (normalise)",
+      "year_filter": "none",
+      "changed_items": 0,
+      "added_invoice_ids_total": 0
+    },
+    "restaurant_expansion_from_invoice_form": {
+      "added_items": 15,
+      "target_total": 45,
+      "source": "invoice_form",
+      "rule": "account startswith 60 + metier keyword filters + lexical quality"
+    },
+    "keywords_cleanup_single_char_and_zero_v1": {
+      "removed_single_char_keywords": 20,
+      "fixed_ocr_zero_to_o_keywords": 0,
+      "deduplicated_keywords": 0,
+      "items_touched": 12,
+      "total_keywords_before": 188,
+      "total_keywords_after": 168,
+      "rules": [
+        "remove keywords with length <= 1",
+        "replace 0 with o only when 0 is adjacent to letters"
+      ]
+    },
+    "text_normalization_v2": {
+      "updated_at": "2026-04-13T17:20:47.966548Z",
+      "rows_touched": 0,
+      "article_source_updated": 0,
+      "article_canonique_updated": 0,
+      "mots_cles_updated": 0,
+      "rule": "remove special chars (including % * +), fix OCR 0/O in words, normalize canon + keywords"
+    },
+    "account_normalization_v1": {
+      "rule": "trim trailing zeros for padded compte_comptable values when length > 3",
+      "changed_items": 14,
+      "normalized_pairs": [
+        {
+          "old": "60610000",
+          "new": "6061",
+          "count": 10
+        },
+        {
+          "old": "60620000",
+          "new": "6062",
+          "count": 2
+        },
+        {
+          "old": "606200",
+          "new": "6062",
+          "count": 2
+        }
+      ]
+    },
+    "account_verification_v1": {
+      "class_6_only": true,
+      "suspicious_accounts": []
+    },
+    "triage_manual_integration_v1": {
+      "updated_at": "2026-04-28T16:38:13.544580Z",
+      "source_triage": "restaurant_top_50_triage.md",
+      "added_items": 52,
+      "skipped_existing": 0
+    },
+    "triage_manual_tva_refresh_v1": {
+      "updated_at": "2026-04-28T16:39:58.055119Z",
+      "rule": "fix default beverage heuristic so token eau does not match agneau/veau",
+      "changed_items": 0
+    }
+  },
+  "item_index": 27,
+  "article_source": "COULEUR ALIMENTAIRE",
+  "article_source_normalized": "couleur alimentaire",
+  "article_canonique": "couleur alimentaire",
+  "categorie": "exploitation_metier",
+  "sous_categorie": "matiere_premiere",
+  "compte_comptable": "6061",
+  "tva_rate": 5.5,
+  "mots_cles": [
+    "couleur",
+    "alimentaire"
+  ],
+  "source_invoice_ids": [
+    "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e"
+  ],
+  "payload": {
+    "article_source": "COULEUR ALIMENTAIRE",
+    "article_canonique": "couleur alimentaire",
+    "categorie": "exploitation_metier",
+    "sous_categorie": "matiere_premiere",
+    "tva_rate": 5.5,
+    "mots_cles": [
+      "couleur",
+      "alimentaire"
+    ],
+    "fournisseur_type": "fournisseur alimentaire",
+    "ape_context": [],
+    "notes": "Pre-rempli auto depuis invoice_form metier (occurrences=1)",
+    "source_invoice_ids": [
+      "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e"
+    ],
+    "compte_comptable": "6061",
+    "compte_comptable_source": "invoice_form_reference_v1",
+    "compte_comptable_match_score": 251,
+    "compte_comptable_match_reason": "from_invoice_form_keyword_scope"
+  },
+  "created_at": "2026-04-30T15:03:11.909546Z",
+  "updated_at": "2026-04-30T15:03:11.909577Z"
+}

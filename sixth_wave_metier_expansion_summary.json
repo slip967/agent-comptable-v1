@@ -1,0 +1,170 @@
+{
+  "boucherie": {
+    "requested_active": [
+      "BACON DE VEAU HALAL",
+      "GRAND SAUCISSON SEC HALAL COUPE",
+      "AGNEAU FRESSURE ORIGINE :FRANCE",
+      "AGNEAU TETE ORIGINE :FRANCE",
+      "BOEUF CUISSE FLANCH BLANC BLEU BELGE VIANDE HALLAL",
+      "CARRE DE VEAU SANS ROGNONS - VIANDE HALLAL",
+      "JAMBON DE VEAU HALAL KG",
+      "CERVELLE VEAU UE (V)",
+      "FILET DE DINDE HALAL origine : FR",
+      "DEMI ROSBIF AGNEAU",
+      "POULET FERMIER HALAL PAC origine : FR",
+      "CUISSE DE POULET FERMIER HALAL origine : FR",
+      "FOIE DE POULET CEE HALAL origine : BE",
+      "FILET DE POULET FERMIER HALAL origine : FR",
+      "FILET DE DINDE CEE HALAL origine : IT",
+      "CUISSEAU DE VEAU - VIANDE HALLAL",
+      "PILON DE POULET HALLAL CEE"
+    ],
+    "missing": [],
+    "files": [
+      {
+        "file": "base_produits_boucherie_v1.json",
+        "added": 17,
+        "skipped_existing": 0,
+        "added_labels": [
+          "BACON DE VEAU HALAL",
+          "GRAND SAUCISSON SEC HALAL COUPE",
+          "AGNEAU FRESSURE ORIGINE :FRANCE",
+          "AGNEAU TETE ORIGINE :FRANCE",
+          "BOEUF CUISSE FLANCH BLANC BLEU BELGE VIANDE HALLAL",
+          "CARRE DE VEAU SANS ROGNONS - VIANDE HALLAL",
+          "JAMBON DE VEAU HALAL KG",
+          "CERVELLE VEAU UE (V)",
+          "FILET DE DINDE HALAL origine : FR",
+          "DEMI ROSBIF AGNEAU",
+          "POULET FERMIER HALAL PAC origine : FR",
+          "CUISSE DE POULET FERMIER HALAL origine : FR",
+          "FOIE DE POULET CEE HALAL origine : BE",
+          "FILET DE POULET FERMIER HALAL origine : FR",
+          "FILET DE DINDE CEE HALAL origine : IT",
+          "CUISSEAU DE VEAU - VIANDE HALLAL",
+          "PILON DE POULET HALLAL CEE"
+        ]
+      },
+      {
+        "file": "base_produits_boucherie_v1_with_accounts.json",
+        "added": 17,
+        "skipped_existing": 0,
+        "added_labels": [
+          "BACON DE VEAU HALAL",
+          "GRAND SAUCISSON SEC HALAL COUPE",
+          "AGNEAU FRESSURE ORIGINE :FRANCE",
+          "AGNEAU TETE ORIGINE :FRANCE",
+          "BOEUF CUISSE FLANCH BLANC BLEU BELGE VIANDE HALLAL",
+          "CARRE DE VEAU SANS ROGNONS - VIANDE HALLAL",
+          "JAMBON DE VEAU HALAL KG",
+          "CERVELLE VEAU UE (V)",
+          "FILET DE DINDE HALAL origine : FR",
+          "DEMI ROSBIF AGNEAU",
+          "POULET FERMIER HALAL PAC origine : FR",
+          "CUISSE DE POULET FERMIER HALAL origine : FR",
+          "FOIE DE POULET CEE HALAL origine : BE",
+          "FILET DE POULET FERMIER HALAL origine : FR",
+          "FILET DE DINDE CEE HALAL origine : IT",
+          "CUISSEAU DE VEAU - VIANDE HALLAL",
+          "PILON DE POULET HALLAL CEE"
+        ]
+      }
+    ]
+  },
+  "boulangerie": {
+    "requested_active": [
+      "SPECULOS BRISURE MOULU 750 gr 64695",
+      "GD SAC REGROUP PAIN 39X20X76CM",
+      "LAIT FERMENTE \"LUXLAIT \" 8 X 1L",
+      "PAIN SUEDOIS ROND 55 GR X 72 UVI1",
+      "PATE PISTACHE COLOREE MANE 1KG GR",
+      "250 SAC PAIN VERT 16X10X35",
+      "CROUSTI CHOC LAIT NOIR BLC DGF POT 450G",
+      "MINI BEIGNET FOURRAGE SAVEUR FRAISE 21G *",
+      "SAC PAIN TR BEIG BAGO PUR 230/40X420X200",
+      "SAC PAIN TR JAUN BAGO PUR 120/50X350X200"
+    ],
+    "missing": [],
+    "files": [
+      {
+        "file": "base_produits_boulangerie_v1.json",
+        "added": 10,
+        "skipped_existing": 0,
+        "added_labels": [
+          "SPECULOS BRISURE MOULU 750 gr 64695",
+          "GD SAC REGROUP PAIN 39X20X76CM",
+          "LAIT FERMENTE \"LUXLAIT \" 8 X 1L",
+          "PAIN SUEDOIS ROND 55 GR X 72 UVI1",
+          "PATE PISTACHE COLOREE MANE 1KG GR",
+          "250 SAC PAIN VERT 16X10X35",
+          "CROUSTI CHOC LAIT NOIR BLC DGF POT 450G",
+          "MINI BEIGNET FOURRAGE SAVEUR FRAISE 21G *",
+          "SAC PAIN TR BEIG BAGO PUR 230/40X420X200",
+          "SAC PAIN TR JAUN BAGO PUR 120/50X350X200"
+        ]
+      },
+      {
+        "file": "base_produits_boulangerie_v1_with_accounts.json",
+        "added": 10,
+        "skipped_existing": 0,
+        "added_labels": [
+          "SPECULOS BRISURE MOULU 750 gr 64695",
+          "GD SAC REGROUP PAIN 39X20X76CM",
+          "LAIT FERMENTE \"LUXLAIT \" 8 X 1L",
+          "PAIN SUEDOIS ROND 55 GR X 72 UVI1",
+          "PATE PISTACHE COLOREE MANE 1KG GR",
+          "250 SAC PAIN VERT 16X10X35",
+          "CROUSTI CHOC LAIT NOIR BLC DGF POT 450G",
+          "MINI BEIGNET FOURRAGE SAVEUR FRAISE 21G *",
+          "SAC PAIN TR BEIG BAGO PUR 230/40X420X200",
+          "SAC PAIN TR JAUN BAGO PUR 120/50X350X200"
+        ]
+      }
+    ]
+  },
+  "transport": {
+    "requested_active": [],
+    "missing": [],
+    "files": [
+      {
+        "file": "base_produits_transport_v1.json",
+        "added": 0,
+        "skipped_existing": 0,
+        "added_labels": []
+      },
+      {
+        "file": "base_produits_transport_v1_with_accounts.json",
+        "added": 0,
+        "skipped_existing": 0,
+        "added_labels": []
+      }
+    ]
+  },
+  "btp": {
+    "requested_active": [
+      "PALETTE EQIOM GRANULATS",
+      "CARRELAGE SDB 60*120 GRIS DU MARAIS BEIGE Epaisseur 7mm. Emballé par 3 soit 216 m2/Bte 64.80 m2/Palette 35.82 kg/Bte"
+    ],
+    "missing": [],
+    "files": [
+      {
+        "file": "base_produits_btp_v1.json",
+        "added": 2,
+        "skipped_existing": 0,
+        "added_labels": [
+          "PALETTE EQIOM GRANULATS",
+          "CARRELAGE SDB 60*120 GRIS DU MARAIS BEIGE Epaisseur 7mm. Emballé par 3 soit 216 m2/Bte 64.80 m2/Palette 35.82 kg/Bte"
+        ]
+      },
+      {
+        "file": "base_produits_btp_v1_with_accounts.json",
+        "added": 2,
+        "skipped_existing": 0,
+        "added_labels": [
+          "PALETTE EQIOM GRANULATS",
+          "CARRELAGE SDB 60*120 GRIS DU MARAIS BEIGE Epaisseur 7mm. Emballé par 3 soit 216 m2/Bte 64.80 m2/Palette 35.82 kg/Bte"
+        ]
+      }
+    ]
+  }
+}

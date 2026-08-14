@@ -1,0 +1,410 @@
+{
+  "generated_at": "2026-05-06T01:55:45.692723Z",
+  "dry_run": false,
+  "source_db_factures": "abt3",
+  "files": [
+    {
+      "file": "base_charges_externes_v1.json",
+      "items_changed": 244,
+      "a_valider_changed": 36,
+      "invoice_ids_added": 369,
+      "partitions_filled": 563,
+      "ape_filled": 233,
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "FRAIS FIXES",
+          "before_ids": [],
+          "after_ids": [
+            "fr_bd_828612630:17790d84-a4e0-46d4-8129-3b8195449ded",
+            "fr_bd_828612630:44fbd09f-3e6e-464c-9c9c-446b8a7d944f",
+            "fr_bd_828612630:d6f31984-8ca0-466a-aa12-7cb9cf527b9f"
+          ],
+          "before_ape": [
+            "4632A"
+          ],
+          "after_ape": [
+            "4632A"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Entretien parking",
+          "before_ids": [],
+          "after_ids": [
+            "fr_bd_837602275:7728f6ec-4ae5-4c96-88b7-128226d7edad",
+            "fr_bd_837602275:af1d34d6-d34f-4eab-a80e-e81065f35cba",
+            "fr_bd_837602275:6865320b-80a7-4c7f-9f29-4d92023d7664"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_837602275"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_837602275"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "ABONNEMENT TRIM. MOBITPE MOBILE du 01/04/25 au 30/06/25",
+          "before_ids": [],
+          "after_ids": [
+            "fr_bd_519665103:b3742730-2748-49f2-acad-1d8d2a7d33a1",
+            "fr_bd_880517875:eb721816-2c89-469d-ad84-fa1698048f1b"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z",
+            "1071C"
+          ],
+          "before_partitions": [],
+          "after_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_880517875"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "ABONNEMENT TRIM. SIMS CARTE SIM du 01/04/25 au 30/06/25",
+          "before_ids": [],
+          "after_ids": [
+            "fr_bd_519665103:b3742730-2748-49f2-acad-1d8d2a7d33a1"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "before_partitions": [],
+          "after_partitions": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "DECRO",
+          "before_ids": [
+            "fr_bd_519665103:003f5876-a443-42e2-9d69-60c58f89afa5",
+            "fr_bd_519665103:02d5e7c2-3877-40fc-b589-cc7daf4784ec",
+            "fr_bd_519665103:0417048a-9942-4273-a5f6-4a1dc7e9c12c"
+          ],
+          "after_ids": [
+            "fr_bd_519665103:003f5876-a443-42e2-9d69-60c58f89afa5",
+            "fr_bd_519665103:02d5e7c2-3877-40fc-b589-cc7daf4784ec",
+            "fr_bd_519665103:0417048a-9942-4273-a5f6-4a1dc7e9c12c"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Frais Administratifs Carte Acheteur",
+          "before_ids": [],
+          "after_ids": [
+            "fr_bd_880517875:bcfdbd73-715e-4ab7-80dc-766c24af9aba",
+            "fr_bd_880517875:e3dc9ba1-1605-42b1-acf0-e99efa105ee5",
+            "fr_bd_828612630:53a4eee3-6d77-492a-9ee0-f1b1924f703f"
+          ],
+          "before_ape": [
+            "6832A"
+          ],
+          "after_ape": [
+            "6832A"
+          ],
+          "before_partitions": [],
+          "after_partitions": [
+            "fr_bd_828612630",
+            "fr_bd_519665103",
+            "fr_bd_880517875"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Frais de port",
+          "before_ids": [
+            "fr_bd_519665103:2cdae330-5c7d-4696-ac7e-47511f719b32"
+          ],
+          "after_ids": [
+            "fr_bd_519665103:2cdae330-5c7d-4696-ac7e-47511f719b32",
+            "fr_bd_832065999:5e415a5d-36d5-4c49-aa07-708ef06ed9c0",
+            "fr_bd_837602275:353b5661-8903-4933-a244-02518cbb2197"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z",
+            "4399C",
+            "4321A",
+            "4932Z"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_832065999",
+            "fr_bd_837602275",
+            "fr_bd_842785719",
+            "fr_bd_844858571",
+            "fr_bd_888020088"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_832065999",
+            "fr_bd_837602275",
+            "fr_bd_842785719",
+            "fr_bd_844858571",
+            "fr_bd_888020088"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "interb gbao",
+          "before_ids": [
+            "fr_bd_519665103:775fd06b-7fff-4956-a893-221e08f7be6b"
+          ],
+          "after_ids": [
+            "fr_bd_519665103:775fd06b-7fff-4956-a893-221e08f7be6b",
+            "fr_bd_828612630:4bac259c-a638-4521-b6ca-4f181dc00ef9",
+            "fr_bd_828612630:d2022227-1411-405d-8b86-664154cd9379"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_charges_externes_v1_with_accounts.json",
+      "items_changed": 239,
+      "a_valider_changed": 36,
+      "invoice_ids_added": 358,
+      "partitions_filled": 562,
+      "ape_filled": 220,
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "FRAIS FIXES",
+          "before_ids": [],
+          "after_ids": [
+            "fr_bd_828612630:17790d84-a4e0-46d4-8129-3b8195449ded",
+            "fr_bd_828612630:44fbd09f-3e6e-464c-9c9c-446b8a7d944f",
+            "fr_bd_828612630:d6f31984-8ca0-466a-aa12-7cb9cf527b9f"
+          ],
+          "before_ape": [
+            "4632A"
+          ],
+          "after_ape": [
+            "4632A"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Entretien parking",
+          "before_ids": [],
+          "after_ids": [
+            "fr_bd_837602275:7728f6ec-4ae5-4c96-88b7-128226d7edad",
+            "fr_bd_837602275:af1d34d6-d34f-4eab-a80e-e81065f35cba",
+            "fr_bd_837602275:6865320b-80a7-4c7f-9f29-4d92023d7664"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_837602275"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_837602275"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "ABONNEMENT TRIM. MOBITPE MOBILE du 01/04/25 au 30/06/25",
+          "before_ids": [],
+          "after_ids": [
+            "fr_bd_519665103:b3742730-2748-49f2-acad-1d8d2a7d33a1",
+            "fr_bd_880517875:eb721816-2c89-469d-ad84-fa1698048f1b"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z",
+            "1071C"
+          ],
+          "before_partitions": [],
+          "after_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_880517875"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "ABONNEMENT TRIM. SIMS CARTE SIM du 01/04/25 au 30/06/25",
+          "before_ids": [],
+          "after_ids": [
+            "fr_bd_519665103:b3742730-2748-49f2-acad-1d8d2a7d33a1"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "before_partitions": [],
+          "after_partitions": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "DECRO",
+          "before_ids": [
+            "fr_bd_519665103:003f5876-a443-42e2-9d69-60c58f89afa5",
+            "fr_bd_519665103:02d5e7c2-3877-40fc-b589-cc7daf4784ec",
+            "fr_bd_519665103:0417048a-9942-4273-a5f6-4a1dc7e9c12c"
+          ],
+          "after_ids": [
+            "fr_bd_519665103:003f5876-a443-42e2-9d69-60c58f89afa5",
+            "fr_bd_519665103:02d5e7c2-3877-40fc-b589-cc7daf4784ec",
+            "fr_bd_519665103:0417048a-9942-4273-a5f6-4a1dc7e9c12c"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Frais Administratifs Carte Acheteur",
+          "before_ids": [],
+          "after_ids": [
+            "fr_bd_880517875:bcfdbd73-715e-4ab7-80dc-766c24af9aba",
+            "fr_bd_880517875:e3dc9ba1-1605-42b1-acf0-e99efa105ee5",
+            "fr_bd_828612630:53a4eee3-6d77-492a-9ee0-f1b1924f703f"
+          ],
+          "before_ape": [
+            "6832A"
+          ],
+          "after_ape": [
+            "6832A"
+          ],
+          "before_partitions": [],
+          "after_partitions": [
+            "fr_bd_828612630",
+            "fr_bd_519665103",
+            "fr_bd_880517875"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Frais de port",
+          "before_ids": [
+            "fr_bd_519665103:2cdae330-5c7d-4696-ac7e-47511f719b32"
+          ],
+          "after_ids": [
+            "fr_bd_519665103:2cdae330-5c7d-4696-ac7e-47511f719b32",
+            "fr_bd_832065999:5e415a5d-36d5-4c49-aa07-708ef06ed9c0",
+            "fr_bd_837602275:353b5661-8903-4933-a244-02518cbb2197"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z",
+            "4399C",
+            "4321A",
+            "4932Z"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_832065999",
+            "fr_bd_837602275",
+            "fr_bd_842785719",
+            "fr_bd_844858571",
+            "fr_bd_888020088"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_832065999",
+            "fr_bd_837602275",
+            "fr_bd_842785719",
+            "fr_bd_844858571",
+            "fr_bd_888020088"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Frais de relance",
+          "before_ids": [
+            "fr_bd_519665103:09437944-54fa-4d58-b404-e954e21bfa22"
+          ],
+          "after_ids": [
+            "fr_bd_519665103:09437944-54fa-4d58-b404-e954e21bfa22",
+            "fr_bd_519665103:ba8e7695-4d6d-4798-96d9-c0d46d9f5b01",
+            "fr_bd_519665103:666de54d-b140-4b30-b0f2-0146caf36a8d"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_837602275"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_837602275"
+          ]
+        }
+      ]
+    }
+  ],
+  "items_changed": 483,
+  "a_valider_changed": 72,
+  "invoice_ids_added": 727
+}

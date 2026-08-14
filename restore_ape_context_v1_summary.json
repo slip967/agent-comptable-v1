@@ -1,0 +1,1379 @@
+{
+  "generated_at": "2026-05-06T03:25:49.788747Z",
+  "files": [
+    {
+      "file": "base_charges_externes_v1.json",
+      "items_changed": 249,
+      "a_valider_changed": 36,
+      "ape_filled": 285,
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "COTI.RSD",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "FRAIS FIXES",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_828612630"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "INTERBEV",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Entretien parking",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_837602275"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "ABONNEMENT TRIM. MOBITPE MOBILE du 01/04/25 au 30/06/25",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z",
+            "1071C"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103",
+            "fr_bd_880517875"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "ABONNEMENT TRIM. SIMS CARTE SIM du 01/04/25 au 30/06/25",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "DECRO",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "F. FIXE",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_boucherie_v1.json",
+      "items_changed": 212,
+      "a_valider_changed": 0,
+      "ape_filled": 212,
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "BASSE COTE BOEUF",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "FILM ALIMENTAIRE 45CM X 300M EN BOITE DISTRIBUTRICE AVEC LAME",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "CUISSE DE POULET FERMIER HALAL",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "BASSE SANS POITRINE DE VEAU",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "FILET DE POULET FERMIER HALAL",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "COQUELET HALAL",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "POULET PAC HALAL",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "CUISSE POULET HALAL CEE 10KG",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_boulangerie_v1.json",
+      "items_changed": 155,
+      "a_valider_changed": 0,
+      "ape_filled": 155,
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "CANADIENNE D'OEUFS X180",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "FARINE DE POIS CHICHE",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Farine Pois Chiches 500g",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HUILE D'OLIVE EL HORA",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Huile d'olive TASSOURT 1L",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HUILE TOURNESOL 1L x15 MAUREL",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HUILE TOURNESOL 25L MAUREL BIDON",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "LAIT FERMENTE CHERGUI 10 X 1L",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_btp_v1.json",
+      "items_changed": 124,
+      "a_valider_changed": 0,
+      "ape_filled": 124,
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "COFFRAGE, SCIAGE, PONCAGE.",
+          "before_ape": [],
+          "after_ape": [
+            "4399C"
+          ],
+          "partitions_sources": [
+            "fr_bd_903252617"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Mise à disposition",
+          "before_ape": [],
+          "after_ape": [
+            "4399C"
+          ],
+          "partitions_sources": [
+            "fr_bd_903252617"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "SURFAQUARTZ GRIS NATUREL",
+          "before_ape": [],
+          "after_ape": [
+            "4399C"
+          ],
+          "partitions_sources": [
+            "fr_bd_903252617"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Tuyaux",
+          "before_ape": [],
+          "after_ape": [
+            "4399C"
+          ],
+          "partitions_sources": [
+            "fr_bd_903252617"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "COURONNE.250MM.COREX GR 16Q 68",
+          "before_ape": [],
+          "after_ape": [
+            "4399C"
+          ],
+          "partitions_sources": [
+            "fr_bd_903252617"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "GO 05 pompe",
+          "before_ape": [],
+          "after_ape": [
+            "4399C"
+          ],
+          "partitions_sources": [
+            "fr_bd_903252617"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "DALLE PORTÉE finition hélicoptére",
+          "before_ape": [],
+          "after_ape": [
+            "4399C"
+          ],
+          "partitions_sources": [
+            "fr_bd_903252617"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "ISOCOL MORTIER SAC 25 KG",
+          "before_ape": [],
+          "after_ape": [
+            "4399C"
+          ],
+          "partitions_sources": [
+            "fr_bd_842785719"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_epicerie_v1.json",
+      "items_changed": 0,
+      "a_valider_changed": 0,
+      "ape_filled": 0,
+      "examples": []
+    },
+    {
+      "file": "base_produits_restaurant_v1.json",
+      "items_changed": 220,
+      "a_valider_changed": 0,
+      "ape_filled": 220,
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "FILM ALIMENTAIRE 45CM X 300M EN BOITE DISTRIBUTRICE AVEC LAME",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HUILE TOURNESOL 1L x15 MAUREL",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HARISSA 1/2",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HARISSA 1/6",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HARISSA TUBE 70g",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "OLIVE VERTE DENOYAUTEE",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HARISSA 4/4",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "OLIVE NOIRE FACON GRECE 8KG",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_transport_v1.json",
+      "items_changed": 124,
+      "a_valider_changed": 0,
+      "ape_filled": 124,
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "Entree CTTE (Camionnette)",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Entrée CTTE (Camionnette) (Abatt: 100)",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Condition de livraison",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Gazole",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104",
+            "fr_bd_888020088",
+            "fr_bd_922040506"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Carburant GO",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Carburant",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "DIESEL",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "GO (Carburant)",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_vtc_v1.json",
+      "items_changed": 376,
+      "a_valider_changed": 0,
+      "ape_filled": 376,
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "Multi-TV FTTH (du 02/12 au 01/01)",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Remise sur abonnement - Bbox (du 02/12 au 01/01)",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Bbox - location équipement (du 02/12 au 01/01)",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Bbox fibre jusqu'a 1 Gb/s (du 02/11 au 01/12)",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Offre Spéciale Appels illimités mobiles Europe (du 02/11 au 01/12)",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Consommation d'énergie électrique - Semaine Heures Pleines du 17/1/2024 au 1/12/2024",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_831060876"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Consommation d'énergie électrique - Week-end Heures Pleines du 17/1/2024 au 16/12/2024",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_831060876"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Forfait Client B You 260Go 5G",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_charges_externes_v1_with_accounts.json",
+      "items_changed": 245,
+      "a_valider_changed": 36,
+      "ape_filled": 281,
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "COTI.RSD",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "FRAIS FIXES",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_828612630"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "INTERBEV",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Entretien parking",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_837602275"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "ABONNEMENT TRIM. MOBITPE MOBILE du 01/04/25 au 30/06/25",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z",
+            "1071C"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103",
+            "fr_bd_880517875"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "ABONNEMENT TRIM. SIMS CARTE SIM du 01/04/25 au 30/06/25",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "DECRO",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "F. FIXE",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_boucherie_v1_with_accounts.json",
+      "items_changed": 212,
+      "a_valider_changed": 0,
+      "ape_filled": 212,
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "BASSE COTE BOEUF",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "FILM ALIMENTAIRE 45CM X 300M EN BOITE DISTRIBUTRICE AVEC LAME",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "CUISSE DE POULET FERMIER HALAL",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "BASSE SANS POITRINE DE VEAU",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "FILET DE POULET FERMIER HALAL",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "COQUELET HALAL",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "POULET PAC HALAL",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "CUISSE POULET HALAL CEE 10KG",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_boulangerie_v1_with_accounts.json",
+      "items_changed": 155,
+      "a_valider_changed": 0,
+      "ape_filled": 155,
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "CANADIENNE D'OEUFS X180",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "FARINE DE POIS CHICHE",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Farine Pois Chiches 500g",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HUILE D'OLIVE EL HORA",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Huile d'olive TASSOURT 1L",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HUILE TOURNESOL 1L x15 MAUREL",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HUILE TOURNESOL 25L MAUREL BIDON",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "LAIT FERMENTE CHERGUI 10 X 1L",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_btp_v1_with_accounts.json",
+      "items_changed": 124,
+      "a_valider_changed": 0,
+      "ape_filled": 124,
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "COFFRAGE, SCIAGE, PONCAGE.",
+          "before_ape": [],
+          "after_ape": [
+            "4399C"
+          ],
+          "partitions_sources": [
+            "fr_bd_903252617"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Mise à disposition",
+          "before_ape": [],
+          "after_ape": [
+            "4399C"
+          ],
+          "partitions_sources": [
+            "fr_bd_903252617"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "SURFAQUARTZ GRIS NATUREL",
+          "before_ape": [],
+          "after_ape": [
+            "4399C"
+          ],
+          "partitions_sources": [
+            "fr_bd_903252617"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Tuyaux",
+          "before_ape": [],
+          "after_ape": [
+            "4399C"
+          ],
+          "partitions_sources": [
+            "fr_bd_903252617"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "COURONNE.250MM.COREX GR 16Q 68",
+          "before_ape": [],
+          "after_ape": [
+            "4399C"
+          ],
+          "partitions_sources": [
+            "fr_bd_903252617"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "GO 05 pompe",
+          "before_ape": [],
+          "after_ape": [
+            "4399C"
+          ],
+          "partitions_sources": [
+            "fr_bd_903252617"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "DALLE PORTÉE finition hélicoptére",
+          "before_ape": [],
+          "after_ape": [
+            "4399C"
+          ],
+          "partitions_sources": [
+            "fr_bd_903252617"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "ISOCOL MORTIER SAC 25 KG",
+          "before_ape": [],
+          "after_ape": [
+            "4399C"
+          ],
+          "partitions_sources": [
+            "fr_bd_842785719"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_epicerie_v1_with_accounts.json",
+      "items_changed": 0,
+      "a_valider_changed": 0,
+      "ape_filled": 0,
+      "examples": []
+    },
+    {
+      "file": "base_produits_restaurant_v1_with_accounts.json",
+      "items_changed": 220,
+      "a_valider_changed": 0,
+      "ape_filled": 220,
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "FILM ALIMENTAIRE 45CM X 300M EN BOITE DISTRIBUTRICE AVEC LAME",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HUILE TOURNESOL 1L x15 MAUREL",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HARISSA 1/2",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HARISSA 1/6",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HARISSA TUBE 70g",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "OLIVE VERTE DENOYAUTEE",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "HARISSA 4/4",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "OLIVE NOIRE FACON GRECE 8KG",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_transport_v1_with_accounts.json",
+      "items_changed": 124,
+      "a_valider_changed": 0,
+      "ape_filled": 124,
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "Entree CTTE (Camionnette)",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Entrée CTTE (Camionnette) (Abatt: 100)",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Condition de livraison",
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_519665103"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Gazole",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104",
+            "fr_bd_888020088",
+            "fr_bd_922040506"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Carburant GO",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Carburant",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "DIESEL",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "GO (Carburant)",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104",
+            "fr_bd_888020088"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "base_produits_vtc_v1_with_accounts.json",
+      "items_changed": 376,
+      "a_valider_changed": 0,
+      "ape_filled": 376,
+      "examples": [
+        {
+          "section": "items",
+          "article_source": "Multi-TV FTTH (du 02/12 au 01/01)",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Remise sur abonnement - Bbox (du 02/12 au 01/01)",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Bbox - location équipement (du 02/12 au 01/01)",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Bbox fibre jusqu'a 1 Gb/s (du 02/11 au 01/12)",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Offre Spéciale Appels illimités mobiles Europe (du 02/11 au 01/12)",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Consommation d'énergie électrique - Semaine Heures Pleines du 17/1/2024 au 1/12/2024",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_831060876"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Consommation d'énergie électrique - Week-end Heures Pleines du 17/1/2024 au 16/12/2024",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_831060876"
+          ]
+        },
+        {
+          "section": "items",
+          "article_source": "Forfait Client B You 260Go 5G",
+          "before_ape": [],
+          "after_ape": [
+            "4932Z"
+          ],
+          "partitions_sources": [
+            "fr_bd_839181104"
+          ]
+        }
+      ]
+    }
+  ]
+}

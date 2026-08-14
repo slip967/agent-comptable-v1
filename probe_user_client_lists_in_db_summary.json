@@ -1,0 +1,516 @@
+{
+  "generated_at": "2026-05-06T14:41:43.352245Z",
+  "source_db": "keymanage_accounting",
+  "results": {
+    "restaurant": [
+      {
+        "client": "AADHI NAVI (MADRAS KITCHEN)",
+        "siret": "94846718800017",
+        "siren": "948467188",
+        "partition_prefix": "fr_bd_948467188",
+        "invoice_form_count": 0,
+        "entry_count": 0,
+        "sample_invoice_ids": [],
+        "in_quality_report": false,
+        "report_selected_metiers": [],
+        "report_inferred_metiers": [],
+        "report_client_ape": "",
+        "ape": ""
+      },
+      {
+        "client": "COUSCOUS FACTORY",
+        "siret": "93068993000012",
+        "siren": "930689930",
+        "partition_prefix": "fr_bd_930689930",
+        "invoice_form_count": 0,
+        "entry_count": 0,
+        "sample_invoice_ids": [],
+        "in_quality_report": false,
+        "report_selected_metiers": [],
+        "report_inferred_metiers": [],
+        "report_client_ape": "",
+        "ape": "5610C"
+      },
+      {
+        "client": "LES TISANES",
+        "siret": "84960275000010",
+        "siren": "849602750",
+        "partition_prefix": "fr_bd_849602750",
+        "invoice_form_count": 47,
+        "entry_count": 0,
+        "sample_invoice_ids": [
+          "fr_bd_849602750:00976696-455e-42e5-a57e-9b8292f1bee7",
+          "fr_bd_849602750:04a2fb01-4081-4b56-a4ae-8fefde9feda8",
+          "fr_bd_849602750:05712ca7-0d3c-4b23-9aa0-5c07fc12a00b"
+        ],
+        "in_quality_report": false,
+        "report_selected_metiers": [],
+        "report_inferred_metiers": [],
+        "report_client_ape": "",
+        "ape": "4778C"
+      }
+    ],
+    "boulangerie": [
+      {
+        "client": "BOULANGERIE L'UNIVERS DU PAIN",
+        "siret": "88051787500022",
+        "siren": "880517875",
+        "partition_prefix": "fr_bd_880517875",
+        "invoice_form_count": 3113,
+        "entry_count": 41464,
+        "sample_invoice_ids": [
+          "fr_bd_880517875:0022a85a-1385-4e66-a811-83d28803a514",
+          "fr_bd_880517875:003735ae-bd85-4813-b2e9-4835e8cf1c0e",
+          "fr_bd_880517875:0053fa1b-7e41-48e7-b1a8-ce4289d6cb65"
+        ],
+        "in_quality_report": true,
+        "report_selected_metiers": [
+          "boulangerie"
+        ],
+        "report_inferred_metiers": [
+          "boulangerie"
+        ],
+        "report_client_ape": "1071C",
+        "ape": "1071C"
+      },
+      {
+        "client": "la courbevoise",
+        "siret": "",
+        "siren": "",
+        "partition_prefix": "",
+        "invoice_form_count": 0,
+        "entry_count": 0,
+        "sample_invoice_ids": [],
+        "in_quality_report": false,
+        "report_selected_metiers": [],
+        "report_inferred_metiers": [],
+        "report_client_ape": "",
+        "ape": ""
+      }
+    ],
+    "boucherie": [
+      {
+        "client": "BOUCHERIE DE L'ESPOIR",
+        "siret": "82191329000010",
+        "siren": "821913290",
+        "partition_prefix": "fr_bd_821913290",
+        "invoice_form_count": 0,
+        "entry_count": 0,
+        "sample_invoice_ids": [],
+        "in_quality_report": false,
+        "report_selected_metiers": [],
+        "report_inferred_metiers": [],
+        "report_client_ape": "",
+        "ape": "4722Z"
+      },
+      {
+        "client": "BOUCHERIE IFRI",
+        "siret": "89283383100019",
+        "siren": "892833831",
+        "partition_prefix": "fr_bd_892833831",
+        "invoice_form_count": 1316,
+        "entry_count": 9483,
+        "sample_invoice_ids": [
+          "fr_bd_892833831:00063ada-ba29-4717-b704-992d158ec6ca",
+          "fr_bd_892833831:000f0af2-65c9-43e3-b5aa-40f253ec92fb",
+          "fr_bd_892833831:0051039d-a59e-4343-b394-ae07b14c05f0"
+        ],
+        "in_quality_report": false,
+        "report_selected_metiers": [],
+        "report_inferred_metiers": [],
+        "report_client_ape": "",
+        "ape": "1011Z"
+      }
+    ],
+    "btp": [
+      {
+        "client": "AEF (ARTISAN ENERGIE FRANCE)",
+        "siret": "91483746300019",
+        "siren": "914837463",
+        "partition_prefix": "fr_bd_914837463",
+        "invoice_form_count": 2335,
+        "entry_count": 0,
+        "sample_invoice_ids": [
+          "fr_bd_914837463:00e30934-6981-4498-977c-10e32d26e8bc",
+          "fr_bd_914837463:00eea3df-9d19-43cc-a964-76dfc1f022af",
+          "fr_bd_914837463:00fdd534-f206-422e-8c7f-de831a0d8ee6"
+        ],
+        "in_quality_report": true,
+        "report_selected_metiers": [
+          "btp"
+        ],
+        "report_inferred_metiers": [
+          "btp"
+        ],
+        "report_client_ape": "4321A",
+        "ape": "4321A"
+      },
+      {
+        "client": "ASSAINIS",
+        "siret": "87852354700015",
+        "siren": "878523547",
+        "partition_prefix": "fr_bd_878523547",
+        "invoice_form_count": 4919,
+        "entry_count": 12994,
+        "sample_invoice_ids": [
+          "fr_bd_878523547:00177ada-9dbc-4af8-829c-0aaa26c6892f",
+          "fr_bd_878523547:0031b9b0-c29a-4843-81b5-bb8132c2c869",
+          "fr_bd_878523547:003a8055-494a-49b6-aaa6-1c5e77e379f2"
+        ],
+        "in_quality_report": false,
+        "report_selected_metiers": [],
+        "report_inferred_metiers": [],
+        "report_client_ape": "",
+        "ape": "3700Z"
+      },
+      {
+        "client": "DEM BAT",
+        "siret": "94329774700017",
+        "siren": "943297747",
+        "partition_prefix": "fr_bd_943297747",
+        "invoice_form_count": 0,
+        "entry_count": 0,
+        "sample_invoice_ids": [],
+        "in_quality_report": false,
+        "report_selected_metiers": [],
+        "report_inferred_metiers": [],
+        "report_client_ape": "",
+        "ape": "4120A"
+      },
+      {
+        "client": "IBB INTERMEDIARY BUSINESS BATIMENT",
+        "siret": "981565930",
+        "siren": "981565930",
+        "partition_prefix": "fr_bd_981565930",
+        "invoice_form_count": 0,
+        "entry_count": 311,
+        "sample_invoice_ids": [],
+        "in_quality_report": false,
+        "report_selected_metiers": [],
+        "report_inferred_metiers": [],
+        "report_client_ape": "",
+        "ape": ""
+      },
+      {
+        "client": "IRD BAT",
+        "siret": "87978823000016",
+        "siren": "879788230",
+        "partition_prefix": "fr_bd_879788230",
+        "invoice_form_count": 268,
+        "entry_count": 0,
+        "sample_invoice_ids": [
+          "fr_bd_879788230:00c717d6-adc6-4c99-806a-1cf4fc0b96ac",
+          "fr_bd_879788230:011f86e9-15fb-4ec9-b8b7-9151abd6a487",
+          "fr_bd_879788230:02271126-6f0d-44d9-a408-ee97c881f03f"
+        ],
+        "in_quality_report": true,
+        "report_selected_metiers": [
+          "btp"
+        ],
+        "report_inferred_metiers": [
+          "btp"
+        ],
+        "report_client_ape": "4399C",
+        "ape": "4399C"
+      },
+      {
+        "client": "IRPCH PLOMBERIE",
+        "siret": "95142106400027",
+        "siren": "951421064",
+        "partition_prefix": "fr_bd_951421064",
+        "invoice_form_count": 103,
+        "entry_count": 660,
+        "sample_invoice_ids": [
+          "fr_bd_951421064:0031577a-959f-4319-8b24-42f61ade3118",
+          "fr_bd_951421064:03be0a8b-da8a-42aa-a10d-1f60a58a8dc5",
+          "fr_bd_951421064:04e50d2b-7dd3-4261-a940-1d911e346b49"
+        ],
+        "in_quality_report": true,
+        "report_selected_metiers": [
+          "btp"
+        ],
+        "report_inferred_metiers": [
+          "btp"
+        ],
+        "report_client_ape": "4322B",
+        "ape": "4322B"
+      },
+      {
+        "client": "MB CONSTRUCTION",
+        "siret": "94785830400019",
+        "siren": "947858304",
+        "partition_prefix": "fr_bd_947858304",
+        "invoice_form_count": 1094,
+        "entry_count": 223,
+        "sample_invoice_ids": [
+          "fr_bd_947858304:0005e2fd-1c9d-4b3f-8746-759923e36df9",
+          "fr_bd_947858304:000abd5d-a234-4738-b60b-1d8725d9adb9",
+          "fr_bd_947858304:001a8dcf-c1d3-4412-9e94-3acebccb7fc7"
+        ],
+        "in_quality_report": false,
+        "report_selected_metiers": [],
+        "report_inferred_metiers": [],
+        "report_client_ape": "",
+        "ape": "4120A"
+      },
+      {
+        "client": "MONDIAL BATIMENT",
+        "siret": "88986093800014",
+        "siren": "889860938",
+        "partition_prefix": "fr_bd_889860938",
+        "invoice_form_count": 236,
+        "entry_count": 0,
+        "sample_invoice_ids": [
+          "fr_bd_889860938:006d2913-59a1-48cf-8366-54c4a82d5e9e",
+          "fr_bd_889860938:01c32203-e7d2-44e8-8b41-50a88054005d",
+          "fr_bd_889860938:02467e82-324b-4e42-a379-065be0bfa41c"
+        ],
+        "in_quality_report": false,
+        "report_selected_metiers": [],
+        "report_inferred_metiers": [],
+        "report_client_ape": "",
+        "ape": "4120A"
+      },
+      {
+        "client": "PRO MRI45 PRO MAINTENANCE RESEAU",
+        "siret": "94287932100019",
+        "siren": "942879321",
+        "partition_prefix": "fr_bd_942879321",
+        "invoice_form_count": 0,
+        "entry_count": 14,
+        "sample_invoice_ids": [],
+        "in_quality_report": false,
+        "report_selected_metiers": [],
+        "report_inferred_metiers": [],
+        "report_client_ape": "",
+        "ape": "8020Z"
+      },
+      {
+        "client": "SAFTA MENUISERIE",
+        "siret": "93875102100016",
+        "siren": "938751021",
+        "partition_prefix": "fr_bd_938751021",
+        "invoice_form_count": 45,
+        "entry_count": 547,
+        "sample_invoice_ids": [
+          "fr_bd_938751021:08252f3f-a143-45eb-bac1-b5bbf0681be4",
+          "fr_bd_938751021:11cc20bc-3028-4d17-b69d-1a68c77cd6ed",
+          "fr_bd_938751021:1861f3bd-0c86-456d-9e7d-c6ab872cce96"
+        ],
+        "in_quality_report": false,
+        "report_selected_metiers": [],
+        "report_inferred_metiers": [],
+        "report_client_ape": "",
+        "ape": "4332A"
+      },
+      {
+        "client": "TRAVAUX NETTS SARL",
+        "siret": "90810801200018",
+        "siren": "908108012",
+        "partition_prefix": "fr_bd_908108012",
+        "invoice_form_count": 95,
+        "entry_count": 7586,
+        "sample_invoice_ids": [
+          "fr_bd_908108012:02e71f51-9574-48aa-902e-50868fe1243b",
+          "fr_bd_908108012:083d72a6-4e01-4ce7-9fcd-456bd763d9ce",
+          "fr_bd_908108012:09032718-1e4d-4637-9d6a-88372281d2bf"
+        ],
+        "in_quality_report": false,
+        "report_selected_metiers": [],
+        "report_inferred_metiers": [],
+        "report_client_ape": "",
+        "ape": "4399C"
+      }
+    ],
+    "transport_logistique": [
+      {
+        "client": "BS INTERNATIONAL TRANSFERT",
+        "siret": "99366962100019",
+        "siren": "993669621",
+        "partition_prefix": "fr_bd_993669621",
+        "invoice_form_count": 3,
+        "entry_count": 29,
+        "sample_invoice_ids": [
+          "fr_bd_993669621:2c21737b-c1d2-458b-96c2-6ccb6d074b9d",
+          "fr_bd_993669621:b2cca1c4-037c-44b5-81f0-bbf345d76008",
+          "fr_bd_993669621:c5506789-f619-4eee-8f55-61b8288f0897"
+        ],
+        "in_quality_report": false,
+        "report_selected_metiers": [],
+        "report_inferred_metiers": [],
+        "report_client_ape": "",
+        "ape": "4932Z"
+      },
+      {
+        "client": "DAC EXPRESS",
+        "siret": "92204050600011",
+        "siren": "922040506",
+        "partition_prefix": "fr_bd_922040506",
+        "invoice_form_count": 4,
+        "entry_count": 469,
+        "sample_invoice_ids": [
+          "fr_bd_922040506:1de189ca-fc7b-4324-b536-f1ab8fc96cd4",
+          "fr_bd_922040506:b3de0ebe-1a3c-40f7-803f-1e0afe26d77c",
+          "fr_bd_922040506:cfdb4202-80d8-4ad3-9386-d797d841169c"
+        ],
+        "in_quality_report": true,
+        "report_selected_metiers": [
+          "transport"
+        ],
+        "report_inferred_metiers": [
+          "transport"
+        ],
+        "report_client_ape": "4932Z",
+        "ape": "4932Z"
+      },
+      {
+        "client": "DELIVERY GREEN",
+        "siret": "93147986900014",
+        "siren": "931479869",
+        "partition_prefix": "fr_bd_931479869",
+        "invoice_form_count": 67,
+        "entry_count": 3204,
+        "sample_invoice_ids": [
+          "fr_bd_931479869:046c06e7-52eb-4bdc-b4dd-cded0733512d",
+          "fr_bd_931479869:05b958e2-916e-44ca-a7e6-df4bc206482a",
+          "fr_bd_931479869:11775465-3c0e-427f-978f-025f4f293ed3"
+        ],
+        "in_quality_report": false,
+        "report_selected_metiers": [],
+        "report_inferred_metiers": [],
+        "report_client_ape": "",
+        "ape": "4941A"
+      },
+      {
+        "client": "HELP DELIVERY",
+        "siret": "99114820600014",
+        "siren": "991148206",
+        "partition_prefix": "fr_bd_991148206",
+        "invoice_form_count": 6,
+        "entry_count": 10,
+        "sample_invoice_ids": [
+          "fr_bd_991148206:20364a3e-fb0a-48bb-9e62-21d4a8468bac",
+          "fr_bd_991148206:2250b793-4603-40b4-b0ca-699366031c55",
+          "fr_bd_991148206:792142f1-ff06-4e0a-ade3-ad504181a110"
+        ],
+        "in_quality_report": false,
+        "report_selected_metiers": [],
+        "report_inferred_metiers": [],
+        "report_client_ape": "",
+        "ape": "4941A"
+      },
+      {
+        "client": "MHB TRANSPORTS",
+        "siret": "98292174400016",
+        "siren": "982921744",
+        "partition_prefix": "fr_bd_982921744",
+        "invoice_form_count": 247,
+        "entry_count": 0,
+        "sample_invoice_ids": [
+          "fr_bd_982921744:00daf871-e592-4b39-8a02-61e85f6b4b73",
+          "fr_bd_982921744:00ecdef4-8089-4fa4-9ce3-339a15280150",
+          "fr_bd_982921744:01b4b68a-cc52-4c14-8644-cf95c43fda51"
+        ],
+        "in_quality_report": false,
+        "report_selected_metiers": [],
+        "report_inferred_metiers": [],
+        "report_client_ape": "",
+        "ape": "4932Z"
+      },
+      {
+        "client": "MMA TRANSPORT",
+        "siret": "95219282100017",
+        "siren": "952192821",
+        "partition_prefix": "fr_bd_952192821",
+        "invoice_form_count": 0,
+        "entry_count": 18,
+        "sample_invoice_ids": [],
+        "in_quality_report": false,
+        "report_selected_metiers": [],
+        "report_inferred_metiers": [],
+        "report_client_ape": "",
+        "ape": "4941B"
+      },
+      {
+        "client": "MS TRANSPORT",
+        "siret": "89085240300033",
+        "siren": "890852403",
+        "partition_prefix": "fr_bd_890852403",
+        "invoice_form_count": 103,
+        "entry_count": 1958,
+        "sample_invoice_ids": [
+          "fr_bd_890852403:0040fda3-087a-4185-be2a-9dd87c9c1518",
+          "fr_bd_890852403:0046a221-c8d5-4b11-916b-5476272db15e",
+          "fr_bd_890852403:0094952d-2be7-4ebf-9c64-04e5be612bfb"
+        ],
+        "in_quality_report": true,
+        "report_selected_metiers": [
+          "transport"
+        ],
+        "report_inferred_metiers": [
+          "transport"
+        ],
+        "report_client_ape": "4941A",
+        "ape": "4941A"
+      },
+      {
+        "client": "PRIM DEMENAGEMENT",
+        "siret": "90828209800015",
+        "siren": "908282098",
+        "partition_prefix": "fr_bd_908282098",
+        "invoice_form_count": 750,
+        "entry_count": 2520,
+        "sample_invoice_ids": [
+          "fr_bd_908282098:006a448e-3b69-4c39-8e85-6c60381b2dcb",
+          "fr_bd_908282098:008a968c-82ae-4abb-aee1-eb92a6becff9",
+          "fr_bd_908282098:00aa4f20-7069-4fe0-8379-c90d6604fdbe"
+        ],
+        "in_quality_report": false,
+        "report_selected_metiers": [],
+        "report_inferred_metiers": [],
+        "report_client_ape": "",
+        "ape": "4942Z"
+      },
+      {
+        "client": "PROSERVICES AMBULANCES",
+        "siret": "89175650400025",
+        "siren": "891756504",
+        "partition_prefix": "fr_bd_891756504",
+        "invoice_form_count": 2562,
+        "entry_count": 7892,
+        "sample_invoice_ids": [
+          "fr_bd_891756504:0002ce8a-812f-480a-bef1-9529fc3144e6",
+          "fr_bd_891756504:0044200a-5217-4680-9300-e2690309e8aa",
+          "fr_bd_891756504:006087fd-ae94-4666-98fb-0aa9612d4975"
+        ],
+        "in_quality_report": false,
+        "report_selected_metiers": [],
+        "report_inferred_metiers": [],
+        "report_client_ape": "",
+        "ape": "4642Z"
+      },
+      {
+        "client": "RAF TRANS",
+        "siret": "979300076",
+        "siren": "979300076",
+        "partition_prefix": "fr_bd_979300076",
+        "invoice_form_count": 126,
+        "entry_count": 0,
+        "sample_invoice_ids": [
+          "fr_bd_979300076:00ef0af6-c0c1-475b-843b-40148bc65591",
+          "fr_bd_979300076:043b5b51-caca-4c2b-bec8-cf09395dc11e",
+          "fr_bd_979300076:0c2e6fba-ac9e-44fa-a38f-b449c8b2e146"
+        ],
+        "in_quality_report": true,
+        "report_selected_metiers": [
+          "transport"
+        ],
+        "report_inferred_metiers": [
+          "transport"
+        ],
+        "report_client_ape": "4932Z",
+        "ape": "4932Z"
+      }
+    ]
+  }
+}

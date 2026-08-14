@@ -1,0 +1,113 @@
+{
+  "transport": {
+    "requested_active": [
+      "KIT DE REPARATION SUPPORT BAGUETTE ENJOLIVEUSE",
+      "022 H.MOT 229.71 1 L OW20/HUILE M CSVP",
+      "J.PC.CARTOUCH.FILTR.HUILE",
+      "JOINT TORIQUE, 39.8X2.2",
+      "REPARPNEU",
+      "RONDELLE DE BOUCHON DE",
+      "SILENTBLOC",
+      "VIS DE FERMETURE TS CART. FILTRE A HUILE",
+      "120186/CONSOLE TRAVERSE",
+      "CAPTEUR D'USURE PLAQUETTE",
+      "GARNITURE DE FREIN",
+      "GARNITURE FREINA DISQUE",
+      "OML MUL NETT. FREIN 50"
+    ],
+    "missing": [],
+    "files": [
+      {
+        "file": "base_produits_transport_v1.json",
+        "added": 13,
+        "skipped_existing": 0,
+        "added_labels": [
+          "KIT DE REPARATION SUPPORT BAGUETTE ENJOLIVEUSE",
+          "022 H.MOT 229.71 1 L OW20/HUILE M CSVP",
+          "J.PC.CARTOUCH.FILTR.HUILE",
+          "JOINT TORIQUE, 39.8X2.2",
+          "REPARPNEU",
+          "RONDELLE DE BOUCHON DE",
+          "SILENTBLOC",
+          "VIS DE FERMETURE TS CART. FILTRE A HUILE",
+          "120186/CONSOLE TRAVERSE",
+          "CAPTEUR D'USURE PLAQUETTE",
+          "GARNITURE DE FREIN",
+          "GARNITURE FREINA DISQUE",
+          "OML MUL NETT. FREIN 50"
+        ]
+      },
+      {
+        "file": "base_produits_transport_v1_with_accounts.json",
+        "added": 13,
+        "skipped_existing": 0,
+        "added_labels": [
+          "KIT DE REPARATION SUPPORT BAGUETTE ENJOLIVEUSE",
+          "022 H.MOT 229.71 1 L OW20/HUILE M CSVP",
+          "J.PC.CARTOUCH.FILTR.HUILE",
+          "JOINT TORIQUE, 39.8X2.2",
+          "REPARPNEU",
+          "RONDELLE DE BOUCHON DE",
+          "SILENTBLOC",
+          "VIS DE FERMETURE TS CART. FILTRE A HUILE",
+          "120186/CONSOLE TRAVERSE",
+          "CAPTEUR D'USURE PLAQUETTE",
+          "GARNITURE DE FREIN",
+          "GARNITURE FREINA DISQUE",
+          "OML MUL NETT. FREIN 50"
+        ]
+      }
+    ]
+  },
+  "btp": {
+    "requested_active": [
+      "PLIAGE ALUMINIUM 10/10 ANODISE + PERFO (DETAIL 5) Long : 2000 Dev : 320",
+      "ADH PVC ORANGE NOVIPRO (3) 33MX50MM",
+      "CHAINE ACIER LONGUEUR 1000MM 8MM DIAM 8016EURD",
+      "CHAINE ACIER LONGUEUR 1500MM 8MM DIAM 8017EURD",
+      "Couteau à enduire type américain manche plastique inox 150mm noir",
+      "Gants anti-dérapant Netceed 2.1.3.1 Taille 8",
+      "Lot 6 p gants easy grip t9 Réf.89163",
+      "PLIAGE ALUMINIUM 10/10 ANODISE + PERFO (DETAIL 2 LARGEUR 350 Long : 2000 Dev : 442 Eco contribution",
+      "PLIAGE ALUMINIUM 10/10 ANODISE + PINCE COUDE (DETAIL 5 Long : 2000 Dev : 170 Eco contribution",
+      "PLIAGE ALUMINIUM 10/10 ANODISE + PLI ECRASE (DETAIL 5) Long : 2000 Dev : 170"
+    ],
+    "missing": [],
+    "files": [
+      {
+        "file": "base_produits_btp_v1.json",
+        "added": 10,
+        "skipped_existing": 0,
+        "added_labels": [
+          "PLIAGE ALUMINIUM 10/10 ANODISE + PERFO (DETAIL 5) Long : 2000 Dev : 320",
+          "ADH PVC ORANGE NOVIPRO (3) 33MX50MM",
+          "CHAINE ACIER LONGUEUR 1000MM 8MM DIAM 8016EURD",
+          "CHAINE ACIER LONGUEUR 1500MM 8MM DIAM 8017EURD",
+          "Couteau à enduire type américain manche plastique inox 150mm noir",
+          "Gants anti-dérapant Netceed 2.1.3.1 Taille 8",
+          "Lot 6 p gants easy grip t9 Réf.89163",
+          "PLIAGE ALUMINIUM 10/10 ANODISE + PERFO (DETAIL 2 LARGEUR 350 Long : 2000 Dev : 442 Eco contribution",
+          "PLIAGE ALUMINIUM 10/10 ANODISE + PINCE COUDE (DETAIL 5 Long : 2000 Dev : 170 Eco contribution",
+          "PLIAGE ALUMINIUM 10/10 ANODISE + PLI ECRASE (DETAIL 5) Long : 2000 Dev : 170"
+        ]
+      },
+      {
+        "file": "base_produits_btp_v1_with_accounts.json",
+        "added": 10,
+        "skipped_existing": 0,
+        "added_labels": [
+          "PLIAGE ALUMINIUM 10/10 ANODISE + PERFO (DETAIL 5) Long : 2000 Dev : 320",
+          "ADH PVC ORANGE NOVIPRO (3) 33MX50MM",
+          "CHAINE ACIER LONGUEUR 1000MM 8MM DIAM 8016EURD",
+          "CHAINE ACIER LONGUEUR 1500MM 8MM DIAM 8017EURD",
+          "Couteau à enduire type américain manche plastique inox 150mm noir",
+          "Gants anti-dérapant Netceed 2.1.3.1 Taille 8",
+          "Lot 6 p gants easy grip t9 Réf.89163",
+          "PLIAGE ALUMINIUM 10/10 ANODISE + PERFO (DETAIL 2 LARGEUR 350 Long : 2000 Dev : 442 Eco contribution",
+          "PLIAGE ALUMINIUM 10/10 ANODISE + PINCE COUDE (DETAIL 5 Long : 2000 Dev : 170 Eco contribution",
+          "PLIAGE ALUMINIUM 10/10 ANODISE + PLI ECRASE (DETAIL 5) Long : 2000 Dev : 170"
+        ]
+      }
+    ]
+  }
+}

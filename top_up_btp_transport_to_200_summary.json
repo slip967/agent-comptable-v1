@@ -1,0 +1,51 @@
+{
+  "btp": {
+    "added_a_valider": 13,
+    "added_a_valider_labels": [
+      "Essai de contrôle sur un micropieu de l'ouvrage selon EC7",
+      "Amenée-repli de l'atelier de l'injection",
+      "Electricité",
+      "Fo et pose de grosse boites de dérivation",
+      "Jour de location",
+      "TA-E 80X60 W0 GOUL DISTRI AU METRE",
+      "Anémométre pour store - suivant CCTP",
+      "Ascenseur",
+      "BAST SAP/EPI TRCL2 63X160 3M00",
+      "BOB. PROTECT. ULTIBAT 75M.",
+      "Campagne de test d'arrachement",
+      "CONTRE PLAQUE FILME PLUS 15MM 250X125X15MM",
+      "CROISILLONS EN T 3MM 250 PIECES"
+    ],
+    "items_count": 155,
+    "a_valider_count": 45,
+    "total_entries_count": 200
+  },
+  "transport": {
+    "added_a_valider": 20,
+    "added_a_valider_labels": [
+      "Visite technique périodique",
+      "NCS, MO-S",
+      "RENOV.ULTIME MEGUIARS 473 ML (PROMO)",
+      "ULTIM.BRILLANCE MEGUIARS 709ML (PROMO)",
+      "VIS DE FERMETURE",
+      "022 H.MOT 229-52 v rac 5W30",
+      "022 H.MOT 229-52 vrac 5W30",
+      "120186/CONSOLE",
+      "Cloison sous aile avant gauche remplacer",
+      "H.MOT 229.5 1L OW40",
+      "JEU DE CART. FILTR. CARB",
+      "Lavage express",
+      "Polish",
+      "RAIL DE RECOUVREMENT",
+      "RESSORT",
+      "Remplacer la pile de la clé-émetteur 022 PILE 2032",
+      "TUBE DE GUIDAGE",
+      "TUBE DE TROP-PLEIN",
+      "VIS",
+      "VIS 6 PANS AVEC BRIDE"
+    ],
+    "items_count": 127,
+    "a_valider_count": 73,
+    "total_entries_count": 200
+  }
+}

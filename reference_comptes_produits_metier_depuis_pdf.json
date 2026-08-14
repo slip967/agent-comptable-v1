@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "source_pdf": "C:\\Users\\Dell\\Downloads\\LES 250 ÉCRITURES COMPTABLES LES PLUS FRÉQUENTES (1) 1.pdf",
+    "built_at": "2026-04-29T00:00:00Z",
+    "scope": "doctrine de comptes comptables pour les bases produits par métier",
+    "method": "lecture visuelle manuelle de pages rasterisées du PDF",
+    "notes": [
+      "Le PDF est principalement image-only, donc la doctrine ci-dessous est une interprétation métier structurée.",
+      "Cette doctrine sert de référentiel de cohérence et de fallback, pas de vérité absolue plus forte que l'historique validé."
+    ]
+  },
+  "pdf_principles": [
+    {
+      "id": "achats_biens_net_commercial_en_classe_60",
+      "pages": [1, 4],
+      "rule": "Les achats de biens sont comptabilisés côté acheteur en comptes 60...",
+      "impact": "Les bases produits métier doivent privilégier des comptes de classe 60."
+    },
+    {
+      "id": "prestations_de_services_en_61_62",
+      "pages": [2, 3],
+      "rule": "Les achats de prestations de services relèvent des comptes 61/62.",
+      "impact": "Un libellé de service ne doit pas rester dans une base produit métier ; il doit être orienté vers les charges externes."
+    },
+    {
+      "id": "frais_sur_achats_port_accessoires",
+      "pages": [3],
+      "rule": "Les frais de port sur achats peuvent relever de 6241, du compte d'achat concerné 60..., ou de 608 frais accessoires sur achats.",
+      "impact": "Les frais de port et assimilés doivent être traités à part des vrais articles produits métier."
+    },
+    {
+      "id": "emballages_consignes_flux_separes",
+      "pages": [5],
+      "rule": "Les emballages récupérables consignés relèvent d'un traitement spécifique (4096, 4196, 6136, 7086...).",
+      "impact": "Ne pas confondre emballages consignés avec consommables/emballages simples des bases produits métier."
+    }
+  ],
+  "allowed_prefixes_global": [
+    "60"
+  ],
+  "forbidden_prefixes_global": [
+    "61",
+    "62",
+    "70",
+    "40",
+    "41",
+    "44",
+    "51"
+  ],
+  "metier_policies": {
+    "boucherie": {
+      "description": "Produits de viande, abats, volaille et matières premières de transformation/revente.",
+      "preferred_accounts": [
+        "601",
+        "6011",
+        "6063",
+        "6068"
+      ],
+      "account_usage": {
+        "601/6011": "matières premières / achats principaux du métier",
+        "6063": "petit équipement, emballages simples, consommables",
+        "6068": "autres matières et fournitures"
+      },
+      "forbidden_if_product_base": [
+        "61",
+        "62",
+        "6241",
+        "608"
+      ]
+    },
+    "restaurant": {
+      "description": "Denrées, boissons, ingrédients, emballages de service et consommables directement liés à l'exploitation.",
+      "preferred_accounts": [
+        "601",
+        "6011",
+        "6063",
+        "6068"
+      ],
+      "account_usage": {
+        "601/6011": "denrées, ingrédients, boissons, matières premières",
+        "6063": "emballages de vente, boîtes, couverts, consommables service",
+        "6068": "autres fournitures d'exploitation"
+      },
+      "forbidden_if_product_base": [
+        "61",
+        "62",
+        "6241",
+        "608"
+      ]
+    },
+    "boulangerie": {
+      "description": "Farines, beurres, œufs, levures, lait, crème, boissons et consommables directement liés à la production/vente.",
+      "preferred_accounts": [
+        "601",
+        "6011",
+        "6063",
+        "6068"
+      ],
+      "account_usage": {
+        "601/6011": "matières premières de fabrication",
+        "6063": "consommables et emballages simples",
+        "6068": "autres fournitures d'exploitation"
+      },
+      "forbidden_if_product_base": [
+        "61",
+        "62",
+        "6241",
+        "608"
+      ]
+    },
+    "transport": {
+      "description": "Carburant, AdBlue, petits consommables d'exploitation véhicule.",
+      "preferred_accounts": [
+        "6061",
+        "6062",
+        "6063",
+        "6068"
+      ],
+      "account_usage": {
+        "6061/6062": "fournitures non stockables ou consommables liés à l'exploitation",
+        "6063": "petit équipement / consommables",
+        "6068": "autres matières et fournitures"
+      },
+      "forbidden_if_product_base": [
+        "61",
+        "62"
+      ],
+      "notes": [
+        "Les abonnements télécom et services data ne doivent pas être traités comme produits métier transport ; ils relèvent des charges externes."
+      ]
+    },
+    "btp": {
+      "description": "Matériaux, consommables chantier, fournitures, certains achats/prestations directement rattachés à un approvisionnement chantier.",
+      "preferred_accounts": [
+        "601",
+        "602",
+        "604",
+        "6063",
+        "6068"
+      ],
+      "account_usage": {
+        "601/602": "matières premières et autres approvisionnements",
+        "604": "achats d'études/prestations directement liés à l'approvisionnement métier si conservés dans le périmètre produit",
+        "6063": "petit équipement, tuyaux, consommables chantier",
+        "6068": "autres matières et fournitures"
+      },
+      "forbidden_if_product_base": [
+        "61",
+        "62"
+      ]
+    }
+  },
+  "decision_rules": [
+    {
+      "id": "service_out_of_product_bases",
+      "if_keywords": [
+        "abonnement",
+        "forfait",
+        "commission",
+        "livraison",
+        "frais",
+        "nettoyage",
+        "entretien"
+      ],
+      "action": "prefer_charges_externes"
+    },
+    {
+      "id": "freight_out_of_product_bases",
+      "if_keywords": [
+        "port",
+        "livraison",
+        "transport"
+      ],
+      "action": "prefer_6241_or_608_or_charges_externes"
+    },
+    {
+      "id": "consigned_packaging_special_flow",
+      "if_keywords": [
+        "consigne",
+        "emballages récupérables",
+        "retour emballages"
+      ],
+      "action": "special_emballage_flow"
+    }
+  ]
+}

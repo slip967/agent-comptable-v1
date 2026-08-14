@@ -1,0 +1,501 @@
+﻿article_source,normalized_label,invoice_count,line_occurrences,sample_account,predicted_sous_profil,predicted_nature_charge,predicted_profil_facturation,classification_reason,already_in_base,partitions
+GARDE - GARDE,garde garde,473,473,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_828612630 | fr_bd_837602275
+Livraison,livraison,263,264,622600,transport_et_logistique,transport,prestation_ponctuelle,keyword_or_account:transport,False,fr_bd_823981568 | fr_bd_828612630 | fr_bd_832065999 | fr_bd_837602275 | fr_bd_839181104 | fr_bd_844858571 | fr_bd_880517875 | fr_bd_888020088 | fr_bd_890233000 | fr_bd_929728467 | fr_bd_931589238 | fr_bd_952061570
+Indemnité forfaitaire frais de recouvrement 40 EUR (article D4415 Code du commerce),indemnite forfaitaire frais de recouvrement 40 eur article d4415 code du commerce,207,207,6278,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_828612630 | fr_bd_837602275
+GARDE,garde,193,201,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Commission sur vente EQUIPE SEM,commission sur vente equipe sem,192,192,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_880517875
+RSD - RSD,rsd rsd,175,175,6351,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_828612630 | fr_bd_837602275
+IBAUF - Interbev Boeuf AM,ibauf interbev boeuf am,167,167,6351,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_828612630 | fr_bd_837602275
+Commission sur vente LeParisien,commission sur vente leparisien,163,163,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_880517875
+Commission sur vente LP DIM,commission sur vente lp dim,156,156,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_880517875
+IBAFF - Interbev Boeuf AM,ibaff interbev boeuf am,155,155,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+Commission Deliveroo,commission deliveroo,129,129,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_880517875 | fr_bd_929728467 | fr_bd_952061570
+Commission sur vente EQUIPE DIM,commission sur vente equipe dim,117,117,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_880517875
+IVAFF - Interbev Veau AM,ivaff interbev veau am,102,102,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+IVGUF - Interbev Veau MG,ivguf interbev veau mg,96,96,6351,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+Débit : frais supplémentaires,debit frais supplementaires,83,83,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_880517875 | fr_bd_929728467 | fr_bd_952061570
+IVAUF - Interbev Veau AM,ivauf interbev veau am,80,80,6351,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+Prestation émetteur Bimpli - 2nd génération,prestation emetteur bimpli 2nd generation,78,104,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275 | fr_bd_844858571 | fr_bd_880517875 | fr_bd_890233000 | fr_bd_929728467
+Prest.Decro.,prest decro,60,60,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_903252617
+Avantage client box,avantage client box,58,58,6226,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_831060876 | fr_bd_839181104 | fr_bd_842785719 | fr_bd_952061570
+Commission sur vente Le JDD,commission sur vente le jdd,58,58,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_880517875
+EAU CRISTALINE PET 6X1.5L,eau cristaline pet 6x1 5l,58,58,6068,energie_et_utilites,energie,abonnement_et_consommation,keyword:eau,False,fr_bd_890233000
+Frais de transaction Bimpli (1ère génération),frais de transaction bimpli 1ere generation,57,59,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275 | fr_bd_844858571 | fr_bd_880517875 | fr_bd_890233000
+Prestation émetteur Bimpli (1ère génération),prestation emetteur bimpli 1ere generation,57,59,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275 | fr_bd_844858571 | fr_bd_880517875 | fr_bd_890233000
+INTERBEV Boeuf,interbev boeuf,54,63,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_903252617
+Frais de transaction Bimpli - 2nd génération,frais de transaction bimpli 2nd generation,54,62,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275 | fr_bd_844858571 | fr_bd_880517875 | fr_bd_890233000
+Indemnité forfaitaire frais de recouvrement,indemnite forfaitaire frais de recouvrement,51,51,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_828612630 | fr_bd_837602275
+Paiements supplémentaires,paiements supplementaires,51,51,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_929728467 | fr_bd_952061570
+Forfait Client B&You 260Go 5G,forfait client b you 260go 5g,50,50,6226,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_839181104
+IBGUF - Interbev Boeuf MG,ibguf interbev boeuf mg,49,49,6351,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_828612630 | fr_bd_837602275
+SORTIE VOLAILLES,sortie volailles,48,48,6226,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_903252617
+Frais de livraison,frais de livraison,46,46,6227,transport_et_logistique,transport,prestation_ponctuelle,keyword_or_account:transport,False,fr_bd_832065999 | fr_bd_837602275 | fr_bd_842785719 | fr_bd_844858571 | fr_bd_890233000 | fr_bd_914837463 | fr_bd_929728467 | fr_bd_931589238
+Interbev Boeuf AM,interbev boeuf am,42,43,6351,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+Prestation émetteur - 2nd génération,prestation emetteur 2nd generation,41,54,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275 | fr_bd_880517875 | fr_bd_890233000
+Contribution tarifaire d'acheminement (CTA),contribution tarifaire d acheminement cta,41,41,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_828612630 | fr_bd_832065999 | fr_bd_837602275 | fr_bd_880517875 | fr_bd_891370595 | fr_bd_929728467 | fr_bd_952061570
+Frais de gestion,frais de gestion,41,41,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_823981568 | fr_bd_828612630 | fr_bd_832065999 | fr_bd_837602275 | fr_bd_839181104 | fr_bd_844858571 | fr_bd_929728467
+Frais hebdomadaire de gestion,frais hebdomadaire de gestion,41,41,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_929728467
+Vente LeParisien,vente leparisien,39,58,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_880517875
+Vente EQUIPE SEM,vente equipe sem,39,46,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_880517875
+Fourniture d'électricité,fourniture d electricite,39,39,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_837602275 | fr_bd_842785719 | fr_bd_880517875 | fr_bd_890233000
+R.S.D.,r s d,39,39,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275 | fr_bd_903252617
+Frais de transaction - 2nd génération,frais de transaction 2nd generation,36,59,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275 | fr_bd_880517875 | fr_bd_890233000
+Frais d'abonnement,frais d abonnement,36,36,6227,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_929728467
+RIOBA ABC ORANGE TO 25CL,rioba abc orange to 25cl,36,36,6068,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_880517875 | fr_bd_890233000
+Vente LP DIM,vente lp dim,36,36,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_880517875
+Frais de transaction Bimpli,frais de transaction bimpli,35,63,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275 | fr_bd_880517875 | fr_bd_890233000
+CRISTALI 50CL PET,cristali 50cl pet,35,35,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_890233000 | fr_bd_891370595
+Contribution au Service Public de l'Electricité (CSPE),contribution au service public de l electricite cspe,34,35,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_828612630 | fr_bd_832065999 | fr_bd_837602275 | fr_bd_842785719 | fr_bd_890233000 | fr_bd_929728467
+Vente EQUIPE DIM,vente equipe dim,34,35,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_880517875
+Acrobat Pro,acrobat pro,33,33,606100,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_832065999 | fr_bd_842785719
+Gazole,gazole,31,39,6061,autres_charges_externes,frais,forfait_ou_frais,fallback,False,fr_bd_509118329 | fr_bd_792041840 | fr_bd_832065999 | fr_bd_837602275 | fr_bd_839181104 | fr_bd_888020088 | fr_bd_891370595 | fr_bd_903252617 | fr_bd_951421064 | fr_bd_952061570
+Montant net facturable par Deliveroo,montant net facturable par deliveroo,31,31,606100,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_929728467 | fr_bd_952061570
+AGIOS - AGIOS,agios agios,30,30,6278,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_828612630 | fr_bd_837602275
+Aide énergie,aide energie,30,30,6068,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Contribution Tarifaire d'Acheminement électricité (CTA),contribution tarifaire d acheminement electricite cta,30,30,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_837602275 | fr_bd_842785719 | fr_bd_890233000
+Frais de service Airbnb,frais de service airbnb,30,30,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_832065999 | fr_bd_844858571
+Commission Deliveroo - Livraison,commission deliveroo livraison,29,29,6228,transport_et_logistique,transport,prestation_ponctuelle,keyword_or_account:transport,False,fr_bd_929728467 | fr_bd_952061570
+INTERBEV Ovin,interbev ovin,29,29,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_828612630 | fr_bd_903252617
+Nettoyage en cours et en fin de chantier. Nettoyage fin de chantier et mise en décharge de déchets du chantier.,nettoyage en cours et en fin de chantier nettoyage fin de chantier et mise en decharge de dechets du chantier,29,29,6068,entretien_et_maintenance,entretien,intervention_ponctuelle,keyword_or_account:entretien,False,fr_bd_832065999 | fr_bd_929728467
+Frais de service,frais de service,28,28,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_832065999 | fr_bd_839181104 | fr_bd_842785719 | fr_bd_844858571 | fr_bd_903252617 | fr_bd_952061570
+Interbev Veau AM,interbev veau am,28,28,6351,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+Accise sur l'électricité,accise sur l electricite,27,27,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_832065999 | fr_bd_837602275 | fr_bd_842785719 | fr_bd_890233000 | fr_bd_929728467
+Interbev(dont ATM)ov a/os 1 - (soumis a TVA),interbev dont atm ov a os 1 soumis a tva,27,27,6068,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+Contribution Tarifaire d'Acheminement,contribution tarifaire d acheminement,26,26,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_837602275 | fr_bd_842785719 | fr_bd_890233000 | fr_bd_891370595 | fr_bd_903252617 | fr_bd_915197842 | fr_bd_952061570
+Frais de transaction - 1ére génération,frais de transaction 1ere generation,25,25,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275 | fr_bd_880517875 | fr_bd_890233000
+Cotisation RSD 1 - (soumis a TVA),cotisation rsd 1 soumis a tva,24,24,6068,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+FANTA ORANGE BTE SLIM 33CL,fanta orange bte slim 33cl,24,24,6068,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_891370595 | fr_bd_915197842
+Frais Uber Eats,frais uber eats,24,24,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_929728467
+INTERBEV Veau,interbev veau,24,24,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_828612630 | fr_bd_903252617
+Interbev Veau MG,interbev veau mg,24,24,6351,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+Montant dû au titre de la facture précédente,montant du au titre de la facture precedente,24,24,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_929728467 | fr_bd_952061570
+Prestation émetteur - 1ére génération,prestation emetteur 1ere generation,24,24,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275 | fr_bd_880517875 | fr_bd_890233000
+Pack Service Assurance Casse Vol Calendaire,pack service assurance casse vol calendaire,23,32,6161,assurances,prime,prime_et_periode,keyword_or_account:assurance,False,fr_bd_832065999 | fr_bd_837602275 | fr_bd_842785719 | fr_bd_844858571 | fr_bd_903252617
+Achat carte bancaire,achat carte bancaire,23,23,606100,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_519665103 | fr_bd_837602275 | fr_bd_839181104 | fr_bd_844858571 | fr_bd_888020088 | fr_bd_891370595 | fr_bd_903252617
+Commission d'apport d'affaires,commission d apport d affaires,23,23,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_929728467
+Offre Spéciale - Réduction sur la position 1,offre speciale reduction sur la position 1,23,23,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_832065999 | fr_bd_903252617
+Abonnement fournisseur,abonnement fournisseur,22,22,6061,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_832065999 | fr_bd_837602275 | fr_bd_929728467
+COCACOLA BOITE SLIM 33CL,cocacola boite slim 33cl,22,22,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_890233000 | fr_bd_891370595 | fr_bd_952061570
+Forfait Client B&You 230Go,forfait client b you 230go,22,22,6226,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_839181104
+Frais techniques,frais techniques,22,22,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_929728467
+SUCRE CRISTAL FIN SAC 25KG,sucre cristal fin sac 25kg,22,22,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+Taxes locales - part communale,taxes locales part communale,22,22,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_891370595 | fr_bd_952061570
+Vente Le JDD,vente le jdd,22,22,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_880517875
+GRANINI ORANGE 25CL,granini orange 25cl,21,21,6068,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_915197842 | fr_bd_952061570
+Fourniture d'électricité - Consommation,fourniture d electricite consommation,20,22,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_832065999 | fr_bd_929728467
+EAU CRISTALINE 50CL,eau cristaline 50cl,20,20,601,energie_et_utilites,energie,abonnement_et_consommation,keyword:eau,False,fr_bd_891370595 | fr_bd_929728467
+Forfait 250Go 5G avantages smartphone,forfait 250go 5g avantages smartphone,20,20,6062,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_831060876 | fr_bd_952061570
+Frais fixes GARDE,frais fixes garde,20,20,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+"LAIT FERMENTE ""LUXLAIT "" 8 X 1L",lait fermente luxlait 8 x 1l,20,20,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+Loyer Commercial,loyer commercial,20,20,6132,loyers_et_charges_locatives,loyer,loyer_et_charges,keyword_or_account:loyer,False,fr_bd_931589238 | fr_bd_952061570
+Spotify Premium Duo,spotify premium duo,20,20,606100,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_832065999
+EAU CRISTALINE PET 24X50CL,eau cristaline pet 24x50cl,19,22,6068,energie_et_utilites,energie,abonnement_et_consommation,keyword:eau,False,fr_bd_880517875
+"EAU DE SOURCE,6X1.5L CRISTALINE",eau de source 6x1 5l cristaline,19,20,6068,energie_et_utilites,energie,abonnement_et_consommation,keyword:eau,False,fr_bd_890233000
+AGIOS,agios,19,19,6278,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_828612630 | fr_bd_837602275
+Acheminement d'électricité,acheminement d electricite,19,19,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_890233000
+CHAUFFAGE,chauffage,19,19,6132,loyers_et_charges_locatives,charges_locatives,loyer_et_charges,keyword_or_account:loyer,False,fr_bd_931589238 | fr_bd_952061570
+Divers,divers,19,19,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_839181104 | fr_bd_844858571 | fr_bd_888020088 | fr_bd_929728467
+Provision Eau Froide,provision eau froide,19,19,6132,energie_et_utilites,energie,abonnement_et_consommation,keyword:eau,False,fr_bd_931589238 | fr_bd_952061570
+Solutions Sécurité Smartphone avec Norton,solutions securite smartphone avec norton,19,19,6226,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_831060876 | fr_bd_839181104 | fr_bd_952061570
+Abonnement TICKET FLEET PRO,abonnement ticket fleet pro,18,18,6068,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_837602275
+Assurance garantie modification billet et trajet perturbé,assurance garantie modification billet et trajet perturbe,18,18,616000,assurances,prime,prime_et_periode,keyword_or_account:assurance,False,fr_bd_844858571
+Compteur Eau froide,compteur eau froide,18,18,6132,energie_et_utilites,energie,abonnement_et_consommation,keyword:eau,False,fr_bd_931589238 | fr_bd_952061570
+Report des mois précédents,report des mois precedents,18,18,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_880517875 | fr_bd_890233000
+SEL FIN DE 25 KG,sel fin de 25 kg,18,18,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+Transport,transport,17,18,624,transport_et_logistique,transport,prestation_ponctuelle,keyword_or_account:transport,False,fr_bd_832065999 | fr_bd_837602275 | fr_bd_839181104 | fr_bd_842785719
+Abonnement entreprise,abonnement entreprise,17,17,606100,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_844858571
+Contribution Tarifaire d'Acheminement part transport,contribution tarifaire d acheminement part transport,17,17,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+Frais fixes de facturation,frais fixes de facturation,17,17,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+MINUTE MAID ORANGE SLIM 33CL,minute maid orange slim 33cl,17,17,6068,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_880517875 | fr_bd_890233000
+OASIS TROPICAL SLIM BTE 33CL,oasis tropical slim bte 33cl,17,17,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_891370595 | fr_bd_952061570
+Taxe Intérieure de Consommation sur le Gaz Naturel,taxe interieure de consommation sur le gaz naturel,17,17,6351,energie_gaz,energie,abonnement_et_consommation,keyword:gaz,False,fr_bd_880517875
+Abonnements et services Bimpli,abonnements et services bimpli,16,18,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_880517875 | fr_bd_890233000
+Forfait Sensation 150Go 5G Avantages Smartphone,forfait sensation 150go 5g avantages smartphone,16,16,6226,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_839181104
+Forfait Spécial client 350Go 5G Av. smartphone,forfait special client 350go 5g av smartphone,16,16,6061,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_839181104
+Interbev Boeuf FR,interbev boeuf fr,16,16,6226,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_519665103 | fr_bd_903252617
+Promotions sur les articles,promotions sur les articles,16,16,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_929728467
+Remise pro 7€/mois pdt 12 mois Livebox Pro Fibre,remise pro 7 mois pdt 12 mois livebox pro fibre,16,16,6061,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_832065999 | fr_bd_842785719
+SP95-E10,sp95 e10,16,16,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_509118329 | fr_bd_903252617
+Avantage Internet 80Go,avantage internet 80go,15,15,6226,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_839181104
+COTIS FORFAIT PRO,cotis forfait pro,15,15,6278,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_844858571 | fr_bd_888020088 | fr_bd_890233000 | fr_bd_903252617
+Commission d'apport d'affaires - Transactions de 1ère génération (MASTERCARD),commission d apport d affaires transactions de 1ere generation mastercard,15,15,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_929728467
+Cotisation RSD,cotisation rsd,15,15,6351,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+FANTA ORANGE EU 33cl x 24,fanta orange eu 33cl x 24,15,15,6068,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_891370595 | fr_bd_929728467
+FOND PLIE RAINE OR/NOIR 13X4.5CM PQT 200,fond plie raine or noir 13x4 5cm pqt 200,15,15,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000
+Forfait Client B&You 270Go 5G,forfait client b you 270go 5g,15,15,6062,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_890233000
+Frais techniques - Transactions de 1ère génération (MASTERCARD),frais techniques transactions de 1ere generation mastercard,15,15,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_929728467
+POMME DE TERRE GRENAILLE,pomme de terre grenaille,15,15,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_519665103 | fr_bd_837602275
+Contribution aux frais de traitement des déchets,contribution aux frais de traitement des dechets,14,18,6285,autres_charges_externes,frais,forfait_ou_frais,fallback,False,fr_bd_832065999 | fr_bd_837602275 | fr_bd_842785719 | fr_bd_844858571 | fr_bd_903252617
+"Fourniture et pose de plinthes en medium prépeintes. Hauteur 10 cm. Inclus : plinthes hydrofuges dans salle de bain / salle d'eau, joint acrylique au dessus des plinthes. Localisation : ensemble de l'appartement",fourniture et pose de plinthes en medium prepeintes hauteur 10 cm inclus plinthes hydrofuges dans salle de bain salle d eau joint acrylique au dessus des plinthes localisation ensemble de l appartement,14,17,6063,energie_et_utilites,energie,abonnement_et_consommation,keyword:eau,False,fr_bd_832065999
+Box 2éme ETAGE 4.5m2 / 11m3 Forfait mensuel,box 2eme etage 4 5m2 11m3 forfait mensuel,14,14,6112,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_832065999
+Certificats d'Economie d'Energie (cEE),certificats d economie d energie cee,14,14,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_837602275
+Commission d'apport d'affaires - Transactions de 2ème génération (CONECS),commission d apport d affaires transactions de 2eme generation conecs,14,14,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_929728467
+Commission sur vente TRIBUNE,commission sur vente tribune,14,14,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_880517875
+Contribution Tarifaire d'Acheminement part distribution,contribution tarifaire d acheminement part distribution,14,14,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+F.FIXES,f fixes,14,14,6063,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_519665103 | fr_bd_837602275
+Fourniture d'électricité - Abonnement,fourniture d electricite abonnement,14,14,6061,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_832065999 | fr_bd_929728467
+Frais techniques - Transactions de 2ème génération (CONECS),frais techniques transactions de 2eme generation conecs,14,14,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_929728467
+LIPTON PECHE BTE 33CL SLIM,lipton peche bte 33cl slim,14,14,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_891370595 | fr_bd_952061570
+"Nettoyage et mise a la déchéterie. Nettoyage en cours et en fin de chantier. Aspiration des sols, mise à la déchéterie des éléments déconstruits et déchets du chantier.",nettoyage et mise a la decheterie nettoyage en cours et en fin de chantier aspiration des sols mise a la decheterie des elements deconstruits et dechets du chantier,14,14,6063,entretien_et_maintenance,entretien,intervention_ponctuelle,keyword_or_account:entretien,False,fr_bd_832065999
+Prestation complément Bimpli+,prestation complement bimpli,13,15,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_880517875 | fr_bd_890233000
+BANANE,banane,13,14,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_888020088 | fr_bd_890233000
+Pantalon Saveur PC noir,pantalon saveur pc noir,13,14,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_837602275
+CARTH'AGRUME CITRON 1L,carth agrume citron 1l,13,13,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+COTIS. INTERP,cotis interp,13,13,6281,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_519665103 | fr_bd_837602275
+CRISTALI 1.5L,cristali 1 5l,13,13,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_891370595
+Commission Deliveroo - Prestation de services d'achat et de livraison d'aliments et de boissons,commission deliveroo prestation de services d achat et de livraison d aliments et de boissons,13,13,6226,transport_et_logistique,transport,prestation_ponctuelle,keyword_or_account:transport,False,fr_bd_929728467 | fr_bd_952061570
+Contribution au Service Public de I'Electricité (csPE),contribution au service public de i electricite cspe,13,13,6351,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_837602275
+ECO-PARTICIPATION,eco participation,13,13,60610000,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_832065999 | fr_bd_952061570
+Forfait Espace client,forfait espace client,13,13,6061,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_837602275
+Frais de Gestion Logistique,frais de gestion logistique,13,13,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+Frais fixes GARDE - GARDE,frais fixes garde garde,13,13,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+IOAFF - Interbev Ovin AM,ioaff interbev ovin am,13,13,6351,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+Interbev FR,interbev fr,13,13,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_903252617
+JUS ORANGE PULPE RAUCH VP 24X20CL,jus orange pulpe rauch vp 24x20cl,13,13,6068,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_890233000
+ORANGE GROSSE,orange grosse,13,13,601,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_880517875
+PERRIER BOITE SLIM 33CL,perrier boite slim 33cl,13,13,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_890233000 | fr_bd_891370595
+Remise pro 4€/mois pdt 12 mois Livebox Pro Fibre,remise pro 4 mois pdt 12 mois livebox pro fibre,13,13,6061,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_832065999
+Services divers,services divers,13,13,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_890233000
+communications vers l'international,communications vers l international,13,13,6226,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_831060876 | fr_bd_839181104
+Frais de transaction - Carte Bimpli (ex Apetiz) - 2nd génération,frais de transaction carte bimpli ex apetiz 2nd generation,12,24,62780000,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_837602275 | fr_bd_880517875 | fr_bd_890233000
+Frais de transaction - 1ére génération (frais sur transaction déja réglé),frais de transaction 1ere generation frais sur transaction deja regle,12,17,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275 | fr_bd_880517875 | fr_bd_890233000
+ABON CYBER MEDIUM,abon cyber medium,12,12,6278,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_844858571 | fr_bd_890233000 | fr_bd_903252617
+Abonnement Acheminement,abonnement acheminement,12,12,6061,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_952061570
+Abonnement Livebox Pro,abonnement livebox pro,12,12,6068,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_890233000
+Abonnement permanent_ouvrage_VL_sans place réservée,abonnement permanent ouvrage vl sans place reservee,12,12,6288,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_890233000
+Avantage Internet 60Go,avantage internet 60go,12,12,6226,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_839181104
+Blouse porteur PC 50/50 blanc,blouse porteur pc 50 50 blanc,12,12,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_837602275
+COCA SANS SUCRES 33CL,coca sans sucres 33cl,12,12,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_890233000 | fr_bd_891370595 | fr_bd_952061570
+COTIS RYTHMEO,cotis rythmeo,12,12,6278,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_844858571 | fr_bd_890233000 | fr_bd_903252617
+COTIS SECURIPRO,cotis securipro,12,12,6278,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_844858571 | fr_bd_890233000 | fr_bd_903252617
+Conditionnement emballage (C.EMB),conditionnement emballage c emb,12,12,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_837602275
+Ecusson standard,ecusson standard,12,12,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_837602275
+FORFAIT FOURNITURES - Fourniture des accessoires nécessaire ci-dessous,forfait fournitures fourniture des accessoires necessaire ci dessous,12,12,6063,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_832065999
+HUILE DE TOURNESOL BINGOIL 1L,huile de tournesol bingoil 1l,12,12,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_891370595
+LAIT UHT 1/2 ECREME BRIQ PACK 12X1L,lait uht 1 2 ecreme briq pack 12x1l,12,12,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000
+MC OLIV.VERTES RONDELLE A10,mc oliv vertes rondelle a10,12,12,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_890233000 | fr_bd_891370595
+OEUFS FRAIS GM 63/73 X 360,oeufs frais gm 63 73 x 360,12,12,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+ORANGE FEUILLES,orange feuilles,12,12,601,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_890233000
+Option Energie Verte,option energie verte,12,12,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_952061570
+Participation-effort-environnement (PEE),participation effort environnement pee,12,12,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_837602275
+Prix de la course,prix de la course,12,12,6226,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_844858571 | fr_bd_888020088 | fr_bd_952061570
+REX BUCHERON SAC DE 25KG IREKS 111.3,rex bucheron sac de 25kg ireks 111 3,12,12,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+SMS/MMS vers l'international,sms mms vers l international,12,12,6226,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_831060876 | fr_bd_839181104
+Série Speciale B&YOU 200Go,serie speciale b you 200go,12,12,6226,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_839181104
+Taxe RSD,taxe rsd,12,12,6351,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_828612630 | fr_bd_837602275
+Traitement bactériostatique (TBB),traitement bacteriostatique tbb,12,12,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_837602275
+ABATS + INTERBEV,abats interbev,11,11,6011,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+ABRICOT OREILLONS 3/1 BROVER,abricot oreillons 3 1 brover,11,11,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+Assurance modification/trajet perturbé,assurance modification trajet perturbe,11,11,616000,assurances,prime,prime_et_periode,keyword_or_account:assurance,False,fr_bd_844858571
+Course Uber,course uber,11,11,6226,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_823981568 | fr_bd_952061570
+IOAUF - Interbev Ovin AM,ioauf interbev ovin am,11,11,6351,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+Interbev Boeuf MG,interbev boeuf mg,11,11,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+LAIT 1/2 ECREME FRANCAIS X6 UHT,lait 1 2 ecreme francais x6 uht,11,11,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+POMME DE TERRE GRATIN DAUPHINOIS,pomme de terre gratin dauphinois,11,11,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_828612630 | fr_bd_837602275
+Sac a linge bleu fermeture sangle,sac a linge bleu fermeture sangle,11,11,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_837602275
+Service de livraison,service de livraison,11,11,6226,transport_et_logistique,transport,prestation_ponctuelle,keyword_or_account:transport,False,fr_bd_839181104 | fr_bd_929728467 | fr_bd_952061570
+Services,services,11,11,606100,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000
+Composante de comptage - Echu,composante de comptage echu,10,11,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_837602275 | fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+Composante de gestion - Echu,composante de gestion echu,10,11,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_837602275 | fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+Composante de soutirage fixe - Echu,composante de soutirage fixe echu,10,11,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_837602275 | fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+Acheminement et Utilisation du réseau de distribution électricité et prestations techniques,acheminement et utilisation du reseau de distribution electricite et prestations techniques,10,10,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+COTIS CARTE VISA BUSINESS,cotis carte visa business,10,10,6278,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_844858571 | fr_bd_890233000 | fr_bd_903252617
+COTIS FRUCTI FACIL PLUS,cotis fructi facil plus,10,10,627800,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_844858571 | fr_bd_903252617
+Forfait 150 Go 5G,forfait 150 go 5g,10,10,606100,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_842785719
+Frais de livraison TTC,frais de livraison ttc,10,10,624,transport_et_logistique,transport,prestation_ponctuelle,keyword_or_account:transport,False,fr_bd_832065999
+Frais de rejet de prélèvement,frais de rejet de prelevement,10,10,6278,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_831060876 | fr_bd_837602275 | fr_bd_839181104 | fr_bd_952061570
+LAIT FERMENTE CHERGUI 10 X 1L,lait fermente chergui 10 x 1l,10,10,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+"Mise en place d'une trame en fibre de verre anti alcalin référencé ""Sto-Fibre"". Référence : Sto-Fibre ou équivalent.",mise en place d une trame en fibre de verre anti alcalin reference sto fibre reference sto fibre ou equivalent,10,10,6063,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_832065999
+Option Anti-spam,option anti spam,10,10,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_832065999 | fr_bd_842785719 | fr_bd_929728467
+Option Week-end internet illimité,option week end internet illimite,10,10,6226,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_831060876
+Parking,parking,10,10,6226,entretien_et_maintenance,entretien,intervention_ponctuelle,keyword_or_account:entretien,False,fr_bd_832065999 | fr_bd_839181104 | fr_bd_844858571
+Prix du service de transport,prix du service de transport,10,10,6226,transport_et_logistique,transport,prestation_ponctuelle,keyword_or_account:transport,False,fr_bd_823981568 | fr_bd_952061570
+Revenus en titre-restaurant,revenus en titre restaurant,10,10,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_929728467
+SAUMON FUME TRANCHE 800G,saumon fume tranche 800g,10,10,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+Sac textile elis orange polyester,sac textile elis orange polyester,10,10,6068,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_828612630 | fr_bd_837602275
+Tablier boucher bretelle PC 50/50 blanc,tablier boucher bretelle pc 50 50 blanc,10,10,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_837602275
+Tapis 85*150 paysage gris BOUCHERIE,tapis 85 150 paysage gris boucherie,10,10,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_837602275
+VANILLE AROME ARTIFICIEL PET 1L,vanille arome artificiel pet 1l,10,10,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+Veste H Saveurs PC jeans noir,veste h saveurs pc jeans noir,10,10,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_837602275
+"COM INTERV PRELEVEMENT (eX0) (8,75 EUR *)",com interv prelevement ex0 8 75 eur,9,14,62780000,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_880517875
+ORANGE A JUS PDP FILET 2KG,orange a jus pdp filet 2kg,9,10,606100,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_832065999 | fr_bd_890233000
+Abonnement Badge VINCI,abonnement badge vinci,9,9,6063,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_837602275
+Avantage SFR Family! - Contrôle parental,avantage sfr family controle parental,9,9,606100,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_842785719
+COCA COLA VC 33CL,coca cola vc 33cl,9,9,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_952061570
+Composante de comptage - Reprise,composante de comptage reprise,9,9,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+Composante de gestion - Reprise,composante de gestion reprise,9,9,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+Composante de soutirage fixe - Reprise,composante de soutirage fixe reprise,9,9,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+Forfait 200 Go 5G Avantages Smartphone,forfait 200 go 5g avantages smartphone,9,9,6062,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_831060876 | fr_bd_952061570
+Frais d'utilisation de l'offre (TVA incluse),frais d utilisation de l offre tva incluse,9,9,622700,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_929728467
+Frais de relance,frais de relance,9,9,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_519665103 | fr_bd_837602275
+Garantie dommages,garantie dommages,9,9,6161,assurances,prime,prime_et_periode,keyword_or_account:assurance,False,fr_bd_842785719 | fr_bd_844858571
+Internet 10Go France,internet 10go france,9,9,6226,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_831060876
+Livebox Pro Fibre - abonnements et forfaits,livebox pro fibre abonnements et forfaits,9,9,6061,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_929728467
+Loyer Hors Charges,loyer hors charges,9,9,706100,loyers_et_charges_locatives,loyer,loyer_et_charges,keyword_or_account:loyer,False,fr_bd_832065999 | fr_bd_837602275
+MARG BOMAR BRIOCHE INCORP PAIN 20X0.5KG,marg bomar brioche incorp pain 20x0 5kg,9,9,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+MORTIER ADHESIF MAP 25KG PLACO,mortier adhesif map 25kg placo,9,9,60610000,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_832065999
+"Maçonnerie façades. Ouverture des fissures au triangle, application de joints acryliques au droit des fissures. Piochage et reprise des parties dégradées à l'aide d'un mortier de réparation avant ragréage, reprise des façades et bandeaux de défectueux.",maconnerie facades ouverture des fissures au triangle application de joints acryliques au droit des fissures piochage et reprise des parties degradees a l aide d un mortier de reparation avant ragreage reprise des facades et bandeaux de defectueux,9,9,6063,entretien_et_maintenance,entretien,intervention_ponctuelle,keyword_or_account:entretien,False,fr_bd_832065999
+Montant chauffeur sur courses effectuées,montant chauffeur sur courses effectuees,9,9,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_888020088
+OLIVES NOIRE RONDELLE 3/1 A10,olives noire rondelle 3 1 a10,9,9,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+ORANGINA SLIM BOITE JAUN 33CL,orangina slim boite jaun 33cl,9,9,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_890233000 | fr_bd_891370595 | fr_bd_952061570
+Obligations,obligations,9,9,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_952061570
+Option multi-SIM Internet,option multi sim internet,9,9,6062,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_831060876
+Orange Cybersecure Pro,orange cybersecure pro,9,9,6061,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_929728467
+PATE PISTACHE COLOREE MANE 1KG GR,pate pistache coloree mane 1kg gr,9,9,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+Prestation émetteur - 1ére génération (frais sur transaction déja réglé),prestation emetteur 1ere generation frais sur transaction deja regle,9,9,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275 | fr_bd_880517875 | fr_bd_890233000
+RAIB LVB BRIQUE 1 LITRE,raib lvb brique 1 litre,9,9,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_519665103 | fr_bd_837602275
+"S/KRAFT BRUN AMBIANT 80G,1P",s kraft brun ambiant 80g 1p,9,9,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_890233000
+SAL ICEBERG MC PC DEMIPALX28 C1 ESESPAGNE,sal iceberg mc pc demipalx28 c1 esespagne,9,9,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_890233000 | fr_bd_891370595
+AR COURRIER,ar courrier,8,15,6226,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_832065999 | fr_bd_880517875
+LETTRE RECO R1,lettre reco r1,8,15,6226,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_832065999 | fr_bd_880517875
+CAISSE COCA 24X33CL PLEIN,caisse coca 24x33cl plein,8,11,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_952061570
+PRESTATION COTIS LIBRE CONVERGENCE : Serv. Securexp,prestation cotis libre convergence serv securexp,8,10,62780000,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_880517875
+Contribution au Service Public de l'Electricité,contribution au service public de l electricite,8,9,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_903252617 | fr_bd_915197842
+20 RLX 57X40X12 THERM SBPA,20 rlx 57x40x12 therm sbpa,8,8,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_952061570
+AMANDE POUDRE 10KG,amande poudre 10kg,8,8,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+APPORTEUR D'AFFAIRES,apporteur d affaires,8,8,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_832065999
+Abonnement Livebox Pro Fibre,abonnement livebox pro fibre,8,8,6061,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_832065999 | fr_bd_929728467
+Ad free for Prime Video,ad free for prime video,8,8,6068,assurances,prime,prime_et_periode,keyword_or_account:assurance,False,fr_bd_832065999
+Assistance Pro 24/24,assistance pro 24 24,8,8,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_929728467
+BEURRE DOUX 82% BLOC 25KG,beurre doux 82 bloc 25kg,8,8,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000
+Box 2éme ETAGE 4.5m2 / 11m3 Forfait mensuel 69.17 EUR,box 2eme etage 4 5m2 11m3 forfait mensuel 69 17 eur,8,8,6112,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_832065999
+CHEVRE BUCHETTE 180G LA PIECE,chevre buchette 180g la piece,8,8,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+COMPOTE PATIS.26% 5/1,compote patis 26 5 1,8,8,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+Carte d'Identification Professionnelle BTP,carte d identification professionnelle btp,8,8,628200,autres_charges_externes,frais,forfait_ou_frais,fallback,False,fr_bd_842785719
+Composante de comptage - Echoir,composante de comptage echoir,8,8,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+Composante de gestion - Echoir,composante de gestion echoir,8,8,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+Composante de soutirage fixe - Echoir,composante de soutirage fixe echoir,8,8,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+Consommations HCE,consommations hce,8,8,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+Consommations HPE,consommations hpe,8,8,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+FANTA ORANGE 33 EU,fanta orange 33 eu,8,8,601,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_891370595 | fr_bd_929728467
+FONDANT SEAU EN 15 KG,fondant seau en 15 kg,8,8,6061,autres_charges_externes,frais,forfait_ou_frais,fallback,False,fr_bd_880517875
+FROMAGE BLANC 2.8%MG SEAU 5KG,fromage blanc 2 8 mg seau 5kg,8,8,6061,autres_charges_externes,frais,forfait_ou_frais,fallback,False,fr_bd_880517875 | fr_bd_890233000
+Fonds de garantie Attentats,fonds de garantie attentats,8,8,616000,assurances,prime,prime_et_periode,keyword_or_account:assurance,False,fr_bd_828612630 | fr_bd_891370595
+Forfait 2h 100 Mo,forfait 2h 100 mo,8,8,606100,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_842785719
+Forfait Spécial client 20Go 5G Av. smartphone,forfait special client 20go 5g av smartphone,8,8,6226,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_831060876
+GARDE - Droit de garde,garde droit de garde,8,8,6226,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_837602275
+IBAFF,ibaff,8,8,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+INTERB FR,interb fr,8,8,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_828612630 | fr_bd_837602275
+Interbev Ovin AM,interbev ovin am,8,8,6351,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+L'EQUIPE SEMAINE,l equipe semaine,8,8,606100,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+MC OLIV.NOIRES RONDELLE A10,mc oliv noires rondelle a10,8,8,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_891370595
+MELANGE 5 GRAINES 10KG,melange 5 graines 10kg,8,8,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+Marché de capacité,marche de capacite,8,8,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+NAPPAGE BLOND PRO SEAU 14 KG,nappage blond pro seau 14 kg,8,8,6061,autres_charges_externes,frais,forfait_ou_frais,fallback,False,fr_bd_880517875
+OEUF COQUILLE TEINTE GROS 63/73 CT 360,oeuf coquille teinte gros 63 73 ct 360,8,8,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_890233000
+OEUF COQUILLE TEINTE MOYEN 53/63 CT 360,oeuf coquille teinte moyen 53 63 ct 360,8,8,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000
+Option Connect Premium,option connect premium,8,8,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_831060876
+POULET ESCALOPE CRU 190G X5KG HALAL,poulet escalope cru 190g x5kg halal,8,8,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+Paiement carte bancaire,paiement carte bancaire,8,8,62780000,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_519665103 | fr_bd_839181104 | fr_bd_903252617
+Participation énergie,participation energie,8,8,6068,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_828612630 | fr_bd_837602275 | fr_bd_880517875
+SUCRE CRISTAL SAC 25KG,sucre cristal sac 25kg,8,8,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+"Services, prestations et frais annexes - Assistance Pro 24/24",services prestations et frais annexes assistance pro 24 24,8,8,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_929728467
+BAV ALOY HAL UE,bav aloy hal ue,7,15,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_891370595
+"FRAIS REJET PRELEVEMENT (eX0) (11,25 EUR *)",frais rejet prelevement ex0 11 25 eur,7,13,62780000,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_880517875
+BOX 100 C.BLUE CAFFE CREMA,box 100 c blue caffe crema,7,11,60620000,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_880517875
+"EAU PERRIER NATURE,8X20CL",eau perrier nature 8x20cl,7,10,6068,energie_et_utilites,energie,abonnement_et_consommation,keyword:eau,False,fr_bd_890233000
+FRITES,frites,7,9,606100,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_519665103 | fr_bd_839181104 | fr_bd_844858571 | fr_bd_891370595 | fr_bd_903252617
+Composante de soutirage Heures Creuses Hiver,composante de soutirage heures creuses hiver,7,8,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+Composante de soutirage Heures Pleines Hiver,composante de soutirage heures pleines hiver,7,8,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_915197842
+ABATS + INTERBEV CARCASSE ABATS,abats interbev carcasse abats,7,7,6011,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+Abonnement Gaz naturel,abonnement gaz naturel,7,7,6061,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_952061570
+Abonnement SFR ADSL Power,abonnement sfr adsl power,7,7,606100,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_903252617
+BATONNETS FUME 1KG REF956,batonnets fume 1kg ref956,7,7,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+BEURRE GD TOURAGE FLECHARD CT 5X2KG,beurre gd tourage flechard ct 5x2kg,7,7,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_890233000
+BEURRE TARTINABLE DOUX 1KG,beurre tartinable doux 1kg,7,7,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+BLANC OEUF LIQUIDE FERME DU PRE 1KG,blanc oeuf liquide ferme du pre 1kg,7,7,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000
+CLEMENTINE FEUILLE,clementine feuille,7,7,606100,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_832065999 | fr_bd_888020088 | fr_bd_890233000
+Charges Communes,charges communes,7,7,6132,loyers_et_charges_locatives,charges_locatives,loyer_et_charges,keyword_or_account:loyer,False,fr_bd_931589238
+Consommation Gaz naturel TQ1,consommation gaz naturel tq1,7,7,6061,energie_gaz,energie,abonnement_et_consommation,keyword:gaz,False,fr_bd_952061570
+Contribution pour la Mobilité Electrique,contribution pour la mobilite electrique,7,7,6226,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_823981568 | fr_bd_888020088 | fr_bd_952061570
+DECODECOR N°21 BIOSTATIQ 25KG,decodecor n 21 biostatiq 25kg,7,7,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_832065999
+FRAIS LIVRAISON,frais livraison,7,7,706100,transport_et_logistique,transport,prestation_ponctuelle,keyword_or_account:transport,False,fr_bd_839181104
+FRAISE PLT 1KG ESP C1 ESPAGNE,fraise plt 1kg esp c1 espagne,7,7,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_890233000 | fr_bd_891370595 | fr_bd_903252617
+Frais d'adhésion,frais d adhesion,7,7,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_929728467
+Frais de service Uber Eats,frais de service uber eats,7,7,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_929728467
+GROSEILLE RGE 125G PAYS-BAS C1 PAYS BAS,groseille rge 125g pays bas c1 pays bas,7,7,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_890233000
+KREM D'AROME CACAO SEAU BARRY 5KG,krem d arome cacao seau barry 5kg,7,7,60610000,autres_charges_externes,frais,forfait_ou_frais,fallback,False,fr_bd_880517875
+LEVURE LEVAMAX ECOPACK (30x500G) 15 KG,levure levamax ecopack 30x500g 15 kg,7,7,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+LIQUIDE LAVE VAISS EAU DURE ASSAINY 11KG,liquide lave vaiss eau dure assainy 11kg,7,7,6063,energie_et_utilites,energie,abonnement_et_consommation,keyword:eau,False,fr_bd_890233000
+LP VAL DE MARNE,lp val de marne,7,7,606100,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+Livraison (H.T.),livraison h t,7,7,622600,transport_et_logistique,transport,prestation_ponctuelle,keyword_or_account:transport,False,fr_bd_832065999
+Livraison Native Paris,livraison native paris,7,7,624,transport_et_logistique,transport,prestation_ponctuelle,keyword_or_account:transport,False,fr_bd_828612630 | fr_bd_837602275
+Loyer garage,loyer garage,7,7,6132,loyers_et_charges_locatives,loyer,loyer_et_charges,keyword_or_account:loyer,False,fr_bd_519665103 | fr_bd_837602275
+MAYONNAISE ALLEGEE GYMA 4.7KG,mayonnaise allegee gyma 4 7kg,7,7,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+MINI GOUTTE BLANCHE 10KG,mini goutte blanche 10kg,7,7,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+MYRTILLE BQ 125G PEROU C1 PEROU,myrtille bq 125g perou c1 perou,7,7,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_890233000
+"NECTAR MULTI BIO,PRESSADE,1.5L",nectar multi bio pressade 1 5l,7,7,606100,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_832065999
+NOIX INVALIDES 1KG ARLEQUIN,noix invalides 1kg arlequin,7,7,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+OEUF BLANC LIQ.1KG SERVIS OEUF-OR.FRANCE,oeuf blanc liq 1kg servis oeuf or france,7,7,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+OEUF BLANC LIQUIDE 1L SERVIS OEUF,oeuf blanc liquide 1l servis oeuf,7,7,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+Offres & Ajustements,offres ajustements,7,7,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_888020088
+PERRIER 33X24 EAU GAZEUSE,perrier 33x24 eau gazeuse,7,7,6068,energie_et_utilites,energie,abonnement_et_consommation,keyword:eau,False,fr_bd_891370595 | fr_bd_929728467
+PILON,pilon,7,7,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_891370595
+Pack sécurité Norton,pack securite norton,7,7,6226,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_831060876 | fr_bd_842785719
+Prestation émetteur Bimpli - 1ére génération (frais sur transaction déja réglé),prestation emetteur bimpli 1ere generation frais sur transaction deja regle,7,7,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275 | fr_bd_880517875
+"RUMSTEACK - CARCASSE BEUF - N° dossier : 2410600091 N° tracabilité : 0000004 - Label : Né en : BELGIQUE ; Elevé en : BELGIQUE ; Code abattoir : 59 ; Abattu en : BELGIQUE : Atelier découpe : 94-065-243 : Découpé en : FRANCE ; Catégorie : VACHE ; Type : VIANDE ; Race : BLANC BLEU BELGE ; Date d'abattage : Assujetti aux taxes : AGIOS, GARDE, IBGUF, RSD",rumsteack carcasse beuf n dossier 2410600091 n tracabilite 0000004 label ne en belgique eleve en belgique code abattoir 59 abattu en belgique atelier decoupe 94 065 243 decoupe en france categorie vache type viande race blanc bleu belge date d abattage assujetti aux taxes agios garde ibguf rsd,7,7,6011,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+SAN PELL BOITE SLIM 33CL,san pell boite slim 33cl,7,7,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_890233000
+SPECULOS BRISURE MOULU 750 gr 64695,speculos brisure moulu 750 gr 64695,7,7,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+Special Offer - Réduction sur la position 1 - Valide de 02/01/2024 a 02/01/2025,special offer reduction sur la position 1 valide de 02 01 2024 a 02 01 2025,7,7,6132,loyers_et_charges_locatives,charges_locatives,loyer_et_charges,keyword_or_account:loyer,False,fr_bd_832065999
+Spotify Premium (1 mois),spotify premium 1 mois,7,7,606100,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_952061570
+Taxe Intérieure sur la Consommation de Gaz Naturel (TICGN),taxe interieure sur la consommation de gaz naturel ticgn,7,7,6351,energie_gaz,energie,abonnement_et_consommation,keyword:gaz,False,fr_bd_828612630
+Taxe Intérieure sur les Consommations de Gaz Naturel (TICGN),taxe interieure sur les consommations de gaz naturel ticgn,7,7,6061,energie_gaz,energie,abonnement_et_consommation,keyword:gaz,False,fr_bd_952061570
+Taxes et contributions - Contribution Tarifaire d'Acheminement (CTA),taxes et contributions contribution tarifaire d acheminement cta,7,7,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_929728467
+Tout Creative Cloud 100 Go,tout creative cloud 100 go,7,7,606100,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_832065999
+Vos autres services et produits,vos autres services et produits,7,7,606100,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_828612630 | fr_bd_831060876 | fr_bd_839181104 | fr_bd_842785719 | fr_bd_952061570
+"RUMSTEACK - CARCASSE BEUF - Label : Né en : BELGIQUE ; Elevé en : BELGIQUE ; Code abattoir : 59 ; Abattu en : BELGIQUE ; Atelier découpe : 94-065-243 ; Découpé en : FRANCE ; Catégorie : VACHE ; Type : VIANDE ; Race : BLANC BLEU BELGE ; Assujetti aux taxes : AGIOS, GARDE, IBGUF, RSD",rumsteack carcasse beuf label ne en belgique eleve en belgique code abattoir 59 abattu en belgique atelier decoupe 94 065 243 decoupe en france categorie vache type viande race blanc bleu belge assujetti aux taxes agios garde ibguf rsd,6,14,6011,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+Renonciation à recours 10%,renonciation a recours 10,6,12,6226,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_842785719
+ECO CONTRIBUTION VALOBAT 0902001 FILS ET CABLES ENERGIE,eco contribution valobat 0902001 fils et cables energie,6,10,6063,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_832065999
+Remise Commerciale,remise commerciale,6,10,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_831060876
+Frais de transaction,frais de transaction,6,8,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_880517875 | fr_bd_890233000
+Composante de soutirage Heures Creuses Eté,composante de soutirage heures creuses ete,6,7,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000
+Composante de soutirage Heures Pleines Eté,composante de soutirage heures pleines ete,6,7,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000
+FOIE DE VEAU CARCASSE ABATS,foie de veau carcasse abats,6,7,6061,autres_charges_externes,frais,forfait_ou_frais,fallback,False,fr_bd_837602275
+FRESSURE DE MOUTON CARCASSE ABATS,fressure de mouton carcasse abats,6,7,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_837602275
+Prestation émetteur Bimpli,prestation emetteur bimpli,6,7,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275 | fr_bd_880517875 | fr_bd_890233000
+SILIPLAST TAL 21 TC 25KG,siliplast tal 21 tc 25kg,6,7,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_832065999
+Supreme+ 98,supreme 98,6,7,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_792041840 | fr_bd_828612630 | fr_bd_903252617
+50 COUV BTE SALADE KRAFT GM,50 couv bte salade kraft gm,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_952061570
+AMANDE POUDRE 10 KG ORIGINE CALIFORNIE,amande poudre 10 kg origine californie,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+AMANDE POUDRE BLANCHE CT 10KG,amande poudre blanche ct 10kg,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000
+Abonnement SFR Fibre Power,abonnement sfr fibre power,6,6,606100,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_903252617
+Abonnement parking - Rue Thimonnier - Villeneuve-Saint-Georges,abonnement parking rue thimonnier villeneuve saint georges,6,6,6226,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_888020088
+Abonnement permanent résident_ouvrage_VL_sans place réservée,abonnement permanent resident ouvrage vl sans place reservee,6,6,6226,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_890233000
+AidEnergie,aidenergie,6,6,6152,entretien_et_maintenance,entretien,intervention_ponctuelle,keyword_or_account:entretien,False,fr_bd_837602275
+Ajustements liés à des erreurs de commande,ajustements lies a des erreurs de commande,6,6,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_929728467
+"Arrachage de moquette collée. Compris : consommables, nettoyage, enlèvement et évacuation des matériaux en décharge.",arrachage de moquette collee compris consommables nettoyage enlevement et evacuation des materiaux en decharge,6,6,6063,entretien_et_maintenance,entretien,intervention_ponctuelle,keyword_or_account:entretien,False,fr_bd_832065999
+BANANE DESSERT,banane dessert,6,6,606100,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_888020088
+Bbox - location équipement (du 02/05 au 01/06),bbox location equipement du 02 05 au 01 06,6,6,6062,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_831060876 | fr_bd_839181104
+CANETTE,canette,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_891370595
+CHORIZO TR BQ 500G,chorizo tr bq 500g,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_890233000
+COCA SANS SUCRES VC 33CL,coca sans sucres vc 33cl,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_952061570
+CORNICHONS VINAIGRE 3/1.80/119 BOCAL PLA,cornichons vinaigre 3 1 80 119 bocal pla,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+COUSCOUS MOYEN DARI 12 X 1 KG,couscous moyen dari 12 x 1 kg,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_837602275
+CREME MASCARPONE 40%MG POT 500G,creme mascarpone 40 mg pot 500g,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_890233000
+Colis,colis,6,6,6226,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_837602275 | fr_bd_903252617
+Commission Deliveroo sur le montant total des produits achetés par les clients,commission deliveroo sur le montant total des produits achetes par les clients,6,6,6227,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_880517875 | fr_bd_929728467 | fr_bd_952061570
+Commission d'apport d'affaires - Transactions 1ère génération (MASTERCARD),commission d apport d affaires transactions 1ere generation mastercard,6,6,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_929728467
+Commission d'apport d'affaires - Transactions 2ème génération (CONECS),commission d apport d affaires transactions 2eme generation conecs,6,6,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_929728467
+Consommation Acheminement,consommation acheminement,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_952061570
+Contrat : 100170674 - IONOS MyWebsite Now Plus - Frais d'abonnement,contrat 100170674 ionos mywebsite now plus frais d abonnement,6,6,6132,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_832065999
+Contributions et taxes liées à l'énergie - Contribution Tarifaire d'Acheminement (CTA),contributions et taxes liees a l energie contribution tarifaire d acheminement cta,6,6,6351,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_832065999 | fr_bd_837602275 | fr_bd_929728467
+Cotisation d'assistance,cotisation d assistance,6,6,616000,assurances,prime,prime_et_periode,keyword_or_account:assurance,False,fr_bd_828612630 | fr_bd_891370595
+Coût d'exploitation réglementaire en France,cout d exploitation reglementaire en france,6,6,6285,autres_charges_externes,frais,forfait_ou_frais,fallback,False,fr_bd_832065999
+Coût de l'échange (différence de prix + frais d'échange éventuels),cout de l echange difference de prix frais d echange eventuels,6,6,622700,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_844858571
+DONUTS,donuts,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_891370595
+"Déport de gouttières et descente d'eaux-pluviales. Inclus : Crochet, jonction, naissance, fond symétrique, Colliers, coudes et cuvette de branchement...",deport de gouttieres et descente d eaux pluviales inclus crochet jonction naissance fond symetrique colliers coudes et cuvette de branchement,6,6,6063,energie_et_utilites,energie,abonnement_et_consommation,keyword:eau,False,fr_bd_832065999
+"E-Services (Espace client, Bilan annuel, Auto-relevé)",e services espace client bilan annuel auto releve,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_903252617
+Entrée CTTE (Camionnette),entree ctte camionnette,6,6,6227,cotisations_professionnelles,frais,forfait_ou_frais,keyword_or_account:cotisation,False,fr_bd_519665103 | fr_bd_828612630 | fr_bd_903252617
+FEUILLES DE BRICK MIL BRICK 2X25 PCS,feuilles de brick mil brick 2x25 pcs,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_837602275
+FORMULE SAND,formule sand,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_891370595
+FRAIS DE RELANCE (2),frais de relance 2,6,6,706,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_832065999
+FUZETEA MENTH/CITRON VERT 33CL,fuzetea menth citron vert 33cl,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_891370595
+Frais d'annulation de commande,frais d annulation de commande,6,6,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_929728467 | fr_bd_952061570
+Frais d'expédition Ticket Fleet Pro,frais d expedition ticket fleet pro,6,6,6227,transport_et_logistique,transport,prestation_ponctuelle,keyword_or_account:transport,False,fr_bd_837602275
+Frais de création site Essentiel + (mensuel),frais de creation site essentiel mensuel,6,6,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_831060876
+Frais de transaction - 2nd génération (Virement 2),frais de transaction 2nd generation virement 2,6,6,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_880517875 | fr_bd_890233000
+Frais techniques - Transactions 1ère génération (MASTERCARD),frais techniques transactions 1ere generation mastercard,6,6,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_929728467
+Frais techniques - Transactions 2ème génération (CONECS),frais techniques transactions 2eme generation conecs,6,6,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_929728467
+GARDE - 0.05/Kg,garde 0 05 kg,6,6,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+HAWAI TROPICAL BOITE 33CL,hawai tropical boite 33cl,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_952061570
+Interbev(dont ATM)ov a/os,interbev dont atm ov a os,6,6,6068,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+Internet garanti,internet garanti,6,6,606100,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_903252617
+JAMBON CUIT SUP DD VPF BQ 16X45G,jambon cuit sup dd vpf bq 16x45g,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+Jour de location,jour de location,6,6,6226,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_844858571
+LOYER PRINCIPAL,loyer principal,6,6,6123,loyers_et_charges_locatives,loyer,loyer_et_charges,keyword_or_account:loyer,False,fr_bd_844858571
+Livraison standard,livraison standard,6,6,624,transport_et_logistique,transport,prestation_ponctuelle,keyword_or_account:transport,False,fr_bd_828612630 | fr_bd_837602275
+MATCH ACRYL SAT INT A+ BLANC 15L,match acryl sat int a blanc 15l,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_832065999
+MC PENNE RIGATE 5KG,mc penne rigate 5kg,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_891370595
+MURE PDP BQ 125G,mure pdp bq 125g,6,6,606100,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_832065999
+Mise a disposition d'une Pompe Béton (FORFAIT),mise a disposition d une pompe beton forfait,6,6,6063,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_903252617
+Nettoyage complet à chaque fin de période de chantier,nettoyage complet a chaque fin de periode de chantier,6,6,706,entretien_et_maintenance,entretien,intervention_ponctuelle,keyword_or_account:entretien,False,fr_bd_842785719
+OEUFS MOYENS BLANCS 10*30,oeufs moyens blancs 10 30,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_837602275
+OLIVE VERTE RONDELLE BTE 3/1,olive verte rondelle bte 3 1,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000
+OLIVES VERTE RONDELLE 3/1 33644,olives verte rondelle 3 1 33644,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+Option Majelan,option majelan,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_890233000
+PERRIER EAU GAZEUSE 33CL x 24,perrier eau gazeuse 33cl x 24,6,6,6068,energie_et_utilites,energie,abonnement_et_consommation,keyword:eau,False,fr_bd_891370595
+Prestation émetteur - 2nd génération (Virement 2),prestation emetteur 2nd generation virement 2,6,6,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_880517875 | fr_bd_890233000
+"RUMSTEACK - CARCASSE BEUF N° dossier : 2410600091 N° tracabilité : 0000002 Label : ; Né en : BELGIQUE ; Elevé en : BELGIQUE ; Code abattoir : 59 ; Abattu en : BELGIQUE : Atelier découpe : 94-065-243 ; Découpé en : FRANCE ; Catégorie : VACHE ; Type : VIANDE ; Race : BLANC BLEU BELGE ; Date d'abattage : Assujetti aux taxes : AGIOS, GARDE, IBGUF, RSD",rumsteack carcasse beuf n dossier 2410600091 n tracabilite 0000002 label ne en belgique eleve en belgique code abattoir 59 abattu en belgique atelier decoupe 94 065 243 decoupe en france categorie vache type viande race blanc bleu belge date d abattage assujetti aux taxes agios garde ibguf rsd,6,6,6011,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+Référencement prioritaire option Connect Premium,referencement prioritaire option connect premium,6,6,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_831060876
+SAUCE,sauce,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_891370595
+SAUCISSE,saucisse,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_891370595
+SCHWEPPES AGRUM SLIM 33CL,schweppes agrum slim 33cl,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_891370595
+SUCRE GRAIN GROS N°6 10KG C25,sucre grain gros n 6 10kg c25,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+Sacs,sacs,6,6,606100,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_888020088
+Solde dû pour période 10/2024,solde du pour periode 10 2024,6,6,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_519665103 | fr_bd_837602275
+Tarte Citron,tarte citron,6,6,606100,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_839181104
+Taxes et contributions - Contribution au Service Public de l'Electricité (CSPE),taxes et contributions contribution au service public de l electricite cspe,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_929728467
+VIENNOISERIE,viennoiserie,6,6,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_839181104 | fr_bd_890233000
+VIREMENT EUROPEEN SEPA EMIS,virement europeen sepa emis,6,6,6278,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_952061570
+VIREMENT SEPA INSTANTANE,virement sepa instantane,6,6,6278,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_952061570
+Ventes nettes (après frais et TVA),ventes nettes apres frais et tva,6,6,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_929728467
+Vos services fournis par des tiers,vos services fournis par des tiers,6,6,606100,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_839181104 | fr_bd_842785719 | fr_bd_952061570
+GIGOT AGN S/0S S/V NZ HAL,gigot agn s 0s s v nz hal,5,13,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_891370595
+Contribution environnementale 1%,contribution environnementale 1,5,11,6226,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_842785719
+Internet Mobile 50Go Eco,internet mobile 50go eco,5,11,6068,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_842785719
+Péage autoroutier,peage autoroutier,5,10,6226,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_839181104 | fr_bd_903252617
+Internet Mobile 1Go Eco,internet mobile 1go eco,5,9,6068,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_842785719
+Protect Avancé,protect avance,5,9,6226,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_842785719
+COEUR RTK 2.5KG+ HAL UE,coeur rtk 2 5kg hal ue,5,8,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_891370595
+COTIS ALLO ASSIST PRO,cotis allo assist pro,5,8,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_903252617
+COTISATION INTERBEV,cotisation interbev,5,8,6351,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_837602275
+CRISTALINE 50CL P/24,cristaline 50cl p 24,5,8,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+GAZOLE Carburant,gazole carburant,5,7,6061,autres_charges_externes,frais,forfait_ou_frais,fallback,False,fr_bd_792041840 | fr_bd_832065999
+Frais de transaction - Carte Bimpli (ex Apetiz) - 1ère génération,frais de transaction carte bimpli ex apetiz 1ere generation,5,6,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_880517875 | fr_bd_890233000
+25 PATTES A VIS BOIS 7X40MM VRAC,25 pattes a vis bois 7x40mm vrac,5,5,60610000,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_832065999
+4 PILONS,4 pilons,5,5,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_891370595
+ABONNEMENT NON TAXABLE FORFAIT,abonnement non taxable forfait,5,5,6278,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_952061570
+ABONNEMENT TAXABLE FORFAIT,abonnement taxable forfait,5,5,6278,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_952061570
+ABRICOT SIROP GRECE DGF BTE 3/1,abricot sirop grece dgf bte 3 1,5,5,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+AIL PELE MC 1KG CHINE,ail pele mc 1kg chine,5,5,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_891370595
+ARMATURE 4X4-1.10M X 50M CSTB,armature 4x4 1 10m x 50m cstb,5,5,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_832065999
+AROME VANILLE GOURMET BTLE 1L,arome vanille gourmet btle 1l,5,5,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000
+Abonnement - Accès Réseaux du 01/11/2024 au 01/12/2024,abonnement acces reseaux du 01 11 2024 au 01 12 2024,5,5,6062,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_828612630 | fr_bd_837602275
+Abonnement Cashmag Standard,abonnement cashmag standard,5,5,606100,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_952061570
+Annulation de l'abonnement,annulation de l abonnement,5,5,6061,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_880517875 | fr_bd_890233000
+Appels recus en Zone Europe,appels recus en zone europe,5,5,6226,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_839181104 | fr_bd_890233000
+Applications - contenus - services,applications contenus services,5,5,6226,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_828612630 | fr_bd_831060876 | fr_bd_837602275
+Avantage Internet 100Go,avantage internet 100go,5,5,6062,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_831060876
+Avantage Internet 60Go 3 euros + majelan inclus,avantage internet 60go 3 euros majelan inclus,5,5,6226,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_839181104
+BAKING POWDER LEVA16 1KG,baking powder leva16 1kg,5,5,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+BEIGNET LONG MASCOT NATURE 90G/30 502558,beignet long mascot nature 90g 30 502558,5,5,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+"BLANC PLT FUME 6T,HALAL,180G",blanc plt fume 6t halal 180g,5,5,606100,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_832065999
+BOISSON,boisson,5,5,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_890233000
+BOMBE GRAISSE UNL 600ML PIECE,bombe graisse unl 600ml piece,5,5,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+Bbox - location équipement (du 02/07 au 01/08),bbox location equipement du 02 07 au 01 08,5,5,6062,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_831060876 | fr_bd_839181104
+Bbox - location équipement (du 02/09 au 01/10),bbox location equipement du 02 09 au 01 10,5,5,6062,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_831060876 | fr_bd_839181104
+Bbox - location équipement (du 02/12 au 01/01),bbox location equipement du 02 12 au 01 01,5,5,6061,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_831060876 | fr_bd_839181104
+Bbox fibre jusqu'a1 Gb/s (du 02/05 au 01/06),bbox fibre jusqu a1 gb s du 02 05 au 01 06,5,5,6226,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_839181104
+Bouteille de gaz Propane 13 kg,bouteille de gaz propane 13 kg,5,5,6068,energie_gaz,energie,abonnement_et_consommation,keyword:gaz,False,fr_bd_519665103 | fr_bd_837602275
+CARTH'AGRUME CITRON LE LITRE,carth agrume citron le litre,5,5,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+CHEVRE BUCHE AFFIN CABRIFIN 23%MG 180G,chevre buche affin cabrifin 23 mg 180g,5,5,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+CHICKEN WINGS HALAL,chicken wings halal,5,5,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_837602275
+CHORIZO TR D38 SURG SACHET 1KG,chorizo tr d38 surg sachet 1kg,5,5,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+COCA COLA BTE SLIM 33CLX30 0S,coca cola bte slim 33clx30 0s,5,5,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000 | fr_bd_952061570
+"COM INTERV CHEQUE (eX0) (8,75 EUR *)",com interv cheque ex0 8 75 eur,5,5,627800,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_880517875
+COMCOMBRE GROS,comcombre gros,5,5,60610000,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+COTIS CARTE GOLD BUSINESS,cotis carte gold business,5,5,627800,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_844858571
+CREME FRAICHE EPAISSE 15,creme fraiche epaisse 15,5,5,60610000,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_891370595
+CREME FRAICHE EPAISSE 30% 5KG ISIGNY,creme fraiche epaisse 30 5kg isigny,5,5,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+CUBES DE BLEU 14X14MM 1.3KG SURGELE IQF,cubes de bleu 14x14mm 1 3kg surgele iqf,5,5,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+Charge environnementale,charge environnementale,5,5,6226,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_844858571
+Commission Deliveroo - Marketplace+,commission deliveroo marketplace,5,5,6228,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_929728467
+Commission Deliveroo pour prestation de services d'achat et de livraison d'aliments et de boissons,commission deliveroo pour prestation de services d achat et de livraison d aliments et de boissons,5,5,6228,transport_et_logistique,transport,prestation_ponctuelle,keyword_or_account:transport,False,fr_bd_929728467 | fr_bd_952061570
+Consommation Gaz Naturel,consommation gaz naturel,5,5,6061,energie_gaz,energie,abonnement_et_consommation,keyword:gaz,False,fr_bd_880517875
+Consommation acheminement Heures creuses saison basse,consommation acheminement heures creuses saison basse,5,5,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_891370595 | fr_bd_952061570
+Consommation acheminement Heures pleines saison basse,consommation acheminement heures pleines saison basse,5,5,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_891370595 | fr_bd_952061570
+Contrat : 76925750 - IONOS List Local Plus - Frais d'abonnement,contrat 76925750 ionos list local plus frais d abonnement,5,5,6132,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_832065999
+Contributions et taxes liées à l'énergie - Accise sur l'électricité,contributions et taxes liees a l energie accise sur l electricite,5,5,6351,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_832065999 | fr_bd_837602275 | fr_bd_929728467
+Cotisation assurance automobile,cotisation assurance automobile,5,5,616000,assurances,prime,prime_et_periode,keyword_or_account:assurance,False,fr_bd_828612630
+DESSERT,dessert,5,5,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_891370595
+DOUBLAGE PU 10+80 2.5X1.2M SOPREMA,doublage pu 10 80 2 5x1 2m soprema,5,5,60610000,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_832065999
+Domiciliation sise au 6éme étage de la tour Europa 94320 THIAIS,domiciliation sise au 6eme etage de la tour europa 94320 thiais,5,5,6226,frais_administratifs_et_bancaires,frais,forfait_ou_frais,keyword_or_account:administratif,False,fr_bd_890852403
+Débit : frais supplémentaires - Frais d'adhésion,debit frais supplementaires frais d adhesion,5,5,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_929728467
+EAU MIN LUTECIA 50CL PET,eau min lutecia 50cl pet,5,5,6068,energie_et_utilites,energie,abonnement_et_consommation,keyword:eau,False,fr_bd_890233000
+EMMENTAL RAPE EXTRA FIN 1 KG UE,emmental rape extra fin 1 kg ue,5,5,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875
+Extension de présence,extension de presence,5,5,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_831060876
+FANTA CITRON BTE SLIM 33CL,fanta citron bte slim 33cl,5,5,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_890233000 | fr_bd_891370595
+FANTA ORGE SLIM 33CL X24 PROMO,fanta orge slim 33cl x24 promo,5,5,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_891370595
+FILM ETIRABLE BOITE DISTRIB 45CMX300M,film etirable boite distrib 45cmx300m,5,5,6061,energie_electricite,energie,abonnement_et_consommation,keyword_or_account:electricite,False,fr_bd_880517875 | fr_bd_890233000
+FRAIS DE FACTURATION,frais de facturation,5,5,6227,cotisations_professionnelles,cotisation,cotisation_ou_forfait,keyword_or_account:cotisation,False,fr_bd_880517875 | fr_bd_890233000
+Forfait,forfait,5,5,606200,telecom_et_abonnements,abonnement,abonnement_et_consommation,keyword_or_account:telecom,False,fr_bd_903252617

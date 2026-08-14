@@ -1,0 +1,23 @@
+metier;libelle_test;contexte_suggere;compte_propose;reference_top1;source_decision;tva_proposee;statut_test_reel;commentaire_test_reel;controle_metier_compte;controle_metier_tva;controle_metier_classement;action_a_prendre
+boucherie;PILON DE POULET HALAL UE;metier_hint=boucherie / tva_hint=5.5;;; ;5.5;;; ; ; ;
+boucherie;FOIE DE VEAU;metier_hint=boucherie / tva_hint=5.5;;; ;5.5;;; ; ; ;
+boucherie;BAVETTE ALOYAU BLANC BLEU BELGE;metier_hint=boucherie / tva_hint=5.5;;; ;5.5;;; ; ; ;
+restaurant;Tiramisu Choco-nut;metier_hint=restaurant / tva_hint=5.5;;; ;5.5;;; ; ; ;
+restaurant;50 COUV BTE SALADE KRAFT GM;metier_hint=restaurant / tva_hint=20;;; ;20;;; ; ; ;
+restaurant;COCACOLA BOITE SLIM 33CL;metier_hint=restaurant / tva_hint=20;;; ;20;;; ; ; ;
+restaurant;HUILE DE TOURNESOL BINGOIL 1L;metier_hint=restaurant / tva_hint=5.5;;; ;5.5;;; ; ; ;
+transport;Gazole;metier_hint=transport / tva_hint=20;;; ;20;;; ; ; ;
+transport;Forfait Client B&You 260Go 5G;metier_hint=transport / tva_hint=20;;; ;20;;; ; ; ;
+boulangerie;FARINE LABEL ROUGE L EMOTION 100 % IDF SAC 25 KG;metier_hint=boulangerie / tva_hint=5.5;;; ;5.5;;; ; ; ;
+boulangerie;LEVURE LEVAMAX ECOPACK (30x500G) 15 KG;metier_hint=boulangerie / tva_hint=5.5;;; ;5.5;;; ; ; ;
+boulangerie;OEUF COQUILLE TEINTE GROS 63/73 CT 360;metier_hint=boulangerie / tva_hint=5.5;;; ;5.5;;; ; ; ;
+boulangerie;BEURRE GD TOURAGE FLECHARD CT 5X2KG;metier_hint=boulangerie / tva_hint=5.5;;; ;5.5;;; ; ; ;
+btp;Palette HMFC ciments 95x115 cm;metier_hint=btp / tva_hint=20;;; ;20;;; ; ; ;
+btp;1PX COLLE POUDRE INT MAX30X30CM GRIS25KG;metier_hint=btp / tva_hint=20;;; ;20;;; ; ; ;
+charges_externes;Livraison;tva_hint=20;;; ;20;;; ; ; ;
+charges_externes;Frais de livraison;tva_hint=20;;; ;20;;; ; ; ;
+charges_externes;Frais de gestion;tva_hint=20;;; ;20;;; ; ; ;
+charges_externes;Commission Deliveroo;tva_hint=20;;; ;20;;; ; ; ;
+charges_externes;Fourniture d'électricité;tva_hint=20;;; ;20;;; ; ; ;
+charges_externes;Acrobat Pro;tva_hint=20;;; ;20;;; ; ; ;
+charges_externes;Nettoyage en cours et en fin de chantier. Nettoyage fin de chantier et mise en décharge de déchets du chantier.;tva_hint=20;;; ;20;;; ; ; ;

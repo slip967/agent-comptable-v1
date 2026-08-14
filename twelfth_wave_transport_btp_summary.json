@@ -1,0 +1,74 @@
+{
+  "transport": {
+    "requested_active": [
+      "Bouclier avant complet remplacer",
+      "Traverse avant remplacer (pare-chocs déposé)",
+      "Filtre à air, remplacer",
+      "Filtre à carburant, remplacer",
+      "ESOE60ES B: remplacer le liquide de frein",
+      "Supplément a la maintenance: faire l'appoint d'AdBlue (R)",
+      "REMPLACEMENT DES PLAQUETTES DE FREIN AR",
+      "Remplacer la batterie du reseau de bord (Apres controle)"
+    ],
+    "missing": [],
+    "files": [
+      {
+        "file": "base_produits_transport_v1.json",
+        "added": 8,
+        "skipped_existing": 0,
+        "added_labels": [
+          "Bouclier avant complet remplacer",
+          "Traverse avant remplacer (pare-chocs déposé)",
+          "Filtre à air, remplacer",
+          "Filtre à carburant, remplacer",
+          "ESOE60ES B: remplacer le liquide de frein",
+          "Supplément a la maintenance: faire l'appoint d'AdBlue (R)",
+          "REMPLACEMENT DES PLAQUETTES DE FREIN AR",
+          "Remplacer la batterie du reseau de bord (Apres controle)"
+        ]
+      },
+      {
+        "file": "base_produits_transport_v1_with_accounts.json",
+        "added": 8,
+        "skipped_existing": 0,
+        "added_labels": [
+          "Bouclier avant complet remplacer",
+          "Traverse avant remplacer (pare-chocs déposé)",
+          "Filtre à air, remplacer",
+          "Filtre à carburant, remplacer",
+          "ESOE60ES B: remplacer le liquide de frein",
+          "Supplément a la maintenance: faire l'appoint d'AdBlue (R)",
+          "REMPLACEMENT DES PLAQUETTES DE FREIN AR",
+          "Remplacer la batterie du reseau de bord (Apres controle)"
+        ]
+      }
+    ]
+  },
+  "btp": {
+    "requested_active": [
+      "SAC MATIERE RECYCLEE PDB",
+      "TERRE"
+    ],
+    "missing": [],
+    "files": [
+      {
+        "file": "base_produits_btp_v1.json",
+        "added": 2,
+        "skipped_existing": 0,
+        "added_labels": [
+          "SAC MATIERE RECYCLEE PDB",
+          "TERRE"
+        ]
+      },
+      {
+        "file": "base_produits_btp_v1_with_accounts.json",
+        "added": 2,
+        "skipped_existing": 0,
+        "added_labels": [
+          "SAC MATIERE RECYCLEE PDB",
+          "TERRE"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "files": [
+    {
+      "file": "base_produits_boucherie_v1.json",
+      "remaining_items": 206,
+      "removed_missing_provenance": 0,
+      "partitions_recomputed": 0,
+      "invoice_ids_normalized": 0
+    },
+    {
+      "file": "base_produits_boucherie_v1_with_accounts.json",
+      "remaining_items": 206,
+      "removed_missing_provenance": 0,
+      "partitions_recomputed": 0,
+      "invoice_ids_normalized": 0
+    },
+    {
+      "file": "base_produits_boulangerie_v1.json",
+      "remaining_items": 201,
+      "removed_missing_provenance": 0,
+      "partitions_recomputed": 2,
+      "invoice_ids_normalized": 0
+    },
+    {
+      "file": "base_produits_boulangerie_v1_with_accounts.json",
+      "remaining_items": 201,
+      "removed_missing_provenance": 0,
+      "partitions_recomputed": 2,
+      "invoice_ids_normalized": 0
+    },
+    {
+      "file": "base_produits_btp_v1.json",
+      "remaining_items": 202,
+      "removed_missing_provenance": 0,
+      "partitions_recomputed": 0,
+      "invoice_ids_normalized": 0
+    },
+    {
+      "file": "base_produits_btp_v1_with_accounts.json",
+      "remaining_items": 202,
+      "removed_missing_provenance": 0,
+      "partitions_recomputed": 0,
+      "invoice_ids_normalized": 0
+    },
+    {
+      "file": "base_produits_epicerie_v1.json",
+      "remaining_items": 494,
+      "removed_missing_provenance": 0,
+      "partitions_recomputed": 0,
+      "invoice_ids_normalized": 0
+    },
+    {
+      "file": "base_produits_epicerie_v1_with_accounts.json",
+      "remaining_items": 494,
+      "removed_missing_provenance": 0,
+      "partitions_recomputed": 0,
+      "invoice_ids_normalized": 0
+    },
+    {
+      "file": "base_produits_restaurant_v1.json",
+      "remaining_items": 200,
+      "removed_missing_provenance": 0,
+      "partitions_recomputed": 0,
+      "invoice_ids_normalized": 0
+    },
+    {
+      "file": "base_produits_restaurant_v1_with_accounts.json",
+      "remaining_items": 200,
+      "removed_missing_provenance": 0,
+      "partitions_recomputed": 0,
+      "invoice_ids_normalized": 0
+    },
+    {
+      "file": "base_produits_transport_v1.json",
+      "remaining_items": 199,
+      "removed_missing_provenance": 0,
+      "partitions_recomputed": 9,
+      "invoice_ids_normalized": 0
+    },
+    {
+      "file": "base_produits_transport_v1_with_accounts.json",
+      "remaining_items": 199,
+      "removed_missing_provenance": 0,
+      "partitions_recomputed": 9,
+      "invoice_ids_normalized": 0
+    },
+    {
+      "file": "base_produits_vtc_v1.json",
+      "remaining_items": 416,
+      "removed_missing_provenance": 0,
+      "partitions_recomputed": 0,
+      "invoice_ids_normalized": 0
+    },
+    {
+      "file": "base_produits_vtc_v1_with_accounts.json",
+      "remaining_items": 416,
+      "removed_missing_provenance": 0,
+      "partitions_recomputed": 0,
+      "invoice_ids_normalized": 0
+    },
+    {
+      "file": "base_charges_externes_v1.json",
+      "remaining_items": 218,
+      "removed_missing_provenance": 0,
+      "partitions_recomputed": 1,
+      "invoice_ids_normalized": 0
+    },
+    {
+      "file": "base_charges_externes_v1_with_accounts.json",
+      "remaining_items": 218,
+      "removed_missing_provenance": 0,
+      "partitions_recomputed": 1,
+      "invoice_ids_normalized": 0
+    }
+  ]
+}

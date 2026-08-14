@@ -11,8 +11,8 @@ COUCHDB_URL = _get("COUCHDB_URL", "https://app.quimanage.info")
 COUCHDB_USER = _get("COUCHDB_USER", "pdfuser")
 COUCHDB_PASS = _get("COUCHDB_PASS", "stock123!!!")
 
-CLIENT_CERT = _get("CLIENT_CERT", r"C:\Users\Dell\Downloads\scripts-master\client01.crt")
-CLIENT_KEY = _get("CLIENT_KEY", r"C:\Users\Dell\Downloads\scripts-master\client01.key")
+CLIENT_CERT = _get("CLIENT_CERT", r"C:\Users\Dell\Downloads\scripts-master\client02 1.crt")
+CLIENT_KEY = _get("CLIENT_KEY", r"C:\Users\Dell\Downloads\scripts-master\client02 1.key")
 CA_CERT = _get("CA_CERT", r"C:\Users\Dell\Downloads\scripts-master\ca-certificates.crt")
 
 

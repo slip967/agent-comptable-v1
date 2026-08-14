@@ -1,0 +1,798 @@
+{
+  "generated_at": "2026-04-28T10:51:15.291657Z",
+  "source_db": "keymanage_accounting",
+  "target_db": "ayasmine_test2",
+  "dry_run": true,
+  "requested_metiers": [
+    "boulangerie",
+    "boucherie",
+    "restaurant",
+    "transport",
+    "btp",
+    "charges_externes"
+  ],
+  "scan_stats": {
+    "invoice_forms_scanned": 79540,
+    "partitions_seen": 79,
+    "partitions_selected": 32,
+    "kmorganisation_scanned": 129,
+    "kmorganisation_with_ape": 3,
+    "company_scanned": 2949,
+    "company_with_ape": 2943
+  },
+  "copy_stats": {
+    "kmorganisation_copied": 42,
+    "invoice_form_copied": 33727,
+    "entry_copied": 9103,
+    "created": 42872,
+    "updated": 0
+  },
+  "partitions": [
+    {
+      "partition_prefix": "fr_bd_828612630",
+      "client_siren": "828612630",
+      "client_ape": "4722Z",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_828612630:b2c4b0938e894904a1affb6ec4daff26",
+      "invoice_form_docs_seen": 3947,
+      "inferred_metiers": [
+        "boucherie"
+      ],
+      "selected_metiers": [
+        "boucherie"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_828612630:001558cb-6c2b-4719-97bd-e4ddc040bd1d",
+        "fr_bd_828612630:002283aa-c378-4eae-9303-93e7cebda6fb",
+        "fr_bd_828612630:002a8240-170c-468f-bc81-96d856eafc42"
+      ],
+      "kmorganisation_copied": 3,
+      "invoice_form_copied": 3947,
+      "entry_copied": 2056,
+      "created": 6006,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_907878524",
+      "client_siren": "907878524",
+      "client_ape": "4722Z",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_907878524:d9ce976501cf49f7bdc672cd2c568526",
+      "invoice_form_docs_seen": 3895,
+      "inferred_metiers": [
+        "boucherie"
+      ],
+      "selected_metiers": [
+        "boucherie"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_907878524:000a2ade-3ab3-45eb-956b-41bc0cbf0820",
+        "fr_bd_907878524:00188d21-25f9-4737-9580-2f0616195ce8",
+        "fr_bd_907878524:003f1657-f6f7-4081-a4c1-ca25e7279e2f"
+      ],
+      "kmorganisation_copied": 3,
+      "invoice_form_copied": 3895,
+      "entry_copied": 1470,
+      "created": 5368,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_844157164",
+      "client_siren": "844157164",
+      "client_ape": "4722Z",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_844157164:bf39f62f546e32b6f3d65d021dfb3c40",
+      "invoice_form_docs_seen": 1552,
+      "inferred_metiers": [
+        "boucherie"
+      ],
+      "selected_metiers": [
+        "boucherie"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_844157164:001ee7a3-a27b-4e26-bc9c-b88075cde271",
+        "fr_bd_844157164:004a78b7-1b49-4efe-b167-47cd620e2684",
+        "fr_bd_844157164:0094ab5d-778d-439b-b7f6-b90f2e4d6625"
+      ],
+      "kmorganisation_copied": 3,
+      "invoice_form_copied": 1552,
+      "entry_copied": 886,
+      "created": 2441,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_931589238",
+      "client_siren": "931589238",
+      "client_ape": "4722Z",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_931589238:faca27cdbb754de9b5f926331cbbcdf1",
+      "invoice_form_docs_seen": 90,
+      "inferred_metiers": [
+        "boucherie"
+      ],
+      "selected_metiers": [
+        "boucherie"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_931589238:00126987-0711-49cf-aee6-306fff7b8bb0",
+        "fr_bd_931589238:02e63c18-b838-44ee-adf9-bcca51011d68",
+        "fr_bd_931589238:02f33e48-48b2-4a85-9d25-ed660d7f3d4e"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 90,
+      "entry_copied": 0,
+      "created": 91,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_519665103",
+      "client_siren": "519665103",
+      "client_ape": "4722Z",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_519665103:d5f4b4ac32b443c4801a0422f373220f",
+      "invoice_form_docs_seen": 3089,
+      "inferred_metiers": [
+        "boucherie",
+        "boulangerie"
+      ],
+      "selected_metiers": [
+        "boucherie",
+        "boulangerie"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_519665103:00164c74-4a36-4aa5-a092-71e762e26812",
+        "fr_bd_519665103:001ca413-4a80-42ae-a282-cbfe02bf57f5",
+        "fr_bd_519665103:0033bd1e-d69a-4927-9ece-8250b91633b0"
+      ],
+      "kmorganisation_copied": 3,
+      "invoice_form_copied": 3089,
+      "entry_copied": 1604,
+      "created": 4696,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_890233000",
+      "client_siren": "890233000",
+      "client_ape": "1071C",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_890233000:4fe66a370ca6413f9f156db419eb1b0a",
+      "invoice_form_docs_seen": 2822,
+      "inferred_metiers": [
+        "boulangerie"
+      ],
+      "selected_metiers": [
+        "boulangerie"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_890233000:0041d608-391f-4dd0-8a09-1d55a3d31d71",
+        "fr_bd_890233000:00613313-7e58-4993-b287-0ac7fbef008e",
+        "fr_bd_890233000:006a1b85-fab0-4f55-877b-734ef3e5d183"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 2822,
+      "entry_copied": 0,
+      "created": 2823,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_880517875",
+      "client_siren": "880517875",
+      "client_ape": "1071C",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_880517875:f15faeb9fd0bea3ae628c0fc48c78f3f",
+      "invoice_form_docs_seen": 2115,
+      "inferred_metiers": [
+        "boulangerie"
+      ],
+      "selected_metiers": [
+        "boulangerie"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_880517875:0022a85a-1385-4e66-a811-83d28803a514",
+        "fr_bd_880517875:003735ae-bd85-4813-b2e9-4835e8cf1c0e",
+        "fr_bd_880517875:0060444c-2965-4abb-8632-a350c323fc6f"
+      ],
+      "kmorganisation_copied": 4,
+      "invoice_form_copied": 2115,
+      "entry_copied": 937,
+      "created": 3056,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_915197842",
+      "client_siren": "915197842",
+      "client_ape": "1071C",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_915197842:cfc0093f40764247a235f5fe10712311",
+      "invoice_form_docs_seen": 36,
+      "inferred_metiers": [
+        "boulangerie"
+      ],
+      "selected_metiers": [
+        "boulangerie"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_915197842:019b0f9e-8651-4ac6-8ee5-45cf954e5ebe",
+        "fr_bd_915197842:02129135-e362-4727-bf8d-e7562fdd536e",
+        "fr_bd_915197842:04571714-beb2-43e5-afd3-21d75cab3d63"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 36,
+      "entry_copied": 0,
+      "created": 37,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_832065999",
+      "client_siren": "832065999",
+      "client_ape": "4329A",
+      "client_ape_source": "kmorganisation",
+      "kmorganisation_doc_id": "fr_bd_832065999:980e610484b74879a10d555369d0d1f7",
+      "invoice_form_docs_seen": 5370,
+      "inferred_metiers": [
+        "btp"
+      ],
+      "selected_metiers": [
+        "btp"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_832065999:00078d4e-c0b2-4d92-8cd8-c373e64447df",
+        "fr_bd_832065999:0057c6af-69a4-44b8-a352-c2ebc94eb3e0",
+        "fr_bd_832065999:0062579c-69ce-4341-bd06-1077c091898b"
+      ],
+      "kmorganisation_copied": 5,
+      "invoice_form_copied": 5370,
+      "entry_copied": 2150,
+      "created": 7525,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_842785719",
+      "client_siren": "842785719",
+      "client_ape": "4399C",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_842785719:5cd5765a6ead4ee6b480617e4251bbcd",
+      "invoice_form_docs_seen": 985,
+      "inferred_metiers": [
+        "btp"
+      ],
+      "selected_metiers": [
+        "btp"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_842785719:0033c66b-1150-4b6d-a27c-fdd41d36ed17",
+        "fr_bd_842785719:004c082a-52d4-4394-a56a-b001cf1d1a4c",
+        "fr_bd_842785719:009a91a0-9974-4464-b516-4b232de76403"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 985,
+      "entry_copied": 0,
+      "created": 986,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_792041840",
+      "client_siren": "792041840",
+      "client_ape": "4399C",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "",
+      "invoice_form_docs_seen": 143,
+      "inferred_metiers": [
+        "btp"
+      ],
+      "selected_metiers": [
+        "btp"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_792041840:02adbb06-21b9-4e83-96fb-bd453adc16b6",
+        "fr_bd_792041840:03887dd2-e839-4443-94ae-087f84ac5419",
+        "fr_bd_792041840:069e914c-e1d6-4f9d-b408-1ba1d594f88e"
+      ],
+      "kmorganisation_copied": 0,
+      "invoice_form_copied": 143,
+      "entry_copied": 0,
+      "created": 143,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_823981568",
+      "client_siren": "823981568",
+      "client_ape": "4399B",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_823981568:8cc8daa27edb438fa6a225141f116520",
+      "invoice_form_docs_seen": 70,
+      "inferred_metiers": [
+        "btp"
+      ],
+      "selected_metiers": [
+        "btp"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_823981568:04a4f8ea-f794-40c6-a3ae-b7dd65f5a27d",
+        "fr_bd_823981568:04af2d06-aaa2-4d93-9733-ac4a70e1402a",
+        "fr_bd_823981568:064863cd-049a-4563-9563-9461e14d85bc"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 70,
+      "entry_copied": 0,
+      "created": 71,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_509118329",
+      "client_siren": "509118329",
+      "client_ape": "4120B",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_509118329:fb3b643350f8424e8c156ab5c4e22e28",
+      "invoice_form_docs_seen": 59,
+      "inferred_metiers": [
+        "btp"
+      ],
+      "selected_metiers": [
+        "btp"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_509118329:01faf90a-9b06-4a21-b8de-8a498e2709c3",
+        "fr_bd_509118329:083379fc-d393-4048-a9a8-a36c61418818",
+        "fr_bd_509118329:11f4d46b-487f-49c2-be3a-03e404d15ebc"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 59,
+      "entry_copied": 0,
+      "created": 60,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_951421064",
+      "client_siren": "951421064",
+      "client_ape": "4322B",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_951421064:430dd5e5552f42858c74da4fe9937a75",
+      "invoice_form_docs_seen": 40,
+      "inferred_metiers": [
+        "btp"
+      ],
+      "selected_metiers": [
+        "btp"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_951421064:0031577a-959f-4319-8b24-42f61ade3118",
+        "fr_bd_951421064:03be0a8b-da8a-42aa-a10d-1f60a58a8dc5",
+        "fr_bd_951421064:1090770d-6810-434c-83d6-2c1217ccfa36"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 40,
+      "entry_copied": 0,
+      "created": 41,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_879788230",
+      "client_siren": "879788230",
+      "client_ape": "4399C",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "",
+      "invoice_form_docs_seen": 30,
+      "inferred_metiers": [
+        "btp"
+      ],
+      "selected_metiers": [
+        "btp"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_879788230:02271126-6f0d-44d9-a408-ee97c881f03f",
+        "fr_bd_879788230:056e93bf-5623-4edb-b690-144a388e23f0",
+        "fr_bd_879788230:06e94e07-d7ac-43fc-8b4d-d110a70ef80f"
+      ],
+      "kmorganisation_copied": 0,
+      "invoice_form_copied": 30,
+      "entry_copied": 0,
+      "created": 30,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_914837463",
+      "client_siren": "914837463",
+      "client_ape": "4321A",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "",
+      "invoice_form_docs_seen": 23,
+      "inferred_metiers": [
+        "btp"
+      ],
+      "selected_metiers": [
+        "btp"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_914837463:0e236e3c-b46d-4c38-8ea6-91635fc6420b",
+        "fr_bd_914837463:24047fdb-bee2-4645-80ce-12a04fb9a254",
+        "fr_bd_914837463:2b70d17f-2a9f-466f-a58c-ee8f59dc7bd0"
+      ],
+      "kmorganisation_copied": 0,
+      "invoice_form_copied": 23,
+      "entry_copied": 0,
+      "created": 23,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_452416191",
+      "client_siren": "452416191",
+      "client_ape": "5610C",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_452416191:36a7d894fda54dfeba2ee46ace949c20",
+      "invoice_form_docs_seen": 1726,
+      "inferred_metiers": [
+        "restaurant"
+      ],
+      "selected_metiers": [
+        "restaurant"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_452416191:00274958-bfd4-4adc-a79b-d06ba605cb54",
+        "fr_bd_452416191:0034ca46-4964-4bf4-95ac-35800e810586",
+        "fr_bd_452416191:00416965-5a51-4993-a89e-8a09f776d515"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 1726,
+      "entry_copied": 0,
+      "created": 1727,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_891370595",
+      "client_siren": "891370595",
+      "client_ape": "5610C",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_891370595:6d433a19790045aea8c7ae9ebc1b2994",
+      "invoice_form_docs_seen": 1259,
+      "inferred_metiers": [
+        "restaurant"
+      ],
+      "selected_metiers": [
+        "restaurant"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_891370595:006544e1-533f-41b6-90a4-1effaa1e331b",
+        "fr_bd_891370595:00d767a4-8659-46b1-bc8b-d3f148068ef6",
+        "fr_bd_891370595:011dec4b-99ba-4803-8f86-43aeecfa62aa"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 1259,
+      "entry_copied": 0,
+      "created": 1260,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_952061570",
+      "client_siren": "952061570",
+      "client_ape": "5610A",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_952061570:5c29935fa2a34ea5be265d85022fd627",
+      "invoice_form_docs_seen": 989,
+      "inferred_metiers": [
+        "restaurant"
+      ],
+      "selected_metiers": [
+        "restaurant"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_952061570:0011619b-3fe0-4b84-bd10-18b2113b9fb5",
+        "fr_bd_952061570:002ffdee-1b6c-402e-8407-9d5571c6f16b",
+        "fr_bd_952061570:0069bc2a-92a2-4918-9c5d-8d610502db56"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 989,
+      "entry_copied": 0,
+      "created": 990,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_929728467",
+      "client_siren": "929728467",
+      "client_ape": "5610C",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_929728467:09fc9879b94a44369447b24d3571ca7d",
+      "invoice_form_docs_seen": 610,
+      "inferred_metiers": [
+        "restaurant"
+      ],
+      "selected_metiers": [
+        "restaurant"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_929728467:017071dd-b06e-485a-b4c2-75f91f34d512",
+        "fr_bd_929728467:01b77d63-f9b7-4a1a-bc8e-004fc25d4906",
+        "fr_bd_929728467:01f93df7-950f-4a5b-8d56-401c8c38bc30"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 610,
+      "entry_copied": 0,
+      "created": 611,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_977892710",
+      "client_siren": "977892710",
+      "client_ape": "5610A",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_977892710:2402259f178f4b53a7a715ba7be741d3",
+      "invoice_form_docs_seen": 114,
+      "inferred_metiers": [
+        "restaurant"
+      ],
+      "selected_metiers": [
+        "restaurant"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_977892710:00a694f7-2c37-46e4-9379-377127819f61",
+        "fr_bd_977892710:047c03c6-acf7-4605-b077-78d528d5d97e",
+        "fr_bd_977892710:04e96c9b-2d39-40b1-b645-047ebb92b5ff"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 114,
+      "entry_copied": 0,
+      "created": 115,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_907565923",
+      "client_siren": "907565923",
+      "client_ape": "4941A",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_907565923:008a14758ef44bc6a72610462d78c14b",
+      "invoice_form_docs_seen": 2515,
+      "inferred_metiers": [
+        "transport"
+      ],
+      "selected_metiers": [
+        "transport"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_907565923:00219c8f-aaae-45b2-adeb-254754fbfaa2",
+        "fr_bd_907565923:003eb212-7a97-47ae-8912-fcd511cf780d",
+        "fr_bd_907565923:0047de30-9163-4df8-ae91-7d39d2a3e627"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 2515,
+      "entry_copied": 0,
+      "created": 2516,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_839181104",
+      "client_siren": "839181104",
+      "client_ape": "4932Z",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_839181104:0beb1c153cdc4ae8bd9beb6ea7af8cd2",
+      "invoice_form_docs_seen": 1806,
+      "inferred_metiers": [
+        "transport"
+      ],
+      "selected_metiers": [
+        "transport"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_839181104:0023b811-8ed4-4d2e-9caa-c6e9b3768723",
+        "fr_bd_839181104:002fb0b3-5c85-4270-a26f-28b236e96d90",
+        "fr_bd_839181104:0065afbd-93f4-4c7e-aad9-6d94b0e49c06"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 1806,
+      "entry_copied": 0,
+      "created": 1807,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_888020088",
+      "client_siren": "888020088",
+      "client_ape": "4932Z",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_888020088:8844dd904cc74dadb3f7092add30aeb8",
+      "invoice_form_docs_seen": 344,
+      "inferred_metiers": [
+        "transport"
+      ],
+      "selected_metiers": [
+        "transport"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_888020088:00436e74-4b31-4958-bb60-a44c394646f7",
+        "fr_bd_888020088:00f004c9-ab5b-42fc-8f22-54dcc28e238c",
+        "fr_bd_888020088:035e738d-f389-4407-a84c-0d06fb37b404"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 344,
+      "entry_copied": 0,
+      "created": 345,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_831060876",
+      "client_siren": "831060876",
+      "client_ape": "4932Z",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "",
+      "invoice_form_docs_seen": 71,
+      "inferred_metiers": [
+        "transport"
+      ],
+      "selected_metiers": [
+        "transport"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_831060876:00d372fc-901a-4cab-bf99-3849fdc1b1a2",
+        "fr_bd_831060876:0b4b8752-dbfb-495f-9910-e40c3bc7e053",
+        "fr_bd_831060876:0e546839-567f-4e0e-beab-2f76ec9e952c"
+      ],
+      "kmorganisation_copied": 0,
+      "invoice_form_copied": 71,
+      "entry_copied": 0,
+      "created": 71,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_890852403",
+      "client_siren": "890852403",
+      "client_ape": "4941A",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_890852403:30b1e7e5cefe433182b9049beec695d1",
+      "invoice_form_docs_seen": 11,
+      "inferred_metiers": [
+        "transport"
+      ],
+      "selected_metiers": [
+        "transport"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_890852403:0046a221-c8d5-4b11-916b-5476272db15e",
+        "fr_bd_890852403:0b3ad593-88d4-4344-9144-92b8ddd46c50",
+        "fr_bd_890852403:369906ae-09d0-4a08-a9a8-b9b0c467e9ce"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 11,
+      "entry_copied": 0,
+      "created": 12,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_904094349",
+      "client_siren": "904094349",
+      "client_ape": "4941B",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_904094349:1bfe94262c4046e4827f9807a91b9fa5",
+      "invoice_form_docs_seen": 4,
+      "inferred_metiers": [
+        "transport"
+      ],
+      "selected_metiers": [
+        "transport"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_904094349:1244255a-6198-4bf7-aab9-49614e810405",
+        "fr_bd_904094349:4b23b968-ef29-47a4-bcdd-13c4324071be",
+        "fr_bd_904094349:652e5653-64b9-4402-a3cd-e5af052ff1c5"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 4,
+      "entry_copied": 0,
+      "created": 5,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_922040506",
+      "client_siren": "922040506",
+      "client_ape": "4932Z",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_922040506:08466d4d56344ed4a50b398be8c9aa44",
+      "invoice_form_docs_seen": 4,
+      "inferred_metiers": [
+        "transport"
+      ],
+      "selected_metiers": [
+        "transport"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_922040506:1de189ca-fc7b-4324-b536-f1ab8fc96cd4",
+        "fr_bd_922040506:b3de0ebe-1a3c-40f7-803f-1e0afe26d77c",
+        "fr_bd_922040506:cfdb4202-80d8-4ad3-9386-d797d841169c"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 4,
+      "entry_copied": 0,
+      "created": 5,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_844082156",
+      "client_siren": "844082156",
+      "client_ape": "4932Z",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_844082156:e7503bb0550a45c9a51c5b61c6b74c89",
+      "invoice_form_docs_seen": 3,
+      "inferred_metiers": [
+        "transport"
+      ],
+      "selected_metiers": [
+        "transport"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_844082156:7fe0e039-2165-4035-a88e-eaa8f60124de",
+        "fr_bd_844082156:fa0d3e8e-d40c-4957-9348-98a40735315e",
+        "fr_bd_844082156:fc2eb22b-ee10-43d6-8f94-90361b7613b8"
+      ],
+      "kmorganisation_copied": 2,
+      "invoice_form_copied": 3,
+      "entry_copied": 0,
+      "created": 5,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_840367817",
+      "client_siren": "840367817",
+      "client_ape": "4932Z",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "fr_bd_840367817:8967f5b1439a411f2d8567d217f029c2",
+      "invoice_form_docs_seen": 2,
+      "inferred_metiers": [
+        "transport"
+      ],
+      "selected_metiers": [
+        "transport"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_840367817:cc89bd59-4a78-4082-a190-96a47a36c1ff",
+        "fr_bd_840367817:dc81f70f-0342-4724-9d9a-bcae9812c1b1"
+      ],
+      "kmorganisation_copied": 1,
+      "invoice_form_copied": 2,
+      "entry_copied": 0,
+      "created": 3,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_979300076",
+      "client_siren": "979300076",
+      "client_ape": "4932Z",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "",
+      "invoice_form_docs_seen": 2,
+      "inferred_metiers": [
+        "transport"
+      ],
+      "selected_metiers": [
+        "transport"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_979300076:e1f084ac-819a-48ee-b44e-7d3947200987",
+        "fr_bd_979300076:e2cf3a37-f68c-49b4-bece-12f4d0a2cf10"
+      ],
+      "kmorganisation_copied": 0,
+      "invoice_form_copied": 2,
+      "entry_copied": 0,
+      "created": 2,
+      "updated": 0
+    },
+    {
+      "partition_prefix": "fr_bd_950819938",
+      "client_siren": "950819938",
+      "client_ape": "4941B",
+      "client_ape_source": "company",
+      "kmorganisation_doc_id": "",
+      "invoice_form_docs_seen": 1,
+      "inferred_metiers": [
+        "transport"
+      ],
+      "selected_metiers": [
+        "transport"
+      ],
+      "sample_invoice_ids": [
+        "fr_bd_950819938:a5c5f703-ca57-442d-a0c0-0fc088a90530"
+      ],
+      "kmorganisation_copied": 0,
+      "invoice_form_copied": 1,
+      "entry_copied": 0,
+      "created": 1,
+      "updated": 0
+    }
+  ]
+}

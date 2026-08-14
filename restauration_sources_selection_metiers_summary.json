@@ -1,0 +1,1463 @@
+{
+  "generated_at": "2026-05-06T01:26:11.551160Z",
+  "source_db_factures": "abt3",
+  "dry_run": false,
+  "metiers": [
+    {
+      "metier": "btp",
+      "partitions_scanned": [
+        "fr_bd_903252617",
+        "fr_bd_842785719",
+        "fr_bd_844858571",
+        "fr_bd_792041840",
+        "fr_bd_823981568",
+        "fr_bd_509118329",
+        "fr_bd_951421064",
+        "fr_bd_879788230",
+        "fr_bd_914837463",
+        "fr_bd_519665103"
+      ],
+      "files": [
+        {
+          "file": "base_produits_btp_v1.json",
+          "metier": "btp",
+          "items_total": 134,
+          "items_changed": 84,
+          "invoice_ids_added": 25,
+          "partitions_filled": 0,
+          "ape_filled": 82,
+          "examples": [
+            {
+              "article_source": "Sac a gravat tissé 60x100cm paquet de 10 pièces",
+              "before_ids": [],
+              "after_ids": [
+                "fr_bd_879788230:3c7f34a4-61d2-4bed-9522-411847b845d2",
+                "fr_bd_879788230:02271126-6f0d-44d9-a408-ee97c881f03f"
+              ],
+              "before_partitions": [
+                "fr_bd_842785719",
+                "fr_bd_879788230"
+              ],
+              "after_partitions": [
+                "fr_bd_842785719",
+                "fr_bd_879788230"
+              ],
+              "before_ape": [
+                "4399C"
+              ],
+              "after_ape": [
+                "4399C"
+              ]
+            },
+            {
+              "article_source": "Passerelle",
+              "before_ids": [],
+              "after_ids": [
+                "fr_bd_914837463:98d85f4f-e9bc-40c4-a080-bcc72053ba9c",
+                "fr_bd_914837463:e32b38db-14e0-416b-b421-16a4cf6db045",
+                "fr_bd_914837463:3398281c-342f-4b84-b559-f94543ecd3fb"
+              ],
+              "before_partitions": [
+                "fr_bd_914837463"
+              ],
+              "after_partitions": [
+                "fr_bd_914837463"
+              ],
+              "before_ape": [
+                "4321A"
+              ],
+              "after_ape": [
+                "4321A"
+              ]
+            },
+            {
+              "article_source": "vanne thermostatique connectée",
+              "before_ids": [],
+              "after_ids": [
+                "fr_bd_914837463:98d85f4f-e9bc-40c4-a080-bcc72053ba9c",
+                "fr_bd_914837463:e32b38db-14e0-416b-b421-16a4cf6db045",
+                "fr_bd_914837463:3398281c-342f-4b84-b559-f94543ecd3fb"
+              ],
+              "before_partitions": [
+                "fr_bd_914837463"
+              ],
+              "after_partitions": [
+                "fr_bd_914837463"
+              ],
+              "before_ape": [
+                "4321A"
+              ],
+              "after_ape": [
+                "4321A"
+              ]
+            },
+            {
+              "article_source": "Passerelle( avec ethernet)",
+              "before_ids": [],
+              "after_ids": [
+                "fr_bd_914837463:3398281c-342f-4b84-b559-f94543ecd3fb",
+                "fr_bd_914837463:cef51204-e23d-4f11-93ad-0e4612a8195a",
+                "fr_bd_914837463:6129859d-f805-45cb-9383-ac7d63d6f98b"
+              ],
+              "before_partitions": [
+                "fr_bd_914837463"
+              ],
+              "after_partitions": [
+                "fr_bd_914837463"
+              ],
+              "before_ape": [
+                "4321A"
+              ],
+              "after_ape": [
+                "4321A"
+              ]
+            },
+            {
+              "article_source": "PALETTE LUSSIANA",
+              "before_ids": [],
+              "after_ids": [],
+              "before_partitions": [
+                "fr_bd_842785719"
+              ],
+              "after_partitions": [
+                "fr_bd_842785719"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4399C"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "base_produits_btp_v1_with_accounts.json",
+          "metier": "btp",
+          "items_total": 134,
+          "items_changed": 84,
+          "invoice_ids_added": 25,
+          "partitions_filled": 0,
+          "ape_filled": 82,
+          "examples": [
+            {
+              "article_source": "Sac a gravat tissé 60x100cm paquet de 10 pièces",
+              "before_ids": [],
+              "after_ids": [
+                "fr_bd_879788230:3c7f34a4-61d2-4bed-9522-411847b845d2",
+                "fr_bd_879788230:02271126-6f0d-44d9-a408-ee97c881f03f"
+              ],
+              "before_partitions": [
+                "fr_bd_842785719",
+                "fr_bd_879788230"
+              ],
+              "after_partitions": [
+                "fr_bd_842785719",
+                "fr_bd_879788230"
+              ],
+              "before_ape": [
+                "4399C"
+              ],
+              "after_ape": [
+                "4399C"
+              ]
+            },
+            {
+              "article_source": "Passerelle",
+              "before_ids": [],
+              "after_ids": [
+                "fr_bd_914837463:98d85f4f-e9bc-40c4-a080-bcc72053ba9c",
+                "fr_bd_914837463:e32b38db-14e0-416b-b421-16a4cf6db045",
+                "fr_bd_914837463:3398281c-342f-4b84-b559-f94543ecd3fb"
+              ],
+              "before_partitions": [
+                "fr_bd_914837463"
+              ],
+              "after_partitions": [
+                "fr_bd_914837463"
+              ],
+              "before_ape": [
+                "4321A"
+              ],
+              "after_ape": [
+                "4321A"
+              ]
+            },
+            {
+              "article_source": "vanne thermostatique connectée",
+              "before_ids": [],
+              "after_ids": [
+                "fr_bd_914837463:98d85f4f-e9bc-40c4-a080-bcc72053ba9c",
+                "fr_bd_914837463:e32b38db-14e0-416b-b421-16a4cf6db045",
+                "fr_bd_914837463:3398281c-342f-4b84-b559-f94543ecd3fb"
+              ],
+              "before_partitions": [
+                "fr_bd_914837463"
+              ],
+              "after_partitions": [
+                "fr_bd_914837463"
+              ],
+              "before_ape": [
+                "4321A"
+              ],
+              "after_ape": [
+                "4321A"
+              ]
+            },
+            {
+              "article_source": "Passerelle( avec ethernet)",
+              "before_ids": [],
+              "after_ids": [
+                "fr_bd_914837463:3398281c-342f-4b84-b559-f94543ecd3fb",
+                "fr_bd_914837463:cef51204-e23d-4f11-93ad-0e4612a8195a",
+                "fr_bd_914837463:6129859d-f805-45cb-9383-ac7d63d6f98b"
+              ],
+              "before_partitions": [
+                "fr_bd_914837463"
+              ],
+              "after_partitions": [
+                "fr_bd_914837463"
+              ],
+              "before_ape": [
+                "4321A"
+              ],
+              "after_ape": [
+                "4321A"
+              ]
+            },
+            {
+              "article_source": "PALETTE LUSSIANA",
+              "before_ids": [],
+              "after_ids": [],
+              "before_partitions": [
+                "fr_bd_842785719"
+              ],
+              "after_partitions": [
+                "fr_bd_842785719"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4399C"
+              ]
+            }
+          ]
+        }
+      ],
+      "items_changed": 168,
+      "invoice_ids_added": 50,
+      "partitions_filled": 0,
+      "ape_filled": 164,
+      "examples": [
+        {
+          "article_source": "Sac a gravat tissé 60x100cm paquet de 10 pièces",
+          "before_ids": [],
+          "after_ids": [
+            "fr_bd_879788230:3c7f34a4-61d2-4bed-9522-411847b845d2",
+            "fr_bd_879788230:02271126-6f0d-44d9-a408-ee97c881f03f"
+          ],
+          "before_partitions": [
+            "fr_bd_842785719",
+            "fr_bd_879788230"
+          ],
+          "after_partitions": [
+            "fr_bd_842785719",
+            "fr_bd_879788230"
+          ],
+          "before_ape": [
+            "4399C"
+          ],
+          "after_ape": [
+            "4399C"
+          ]
+        },
+        {
+          "article_source": "Passerelle",
+          "before_ids": [],
+          "after_ids": [
+            "fr_bd_914837463:98d85f4f-e9bc-40c4-a080-bcc72053ba9c",
+            "fr_bd_914837463:e32b38db-14e0-416b-b421-16a4cf6db045",
+            "fr_bd_914837463:3398281c-342f-4b84-b559-f94543ecd3fb"
+          ],
+          "before_partitions": [
+            "fr_bd_914837463"
+          ],
+          "after_partitions": [
+            "fr_bd_914837463"
+          ],
+          "before_ape": [
+            "4321A"
+          ],
+          "after_ape": [
+            "4321A"
+          ]
+        },
+        {
+          "article_source": "vanne thermostatique connectée",
+          "before_ids": [],
+          "after_ids": [
+            "fr_bd_914837463:98d85f4f-e9bc-40c4-a080-bcc72053ba9c",
+            "fr_bd_914837463:e32b38db-14e0-416b-b421-16a4cf6db045",
+            "fr_bd_914837463:3398281c-342f-4b84-b559-f94543ecd3fb"
+          ],
+          "before_partitions": [
+            "fr_bd_914837463"
+          ],
+          "after_partitions": [
+            "fr_bd_914837463"
+          ],
+          "before_ape": [
+            "4321A"
+          ],
+          "after_ape": [
+            "4321A"
+          ]
+        },
+        {
+          "article_source": "Passerelle( avec ethernet)",
+          "before_ids": [],
+          "after_ids": [
+            "fr_bd_914837463:3398281c-342f-4b84-b559-f94543ecd3fb",
+            "fr_bd_914837463:cef51204-e23d-4f11-93ad-0e4612a8195a",
+            "fr_bd_914837463:6129859d-f805-45cb-9383-ac7d63d6f98b"
+          ],
+          "before_partitions": [
+            "fr_bd_914837463"
+          ],
+          "after_partitions": [
+            "fr_bd_914837463"
+          ],
+          "before_ape": [
+            "4321A"
+          ],
+          "after_ape": [
+            "4321A"
+          ]
+        },
+        {
+          "article_source": "PALETTE LUSSIANA",
+          "before_ids": [],
+          "after_ids": [],
+          "before_partitions": [
+            "fr_bd_842785719"
+          ],
+          "after_partitions": [
+            "fr_bd_842785719"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4399C"
+          ]
+        }
+      ]
+    },
+    {
+      "metier": "boulangerie",
+      "partitions_scanned": [
+        "fr_bd_519665103",
+        "fr_bd_890233000",
+        "fr_bd_880517875",
+        "fr_bd_915197842"
+      ],
+      "files": [
+        {
+          "file": "base_produits_boulangerie_v1.json",
+          "metier": "boulangerie",
+          "items_total": 200,
+          "items_changed": 103,
+          "invoice_ids_added": 230,
+          "partitions_filled": 9,
+          "ape_filled": 24,
+          "examples": [
+            {
+              "article_source": "CANADIENNE D'OEUFS X180",
+              "before_ids": [],
+              "after_ids": [
+                "fr_bd_519665103:9d697358-768f-4d30-87bc-6bd1ee15dc92"
+              ],
+              "before_partitions": [],
+              "after_partitions": [
+                "fr_bd_519665103"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "FARINE DE POIS CHICHE",
+              "before_ids": [
+                "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f",
+                "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "Farine Pois Chiches 500g",
+              "before_ids": [
+                "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "HUILE D'OLIVE EL HORA",
+              "before_ids": [
+                "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+                "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "Huile d'olive TASSOURT 1L",
+              "before_ids": [
+                "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "base_produits_boulangerie_v1_with_accounts.json",
+          "metier": "boulangerie",
+          "items_total": 200,
+          "items_changed": 103,
+          "invoice_ids_added": 230,
+          "partitions_filled": 9,
+          "ape_filled": 24,
+          "examples": [
+            {
+              "article_source": "CANADIENNE D'OEUFS X180",
+              "before_ids": [],
+              "after_ids": [
+                "fr_bd_519665103:9d697358-768f-4d30-87bc-6bd1ee15dc92"
+              ],
+              "before_partitions": [],
+              "after_partitions": [
+                "fr_bd_519665103"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "FARINE DE POIS CHICHE",
+              "before_ids": [
+                "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f",
+                "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "Farine Pois Chiches 500g",
+              "before_ids": [
+                "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "HUILE D'OLIVE EL HORA",
+              "before_ids": [
+                "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+                "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "Huile d'olive TASSOURT 1L",
+              "before_ids": [
+                "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            }
+          ]
+        }
+      ],
+      "items_changed": 206,
+      "invoice_ids_added": 460,
+      "partitions_filled": 18,
+      "ape_filled": 48,
+      "examples": [
+        {
+          "article_source": "CANADIENNE D'OEUFS X180",
+          "before_ids": [],
+          "after_ids": [
+            "fr_bd_519665103:9d697358-768f-4d30-87bc-6bd1ee15dc92"
+          ],
+          "before_partitions": [],
+          "after_partitions": [
+            "fr_bd_519665103"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ]
+        },
+        {
+          "article_source": "FARINE DE POIS CHICHE",
+          "before_ids": [
+            "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f"
+          ],
+          "after_ids": [
+            "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f",
+            "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ]
+        },
+        {
+          "article_source": "Farine Pois Chiches 500g",
+          "before_ids": [
+            "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+          ],
+          "after_ids": [
+            "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ]
+        },
+        {
+          "article_source": "HUILE D'OLIVE EL HORA",
+          "before_ids": [
+            "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e"
+          ],
+          "after_ids": [
+            "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+            "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ]
+        },
+        {
+          "article_source": "Huile d'olive TASSOURT 1L",
+          "before_ids": [
+            "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+          ],
+          "after_ids": [
+            "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ]
+        }
+      ]
+    },
+    {
+      "metier": "boucherie",
+      "partitions_scanned": [
+        "fr_bd_837602275",
+        "fr_bd_832065999",
+        "fr_bd_828612630",
+        "fr_bd_931589238",
+        "fr_bd_519665103"
+      ],
+      "files": [
+        {
+          "file": "base_produits_boucherie_v1.json",
+          "metier": "boucherie",
+          "items_total": 212,
+          "items_changed": 205,
+          "invoice_ids_added": 477,
+          "partitions_filled": 7,
+          "ape_filled": 39,
+          "examples": [
+            {
+              "article_source": "FILM ALIMENTAIRE 45CM X 300M EN BOITE DISTRIBUTRICE AVEC LAME",
+              "before_ids": [
+                "fr_bd_519665103:2b654cc7-770b-4ca9-8013-83c3e2e8795f"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:2b654cc7-770b-4ca9-8013-83c3e2e8795f"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "CUISSE DE POULET FERMIER HALAL",
+              "before_ids": [
+                "fr_bd_519665103:36b6c940-ca33-489a-90f5-5b1fdbdf25c2",
+                "fr_bd_519665103:06b57208-10e0-4d08-899a-27ec6b8b083d",
+                "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:36b6c940-ca33-489a-90f5-5b1fdbdf25c2",
+                "fr_bd_519665103:06b57208-10e0-4d08-899a-27ec6b8b083d",
+                "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103",
+                "fr_bd_828612630",
+                "fr_bd_837602275"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103",
+                "fr_bd_828612630",
+                "fr_bd_837602275"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "BASSE SANS POITRINE DE VEAU",
+              "before_ids": [
+                "fr_bd_519665103:1fa088a2-1f5a-41b5-a5c7-277d685679c8",
+                "fr_bd_519665103:8a93439c-88b3-4da1-ac86-b5bc937f207c",
+                "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:1fa088a2-1f5a-41b5-a5c7-277d685679c8",
+                "fr_bd_519665103:8a93439c-88b3-4da1-ac86-b5bc937f207c",
+                "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103",
+                "fr_bd_828612630",
+                "fr_bd_837602275"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103",
+                "fr_bd_828612630",
+                "fr_bd_837602275"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "FILET DE POULET FERMIER HALAL",
+              "before_ids": [
+                "fr_bd_519665103:06b57208-10e0-4d08-899a-27ec6b8b083d",
+                "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d",
+                "fr_bd_519665103:3b9a3d8b-8637-4c29-9738-7c118f0dcfd9"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:06b57208-10e0-4d08-899a-27ec6b8b083d",
+                "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d",
+                "fr_bd_519665103:3b9a3d8b-8637-4c29-9738-7c118f0dcfd9"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103",
+                "fr_bd_828612630",
+                "fr_bd_837602275"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103",
+                "fr_bd_828612630",
+                "fr_bd_837602275"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "COQUELET HALAL",
+              "before_ids": [
+                "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d",
+                "fr_bd_519665103:3b9a3d8b-8637-4c29-9738-7c118f0dcfd9",
+                "fr_bd_519665103:834e8468-4ed8-419d-a6bf-e0c28b5f330b"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d",
+                "fr_bd_519665103:3b9a3d8b-8637-4c29-9738-7c118f0dcfd9",
+                "fr_bd_519665103:834e8468-4ed8-419d-a6bf-e0c28b5f330b"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103",
+                "fr_bd_828612630",
+                "fr_bd_837602275"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103",
+                "fr_bd_828612630",
+                "fr_bd_837602275"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "base_produits_boucherie_v1_with_accounts.json",
+          "metier": "boucherie",
+          "items_total": 212,
+          "items_changed": 205,
+          "invoice_ids_added": 477,
+          "partitions_filled": 7,
+          "ape_filled": 39,
+          "examples": [
+            {
+              "article_source": "FILM ALIMENTAIRE 45CM X 300M EN BOITE DISTRIBUTRICE AVEC LAME",
+              "before_ids": [
+                "fr_bd_519665103:2b654cc7-770b-4ca9-8013-83c3e2e8795f"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:2b654cc7-770b-4ca9-8013-83c3e2e8795f"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "CUISSE DE POULET FERMIER HALAL",
+              "before_ids": [
+                "fr_bd_519665103:36b6c940-ca33-489a-90f5-5b1fdbdf25c2",
+                "fr_bd_519665103:06b57208-10e0-4d08-899a-27ec6b8b083d",
+                "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:36b6c940-ca33-489a-90f5-5b1fdbdf25c2",
+                "fr_bd_519665103:06b57208-10e0-4d08-899a-27ec6b8b083d",
+                "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103",
+                "fr_bd_828612630",
+                "fr_bd_837602275"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103",
+                "fr_bd_828612630",
+                "fr_bd_837602275"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "BASSE SANS POITRINE DE VEAU",
+              "before_ids": [
+                "fr_bd_519665103:1fa088a2-1f5a-41b5-a5c7-277d685679c8",
+                "fr_bd_519665103:8a93439c-88b3-4da1-ac86-b5bc937f207c",
+                "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:1fa088a2-1f5a-41b5-a5c7-277d685679c8",
+                "fr_bd_519665103:8a93439c-88b3-4da1-ac86-b5bc937f207c",
+                "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103",
+                "fr_bd_828612630",
+                "fr_bd_837602275"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103",
+                "fr_bd_828612630",
+                "fr_bd_837602275"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "FILET DE POULET FERMIER HALAL",
+              "before_ids": [
+                "fr_bd_519665103:06b57208-10e0-4d08-899a-27ec6b8b083d",
+                "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d",
+                "fr_bd_519665103:3b9a3d8b-8637-4c29-9738-7c118f0dcfd9"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:06b57208-10e0-4d08-899a-27ec6b8b083d",
+                "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d",
+                "fr_bd_519665103:3b9a3d8b-8637-4c29-9738-7c118f0dcfd9"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103",
+                "fr_bd_828612630",
+                "fr_bd_837602275"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103",
+                "fr_bd_828612630",
+                "fr_bd_837602275"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "COQUELET HALAL",
+              "before_ids": [
+                "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d",
+                "fr_bd_519665103:3b9a3d8b-8637-4c29-9738-7c118f0dcfd9",
+                "fr_bd_519665103:834e8468-4ed8-419d-a6bf-e0c28b5f330b"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d",
+                "fr_bd_519665103:3b9a3d8b-8637-4c29-9738-7c118f0dcfd9",
+                "fr_bd_519665103:834e8468-4ed8-419d-a6bf-e0c28b5f330b"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103",
+                "fr_bd_828612630",
+                "fr_bd_837602275"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103",
+                "fr_bd_828612630",
+                "fr_bd_837602275"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            }
+          ]
+        }
+      ],
+      "items_changed": 410,
+      "invoice_ids_added": 954,
+      "partitions_filled": 14,
+      "ape_filled": 78,
+      "examples": [
+        {
+          "article_source": "FILM ALIMENTAIRE 45CM X 300M EN BOITE DISTRIBUTRICE AVEC LAME",
+          "before_ids": [
+            "fr_bd_519665103:2b654cc7-770b-4ca9-8013-83c3e2e8795f"
+          ],
+          "after_ids": [
+            "fr_bd_519665103:2b654cc7-770b-4ca9-8013-83c3e2e8795f"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ]
+        },
+        {
+          "article_source": "CUISSE DE POULET FERMIER HALAL",
+          "before_ids": [
+            "fr_bd_519665103:36b6c940-ca33-489a-90f5-5b1fdbdf25c2",
+            "fr_bd_519665103:06b57208-10e0-4d08-899a-27ec6b8b083d",
+            "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d"
+          ],
+          "after_ids": [
+            "fr_bd_519665103:36b6c940-ca33-489a-90f5-5b1fdbdf25c2",
+            "fr_bd_519665103:06b57208-10e0-4d08-899a-27ec6b8b083d",
+            "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ]
+        },
+        {
+          "article_source": "BASSE SANS POITRINE DE VEAU",
+          "before_ids": [
+            "fr_bd_519665103:1fa088a2-1f5a-41b5-a5c7-277d685679c8",
+            "fr_bd_519665103:8a93439c-88b3-4da1-ac86-b5bc937f207c",
+            "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385"
+          ],
+          "after_ids": [
+            "fr_bd_519665103:1fa088a2-1f5a-41b5-a5c7-277d685679c8",
+            "fr_bd_519665103:8a93439c-88b3-4da1-ac86-b5bc937f207c",
+            "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ]
+        },
+        {
+          "article_source": "FILET DE POULET FERMIER HALAL",
+          "before_ids": [
+            "fr_bd_519665103:06b57208-10e0-4d08-899a-27ec6b8b083d",
+            "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d",
+            "fr_bd_519665103:3b9a3d8b-8637-4c29-9738-7c118f0dcfd9"
+          ],
+          "after_ids": [
+            "fr_bd_519665103:06b57208-10e0-4d08-899a-27ec6b8b083d",
+            "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d",
+            "fr_bd_519665103:3b9a3d8b-8637-4c29-9738-7c118f0dcfd9"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ]
+        },
+        {
+          "article_source": "COQUELET HALAL",
+          "before_ids": [
+            "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d",
+            "fr_bd_519665103:3b9a3d8b-8637-4c29-9738-7c118f0dcfd9",
+            "fr_bd_519665103:834e8468-4ed8-419d-a6bf-e0c28b5f330b"
+          ],
+          "after_ids": [
+            "fr_bd_519665103:13d284e3-b4bb-41a3-9c12-0dcd6b5dba4d",
+            "fr_bd_519665103:3b9a3d8b-8637-4c29-9738-7c118f0dcfd9",
+            "fr_bd_519665103:834e8468-4ed8-419d-a6bf-e0c28b5f330b"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103",
+            "fr_bd_828612630",
+            "fr_bd_837602275"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ]
+        }
+      ]
+    },
+    {
+      "metier": "restaurant",
+      "partitions_scanned": [
+        "fr_bd_891370595",
+        "fr_bd_952061570",
+        "fr_bd_929728467",
+        "fr_bd_519665103"
+      ],
+      "files": [
+        {
+          "file": "base_produits_restaurant_v1.json",
+          "metier": "restaurant",
+          "items_total": 221,
+          "items_changed": 145,
+          "invoice_ids_added": 290,
+          "partitions_filled": 1,
+          "ape_filled": 44,
+          "examples": [
+            {
+              "article_source": "FILM ALIMENTAIRE 45CM X 300M EN BOITE DISTRIBUTRICE AVEC LAME",
+              "before_ids": [
+                "fr_bd_519665103:2b654cc7-770b-4ca9-8013-83c3e2e8795f"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:2b654cc7-770b-4ca9-8013-83c3e2e8795f"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "HARISSA 1/2",
+              "before_ids": [
+                "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+                "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618",
+                "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+                "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618",
+                "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "HARISSA 1/6",
+              "before_ids": [
+                "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f",
+                "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4",
+                "fr_bd_519665103:64cfb123-6244-4010-9c48-8a3e3d1d5d0b"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f",
+                "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4",
+                "fr_bd_519665103:64cfb123-6244-4010-9c48-8a3e3d1d5d0b"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "HARISSA TUBE 70g",
+              "before_ids": [
+                "fr_bd_519665103:75334608-dc1c-4605-bb88-1b7ca0b5b8fd",
+                "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+                "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:75334608-dc1c-4605-bb88-1b7ca0b5b8fd",
+                "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+                "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "OLIVE VERTE DENOYAUTEE",
+              "before_ids": [
+                "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+                "fr_bd_519665103:e4345936-ed42-4d14-85d1-69bd52325db9",
+                "fr_bd_519665103:65afe443-ded1-4f32-a87e-3e226e82b376"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+                "fr_bd_519665103:e4345936-ed42-4d14-85d1-69bd52325db9",
+                "fr_bd_519665103:65afe443-ded1-4f32-a87e-3e226e82b376"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "base_produits_restaurant_v1_with_accounts.json",
+          "metier": "restaurant",
+          "items_total": 221,
+          "items_changed": 145,
+          "invoice_ids_added": 290,
+          "partitions_filled": 1,
+          "ape_filled": 44,
+          "examples": [
+            {
+              "article_source": "FILM ALIMENTAIRE 45CM X 300M EN BOITE DISTRIBUTRICE AVEC LAME",
+              "before_ids": [
+                "fr_bd_519665103:2b654cc7-770b-4ca9-8013-83c3e2e8795f"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:2b654cc7-770b-4ca9-8013-83c3e2e8795f"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "HARISSA 1/2",
+              "before_ids": [
+                "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+                "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618",
+                "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+                "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618",
+                "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "HARISSA 1/6",
+              "before_ids": [
+                "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f",
+                "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4",
+                "fr_bd_519665103:64cfb123-6244-4010-9c48-8a3e3d1d5d0b"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f",
+                "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4",
+                "fr_bd_519665103:64cfb123-6244-4010-9c48-8a3e3d1d5d0b"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "HARISSA TUBE 70g",
+              "before_ids": [
+                "fr_bd_519665103:75334608-dc1c-4605-bb88-1b7ca0b5b8fd",
+                "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+                "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:75334608-dc1c-4605-bb88-1b7ca0b5b8fd",
+                "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+                "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            },
+            {
+              "article_source": "OLIVE VERTE DENOYAUTEE",
+              "before_ids": [
+                "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+                "fr_bd_519665103:e4345936-ed42-4d14-85d1-69bd52325db9",
+                "fr_bd_519665103:65afe443-ded1-4f32-a87e-3e226e82b376"
+              ],
+              "after_ids": [
+                "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+                "fr_bd_519665103:e4345936-ed42-4d14-85d1-69bd52325db9",
+                "fr_bd_519665103:65afe443-ded1-4f32-a87e-3e226e82b376"
+              ],
+              "before_partitions": [
+                "fr_bd_519665103"
+              ],
+              "after_partitions": [
+                "fr_bd_519665103"
+              ],
+              "before_ape": [],
+              "after_ape": [
+                "4722Z"
+              ]
+            }
+          ]
+        }
+      ],
+      "items_changed": 290,
+      "invoice_ids_added": 580,
+      "partitions_filled": 2,
+      "ape_filled": 88,
+      "examples": [
+        {
+          "article_source": "FILM ALIMENTAIRE 45CM X 300M EN BOITE DISTRIBUTRICE AVEC LAME",
+          "before_ids": [
+            "fr_bd_519665103:2b654cc7-770b-4ca9-8013-83c3e2e8795f"
+          ],
+          "after_ids": [
+            "fr_bd_519665103:2b654cc7-770b-4ca9-8013-83c3e2e8795f"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ]
+        },
+        {
+          "article_source": "HARISSA 1/2",
+          "before_ids": [
+            "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+            "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618",
+            "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4"
+          ],
+          "after_ids": [
+            "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+            "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618",
+            "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ]
+        },
+        {
+          "article_source": "HARISSA 1/6",
+          "before_ids": [
+            "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f",
+            "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4",
+            "fr_bd_519665103:64cfb123-6244-4010-9c48-8a3e3d1d5d0b"
+          ],
+          "after_ids": [
+            "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f",
+            "fr_bd_519665103:5e30287f-8daa-4473-a379-15194a0551d4",
+            "fr_bd_519665103:64cfb123-6244-4010-9c48-8a3e3d1d5d0b"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ]
+        },
+        {
+          "article_source": "HARISSA TUBE 70g",
+          "before_ids": [
+            "fr_bd_519665103:75334608-dc1c-4605-bb88-1b7ca0b5b8fd",
+            "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+            "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+          ],
+          "after_ids": [
+            "fr_bd_519665103:75334608-dc1c-4605-bb88-1b7ca0b5b8fd",
+            "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+            "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ]
+        },
+        {
+          "article_source": "OLIVE VERTE DENOYAUTEE",
+          "before_ids": [
+            "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+            "fr_bd_519665103:e4345936-ed42-4d14-85d1-69bd52325db9",
+            "fr_bd_519665103:65afe443-ded1-4f32-a87e-3e226e82b376"
+          ],
+          "after_ids": [
+            "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e",
+            "fr_bd_519665103:e4345936-ed42-4d14-85d1-69bd52325db9",
+            "fr_bd_519665103:65afe443-ded1-4f32-a87e-3e226e82b376"
+          ],
+          "before_partitions": [
+            "fr_bd_519665103"
+          ],
+          "after_partitions": [
+            "fr_bd_519665103"
+          ],
+          "before_ape": [],
+          "after_ape": [
+            "4722Z"
+          ]
+        }
+      ]
+    }
+  ]
+}

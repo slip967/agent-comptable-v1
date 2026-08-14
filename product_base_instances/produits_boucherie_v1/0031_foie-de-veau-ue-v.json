@@ -1,0 +1,145 @@
+{
+  "_id": "fr_bd_519665103:product-instance:produits_boucherie_v1:45fa60a8fbe2",
+  "p": "product_base_instance",
+  "data": {
+    "collection": "ProductBaseInstance",
+    "type": "ProductArticle",
+    "sub_type": "boucherie"
+  },
+  "instance_kind": "product_article_source",
+  "profile_id": "produits_boucherie_v1",
+  "metier": "boucherie",
+  "client_siren": "519665103",
+  "partition_prefix": "fr_bd_519665103",
+  "source_file": "base_produits_boucherie_v1.json",
+  "source_profile_meta": {
+    "profile_id": "produits_boucherie_v1",
+    "metier": "boucherie",
+    "client_siren": "519665103",
+    "partition_prefix": "fr_bd_519665103",
+    "version": "v1",
+    "status": "draft",
+    "items_count": 40,
+    "cleanup_note": "Nettoyage manuel: suppression charges_externes en base metier + dedoublonnage produits.",
+    "source_invoice_ids_note": "Jusqu a 30 invoice_id source par article_source depuis invoice_form.",
+    "accounts_enrichment": {
+      "reference_file": "v1_519665103_reference_base_exploitation_v1.json",
+      "matched_items": 2,
+      "unmatched_items": 0,
+      "already_present": 0
+    },
+    "source_invoice_year_filter": "2024",
+    "accounts_alignment_from_abt3fec2": {
+      "db": "abt3fec2",
+      "selector": "p=entry + invoice exists + _id not contains generated",
+      "changed_items": 0,
+      "unchanged_items": 0,
+      "no_signal_items": 2,
+      "min_confidence": 0.55
+    },
+    "invoice_source_enrichment": {
+      "db_factures": "abt3",
+      "match_rule": "invoice_form.line_items.description == article_source (normalise)",
+      "year_filter": "none",
+      "changed_items": 1,
+      "added_invoice_ids_total": 5
+    },
+    "boucherie_expansion_from_invoice_form": {
+      "added_items": 38,
+      "target_total": 40,
+      "source": "invoice_form",
+      "rule": "scope=boucherie template + account startswith 60 + lexical quality filters"
+    },
+    "keywords_cleanup_single_char_and_zero_v1": {
+      "removed_single_char_keywords": 1,
+      "fixed_ocr_zero_to_o_keywords": 0,
+      "deduplicated_keywords": 0,
+      "items_touched": 1,
+      "total_keywords_before": 147,
+      "total_keywords_after": 146,
+      "rules": [
+        "remove keywords with length <= 1",
+        "replace 0 with o only when 0 is adjacent to letters"
+      ]
+    },
+    "text_normalization_v2": {
+      "updated_at": "2026-04-13T17:20:47.388289Z",
+      "rows_touched": 0,
+      "article_source_updated": 0,
+      "article_canonique_updated": 0,
+      "mots_cles_updated": 0,
+      "rule": "remove special chars (including % * +), fix OCR 0/O in words, normalize canon + keywords"
+    },
+    "account_normalization_v1": {
+      "rule": "trim trailing zeros for padded compte_comptable values when length > 3",
+      "changed_items": 1,
+      "normalized_pairs": {
+        "old": "606200",
+        "new": "6062",
+        "count": 1
+      }
+    },
+    "account_verification_v1": {
+      "class_6_only": true,
+      "suspicious_accounts": []
+    }
+  },
+  "item_index": 31,
+  "article_source": "FOIE DE VEAU UE (V)",
+  "article_source_normalized": "foie de veau ue v",
+  "article_canonique": "foie de veau ue v",
+  "categorie": "exploitation_metier",
+  "sous_categorie": "matiere_premiere",
+  "compte_comptable": "6011",
+  "tva_rate": 5.5,
+  "mots_cles": [
+    "foie",
+    "veau",
+    "ue"
+  ],
+  "source_invoice_ids": [
+    "fr_bd_519665103:75741776-8a87-47e4-9465-0405f1c5e033",
+    "fr_bd_519665103:caa3708c-4816-4c6e-b820-2b1740078108",
+    "fr_bd_519665103:d076d24b-496a-403c-8ec9-db2eaf9a2d47",
+    "fr_bd_519665103:5d02253d-a6e5-4c47-b448-e29e291259a3",
+    "fr_bd_519665103:84535d04-3417-430f-ad97-7a9ad22ced58",
+    "fr_bd_519665103:c143105b-703c-4a72-8550-09ad4b7400f2",
+    "fr_bd_519665103:5677cc5c-14f6-4aa3-9307-11197f0c9b4e",
+    "fr_bd_519665103:1fe83737-fbad-4902-82d1-8d3f27eb3613",
+    "fr_bd_519665103:eaeb5df8-dc33-4f1f-b7c3-40dba939c808",
+    "fr_bd_519665103:7930e8fd-9963-4412-a852-5fcff5f88e77"
+  ],
+  "payload": {
+    "article_source": "FOIE DE VEAU UE (V)",
+    "article_canonique": "foie de veau ue v",
+    "categorie": "exploitation_metier",
+    "sous_categorie": "matiere_premiere",
+    "tva_rate": 5.5,
+    "mots_cles": [
+      "foie",
+      "veau",
+      "ue"
+    ],
+    "fournisseur_type": "fournisseur alimentaire",
+    "ape_context": [],
+    "notes": "Pre-rempli auto depuis invoice_form boucherie (occurrences=45)",
+    "source_invoice_ids": [
+      "fr_bd_519665103:75741776-8a87-47e4-9465-0405f1c5e033",
+      "fr_bd_519665103:caa3708c-4816-4c6e-b820-2b1740078108",
+      "fr_bd_519665103:d076d24b-496a-403c-8ec9-db2eaf9a2d47",
+      "fr_bd_519665103:5d02253d-a6e5-4c47-b448-e29e291259a3",
+      "fr_bd_519665103:84535d04-3417-430f-ad97-7a9ad22ced58",
+      "fr_bd_519665103:c143105b-703c-4a72-8550-09ad4b7400f2",
+      "fr_bd_519665103:5677cc5c-14f6-4aa3-9307-11197f0c9b4e",
+      "fr_bd_519665103:1fe83737-fbad-4902-82d1-8d3f27eb3613",
+      "fr_bd_519665103:eaeb5df8-dc33-4f1f-b7c3-40dba939c808",
+      "fr_bd_519665103:7930e8fd-9963-4412-a852-5fcff5f88e77"
+    ],
+    "compte_comptable": "6011",
+    "compte_comptable_source": "invoice_form_reference_v1",
+    "compte_comptable_match_score": 295,
+    "compte_comptable_match_reason": "from_invoice_form_boucherie_scope"
+  },
+  "created_at": "2026-04-21T15:42:42.618988Z",
+  "updated_at": "2026-04-21T15:42:42.619005Z"
+}

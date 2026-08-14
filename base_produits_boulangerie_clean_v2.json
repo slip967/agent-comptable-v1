@@ -1,0 +1,4983 @@
+{
+  "meta": {
+    "profile_id": "produits_boulangerie_v1",
+    "metier": "boulangerie",
+    "client_siren": "519665103",
+    "partition_prefix": "fr_bd_519665103",
+    "version": "v1",
+    "status": "draft",
+    "source_note": "Pre-rempli automatiquement depuis les references v1_519665103; validation metier requise.",
+    "items_count": 200,
+    "cleanup_note": "Nettoyage manuel: suppression charges_externes en base metier + dedoublonnage produits.",
+    "source_invoice_ids_note": "Jusqu a 3 invoice_id source par article_source depuis invoice_form.",
+    "accounts_enrichment": {
+      "reference_file": "v1_519665103_reference_base_exploitation_v1.json",
+      "matched_items": 25,
+      "unmatched_items": 0,
+      "already_present": 0
+    },
+    "source_invoice_year_filter": "2024",
+    "accounts_alignment_from_abt3fec2": {
+      "db": "abt3fec2",
+      "selector": "p=entry + invoice exists + _id not contains generated",
+      "changed_items": 5,
+      "unchanged_items": 0,
+      "no_signal_items": 20,
+      "min_confidence": 0.55
+    },
+    "keywords_cleanup_single_char_and_zero_v1": {
+      "removed_single_char_keywords": 0,
+      "fixed_ocr_zero_to_o_keywords": 0,
+      "deduplicated_keywords": 0,
+      "items_touched": 0,
+      "total_keywords_before": 63,
+      "total_keywords_after": 63,
+      "rules": [
+        "remove keywords with length <= 1",
+        "replace 0 with o only when 0 is adjacent to letters"
+      ]
+    },
+    "text_normalization_v2": {
+      "updated_at": "2026-04-13T17:20:47.394404Z",
+      "rows_touched": 0,
+      "article_source_updated": 0,
+      "article_canonique_updated": 0,
+      "mots_cles_updated": 0,
+      "rule": "remove special chars (including % * +), fix OCR 0/O in words, normalize canon + keywords"
+    },
+    "account_normalization_v1": {
+      "rule": "trim trailing zeros for padded compte_comptable values when length > 3",
+      "changed_items": 9,
+      "normalized_pairs": [
+        {
+          "old": "60610000",
+          "new": "6061",
+          "count": 8
+        },
+        {
+          "old": "606100",
+          "new": "6061",
+          "count": 1
+        }
+      ]
+    },
+    "account_verification_v1": {
+      "class_6_only": true,
+      "suspicious_accounts": []
+    },
+    "triage_manual_integration_v1": {
+      "updated_at": "2026-04-28T16:38:13.571403Z",
+      "source_triage": "boulangerie_top_50_triage.md",
+      "added_items": 23,
+      "skipped_existing": 0
+    },
+    "triage_manual_tva_refresh_v1": {
+      "updated_at": "2026-04-28T16:39:58.079807Z",
+      "rule": "fix default beverage heuristic so token eau does not match agneau/veau",
+      "changed_items": 1
+    },
+    "auto_filtered_second_wave_v1": {
+      "updated_at": "2026-04-30T18:11:52.792664Z",
+      "added_items": 35,
+      "skipped_existing": 0,
+      "selection_mode": "auto_filtered_second_wave"
+    },
+    "manual_fourth_wave_v1": {
+      "updated_at": "2026-05-05T09:08:21.507037Z",
+      "added_items": 27,
+      "skipped_existing": 0,
+      "added_labels": [
+        "BEIGNET LONG MASCOT NATURE 90G/30 502558",
+        "MINI BEIGNET CACAO/NOISETTE 21G *",
+        "MINI BEIGNET CHOCO BLANC 21G *",
+        "MINI BEIGNET CHOC NOISET.25G /140 520019",
+        "BEIGNET MASCOTTE NATURE",
+        "BEIGNET MASCOTTE NATURE LONG",
+        "SUCRE GRAIN GROS N°6 10KG C25",
+        "BEURRE 1/2 SEL PAYSAN BRETON",
+        "AROME PATE PISTACHE COLORE",
+        "BEIGNET LONG NATURE FAI SURG 30X90G",
+        "BRISURE CREPE PUR BEURRE 2.5KG (pailleté feuilletine)",
+        "CREME 35% LESCURE 1L P/6",
+        "EMMENTAL TRANCHETTE 5X15CM BQ 1KG",
+        "FROMAGE CREME TARTIMALIN BQ 1KG",
+        "LAIT UHT 1/2 ECREME FR BRIQ PACK 12X1L",
+        "MINI BEIGNET CARAMEL FAI 70X25G",
+        "MINI BEIGNET CHOC NOISET FAI SURG 70X25G",
+        "PATE DE SPECULOS 1.6KG LOTUS",
+        "BEURRE CUBE 25 KG",
+        "OEUF LIQ JAUNE BD 2KG ATLANTIC",
+        "POUDRE DE LAIT ENTIER INST. 28% X 25KG",
+        "RAPE AUX 3 FROMAGES,200G",
+        "BISCOFF PATE LOTUS POT 1.6KG",
+        "CREME UHT CAMPINA 35%MG 12X1L",
+        "FROMAGE BLC 20% 5KG MC",
+        "MAXI PAIN RAISINS BEURRE 140G *",
+        "BEURRE CUBE UE 25 KG"
+      ]
+    },
+    "manual_sixth_wave_v1": {
+      "updated_at": "2026-05-05T09:51:32.403583Z",
+      "added_items": 10,
+      "skipped_existing": 0,
+      "added_labels": [
+        "SPECULOS BRISURE MOULU 750 gr 64695",
+        "GD SAC REGROUP PAIN 39X20X76CM",
+        "LAIT FERMENTE \"LUXLAIT \" 8 X 1L",
+        "PAIN SUEDOIS ROND 55 GR X 72 UVI1",
+        "PATE PISTACHE COLOREE MANE 1KG GR",
+        "250 SAC PAIN VERT 16X10X35",
+        "CROUSTI CHOC LAIT NOIR BLC DGF POT 450G",
+        "MINI BEIGNET FOURRAGE SAVEUR FRAISE 21G *",
+        "SAC PAIN TR BEIG BAGO PUR 230/40X420X200",
+        "SAC PAIN TR JAUN BAGO PUR 120/50X350X200"
+      ]
+    },
+    "a_valider_count": 0,
+    "total_entries_count": 200,
+    "raise_to_200_boulangerie_v1": {
+      "updated_at": "2026-05-05T11:15:09.707350Z",
+      "added_items": 45,
+      "added_a_valider": 0,
+      "added_item_labels": [
+        "FLOUP LAIT CHOCOLAT (20 Piéces)",
+        "LAIT CONC SUCRE 397G NESTLE",
+        "LAIT CONC SUCRE TUBE 300G REG",
+        "LAIT DEMI ECREME VIVA (6x1L)",
+        "LAIT DEMI ECREME BOURG FLEURI (6x1L)",
+        "TRESOR CHOCOLAT/NOISETTES 1KG",
+        "TRESOR CHOCOLAT/NOISETTES 410G",
+        "10 PAIN LAIT LC 350G ROCH",
+        "10 PAIN LAIT LC 350G ROCHC",
+        "8 PAIN CHOCOLAT LC 360G ROCH",
+        "8 PAIN CHOCOLAT LC 36OG ROCH",
+        "BEURRE OEUF ET UF Total",
+        "LAIT CONCENTRE NESTLE SUCREE12x397g)",
+        "LAIT CONCENTRE Non Sucré BONNET ROUGE 410ML (X24) HOLLANDE",
+        "LAIT CONCENTRE Non Sucré PEAK 170G (X24) HOLLANDE",
+        "PAIN CHOCOLAT LC 360G ROCH",
+        "PAIN LAIT LC 350G ROCH C",
+        "PERLE DE LAIT VANILLE 8X125G",
+        "SUCRE SEMOULE D 1KGX10",
+        "SUCRE VANILLE ALSA X14",
+        "250ml Creme Beauté",
+        "500 ML Créme Citron",
+        "AEROSOL SUCREE 25OML WHIPPY",
+        "ARO FARINE BLE T 55 1KG",
+        "BEURRE DX PLQ. 250G ROCHAMB",
+        "BEURRE DX PLQ.250GX4 PRESIDENT",
+        "BEURRE DX TENDRE BQ 250G E V",
+        "BEURRE DX TENDRE BQ 25OG E V",
+        "BUCHETTE SUCRE 4GX1000 GILBERT",
+        "BUCHETTE SUCRE 4GX1000 RIOBA",
+        "BUCHETTE SUCRE 4GX1000 RIOBAX",
+        "Bonbons Crocodiles sucrés 90gr FINI",
+        "Bonbons Peche sucré 90gr FINI",
+        "CANNEA SUCRE REPUBLIQUE DOMINICAINE",
+        "CHOC MILKA LAIT TB 100GX5",
+        "CHOC MILKA LAIT TB 100GX5 X",
+        "CHOC MILKA LAIT TB 10OGX5",
+        "CHOC MILKA LAIT TB 1OOGX5",
+        "CHOC MILKA LAIT TB 1OOGX5 X",
+        "CHOCO MILKA LAIT NOIS 100GX4",
+        "CHOCO MILKA LAIT NOIS 100GX42",
+        "CHOCO MILKA LAIT NOIS 10OGX4",
+        "CHOCO MILKA LAIT NOIS 10OGX42",
+        "CHOCO MILKA LAIT NOlS 1OOGX4",
+        "CREME DESSERT 4 125G VANIL E V"
+      ],
+      "added_a_valider_labels": []
+    },
+    "article_source_cleanup_v1": {
+      "updated_at": "2026-05-05T11:31:51.211051Z",
+      "changed_count": 0,
+      "collision_count": 0
+    },
+    "cleanup_auto_v2": {
+      "updated_at": "2026-05-05T17:13:44.787893Z",
+      "source_file": "base_produits_boulangerie_v1.json",
+      "kind": "product",
+      "metier": "boulangerie",
+      "items_before": 200,
+      "a_valider_before": 0,
+      "account_normalized": 1,
+      "canonical_rebuilt": 0,
+      "keywords_rebuilt": 100,
+      "auto_moved_to_charges": 0,
+      "charge_fields_refreshed": 0,
+      "items_after": 200,
+      "a_valider_after": 0,
+      "duplicates_merged": 0,
+      "manual_review_count": 0
+    }
+  },
+  "items": [
+    {
+      "article_source": "CANADIENNE D'OEUFS X180",
+      "article_canonique": "canadienne d oeufs x180",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "canadienne",
+        "oeufs",
+        "x180"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 311,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "FARINE DE POIS CHICHE",
+      "article_canonique": "farine de pois chiche",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "farine",
+        "pois",
+        "chiche"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [
+        "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 311,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus",
+      "compte_comptable_validation_status": "valide_auto_ok_2026-04-09",
+      "compte_comptable_validation_note": "Ancien statut moteur: validation_humaine (top_candidates_too_close). Compte conserve."
+    },
+    {
+      "article_source": "Farine Pois Chiches 500g",
+      "article_canonique": "farine pois chiches 500g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "farine",
+        "pois",
+        "chiches",
+        "500g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [
+        "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 311,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus",
+      "compte_comptable_validation_status": "valide_auto_ok_2026-04-09",
+      "compte_comptable_validation_note": "Ancien statut moteur: validation_humaine (top_candidates_too_close). Compte conserve."
+    },
+    {
+      "article_source": "HUILE D'OLIVE EL HORA",
+      "article_canonique": "huile d olive el hora",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "huile",
+        "olive",
+        "el",
+        "hora"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [
+        "fr_bd_519665103:cbe599ff-d66e-43f4-adcb-ac7ef27afa1e"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 311,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "Huile d'olive TASSOURT 1L",
+      "article_canonique": "huile d olive tassourt 1l",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "huile",
+        "olive",
+        "tassourt",
+        "1l"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [
+        "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 311,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "HUILE TOURNESOL 1L x15 MAUREL",
+      "article_canonique": "huile tournesol 1l x15 maurel",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "huile",
+        "tournesol",
+        "1l",
+        "x15",
+        "maurel"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [
+        "fr_bd_519665103:07bd8534-6098-40a4-8bdf-d90d05a04de1",
+        "fr_bd_519665103:18253df1-7756-45e6-a507-e571c6d48cde"
+      ],
+      "compte_comptable": "607",
+      "compte_comptable_source": "abt3fec2_entry_invoice_block_v1",
+      "compte_comptable_match_score": 100,
+      "compte_comptable_match_reason": "votes=607:1; confidence=1.00; invoices=fr_bd_519665103:07bd8534-6098-40a4-8bdf-d90d05a04de1",
+      "compte_comptable_validation_status": "valide_auto_ok_2026-04-09",
+      "compte_comptable_validation_note": "Ancien statut moteur: validation_humaine (top_candidates_too_close). Compte conserve."
+    },
+    {
+      "article_source": "HUILE TOURNESOL 25L MAUREL BIDON",
+      "article_canonique": "huile tournesol 25l maurel bidon",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "huile",
+        "tournesol",
+        "25l",
+        "maurel",
+        "bidon"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 311,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus",
+      "compte_comptable_validation_status": "valide_auto_ok_2026-04-09",
+      "compte_comptable_validation_note": "Ancien statut moteur: validation_humaine (top_candidates_too_close). Compte conserve."
+    },
+    {
+      "article_source": "LAIT FERMENTE CHERGUI 10 X 1L",
+      "article_canonique": "lait fermente chergui 10 x 1l",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "lait",
+        "fermente",
+        "chergui",
+        "1l"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [
+        "fr_bd_519665103:196cca26-bc04-43f9-b988-6bdad87fbc56",
+        "fr_bd_519665103:4dfa1f0d-13be-4459-8303-ef42102d4ad3",
+        "fr_bd_519665103:bcb12536-25b0-47ae-b440-1ad4abeb6c2a"
+      ],
+      "compte_comptable": "607",
+      "compte_comptable_source": "abt3fec2_entry_invoice_block_v1",
+      "compte_comptable_match_score": 100,
+      "compte_comptable_match_reason": "votes=607:2; confidence=1.00; invoices=fr_bd_519665103:196cca26-bc04-43f9-b988-6bdad87fbc56 | fr_bd_519665103:4dfa1f0d-13be-4459-8303-ef42102d4ad3"
+    },
+    {
+      "article_source": "LAIT FERMENTE LUXLAIT 8X1L",
+      "article_canonique": "lait fermente luxlait 8x1l",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "lait",
+        "fermente",
+        "luxlait",
+        "8x1l"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [
+        "fr_bd_519665103:18253df1-7756-45e6-a507-e571c6d48cde"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 311,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "LAIT FERMENTEE LUXLAIT X8",
+      "article_canonique": "lait fermentee luxlait x8",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "lait",
+        "fermentee",
+        "luxlait",
+        "x8"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 311,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "Levure Saf 125g",
+      "article_canonique": "levure saf 125g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "levure",
+        "saf",
+        "125g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [
+        "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 311,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "OEUFS DE POULE BRUN - MOYEN",
+      "article_canonique": "oeufs de poule brun moyen",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "oeufs",
+        "poule",
+        "brun",
+        "moyen"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 311,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "OEUFS FILM BLANC MOYEN FR X360",
+      "article_canonique": "oeufs film blanc moyen fr x360",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "oeufs",
+        "film",
+        "blanc",
+        "moyen",
+        "fr",
+        "x360"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 311,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "OEUFS FILM TEINTE MOYEN FR X300",
+      "article_canonique": "oeufs film teinte moyen fr x300",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "oeufs",
+        "film",
+        "teinte",
+        "moyen",
+        "fr",
+        "x300"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 311,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "OEUFS MOYENS BLANCS 10 30",
+      "article_canonique": "oeufs moyens blancs 10 30",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "oeufs",
+        "moyens",
+        "blancs"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [
+        "fr_bd_519665103:196cca26-bc04-43f9-b988-6bdad87fbc56"
+      ],
+      "compte_comptable": "607",
+      "compte_comptable_source": "abt3fec2_entry_invoice_block_v1",
+      "compte_comptable_match_score": 100,
+      "compte_comptable_match_reason": "votes=607:1; confidence=1.00; invoices=fr_bd_519665103:196cca26-bc04-43f9-b988-6bdad87fbc56"
+    },
+    {
+      "article_source": "OEUFS X30",
+      "article_canonique": "oeufs x30",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "oeufs",
+        "x30"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [
+        "fr_bd_519665103:9f8cf7ab-4237-4cf1-b096-9c94e27ed18a"
+      ],
+      "compte_comptable": "607",
+      "compte_comptable_source": "abt3fec2_entry_invoice_block_v1",
+      "compte_comptable_match_score": 100,
+      "compte_comptable_match_reason": "votes=607:1; confidence=1.00; invoices=fr_bd_519665103:9f8cf7ab-4237-4cf1-b096-9c94e27ed18a"
+    },
+    {
+      "article_source": "PATE A TARTINER CREME NOISETTE NELLA 700GR X 6",
+      "article_canonique": "pate a tartiner creme noisette nella 700gr x 6",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "pate",
+        "tartiner",
+        "creme",
+        "noisette",
+        "nella",
+        "700gr"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 251,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "SAF LEVURE 72",
+      "article_canonique": "saf levure 72",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "saf",
+        "levure"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 251,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "SEL",
+      "article_canonique": "sel",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "sel"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 361,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, article_canonique_exact, tva_match, category_match, occurrences_bonus",
+      "compte_comptable_validation_status": "valide_auto_ok_2026-04-09",
+      "compte_comptable_validation_note": "Ancien statut moteur: validation_humaine (top_candidates_too_close). Compte conserve."
+    },
+    {
+      "article_source": "SEL FIN BTE VERSEUSE 750GR X10",
+      "article_canonique": "sel fin bte verseuse 750gr x10",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "sel",
+        "fin",
+        "bte",
+        "verseuse",
+        "750gr",
+        "x10"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [
+        "fr_bd_519665103:07bd8534-6098-40a4-8bdf-d90d05a04de1"
+      ],
+      "compte_comptable": "607",
+      "compte_comptable_source": "abt3fec2_entry_invoice_block_v1",
+      "compte_comptable_match_score": 100,
+      "compte_comptable_match_reason": "votes=607:1; confidence=1.00; invoices=fr_bd_519665103:07bd8534-6098-40a4-8bdf-d90d05a04de1"
+    },
+    {
+      "article_source": "Sel fin WALIMA 500g",
+      "article_canonique": "sel fin walima 500g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "sel",
+        "fin",
+        "walima",
+        "500g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [
+        "fr_bd_519665103:c0316ef0-e388-42e0-9b06-b9db2e524618"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 311,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "Semoule d'orge Fine Trad 1kg",
+      "article_canonique": "semoule d orge fine trad 1kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 0.0,
+      "mots_cles": [
+        "semoule",
+        "orge",
+        "fine",
+        "trad",
+        "1kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [
+        "fr_bd_519665103:b11ea9c4-42a6-4c52-82f2-a7d697f10bd2",
+        "fr_bd_519665103:dafe530c-f5f1-4739-95d5-544c4a2274ad",
+        "fr_bd_519665103:f11739e3-377a-4fe4-8dde-5597a9b0103a"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 553,
+      "compte_comptable_match_reason": "invoice_id_overlap=3, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "Semoule d'orge Grosse Trad 1kg",
+      "article_canonique": "semoule d orge grosse trad 1kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 0.0,
+      "mots_cles": [
+        "semoule",
+        "orge",
+        "grosse",
+        "trad",
+        "1kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [
+        "fr_bd_519665103:b11ea9c4-42a6-4c52-82f2-a7d697f10bd2",
+        "fr_bd_519665103:dafe530c-f5f1-4739-95d5-544c4a2274ad"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 432,
+      "compte_comptable_match_reason": "invoice_id_overlap=2, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "Semoule de blé fine 1kg",
+      "article_canonique": "semoule de ble fine 1kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 0.0,
+      "mots_cles": [
+        "semoule",
+        "ble",
+        "fine",
+        "1kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [
+        "fr_bd_519665103:dafe530c-f5f1-4739-95d5-544c4a2274ad"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 311,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "SUCRE JAUNE",
+      "article_canonique": "sucre jaune",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "sucre",
+        "jaune"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Pre-rempli auto",
+      "source_invoice_ids": [
+        "fr_bd_519665103:7cb84be9-5186-4599-9ced-21af43adba4f"
+      ],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "invoice_form_reference_v1",
+      "compte_comptable_match_score": 311,
+      "compte_comptable_match_reason": "invoice_id_overlap=1, article_source_exact, article_source_equals_canonical, tva_match, category_match, occurrences_bonus"
+    },
+    {
+      "article_source": "CRISTALI 50CL PET",
+      "article_canonique": "cristali 50cl pet",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "cristali",
+        "50cl",
+        "pet"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=93, line_occurrences=93)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 479,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6068; invoices=93; occurrences=93"
+    },
+    {
+      "article_source": "CRISTALINE 50CL P/24",
+      "article_canonique": "cristaline 50cl p 24",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "cristaline",
+        "50cl"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=78, line_occurrences=92)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 448,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6068; invoices=78; occurrences=92"
+    },
+    {
+      "article_source": "OEUF COQUILLE TEINTE GROS 63/73 CT 360",
+      "article_canonique": "oeuf coquille teinte gros 63 73 ct 360",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "oeuf",
+        "coquille",
+        "teinte",
+        "gros",
+        "ct"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=75, line_occurrences=75)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 425,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=75; occurrences=75"
+    },
+    {
+      "article_source": "BEURRE GD TOURAGE FLECHARD CT 5X2KG",
+      "article_canonique": "beurre gd tourage flechard ct 5x2kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "beurre",
+        "gd",
+        "tourage",
+        "flechard",
+        "ct",
+        "5x2kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=74, line_occurrences=74)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 422,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=74; occurrences=74"
+    },
+    {
+      "article_source": "SUCRE CRISTAL FIN SAC 25KG",
+      "article_canonique": "sucre cristal fin sac 25kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "sucre",
+        "cristal",
+        "fin",
+        "sac",
+        "25kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=72, line_occurrences=72)",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 416,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=72; occurrences=72"
+    },
+    {
+      "article_source": "FARINE LABEL ROUGE L EMOTION 100 % IDF SAC 25 KG",
+      "article_canonique": "farine label rouge l emotion 100 idf sac 25 kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "farine",
+        "label",
+        "rouge",
+        "emotion",
+        "idf",
+        "sac"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=71, line_occurrences=73)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 415,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=71; occurrences=73"
+    },
+    {
+      "article_source": "CRISTAL T65 25KG",
+      "article_canonique": "cristal t65 25kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "cristal",
+        "t65",
+        "25kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=68, line_occurrences=71)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 407,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=68; occurrences=71"
+    },
+    {
+      "article_source": "LAIT UHT 1/2 ECREME BRIQ PACK 12X1L",
+      "article_canonique": "lait uht 1 2 ecreme briq pack 12x1l",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "lait",
+        "uht",
+        "ecreme",
+        "briq",
+        "pack",
+        "12x1l"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=67, line_occurrences=67)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 401,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=67; occurrences=67"
+    },
+    {
+      "article_source": "CHEVRE BUCHETTE 180G LA PIECE",
+      "article_canonique": "chevre buchette 180g la piece",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "chevre",
+        "buchette",
+        "180g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=64, line_occurrences=64)",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 392,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=64; occurrences=64"
+    },
+    {
+      "article_source": "FROMAGE BLANC 2.8%MG SEAU 5KG",
+      "article_canonique": "fromage blanc 2 8 mg seau 5kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "fromage",
+        "blanc",
+        "seau",
+        "5kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=63, line_occurrences=63)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 389,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=63; occurrences=63"
+    },
+    {
+      "article_source": "EMMENTAL RAPE UE 1KG",
+      "article_canonique": "emmental rape ue 1kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "emmental",
+        "rape",
+        "ue",
+        "1kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=60, line_occurrences=60)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 380,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=60; occurrences=60"
+    },
+    {
+      "article_source": "SAL ICEBERG MC PC DEMIPALX28 C1 ESESPAGNE",
+      "article_canonique": "sal iceberg mc pc demipalx28 c1 esespagne",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "sal",
+        "iceberg",
+        "mc",
+        "demipalx28",
+        "c1",
+        "esespagne"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=59, line_occurrences=59)",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 377,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=59; occurrences=59"
+    },
+    {
+      "article_source": "PAIN CHOCOLAT BEURRE 75G *",
+      "article_canonique": "pain chocolat beurre 75g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "pain",
+        "chocolat",
+        "beurre",
+        "75g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=57, line_occurrences=62)",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 376,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=57; occurrences=62"
+    },
+    {
+      "article_source": "BEURRE DOUX 82% BLOC 25KG",
+      "article_canonique": "beurre doux 82 bloc 25kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "beurre",
+        "doux",
+        "bloc",
+        "25kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=57, line_occurrences=57)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 371,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=57; occurrences=57"
+    },
+    {
+      "article_source": "CREME UHT 35% 1L MC BK AP",
+      "article_canonique": "creme uht 35 1l mc bk ap",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "creme",
+        "uht",
+        "1l",
+        "mc",
+        "bk",
+        "ap"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=57, line_occurrences=57)",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 371,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=57; occurrences=57"
+    },
+    {
+      "article_source": "SEL FIN DE 25 KG",
+      "article_canonique": "sel fin de 25 kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "sel",
+        "fin"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=57, line_occurrences=57)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 371,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=57; occurrences=57"
+    },
+    {
+      "article_source": "BEURRE SEC G.TOUR 2KG FLECH",
+      "article_canonique": "beurre sec g tour 2kg flech",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "beurre",
+        "sec",
+        "tour",
+        "2kg",
+        "flech"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=56, line_occurrences=59)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 371,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=56; occurrences=59"
+    },
+    {
+      "article_source": "BLANC OEUF LIQUIDE FERME DU PRE 1KG",
+      "article_canonique": "blanc oeuf liquide ferme du pre 1kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "blanc",
+        "oeuf",
+        "liquide",
+        "ferme",
+        "pre",
+        "1kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=56, line_occurrences=56)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 368,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=56; occurrences=56"
+    },
+    {
+      "article_source": "CROISSANT BEURRE 65G *",
+      "article_canonique": "croissant beurre 65g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "croissant",
+        "beurre",
+        "65g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=55, line_occurrences=57)",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 367,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=55; occurrences=57"
+    },
+    {
+      "article_source": "EAU CRISTALINE PET 6X1.5L",
+      "article_canonique": "eau cristaline pet 6x1 5l",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "eau",
+        "cristaline",
+        "pet",
+        "6x1",
+        "5l"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=58, line_occurrences=58)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 374,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6068; invoices=58; occurrences=58"
+    },
+    {
+      "article_source": "LEVURE LEVAMAX ECOPACK (30x500G) 15 KG",
+      "article_canonique": "levure levamax ecopack 30x500g 15 kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "levure",
+        "levamax",
+        "ecopack",
+        "30x500g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=47, line_occurrences=47)",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 341,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=47; occurrences=47"
+    },
+    {
+      "article_source": "COCACOLA BOITE SLIM 33CL",
+      "article_canonique": "cocacola boite slim 33cl",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "cocacola",
+        "boite",
+        "slim",
+        "33cl"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=61, line_occurrences=61)",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 383,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6068; invoices=61; occurrences=61"
+    },
+    {
+      "article_source": "SAUMON FUME TRANCHE 800G",
+      "article_canonique": "saumon fume tranche 800g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "saumon",
+        "fume",
+        "tranche",
+        "800g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=56, line_occurrences=56)",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 368,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=56; occurrences=56"
+    },
+    {
+      "article_source": "BANANE",
+      "article_canonique": "banane",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "banane"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=65, line_occurrences=67) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 397,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=65; occurrences=67",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "JAUNE OEUF LIQUIDE FERME DU PRE 1KG",
+      "article_canonique": "jaune oeuf liquide ferme du pre 1kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "jaune",
+        "oeuf",
+        "liquide",
+        "ferme",
+        "pre",
+        "1kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=50, line_occurrences=50) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 350,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=50; occurrences=50",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "LIPTON PECHE BTE 33CL SLIM",
+      "article_canonique": "lipton peche bte 33cl slim",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "lipton",
+        "peche",
+        "bte",
+        "33cl",
+        "slim"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=49, line_occurrences=49) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 347,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6068; invoices=49; occurrences=49",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "JAVEL EXTRAIT 2.6% BIDON 5L",
+      "article_canonique": "javel extrait 2 6 bidon 5l",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "javel",
+        "extrait",
+        "bidon",
+        "5l"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=48, line_occurrences=48) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 344,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=48; occurrences=48",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "GROSEILLE RGE 125G PAYS-BAS C1 PAYS BAS",
+      "article_canonique": "groseille rge 125g pays bas c1 pays bas",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "groseille",
+        "rge",
+        "125g",
+        "pays",
+        "bas",
+        "c1"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=47, line_occurrences=47) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 341,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=47; occurrences=47",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "EMMENTAL RAPE EXTRA FIN 1 KG UE",
+      "article_canonique": "emmental rape extra fin 1 kg ue",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "emmental",
+        "rape",
+        "extra",
+        "fin",
+        "ue"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=45, line_occurrences=47) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 337,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=45; occurrences=47",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "COCA SANS SUCRES 33CL",
+      "article_canonique": "coca sans sucres 33cl",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "coca",
+        "sans",
+        "sucres",
+        "33cl"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=43, line_occurrences=43) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 329,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6068; invoices=43; occurrences=43",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "OEUF BLANC LIQ.1KG SERVIS OEUF-OR.FRANCE",
+      "article_canonique": "oeuf blanc liq 1kg servis oeuf or france",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "oeuf",
+        "blanc",
+        "liq",
+        "1kg",
+        "servis",
+        "or",
+        "france"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=43, line_occurrences=43) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 329,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=43; occurrences=43",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "PATE A TARTINER 2,5KG MC",
+      "article_canonique": "pate a tartiner 2 5kg mc",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "pate",
+        "tartiner",
+        "5kg",
+        "mc"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=43, line_occurrences=43) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 329,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=43; occurrences=43",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "BEURRE TARTINABLE DOUX 1KG",
+      "article_canonique": "beurre tartinable doux 1kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "beurre",
+        "tartinable",
+        "doux",
+        "1kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=41, line_occurrences=41) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 323,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=41; occurrences=41",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "LEVURE 500G*5 HIRONDELLE 2,5KG",
+      "article_canonique": "levure 500g 5 hirondelle 2 5kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "levure",
+        "500g",
+        "hirondelle",
+        "5kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=41, line_occurrences=41) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 323,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=41; occurrences=41",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "SUCRE CRISTAL SAC 25KG",
+      "article_canonique": "sucre cristal sac 25kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "sucre",
+        "cristal",
+        "sac",
+        "25kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=40, line_occurrences=40) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 320,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=40; occurrences=40",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "MARG BOMAR BRIOCHE INCORP PAIN 500G P/20",
+      "article_canonique": "marg bomar brioche incorp pain 500g p 20",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "marg",
+        "bomar",
+        "brioche",
+        "incorp",
+        "pain",
+        "500g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=36, line_occurrences=36) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 308,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=36; occurrences=36",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "EMMENTAL TRANCHE 15x5 1KG",
+      "article_canonique": "emmental tranche 15x5 1kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "emmental",
+        "tranche",
+        "15x5",
+        "1kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=34, line_occurrences=34) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 302,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=34; occurrences=34",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "LAIT 1/2 ECREME FRANCAIS P/6 UHT",
+      "article_canonique": "lait 1 2 ecreme francais p 6 uht",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "lait",
+        "ecreme",
+        "francais",
+        "uht"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=34, line_occurrences=34) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 302,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=34; occurrences=34",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "BEURRE SEC TOURAGE 1KG FLECHAR",
+      "article_canonique": "beurre sec tourage 1kg flechar",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "beurre",
+        "sec",
+        "tourage",
+        "1kg",
+        "flechar"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=33, line_occurrences=34) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 300,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=33; occurrences=34",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "CREME MASCARPONE 40%MG POT 500G",
+      "article_canonique": "creme mascarpone 40 mg pot 500g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "creme",
+        "mascarpone",
+        "pot",
+        "500g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=32, line_occurrences=32) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 296,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=32; occurrences=32",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "LAIT UHT 1/2ECR 1L PPX BK (D",
+      "article_canonique": "lait uht 1 2ecr 1l ppx bk d",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "lait",
+        "uht",
+        "2ecr",
+        "1l",
+        "ppx",
+        "bk"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=31, line_occurrences=31) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 293,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=31; occurrences=31",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "CREME FRAICHE 15%,DELISSE,202G",
+      "article_canonique": "creme fraiche 15 delisse 202g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "creme",
+        "fraiche",
+        "delisse",
+        "202g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=29, line_occurrences=63) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 321,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=29; occurrences=63",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "*SUCRE GRAIN N6 BS SAC 5KG",
+      "article_canonique": "sucre grain n6 bs sac 5kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "sucre",
+        "grain",
+        "n6",
+        "bs",
+        "sac",
+        "5kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=28, line_occurrences=28) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 284,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=28; occurrences=28",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "LEVURE BOULANGERE",
+      "article_canonique": "levure boulangere",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "levure",
+        "boulangere"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=28, line_occurrences=28) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 284,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=28; occurrences=28",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "OEUF 360 M PPX",
+      "article_canonique": "oeuf 360 m ppx",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "oeuf",
+        "ppx"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=27, line_occurrences=27) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 281,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=27; occurrences=27",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "PATE PISTACHE COLOREE MANE 1KG",
+      "article_canonique": "pate pistache coloree mane 1kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "pate",
+        "pistache",
+        "coloree",
+        "mane",
+        "1kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=27, line_occurrences=27) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 281,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=27; occurrences=27",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "CHOCOLAT BLANC 30% DGF CT 10KG",
+      "article_canonique": "chocolat blanc 30 dgf ct 10kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "chocolat",
+        "blanc",
+        "dgf",
+        "ct",
+        "10kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=26, line_occurrences=26) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 278,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=26; occurrences=26",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "OEUF 360 G PPX",
+      "article_canonique": "oeuf 360 g ppx",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "oeuf",
+        "ppx"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=26, line_occurrences=26) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 278,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=26; occurrences=26",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "OEUF LIQ. BLANC BD 5KG OVOTEAM",
+      "article_canonique": "oeuf liq blanc bd 5kg ovoteam",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "oeuf",
+        "liq",
+        "blanc",
+        "bd",
+        "5kg",
+        "ovoteam"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=26, line_occurrences=26) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 278,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=26; occurrences=26",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "LAIT UHT 1/2ECR 1L PPX BK",
+      "article_canonique": "lait uht 1 2ecr 1l ppx bk",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "lait",
+        "uht",
+        "2ecr",
+        "1l",
+        "ppx",
+        "bk"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=25, line_occurrences=25) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 275,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=25; occurrences=25",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "MINI CROISSANT 25G P/200 DELIFR 74953",
+      "article_canonique": "mini croissant 25g p 200 delifr 74953",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "mini",
+        "croissant",
+        "25g",
+        "delifr",
+        "74953"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=25, line_occurrences=25) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 275,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=25; occurrences=25",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "SUCRE CALIBRE TRES FIN",
+      "article_canonique": "sucre calibre tres fin",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "sucre",
+        "calibre",
+        "tres",
+        "fin"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=25, line_occurrences=25) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 275,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=25; occurrences=25",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "SAUMON FUME TRANCHE S/PEAU",
+      "article_canonique": "saumon fume tranche s peau",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "saumon",
+        "fume",
+        "tranche",
+        "peau"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=24, line_occurrences=24) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 272,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=24; occurrences=24",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "ACTIMEL.NATURE.SUCRE",
+      "article_canonique": "actimel nature sucre",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "actimel",
+        "nature",
+        "sucre"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=23, line_occurrences=32) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 278,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=23; occurrences=32",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "CREME FRAICHE 15% 500G,DELISSE",
+      "article_canonique": "creme fraiche 15 500g delisse",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "creme",
+        "fraiche",
+        "500g",
+        "delisse"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=23, line_occurrences=26) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 272,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=23; occurrences=26",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "CREME 35% (PATISSIERE) UHT 1L",
+      "article_canonique": "creme 35 patissiere uht 1l",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "creme",
+        "patissiere",
+        "uht",
+        "1l"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=23, line_occurrences=23) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 269,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=23; occurrences=23",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "EMMENTAL TRANCHE 15x5 1 KG",
+      "article_canonique": "emmental tranche 15x5 1 kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "emmental",
+        "tranche",
+        "15x5"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=23, line_occurrences=23) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 269,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=23; occurrences=23",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "LEVURE SPRINGER CT 20X500G",
+      "article_canonique": "levure springer ct 20x500g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "levure",
+        "springer",
+        "ct",
+        "20x500g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=23, line_occurrences=23) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 269,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=23; occurrences=23",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "MINI PAIN CHOC ARTISAN FAI CRU 200X28G",
+      "article_canonique": "mini pain choc artisan fai cru 200x28g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "mini",
+        "pain",
+        "choc",
+        "artisan",
+        "fai",
+        "cru",
+        "200x28g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=23, line_occurrences=23) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 269,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=23; occurrences=23",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "CHEVRE BUCHE KG 50% MG",
+      "article_canonique": "chevre buche kg 50 mg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "chevre",
+        "buche"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=22, line_occurrences=22) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 266,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=22; occurrences=22",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "FONDANT SEAU EN 15 KG",
+      "article_canonique": "fondant seau en 15 kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "fondant",
+        "seau"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=22, line_occurrences=22) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 266,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=22; occurrences=22",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "NAPPAGE BLOND PRO SEAU 14 KG",
+      "article_canonique": "nappage blond pro seau 14 kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "nappage",
+        "blond",
+        "pro",
+        "seau"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=22, line_occurrences=22) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 266,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=22; occurrences=22",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "SAUMON FUME ATLANTIQU TRANCHE BANDE 800G",
+      "article_canonique": "saumon fume atlantiqu tranche bande 800g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "saumon",
+        "fume",
+        "atlantiqu",
+        "tranche",
+        "bande",
+        "800g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=22, line_occurrences=22) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 266,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=22; occurrences=22",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "FROMAGE BLC 2,8% 5KG MC",
+      "article_canonique": "fromage blc 2 8 5kg mc",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "fromage",
+        "blc",
+        "5kg",
+        "mc"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=21, line_occurrences=21) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 263,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=21; occurrences=21",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "Farine Sérénité Label Rouge T65",
+      "article_canonique": "farine serenite label rouge t65",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "farine",
+        "serenite",
+        "label",
+        "rouge",
+        "t65"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=21, line_occurrences=21) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 263,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=21; occurrences=21",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "MINI PAIN RAIS FAI CRU ARTISAN 200X30G",
+      "article_canonique": "mini pain rais fai cru artisan 200x30g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "mini",
+        "pain",
+        "rais",
+        "fai",
+        "cru",
+        "artisan",
+        "200x30g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=21, line_occurrences=21) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 263,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=21; occurrences=21",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "OEUF COQUILLE TEINTE MOYEN 53/63 CT 360",
+      "article_canonique": "oeuf coquille teinte moyen 53 63 ct 360",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "oeuf",
+        "coquille",
+        "teinte",
+        "moyen",
+        "ct"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=21, line_occurrences=21) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 263,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=21; occurrences=21",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "FARINE GRUAU DELICE TYPE 65 SAC 25 KG",
+      "article_canonique": "farine gruau delice type 65 sac 25 kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "farine",
+        "gruau",
+        "delice",
+        "type",
+        "sac"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=20, line_occurrences=21) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 261,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=20; occurrences=21",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "BEURRE CUBE 25 KG FRIESLAND CAMPINA",
+      "article_canonique": "beurre cube 25 kg friesland campina",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "beurre",
+        "cube",
+        "friesland",
+        "campina"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=20, line_occurrences=20) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 260,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=20; occurrences=20",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "CHOC LAIT 33% DGF 10KG",
+      "article_canonique": "choc lait 33 dgf 10kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "choc",
+        "lait",
+        "dgf",
+        "10kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=20, line_occurrences=20) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 260,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=20; occurrences=20",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "LAIT 1/2 ECREME FRANCAIS X6 UHT",
+      "article_canonique": "lait 1 2 ecreme francais x6 uht",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "lait",
+        "ecreme",
+        "francais",
+        "x6",
+        "uht"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=20, line_occurrences=20) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 260,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=20; occurrences=20",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "OEUF BLANC LIQUIDE 1L SERVIS OEUF",
+      "article_canonique": "oeuf blanc liquide 1l servis oeuf",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "oeuf",
+        "blanc",
+        "liquide",
+        "1l",
+        "servis"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=20, line_occurrences=20) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 260,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601100; invoices=20; occurrences=20",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "PATE DE PISTACH 1KG CRESCO",
+      "article_canonique": "pate de pistach 1kg cresco",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "pate",
+        "pistach",
+        "1kg",
+        "cresco"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=20, line_occurrences=20) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 260,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=20; occurrences=20",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "SACS PAIN 1F H.700MM (X50)",
+      "article_canonique": "sacs pain 1f h 700mm x50",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "sacs",
+        "pain",
+        "1f",
+        "700mm",
+        "x50"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=19, line_occurrences=23) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6025",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 261,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6025; invoices=19; occurrences=23",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "EAU CRISTALINE PET 24X50CL",
+      "article_canonique": "eau cristaline pet 24x50cl",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "eau",
+        "cristaline",
+        "pet",
+        "24x50cl"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=19, line_occurrences=22) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 260,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6068; invoices=19; occurrences=22",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "EAU DE SOURCE,6X1.5L CRISTALINE",
+      "article_canonique": "eau de source 6x1 5l cristaline",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 20.0,
+      "mots_cles": [
+        "eau",
+        "source",
+        "6x1",
+        "5l",
+        "cristaline"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=19, line_occurrences=20) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 258,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6068; invoices=19; occurrences=20",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "CREME FRAICHE EPAISSE 30% 5KG ISIGNY",
+      "article_canonique": "creme fraiche epaisse 30 5kg isigny",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "creme",
+        "fraiche",
+        "epaisse",
+        "5kg",
+        "isigny"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=19, line_occurrences=19) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 257,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=19; occurrences=19",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "CREME VEGETALE SWEET SUCRE 1L P/12",
+      "article_canonique": "creme vegetale sweet sucre 1l p 12",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "creme",
+        "vegetale",
+        "sweet",
+        "sucre",
+        "1l"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=19, line_occurrences=19) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 257,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=19; occurrences=19",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "SAUMON FUME 600/900G ARO",
+      "article_canonique": "saumon fume 600 900g aro",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "saumon",
+        "fume",
+        "900g",
+        "aro"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=19, line_occurrences=19) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 257,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=19; occurrences=19",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "BEURRE DOUX CUBE 25KG",
+      "article_canonique": "beurre doux cube 25kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "beurre",
+        "doux",
+        "cube",
+        "25kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=18, line_occurrences=18) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 254,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=18; occurrences=18",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "BEURRE DX PAT BLOC 10KG FLECH",
+      "article_canonique": "beurre dx pat bloc 10kg flech",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "beurre",
+        "dx",
+        "pat",
+        "bloc",
+        "10kg",
+        "flech"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=18, line_occurrences=18) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 254,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=18; occurrences=18",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "GROSEILLE RGE 125G FR C1 FRANCE",
+      "article_canonique": "groseille rge 125g fr c1 france",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "groseille",
+        "rge",
+        "125g",
+        "fr",
+        "c1",
+        "france"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=18, line_occurrences=18) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 254,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=18; occurrences=18",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "GROSEILLE RGE 125G PAYS-BAS",
+      "article_canonique": "groseille rge 125g pays bas",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "groseille",
+        "rge",
+        "125g",
+        "pays",
+        "bas"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=17, line_occurrences=17) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 251,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=17; occurrences=17",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "BEURRE DOUX LACTIQUE 82% BLOC 25KG",
+      "article_canonique": "beurre doux lactique 82 bloc 25kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "beurre",
+        "doux",
+        "lactique",
+        "bloc",
+        "25kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=16, line_occurrences=16) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 248,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=16; occurrences=16",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "EMMENTAL 40 TRANCHES",
+      "article_canonique": "emmental 40 tranches",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "emmental",
+        "tranches"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=16, line_occurrences=16) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 248,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=16; occurrences=16",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "MINI CROISSANT FAI CRU ARTISAN 270X25G",
+      "article_canonique": "mini croissant fai cru artisan 270x25g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "mini",
+        "croissant",
+        "fai",
+        "cru",
+        "artisan",
+        "270x25g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=16, line_occurrences=16) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 248,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=16; occurrences=16",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "MAMIE NOVA CREME AMANDES 2X150G",
+      "article_canonique": "mamie nova creme amandes 2x150g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "mamie",
+        "nova",
+        "creme",
+        "amandes",
+        "2x150g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=15, line_occurrences=16) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 246,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=15; occurrences=16",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "CONCOMBRE FROMAGE BLC 320G",
+      "article_canonique": "concombre fromage blc 320g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "concombre",
+        "fromage",
+        "blc",
+        "320g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=15, line_occurrences=15) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 245,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=15; occurrences=15",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "CREME MASCARPONE POT 500G",
+      "article_canonique": "creme mascarpone pot 500g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "creme",
+        "mascarpone",
+        "pot",
+        "500g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=15, line_occurrences=15) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 245,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=15; occurrences=15",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "CROISSANT RMB 65G *",
+      "article_canonique": "croissant rmb 65g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "croissant",
+        "rmb",
+        "65g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=15, line_occurrences=15) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 245,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=15; occurrences=15",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "EMMENTAL RAPE 1KG ARO",
+      "article_canonique": "emmental rape 1kg aro",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "emmental",
+        "rape",
+        "1kg",
+        "aro"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=15, line_occurrences=15) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 245,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=15; occurrences=15",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "MARG BOMAR BRIOCHE INCORP PAIN 20X0.5KG",
+      "article_canonique": "marg bomar brioche incorp pain 20x0 5kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "marg",
+        "bomar",
+        "brioche",
+        "incorp",
+        "pain",
+        "20x0",
+        "5kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=15, line_occurrences=15) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 245,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=15; occurrences=15",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "MINI BEIGNET SUCRE FAI SURG 70X19G",
+      "article_canonique": "mini beignet sucre fai surg 70x19g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "mini",
+        "beignet",
+        "sucre",
+        "fai",
+        "surg",
+        "70x19g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=15, line_occurrences=15) | Ajout auto seconde vague depuis candidate pack nettoye avec filtre metier strict.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 245,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=15; occurrences=15",
+      "selection_source": "auto_filtered_second_wave_v1"
+    },
+    {
+      "article_source": "BEIGNET LONG MASCOT NATURE 90G/30 502558",
+      "article_canonique": "beignet long mascot nature 90g 30 502558",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "beignet",
+        "long",
+        "mascot",
+        "nature",
+        "90g",
+        "502558"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=24, line_occurrences=24) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 272,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=24; occurrences=24",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "MINI BEIGNET CACAO/NOISETTE 21G *",
+      "article_canonique": "mini beignet cacao noisette 21g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "mini",
+        "beignet",
+        "cacao",
+        "noisette",
+        "21g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=22, line_occurrences=22) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 266,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=22; occurrences=22",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "MINI BEIGNET CHOCO BLANC 21G *",
+      "article_canonique": "mini beignet choco blanc 21g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "mini",
+        "beignet",
+        "choco",
+        "blanc",
+        "21g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=21, line_occurrences=21) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 263,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=21; occurrences=21",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "MINI BEIGNET CHOC NOISET.25G /140 520019",
+      "article_canonique": "mini beignet choc noiset 25g 140 520019",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "mini",
+        "beignet",
+        "choc",
+        "noiset",
+        "25g",
+        "520019"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=17, line_occurrences=17) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 251,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=17; occurrences=17",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "BEIGNET MASCOTTE NATURE",
+      "article_canonique": "beignet mascotte nature",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "beignet",
+        "mascotte",
+        "nature"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=16, line_occurrences=16) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 248,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=16; occurrences=16",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "BEIGNET MASCOTTE NATURE LONG",
+      "article_canonique": "beignet mascotte nature long",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "beignet",
+        "mascotte",
+        "nature",
+        "long"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=15, line_occurrences=15) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 245,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=15; occurrences=15",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "SUCRE GRAIN GROS N°6 10KG C25",
+      "article_canonique": "sucre grain gros n 6 10kg c25",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "sucre",
+        "grain",
+        "gros",
+        "10kg",
+        "c25"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=15, line_occurrences=15) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 245,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=15; occurrences=15",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "BEURRE 1/2 SEL PAYSAN BRETON",
+      "article_canonique": "beurre 1 2 sel paysan breton",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "beurre",
+        "sel",
+        "paysan",
+        "breton"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=14, line_occurrences=16) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 244,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=14; occurrences=16",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "AROME PATE PISTACHE COLORE",
+      "article_canonique": "arome pate pistache colore",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "arome",
+        "pate",
+        "pistache",
+        "colore"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=14, line_occurrences=14) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 242,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=14; occurrences=14",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "BEIGNET LONG NATURE FAI SURG 30X90G",
+      "article_canonique": "beignet long nature fai surg 30x90g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "beignet",
+        "long",
+        "nature",
+        "fai",
+        "surg",
+        "30x90g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=14, line_occurrences=14) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 242,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=14; occurrences=14",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "BRISURE CREPE PUR BEURRE 2.5KG (pailleté feuilletine)",
+      "article_canonique": "brisure crepe pur beurre 2 5kg paillete feuilletine",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "brisure",
+        "crepe",
+        "pur",
+        "beurre",
+        "5kg",
+        "paillete",
+        "feuilletine"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=14, line_occurrences=14) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 242,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=14; occurrences=14",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "CREME 35% LESCURE 1L P/6",
+      "article_canonique": "creme 35 lescure 1l p 6",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "creme",
+        "lescure",
+        "1l"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=14, line_occurrences=14) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 242,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=14; occurrences=14",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "EMMENTAL TRANCHETTE 5X15CM BQ 1KG",
+      "article_canonique": "emmental tranchette 5x15cm bq 1kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "emmental",
+        "tranchette",
+        "5x15cm",
+        "bq",
+        "1kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=14, line_occurrences=14) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 242,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=14; occurrences=14",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "FROMAGE CREME TARTIMALIN BQ 1KG",
+      "article_canonique": "fromage creme tartimalin bq 1kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "fromage",
+        "creme",
+        "tartimalin",
+        "bq",
+        "1kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=14, line_occurrences=14) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 242,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=14; occurrences=14",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "LAIT UHT 1/2 ECREME FR BRIQ PACK 12X1L",
+      "article_canonique": "lait uht 1 2 ecreme fr briq pack 12x1l",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "lait",
+        "uht",
+        "ecreme",
+        "fr",
+        "briq",
+        "pack",
+        "12x1l"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=14, line_occurrences=14) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 242,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=14; occurrences=14",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "MINI BEIGNET CARAMEL FAI 70X25G",
+      "article_canonique": "mini beignet caramel fai 70x25g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "mini",
+        "beignet",
+        "caramel",
+        "fai",
+        "70x25g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=14, line_occurrences=14) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 242,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=14; occurrences=14",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "MINI BEIGNET CHOC NOISET FAI SURG 70X25G",
+      "article_canonique": "mini beignet choc noiset fai surg 70x25g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "mini",
+        "beignet",
+        "choc",
+        "noiset",
+        "fai",
+        "surg",
+        "70x25g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=14, line_occurrences=14) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 242,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=14; occurrences=14",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "PATE DE SPECULOS 1.6KG LOTUS",
+      "article_canonique": "pate de speculos 1 6kg lotus",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "pate",
+        "speculos",
+        "6kg",
+        "lotus"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=14, line_occurrences=14) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 242,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=14; occurrences=14",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "BEURRE CUBE 25 KG",
+      "article_canonique": "beurre cube 25 kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "beurre",
+        "cube"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=13, line_occurrences=13) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 239,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=13; occurrences=13",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "OEUF LIQ JAUNE BD 2KG ATLANTIC",
+      "article_canonique": "oeuf liq jaune bd 2kg atlantic",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "oeuf",
+        "liq",
+        "jaune",
+        "bd",
+        "2kg",
+        "atlantic"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=13, line_occurrences=13) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 239,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=13; occurrences=13",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "POUDRE DE LAIT ENTIER INST. 28% X 25KG",
+      "article_canonique": "poudre de lait entier inst 28 x 25kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "poudre",
+        "lait",
+        "entier",
+        "inst",
+        "25kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=13, line_occurrences=13) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 239,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=13; occurrences=13",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "RAPE AUX 3 FROMAGES,200G",
+      "article_canonique": "rape aux 3 fromages 200g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "rape",
+        "fromages",
+        "200g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=13, line_occurrences=13) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 239,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=13; occurrences=13",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "BISCOFF PATE LOTUS POT 1.6KG",
+      "article_canonique": "biscoff pate lotus pot 1 6kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "biscoff",
+        "pate",
+        "lotus",
+        "pot",
+        "6kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=12, line_occurrences=12) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 236,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=12; occurrences=12",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "CREME UHT CAMPINA 35%MG 12X1L",
+      "article_canonique": "creme uht campina 35 mg 12x1l",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "creme",
+        "uht",
+        "campina",
+        "12x1l"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=12, line_occurrences=12) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 236,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=12; occurrences=12",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "FROMAGE BLC 20% 5KG MC",
+      "article_canonique": "fromage blc 20 5kg mc",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "fromage",
+        "blc",
+        "5kg",
+        "mc"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=12, line_occurrences=12) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 236,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=12; occurrences=12",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "MAXI PAIN RAISINS BEURRE 140G *",
+      "article_canonique": "maxi pain raisins beurre 140g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "maxi",
+        "pain",
+        "raisins",
+        "beurre",
+        "140g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=12, line_occurrences=12) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 236,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=12; occurrences=12",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "BEURRE CUBE UE 25 KG",
+      "article_canonique": "beurre cube ue 25 kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "beurre",
+        "cube",
+        "ue"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=12, line_occurrences=12) | Ajout manuel 4e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 236,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=12; occurrences=12",
+      "selection_source": "manual_fourth_wave_v1"
+    },
+    {
+      "article_source": "SPECULOS BRISURE MOULU 750 gr 64695",
+      "article_canonique": "speculos brisure moulu 750 gr 64695",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "speculos",
+        "brisure",
+        "moulu",
+        "64695"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=25, line_occurrences=25) | Ajout manuel 6e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 275,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=25; occurrences=25",
+      "selection_source": "manual_sixth_wave_v1"
+    },
+    {
+      "article_source": "GD SAC REGROUP PAIN 39X20X76CM",
+      "article_canonique": "gd sac regroup pain 39x20x76cm",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "gd",
+        "sac",
+        "regroup",
+        "pain",
+        "39x20x76cm"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=13, line_occurrences=13) | Ajout manuel 6e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6025",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 239,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6025; invoices=13; occurrences=13",
+      "selection_source": "manual_sixth_wave_v1"
+    },
+    {
+      "article_source": "LAIT FERMENTE \"LUXLAIT \" 8 X 1L",
+      "article_canonique": "lait fermente luxlait 8 x 1l",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "lait",
+        "fermente",
+        "luxlait",
+        "1l"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "4722Z"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=13, line_occurrences=13) | Ajout manuel 6e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 239,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6068; invoices=13; occurrences=13",
+      "selection_source": "manual_sixth_wave_v1"
+    },
+    {
+      "article_source": "PAIN SUEDOIS ROND 55 GR X 72 UVI1",
+      "article_canonique": "pain suedois rond 55 gr x 72 uvi1",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "pain",
+        "suedois",
+        "rond",
+        "uvi1"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=13, line_occurrences=13) | Ajout manuel 6e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 239,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=13; occurrences=13",
+      "selection_source": "manual_sixth_wave_v1"
+    },
+    {
+      "article_source": "PATE PISTACHE COLOREE MANE 1KG GR",
+      "article_canonique": "pate pistache coloree mane 1kg gr",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "pate",
+        "pistache",
+        "coloree",
+        "mane",
+        "1kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=13, line_occurrences=13) | Ajout manuel 6e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 239,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=13; occurrences=13",
+      "selection_source": "manual_sixth_wave_v1"
+    },
+    {
+      "article_source": "250 SAC PAIN VERT 16X10X35",
+      "article_canonique": "250 sac pain vert 16x10x35",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "sac",
+        "pain",
+        "vert",
+        "16x10x35"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=12, line_occurrences=12) | Ajout manuel 6e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 236,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=12; occurrences=12",
+      "selection_source": "manual_sixth_wave_v1"
+    },
+    {
+      "article_source": "CROUSTI CHOC LAIT NOIR BLC DGF POT 450G",
+      "article_canonique": "crousti choc lait noir blc dgf pot 450g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "crousti",
+        "choc",
+        "lait",
+        "noir",
+        "blc",
+        "dgf",
+        "pot",
+        "450g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=12, line_occurrences=12) | Ajout manuel 6e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 236,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=12; occurrences=12",
+      "selection_source": "manual_sixth_wave_v1"
+    },
+    {
+      "article_source": "MINI BEIGNET FOURRAGE SAVEUR FRAISE 21G *",
+      "article_canonique": "mini beignet fourrage saveur fraise 21g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "mini",
+        "beignet",
+        "fourrage",
+        "saveur",
+        "fraise",
+        "21g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=12, line_occurrences=12) | Ajout manuel 6e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 236,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=12; occurrences=12",
+      "selection_source": "manual_sixth_wave_v1"
+    },
+    {
+      "article_source": "SAC PAIN TR BEIG BAGO PUR 230/40X420X200",
+      "article_canonique": "sac pain tr beig bago pur 230 40x420x200",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "sac",
+        "pain",
+        "tr",
+        "beig",
+        "bago",
+        "pur",
+        "40x420x200"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=12, line_occurrences=12) | Ajout manuel 6e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 236,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=12; occurrences=12",
+      "selection_source": "manual_sixth_wave_v1"
+    },
+    {
+      "article_source": "SAC PAIN TR JAUN BAGO PUR 120/50X350X200",
+      "article_canonique": "sac pain tr jaun bago pur 120 50x350x200",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "sac",
+        "pain",
+        "tr",
+        "jaun",
+        "bago",
+        "pur",
+        "50x350x200"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [
+        "1071C"
+      ],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=12, line_occurrences=12) | Ajout manuel 6e vague depuis candidate pack nettoyé.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 236,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=12; occurrences=12",
+      "selection_source": "manual_sixth_wave_v1"
+    },
+    {
+      "article_source": "FLOUP LAIT CHOCOLAT (20 Piéces)",
+      "article_canonique": "floup lait chocolat 20 pieces",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "floup",
+        "lait",
+        "chocolat"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6068",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6068; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "LAIT CONC SUCRE 397G NESTLE",
+      "article_canonique": "lait conc sucre 397g nestle",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "lait",
+        "conc",
+        "sucre",
+        "397g",
+        "nestle"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "LAIT CONC SUCRE TUBE 300G REG",
+      "article_canonique": "lait conc sucre tube 300g reg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "lait",
+        "conc",
+        "sucre",
+        "tube",
+        "300g",
+        "reg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "LAIT DEMI ECREME VIVA (6x1L)",
+      "article_canonique": "lait demi ecreme viva 6x1l",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "lait",
+        "demi",
+        "ecreme",
+        "viva",
+        "6x1l"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "LAIT DEMI ECREME BOURG FLEURI (6x1L)",
+      "article_canonique": "lait demi ecreme bourg fleuri 6x1l",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "lait",
+        "demi",
+        "ecreme",
+        "bourg",
+        "fleuri",
+        "6x1l"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "TRESOR CHOCOLAT/NOISETTES 1KG",
+      "article_canonique": "tresor chocolat noisettes 1kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "tresor",
+        "chocolat",
+        "noisettes",
+        "1kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "607",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=607; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "TRESOR CHOCOLAT/NOISETTES 410G",
+      "article_canonique": "tresor chocolat noisettes 410g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "tresor",
+        "chocolat",
+        "noisettes",
+        "410g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "10 PAIN LAIT LC 350G ROCH",
+      "article_canonique": "10 pain lait lc 350g roch",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "pain",
+        "lait",
+        "lc",
+        "350g",
+        "roch"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "10 PAIN LAIT LC 350G ROCHC",
+      "article_canonique": "10 pain lait lc 350g rochc",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "pain",
+        "lait",
+        "lc",
+        "350g",
+        "rochc"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "607",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=607; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "8 PAIN CHOCOLAT LC 360G ROCH",
+      "article_canonique": "8 pain chocolat lc 360g roch",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "pain",
+        "chocolat",
+        "lc",
+        "360g",
+        "roch"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "8 PAIN CHOCOLAT LC 36OG ROCH",
+      "article_canonique": "8 pain chocolat lc 36og roch",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "pain",
+        "chocolat",
+        "lc",
+        "36og",
+        "roch"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "BEURRE OEUF ET UF Total",
+      "article_canonique": "beurre oeuf et uf total",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "beurre",
+        "oeuf",
+        "uf",
+        "total"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "LAIT CONCENTRE NESTLE SUCREE12x397g)",
+      "article_canonique": "lait concentre nestle sucree12x397g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "lait",
+        "concentre",
+        "nestle",
+        "sucree12x397g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6071",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6071; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "LAIT CONCENTRE Non Sucré BONNET ROUGE 410ML (X24) HOLLANDE",
+      "article_canonique": "lait concentre non sucre bonnet rouge 410ml x24 hollande",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "lait",
+        "concentre",
+        "non",
+        "sucre",
+        "bonnet",
+        "rouge",
+        "410ml",
+        "x24",
+        "hollande"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "LAIT CONCENTRE Non Sucré PEAK 170G (X24) HOLLANDE",
+      "article_canonique": "lait concentre non sucre peak 170g x24 hollande",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "lait",
+        "concentre",
+        "non",
+        "sucre",
+        "peak",
+        "170g",
+        "x24",
+        "hollande"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "PAIN CHOCOLAT LC 360G ROCH",
+      "article_canonique": "pain chocolat lc 360g roch",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "pain",
+        "chocolat",
+        "lc",
+        "360g",
+        "roch"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6064",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6064; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "PAIN LAIT LC 350G ROCH C",
+      "article_canonique": "pain lait lc 350g roch c",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "pain",
+        "lait",
+        "lc",
+        "350g",
+        "roch"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "PERLE DE LAIT VANILLE 8X125G",
+      "article_canonique": "perle de lait vanille 8x125g",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "perle",
+        "lait",
+        "vanille",
+        "8x125g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6064",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6064; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "SUCRE SEMOULE D 1KGX10",
+      "article_canonique": "sucre semoule d 1kgx10",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "sucre",
+        "semoule",
+        "1kgx10"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "607",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=607; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "SUCRE VANILLE ALSA X14",
+      "article_canonique": "sucre vanille alsa x14",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "sucre",
+        "vanille",
+        "alsa",
+        "x14"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "607",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=607; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "250ml Creme Beauté",
+      "article_canonique": "250ml creme beaute",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "250ml",
+        "creme",
+        "beaute"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "607",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=607; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "500 ML Créme Citron",
+      "article_canonique": "500 ml creme citron",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "creme",
+        "citron"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "607",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=607; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "AEROSOL SUCREE 25OML WHIPPY",
+      "article_canonique": "aerosol sucree 25oml whippy",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "aerosol",
+        "sucree",
+        "25oml",
+        "whippy"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "ARO FARINE BLE T 55 1KG",
+      "article_canonique": "aro farine ble t 55 1kg",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "aro",
+        "farine",
+        "ble",
+        "1kg"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "BEURRE DX PLQ. 250G ROCHAMB",
+      "article_canonique": "beurre dx plq 250g rochamb",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "beurre",
+        "dx",
+        "plq",
+        "250g",
+        "rochamb"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6063",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6063; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "BEURRE DX PLQ.250GX4 PRESIDENT",
+      "article_canonique": "beurre dx plq 250gx4 president",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "beurre",
+        "dx",
+        "plq",
+        "250gx4",
+        "president"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "BEURRE DX TENDRE BQ 250G E V",
+      "article_canonique": "beurre dx tendre bq 250g e v",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "beurre",
+        "dx",
+        "tendre",
+        "bq",
+        "250g"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "BEURRE DX TENDRE BQ 25OG E V",
+      "article_canonique": "beurre dx tendre bq 25og e v",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "beurre",
+        "dx",
+        "tendre",
+        "bq",
+        "25og"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "601",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=601; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "BUCHETTE SUCRE 4GX1000 GILBERT",
+      "article_canonique": "buchette sucre 4gx1000 gilbert",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "buchette",
+        "sucre",
+        "4gx1000",
+        "gilbert"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "BUCHETTE SUCRE 4GX1000 RIOBA",
+      "article_canonique": "buchette sucre 4gx1000 rioba",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "buchette",
+        "sucre",
+        "4gx1000",
+        "rioba"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "607",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=607; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "BUCHETTE SUCRE 4GX1000 RIOBAX",
+      "article_canonique": "buchette sucre 4gx1000 riobax",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "buchette",
+        "sucre",
+        "4gx1000",
+        "riobax"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "Bonbons Crocodiles sucrés 90gr FINI",
+      "article_canonique": "bonbons crocodiles sucres 90gr fini",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "bonbons",
+        "crocodiles",
+        "sucres",
+        "90gr",
+        "fini"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "Bonbons Peche sucré 90gr FINI",
+      "article_canonique": "bonbons peche sucre 90gr fini",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "bonbons",
+        "peche",
+        "sucre",
+        "90gr",
+        "fini"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6062",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6062; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "CANNEA SUCRE REPUBLIQUE DOMINICAINE",
+      "article_canonique": "cannea sucre republique dominicaine",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "cannea",
+        "sucre",
+        "republique",
+        "dominicaine"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6011",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6011; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "CHOC MILKA LAIT TB 100GX5",
+      "article_canonique": "choc milka lait tb 100gx5",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "choc",
+        "milka",
+        "lait",
+        "100gx5"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "CHOC MILKA LAIT TB 100GX5 X",
+      "article_canonique": "choc milka lait tb 100gx5 x",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "choc",
+        "milka",
+        "lait",
+        "100gx5"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "CHOC MILKA LAIT TB 10OGX5",
+      "article_canonique": "choc milka lait tb 10ogx5",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "choc",
+        "milka",
+        "lait",
+        "10ogx5"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "607",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=607; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "CHOC MILKA LAIT TB 1OOGX5",
+      "article_canonique": "choc milka lait tb 1oogx5",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "choc",
+        "milka",
+        "lait",
+        "1oogx5"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "607",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=607; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "CHOC MILKA LAIT TB 1OOGX5 X",
+      "article_canonique": "choc milka lait tb 1oogx5 x",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "choc",
+        "milka",
+        "lait",
+        "1oogx5"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "CHOCO MILKA LAIT NOIS 100GX4",
+      "article_canonique": "choco milka lait nois 100gx4",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "choco",
+        "milka",
+        "lait",
+        "nois",
+        "100gx4"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "CHOCO MILKA LAIT NOIS 100GX42",
+      "article_canonique": "choco milka lait nois 100gx42",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "choco",
+        "milka",
+        "lait",
+        "nois",
+        "100gx42"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "CHOCO MILKA LAIT NOIS 10OGX4",
+      "article_canonique": "choco milka lait nois 10ogx4",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "choco",
+        "milka",
+        "lait",
+        "nois",
+        "10ogx4"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "607",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=607; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "CHOCO MILKA LAIT NOIS 10OGX42",
+      "article_canonique": "choco milka lait nois 10ogx42",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "choco",
+        "milka",
+        "lait",
+        "nois",
+        "10ogx42"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6061",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6061; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "CHOCO MILKA LAIT NOlS 1OOGX4",
+      "article_canonique": "choco milka lait nols 1oogx4",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "choco",
+        "milka",
+        "lait",
+        "nols",
+        "1oogx4"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "607",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=607; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    },
+    {
+      "article_source": "CREME DESSERT 4 125G VANIL E V",
+      "article_canonique": "creme dessert 4 125g vanil e v",
+      "categorie": "exploitation_metier",
+      "sous_categorie": "matiere_premiere",
+      "tva_rate": 5.5,
+      "mots_cles": [
+        "creme",
+        "dessert",
+        "125g",
+        "vanil"
+      ],
+      "fournisseur_type": "fournisseur alimentaire",
+      "ape_context": [],
+      "notes": "Integre depuis triage manuel boulangerie (invoice_count=1, line_occurrences=1) | Ajout cible 200 depuis base_produits_epicerie_v1.json.",
+      "source_invoice_ids": [],
+      "compte_comptable": "6064",
+      "compte_comptable_source": "triage_manual_candidate_pack_v1",
+      "compte_comptable_match_score": 203,
+      "compte_comptable_match_reason": "manual_triage_keep; predominant_account=6064; invoices=1; occurrences=1",
+      "selection_source": "raise_to_200_boulangerie_active_v1"
+    }
+  ],
+  "a_valider": []
+}
