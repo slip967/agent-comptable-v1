@@ -20,6 +20,7 @@ from ..analysis_batch_service import (  # noqa: PLC2701
     get_analysis_batch_job,
     get_analysis_batch_results,
     resume_analysis_batch_job,
+    reset_analysis_test_session,
     save_analysis_batch_job,
     start_analysis_batch_job,
     stop_analysis_batch_job,
@@ -476,10 +477,13 @@ def get_demo_folder_sample(
 
 
 @router.post("/batch-run", response_model=AnalysisBatchJob, status_code=status.HTTP_202_ACCEPTED)
-def run_analysis_batch(limit: int = Query(default=50, ge=1, le=100)) -> dict:
-    print(f"[api/analysis/batch-run] run requested limit={limit}")
+def run_analysis_batch(
+    limit: int = Query(default=50, ge=1, le=100),
+    sort_strategy: str = Query(default="DUE_DATE", pattern="^(DUE_DATE|CHRONO|SUPPLIER|AMOUNT)$"),
+) -> dict:
+    print(f"[api/analysis/batch-run] run requested limit={limit} sort_strategy={sort_strategy}")
     try:
-        payload = start_analysis_batch_job(limit=limit)
+        payload = start_analysis_batch_job(limit=limit, sort_strategy=sort_strategy)
         print(
             "[api/analysis/batch-run] response "
             f"limit={limit} job_id={payload.get('job_id', '')} status={payload.get('status', '')}"
@@ -590,6 +594,21 @@ def delete_analysis_batch_results() -> dict:
     """Clear all persisted batch results from local storage (keeps job history)."""
     print("[api/analysis/batch-results] clear requested")
     return clear_analysis_batch_results()
+
+
+@router.post("/reset-session", status_code=200)
+def reset_analysis_session(confirm: bool = Query(False)) -> dict:
+    """Reset local test state only; this endpoint never accesses CouchDB."""
+    if not confirm:
+        raise HTTPException(
+            status_code=400,
+            detail="Confirmation explicite requise pour réinitialiser la session de test.",
+        )
+    print("[api/analysis/reset-session] local test-session reset requested")
+    try:
+        return reset_analysis_test_session()
+    except RuntimeError as exc:
+        raise HTTPException(status_code=409, detail=str(exc)) from exc
 
 
 @router.get("/known-clients")

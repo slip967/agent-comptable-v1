@@ -226,7 +226,7 @@ export default function MemoryPage() {
     setLoading(false);
   };
 
-  const loadDashboard = async () => {
+  const loadDashboard = async ({ silent = false } = {}) => {
     try {
       if (window.sessionStorage?.getItem(PERFORMANCE_RESET_STORAGE_KEY) === "1") {
         resetPerformanceState();
@@ -235,7 +235,7 @@ export default function MemoryPage() {
     } catch {
       // Ignore storage restrictions and continue loading real data.
     }
-    setLoading(true);
+    if (!silent) setLoading(true);
     setSourceErrors([]);
     try {
       const results = await Promise.allSettled([
@@ -280,7 +280,7 @@ export default function MemoryPage() {
       setHistoryEvents([]);
       setMemoryItems([]);
     } finally {
-      setLoading(false);
+      if (!silent) setLoading(false);
     }
   };
 
@@ -290,6 +290,8 @@ export default function MemoryPage() {
   }, []);
 
   useEffect(() => {
+    let liveRefreshTimer = null;
+    let liveRefreshInFlight = false;
     const handleReset = () => resetPerformanceState();
 
     const handlePerformanceRefresh = () => {
@@ -308,13 +310,31 @@ export default function MemoryPage() {
       }
       void loadDashboard();
     };
+    const handleBatchProgress = () => {
+      if (liveRefreshTimer) clearTimeout(liveRefreshTimer);
+      liveRefreshTimer = setTimeout(async () => {
+        if (liveRefreshInFlight) return;
+        liveRefreshInFlight = true;
+        try {
+          window.sessionStorage?.removeItem(PERFORMANCE_RESET_STORAGE_KEY);
+          await loadDashboard({ silent: true });
+        } finally {
+          liveRefreshInFlight = false;
+        }
+      }, 200);
+    };
     window.addEventListener("keymanage:local-analysis-reset", handleReset);
     window.addEventListener("keymanage:performance-refresh", handlePerformanceRefresh);
     window.addEventListener("keymanage:batch-analysis-started", handleBatchStarted);
+    window.addEventListener("keymanage:batch-analysis-progress", handleBatchProgress);
+    window.addEventListener("keymanage:batch-invoice-processed", handleBatchProgress);
     return () => {
+      if (liveRefreshTimer) clearTimeout(liveRefreshTimer);
       window.removeEventListener("keymanage:local-analysis-reset", handleReset);
       window.removeEventListener("keymanage:performance-refresh", handlePerformanceRefresh);
       window.removeEventListener("keymanage:batch-analysis-started", handleBatchStarted);
+      window.removeEventListener("keymanage:batch-analysis-progress", handleBatchProgress);
+      window.removeEventListener("keymanage:batch-invoice-processed", handleBatchProgress);
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

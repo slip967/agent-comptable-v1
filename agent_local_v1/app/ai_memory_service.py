@@ -5,6 +5,7 @@ import threading
 from collections import OrderedDict
 from copy import deepcopy
 from datetime import datetime, timezone
+from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Any
 
@@ -254,3 +255,108 @@ def list_memory_items(limit: int = 200) -> list[dict[str, Any]]:
         reverse=True,
     )
     return ordered_items[: max(int(limit or 200), 1)]
+
+
+def resolve_ai_memory_rule(
+    *,
+    raw_text: str,
+    supplier: str | None = None,
+    memory_items: list[dict[str, Any]] | None = None,
+) -> dict[str, Any] | None:
+    """Return the strongest unambiguous expert rule for an invoice line.
+
+    A normalized label match always has priority. Supplier-only rules are used
+    only when the supplier history points to one unambiguous account, avoiding
+    an arbitrary account assignment when a supplier legitimately uses several
+    expense accounts.
+    """
+    normalized_label = normalize_text(str(raw_text or "").strip())
+    normalized_supplier = normalize_text(str(supplier or "").strip())
+    if not normalized_label:
+        return None
+
+    items = memory_items if memory_items is not None else list_memory_items(limit=10000)
+    label_matches: list[tuple[float, int, str, dict[str, Any]]] = []
+    supplier_matches: list[dict[str, Any]] = []
+
+    for item in items or []:
+        if not isinstance(item, dict):
+            continue
+        status = str(item.get("status") or "").strip().lower()
+        if status not in {"candidate", "non_comptable_candidate"}:
+            continue
+
+        item_label = normalize_text(str(item.get("normalized_label") or "").strip())
+        item_supplier = normalize_text(str(item.get("supplier") or "").strip())
+        account = str(item.get("validated_account") or "").strip()
+        if status != "non_comptable_candidate" and not account:
+            continue
+
+        # A supplier-scoped expert rule must never become a global rule merely
+        # because the invoice supplier is missing from the current context.
+        supplier_compatible = not item_supplier or (
+            bool(normalized_supplier) and item_supplier == normalized_supplier
+        )
+        similarity = SequenceMatcher(None, normalized_label, item_label).ratio() if item_label else 0.0
+        if supplier_compatible and (similarity == 1.0 or similarity >= 0.94):
+            label_matches.append(
+                (
+                    similarity,
+                    int(item.get("validation_count") or 1),
+                    str(item.get("last_seen_at") or ""),
+                    item,
+                )
+            )
+
+        if (
+            normalized_supplier
+            and item_supplier == normalized_supplier
+            and status == "candidate"
+            and account
+        ):
+            supplier_matches.append(item)
+
+    if label_matches:
+        similarity, _, _, selected = max(label_matches, key=lambda row: (row[0], row[1], row[2]))
+        resolved = deepcopy(selected)
+        resolved["match_type"] = "label_exact" if similarity == 1.0 else "label_similar"
+        resolved["match_similarity"] = round(similarity, 4)
+        return resolved
+
+    if not supplier_matches:
+        return None
+
+    account_stats: dict[str, dict[str, Any]] = {}
+    total = 0
+    for item in supplier_matches:
+        account = str(item.get("validated_account") or "").strip()
+        count = max(int(item.get("validation_count") or 1), 1)
+        total += count
+        stats = account_stats.setdefault(account, {"count": 0, "items": []})
+        stats["count"] += count
+        stats["items"].append(item)
+
+    ranked = sorted(account_stats.items(), key=lambda row: (-int(row[1]["count"]), row[0]))
+    if not ranked:
+        return None
+    top_account, top_stats = ranked[0]
+    top_count = int(top_stats["count"])
+    second_count = int(ranked[1][1]["count"]) if len(ranked) > 1 else 0
+    share = top_count / total if total else 0.0
+    unambiguous = len(ranked) == 1 or (top_count > second_count and top_count >= 2 and share >= 0.75)
+    if not unambiguous:
+        return None
+
+    selected = max(
+        top_stats["items"],
+        key=lambda item: (
+            int(item.get("validation_count") or 1),
+            str(item.get("last_seen_at") or ""),
+        ),
+    )
+    resolved = deepcopy(selected)
+    resolved["validated_account"] = top_account
+    resolved["match_type"] = "supplier"
+    resolved["match_similarity"] = 1.0
+    resolved["supplier_account_share"] = round(share, 4)
+    return resolved

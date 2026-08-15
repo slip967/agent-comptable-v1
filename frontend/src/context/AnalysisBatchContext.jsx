@@ -17,7 +17,7 @@ import {
   saveAnalysisBatchJob,
   startAnalysisBatch,
   stopAnalysisBatchJob,
-  purgeSavedInvoicesPermanently as purgeSavedInvoicesApi,
+  resetAnalysisTestSession,
 } from "../services/api";
 import { formatHumanReadableText } from "../utils/uiText";
 import { persistValidatedInvoice } from "../utils/validatedEntries";
@@ -233,6 +233,7 @@ export function AnalysisBatchProvider({ children }) {
   const batchPollTimerRef = useRef(null);
   const batchStreamRef = useRef(null);
   const didAutoLoadBatchRef = useRef(false);
+  const lastBatchProgressEventRef = useRef("");
 
   const closeBatchStream = useCallback(() => {
     if (batchStreamRef.current) {
@@ -392,6 +393,26 @@ export function AnalysisBatchProvider({ children }) {
       if (Array.isArray(payload?.results) && payload.results.length > 0) {
         applyBatchJobPartialResults(payload.results);
       }
+      const progressEventKey = [
+        jobId,
+        payload?.status,
+        Number(payload?.processed || 0),
+        Number(payload?.success || 0),
+        Number(payload?.failed || 0),
+      ].join(":");
+      if (lastBatchProgressEventRef.current !== progressEventKey) {
+        lastBatchProgressEventRef.current = progressEventKey;
+        window.dispatchEvent(new CustomEvent("keymanage:batch-analysis-progress", {
+          detail: {
+            jobId,
+            status: String(payload?.status || ""),
+            processed: Number(payload?.processed || 0),
+            success: Number(payload?.success || 0),
+            failed: Number(payload?.failed || 0),
+            total: Number(payload?.sampled_count || payload?.selected_count || payload?.limit || 0),
+          },
+        }));
+      }
       if (["running", "queued", "stopping"].includes(String(payload?.status || ""))) {
         clearBatchPollTimer();
         batchPollTimerRef.current = setTimeout(() => {
@@ -463,8 +484,11 @@ export function AnalysisBatchProvider({ children }) {
     return () => { cancelled = true; };
   }, []);
 
-  const handleLoadBatchAnalysis = useCallback(async (limit = 50) => {
+  const handleLoadBatchAnalysis = useCallback(async (limit = 50, sortStrategy = "DUE_DATE") => {
     const requestedLimit = Math.max(1, Math.floor(Number(limit) || 50));
+    const requestedSortStrategy = ["DUE_DATE", "CHRONO", "SUPPLIER", "AMOUNT"].includes(String(sortStrategy || "").toUpperCase())
+      ? String(sortStrategy).toUpperCase()
+      : "DUE_DATE";
     setBatchRequestedLimit(requestedLimit);
     clearBatchPollTimer();
     setLoadingBatch(true);
@@ -478,7 +502,7 @@ export function AnalysisBatchProvider({ children }) {
     setQueueCounts(buildQueueCounts([]));
 
     try {
-      const payload = await startAnalysisBatch(requestedLimit);
+      const payload = await startAnalysisBatch(requestedLimit, requestedSortStrategy);
       setBatchJob(payload);
       openBatchStream(payload?.job_id);
       if (payload?.status === "already_running" || payload?.status === "running") {
@@ -614,6 +638,7 @@ export function AnalysisBatchProvider({ children }) {
     setBatchSuccessMessage("");
     setQueueItems([]);
     setQueueCounts(buildQueueCounts([]));
+    setPersistedBatchCount(0);
     setHasLoadedQueue(false);
     setQueueReturnedEmpty(false);
     setBatchJob(null);
@@ -624,6 +649,7 @@ export function AnalysisBatchProvider({ children }) {
   const resetAllBatchState = useCallback((message = "") => {
     clearBatchPollTimer();
     closeBatchStream();
+    setLoadingBatch(false);
     setQueueItems([]);
     setQueueCounts(buildQueueCounts([]));
     setInvoiceAnalysisCache({});
@@ -637,12 +663,12 @@ export function AnalysisBatchProvider({ children }) {
     setShowingRecordedInvoices(false);
     setBatchControlState("");
     window.dispatchEvent(new Event("keymanage:local-analysis-reset"));
-    window.dispatchEvent(new Event("keymanage:all-saved-invoices-purged"));
+    window.dispatchEvent(new Event("keymanage:test-session-reset"));
   }, [clearBatchPollTimer, closeBatchStream]);
 
-  const handlePurgeSavedInvoices = useCallback(async () => {
-    const payload = await purgeSavedInvoicesApi();
-    resetAllBatchState();
+  const handleResetTestSession = useCallback(async () => {
+    const payload = await resetAnalysisTestSession();
+    resetAllBatchState("Session de test réinitialisée sans modification de CouchDB.");
     return payload;
   }, [resetAllBatchState]);  const value = useMemo(() => ({
     queueItems,
@@ -665,7 +691,7 @@ export function AnalysisBatchProvider({ children }) {
     handleSaveBatchAnalysis,
     handleShowAllRecordedInvoices,
     handleClearBatchResults,
-    handlePurgeSavedInvoices,
+    handleResetTestSession,
     patchQueueItem,
     cacheAnalysisResult,
   }), [
@@ -689,7 +715,7 @@ export function AnalysisBatchProvider({ children }) {
     handleSaveBatchAnalysis,
     handleShowAllRecordedInvoices,
     handleClearBatchResults,
-    handlePurgeSavedInvoices,
+    handleResetTestSession,
     patchQueueItem,
     cacheAnalysisResult,
   ]);

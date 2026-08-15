@@ -6,8 +6,11 @@ from agent_local_v1.app.invoice_engine_service import analyze_invoice_lines_stro
 
 
 class InvoiceEngineServiceTests(unittest.TestCase):
-    def _analyze(self, description: str, **context):
+    def _analyze(self, description: str, ai_memory_items=None, **context):
         tva = context.pop("tva", None)
+        # Keep legacy matcher tests isolated from the developer's live memory
+        # file; memory-specific tests inject an explicit snapshot below.
+        context["_ai_memory_items"] = ai_memory_items or []
         response = analyze_invoice_lines_strong(
             [{"description": description, "tva": tva}],
             context=context,
@@ -37,6 +40,59 @@ class InvoiceEngineServiceTests(unittest.TestCase):
 
         self.assertEqual(line.referential_status, "found_exact")
         self.assertNotEqual(line.decision, "auto_ok")
+
+    def test_human_correction_is_reused_on_next_similar_analysis(self) -> None:
+        memory_items = [
+            {
+                "status": "candidate",
+                "validation_id": "validation-orange-1",
+                "normalized_label": "open up 200 go 5g fibre mobile abonnement",
+                "raw_text_examples": ["Open Up 200 Go 5G Fibre mobile abonnement"],
+                "validated_account": "626000",
+                "validated_account_label": "Télécommunications",
+                "engine_account": "6068",
+                "supplier": "ORANGE",
+                "client": "TEST",
+                "validation_count": 1,
+                "last_seen_at": "2026-08-15T00:00:00+00:00",
+            }
+        ]
+
+        line = self._analyze(
+            "Open Up 200 Go 5G Fibre - mobile abonnement",
+            supplier="ORANGE",
+            ai_memory_items=memory_items,
+            tva=20.0,
+        )
+
+        self.assertEqual(line.recommended_account, "626000")
+        self.assertEqual(line.confidence, 100.0)
+        self.assertEqual(line.referential_status, "found_exact")
+        self.assertEqual(line.decision, "auto_ok")
+        self.assertIn("mémoire IA", line.decision_reason)
+
+    def test_unambiguous_supplier_rule_is_reused(self) -> None:
+        memory_items = [
+            {
+                "status": "candidate",
+                "validation_id": "validation-orange-2",
+                "normalized_label": "forfait precedent",
+                "validated_account": "626000",
+                "validated_account_label": "Télécommunications",
+                "supplier": "ORANGE",
+                "validation_count": 1,
+            }
+        ]
+
+        line = self._analyze(
+            "Nouveau forfait professionnel inconnu",
+            supplier="ORANGE",
+            ai_memory_items=memory_items,
+        )
+
+        self.assertEqual(line.recommended_account, "626000")
+        self.assertEqual(line.confidence, 100.0)
+        self.assertEqual(line.decision, "auto_ok")
 
     def test_non_comptable_line_is_filtered(self) -> None:
         line = self._analyze("Option pour le paiement de la taxe d'apres les debits")

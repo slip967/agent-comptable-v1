@@ -49,7 +49,7 @@ export default function ValidatedEntriesPage() {
   const reload = async () => { const local = readValidatedEntries(); setEntries(local); try { const remote = await fetchValidatedEntries(); setEntries(mergeEntries(local, remote?.items || [])); } catch (remoteError) { if (!local.length) setError(remoteError.message || "Impossible de charger les écritures."); } };
   useEffect(() => { void reload(); const refresh = () => void reload(); window.addEventListener("keymanage:validated-accounting-entry", refresh); return () => window.removeEventListener("keymanage:validated-accounting-entry", refresh); }, []);
   useEffect(() => {
-    const resetAfterGlobalPurge = () => {
+    const resetAfterSessionClear = () => {
       setEntries([]);
       try {
         window.localStorage.removeItem(VALIDATED_ENTRIES_STORAGE_KEY);
@@ -58,8 +58,12 @@ export default function ValidatedEntriesPage() {
         // Ignore restricted storage contexts.
       }
     };
-    window.addEventListener("keymanage:all-saved-invoices-purged", resetAfterGlobalPurge);
-    return () => window.removeEventListener("keymanage:all-saved-invoices-purged", resetAfterGlobalPurge);
+    window.addEventListener("keymanage:all-saved-invoices-purged", resetAfterSessionClear);
+    window.addEventListener("keymanage:test-session-reset", resetAfterSessionClear);
+    return () => {
+      window.removeEventListener("keymanage:all-saved-invoices-purged", resetAfterSessionClear);
+      window.removeEventListener("keymanage:test-session-reset", resetAfterSessionClear);
+    };
   }, []);
   const invoices = useMemo(() => groupEntries(entries).filter((invoice) => matchesGlobalSearch(invoice, searchQuery)), [entries, searchQuery]); const lineCount = invoices.reduce((total, invoice) => total + invoice.lines.length, 0); const notifyMemory = () => window.dispatchEvent(new Event("keymanage:performance-refresh"));
   const handleSendBackToValidation = async (invoice) => {

@@ -82,6 +82,15 @@ def delete_validation_item(validation_id: str) -> dict[str, Any]:
     raise KeyError("Ligne de validation introuvable.")
 
 
+def clear_all_validation_items() -> int:
+    """Clear the local test-session queue without accessing CouchDB."""
+    with _LOCK:
+        items = _read_items_unlocked()
+        count = len(items)
+        _write_items_unlocked([])
+        return count
+
+
 def save_validation_decision(
     validation_id: str,
     payload: dict[str, Any],

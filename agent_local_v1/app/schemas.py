@@ -517,6 +517,8 @@ class RandomInvoiceListItem(BaseModel):
     invoice_id: str
     invoice_number: str | None = None
     invoice_date: str | None = None
+    due_date: str | None = None
+    total_ttc: float | None = None
     supplier: str | None = None
     client: str | None = None
     client_ape: str | None = None
@@ -548,6 +550,7 @@ class AnalysisBatchJob(BaseModel):
     message: str = ""
     warnings: list[str] = Field(default_factory=list)
     selection_strategy: str = "unprocessed_first"
+    sort_strategy: Literal["DUE_DATE", "CHRONO", "SUPPLIER", "AMOUNT"] = "DUE_DATE"
     already_analyzed_count: int = 0
     candidates_found: int = 0
     selected_count: int = 0

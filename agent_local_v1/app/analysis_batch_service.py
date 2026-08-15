@@ -12,10 +12,11 @@ from typing import Any
 
 import requests
 
+from .ai_memory_service import list_memory_items
 from .config import COUCHDB_DATABASE
 from .database import http_session
-from .history_service import add_history_event, list_history_events
-from .human_validation_store import add_validation_item, list_validation_items
+from .history_service import add_history_event, clear_all_history_events, list_history_events
+from .human_validation_store import add_validation_item, clear_all_validation_items, list_validation_items
 from .invoice_engine_service import (  # noqa: PLC2701
     _resolve_invoice_db_name,
     analyze_invoice_by_id,
@@ -32,6 +33,7 @@ RUNNING_JOB_STATUSES = {"queued", "running", "stopping"}
 BATCH_PARALLEL_WORKERS = 4
 BATCH_EVENT_SUBSCRIBERS: dict[str, set[Queue]] = {}
 BATCH_EVENT_LOCK = threading.Lock()
+VALID_SORT_STRATEGIES = {"DUE_DATE", "CHRONO", "SUPPLIER", "AMOUNT"}
 
 
 def subscribe_analysis_batch(job_id: str) -> Queue:
@@ -133,6 +135,7 @@ def _default_job(job_id: str, database: str, limit: int) -> dict[str, Any]:
         "message": "Lot en attente",
         "warnings": [],
         "selection_strategy": "unprocessed_first",
+        "sort_strategy": "DUE_DATE",
         "already_analyzed_count": 0,
         "candidates_found": 0,
         "selected_count": 0,
@@ -338,7 +341,62 @@ def _serialize_sampled_item(item: Any) -> dict[str, Any]:
         "invoice_number": str(getattr(item, "invoice_number", "") or "").strip(),
         "supplier": str(getattr(item, "supplier", "") or "").strip(),
         "client": str(getattr(item, "client", "") or "").strip(),
+        "invoice_date": str(getattr(item, "invoice_date", "") or "").strip(),
+        "due_date": str(getattr(item, "due_date", "") or "").strip(),
+        "total_ttc": getattr(item, "total_ttc", None),
     }
+
+
+def _sortable_timestamp(value: Any) -> float:
+    text = str(value or "").strip()
+    if not text:
+        return float("inf")
+    normalized = text.replace("Z", "+00:00")
+    try:
+        parsed = datetime.fromisoformat(normalized)
+        return parsed.timestamp()
+    except ValueError:
+        pass
+    for pattern in ("%d/%m/%Y", "%Y/%m/%d", "%d-%m-%Y"):
+        try:
+            return datetime.strptime(text[:10], pattern).replace(tzinfo=timezone.utc).timestamp()
+        except ValueError:
+            continue
+    return float("inf")
+
+
+def _sort_sampled_items(items: list[Any], strategy: str) -> list[Any]:
+    selected = str(strategy or "DUE_DATE").upper()
+    if selected not in VALID_SORT_STRATEGIES:
+        selected = "DUE_DATE"
+
+    def value(item: Any, field: str, default: Any = None) -> Any:
+        if isinstance(item, dict):
+            return item.get(field, default)
+        return getattr(item, field, default)
+
+    if selected == "CHRONO":
+        key = lambda item: (_sortable_timestamp(value(item, "invoice_date")), str(value(item, "invoice_id", "")))
+    elif selected == "SUPPLIER":
+        key = lambda item: (
+            str(value(item, "supplier", "") or "").casefold(),
+            _sortable_timestamp(value(item, "invoice_date")),
+            str(value(item, "invoice_id", "")),
+        )
+    elif selected == "AMOUNT":
+        def key(item: Any) -> tuple[float, float, str]:
+            try:
+                amount = float(value(item, "total_ttc", 0) or 0)
+            except (TypeError, ValueError):
+                amount = 0.0
+            return (-amount, _sortable_timestamp(value(item, "invoice_date")), str(value(item, "invoice_id", "")))
+    else:
+        key = lambda item: (
+            _sortable_timestamp(value(item, "due_date") or value(item, "invoice_date")),
+            _sortable_timestamp(value(item, "invoice_date")),
+            str(value(item, "invoice_id", "")),
+        )
+    return sorted(items, key=key)
 
 
 def _get_job_results_unlocked(payload: dict[str, Any], job_id: str) -> list[dict[str, Any]]:
@@ -453,6 +511,7 @@ def _public_job(job: dict[str, Any]) -> dict[str, Any]:
         "message": str(job.get("message") or ""),
         "warnings": list(job.get("warnings") or []),
         "selection_strategy": str(job.get("selection_strategy") or "unprocessed_first"),
+        "sort_strategy": str(job.get("sort_strategy") or "DUE_DATE"),
         "already_analyzed_count": int(job.get("already_analyzed_count") or 0),
         "candidates_found": int(job.get("candidates_found") or 0),
         "selected_count": int(job.get("selected_count") or 0),
@@ -947,6 +1006,74 @@ def clear_analysis_batch_results() -> dict[str, Any]:
     }
 
 
+def reset_analysis_test_session(wait_timeout_seconds: float = 180.0) -> dict[str, Any]:
+    """Reset local workflow state without issuing any CouchDB request.
+
+    Running jobs are asked to stop and joined before the JSON stores are
+    cleared. This prevents a worker from recreating results after the reset.
+    """
+    with STORE_LOCK:
+        payload = _read_store_unlocked()
+        running_job_ids: list[str] = []
+        for job_id in list(payload.get("order", [])):
+            job = _get_job_unlocked(payload, str(job_id))
+            if not job:
+                continue
+            if str(job.get("status") or "").strip().lower() in RUNNING_JOB_STATUSES:
+                job["stop_requested"] = True
+                job["status"] = "stopping"
+                job["message"] = "Arrêt demandé pour réinitialiser la session de test."
+                _set_job_unlocked(payload, job)
+                running_job_ids.append(str(job_id))
+        _write_store_unlocked(payload)
+
+    deadline = time.monotonic() + max(float(wait_timeout_seconds), 1.0)
+    for job_id in running_job_ids:
+        thread = ACTIVE_THREADS.get(job_id)
+        if thread is None or not thread.is_alive():
+            continue
+        remaining = deadline - time.monotonic()
+        if remaining <= 0:
+            break
+        thread.join(timeout=remaining)
+
+    still_running = [
+        job_id
+        for job_id in running_job_ids
+        if (thread := ACTIVE_THREADS.get(job_id)) is not None and thread.is_alive()
+    ]
+    if still_running:
+        raise RuntimeError(
+            "La facture en cours n'est pas encore terminée. Réessayez la réinitialisation dans quelques instants."
+        )
+
+    with STORE_LOCK:
+        payload = _read_store_unlocked()
+        batch_jobs_count = len(payload.get("jobs", {}))
+        batch_results_count = len(payload.get("results", {}))
+        _write_store_unlocked(_default_store())
+
+    validation_items_count = clear_all_validation_items()
+    history_events_count = clear_all_history_events()
+
+    for job_id in list(ACTIVE_THREADS):
+        thread = ACTIVE_THREADS.get(job_id)
+        if thread is None or not thread.is_alive():
+            ACTIVE_THREADS.pop(job_id, None)
+    with BATCH_EVENT_LOCK:
+        BATCH_EVENT_SUBSCRIBERS.clear()
+
+    return {
+        "success": True,
+        "couchdb_untouched": True,
+        "batch_jobs_cleared": batch_jobs_count,
+        "batch_results_cleared": batch_results_count,
+        "validation_items_cleared": validation_items_count,
+        "history_events_cleared": history_events_count,
+        "message": "Session de test réinitialisée sans modification de CouchDB.",
+    }
+
+
 def get_analysis_batch_results(limit: int = 500, job_id: str | None = None) -> dict[str, Any]:
     requested_limit = max(1, min(int(limit or 500), 500))
     requested_job_id = str(job_id or "").strip()
@@ -983,7 +1110,13 @@ def get_analysis_batch_results(limit: int = 500, job_id: str | None = None) -> d
     }
 
 
-def _analyze_batch_item(job_id: str, database: str, item: dict[str, Any], existing_invoice_ids: set[str] | None = None) -> dict[str, Any]:
+def _analyze_batch_item(
+    job_id: str,
+    database: str,
+    item: dict[str, Any],
+    existing_invoice_ids: set[str] | None = None,
+    ai_memory_items: list[dict[str, Any]] | None = None,
+) -> dict[str, Any]:
     invoice_id = str((item or {}).get("invoice_id") or "").strip()
     invoice_label = " - ".join(
         [
@@ -1008,7 +1141,7 @@ def _analyze_batch_item(job_id: str, database: str, item: dict[str, Any], existi
 
     item_started = time.perf_counter()
     try:
-        response = analyze_invoice_by_id(invoice_id)
+        response = analyze_invoice_by_id(invoice_id, ai_memory_items=ai_memory_items)
         duration_ms = int((time.perf_counter() - item_started) * 1000)
         result = _build_result_from_response(
             job_id=job_id,
@@ -1063,6 +1196,7 @@ def _run_analysis_batch_job(job_id: str) -> None:
         success = int(job.get("success") or 0)
         failed = int(job.get("failed") or 0)
         saved_count = int(job.get("saved_count") or 0)
+        sort_strategy = str(job.get("sort_strategy") or "DUE_DATE").upper()
         _write_store_unlocked(payload)
 
     candidates_found = int(job.get("candidates_found") or 0)
@@ -1077,7 +1211,10 @@ def _run_analysis_batch_job(job_id: str) -> None:
                 exclude_invoice_ids=already_analyzed_ids,
                 startkey=selection_startkey,
             )
-            raw_items = list(getattr(sample_response, "items", []) or [])
+            raw_items = _sort_sampled_items(
+                list(getattr(sample_response, "items", []) or []),
+                sort_strategy,
+            )
             sampled_items = [_serialize_sampled_item(item) for item in raw_items]
             candidates_found = int(selection_meta.get("candidates_found") or 0)
             selected_count = int(selection_meta.get("selected_count") or len(sampled_items))
@@ -1152,9 +1289,19 @@ def _run_analysis_batch_job(job_id: str) -> None:
 
     warnings: list[str] = list(job.get("warnings") or []) if isinstance(job, dict) else []
     interrupted = False
+    try:
+        # One immutable snapshot per lot guarantees consistent decisions even
+        # if a human validation is recorded while the lot is already running.
+        ai_memory_items = list_memory_items(limit=10000)
+    except Exception as exc:
+        ai_memory_items = []
+        warnings.append(f"Mémoire IA indisponible pour ce lot: {exc}")
 
     remaining_items = sampled_items[processed:]
-    for chunk_start in range(0, len(remaining_items), BATCH_PARALLEL_WORKERS):
+    # A single worker guarantees that the selected business order is also the
+    # effective processing and completion order exposed through SSE.
+    batch_workers = 1
+    for chunk_start in range(0, len(remaining_items), batch_workers):
         with STORE_LOCK:
             payload = _read_store_unlocked()
             live_job = _get_job_unlocked(payload, job_id)
@@ -1166,7 +1313,7 @@ def _run_analysis_batch_job(job_id: str) -> None:
                 break
             saved_count = int(live_job.get("saved_count") or 0)
 
-        chunk = remaining_items[chunk_start : chunk_start + BATCH_PARALLEL_WORKERS]
+        chunk = remaining_items[chunk_start : chunk_start + batch_workers]
         valid_chunk = [item for item in chunk if str((item or {}).get("invoice_id") or "").strip()]
         invalid_count = len(chunk) - len(valid_chunk)
         if invalid_count:
@@ -1204,11 +1351,21 @@ def _run_analysis_batch_job(job_id: str) -> None:
 
         print(
             f"[analysis-batch] parallel chunk job_id={job_id} "
-            f"size={len(valid_chunk)} workers={min(BATCH_PARALLEL_WORKERS, len(valid_chunk))} "
+            f"size={len(valid_chunk)} workers={min(batch_workers, len(valid_chunk))} "
             f"progress={processed}/{sampled_count}"
         )
-        with ThreadPoolExecutor(max_workers=min(BATCH_PARALLEL_WORKERS, len(valid_chunk))) as executor:
-            futures = [executor.submit(_analyze_batch_item, job_id, database, item, already_analyzed_ids) for item in valid_chunk]
+        with ThreadPoolExecutor(max_workers=min(batch_workers, len(valid_chunk))) as executor:
+            futures = [
+                executor.submit(
+                    _analyze_batch_item,
+                    job_id,
+                    database,
+                    item,
+                    already_analyzed_ids,
+                    ai_memory_items,
+                )
+                for item in valid_chunk
+            ]
             for future in as_completed(futures):
                 try:
                     outcome = future.result()
@@ -1343,8 +1500,11 @@ def _run_analysis_batch_job(job_id: str) -> None:
     ACTIVE_THREADS.pop(job_id, None)
 
 
-def start_analysis_batch_job(limit: int = 50) -> dict[str, Any]:
+def start_analysis_batch_job(limit: int = 50, sort_strategy: str = "DUE_DATE") -> dict[str, Any]:
     batch_limit = max(1, min(int(limit or 50), 100))
+    selected_sort_strategy = str(sort_strategy or "DUE_DATE").upper()
+    if selected_sort_strategy not in VALID_SORT_STRATEGIES:
+        selected_sort_strategy = "DUE_DATE"
     session = http_session()
     try:
         database = _resolve_invoice_db_name(session)
@@ -1368,6 +1528,7 @@ def start_analysis_batch_job(limit: int = 50) -> dict[str, Any]:
 
         job_id = f"analysis-batch-{uuid.uuid4().hex[:12]}"
         job = _default_job(job_id, database, batch_limit)
+        job["sort_strategy"] = selected_sort_strategy
         job["status"] = "running"
         job["started_at"] = _now_iso()
         job["message"] = "Chargement du lot d'analyse"

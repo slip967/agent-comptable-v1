@@ -19,7 +19,7 @@ import {
   SearchCheck,
   ShieldAlert,
   ShieldCheck,
-  Trash2,
+  RotateCcw,
   UserSquare2,
   X,
 } from "lucide-react";
@@ -434,6 +434,8 @@ function mapSampleInvoiceToQueueItem(invoice) {
     supplier: invoice?.supplier || null,
     client: invoice?.client || null,
     date: invoice?.invoice_date || null,
+    due_date: invoice?.due_date || null,
+    total_ttc: invoice?.total_ttc ?? null,
     invoice_number: invoice?.invoice_number || null,
     line_count: Number(invoice?.line_items_count || 0),
     exploitable_lines_count: Number(invoice?.exploitable_lines_count || 0),
@@ -512,6 +514,8 @@ function mapBatchResultToQueueItem(result) {
     supplier: supplier || null,
     client: client || null,
     date: result?.invoice_date || null,
+    due_date: result?.due_date || analysisPayload?.invoice?.due_date || null,
+    total_ttc: result?.total_ttc ?? analysisPayload?.invoice?.total_ttc ?? analysisPayload?.invoice?.amount_ttc ?? null,
     invoice_number: invoiceNumber || null,
     line_count: totalLines || Number(result?.line_items_count || 0),
     exploitable_lines_count: totalLines || Number(result?.exploitable_lines_count || 0),
@@ -557,6 +561,45 @@ function filterQueueItemsByStatus(items = [], filter = "all") {
       return status === "not_analyzed";
     }
     return true;
+  });
+}
+function sortQueueItems(items = [], strategy = "DUE_DATE") {
+  const list = [...(Array.isArray(items) ? items : [])];
+  const timestamp = (value) => {
+    const parsed = value ? new Date(value) : null;
+    return parsed && !Number.isNaN(parsed.getTime()) ? parsed.getTime() : Number.POSITIVE_INFINITY;
+  };
+  const amount = (item) => {
+    const value = item?.total_ttc
+      ?? item?.amount_ttc
+      ?? item?.total_gross
+      ?? item?.analysis_result?.invoice?.total_ttc
+      ?? item?.analysis_result?.invoice?.amount_ttc;
+    const parsed = Number(value);
+    return Number.isFinite(parsed) ? parsed : 0;
+  };
+  const invoiceDate = (item) => item?.invoice_date || item?.date || item?.created_at;
+  const dueDate = (item) => item?.due_date || item?.payment_due_date || item?.date_echeance || invoiceDate(item);
+  const stableId = (item) => String(getInvoiceId(item) || "");
+  const selected = String(strategy || "DUE_DATE").toUpperCase();
+
+  return list.sort((left, right) => {
+    if (selected === "CHRONO") {
+      return timestamp(invoiceDate(left)) - timestamp(invoiceDate(right)) || stableId(left).localeCompare(stableId(right));
+    }
+    if (selected === "SUPPLIER") {
+      return String(left?.supplier || left?.supplier_name || "").localeCompare(
+        String(right?.supplier || right?.supplier_name || ""),
+        "fr",
+        { sensitivity: "base" },
+      ) || timestamp(invoiceDate(left)) - timestamp(invoiceDate(right)) || stableId(left).localeCompare(stableId(right));
+    }
+    if (selected === "AMOUNT") {
+      return amount(right) - amount(left) || timestamp(invoiceDate(left)) - timestamp(invoiceDate(right)) || stableId(left).localeCompare(stableId(right));
+    }
+    return timestamp(dueDate(left)) - timestamp(dueDate(right))
+      || timestamp(invoiceDate(left)) - timestamp(invoiceDate(right))
+      || stableId(left).localeCompare(stableId(right));
   });
 }
 function mergeQueueItemsByInvoiceId(existing = [], incoming = []) {
@@ -999,8 +1042,9 @@ export default function AnalysisPage() {
     ape: "",
   });
   const [batchLimitInput, setBatchLimitInput] = useState("50");
-  const [purgeAllConfirmOpen, setPurgeAllConfirmOpen] = useState(false);
-  const [purgingAllInvoices, setPurgingAllInvoices] = useState(false);
+  const [sortStrategy, setSortStrategy] = useState("DUE_DATE");
+  const [resetSessionConfirmOpen, setResetSessionConfirmOpen] = useState(false);
+  const [resettingTestSession, setResettingTestSession] = useState(false);
   const {
     queueItems,
     queueCounts,
@@ -1022,7 +1066,7 @@ export default function AnalysisPage() {
     handleSaveBatchAnalysis,
     handleShowAllRecordedInvoices,
     handleClearBatchResults,
-    handlePurgeSavedInvoices,
+    handleResetTestSession,
     patchQueueItem,
     cacheAnalysisResult,
   } = useAnalysisBatch();
@@ -1588,7 +1632,7 @@ export default function AnalysisPage() {
     } catch {
       // Storage and custom events are optional in restricted browser contexts.
     }
-    handleLoadBatchAnalysis(nextLimit);
+    handleLoadBatchAnalysis(nextLimit, sortStrategy);
   };
   const handleClearLocalListAndReset = () => {
     handleClearBatchResults();
@@ -1599,26 +1643,24 @@ export default function AnalysisPage() {
       // Keep the local list reset even when browser storage is unavailable.
     }
   };
-  const handlePurgeAllSavedInvoices = async () => {
-    if (purgingAllInvoices) return;
-    setPurgingAllInvoices(true);
+  const handleResetSession = async () => {
+    if (resettingTestSession) return;
+    setResettingTestSession(true);
     setErrorMessage("");
     setActionMessage("");
     try {
       setSelectedInvoiceId("");
       setAnalysisResult(null);
       setDetailDrawerOpen(false);
-      const payload = await handlePurgeSavedInvoices();
-      setPurgeAllConfirmOpen(false);
-      setSuccessMessage(
-        Number(payload?.count ?? payload?.deletedCount ?? 0) + " facture" + (Number(payload?.count ?? payload?.deletedCount ?? 0) > 1 ? "s" : "") + " supprimée" + (Number(payload?.count ?? payload?.deletedCount ?? 0) > 1 ? "s" : "") + " définitivement de la base de données.",
-      );
+      const payload = await handleResetTestSession();
+      setResetSessionConfirmOpen(false);
+      setSuccessMessage(payload?.message || "Session de test réinitialisée sans modification de CouchDB.");
     } catch (error) {
       setErrorMessage(
-        String(error?.message || "Impossible de supprimer définitivement les factures.").trim(),
+        String(error?.message || "Impossible de réinitialiser la session de test.").trim(),
       );
     } finally {
-      setPurgingAllInvoices(false);
+      setResettingTestSession(false);
     }
   };
   const currentBatchJobId = String(batchJob?.job_id || "").trim();
@@ -1633,12 +1675,12 @@ export default function AnalysisPage() {
         (item) => String(item?.batch_job_id || "").trim() !== currentBatchJobId,
       )
     : visibleSourceItems;
-  const filteredCurrentBatchItems = filterQueueItemsByStatus(currentBatchItems, invoiceFilter);
-  const filteredVisibleQueueItems = filterQueueItemsByStatus(visibleQueueItems, invoiceFilter);
+  const filteredCurrentBatchItems = sortQueueItems(filterQueueItemsByStatus(currentBatchItems, invoiceFilter), sortStrategy);
+  const filteredVisibleQueueItems = sortQueueItems(filterQueueItemsByStatus(visibleQueueItems, invoiceFilter), sortStrategy);
 
   const isBatchRunning = loadingBatch || ["queued", "running", "stopping", "already_running"].includes(String(batchJob?.status || "").toLowerCase());
 
-  const renderInvoiceQueueCard = (invoice, keyPrefix = "queue") => {
+  const renderInvoiceQueueCard = (invoice, keyPrefix = "queue", queuePosition = null) => {
     const invoiceId = getInvoiceId(invoice);
     const lineCount = Number(invoice?.line_count || invoice?.line_items_count || invoice?.lines?.length || invoice?.line_items?.length || 0);
     const supplier = textOrFallback(invoice?.supplier || invoice?.supplier_name, "Fournisseur inconnu");
@@ -1660,19 +1702,22 @@ export default function AnalysisPage() {
             <h3 className="analysis-invoice-card-title">{supplier}</h3>
             <p className="analysis-invoice-reference">{invoiceNumber} - {lineCount} ligne{lineCount > 1 ? "s" : ""}</p>
           </div>
-          <span className={`status-pill ${queueStatusTone(invoice?.status)}`}>
-            {queueStatusLabel(invoice?.status)}
-          </span>
+          <div className="analysis-invoice-card-badges">
+            {Number.isInteger(queuePosition) ? <span className="analysis-queue-position">#{queuePosition + 1}</span> : null}
+            <span className={`status-pill ${queueStatusTone(invoice?.status)}`}>
+              {queueStatusLabel(invoice?.status)}
+            </span>
+          </div>
         </div>
         <div className="analysis-invoice-card-meta-row">
           <span><UserSquare2 size={14} /> {client}</span>
           <span><CalendarDays size={14} /> {dateLabel}</span>
         </div>
         <div className="analysis-invoice-card-actions analysis-invoice-card-actions-legacy">
-          <button type="button" className="secondary-btn compact analysis-card-pdf" onClick={() => void handleInvoiceCardPdfClick(invoice)} disabled={!invoiceId || pdfLoading}>
+          <button type="button" className="analysis-card-action-btn analysis-card-pdf" onClick={() => void handleInvoiceCardPdfClick(invoice)} disabled={!invoiceId || pdfLoading}>
             {pdfLoading ? <LoaderCircle size={14} className="spin" /> : <FileText size={14} />} {pdfLoading ? "Ouverture..." : "Voir PDF"}
           </button>
-          <button type="button" className="secondary-btn compact analysis-card-analyze" onClick={() => runInvoiceAnalysis(invoiceId)} disabled={!invoiceId || loadingAnalysis}>
+          <button type="button" className="analysis-card-action-btn analysis-card-analyze" onClick={() => runInvoiceAnalysis(invoiceId)} disabled={!invoiceId || loadingAnalysis}>
             <BrainCircuit size={14} /> Analyser
           </button>
         </div>
@@ -1718,6 +1763,20 @@ export default function AnalysisPage() {
             </button>
           ))}
         </div>
+        <div className="analysis-sort-control" role="group" aria-label="Stratégie de traitement">
+          <label htmlFor="analysis-sort-strategy">Stratégie de traitement :</label>
+          <select
+            id="analysis-sort-strategy"
+            value={sortStrategy}
+            onChange={(event) => setSortStrategy(event.target.value)}
+            disabled={isBatchRunning}
+          >
+            <option value="DUE_DATE">📅 Urgence (Date d'échéance)</option>
+            <option value="CHRONO">⏱️ Chronologique (Date d'émission)</option>
+            <option value="SUPPLIER">🏢 Par Fournisseur (Traitement par lots)</option>
+            <option value="AMOUNT">💰 Par Montant TTC (Priorité enjeux)</option>
+          </select>
+        </div>
         <hr className="analysis-filter-divider border-t border-slate-200/70" />
         <div className="analysis-toolbar analysis-action-toolbar">
           <div className="analysis-action-row">
@@ -1732,7 +1791,7 @@ export default function AnalysisPage() {
           <div className="analysis-action-row analysis-management-row">
             <button type="button" className="warning-btn compact" onClick={handleSaveBatchAnalysis}><Save size={15} /> Enregistrer l'analyse</button>
             <button type="button" className="secondary-btn compact" onClick={handleShowAllRecordedInvoices} disabled={loadingBatch}><SearchCheck size={15} /> Afficher toutes les factures enregistrées</button>
-            <button type="button" className="danger-btn compact" onClick={() => setPurgeAllConfirmOpen(true)} disabled={purgingAllInvoices || loadingBatch}>{purgingAllInvoices ? <LoaderCircle size={14} className="spin" /> : <Trash2 size={14} />} {purgingAllInvoices ? "Suppression définitive..." : "Supprimer définitivement toutes les factures"}</button>
+            <button type="button" className="danger-btn compact" onClick={() => setResetSessionConfirmOpen(true)} disabled={resettingTestSession}>{resettingTestSession ? <LoaderCircle size={14} className="spin" /> : <RotateCcw size={14} />} {resettingTestSession ? "Réinitialisation..." : "Réinitialiser la session de test"}</button>
             {persistedBatchCount > 0 ? <button type="button" className="secondary-btn compact local-clear-btn" onClick={handleClearLocalListAndReset} disabled={loadingBatch}><X size={14} /> Vider la liste locale</button> : null}
           </div>
         </div>
@@ -1746,21 +1805,21 @@ export default function AnalysisPage() {
             {actionMessage ? <div className="analysis-inline-note">{actionMessage}</div> : null}
           </div>
         ) : null}
-        {purgeAllConfirmOpen ? (
+        {resetSessionConfirmOpen ? (
           <div className="ve-modal-backdrop" role="presentation">
-            <section className="ve-modal-panel ve-confirm-modal" role="dialog" aria-modal="true" aria-labelledby="purge-all-title">
+            <section className="ve-modal-panel ve-confirm-modal" role="dialog" aria-modal="true" aria-labelledby="reset-session-title">
               <header className="ve-modal-head">
                 <div>
-                  <h2 id="purge-all-title" className="ve-modal-title">Suppression définitive</h2>
-                  <p className="ve-modal-subtitle">⚠️ ATTENTION : Cette action va supprimer définitivement toutes les factures enregistrées de la base de données. Cette action est irréversible. Confirmer la suppression ?</p>
+                  <h2 id="reset-session-title" className="ve-modal-title">Réinitialiser la session de test</h2>
+                  <p className="ve-modal-subtitle">Cette action remet à zéro la session de test sans toucher à CouchDB. Les résultats d’analyse, la file de validation humaine et l’historique local seront vidés.</p>
                 </div>
-                <button type="button" className="ve-modal-close" onClick={() => setPurgeAllConfirmOpen(false)} disabled={purgingAllInvoices} aria-label="Fermer"><X size={18} /></button>
+                <button type="button" className="ve-modal-close" onClick={() => setResetSessionConfirmOpen(false)} disabled={resettingTestSession} aria-label="Fermer"><X size={18} /></button>
               </header>
               <div className="ve-modal-body">
                 <div className="ve-confirm-actions">
-                  <button type="button" className="secondary-btn compact" onClick={() => setPurgeAllConfirmOpen(false)} disabled={purgingAllInvoices}>Annuler</button>
-                  <button type="button" className="danger-btn compact" onClick={() => void handlePurgeAllSavedInvoices()} disabled={purgingAllInvoices}>
-                    {purgingAllInvoices ? <LoaderCircle size={14} className="spin" /> : <Trash2 size={14} />} Confirmer la suppression
+                  <button type="button" className="secondary-btn compact" onClick={() => setResetSessionConfirmOpen(false)} disabled={resettingTestSession}>Annuler</button>
+                  <button type="button" className="danger-btn compact" onClick={() => void handleResetSession()} disabled={resettingTestSession}>
+                    {resettingTestSession ? <LoaderCircle size={14} className="spin" /> : <RotateCcw size={14} />} Confirmer la réinitialisation
                   </button>
                 </div>
               </div>
@@ -1787,7 +1846,7 @@ export default function AnalysisPage() {
                   </div>
                   {filteredCurrentBatchItems.length ? (
                     <div className="analysis-invoice-carousel analysis-invoice-carousel-inline">
-                      {filteredCurrentBatchItems.map((invoice) => renderInvoiceQueueCard(invoice, `batch-${currentBatchJobId}`))}
+                      {filteredCurrentBatchItems.map((invoice, index) => renderInvoiceQueueCard(invoice, `batch-${currentBatchJobId}`, index))}
                     </div>
                   ) : (
                     <div className="analysis-carousel-empty analysis-carousel-empty-subtle">
@@ -1817,8 +1876,8 @@ export default function AnalysisPage() {
                   <strong>Analyse du lot en cours...</strong>
                 </div>
               ) : filteredVisibleQueueItems.length ? (
-                filteredVisibleQueueItems.map((invoice) =>
-                  renderInvoiceQueueCard(invoice, "queue"),
+                filteredVisibleQueueItems.map((invoice, index) =>
+                  renderInvoiceQueueCard(invoice, "queue", index),
                 )
               ) : hasLoadedSearchQueue || hasLoadedQueue || persistedBatchCount > 0 ? (
                 <div className="analysis-carousel-empty">

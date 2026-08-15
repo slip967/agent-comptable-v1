@@ -607,6 +607,7 @@ const HISTORY_V0_STYLES = `
     .history-v0-event-top-right {
       justify-content: flex-start;
     }
+
   }
 `;
 
@@ -883,6 +884,18 @@ export default function HistoryPage() {
     const refreshHistory = () => {
       void loadHistory({ silent: true });
     };
+    const resetHistory = () => {
+      setEvents([]);
+      setActiveFilter("all");
+      setErrorMessage("");
+      setConfirmPurge(false);
+      setHiddenEventIds([]);
+      try {
+        window.localStorage.removeItem(HISTORY_HIDDEN_EVENTS_KEY);
+      } catch {
+        // Keep the UI reset available in restricted browser contexts.
+      }
+    };
     const refreshWhenVisible = () => {
       if (document.visibilityState === "visible") void loadHistory({ silent: true });
     };
@@ -893,6 +906,7 @@ export default function HistoryPage() {
     window.addEventListener("keymanage:validated-accounting-entry", refreshHistory);
     window.addEventListener("keymanage:human-validation-updated", refreshHistory);
     window.addEventListener("keymanage:analysis-history-updated", refreshHistory);
+    window.addEventListener("keymanage:test-session-reset", resetHistory);
     window.addEventListener("storage", refreshHistory);
     document.addEventListener("visibilitychange", refreshWhenVisible);
     return () => {
@@ -900,6 +914,7 @@ export default function HistoryPage() {
       window.removeEventListener("keymanage:validated-accounting-entry", refreshHistory);
       window.removeEventListener("keymanage:human-validation-updated", refreshHistory);
       window.removeEventListener("keymanage:analysis-history-updated", refreshHistory);
+      window.removeEventListener("keymanage:test-session-reset", resetHistory);
       window.removeEventListener("storage", refreshHistory);
       document.removeEventListener("visibilitychange", refreshWhenVisible);
     };

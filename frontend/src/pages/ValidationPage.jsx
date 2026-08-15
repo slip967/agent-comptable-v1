@@ -23,6 +23,7 @@ import {
   submitHumanValidationDecision,
 } from "../services/api";
 import { formatAccount } from "../utils/accountLabels";
+import { cleanDisplayData, cleanDisplayText } from "../utils/textCleaner";
 import { addPersistentHiddenId, readPersistentHiddenIds } from "../utils/persistentHiddenItems";
 import { persistValidatedInvoice, readRolledBackInvoices } from "../utils/validatedEntries";
 import {
@@ -35,23 +36,12 @@ import {
 } from "../utils/uiText";
 
 const VALIDATION_HIDDEN_ITEMS_KEY = "keymanage.validation.hidden-items.v1";
-function repairPcgText(value) {
-  const text = String(value ?? "");
-  if (!text.includes(String.fromCharCode(195))) return text;
-  try {
-    const bytes = Uint8Array.from(Array.from(text), (character) => character.charCodeAt(0));
-    return new TextDecoder("utf-8").decode(bytes);
-  } catch {
-    return text;
-  }
-}
-
-const PCG_CLASS_6_GROUPS = (pcgClass6.classes || []).map((group) => ({
+const PCG_CLASS_6_GROUPS = cleanDisplayData(pcgClass6.classes || []).map((group) => ({
   ...group,
-  category: repairPcgText(group.category),
+  category: cleanDisplayText(group.category),
   accounts: (group.accounts || []).map((account) => ({
     ...account,
-    label: repairPcgText(account.label),
+    label: cleanDisplayText(account.label),
   })),
 }));
 
@@ -138,8 +128,7 @@ const PCG_CLASS_6_GROUPS = [
 */
 
 function textOrFallback(value, fallback = "Non renseigné") {
-  const text = String(value || "").trim();
-  return text || fallback;
+  return cleanDisplayText(value, fallback);
 }
 
 function formatPercent(value) {
@@ -492,8 +481,9 @@ export default function ValidationPage() {
     try {
       const payload = await fetchHumanValidationItems({ limit: 1000 });
       const hiddenIds = new Set(readPersistentHiddenIds(VALIDATION_HIDDEN_ITEMS_KEY));
-      const loadedItems = Array.isArray(payload?.items)
-        ? payload.items.filter((item) => !isTestValidationItem(item) && !isAutoRoutedItem(item))
+      const cleanedItems = cleanDisplayData(Array.isArray(payload?.items) ? payload.items : []);
+      const loadedItems = Array.isArray(cleanedItems)
+        ? cleanedItems.filter((item) => !isTestValidationItem(item) && !isAutoRoutedItem(item))
         : [];
       const nextItems = loadedItems.filter((item) =>
         !hiddenIds.has(getValidationId(item)),
@@ -502,7 +492,7 @@ export default function ValidationPage() {
       setCounts(countValidationInvoices(nextItems));
     } catch (error) {
       setErrorMessage(
-        String(error?.message || "").trim() ||
+        cleanDisplayText(error?.message) ||
           "Impossible de charger la file de validation humaine.",
       );
     } finally {
@@ -516,16 +506,25 @@ export default function ValidationPage() {
 
 
   useEffect(() => {
-    const resetAfterGlobalPurge = () => {
+    const resetAfterSessionClear = () => {
       setItems([]);
       setCounts({});
       setSelectedItem(null);
       setSelectedLineIndex(0);
       setErrorMessage("");
       setSuccessMessage("");
+      try {
+        window.localStorage.removeItem(VALIDATION_HIDDEN_ITEMS_KEY);
+      } catch {
+        // Keep the UI reset available in restricted browser contexts.
+      }
     };
-    window.addEventListener("keymanage:all-saved-invoices-purged", resetAfterGlobalPurge);
-    return () => window.removeEventListener("keymanage:all-saved-invoices-purged", resetAfterGlobalPurge);
+    window.addEventListener("keymanage:all-saved-invoices-purged", resetAfterSessionClear);
+    window.addEventListener("keymanage:test-session-reset", resetAfterSessionClear);
+    return () => {
+      window.removeEventListener("keymanage:all-saved-invoices-purged", resetAfterSessionClear);
+      window.removeEventListener("keymanage:test-session-reset", resetAfterSessionClear);
+    };
   }, []);
   const submitDecision = async (action, extraPayload = {}) => {
     const targetLines = action === "correct_account" ? [selectedPrimaryLine] : selectedLines;
@@ -597,7 +596,7 @@ export default function ValidationPage() {
       }
     } catch (error) {
       setErrorMessage(
-        String(error?.message || "").trim() ||
+        cleanDisplayText(error?.message) ||
           "Impossible d’enregistrer la décision humaine.",
       );
     }
@@ -621,7 +620,7 @@ export default function ValidationPage() {
       setShowPdfViewer(true);
     } catch (error) {
       setErrorMessage(
-        String(error?.message || "").trim() ||
+        cleanDisplayText(error?.message) ||
           "Document source non disponible pour cette facture.",
       );
     } finally {
@@ -653,7 +652,7 @@ export default function ValidationPage() {
       });
       if (selectedItem?.invoice_group_id === item.invoice_group_id) setSelectedItem(null);
     } catch (error) {
-      setErrorMessage(error?.message || "Impossible de supprimer cette facture de validation.");
+      setErrorMessage(cleanDisplayText(error?.message, "Impossible de supprimer cette facture de validation."));
     }
   };
 

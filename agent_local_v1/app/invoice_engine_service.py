@@ -17,6 +17,7 @@ from urllib.parse import quote
 import requests
 
 from .account_labels import get_account_label
+from .ai_memory_service import list_memory_items, resolve_ai_memory_rule
 from .config import COUCHDB_DATABASE
 from .database import COUCHDB_URL, get_supplier_memory, get_validation_patterns, http_session
 from .schemas import (
@@ -685,11 +686,26 @@ def _build_random_invoice_list_item(doc: dict[str, Any]) -> tuple[RandomInvoiceL
         if raw_text and not module.is_non_article_line(raw_text):
             exploitable += 1
 
+    due_date = next(
+        (_text(doc.get(field)) for field in ("due_date", "payment_due_date", "date_echeance", "echeance_date") if _text(doc.get(field))),
+        None,
+    )
+    total_ttc = next(
+        (
+            parsed
+            for field in ("total_ttc", "amount_ttc", "total_gross", "invoice_total", "total_amount", "net_to_pay", "net_payable")
+            if (parsed := _safe_float(doc.get(field))) is not None
+        ),
+        None,
+    )
+
     return (
         RandomInvoiceListItem(
             invoice_id=_text(doc.get("_id")),
             invoice_number=_text(doc.get("invoice_number")) or None,
             invoice_date=_text(doc.get("invoice_date")) or None,
+            due_date=due_date,
+            total_ttc=total_ttc,
             supplier=context.get("supplier"),
             client=context.get("client"),
             client_ape=context.get("client_ape"),
@@ -1383,6 +1399,86 @@ def _analyze_single_line(line_payload: dict[str, Any], context: dict[str, Any]) 
     if not cleaned_text or module.is_non_article_line(raw_text):
         return _non_comptable_line_analysis(line_payload, context)
 
+    memory_rule = resolve_ai_memory_rule(
+        raw_text=raw_text,
+        supplier=context.get("supplier"),
+        memory_items=context.get("_ai_memory_items"),
+    )
+    if memory_rule is not None:
+        match_type = str(memory_rule.get("match_type") or "label_exact")
+        memory_status = str(memory_rule.get("status") or "candidate").strip().lower()
+        validation_id = _text(memory_rule.get("validation_id"))
+        if memory_status == "non_comptable_candidate":
+            line = _non_comptable_line_analysis(line_payload, context)
+            line.confidence = 100.0
+            line.decision_reason = (
+                "Ligne reconnue comme non comptable d'après une validation humaine mémorisée."
+            )
+            return line
+
+        account = _text(memory_rule.get("validated_account"))
+        account_label = (
+            _text(memory_rule.get("validated_account_label"))
+            or get_account_label(account)
+        )
+        match_label = {
+            "label_exact": "libellé normalisé identique",
+            "label_similar": "libellé normalisé très proche",
+            "supplier": "compte dominant mémorisé pour ce fournisseur",
+        }.get(match_type, "règle humaine mémorisée")
+        reason = (
+            f"Compte {account} appliqué depuis la mémoire IA ({match_label}). "
+            "Cette règle provient d'une validation de l'expert-comptable."
+        )
+        candidate = StrongTopCandidate(
+            account=account,
+            account_label=account_label,
+            article_source=_text(memory_rule.get("raw_text_examples", [raw_text])[0]) if memory_rule.get("raw_text_examples") else raw_text,
+            article_canonique=_text(memory_rule.get("normalized_label")) or cleaned_text,
+            base=_text(memory_rule.get("activity")) or context.get("metier_hint"),
+            score=100.0,
+            reason=reason,
+            decision="auto_ok",
+            evidence_status="partial",
+            source_invoice_ids=[],
+            partitions_sources=[f"human_validation:{validation_id}"] if validation_id else ["human_validation"],
+            ape_context=[_text(memory_rule.get("ape"))] if _text(memory_rule.get("ape")) else [],
+        )
+        return StrongLineAnalysis(
+            raw_text=raw_text,
+            cleaned_text=cleaned_text,
+            quantity=line_payload.get("quantity"),
+            unit_price=line_payload.get("unit_price"),
+            amount_ht=line_payload.get("amount_ht"),
+            amount_ttc=line_payload.get("amount_ttc"),
+            tva=line_payload.get("tva"),
+            supplier=context.get("supplier"),
+            client=context.get("client"),
+            client_ape=context.get("client_ape"),
+            supplier_ape=context.get("supplier_ape"),
+            metier_hint=context.get("metier_hint"),
+            detected_activity=_text(memory_rule.get("activity")) or context.get("metier_hint"),
+            referential_status="found_exact",
+            recommended_account=account,
+            recommended_account_label=account_label,
+            confidence=100.0,
+            risk_level="faible",
+            decision="auto_ok",
+            decision_reason=reason,
+            evidence_status="partial",
+            quality_status="fiable",
+            partitions_sources=list(candidate.partitions_sources),
+            ape_context=list(candidate.ape_context),
+            top_candidates=[candidate],
+            enrichment_suggestion=StrongEnrichmentSuggestion(
+                should_enrich=False,
+                suggested_account=account,
+                suggested_label=account_label,
+                reason="Règle déjà validée et mémorisée par l'expert-comptable.",
+                requires_expert_validation=False,
+            ),
+        )
+
     supplier_account_stats = context.get("_supplier_account_stats")
     if "_supplier_account_stats" not in context:
         try:
@@ -1692,6 +1788,11 @@ def analyze_invoice_lines_strong(
 ) -> StrongAnalysisResponse:
     total_started = time.perf_counter()
     context_dict = _context_to_dict(context)
+    if "_ai_memory_items" not in context_dict:
+        try:
+            context_dict["_ai_memory_items"] = list_memory_items(limit=10000)
+        except Exception:
+            context_dict["_ai_memory_items"] = []
     line_payloads, working_context, invoice_meta, line_source = _build_line_payloads(invoice_doc_or_lines, context_dict)
 
     if not working_context.get("metier_hint"):
@@ -1759,7 +1860,11 @@ def analyze_invoice_lines_strong(
     )
 
 
-def analyze_invoice_by_id(invoice_id: str) -> StrongAnalysisResponse:
+def analyze_invoice_by_id(
+    invoice_id: str,
+    *,
+    ai_memory_items: list[dict[str, Any]] | None = None,
+) -> StrongAnalysisResponse:
     total_started = time.perf_counter()
     print(f"[analysis/strong-invoice] start invoice_id={invoice_id}")
     try:
@@ -1773,7 +1878,8 @@ def analyze_invoice_by_id(invoice_id: str) -> StrongAnalysisResponse:
             f"keys={sorted(list(invoice_doc.keys()))[:20]}"
         )
         analysis_started = time.perf_counter()
-        response = analyze_invoice_lines_strong(invoice_doc)
+        analysis_context = {"_ai_memory_items": ai_memory_items} if ai_memory_items is not None else None
+        response = analyze_invoice_lines_strong(invoice_doc, context=analysis_context)
         analysis_ms = round((time.perf_counter() - analysis_started) * 1000, 2)
         total_ms = round((time.perf_counter() - total_started) * 1000, 2)
         print(

@@ -142,10 +142,10 @@ export function fetchRandomInvoices(limit = 10) {
   });
 }
 
-export function startAnalysisBatch(limit = 50) {
+export function startAnalysisBatch(limit = 50, sortStrategy = "DUE_DATE") {
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), 20000);
-  return requestJson(`/api/analysis/batch-run?limit=${encodeURIComponent(limit)}`, {
+  return requestJson(`/api/analysis/batch-run?limit=${encodeURIComponent(limit)}&sort_strategy=${encodeURIComponent(sortStrategy)}`, {
     method: "POST",
     signal: controller.signal,
   }).catch((error) => {
@@ -646,6 +646,6 @@ export function getAnalysisBatchStreamUrl(jobId) {
   return `${API_BASE_URL}/api/analysis/batch-jobs/${encodeURIComponent(jobId)}/stream`;
 }
 
-export function purgeSavedInvoicesPermanently() {
-  return requestJson("/api/invoices/saved/purge?confirm=true", { method: "DELETE" });
+export function resetAnalysisTestSession() {
+  return requestJson("/api/analysis/reset-session?confirm=true", { method: "POST" });
 }
