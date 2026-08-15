@@ -1053,6 +1053,22 @@ def reset_analysis_test_session(wait_timeout_seconds: float = 180.0) -> dict[str
         batch_results_count = len(payload.get("results", {}))
         _write_store_unlocked(_default_store())
 
+    validation_items = list_validation_items(limit=10000)
+    validated_statuses = {
+        "VALIDATED",
+        "VALIDE",
+        "VALIDE_AUTO",
+        "COMPTABILISEE",
+        "COMPTABILISÉE",
+    }
+    validated_entries_count = sum(
+        1
+        for item in validation_items
+        if any(
+            str(item.get(field) or "").strip().upper() in validated_statuses
+            for field in ("status", "workflow_status", "accounting_status")
+        )
+    )
     validation_items_count = clear_all_validation_items()
     history_events_count = clear_all_history_events()
 
@@ -1069,6 +1085,7 @@ def reset_analysis_test_session(wait_timeout_seconds: float = 180.0) -> dict[str
         "batch_jobs_cleared": batch_jobs_count,
         "batch_results_cleared": batch_results_count,
         "validation_items_cleared": validation_items_count,
+        "validated_entries_cleared": validated_entries_count,
         "history_events_cleared": history_events_count,
         "message": "Session de test réinitialisée sans modification de CouchDB.",
     }

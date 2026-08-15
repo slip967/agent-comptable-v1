@@ -23,6 +23,7 @@ import {
   submitHumanValidationDecision,
 } from "../services/api";
 import { formatAccount } from "../utils/accountLabels";
+import { isSuccessfulOrMissingDeletion } from "../utils/apiErrors";
 import { cleanDisplayData, cleanDisplayText } from "../utils/textCleaner";
 import { addPersistentHiddenId, readPersistentHiddenIds } from "../utils/persistentHiddenItems";
 import { persistValidatedInvoice, readRolledBackInvoices } from "../utils/validatedEntries";
@@ -642,27 +643,47 @@ export default function ValidationPage() {
     if (!confirmed) return;
     setErrorMessage("");
     try {
-      await Promise.all(ids.map((validationId) => deleteHumanValidationItem(validationId)));
-      ids.forEach((validationId) => addPersistentHiddenId(VALIDATION_HIDDEN_ITEMS_KEY, validationId));
+      const results = await Promise.allSettled(
+        ids.map((validationId) => deleteHumanValidationItem(validationId)),
+      );
+      const removableIds = ids.filter((_, index) => isSuccessfulOrMissingDeletion(results[index]));
+      const hardFailure = results.find((result) => !isSuccessfulOrMissingDeletion(result));
+      removableIds.forEach((validationId) => addPersistentHiddenId(VALIDATION_HIDDEN_ITEMS_KEY, validationId));
       setItems((current) => {
-        const hidden = new Set(ids);
+        const hidden = new Set(removableIds);
         const nextItems = current.filter((entry) => !hidden.has(getValidationId(entry)));
         setCounts(countValidationInvoices(nextItems));
         return nextItems;
       });
-      if (selectedItem?.invoice_group_id === item.invoice_group_id) setSelectedItem(null);
+      if (!hardFailure && selectedItem?.invoice_group_id === item.invoice_group_id) setSelectedItem(null);
+      if (hardFailure) {
+        setErrorMessage(cleanDisplayText(hardFailure.reason?.message, "Certaines lignes n’ont pas pu être supprimées."));
+      }
     } catch (error) {
       setErrorMessage(cleanDisplayText(error?.message, "Impossible de supprimer cette facture de validation."));
     }
   };
 
-  const handlePurgeAll = () => {
+  const handlePurgeAll = async () => {
     setConfirmPurge(false);
     const allIds = items.map(getValidationId).filter(Boolean);
-    allIds.forEach((validationId) => addPersistentHiddenId(VALIDATION_HIDDEN_ITEMS_KEY, validationId));
-    setItems([]);
-    setCounts({});
-    setSelectedItem(null);
+    setErrorMessage("");
+    const results = await Promise.allSettled(
+      allIds.map((validationId) => deleteHumanValidationItem(validationId)),
+    );
+    const removableIds = allIds.filter((_, index) => isSuccessfulOrMissingDeletion(results[index]));
+    const removableSet = new Set(removableIds);
+    removableIds.forEach((validationId) => addPersistentHiddenId(VALIDATION_HIDDEN_ITEMS_KEY, validationId));
+    setItems((current) => {
+      const nextItems = current.filter((entry) => !removableSet.has(getValidationId(entry)));
+      setCounts(countValidationInvoices(nextItems));
+      return nextItems;
+    });
+    if (selectedItem && removableSet.has(getValidationId(selectedItem))) setSelectedItem(null);
+    const hardFailure = results.find((result) => !isSuccessfulOrMissingDeletion(result));
+    if (hardFailure) {
+      setErrorMessage(cleanDisplayText(hardFailure.reason?.message, "Certaines lignes n’ont pas pu être supprimées."));
+    }
   };
 
   const openValidationItem = (item) => {

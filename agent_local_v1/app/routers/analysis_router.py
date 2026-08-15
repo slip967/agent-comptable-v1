@@ -598,7 +598,11 @@ def delete_analysis_batch_results() -> dict:
 
 @router.post("/reset-session", status_code=200)
 def reset_analysis_session(confirm: bool = Query(False)) -> dict:
-    """Reset local test state only; this endpoint never accesses CouchDB."""
+    """Reset batch, validation, validated-entry and history state locally.
+
+    This endpoint delegates only to JSON/in-memory session stores and never
+    opens a CouchDB session.
+    """
     if not confirm:
         raise HTTPException(
             status_code=400,

@@ -20,7 +20,7 @@ import {
   resetAnalysisTestSession,
 } from "../services/api";
 import { formatHumanReadableText } from "../utils/uiText";
-import { persistValidatedInvoice } from "../utils/validatedEntries";
+import { clearValidatedSessionStorage, persistValidatedInvoice } from "../utils/validatedEntries";
 
 const AnalysisBatchContext = createContext(null);
 
@@ -662,6 +662,7 @@ export function AnalysisBatchProvider({ children }) {
     setBatchSuccessMessage("");
     setShowingRecordedInvoices(false);
     setBatchControlState("");
+    clearValidatedSessionStorage();
     window.dispatchEvent(new Event("keymanage:local-analysis-reset"));
     window.dispatchEvent(new Event("keymanage:test-session-reset"));
   }, [clearBatchPollTimer, closeBatchStream]);

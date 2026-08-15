@@ -1791,7 +1791,7 @@ export default function AnalysisPage() {
           <div className="analysis-action-row analysis-management-row">
             <button type="button" className="warning-btn compact" onClick={handleSaveBatchAnalysis}><Save size={15} /> Enregistrer l'analyse</button>
             <button type="button" className="secondary-btn compact" onClick={handleShowAllRecordedInvoices} disabled={loadingBatch}><SearchCheck size={15} /> Afficher toutes les factures enregistrées</button>
-            <button type="button" className="danger-btn compact" onClick={() => setResetSessionConfirmOpen(true)} disabled={resettingTestSession}>{resettingTestSession ? <LoaderCircle size={14} className="spin" /> : <RotateCcw size={14} />} {resettingTestSession ? "Réinitialisation..." : "Réinitialiser la session de test"}</button>
+            <button type="button" className="danger-btn compact reset-session-btn" onClick={() => setResetSessionConfirmOpen(true)} disabled={resettingTestSession}>{resettingTestSession ? <LoaderCircle size={14} className="spin" /> : <RotateCcw size={14} />} {resettingTestSession ? "Réinitialisation..." : "Réinitialiser la session de test"}</button>
             {persistedBatchCount > 0 ? <button type="button" className="secondary-btn compact local-clear-btn" onClick={handleClearLocalListAndReset} disabled={loadingBatch}><X size={14} /> Vider la liste locale</button> : null}
           </div>
         </div>

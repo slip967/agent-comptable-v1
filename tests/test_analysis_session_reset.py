@@ -34,6 +34,17 @@ class AnalysisSessionResetTests(unittest.TestCase):
                 side_effect=lambda payload: written_stores.append(deepcopy(payload)),
             ),
             patch.object(analysis_batch_service, "clear_all_validation_items", return_value=1),
+            patch.object(
+                analysis_batch_service,
+                "list_validation_items",
+                return_value=[
+                    {
+                        "validation_id": "validation-1",
+                        "status": "validated",
+                        "workflow_status": "COMPTABILISEE",
+                    }
+                ],
+            ),
             patch.object(analysis_batch_service, "clear_all_history_events", return_value=1),
             patch.object(analysis_batch_service, "_resolve_invoice_db_name", side_effect=couch_guard),
             patch.object(analysis_batch_service, "fetch_unprocessed_invoices", side_effect=couch_guard),
@@ -48,6 +59,7 @@ class AnalysisSessionResetTests(unittest.TestCase):
         self.assertEqual(result["batch_jobs_cleared"], 1)
         self.assertEqual(result["batch_results_cleared"], 1)
         self.assertEqual(result["validation_items_cleared"], 1)
+        self.assertEqual(result["validated_entries_cleared"], 1)
         self.assertEqual(result["history_events_cleared"], 1)
         self.assertEqual(reset_batch["jobs"], {})
         self.assertEqual(reset_batch["results"], {})

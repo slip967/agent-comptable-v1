@@ -1,9 +1,10 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { ChevronDown, CheckCircle2, Download, Eye, FileText, Pencil, Trash2, X, AlertTriangle, RotateCcw } from "lucide-react";
 import { useGlobalSearch } from "../context/SearchContext";
 import { matchesGlobalSearch } from "../utils/search";
 import { API_BASE_URL, fetchInvoicePdfPreview, fetchValidatedEntries, deleteHumanValidationItem, createHumanValidationItem } from "../services/api";
-import { getValidatedInvoiceKey, readValidatedEntries, removeValidatedInvoice, VALIDATED_ENTRIES_STORAGE_KEY, VALIDATED_INVOICE_IDS_STORAGE_KEY } from "../utils/validatedEntries";
+import { isSuccessfulOrMissingDeletion } from "../utils/apiErrors";
+import { clearValidatedSessionStorage, getValidatedInvoiceKey, readValidatedEntries, removeValidatedInvoice } from "../utils/validatedEntries";
 
 const value = (input, fallback = "Non renseigné") => String(input ?? "").trim() || fallback;
 const keyOf = (entry) => String(entry?.invoice_group_id || entry?.invoice_id || getValidatedInvoiceKey(entry) || "").trim();
@@ -46,17 +47,19 @@ function PdfPreviewModal({ pages, label, onClose }) {
 }
 export default function ValidatedEntriesPage() {
   const { searchQuery } = useGlobalSearch(); const [entries, setEntries] = useState(() => readValidatedEntries()); const [selectedInvoice, setSelectedInvoice] = useState(null); const [pendingPurge, setPendingPurge] = useState(false); const [busy, setBusy] = useState(false); const [error, setError] = useState(""); const [pdfViewerPages, setPdfViewerPages] = useState([]); const [pdfViewerLabel, setPdfViewerLabel] = useState(""); const [pdfLoadingId, setPdfLoadingId] = useState(""); const [notice, setNotice] = useState("");
-  const reload = async () => { const local = readValidatedEntries(); setEntries(local); try { const remote = await fetchValidatedEntries(); setEntries(mergeEntries(local, remote?.items || [])); } catch (remoteError) { if (!local.length) setError(remoteError.message || "Impossible de charger les écritures."); } };
+  const resetVersionRef = useRef(0);
+  const reload = async () => { const resetVersion = resetVersionRef.current; const local = readValidatedEntries(); if (resetVersion !== resetVersionRef.current) return; setEntries(local); try { const remote = await fetchValidatedEntries(); if (resetVersion !== resetVersionRef.current) return; setEntries(mergeEntries(local, remote?.items || [])); } catch (remoteError) { if (resetVersion !== resetVersionRef.current) return; if (!local.length) setError(remoteError.message || "Impossible de charger les écritures."); } };
   useEffect(() => { void reload(); const refresh = () => void reload(); window.addEventListener("keymanage:validated-accounting-entry", refresh); return () => window.removeEventListener("keymanage:validated-accounting-entry", refresh); }, []);
   useEffect(() => {
     const resetAfterSessionClear = () => {
+      resetVersionRef.current += 1;
       setEntries([]);
-      try {
-        window.localStorage.removeItem(VALIDATED_ENTRIES_STORAGE_KEY);
-        window.localStorage.removeItem(VALIDATED_INVOICE_IDS_STORAGE_KEY);
-      } catch {
-        // Ignore restricted storage contexts.
-      }
+      setSelectedInvoice(null);
+      setPendingPurge(false);
+      setPdfViewerPages([]);
+      setError("");
+      setNotice("");
+      clearValidatedSessionStorage();
     };
     window.addEventListener("keymanage:all-saved-invoices-purged", resetAfterSessionClear);
     window.addEventListener("keymanage:test-session-reset", resetAfterSessionClear);
@@ -84,7 +87,7 @@ export default function ValidatedEntriesPage() {
       }));
       const oldIds = invoice.lines.map((line) => line.validation_id).filter(Boolean);
       const deletions = await Promise.allSettled(oldIds.map((id) => deleteHumanValidationItem(id)));
-      const failedDeletion = deletions.find((result) => result.status === "rejected");
+      const failedDeletion = deletions.find((result) => !isSuccessfulOrMissingDeletion(result));
       if (failedDeletion) throw failedDeletion.reason || new Error("Le transfert de la facture a échoué.");
       removeValidatedInvoice(invoice);
       setEntries((current) => current.filter((entry) => keyOf(entry) !== invoice.invoice_group_id));
@@ -97,8 +100,8 @@ export default function ValidatedEntriesPage() {
     } finally {
       setBusy(false);
     }
-  };  const removeInvoice = async (invoice) => { setBusy(true); setError(""); const ids = invoice.lines.map((line) => line.validation_id).filter(Boolean); const results = await Promise.allSettled(ids.map((id) => deleteHumanValidationItem(id))); const failed = results.find((result) => result.status === "rejected"); if (failed) { setError(failed.reason?.message || "La suppression backend a échoué."); setBusy(false); return; } removeValidatedInvoice(invoice); setEntries((current) => current.filter((entry) => keyOf(entry) !== invoice.invoice_group_id)); notifyMemory(); setBusy(false); };
-  const purgeAll = async () => { setBusy(true); setError(""); const ids = entries.map((line) => line.validation_id).filter(Boolean); const results = await Promise.allSettled(ids.map((id) => deleteHumanValidationItem(id))); const failed = results.find((result) => result.status === "rejected"); if (failed) { setError(failed.reason?.message || "La purge backend a échoué."); setBusy(false); return; } invoices.forEach(removeValidatedInvoice); setEntries([]); setPendingPurge(false); notifyMemory(); setBusy(false); };
+  };  const removeInvoice = async (invoice) => { setBusy(true); setError(""); const ids = invoice.lines.map((line) => line.validation_id).filter(Boolean); const results = await Promise.allSettled(ids.map((id) => deleteHumanValidationItem(id))); const failed = results.find((result) => !isSuccessfulOrMissingDeletion(result)); if (failed) { setError(failed.reason?.message || "La suppression backend a échoué."); setBusy(false); return; } removeValidatedInvoice(invoice); setEntries((current) => current.filter((entry) => keyOf(entry) !== invoice.invoice_group_id)); setSelectedInvoice((current) => current?.invoice_group_id === invoice.invoice_group_id ? null : current); notifyMemory(); setBusy(false); };
+  const purgeAll = async () => { setBusy(true); setError(""); const ids = entries.map((line) => line.validation_id).filter(Boolean); const results = await Promise.allSettled(ids.map((id) => deleteHumanValidationItem(id))); const deletionById = new Map(ids.map((id, index) => [id, results[index]])); const removableInvoices = invoices.filter((invoice) => invoice.lines.every((line) => !line.validation_id || isSuccessfulOrMissingDeletion(deletionById.get(line.validation_id)))); const removableKeys = new Set(removableInvoices.map((invoice) => invoice.invoice_group_id)); removableInvoices.forEach(removeValidatedInvoice); setEntries((current) => current.filter((entry) => !removableKeys.has(keyOf(entry)))); setPendingPurge(false); const failed = results.find((result) => !isSuccessfulOrMissingDeletion(result)); if (failed) setError(failed.reason?.message || "Certaines lignes n’ont pas pu être supprimées."); notifyMemory(); setBusy(false); };
   const openPdf = async (invoice) => {
     const invoiceId = pdfInvoiceIdOf(invoice);
     if (!invoiceId) { setError("Identifiant de facture manquant."); return; }

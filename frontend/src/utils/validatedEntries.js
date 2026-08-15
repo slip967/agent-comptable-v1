@@ -12,6 +12,17 @@ export function getValidatedInvoiceKey(invoice = {}) {
 export function readValidatedEntries() {
   return Object.values(readObjectStorage(VALIDATED_ENTRIES_STORAGE_KEY)).filter(Boolean);
 }
+
+export function clearValidatedSessionStorage() {
+  if (typeof window === "undefined") return;
+  try {
+    window.localStorage.removeItem(VALIDATED_ENTRIES_STORAGE_KEY);
+    window.localStorage.removeItem(VALIDATED_INVOICE_IDS_STORAGE_KEY);
+    window.localStorage.removeItem(ROLLED_BACK_INVOICES_STORAGE_KEY);
+  } catch {
+    // The backend reset remains valid when browser storage is restricted.
+  }
+}
 export function readValidatedInvoiceIds() {
   if (typeof window === "undefined") return new Set();
   try {
