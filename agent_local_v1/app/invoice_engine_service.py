@@ -329,6 +329,14 @@ def _extract_description(line_item: dict[str, Any]) -> str:
     return ""
 
 
+def _extract_raw_line_text(line_item: dict[str, Any]) -> str:
+    for key in ("raw_line_text", "raw_text", "text"):
+        value = _text(line_item.get(key))
+        if value:
+            return value
+    return _extract_description(line_item)
+
+
 def _parse_lines_from_ocr_text(ocr_text: str, initial_context: dict[str, Any]) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     context = dict(initial_context)
     lines: list[dict[str, Any]] = []
@@ -504,12 +512,16 @@ def _build_line_payloads(
     if isinstance(invoice_doc_or_lines, list):
         payloads: list[dict[str, Any]] = []
         for line_item in invoice_doc_or_lines:
-            raw_text = _extract_description(line_item) or _text(line_item.get("description"))
-            if not raw_text:
+            label = _extract_description(line_item) or _text(line_item.get("description"))
+            raw_line_text = _extract_raw_line_text(line_item) or label
+            if not label and not raw_line_text:
                 continue
             payloads.append(
                 {
-                    "raw_text": raw_text,
+                    "raw_text": label or raw_line_text,
+                    "raw_line_text": raw_line_text,
+                    "label": label or raw_line_text,
+                    "description": label or raw_line_text,
                     "quantity": _safe_float(line_item.get("quantity")),
                     "unit_price": _safe_float(line_item.get("unit_price")),
                     "amount_ht": _safe_float(line_item.get("amount_ht") or line_item.get("total_net")),
@@ -551,12 +563,16 @@ def _build_line_payloads(
             for line_item in extracted_line_items:
                 if not isinstance(line_item, dict):
                     continue
-                raw_text = _extract_description(line_item)
-                if not raw_text:
+                label = _extract_description(line_item)
+                raw_line_text = _extract_raw_line_text(line_item) or label
+                if not label and not raw_line_text:
                     continue
                 payloads.append(
                     {
-                        "raw_text": raw_text,
+                        "raw_text": label or raw_line_text,
+                        "raw_line_text": raw_line_text,
+                        "label": label or raw_line_text,
+                        "description": label or raw_line_text,
                         "quantity": _safe_float(line_item.get("quantity")),
                         "unit_price": _safe_float(line_item.get("unit_price")),
                         "amount_ht": _safe_float(line_item.get("amount_ht") or line_item.get("total_net")),
@@ -724,6 +740,7 @@ def fetch_unprocessed_invoices(
     exclude_invoice_ids: set[str] | None = None,
     startkey: str | None = None,
     max_scan_rows: int | None = None,
+    collect_all_candidates: bool = False,
 ) -> tuple[RandomInvoicesResponse, dict[str, Any]]:
     session = http_session()
     db_name = _resolve_invoice_db_name(session)
@@ -741,7 +758,9 @@ def fetch_unprocessed_invoices(
     cycle_completed = False
     next_startkey = current_startkey
 
-    while scanned_rows < scan_budget and len(selected_items) < requested_limit:
+    while scanned_rows < scan_budget and (
+        collect_all_candidates or len(selected_items) < requested_limit
+    ):
         params = {
             "include_docs": "true",
             "limit": str(page_size),
@@ -799,7 +818,9 @@ def fetch_unprocessed_invoices(
                 continue
 
             candidates_found += 1
-            if invoice_id not in selected_ids and len(selected_items) < requested_limit:
+            if invoice_id not in selected_ids and (
+                collect_all_candidates or len(selected_items) < requested_limit
+            ):
                 selected_ids.add(invoice_id)
                 selected_items.append(item)
 
@@ -1296,6 +1317,13 @@ def _decision_from_status(
     if referential_status == "non_comptable":
         return "non_comptable"
     if referential_status == "found_exact":
+        candidate_decision = _text(
+            (top_match or {}).get("decision_finale") or (top_match or {}).get("decision")
+        ).strip().lower()
+        if candidate_decision in {"validation_humaine", "rejeter"}:
+            # An exact text match is not sufficient for auto-validation when
+            # the matcher detected an incompatible business/APE context.
+            return candidate_decision
         return "auto_ok"
     if referential_status == "found_fuzzy":
         score = float((top_match or {}).get("score_confiance") or 0.0)
@@ -1726,6 +1754,9 @@ def _build_accounting_proposal(
             line_id=line_id,
             raw_text=line.raw_text,
             cleaned_text=line.cleaned_text,
+            raw_line_text=line.raw_line_text or line.raw_text,
+            label=line.label or line.description or line.cleaned_text or line.raw_text,
+            description=line.description or line.label or line.cleaned_text or line.raw_text,
             amount_ht=line.amount_ht,
             amount_ttc=line.amount_ttc,
             tva=line.tva,
@@ -1818,14 +1849,25 @@ def analyze_invoice_lines_strong(
 
     def analyze_one(idx: int, payload: dict[str, Any]) -> StrongLineAnalysis:
         try:
-            return _analyze_single_line(payload, working_context)
+            result = _analyze_single_line(payload, working_context)
         except Exception as exc:  # pragma: no cover - defensive runtime guard
             print(
                 f"[analysis/strong-lines] warning line_index={idx} raw_text={_text(payload.get('raw_text'))!r} "
                 f"error={exc.__class__.__name__}: {exc}"
             )
             traceback.print_exc()
-            return _failed_line_analysis(payload, working_context, exc)
+            result = _failed_line_analysis(payload, working_context, exc)
+        source_text = _text(payload.get("raw_line_text")) or result.raw_text
+        display_label = (
+            _text(payload.get("label"))
+            or _text(payload.get("description"))
+            or result.cleaned_text
+            or result.raw_text
+        )
+        result.raw_line_text = source_text
+        result.label = display_label
+        result.description = display_label
+        return result
 
     if max_workers == 1:
         analyzed_lines = [analyze_one(idx, payload) for idx, payload in enumerate(line_payloads)]

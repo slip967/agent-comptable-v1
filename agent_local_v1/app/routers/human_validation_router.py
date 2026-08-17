@@ -87,18 +87,23 @@ def get_human_validation_items(
     status: str | None = Query(default=None),
     limit: int = Query(default=50, ge=1, le=2000),
 ) -> dict[str, Any]:
-    all_items = [
-        item
-        for item in list_validation_items(limit=10000)
-        if _belongs_in_human_queue(item)
-    ]
-    if status:
-        expected_status = str(status).strip()
+    stored_items = list_validation_items(limit=10000)
+    expected_status = str(status or "").strip().lower()
+    if expected_status == "validated":
+        all_items = [
+            item
+            for item in stored_items
+            if str(item.get("status") or "").strip().lower() == "validated"
+            or _workflow_status(item) in _AUTO_ROUTED_STATUSES
+        ]
+    else:
+        all_items = [item for item in stored_items if _belongs_in_human_queue(item)]
+    if expected_status:
         all_items = [
             item
             for item in all_items
-            if str(item.get("status") or "pending_validation").strip()
-            == expected_status
+            if expected_status == "validated"
+            or str(item.get("status") or "pending_validation").strip().lower() == expected_status
         ]
     items = all_items[:limit]
     counts = {

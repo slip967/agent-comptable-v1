@@ -374,6 +374,25 @@ export default function ValidationPage() {
       ? [selectedItem]
       : [];
   const selectedPrimaryLine = selectedLines[selectedLineIndex] || selectedLines[0] || selectedItem || {};
+  const handleArticleLabelChange = (value) => {
+    setSelectedItem((current) => {
+      if (!current) return current;
+      const updateLine = (line, index) =>
+        index === selectedLineIndex
+          ? {
+              ...line,
+              raw_line_text: line?.raw_line_text || line?.raw_text || "",
+              label: value,
+              description: value,
+              cleaned_text: value,
+            }
+          : line;
+      if (Array.isArray(current.lines) && current.lines.length) {
+        return { ...current, lines: current.lines.map(updateLine) };
+      }
+      return updateLine(current, selectedLineIndex);
+    });
+  };
   const isManualLineAnalysis = Boolean(
     selectedItem?.manual === true ||
     selectedItem?.manual_line_analysis ||
@@ -536,12 +555,19 @@ export default function ValidationPage() {
     setSuccessMessage("");
     try {
       const results = await Promise.all(
-        ids.map((validationId) =>
-          submitHumanValidationDecision(validationId, {
-            action,
-            validated_by: "human_user",
-            ...extraPayload,
-          }),
+        targetLines.map((line) =>
+          {
+            const validationId = getValidationId(line);
+            return submitHumanValidationDecision(validationId, {
+              action,
+              validated_by: "human_user",
+              raw_line_text: line.raw_line_text || line.raw_text || "",
+              label: line.label || line.description || line.cleaned_text || line.raw_text || "",
+              description: line.description || line.label || line.cleaned_text || line.raw_text || "",
+              cleaned_text: line.cleaned_text || line.label || line.description || line.raw_text || "",
+              ...extraPayload,
+            });
+          },
         ),
       );
       const firstPayload = results[0] || {};
@@ -918,6 +944,17 @@ export default function ValidationPage() {
                       </button>
                   ))}
                 </div>
+                <label className="validation-article-editor">
+                  <span>Article facture</span>
+                  <input
+                    type="text"
+                    value={selectedPrimaryLine.label || selectedPrimaryLine.description || selectedPrimaryLine.cleaned_text || selectedPrimaryLine.raw_text || ""}
+                    onChange={(event) => handleArticleLabelChange(event.target.value)}
+                  />
+                  <small>
+                    Texte OCR original : {textOrFallback(selectedPrimaryLine.raw_line_text || selectedPrimaryLine.raw_text)}
+                  </small>
+                </label>
               </div>
 
               {isManualLineAnalysis ? (

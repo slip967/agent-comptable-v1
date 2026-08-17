@@ -146,6 +146,11 @@ export function persistValidatedInvoice(invoice = {}, lines = [], validationResu
   markInvoiceAsValidated(invoice);
   const invoiceLines = Array.isArray(lines) && lines.length ? lines : [invoice];
   const validatedAt = new Date().toISOString();
+  const isAutoValidated = Boolean(
+    validationResult.auto_validated ||
+    invoice.auto_validated ||
+    validationResult?.human_validation_result?.action === "auto_validate"
+  );
 
   invoiceLines.forEach((line, index) => {
     const entry = {
@@ -162,6 +167,8 @@ export function persistValidatedInvoice(invoice = {}, lines = [], validationResu
       destination: "ecritures_validees",
       validated_entries_destination: "ecritures_validees",
       validated_at: validatedAt,
+      auto_validated: isAutoValidated,
+      human_intervention: isAutoValidated ? false : validationResult.human_intervention !== false,
       human_validation_result:
         validationResult.human_validation_result || {
           action: "validate",
@@ -170,7 +177,7 @@ export function persistValidatedInvoice(invoice = {}, lines = [], validationResu
         },
     };
 
-    const key = getEntryKey(entry, invoiceKey, index);
+    const key = isAutoValidated ? `${invoiceKey}-${index}` : getEntryKey(entry, invoiceKey, index);
     store[key] = { ...entry, validated_entry_id: key };
   });
 

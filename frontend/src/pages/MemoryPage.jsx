@@ -84,6 +84,7 @@ function getBatchMetrics(result) {
   const total = firstNumber(result, ["total_lines", "line_items_count", "exploitable_lines_count"]);
   const auto = firstNumber(result, ["auto_ok", "auto_ok_lines", "auto_validated"]);
   const human = firstNumber(result, ["validation_humaine", "human_validation_lines"]);
+  const rejected = firstNumber(result, ["rejeter", "rejected_lines", "rejected"]);
   let confidence = firstNumber(result, [
     "average_confidence",
     "confidence",
@@ -105,8 +106,34 @@ function getBatchMetrics(result) {
     total: total ?? lines.length,
     auto: auto ?? countDecision(lines, "auto_ok"),
     human: human ?? countDecision(lines, "validation_humaine"),
+    rejected: rejected ?? countDecision(lines, "rejeter"),
     confidence,
   };
+}
+
+function classifyBatchInvoice(item, persistedAutoInvoiceIds) {
+  const invoiceId = getEntityInvoiceId(item);
+  const workflowStatus = String(item?.workflow_status || item?.accounting_status || "")
+    .trim()
+    .toUpperCase();
+  if (persistedAutoInvoiceIds.has(invoiceId) || workflowStatus === "VALIDE_AUTO") {
+    return "auto";
+  }
+
+  const resultStatus = String(item?.status || item?.analysis_status || "").trim().toLowerCase();
+  const rejectedWorkflowStatuses = new Set(["REJETE", "REJETÉ", "REJETEE", "REJETÉE", "REJECTED"]);
+  if (
+    resultStatus === "failed" ||
+    resultStatus === "error" ||
+    rejectedWorkflowStatuses.has(workflowStatus)
+  ) {
+    return "rejected";
+  }
+
+  // A card containing rejected lines still belongs to the accounting-control
+  // queue until the whole invoice receives a terminal rejected status.
+  // Low-risk invoices not actually routed to validated entries also stay here.
+  return "human";
 }
 
 function uniqueBatchResults(items) {
@@ -207,9 +234,19 @@ function hasRelatedInvoiceId(item, invoiceIds) {
   );
 }
 
+function isPersistedAutoValidatedEntry(item) {
+  const workflowStatus = String(item?.workflow_status || item?.accounting_status || "").toUpperCase();
+  return (
+    item?.auto_validated === true &&
+    item?.human_intervention !== true &&
+    ["COMPTABILISEE", "COMPTABILISÉE", "VALIDE_AUTO"].includes(workflowStatus)
+  );
+}
+
 export default function MemoryPage() {
   const [batchItems, setBatchItems] = useState([]);
   const [validationItems, setValidationItems] = useState([]);
+  const [validatedItems, setValidatedItems] = useState([]);
   const [historyEvents, setHistoryEvents] = useState([]);
   const [memoryItems, setMemoryItems] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -220,6 +257,7 @@ export default function MemoryPage() {
   const resetPerformanceState = () => {
     setBatchItems([]);
     setValidationItems([]);
+    setValidatedItems([]);
     setHistoryEvents([]);
     setMemoryItems([]);
     setSourceErrors([]);
@@ -241,11 +279,12 @@ export default function MemoryPage() {
       const results = await Promise.allSettled([
         fetchAnalysisBatchResults({ limit: 500 }),
         fetchHumanValidationItems({ limit: 200 }),
+        fetchHumanValidationItems({ status: "validated", limit: 2000 }),
         fetchWorkflowHistory({ limit: 500 }),
         fetchAIMemoryItems({ limit: 1000 }),
       ]);
 
-      const labels = ["analyses", "validations humaines", "historique", "mémoire IA"];
+      const labels = ["analyses", "validations humaines", "écritures validées", "historique", "mémoire IA"];
       const errors = [];
       results.forEach((result, index) => {
         if (result.status === "rejected") {
@@ -257,8 +296,9 @@ export default function MemoryPage() {
       const hiddenHistoryIds = new Set(readPersistentHiddenIds(HISTORY_HIDDEN_EVENTS_KEY));
       const batchPayload = results[0].status === "fulfilled" ? results[0].value : {};
       const validationPayload = results[1].status === "fulfilled" ? results[1].value : {};
-      const historyPayload = results[2].status === "fulfilled" ? results[2].value : {};
-      const memoryPayload = results[3].status === "fulfilled" ? results[3].value : {};
+      const validatedPayload = results[2].status === "fulfilled" ? results[2].value : {};
+      const historyPayload = results[3].status === "fulfilled" ? results[3].value : {};
+      const memoryPayload = results[4].status === "fulfilled" ? results[4].value : {};
 
       setBatchItems(asArray(batchPayload?.items));
       setValidationItems(
@@ -266,6 +306,7 @@ export default function MemoryPage() {
           (item) => !hiddenValidationIds.has(String(item?.validation_id || item?.id || "")),
         ),
       );
+      setValidatedItems(asArray(validatedPayload?.items));
       setHistoryEvents(
         asArray(historyPayload?.events).filter(
           (event) => !hiddenHistoryIds.has(String(event?.event_id || event?.id || "")),
@@ -277,6 +318,7 @@ export default function MemoryPage() {
       setSourceErrors([error?.message || "Impossible de charger les indicateurs de performance"]);
       setBatchItems([]);
       setValidationItems([]);
+      setValidatedItems([]);
       setHistoryEvents([]);
       setMemoryItems([]);
     } finally {
@@ -358,6 +400,18 @@ export default function MemoryPage() {
     return validationItems.filter((item) => hasRelatedInvoiceId(item, currentBatchInvoiceIds));
   }, [validationItems, currentBatchInvoiceIds]);
 
+  const persistedAutoValidatedInvoiceIds = useMemo(() => {
+    const ids = new Set();
+    validatedItems.forEach((item) => {
+      if (!isPersistedAutoValidatedEntry(item)) return;
+      const invoiceId = getEntityInvoiceId(item);
+      if (invoiceId && (!currentBatchInvoiceIds.size || currentBatchInvoiceIds.has(invoiceId))) {
+        ids.add(invoiceId);
+      }
+    });
+    return ids;
+  }, [validatedItems, currentBatchInvoiceIds]);
+
   const filteredHistoryEvents = useMemo(() => {
     if (!currentBatchInvoiceIds.size) return historyEvents;
     return historyEvents.filter((item) => hasRelatedInvoiceId(item, currentBatchInvoiceIds));
@@ -373,9 +427,12 @@ export default function MemoryPage() {
     return effectiveBatchItems.reduce(
       (totals, item) => {
         const current = getBatchMetrics(item);
+        const category = classifyBatchInvoice(item, persistedAutoValidatedInvoiceIds);
         totals.totalInvoices += 1;
-        if (current.human === 0) {
+        if (category === "auto") {
           totals.autoInvoices += 1;
+        } else if (category === "rejected") {
+          totals.rejectedInvoices += 1;
         } else {
           totals.humanInvoices += 1;
         }
@@ -388,13 +445,14 @@ export default function MemoryPage() {
         }
         return totals;
       },
-      { total: 0, auto: 0, human: 0, confidenceTotal: 0, confidenceWeight: 0, totalInvoices: 0, autoInvoices: 0, humanInvoices: 0 },
+      { total: 0, auto: 0, human: 0, confidenceTotal: 0, confidenceWeight: 0, totalInvoices: 0, autoInvoices: 0, humanInvoices: 0, rejectedInvoices: 0 },
     );
-  }, [effectiveBatchItems]);
+  }, [effectiveBatchItems, persistedAutoValidatedInvoiceIds]);
 
   /* Taux au niveau facture — renvoient 0 si aucune donnée (non bloquant) */
   const automationRate = metrics.totalInvoices > 0 ? (metrics.autoInvoices / metrics.totalInvoices) * 100 : 0;
   const humanValidationRate = metrics.totalInvoices > 0 ? (metrics.humanInvoices / metrics.totalInvoices) * 100 : 0;
+  const rejectionRate = metrics.totalInvoices > 0 ? (metrics.rejectedInvoices / metrics.totalInvoices) * 100 : 0;
   const humanValidationInvoices = metrics.humanInvoices;
 
   /* ── Graphique hebdomadaire (niveau facture) ── */
@@ -414,8 +472,9 @@ export default function MemoryPage() {
         confidenceWeight: 0,
       };
       const values = getBatchMetrics(item);
+      const category = classifyBatchInvoice(item, persistedAutoValidatedInvoiceIds);
       current.totalInvoices += 1;
-      if (values.human === 0) current.autoInvoices += 1;
+      if (category === "auto") current.autoInvoices += 1;
       if (values.confidence !== null && values.total > 0) {
         current.confidenceTotal += values.confidence * values.total;
         current.confidenceWeight += values.total;
@@ -431,7 +490,7 @@ export default function MemoryPage() {
           ? Number((group.confidenceTotal / group.confidenceWeight).toFixed(1))
           : null,
       }));
-  }, [effectiveBatchItems]);
+  }, [effectiveBatchItems, persistedAutoValidatedInvoiceIds]);
 
   /* ── Graphique donut corrections humaines ── */
   const correctionData = useMemo(() => {
@@ -451,10 +510,12 @@ export default function MemoryPage() {
       if (!date) return;
       const month = new Date(date.getFullYear(), date.getMonth(), 1);
       const key = month.toISOString().slice(0, 7);
-      const current = groups.get(key) || { key, date: month, auto: 0, humain: 0 };
-      const values = getBatchMetrics(item);
-      if (values.human === 0) {
+      const current = groups.get(key) || { key, date: month, auto: 0, humain: 0, rejetees: 0 };
+      const category = classifyBatchInvoice(item, persistedAutoValidatedInvoiceIds);
+      if (category === "auto") {
         current.auto += 1;
+      } else if (category === "rejected") {
+        current.rejetees += 1;
       } else {
         current.humain += 1;
       }
@@ -466,8 +527,9 @@ export default function MemoryPage() {
         mois: formatMonthLabel(group.date),
         autoValidees: group.auto,
         validationsHumaines: group.humain,
+        rejetees: group.rejetees,
       }));
-  }, [effectiveBatchItems]);
+  }, [effectiveBatchItems, persistedAutoValidatedInvoiceIds]);
 
   return (
     <div className="memory-performance-page">
@@ -498,6 +560,20 @@ export default function MemoryPage() {
               ? "Chargement\u2026"
               : metrics.totalInvoices
                 ? `${metrics.autoInvoices} facture(s) entièrement auto-validée(s) sur ${metrics.totalInvoices}`
+                : "Aucune analyse réelle exploitable."}
+          </p>
+        </article>
+        <article className="memory-performance-kpi tone-red">
+          <span className="memory-performance-kpi-icon"><ShieldCheck size={21} /></span>
+          <div>
+            <small>Taux de rejet</small>
+            <strong>{loading ? "\u2014" : `${rejectionRate.toFixed(1)} %`}</strong>
+          </div>
+          <p>
+            {loading
+              ? "Chargement\u2026"
+              : metrics.totalInvoices
+                ? `${metrics.rejectedInvoices} facture(s) rejetée(s) sur ${metrics.totalInvoices}`
                 : "Aucune analyse réelle exploitable."}
           </p>
         </article>
@@ -592,7 +668,7 @@ export default function MemoryPage() {
           </div>
           {loading ? (
             <EmptyChart>{"Chargement des volumes réels\u2026"}</EmptyChart>
-          ) : monthlyData.length && monthlyData.some((item) => item.autoValidees || item.validationsHumaines) ? (
+          ) : monthlyData.length && monthlyData.some((item) => item.autoValidees || item.validationsHumaines || item.rejetees) ? (
             <div className="memory-performance-chart-body bar">
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={monthlyData} margin={{ top: 12, right: 8, left: -18, bottom: 0 }}>
@@ -603,6 +679,7 @@ export default function MemoryPage() {
                   <Legend iconType="circle" wrapperStyle={{ fontSize: 12 }} />
                   <Bar dataKey="autoValidees" name="Auto-validées" fill="#2563eb" radius={[7, 7, 0, 0]} maxBarSize={42} />
                   <Bar dataKey="validationsHumaines" name="Validations humaines" fill="#f59e0b" radius={[7, 7, 0, 0]} maxBarSize={42} />
+                  <Bar dataKey="rejetees" name="Rejetées" fill="#ef4444" radius={[7, 7, 0, 0]} maxBarSize={42} />
                 </BarChart>
               </ResponsiveContainer>
             </div>

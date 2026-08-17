@@ -63,7 +63,10 @@ OCR_SYSTEM_PROMPT = (
     "Tu ne dois retourner que les informations visibles sur le document. "
     "Tu dois retourner une structure complete de facture, avec emetteur, destinataire, lignes, TVA, totaux et paiement si visibles. "
     "Les line_items doivent contenir uniquement les achats/services detectes, pas les blocs administratifs ni les totaux. "
-    "Chaque line_item.description doit etre un libelle produit ou service exploitable comme article source OCR. "
+    "Pour chaque line_item, copie le texte visible sans correction dans raw_line_text. "
+    "Produis aussi label et description comme un libelle produit ou service clair et exploitable. "
+    "Decode les abreviations metier cryptiques uniquement lorsque le contexte permet de le faire sans ambiguite "
+    "(par exemple M.FIB en Manche Fibre, STK en Stock). Si une abreviation est incertaine, conserve-la et n'invente rien. "
     "Si une information est absente, retourne null."
 )
 
@@ -73,7 +76,9 @@ OCR_USER_PROMPT = (
     "flag_articles_atypiques, vat[], discount_percent, discount_amount, cash_discount_percent, "
     "cash_discount_amount, deposit_amount, down_payment_amount, total_net, total_vat, total_gross, "
     "accounting_summary[], payment{}, currency. "
-    "Pour chaque line_item, retourne au minimum description, quantity, unit_price, total_net, total_gross et vat_percent si visibles."
+    "Pour chaque line_item, retourne au minimum raw_line_text, label, description, quantity, unit_price, total_net, "
+    "total_gross et vat_percent si visibles. raw_line_text doit rester la transcription exacte du document; "
+    "label et description contiennent la version lisible et explicitee."
 )
 
 
@@ -492,8 +497,9 @@ def _fallback_extract_from_text(filename: str, raw_text: str) -> OCRInvoiceExtra
 def _build_ocr_lines(invoice: OCRInvoiceExtraction) -> list[OCRInvoiceLine]:
     lines: list[OCRInvoiceLine] = []
     for item in invoice.line_items:
-        raw_text = str(item.description or "").strip()
-        if not raw_text:
+        source_text = str(item.raw_line_text or item.description or "").strip()
+        cleaned_label = str(item.label or item.description or source_text).strip()
+        if not source_text and not cleaned_label:
             continue
         amount = item.total_gross
         if amount is None:
@@ -502,7 +508,10 @@ def _build_ocr_lines(invoice: OCRInvoiceExtraction) -> list[OCRInvoiceLine]:
             amount = item.unit_price
         lines.append(
             OCRInvoiceLine(
-                raw_text=raw_text,
+                raw_text=source_text or cleaned_label,
+                raw_line_text=source_text or cleaned_label,
+                label=cleaned_label or source_text,
+                description=cleaned_label or source_text,
                 quantity=item.quantity,
                 amount=amount,
             )

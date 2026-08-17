@@ -55,6 +55,47 @@ def add_validation_item(payload: dict[str, Any]) -> dict[str, Any]:
         return item
 
 
+def upsert_validation_item(payload: dict[str, Any]) -> dict[str, Any]:
+    """Insert or replace one workflow line using its invoice/line identity."""
+    with _LOCK:
+        items = _read_items_unlocked()
+        incoming = deepcopy(payload)
+        invoice_id = str(incoming.get("invoice_id") or "").strip()
+        line_id = str(incoming.get("line_id") or "").strip()
+        matched_index = next(
+            (
+                index
+                for index, existing in enumerate(items)
+                if invoice_id
+                and line_id
+                and str(existing.get("invoice_id") or "").strip() == invoice_id
+                and str(existing.get("line_id") or "").strip() == line_id
+            ),
+            None,
+        )
+
+        if matched_index is None:
+            return_item = incoming
+            return_item["validation_id"] = str(return_item.get("validation_id") or uuid.uuid4())
+            return_item["created_at"] = str(return_item.get("created_at") or _now_iso())
+            return_item["source"] = str(return_item.get("source") or "analyse_ia")
+            return_item["status"] = str(return_item.get("status") or "pending_validation")
+            return_item.setdefault("human_validation_result", None)
+            items.insert(0, return_item)
+        else:
+            existing = items[matched_index]
+            return_item = {**existing, **incoming}
+            return_item["validation_id"] = str(
+                incoming.get("validation_id") or existing.get("validation_id") or uuid.uuid4()
+            )
+            return_item["created_at"] = str(existing.get("created_at") or incoming.get("created_at") or _now_iso())
+            return_item["updated_at"] = _now_iso()
+            items[matched_index] = return_item
+
+        _write_items_unlocked(items)
+        return return_item
+
+
 def list_validation_items(
     status: str | None = None,
     limit: int = 50,
@@ -80,6 +121,26 @@ def delete_validation_item(validation_id: str) -> dict[str, Any]:
                 _write_items_unlocked(items)
                 return deleted_item
     raise KeyError("Ligne de validation introuvable.")
+
+
+def delete_pending_validation_items_for_invoice(invoice_id: str) -> int:
+    """Remove stale review lines after the invoice has been auto-validated."""
+    expected_invoice_id = str(invoice_id or "").strip()
+    if not expected_invoice_id:
+        return 0
+    terminal_statuses = {"validated", "corrected", "non_comptable", "rejected"}
+    with _LOCK:
+        items = _read_items_unlocked()
+        kept_items = [
+            item
+            for item in items
+            if str(item.get("invoice_id") or "").strip() != expected_invoice_id
+            or str(item.get("status") or "pending_validation").strip().lower() in terminal_statuses
+        ]
+        removed_count = len(items) - len(kept_items)
+        if removed_count:
+            _write_items_unlocked(kept_items)
+        return removed_count
 
 
 def clear_all_validation_items() -> int:
@@ -122,8 +183,20 @@ def save_validation_decision(
                 "validated_by": payload.get("validated_by") or "human_user",
                 "validated_at": _now_iso(),
             }
+            item.setdefault("raw_line_text", item.get("raw_text") or "")
+            for field in ("label", "description", "cleaned_text"):
+                if payload.get(field) is not None:
+                    item[field] = str(payload.get(field) or "").strip()
             item["status"] = new_status
             item["human_validation_result"] = result
+            if action == "validate":
+                item["workflow_status"] = "COMPTABILISEE"
+                item["accounting_status"] = "COMPTABILISEE"
+                item["destination"] = "ecritures_validees"
+                item["validated_entries_destination"] = "ecritures_validees"
+                item["validated_entry_id"] = str(item.get("validated_entry_id") or validation_id)
+                item["auto_validated"] = False
+                item["human_intervention"] = True
             items[index] = item
             _write_items_unlocked(items)
             return item

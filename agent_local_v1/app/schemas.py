@@ -185,6 +185,8 @@ class OCRInvoiceRecipient(BaseModel):
 
 class OCRInvoiceLineItem(BaseModel):
     product_code: str | None = None
+    raw_line_text: str | None = None
+    label: str | None = None
     description: str
     item_type: str | None = None
     activity_match_confidence_score: float | None = None
@@ -248,6 +250,9 @@ class OCRStructuredInvoice(BaseModel):
 
 class OCRInvoiceLine(BaseModel):
     raw_text: str
+    raw_line_text: str | None = None
+    label: str | None = None
+    description: str | None = None
     quantity: float | None = None
     amount: float | None = None
 
@@ -405,6 +410,9 @@ class StrongInvoiceHeader(BaseModel):
 class StrongLineAnalysis(BaseModel):
     raw_text: str
     cleaned_text: str
+    raw_line_text: str | None = None
+    label: str | None = None
+    description: str | None = None
     quantity: float | None = None
     unit_price: float | None = None
     amount_ht: float | None = None
@@ -473,6 +481,9 @@ class AccountingProposalLine(BaseModel):
     line_id: str
     raw_text: str
     cleaned_text: str
+    raw_line_text: str | None = None
+    label: str | None = None
+    description: str | None = None
     amount_ht: float | None = None
     amount_ttc: float | None = None
     tva: float | None = None

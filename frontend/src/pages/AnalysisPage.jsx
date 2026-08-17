@@ -1022,7 +1022,8 @@ export default function AnalysisPage() {
   const [analysisResult, setAnalysisResult] = useState(null);
   const [selectedLineIndex, setSelectedLineIndex] = useState(0);
   const [loadingInvoices, setLoadingInvoices] = useState(false);
-  const [loadingAnalysis, setLoadingAnalysis] = useState(false);
+  const [analyzingInvoiceIds, setAnalyzingInvoiceIds] = useState(() => new Set());
+  const loadingAnalysis = analyzingInvoiceIds.size > 0;
   const [errorMessage, setErrorMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
   const [actionMessage, setActionMessage] = useState("");
@@ -1105,6 +1106,38 @@ export default function AnalysisPage() {
   const selectedHasSecurityViolation = hasSecurityViolation(selectedLine);
   const selectedDisplayGroup =
     displayLines.find((row) => row.sourceIndexes.includes(selectedLineIndex)) || null;
+  const handleArticleLabelChange = (lineIndex, lineId, value) => {
+    setAnalysisResult((current) => {
+      if (!current) return current;
+      const updateLine = (item, index) => {
+        const sameLine = lineId && item?.line_id
+          ? item.line_id === lineId
+          : index === lineIndex;
+        if (!sameLine) return item;
+        return {
+          ...item,
+          raw_line_text: item?.raw_line_text || item?.raw_text || "",
+          label: value,
+          description: value,
+          cleaned_text: value,
+        };
+      };
+      return {
+        ...current,
+        lines: Array.isArray(current.lines)
+          ? current.lines.map(updateLine)
+          : current.lines,
+        accounting_proposal: current.accounting_proposal
+          ? {
+              ...current.accounting_proposal,
+              lines: Array.isArray(current.accounting_proposal.lines)
+                ? current.accounting_proposal.lines.map(updateLine)
+                : current.accounting_proposal.lines,
+            }
+          : current.accounting_proposal,
+      };
+    });
+  };
   const handleSelectInvoice = (invoice) => {
     const id = getInvoiceId(invoice);
     if (!id) {
@@ -1297,7 +1330,11 @@ export default function AnalysisPage() {
     const timeoutMs = Math.min(300000, Math.max(120000, lineCount * 12000 || 120000));
     const requestUrl = `${API_BASE_URL}/analysis/strong-invoice/${encodeURIComponent(invoiceId)}`;
     const startedAt = performance.now();
-    setLoadingAnalysis(true);
+    setAnalyzingInvoiceIds((current) => {
+      const next = new Set(current);
+      next.add(invoiceId);
+      return next;
+    });
     setAnalysisSlowWarning(false);
     setErrorMessage("");
     setSuccessMessage("");
@@ -1335,6 +1372,32 @@ export default function AnalysisPage() {
       setAnalysisResult(payload);
       setSelectedInvoiceId(invoiceId);
       cacheAnalysisResult(invoiceId, payload);
+      const summary = payload?.summary || {};
+      const workflowStatus = String(
+        payload?.workflow_status || payload?.invoice?.status || "",
+      ).trim().toUpperCase();
+      const autoLines = Number(summary?.auto_ok || 0);
+      const humanLines = Number(summary?.validation_humaine || 0);
+      const rejectedLines = Number(summary?.rejeter || 0);
+      const queueStatus = workflowStatus === "VALIDE_AUTO" || workflowStatus === "COMPTABILISEE"
+        ? "low_risk"
+        : humanLines > 0 || rejectedLines > 0
+          ? "to_control"
+          : autoLines > 0
+            ? "low_risk"
+            : "not_analyzed";
+      patchQueueItem(invoiceId, {
+        status: queueStatus,
+        workflow_status: workflowStatus,
+        queue_status: queueStatus,
+        analysis_status: "analyzed",
+        summary,
+        badges: queueStatus === "low_risk"
+          ? ["Faible risque"]
+          : queueStatus === "to_control"
+            ? ["À contrôler"]
+            : ["Non analysée"],
+      });
       setSelectedLineIndex(0);
       setShowDocuments(false);
       setActionMessage("");
@@ -1371,7 +1434,11 @@ export default function AnalysisPage() {
     } finally {
       clearTimeout(slowWarningTimerRef.current);
       setAnalysisSlowWarning(false);
-      setLoadingAnalysis(false);
+      setAnalyzingInvoiceIds((current) => {
+        const next = new Set(current);
+        next.delete(invoiceId);
+        return next;
+      });
     }
   };
   const handleValidateAccountingEntry = (line) => {
@@ -1407,6 +1474,9 @@ export default function AnalysisPage() {
       client: line.client || invoice.client || invoiceRecord.client || "",
       line_id: line.line_id || `${invoiceId}:${selectedLineIndex + 1}`,
       raw_text: line.raw_text || "",
+      raw_line_text: line.raw_line_text || line.raw_text || "",
+      label: line.label || line.description || line.cleaned_text || line.raw_text || "",
+      description: line.description || line.label || line.cleaned_text || line.raw_text || "",
       cleaned_text: line.cleaned_text || "",
       amount_ht: line.amount_ht ?? null,
       amount_ttc: line.amount_ttc ?? null,
@@ -1535,6 +1605,9 @@ export default function AnalysisPage() {
           invoice_date: invoice.date || invoice.invoice_date || invoiceRecord.date || "",
           line_id: invoiceLine.line_id || (invoiceId + ":" + (index + 1)),
           raw_text: invoiceLine.raw_text || "",
+          raw_line_text: invoiceLine.raw_line_text || invoiceLine.raw_text || "",
+          label: invoiceLine.label || invoiceLine.description || invoiceLine.cleaned_text || invoiceLine.raw_text || "",
+          description: invoiceLine.description || invoiceLine.label || invoiceLine.cleaned_text || invoiceLine.raw_text || "",
           cleaned_text: invoiceLine.cleaned_text || "",
           amount_ht: invoiceLine.amount_ht ?? null,
           amount_ttc: invoiceLine.amount_ttc ?? null,
@@ -1692,6 +1765,7 @@ export default function AnalysisPage() {
       ? new Intl.DateTimeFormat("fr-FR").format(parsedDate)
       : textOrFallback(rawDate, "Date inconnue");
     const pdfLoading = cardAnalyzingId === `pdf:${invoiceId}`;
+    const invoiceAnalyzing = analyzingInvoiceIds.has(invoiceId);
     return (
       <article
         key={`${keyPrefix}-${invoiceId || invoice?.invoice_number || supplier}`}
@@ -1717,8 +1791,8 @@ export default function AnalysisPage() {
           <button type="button" className="analysis-card-action-btn analysis-card-pdf" onClick={() => void handleInvoiceCardPdfClick(invoice)} disabled={!invoiceId || pdfLoading}>
             {pdfLoading ? <LoaderCircle size={14} className="spin" /> : <FileText size={14} />} {pdfLoading ? "Ouverture..." : "Voir PDF"}
           </button>
-          <button type="button" className="analysis-card-action-btn analysis-card-analyze" onClick={() => runInvoiceAnalysis(invoiceId)} disabled={!invoiceId || loadingAnalysis}>
-            <BrainCircuit size={14} /> Analyser
+          <button type="button" className="analysis-card-action-btn analysis-card-analyze" onClick={() => runInvoiceAnalysis(invoiceId)} disabled={!invoiceId || invoiceAnalyzing}>
+            {invoiceAnalyzing ? <LoaderCircle size={14} className="spin" /> : <BrainCircuit size={14} />} {invoiceAnalyzing ? "Analyse..." : "Analyser"}
           </button>
         </div>
       </article>
@@ -1790,7 +1864,7 @@ export default function AnalysisPage() {
           </div>
           <div className="analysis-action-row analysis-management-row">
             <button type="button" className="warning-btn compact" onClick={handleSaveBatchAnalysis}><Save size={15} /> Enregistrer l'analyse</button>
-            <button type="button" className="secondary-btn compact" onClick={handleShowAllRecordedInvoices} disabled={loadingBatch}><SearchCheck size={15} /> Afficher toutes les factures enregistrées</button>
+            <button type="button" className="secondary-btn compact" onClick={handleShowAllRecordedInvoices} disabled={loadingBatch || showingRecordedInvoices}>{showingRecordedInvoices ? <LoaderCircle size={15} className="spin" /> : <SearchCheck size={15} />} {showingRecordedInvoices ? "Affichage..." : "Afficher toutes les factures enregistrées"}</button>
             <button type="button" className="danger-btn compact reset-session-btn" onClick={() => setResetSessionConfirmOpen(true)} disabled={resettingTestSession}>{resettingTestSession ? <LoaderCircle size={14} className="spin" /> : <RotateCcw size={14} />} {resettingTestSession ? "Réinitialisation..." : "Réinitialiser la session de test"}</button>
             {persistedBatchCount > 0 ? <button type="button" className="secondary-btn compact local-clear-btn" onClick={handleClearLocalListAndReset} disabled={loadingBatch}><X size={14} /> Vider la liste locale</button> : null}
           </div>
@@ -1960,8 +2034,18 @@ export default function AnalysisPage() {
                           <td>{idx + 1}</td>
                           <td>
                             <div className="ap-line-article">
-                              {textOrFallback(apLine.raw_text)}
-                              <span className="ap-cleaned">{apLine.cleaned_text}</span>
+                              <input
+                                type="text"
+                                className="ap-article-input"
+                                aria-label={`Intitulé de l'article ${idx + 1}`}
+                                value={apLine.label || apLine.description || apLine.cleaned_text || apLine.raw_text || ""}
+                                onChange={(event) =>
+                                  handleArticleLabelChange(idx, apLine.line_id, event.target.value)
+                                }
+                              />
+                              <span className="ap-cleaned">
+                                OCR : {textOrFallback(apLine.raw_line_text || apLine.raw_text)}
+                              </span>
                             </div>
                           </td>
                           <td>

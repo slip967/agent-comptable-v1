@@ -479,7 +479,7 @@ def get_demo_folder_sample(
 @router.post("/batch-run", response_model=AnalysisBatchJob, status_code=status.HTTP_202_ACCEPTED)
 def run_analysis_batch(
     limit: int = Query(default=50, ge=1, le=100),
-    sort_strategy: str = Query(default="DUE_DATE", pattern="^(DUE_DATE|CHRONO|SUPPLIER|AMOUNT)$"),
+    sort_strategy: str = Query(default="DUE_DATE"),
 ) -> dict:
     print(f"[api/analysis/batch-run] run requested limit={limit} sort_strategy={sort_strategy}")
     try:

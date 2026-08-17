@@ -24,6 +24,13 @@ import { clearValidatedSessionStorage, persistValidatedInvoice } from "../utils/
 
 const AnalysisBatchContext = createContext(null);
 
+const BATCH_STRATEGY_LABELS = {
+  DUE_DATE: "Urgence (date d'échéance)",
+  CHRONO: "Chronologique (date d'émission)",
+  SUPPLIER: "Par fournisseur",
+  AMOUNT: "Montant TTC prioritaire",
+};
+
 function getInvoiceId(invoice) {
   return invoice?.invoice_id || invoice?.id || invoice?._id || invoice?.doc_id || null;
 }
@@ -286,9 +293,19 @@ export function AnalysisBatchProvider({ children }) {
         status: "COMPTABILISEE",
         workflow_status: "COMPTABILISEE",
         accounting_status: "COMPTABILISEE",
+        auto_validated: true,
+        human_intervention: false,
       },
       lines,
-      { human_validation_result: { action: "auto_validate", validated_by: "analysis_batch" } },
+      {
+        auto_validated: true,
+        human_intervention: false,
+        human_validation_result: {
+          action: "auto_validate",
+          validated_by: "analysis_batch",
+          human_intervention: false,
+        },
+      },
     );
   }, []);
 
@@ -489,12 +506,15 @@ export function AnalysisBatchProvider({ children }) {
     const requestedSortStrategy = ["DUE_DATE", "CHRONO", "SUPPLIER", "AMOUNT"].includes(String(sortStrategy || "").toUpperCase())
       ? String(sortStrategy).toUpperCase()
       : "DUE_DATE";
+    const strategyLabel = BATCH_STRATEGY_LABELS[requestedSortStrategy];
     setBatchRequestedLimit(requestedLimit);
     clearBatchPollTimer();
     setLoadingBatch(true);
     setBatchJobError("");
     setBatchSuccessMessage("");
-    setBatchActionMessage(`Lancement du lot de ${requestedLimit} facture(s)...`);
+    setBatchActionMessage(
+      `Préparation des ${requestedLimit} factures prioritaires selon la stratégie : ${strategyLabel}...`,
+    );
     setHasLoadedQueue(true);
     setQueueReturnedEmpty(false);
     setQueueItems([]);
@@ -506,11 +526,17 @@ export function AnalysisBatchProvider({ children }) {
       setBatchJob(payload);
       openBatchStream(payload?.job_id);
       if (payload?.status === "already_running" || payload?.status === "running") {
-        setBatchActionMessage(`Lot déjà lancé (${String(payload?.job_id || "").slice(-6)}). Suivi en cours...`);
+        setBatchActionMessage(
+          payload?.status === "already_running"
+            ? `Un lot est déjà en cours (${String(payload?.job_id || "").slice(-6)}). Suivi en cours...`
+            : `Analyse lancée sur les ${Number(payload?.limit || requestedLimit)} factures prioritaires selon la stratégie : ${strategyLabel}`,
+        );
         await pollBatchJobOnce(payload?.job_id);
         return;
       }
-      setBatchActionMessage(`Lot lancé (${String(payload?.job_id || "").slice(-6)}). Analyse 0/${requestedLimit} en cours...`);
+      setBatchActionMessage(
+        `Analyse lancée sur les ${Number(payload?.limit || requestedLimit)} factures prioritaires selon la stratégie : ${strategyLabel}`,
+      );
       await pollBatchJobOnce(payload?.job_id);
     } catch (error) {
       setBatchJobError(String(error?.message || "Impossible de lancer le lot d'analyse.").trim());
@@ -581,8 +607,10 @@ export function AnalysisBatchProvider({ children }) {
     setBatchActionMessage("");
     try {
       const payload = await fetchAnalysisBatchResults({ limit: 500 });
+      // Display persisted results immediately. PDF source checks may involve
+      // CouchDB/filesystem lookups for every invoice and must not block the UI.
       const mappedItems = Array.isArray(payload?.items)
-        ? await reconcileBatchPdfStatuses(payload.items.map(mapBatchResultToQueueItem))
+        ? payload.items.map(mapBatchResultToQueueItem)
         : [];
       const items = dedupeQueueItemsByInvoiceId(mappedItems);
       setQueueItems(items);
@@ -599,6 +627,24 @@ export function AnalysisBatchProvider({ children }) {
         return next;
       });
       setBatchActionMessage(items.length > 0 ? `${items.length} facture(s) enregistrée(s) affichée(s).` : "Aucune facture enregistrée pour le moment.");
+
+      if (items.some((item) => !canOpenPdf(item))) {
+        void reconcileBatchPdfStatuses(items).then((reconciledItems) => {
+          setQueueItems((current) => {
+            const reconciledById = new Map(
+              reconciledItems.map((item) => [getInvoiceId(item), item]),
+            );
+            const nextItems = current.map((item) => ({
+              ...item,
+              ...(reconciledById.get(getInvoiceId(item)) || {}),
+            }));
+            setQueueCounts(buildQueueCounts(nextItems));
+            return nextItems;
+          });
+        }).catch(() => {
+          // PDF availability is best-effort and never blocks invoice display.
+        });
+      }
     } catch (error) {
       setBatchJobError(String(error?.message || "Impossible d'afficher les factures enregistrées.").trim());
     } finally {

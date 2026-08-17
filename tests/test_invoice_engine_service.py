@@ -30,6 +30,25 @@ class InvoiceEngineServiceTests(unittest.TestCase):
         self.assertEqual(line.recommended_account, "6011")
         self.assertEqual(line.decision, "auto_ok")
 
+    def test_preserves_raw_ocr_text_and_exposes_cleaned_article_label(self) -> None:
+        response = analyze_invoice_lines_strong(
+            [
+                {
+                    "raw_line_text": "M.FIB.R15CM",
+                    "label": "Manche Fibre R 15 cm",
+                    "description": "Manche Fibre R 15 cm",
+                }
+            ],
+            context={"_ai_memory_items": []},
+        )
+
+        line = response.lines[0]
+        proposal_line = response.accounting_proposal.lines[0]
+        self.assertEqual(line.raw_line_text, "M.FIB.R15CM")
+        self.assertEqual(line.label, "Manche Fibre R 15 cm")
+        self.assertEqual(proposal_line.raw_line_text, "M.FIB.R15CM")
+        self.assertEqual(proposal_line.description, "Manche Fibre R 15 cm")
+
     def test_basse_cote_boeuf_transport_context_is_not_auto_ok(self) -> None:
         line = self._analyze(
             "BASSE COTE BOEUF",
