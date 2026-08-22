@@ -868,7 +868,7 @@ def _route_controlled_invoice_to_validation(response: Any, result: dict[str, Any
 
 def _apply_invoice_workflow_status(response: Any, result: dict[str, Any]) -> None:
     workflow_status = str(result.get("workflow_status") or "A_CONTROLER").strip().upper()
-    if workflow_status in {"VALIDE_AUTO", "COMPTABILISEE", "COMPTABILIS?E"}:
+    if workflow_status in {"VALIDE_AUTO", "COMPTABILISEE", "COMPTABILISÉE"}:
         _route_auto_validated_invoice_to_entries(response, result)
         return
     _route_controlled_invoice_to_validation(response, result)
@@ -1083,7 +1083,7 @@ def save_analysis_batch_job(job_id: str) -> dict[str, Any]:
         job["pending_save_count"] = len(_get_unsaved_job_results_unlocked(payload, job_id))
         job["last_saved_at"] = _now_iso()
         job["message"] = (
-            f"Analyse partielle enregistr?e: {saved_now + failed_now} facture(s) sauvegard?e(s). "
+            f"Analyse partielle enregistrée : {saved_now + failed_now} facture(s) sauvegardée(s). "
             "Vous pouvez continuer l'analyse sur les factures restantes."
         )
         _set_job_unlocked(payload, job)
@@ -1143,7 +1143,7 @@ def clear_analysis_batch_results() -> dict[str, Any]:
         _write_store_unlocked(payload)
     return {
         "cleared": cleared_count,
-        "message": f"{cleared_count} r?sultat(s) supprim?(s) de la liste locale.",
+        "message": f"{cleared_count} résultat(s) supprimé(s) de la liste locale.",
     }
 
 
@@ -1720,7 +1720,7 @@ def start_analysis_batch_job(limit: int = 50, sort_strategy: str = "DUE_DATE") -
     try:
         database = _resolve_invoice_db_name(session)
     except requests.RequestException as exc:  # pragma: no cover
-        raise RuntimeError("CouchDB indisponible ou mal configur?e.") from exc
+        raise RuntimeError("CouchDB indisponible ou mal configurée.") from exc
 
     with STORE_LOCK:
         payload = _read_store_unlocked()

@@ -214,7 +214,7 @@ function isAutoRoutedItem(item) {
     item?.workflow_status || item?.invoice_status || item?.status || ""
   ).trim().toUpperCase();
 
-  return ["VALIDE_AUTO", "VALIDE", "COMPTABILISEE", "COMPTABILIS?E"].includes(status);
+  return ["VALIDE_AUTO", "VALIDE", "COMPTABILISEE", "COMPTABILISÉE"].includes(status);
 }
 
 function isPdfOpenableFromDebug(debug) {

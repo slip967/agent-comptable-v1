@@ -10594,6 +10594,9 @@ body::after,
 .ve-btn{display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border:1px solid transparent;border-radius:999px;font-size:13px;font-weight:750;cursor:pointer;transition:.15s ease}
 .ve-btn:hover{transform:translateY(-1px);box-shadow:0 7px 18px #0f172a18}.ve-btn:disabled{opacity:.45;cursor:not-allowed;transform:none;box-shadow:none}
 .ve-btn-primary{color:#fff;background:linear-gradient(135deg,#2563eb,#4f46e5)}.ve-btn-ghost{color:var(--text,#172033);background:#94a3b81a;border-color:#94a3b83d}.ve-btn-danger{color:#fff;background:#dc2626}.ve-btn-danger-ghost{color:#dc2626;background:#fee2e244;border-color:#dc262633}
+.ve-btn-odoo{color:#fff;background:linear-gradient(135deg,#714b67,#8b5f7d);border-color:#714b6738;box-shadow:0 7px 18px #714b6730}
+.ve-btn-odoo:hover:not(:disabled){background:linear-gradient(135deg,#5f3f57,#714b67);box-shadow:0 9px 22px #714b6740}
+:root:not([data-theme="light"]) .ve-btn-odoo{color:#fff;border-color:#c084b73d}
 .validated-entry-card{padding:20px 22px}.validated-entry-card-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;padding-top:14px;border-top:1px solid #94a3b81f}
 .ve-modal-backdrop{position:fixed;inset:0;z-index:10000;display:flex;align-items:flex-start;justify-content:center;padding:72px 24px 24px;background:#0206178c;backdrop-filter:blur(6px);overflow:auto}
 .ve-modal-panel{width:min(760px,100%);max-height:calc(100vh - 96px);display:flex;flex-direction:column;border:1px solid var(--card-border,#94a3b83d);border-radius:24px;background:var(--surface-bg,#fff);box-shadow:0 32px 72px #02061761;overflow:hidden}

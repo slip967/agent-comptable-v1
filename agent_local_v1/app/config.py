@@ -46,6 +46,11 @@ MEMORY_SOURCE = os.getenv("MEMORY_SOURCE", "couchdb").strip().lower() or "couchd
 MEMORY_COUCH_DB = os.getenv("MEMORY_COUCH_DB", REFERENCE_COUCH_DB).strip() or REFERENCE_COUCH_DB
 MEMORY_DOC_PARTITION = os.getenv("MEMORY_DOC_PARTITION", "agent_local_v1").strip() or "agent_local_v1"
 COUCHDB_DATABASE = os.getenv("COUCHDB_DATABASE", "abt3").strip() or "abt3"
+ODOO_URL = os.getenv("ODOO_URL", "http://localhost:8069").strip().rstrip("/")
+ODOO_DB = os.getenv("ODOO_DB", "keymanage_db").strip()
+ODOO_USERNAME = os.getenv("ODOO_USERNAME", "").strip()
+ODOO_PASSWORD = os.getenv("ODOO_PASSWORD", "").strip()
+ODOO_MOCK_MODE = os.getenv("ODOO_MOCK_MODE", "False").strip().lower() in {"1", "true", "yes", "on"}
 try:
     MEMORY_PAGE_SIZE = max(50, int(os.getenv("MEMORY_PAGE_SIZE", "400").strip() or "400"))
 except ValueError:

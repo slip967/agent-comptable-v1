@@ -642,6 +642,12 @@ export function fetchValidatedEntries(limit = 2000) {
   return fetchHumanValidationItems({ status: "validated", limit });
 }
 
+export function exportValidatedInvoiceToOdoo(invoiceId) {
+  return requestJson(`/api/odoo/export/${encodeURIComponent(invoiceId)}`, {
+    method: "POST",
+  });
+}
+
 export function getAnalysisBatchStreamUrl(jobId) {
   return `${API_BASE_URL}/api/analysis/batch-jobs/${encodeURIComponent(jobId)}/stream`;
 }

@@ -11,6 +11,36 @@ const WINDOWS_1252_BYTES = new Map([
 const MOJIBAKE_PATTERN = /(?:Ã.|Â.|â.|ï¿½|\uFFFD)/u;
 const CORRUPTION_PATTERN = /(?:Ã|Â|â|ï¿½|\uFFFD)/gu;
 
+const LEGACY_QUESTION_MARK_REPLACEMENTS = [
+  [/\br\?f\?rence(s)?\b/giu, "référence$1"],
+  [/\br\?f\?rentiel(s)?\b/giu, "référentiel$1"],
+  [/\bd\?tect\?e(s)?\b/giu, "détectée$1"],
+  [/\bd\?tect\?(s)?\b/giu, "détecté$1"],
+  [/\bm\?tadonn\?e(s)?\b/giu, "métadonnée$1"],
+  [/\bm\?tier(s)?\b/giu, "métier$1"],
+  [/\bactivit\?(?=\W|$)/giu, "activité"],
+  [/\bhypoth\?se(s)?\b/giu, "hypothèse$1"],
+  [/\blibell\?(s)?\b/giu, "libellé$1"],
+  [/\bt\?l\?communication(s)?\b/giu, "télécommunication$1"],
+  [/\bp\?riode(s)?\b/giu, "période$1"],
+  [/\bd\?cision(s)?\b/giu, "décision$1"],
+  [/\bvalid\?e(s)?\b/giu, "validée$1"],
+  [/\bvalid\?(?=\W|$)/giu, "validé"],
+  [/\brejet\?e(s)?\b/giu, "rejetée$1"],
+  [/\bpropos\?(?=\W|$)/giu, "proposé"],
+  [/\brenseign\?(?=\W|$)/giu, "renseigné"],
+  [/\bconserv\?e(s)?\b/giu, "conservée$1"],
+  [/\bd\?j\?(?=\W|$)/giu, "déjà"],
+  [/\bsauvegard\?e(s)?\b/giu, "sauvegardée$1"],
+  [/\bsupprim\?e(s)?\b/giu, "supprimée$1"],
+  [/\bconfigur\?e(s)?\b/giu, "configurée$1"],
+  [/\?lev\?(?=\W|$)/giu, "élevé"],
+  [/\btrouv\?(?=\W|$)/giu, "trouvé"],
+  [/\? valider\b/giu, "À valider"],
+  [/\bn'a \?t\?(?=\W|$)/giu, "n'a été"],
+  [/\? \?tudier\b/giu, "à étudier"],
+];
+
 function encodeWindows1252(value) {
   const bytes = [];
   for (const character of value) {
@@ -50,6 +80,11 @@ export function cleanDisplayText(value, fallback = "") {
     if (decoded === text || corruptionScore(decoded) >= corruptionScore(text)) break;
     text = decoded;
   }
+
+  text = LEGACY_QUESTION_MARK_REPLACEMENTS.reduce(
+    (current, [pattern, replacement]) => current.replace(pattern, replacement),
+    text,
+  );
 
   return text
     .replaceAll("ï¿½", "")

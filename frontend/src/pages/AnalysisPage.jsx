@@ -44,10 +44,10 @@ import {
   formatReferentialStatus,
   formatRiskStatus,
 } from "../utils/uiText";
+import { cleanDisplayText } from "../utils/textCleaner";
 const PERFORMANCE_RESET_STORAGE_KEY = "keymanage.performance-reset.v1";
 function textOrFallback(value, fallback = "Non renseigné") {
-  const text = String(value || "").trim();
-  return text || fallback;
+  return cleanDisplayText(value, fallback);
 }
 function formatAmount(value, currency = "EUR") {
   if (value === null || value === undefined || Number.isNaN(Number(value))) {
@@ -77,11 +77,11 @@ function formatPercent(value) {
 }
 function formatAccount(account, label) {
   const code = textOrFallback(account, "-");
-  const cleanLabel = String(label || "").trim();
+  const cleanLabel = cleanDisplayText(label);
   return cleanLabel ? `${code} - ${cleanLabel}` : code;
 }
 function toDisplayMetier(value) {
-  return formatMetierText(value);
+  return cleanDisplayText(formatMetierText(value));
 }
 function referentialLabel(status) {
   return formatReferentialStatus(status);
@@ -956,8 +956,8 @@ function DetailRow({ label, value, highlight = false, tip, tipPlacement = "right
   return (
     <div className="analysis-detail-row">
       <span className="analysis-detail-key">
-        {label}
-        {tip ? <InfoTip text={tip} placement={tipPlacement} /> : null}
+        {cleanDisplayText(label)}
+        {tip ? <InfoTip text={cleanDisplayText(tip)} placement={tipPlacement} /> : null}
       </span>
       <span className={`analysis-detail-val${highlight ? " highlight" : ""}`}>
         {textOrFallback(value)}
@@ -2151,7 +2151,7 @@ export default function AnalysisPage() {
                   <div className="section-header">
                     <h2 className="section-title">Fiche d'audit ligne</h2>
                     <p className="section-text">
-                      Decision moteur, contexte et preuves documentaires.
+                      Décision moteur, contexte et preuves documentaires.
                     </p>
                   </div>
                   <div className="analysis-drawer-head-actions">
@@ -2237,7 +2237,7 @@ export default function AnalysisPage() {
                       <strong>{selectedEvidence.apeContext.join(", ") || "Non renseigné"}</strong>
                     </div>
                     <div className="analysis-proof-mini-card">
-                      <span>Statut qualite</span>
+                      <span>Statut qualité</span>
                       <strong>{qualityLabel(selectedLine.quality_status)}</strong>
                     </div>
                   </div>
@@ -2270,7 +2270,7 @@ export default function AnalysisPage() {
                       className="secondary-btn compact"
                       onClick={() =>
                         copyToClipboard(buildProofPayload(selectedLine), () =>
-                          setActionMessage("Preuves copi??es dans le presse-papiers."),
+                          setActionMessage("Preuves copiées dans le presse-papiers."),
                         )
                       }
                     >
@@ -2282,17 +2282,17 @@ export default function AnalysisPage() {
                     <div className="detail-label">Ligne originale</div>
                     <div className="analysis-detail-grid">
                       <DetailRow label="Texte brut" value={selectedLine.raw_text} />
-                      <DetailRow label="Texte nettoye" value={selectedLine.cleaned_text} />
+                      <DetailRow label="Texte nettoyé" value={selectedLine.cleaned_text} />
                       <DetailRow label="Montant HT" value={formatAmount(selectedLine.amount_ht, invoiceHeader?.currency)} />
                       <DetailRow label="Montant TTC" value={formatAmount(selectedLine.amount_ttc, invoiceHeader?.currency)} />
                       <DetailRow label="TVA" value={formatPercent(selectedLine.tva)} />
                     </div>
                   </div>
                   <div className="detail-card">
-                    <div className="detail-label">Decision moteur</div>
+                    <div className="detail-label">Décision moteur</div>
                     <div className="analysis-detail-grid">
                       <DetailRow
-                        label="Statut referentiel"
+                        label="Statut référentiel"
                         value={referentialLabel(selectedLine.referential_status)}
                         tip={
                           {
@@ -2306,7 +2306,7 @@ export default function AnalysisPage() {
                         }
                       />
                       <DetailRow
-                        label="Compte recommande"
+                        label="Compte recommandé"
                         value={
                           selectedLine.recommended_account
                             ? formatAccount(
@@ -2390,9 +2390,9 @@ export default function AnalysisPage() {
                         }
                         highlight
                       />
-                      <DetailRow label="TVA referentiel" value={formatPercent(selectedLine.taux_tva)} />
-                      <DetailRow label="Categorie" value={selectedLine.categorie} />
-                      <DetailRow label="Sous-categorie" value={selectedLine.sous_categorie} />
+                      <DetailRow label="TVA référentiel" value={formatPercent(selectedLine.taux_tva)} />
+                      <DetailRow label="Catégorie" value={selectedLine.categorie} />
+                      <DetailRow label="Sous-catégorie" value={selectedLine.sous_categorie} />
                       <DetailRow label="Type fournisseur" value={selectedLine.type_fournisseur} />
                     </div>
                     {selectedLine.referential_status === "missing_candidate" ? (
@@ -2439,8 +2439,8 @@ export default function AnalysisPage() {
                                 {textOrFallback(candidate.reason)}
                               </p>
                               <div className="analysis-candidate-extra">
-                                <span>Categorie : {textOrFallback(candidate.categorie)}</span>
-                                <span>Sous-categorie : {textOrFallback(candidate.sous_categorie)}</span>
+                                <span>Catégorie : {textOrFallback(candidate.categorie)}</span>
+                                <span>Sous-catégorie : {textOrFallback(candidate.sous_categorie)}</span>
                                 <span>Type fournisseur : {textOrFallback(candidate.type_fournisseur)}</span>
                               </div>
                             </div>
@@ -2517,12 +2517,12 @@ export default function AnalysisPage() {
                     )}
                   </div>
                   <div className="detail-card">
-                    <div className="detail-label">Statut qualite</div>
+                    <div className="detail-label">Statut qualité</div>
                     <div className="analysis-detail-grid">
                       <DetailRow label="Preuves" value={evidenceStatusLabel(selectedLine.evidence_status)} />
                       <DetailRow label="Qualité" value={qualityLabel(selectedLine.quality_status)} />
                       <DetailRow
-                        label="APE referentiel"
+                        label="APE référentiel"
                         value={selectedEvidence.apeContext.join(", ")}
                       />
                       <DetailRow

@@ -53,7 +53,7 @@ from .schemas import (
     StrongAnalysisResponse,
     ValidationQueueResponse,
 )
-from .routers import analysis_router, human_validation_router, invoices_router, motor_sync_router, workflow_router
+from .routers import analysis_router, human_validation_router, invoices_router, motor_sync_router, odoo_router, workflow_router
 from .tools import matcher_tool
 
 
@@ -80,6 +80,7 @@ async def ensure_json_utf8(request: Request, call_next):
     return response
 
 app.include_router(analysis_router, prefix="/api")
+app.include_router(odoo_router, prefix="/api")
 app.include_router(human_validation_router, prefix="/api")
 app.include_router(invoices_router, prefix="/api")
 app.include_router(motor_sync_router, prefix="/api")

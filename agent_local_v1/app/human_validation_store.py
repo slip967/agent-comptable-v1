@@ -152,6 +152,28 @@ def clear_all_validation_items() -> int:
         return count
 
 
+def mark_invoice_exported_to_odoo(invoice_id: str, move_id: int) -> int:
+    """Persist the Odoo move identifier on every stored line of an invoice."""
+    expected_id = str(invoice_id or "").strip()
+    if not expected_id:
+        return 0
+    updated = 0
+    with _LOCK:
+        items = _read_items_unlocked()
+        for item in items:
+            item_invoice_id = str(
+                item.get("invoice_group_id") or item.get("invoice_id") or ""
+            ).strip()
+            if item_invoice_id != expected_id:
+                continue
+            item["odoo_move_id"] = int(move_id)
+            item["odoo_exported_at"] = _now_iso()
+            updated += 1
+        if updated:
+            _write_items_unlocked(items)
+    return updated
+
+
 def save_validation_decision(
     validation_id: str,
     payload: dict[str, Any],

@@ -15,6 +15,7 @@ from fastapi.responses import FileResponse, Response, StreamingResponse
 
 from ..config import COUCHDB_DATABASE
 from ..database import http_session
+from ..human_validation_store import list_validation_items, mark_invoice_exported_to_odoo
 from ..analysis_batch_service import (  # noqa: PLC2701
     clear_analysis_batch_results,
     get_analysis_batch_job,
@@ -41,6 +42,12 @@ from ..invoice_engine_service import (
     resolve_invoice_pdf,
 )
 from ..schemas import AnalysisBatchJob, AnalysisBatchResultsResponse, ControlQueueResponse
+from ..services.odoo_service import (
+    OdooAuthenticationError,
+    OdooConfigurationError,
+    OdooExportError,
+    export_invoice_to_odoo,
+)
 
 COUCHDB_URL = os.getenv("COUCHDB_URL", "https://app.quimanage.info").rstrip("/")
 
@@ -161,6 +168,7 @@ def _fetch_partition_invoices(
 
 
 router = APIRouter(prefix="/analysis", tags=["analysis"])
+odoo_router = APIRouter(prefix="/odoo", tags=["odoo"])
 
 
 def _validate_invoice_id(invoice_id: str) -> None:
@@ -807,6 +815,97 @@ def _load_invoice_pdf_bytes(invoice_id: str) -> bytes:
     if not pdf_bytes.startswith(b"%PDF"):
         raise RuntimeError("Le document source n’a pas pu être converti en PDF.")
     return pdf_bytes
+
+
+def _validated_invoice_for_odoo(invoice_id: str) -> dict:
+    expected_id = str(invoice_id or "").strip()
+    matching_lines = []
+    for item in list_validation_items(limit=10000):
+        item_id = str(item.get("invoice_group_id") or item.get("invoice_id") or "").strip()
+        if item_id != expected_id:
+            continue
+        workflow_status = str(
+            item.get("workflow_status") or item.get("accounting_status") or ""
+        ).upper()
+        item_status = str(item.get("status") or "").lower()
+        if item_status == "validated" or workflow_status in {
+            "COMPTABILISEE",
+            "VALIDE_AUTO",
+            "VALIDE",
+        }:
+            matching_lines.append(item)
+    if not matching_lines:
+        raise HTTPException(
+            status_code=404,
+            detail="Facture validée introuvable pour l'export Odoo.",
+        )
+
+    first = matching_lines[0]
+    existing_move_id = next(
+        (
+            int(line.get("odoo_move_id"))
+            for line in matching_lines
+            if str(line.get("odoo_move_id") or "").isdigit()
+        ),
+        None,
+    )
+    supplier_details = first.get("issuer") if isinstance(first.get("issuer"), dict) else {}
+    return {
+        **first,
+        "invoice_id": expected_id,
+        "supplier": first.get("supplier") or first.get("supplier_name") or supplier_details.get("name"),
+        "vat_siret": (
+            first.get("vat_siret")
+            or first.get("supplier_siret")
+            or first.get("supplier_vat")
+            or first.get("siret")
+            or supplier_details.get("siret")
+            or supplier_details.get("vat_number")
+        ),
+        "lines": matching_lines,
+        "odoo_move_id": existing_move_id,
+    }
+
+
+@odoo_router.post("/export/{invoice_id}")
+def export_validated_invoice_to_odoo(invoice_id: str) -> dict:
+    """Export one locally validated invoice as an Odoo vendor bill."""
+    _validate_invoice_id(invoice_id)
+    invoice_data = _validated_invoice_for_odoo(invoice_id)
+    existing_move_id = invoice_data.get("odoo_move_id")
+    if existing_move_id:
+        return {
+            "success": True,
+            "invoice_id": invoice_id,
+            "move_id": int(existing_move_id),
+            "already_exported": True,
+            "message": f"Facture déjà exportée vers Odoo #{existing_move_id}.",
+        }
+
+    try:
+        invoice_data["pdf_bytes"] = _load_invoice_pdf_bytes(invoice_id)
+        safe_reference = str(invoice_data.get("invoice_number") or invoice_id).replace("/", "-")
+        invoice_data["pdf_filename"] = f"facture_{safe_reference}.pdf"
+    except (FileNotFoundError, RuntimeError, OSError):
+        # The vendor bill remains exportable when its source PDF is unavailable.
+        pass
+
+    try:
+        result = export_invoice_to_odoo(invoice_data)
+    except (OdooConfigurationError, OdooAuthenticationError) as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+    except OdooExportError as exc:
+        raise HTTPException(status_code=502, detail=str(exc)) from exc
+
+    move_id = int(result["move_id"])
+    mark_invoice_exported_to_odoo(invoice_id, move_id)
+    return {
+        "success": True,
+        "invoice_id": invoice_id,
+        **result,
+        "already_exported": False,
+        "message": f"Facture exportée vers Odoo #{move_id}.",
+    }
 
 
 @router.get("/invoice-pdf-preview/{invoice_id}")

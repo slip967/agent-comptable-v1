@@ -57,13 +57,13 @@ SUPPLIER_APE_PREFIX_RE = re.compile(
     r"^\s*(?:ape\s+fournisseur|fournisseur\s+ape|supplier\s+ape)\s*:\s*(.+?)\s*$",
     re.IGNORECASE,
 )
-METIER_PREFIX_RE = re.compile(r"^\s*(?:metier|activit?|activite)\s*:\s*(.+?)\s*$", re.IGNORECASE)
+METIER_PREFIX_RE = re.compile(r"^\s*(?:métier|metier|activité|activite)\s*:\s*(.+?)\s*$", re.IGNORECASE)
 ARTICLE_PREFIX_RE = re.compile(r"^\s*(?:article|produit|description)\s*:\s*(.+?)\s*$", re.IGNORECASE)
 # Match any Unicode letter without relying on fragile encoded accent ranges.
 ALPHA_RE = re.compile(r"[^\W\d_]", re.UNICODE)
 NON_EXPLOITABLE_TEXT_RE = re.compile(
     r"\b(total|tva|ttc|ht|iban|bic|siret|adresse|email|telephone|paiement|echeance|date|facture|"
-    r"conditions|reference|r?f?rence|ref)\b",
+    r"conditions|reference|référence|ref)\b",
     re.IGNORECASE,
 )
 
@@ -151,7 +151,7 @@ BTP_KEYWORDS = {
 REPAIR_KEYWORDS = {
     "entretien",
     "reparation",
-    "r?paration",
+    "réparation",
     "pneu",
     "amortisseur",
     "vidange",
@@ -621,7 +621,7 @@ def _resolve_invoice_db_name(session: requests.Session) -> str:
                 return db_name
         except requests.RequestException:
             continue
-    raise RuntimeError("CouchDB indisponible ou mal configur?e.")
+    raise RuntimeError("CouchDB indisponible ou mal configurée.")
 
 
 def _fetch_invoice_doc(invoice_id: str) -> dict[str, Any]:
@@ -1079,7 +1079,7 @@ def determine_invoice_workflow_status(
             "amounts_balanced": True,
             "is_duplicate": False,
             "average_confidence": average_confidence,
-            "global_decision": "Valid?e automatiquement",
+            "global_decision": "Validée automatiquement",
             "global_risk_level": "Faible",
             "can_validate_accounting": True,
         }
@@ -1093,8 +1093,8 @@ def determine_invoice_workflow_status(
         "amounts_balanced": amounts_balanced,
         "is_duplicate": is_duplicate,
         "average_confidence": average_confidence,
-        "global_decision": "Rejet?e" if rejected else "? valider",
-        "global_risk_level": "?lev?" if rejected else "Moyen",
+        "global_decision": "Rejetée" if rejected else "À valider",
+        "global_risk_level": "Élevé" if rejected else "Moyen",
         "can_validate_accounting": not rejected,
     }
 
@@ -1117,7 +1117,7 @@ def _build_contextual_hypothesis(cleaned_text: str, context: dict[str, Any]) -> 
             "account": account,
             "account_label": get_account_label(account),
             "score": 68.0,
-            "reason": "Article absent du r?f?rentiel valid?, mais le contexte fournisseur / t?l?com sugg?re une charge de t?l?communications.",
+            "reason": "Article absent du référentiel validé, mais le contexte fournisseur / télécom suggère une charge de télécommunications.",
             "detected_activity": detected_activity or "charges_externes",
         }
 
@@ -1129,7 +1129,7 @@ def _build_contextual_hypothesis(cleaned_text: str, context: dict[str, Any]) -> 
             "account": account,
             "account_label": get_account_label(account),
             "score": 66.0,
-            "reason": "Article absent du r?f?rentiel valid?, mais le libell? ?voque du carburant ou un consommable mobilit?.",
+            "reason": "Article absent du référentiel validé, mais le libellé évoque du carburant ou un consommable mobilité.",
             "detected_activity": detected_activity or base,
         }
 
@@ -1143,7 +1143,7 @@ def _build_contextual_hypothesis(cleaned_text: str, context: dict[str, Any]) -> 
             "account": account,
             "account_label": get_account_label(account),
             "score": 63.0,
-            "reason": "Article absent du r?f?rentiel valid?, mais le contexte ?voque un mat?riel / consommable m?tier ? faire valider.",
+            "reason": "Article absent du référentiel validé, mais le contexte évoque un matériel / consommable métier à faire valider.",
             "detected_activity": detected_activity or "charges_externes",
         }
 
@@ -1159,7 +1159,7 @@ def _build_contextual_hypothesis(cleaned_text: str, context: dict[str, Any]) -> 
             "account": account,
             "account_label": get_account_label(account),
             "score": 64.0,
-            "reason": "Article absent du r?f?rentiel valid?, mais le contexte BTP oriente vers un consommable / mat?riel d'atelier.",
+            "reason": "Article absent du référentiel validé, mais le contexte BTP oriente vers un consommable / matériel d'atelier.",
             "detected_activity": "btp",
         }
 
@@ -1175,7 +1175,7 @@ def _build_contextual_hypothesis(cleaned_text: str, context: dict[str, Any]) -> 
             "account": account,
             "account_label": get_account_label(account),
             "score": 65.0,
-            "reason": "Article absent du r?f?rentiel valid?, mais le contexte alimentaire permet une hypoth?se prudente ? valider.",
+            "reason": "Article absent du référentiel validé, mais le contexte alimentaire permet une hypothèse prudente à valider.",
             "detected_activity": metier,
         }
 
@@ -1188,7 +1188,7 @@ def _build_contextual_hypothesis(cleaned_text: str, context: dict[str, Any]) -> 
             "account": account,
             "account_label": get_account_label(account),
             "score": 64.0,
-            "reason": "Article absent du r?f?rentiel valid?, mais le contexte mobilit? ?voque un entretien / consommable v?hicule.",
+            "reason": "Article absent du référentiel validé, mais le contexte mobilité évoque un entretien / consommable véhicule.",
             "detected_activity": detected_activity,
         }
 
@@ -1203,19 +1203,19 @@ def _build_enrichment_suggestion(
     if referential_status == "found_exact":
         return StrongEnrichmentSuggestion(
             should_enrich=False,
-            reason="Ligne d?j? couverte par un r?f?rentiel valid?.",
+            reason="Ligne déjà couverte par un référentiel validé.",
         )
 
     if referential_status == "non_comptable":
         return StrongEnrichmentSuggestion(
             should_enrich=False,
-            reason="Ligne non comptable ? ignorer dans le r?f?rentiel produit.",
+            reason="Ligne non comptable à ignorer dans le référentiel produit.",
         )
 
     suggested_base = None
     suggested_account = None
     suggested_label = None
-    reason = "Article absent ou proche du r?f?rentiel valid?."
+    reason = "Article absent ou proche du référentiel validé."
 
     if hypothesis:
         suggested_base = hypothesis.get("base")
@@ -1249,31 +1249,31 @@ def _build_decision_reason(
     client_ape = context.get("client_ape") or "APE client absent"
 
     if referential_status == "non_comptable":
-        return "Ligne non comptable d?tect?e (remise, taxe, p?riode, paiement ou m?tadonn?e), donc ignor?e par le moteur."
+        return "Ligne non comptable détectée (remise, taxe, période, paiement ou métadonnée), donc ignorée par le moteur."
 
     if top_candidate and referential_status == "found_exact":
         proof_count = len(top_candidate.source_invoice_ids)
         return (
-            f"Match exact avec le r?f?rentiel valid? ({top_candidate.article_source or 'article connu'}), "
-            f"compte {top_candidate.account or 'non renseign?'} propos? avec {proof_count} facture(s) source et contexte {client_ape}."
+            f"Match exact avec le référentiel validé ({top_candidate.article_source or 'article connu'}), "
+            f"compte {top_candidate.account or 'non renseigné'} proposé avec {proof_count} facture(s) source et contexte {client_ape}."
         )
 
     if top_candidate and referential_status == "found_fuzzy":
         return (
-            f"Article proche d'une r?f?rence connue ({top_candidate.article_source or 'r?f?rence voisine'}) "
+            f"Article proche d'une référence connue ({top_candidate.article_source or 'référence voisine'}) "
             f"avec un score de {round(top_candidate.score, 1)}. Validation humaine requise."
         )
 
     if hypothesis and referential_status == "missing_candidate":
         return (
-            f"Article absent du r?f?rentiel valid?. Hypoth?se contextuelle construite depuis {supplier} "
-            f"et l'activit? d?tect?e, sans auto-validation."
+            f"Article absent du référentiel validé. Hypothèse contextuelle construite depuis {supplier} "
+            f"et l'activité détectée, sans auto-validation."
         )
 
     if decision == "rejeter":
-        return "Article absent du r?f?rentiel et aucun candidat assez fiable n'a ?t? retenu. Enrichissement futur ? ?tudier."
+        return "Article absent du référentiel et aucun candidat assez fiable n'a été retenu. Enrichissement futur à étudier."
 
-    return "D?cision prudente : contexte ou r?f?rentiel insuffisant, validation humaine requise."
+    return "Décision prudente : contexte ou référentiel insuffisant, validation humaine requise."
 
 
 def _risk_from_decision(
@@ -1365,7 +1365,7 @@ def _non_comptable_line_analysis(line_payload: dict[str, Any], context: dict[str
         confidence=0.0,
         risk_level="faible",
         decision="non_comptable",
-        decision_reason="Ligne non comptable d?tect?e : elle n'est pas envoy?e au moteur de recommandation.",
+        decision_reason="Ligne non comptable détectée : elle n'est pas envoyée au moteur de recommandation.",
         evidence_status="missing",
         quality_status="fiable",
     )
@@ -1380,7 +1380,7 @@ def _failed_line_analysis(
     cleaned_text = _matcher_module().normalize_text(raw_text)
     reason = (
         "Erreur moteur pendant l'analyse de cette ligne. "
-        f"Ligne conserv?e mais rejet?e par prudence ({exc.__class__.__name__}: {exc})."
+        f"Ligne conservée mais rejetée par prudence ({exc.__class__.__name__}: {exc})."
     )
     return StrongLineAnalysis(
         raw_text=raw_text,
@@ -1721,7 +1721,7 @@ def _build_accounting_proposal(
 ) -> AccountingProposal:
     """Build a structured accounting proposal from already-computed analysis lines.
 
-    No scoring, matching or decision logic is touched here ? this is a pure
+    No scoring, matching or decision logic is touched here; this is a pure
     projection of existing results into a bookkeeping-ready format.
     """
     proposal_lines: list[AccountingProposalLine] = []
@@ -2321,7 +2321,7 @@ def _compute_queue_pdf_status(
                 return "missing_file", "PDF absent", True
         return "no_path", "Sans PDF", False
 
-    return "no_path", "Aucun chemin PDF trouv?", False
+    return "no_path", "Aucun chemin PDF trouvé", False
 
 
 def _build_control_queue_item(normalized_doc: dict[str, Any]) -> ControlQueueItem:
@@ -2393,7 +2393,7 @@ def _find_control_queue_docs(
         timeout=90,
     )
     if response.status_code == 404:
-        raise RuntimeError("CouchDB indisponible ou mal configur?e.")
+        raise RuntimeError("CouchDB indisponible ou mal configurée.")
     response.raise_for_status()
     rows = response.json().get("rows") or []
 
@@ -2421,10 +2421,10 @@ def fetch_analysis_control_queue(
     try:
         db_name, docs = _find_control_queue_docs(limit, supplier, client, ape)
     except requests.RequestException as exc:
-        raise RuntimeError("CouchDB indisponible ou mal configur?e.") from exc
+        raise RuntimeError("CouchDB indisponible ou mal configurée.") from exc
     except RuntimeError as exc:
         if "CouchDB" in str(exc):
-            raise RuntimeError("CouchDB indisponible ou mal configur?e.") from exc
+            raise RuntimeError("CouchDB indisponible ou mal configurée.") from exc
         raise
 
     requested_limit = max(int(limit or 20), 1)
@@ -2540,7 +2540,7 @@ _PDF_NESTED_FIELDS: tuple[tuple[str, str], ...] = (
     ("document", "path"),
 )
 
-# List fields ? use first non-empty element only
+# List fields: use first non-empty element only
 _PDF_LIST_FIELDS: tuple[str, ...] = (
     "invoice_paths_sources",
     "pdf_sources",
@@ -2649,7 +2649,7 @@ def _extract_pdf_path_from_core_profile(
                     f"{field_name}+{filename_field}",
                     None,
                 )
-            fallback_error = "Dossier source trouv? mais nom de fichier absent."
+            fallback_error = "Dossier source trouvé mais nom de fichier absent."
             continue
 
         if _looks_like_local_path(value):
@@ -3229,7 +3229,7 @@ def _resolve_pdf_path_with_mappings(raw_path: str) -> "Path | None":
     """Apply PDF_PATH_MAPPINGS to *raw_path* and return a Path if the file exists.
 
     - Normalises forward-slashes
-    - Tries all (linux_prefix ? windows_prefix) substitutions in order
+    - Tries all (linux_prefix to windows_prefix) substitutions in order
     - Returns the first Path whose .is_file() is True
     - Returns None if no mapping matches or file not found
     """
@@ -3249,7 +3249,7 @@ def _resolve_pdf_path_with_mappings(raw_path: str) -> "Path | None":
             suffix = normalised[len(linux_prefix):]
             candidate_str = win_prefix.rstrip("/") + suffix
             # Security: verify the candidate string (pre-resolve) stays inside the
-            # allowed Windows prefix ? covers traversal attempts like /../ sequences.
+            # allowed Windows prefix; covers traversal attempts like /../ sequences.
             # We use the raw candidate_str, not Path.resolve(), because resolve() on
             # a mapped network drive (Z:) may return a UNC path that no longer starts
             # with "Z:/e", causing a false-negative security block.
@@ -3294,8 +3294,8 @@ def resolve_invoice_pdf(invoice_id: str) -> tuple[str, Any]:
     """Resolve the source document for a CouchDB invoice.
 
     Returns one of:
-    - ``("disk", {...})`` ? local file on disk
-    - ``("couch_attachment", (...))`` ? stream from CouchDB
+    - ``("disk", {...})``: local file on disk
+    - ``("couch_attachment", (...))``: stream from CouchDB
 
     Raises ``FileNotFoundError`` with a safe human-readable message on failure.
     Path mapping is driven by PDF_PATH_MAPPINGS (or PDF_LINUX_PREFIX/PDF_WINDOWS_PREFIX).
@@ -3314,7 +3314,7 @@ def resolve_invoice_pdf(invoice_id: str) -> tuple[str, Any]:
     if not isinstance(doc, dict):
         raise FileNotFoundError("Document source introuvable pour cette facture.")
 
-    # 1 ? Try local path fields directly in the invoice doc
+    # 1. Try local path fields directly in the invoice doc
     raw_path, field_used = _extract_pdf_path_from_doc_with_field(doc)
     if raw_path:
         resolution = _describe_pdf_source_resolution(raw_path)
@@ -3335,7 +3335,7 @@ def resolve_invoice_pdf(invoice_id: str) -> tuple[str, Any]:
             invoice_id, field_used, _mask_path(raw_path),
         )
 
-    # 1b ? Follow form_common_core_ref ? core_profile
+    # 1b. Follow form_common_core_ref to core_profile
     core_doc = _fetch_core_profile_doc(session, db_name, doc)
     core_error_reason: str | None = None
     if core_doc is not None:
@@ -3378,7 +3378,7 @@ def resolve_invoice_pdf(invoice_id: str) -> tuple[str, Any]:
             )
             return ("couch_attachment", (session, att_url, att_name, media_type))
 
-    # 2 ? Try CouchDB _attachments stubs on the invoice doc itself
+    # 2. Try CouchDB _attachments stubs on the invoice doc itself
     for att_name, _att_meta, media_type in _iter_source_attachments(doc):
         att_url = (
             f"{COUCHDB_URL}/{quote(db_name, safe='')}"
