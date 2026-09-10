@@ -451,6 +451,31 @@ export function fetchKnowledgeBasesSummary() {
   return requestJson("/knowledge-bases/summary", { method: "GET" });
 }
 
+export function fetchKnowledgeBases() {
+  return requestJson("/knowledge-bases", { method: "GET" });
+}
+
+export function updateKnowledgeBaseItem(baseKey, itemIndex, payload) {
+  return requestJson(
+    `/knowledge-bases/${encodeURIComponent(baseKey)}/items/${itemIndex}`,
+    {
+      method: "PATCH",
+      body: JSON.stringify(payload),
+    },
+  );
+}
+
+export function deleteKnowledgeBaseItem(baseKey, itemIndex, item) {
+  const params = new URLSearchParams({
+    expected_article_source: String(item.article_source || ""),
+    expected_account: String(item.compte_comptable || ""),
+  });
+  return requestJson(
+    `/knowledge-bases/${encodeURIComponent(baseKey)}/items/${itemIndex}?${params}`,
+    { method: "DELETE" },
+  );
+}
+
 export function fetchWorkflowHistory(filters = {}) {
   const searchParams = new URLSearchParams();
   Object.entries(filters || {}).forEach(([key, value]) => {

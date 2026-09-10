@@ -43,37 +43,6 @@
   },
   "items": [
     {
-      "article_source": "Frais fixes",
-      "article_canonique": "frais fixes",
-      "mots_cles": [
-        "frais",
-        "fixes"
-      ],
-      "source_invoice_ids": [
-        "fr_bd_519665103:36235183-6541-4bdc-b710-599100954c57",
-        "fr_bd_828612630:121c65b6-ca3d-43a6-9087-5d52b1a64798",
-        "fr_bd_828612630:17790d84-a4e0-46d4-8129-3b8195449ded"
-      ],
-      "invoice_paths_sources": [
-        "/mnt/clients/e/fichiers_pdf_paris/Keymanage pdf - maroc/2025/Clients 2025/BOUCHERIE MOUAD_51966510300015/FLAT_INPUT/Facture/Facture/2025/392806741 - BBV/2025-06-30_1971046_544.12.pdf",
-        "/mnt/clients/e/fichiers_pdf_paris/Keymanage pdf - maroc/2024/Clients 2024/BOUCHERIE CHAYMA 15_82861263000024/FLAT_INPUT/Facture/Facture/2024/FLAT_INPUT/Facture/Facture/2024/542063623 - GRG MAISON DES VIANDES/2024-03-29_24032626_1178.91.pdf",
-        "/mnt/clients/e/fichiers_pdf_paris/Keymanage pdf - maroc/2024/Clients 2024/BOUCHERIE CHAYMA 15_82861263000024/FLAT_INPUT/Facture/Facture/2024/FLAT_INPUT/Facture/Facture/2024/542063623 - GRG MAISON DES VIANDES/2024-03-21_24028988_341.22.pdf"
-      ],
-      "ape_context": [
-        "4722Z"
-      ],
-      "partitions_sources": [
-        "fr_bd_519665103",
-        "fr_bd_828612630"
-      ],
-      "compte_comptable": "6281",
-      "compte_comptable_libelle": "Concours divers (cotisations)",
-      "taux_tva": 20.0,
-      "categorie": "charges_externes",
-      "sous_categorie": "charges_generales",
-      "type_fournisseur": "service"
-    },
-    {
       "article_source": "Entretien parking",
       "article_canonique": "entretien parking",
       "mots_cles": [
@@ -102,36 +71,6 @@
       "taux_tva": 20.0,
       "categorie": "charges_externes",
       "sous_categorie": "entretien_reparation",
-      "type_fournisseur": "service"
-    },
-    {
-      "article_source": "F. FIXE",
-      "article_canonique": "f fixe",
-      "mots_cles": [
-        "f",
-        "fixe"
-      ],
-      "source_invoice_ids": [
-        "fr_bd_519665103:28390d3d-38c7-4252-95ed-aafd1869f176",
-        "fr_bd_519665103:2a19728b-d217-45e9-984e-56d9935f6138",
-        "fr_bd_519665103:632a6b9e-585f-48cd-b57f-d4a8347c0385"
-      ],
-      "invoice_paths_sources": [
-        "/mnt/clients/e/fichiers_pdf_paris/Keymanage pdf - maroc/2025/Clients 2025/BOUCHERIE MOUAD_51966510300015/FLAT_INPUT/Facture/Facture/2025/392806741 - BBV/2025-07-31_1978064_56.28.pdf",
-        "/mnt/clients/e/fichiers_pdf_paris/Keymanage pdf - maroc/2024/Clients 2024/BOUCHERIE MOUAD_51966510300015/FLAT_INPUT/Facture/Facture/2024/392806741 - BBV/2024-06-13_1870449_8846.30.pdf",
-        "/mnt/clients/e/fichiers_pdf_paris/Keymanage pdf - maroc/2024/Clients 2024/BOUCHERIE MOUAD_51966510300015/FLAT_INPUT/Facture/Facture/2024/392806741 - BBV/2024-01-17_1832013_333.59.pdf"
-      ],
-      "ape_context": [
-        "4722Z"
-      ],
-      "partitions_sources": [
-        "fr_bd_519665103"
-      ],
-      "compte_comptable": "6227",
-      "compte_comptable_libelle": "Frais d'actes et de contentieux",
-      "taux_tva": 20.0,
-      "categorie": "charges_externes",
-      "sous_categorie": "frais_service",
       "type_fournisseur": "service"
     },
     {

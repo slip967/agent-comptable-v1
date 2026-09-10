@@ -338,6 +338,15 @@ class KnowledgeBasesSummaryResponse(BaseModel):
     items: list[KnowledgeBaseSummaryItem] = Field(default_factory=list)
 
 
+class KnowledgeBaseItemUpdate(BaseModel):
+    expected_article_source: str
+    expected_account: str | None = None
+    expected_account_label: str | None = None
+    article_source: str
+    compte_comptable: str
+    compte_comptable_libelle: str
+
+
 class StrongAnalysisContext(BaseModel):
     supplier: str | None = None
     client: str | None = None

@@ -45,6 +45,7 @@ from .schemas import (
     HumanValidationRecord,
     InvoiceAnalysisResponse,
     InvoiceLineInput,
+    KnowledgeBaseItemUpdate,
     KnowledgeBasesSummaryResponse,
     MemoryStats,
     OCRTextAnalysisInput,
@@ -331,6 +332,62 @@ def memory_stats() -> MemoryStats:
 @app.get("/knowledge-bases/summary", response_model=KnowledgeBasesSummaryResponse)
 def knowledge_bases_summary() -> KnowledgeBasesSummaryResponse:
     return local_knowledge_bases.get_summary()
+
+
+def _invalidate_reference_caches() -> None:
+    matcher_tool._refs = None
+
+
+@app.get("/knowledge-bases")
+def knowledge_bases():
+    return local_knowledge_bases.get_bases()
+
+
+@app.patch("/knowledge-bases/{base_key}/items/{item_index}")
+def update_knowledge_base_item(
+    base_key: str,
+    item_index: int,
+    payload: KnowledgeBaseItemUpdate,
+):
+    try:
+        item = local_knowledge_bases.update_item(
+            base_key=base_key,
+            item_index=item_index,
+            expected_article_source=payload.expected_article_source,
+            expected_account=payload.expected_account,
+            expected_account_label=payload.expected_account_label,
+            article_source=payload.article_source,
+            compte_comptable=payload.compte_comptable,
+            compte_comptable_libelle=payload.compte_comptable_libelle,
+        )
+    except KeyError as exc:
+        raise HTTPException(status_code=404, detail=str(exc.args[0])) from exc
+    except ValueError as exc:
+        raise HTTPException(status_code=409, detail=str(exc)) from exc
+    _invalidate_reference_caches()
+    return {"status": "updated", "item": item}
+
+
+@app.delete("/knowledge-bases/{base_key}/items/{item_index}")
+def delete_knowledge_base_item(
+    base_key: str,
+    item_index: int,
+    expected_article_source: str = Query(...),
+    expected_account: str | None = Query(default=None),
+):
+    try:
+        item = local_knowledge_bases.delete_item(
+            base_key=base_key,
+            item_index=item_index,
+            expected_article_source=expected_article_source,
+            expected_account=expected_account,
+        )
+    except KeyError as exc:
+        raise HTTPException(status_code=404, detail=str(exc.args[0])) from exc
+    except ValueError as exc:
+        raise HTTPException(status_code=409, detail=str(exc)) from exc
+    _invalidate_reference_caches()
+    return {"status": "deleted", "item": item}
 
 
 @app.get("/analysis/history", response_model=AnalysisHistoryResponse)

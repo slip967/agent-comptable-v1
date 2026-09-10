@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import {
   AlertTriangle,
   BookOpen,
+  Check,
   ChevronLeft,
   ChevronRight,
   Copy,
@@ -10,23 +11,30 @@ import {
   FileText,
   FolderOpen,
   Layers3,
+  Pencil,
   Search,
   ShieldCheck,
+  Trash2,
   X,
 } from "lucide-react";
+import {
+  deleteKnowledgeBaseItem,
+  fetchKnowledgeBases,
+  updateKnowledgeBaseItem,
+} from "../services/api";
 import { formatAccount, getAccountLabel } from "../utils/accountLabels";
 import "./BasesMetiersPage.css";
 
 /* ─── Configuration des fichiers source ─── */
 const SOURCE_FILES = [
-  { file: "/data/base_charges_externes_v1.json",    label: "Charges externes" },
-  { file: "/data/base_produits_boucherie_v1.json",  label: "Boucherie" },
-  { file: "/data/base_produits_boulangerie_v1.json",label: "Boulangerie" },
-  { file: "/data/base_produits_btp_v1.json",        label: "BTP" },
-  { file: "/data/base_produits_epicerie_v1.json",   label: "Épicerie" },
-  { file: "/data/base_produits_restaurant_v1.json", label: "Restaurant" },
-  { file: "/data/base_produits_transport_v1.json",  label: "Transport" },
-  { file: "/data/base_produits_vtc_v1.json",        label: "VTC" },
+  { key: "global", file: "/data/base_charges_externes_v1.json",    label: "Charges externes" },
+  { key: "boucherie", file: "/data/base_produits_boucherie_v1.json",  label: "Boucherie" },
+  { key: "boulangerie", file: "/data/base_produits_boulangerie_v1.json",label: "Boulangerie" },
+  { key: "btp", file: "/data/base_produits_btp_v1.json",        label: "BTP" },
+  { key: "epicerie", file: "/data/base_produits_epicerie_v1.json",   label: "Épicerie" },
+  { key: "restaurant", file: "/data/base_produits_restaurant_v1.json", label: "Restaurant" },
+  { key: "transport", file: "/data/base_produits_transport_v1.json",  label: "Transport" },
+  { key: "vtc", file: "/data/base_produits_vtc_v1.json",        label: "VTC" },
 ];
 
 /* ─── Données expert mockées ─── */
@@ -163,8 +171,10 @@ function filterBaseItems(items, { searchTerm = "", compteFilter = "all", apeFilt
 }
 
 /* ─── Explorer par métier ─── */
-function MetierExplorer({ bases, selectedMetier, searchTerm, filterCompte, filterApe, onOpenDetail }) {
+function MetierExplorer({ bases, selectedMetier, searchTerm, filterCompte, filterApe, onOpenDetail, onEdit, onDelete, busyKey }) {
   const tableRef = useRef(null);
+  const [editingKey, setEditingKey] = useState("");
+  const [draft, setDraft] = useState({ article_source: "", compte_comptable: "", compte_comptable_libelle: "" });
   const base  = bases.find((item) => item.label === selectedMetier) || bases[0];
   if (!base) return null;
   const items = base.items || [];
@@ -275,7 +285,7 @@ function MetierExplorer({ bases, selectedMetier, searchTerm, filterCompte, filte
                     <col style={{ width: "250px" }} />
                     <col style={{ width: "90px" }} />
                     <col style={{ width: "80px" }} />
-                    <col style={{ width: "120px" }} />
+                    <col style={{ width: "290px" }} />
                   </colgroup>
                   <thead>
                     <tr>
@@ -294,17 +304,44 @@ function MetierExplorer({ bases, selectedMetier, searchTerm, filterCompte, filte
                       const src   = item.article_source || item.label_source || item.designation || item.libelle || EMPTY_VALUE;
                       const ape   = getApe(item).filter(Boolean);
                       const tva   = getTva(item);
+                      const rowKey = `${base.key}:${item._item_index}`;
+                      const isEditing = editingKey === rowKey;
                       return (
-                        <tr key={i} className="bm-row" onClick={() => onOpenDetail({ item, metier: base.label })}>
+                        <tr key={rowKey} className="bm-row" onClick={() => !isEditing && onOpenDetail({ item, metier: base.label })}>
                           <td className="bm-article-cell" title={src}>
-                            <div className="bm-article-inline">
+                            {isEditing ? (
+                              <input
+                                className="bm-inline-edit-input"
+                                value={draft.article_source}
+                                onClick={(event) => event.stopPropagation()}
+                                onChange={(event) => setDraft((current) => ({ ...current, article_source: event.target.value }))}
+                                aria-label="Libellé de l'article source"
+                              />
+                            ) : <div className="bm-article-inline">
                               <span className="bm-article-rank">{i + 1}</span>
                               <span className="bm-text-clamp bm-text-clamp--two">{src}</span>
-                            </div>
+                            </div>}
                           </td>
-                          <td>{acc ? <code className="bm-compte-pill">{acc}</code> : <span className="bm-missing">{EMPTY_VALUE}</span>}</td>
+                          <td>{isEditing ? (
+                            <input
+                              className="bm-inline-edit-input bm-inline-edit-input--account"
+                              value={draft.compte_comptable}
+                              inputMode="numeric"
+                              onClick={(event) => event.stopPropagation()}
+                              onChange={(event) => setDraft((current) => ({ ...current, compte_comptable: event.target.value.replace(/\D/g, "") }))}
+                              aria-label="Compte comptable"
+                            />
+                          ) : acc ? <code className="bm-compte-pill">{acc}</code> : <span className="bm-missing">{EMPTY_VALUE}</span>}</td>
                           <td className="bm-label-cell" title={displayValue(lbl)}>
-                            <span className="bm-text-clamp bm-text-clamp--two">{displayValue(lbl)}</span>
+                            {isEditing ? (
+                              <input
+                                className="bm-inline-edit-input"
+                                value={draft.compte_comptable_libelle}
+                                onClick={(event) => event.stopPropagation()}
+                                onChange={(event) => setDraft((current) => ({ ...current, compte_comptable_libelle: event.target.value }))}
+                                aria-label="Libellé du compte comptable"
+                              />
+                            ) : <span className="bm-text-clamp bm-text-clamp--two">{displayValue(lbl)}</span>}
                           </td>
                           <td className="bm-ape-cell">
                             {ape.length > 0
@@ -319,13 +356,54 @@ function MetierExplorer({ bases, selectedMetier, searchTerm, filterCompte, filte
                           <td>{tva ? <span className="bm-tva-badge">{tva}</span> : <span className="bm-missing">{EMPTY_VALUE}</span>}</td>
                           <td className="bm-col-action" onClick={e => e.stopPropagation()}>
                             <div className="bm-action-row">
-                              <button
+                              {isEditing ? <>
+                                <button
+                                  type="button"
+                                  className="bm-action-btn bm-action-btn--save"
+                                  disabled={busyKey === rowKey}
+                                  onClick={async () => {
+                                    const saved = await onEdit(base, item, draft);
+                                    if (saved) setEditingKey("");
+                                  }}
+                                >
+                                  <Check size={12}/> Enregistrer
+                                </button>
+                                <button type="button" className="bm-action-btn bm-action-btn--ghost" onClick={() => setEditingKey("")}>
+                                  <X size={12}/> Annuler
+                                </button>
+                              </> : <>
+                                <button
                                 className="bm-action-btn"
                                 title="Voir détails"
                                 onClick={() => onOpenDetail({ item, metier: base.label })}
                               >
                                 <Eye size={12}/> Détails
                               </button>
+                                <button
+                                  type="button"
+                                  className="bm-action-btn bm-action-btn--edit"
+                                  title="Modifier cet article"
+                                  onClick={() => {
+                                    setDraft({
+                                      article_source: src,
+                                      compte_comptable: String(acc || ""),
+                                      compte_comptable_libelle: lbl || "",
+                                    });
+                                    setEditingKey(rowKey);
+                                  }}
+                                >
+                                  <Pencil size={12}/> Modifier
+                                </button>
+                                <button
+                                  type="button"
+                                  className="bm-action-btn bm-action-btn--delete"
+                                  title="Supprimer cet article"
+                                  disabled={busyKey === rowKey}
+                                  onClick={() => onDelete(base, item)}
+                                >
+                                  <Trash2 size={12}/> Supprimer
+                                </button>
+                              </>}
                             </div>
                           </td>
                         </tr>
@@ -612,18 +690,31 @@ export default function BasesMetiersPage() {
   const [filterCompte, setCompte] = useState("all");
   const [filterApe, setApe]       = useState("all");
   const [detailItem, setDetailItem] = useState(null);
+  const [mutationError, setMutationError] = useState("");
+  const [mutationNotice, setMutationNotice] = useState("");
+  const [busyKey, setBusyKey] = useState("");
 
   /* Chargement des JSON */
   useEffect(() => {
     let cancelled = false;
     async function loadAll() {
+      try {
+        const payload = await fetchKnowledgeBases();
+        if (!cancelled) {
+          setBases(payload.bases || []);
+          setLoading(false);
+        }
+        return;
+      } catch {
+        // Le chargement statique conserve une consultation en lecture seule si l'API est arrêtée.
+      }
       const results = await Promise.all(
-        SOURCE_FILES.map(async ({ file, label }) => {
+        SOURCE_FILES.map(async ({ key, file, label }) => {
           try {
             const res  = await fetch(file);
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
             const json = await res.json();
-            return { label, file, meta: json.meta || {}, items: json.items || [], error: null };
+            return { key, label, file, meta: json.meta || {}, items: (json.items || []).map((item, index) => ({ ...item, _item_index: index })), error: null };
           } catch (err) {
             return { label, file, meta: {}, items: [], error: err.message };
           }
@@ -637,6 +728,58 @@ export default function BasesMetiersPage() {
     loadAll();
     return () => { cancelled = true; };
   }, []);
+
+  const handleEditItem = async (base, item, draft) => {
+    const rowKey = `${base.key}:${item._item_index}`;
+    setBusyKey(rowKey);
+    setMutationError("");
+    setMutationNotice("");
+    try {
+      const response = await updateKnowledgeBaseItem(base.key, item._item_index, {
+        expected_article_source: item.article_source || "",
+        expected_account: String(item.compte_comptable || ""),
+        expected_account_label: getLabel(item),
+        article_source: draft.article_source,
+        compte_comptable: draft.compte_comptable,
+        compte_comptable_libelle: draft.compte_comptable_libelle,
+      });
+      setBases((current) => current.map((candidate) => candidate.key === base.key
+        ? { ...candidate, items: candidate.items.map((row) => row._item_index === item._item_index ? response.item : row) }
+        : candidate));
+      setMutationNotice(`Article « ${response.item.article_source} » mis à jour.`);
+      return true;
+    } catch (error) {
+      setMutationError(error.message || "Impossible de modifier cet article.");
+      return false;
+    } finally {
+      setBusyKey("");
+    }
+  };
+
+  const handleDeleteItem = async (base, item) => {
+    const source = displayValue(item.article_source);
+    if (!window.confirm(`Supprimer définitivement l'article « ${source} » de la base ${base.label} ?`)) return;
+    const rowKey = `${base.key}:${item._item_index}`;
+    setBusyKey(rowKey);
+    setMutationError("");
+    setMutationNotice("");
+    try {
+      await deleteKnowledgeBaseItem(base.key, item._item_index, item);
+      setBases((current) => current.map((candidate) => {
+        if (candidate.key !== base.key) return candidate;
+        const items = candidate.items
+          .filter((row) => row._item_index !== item._item_index)
+          .map((row, index) => ({ ...row, _item_index: index }));
+        return { ...candidate, items };
+      }));
+      setDetailItem(null);
+      setMutationNotice(`Article « ${source} » supprimé du référentiel local.`);
+    } catch (error) {
+      setMutationError(error.message || "Impossible de supprimer cet article.");
+    } finally {
+      setBusyKey("");
+    }
+  };
 
   useEffect(() => {
     if (!filterMetier && bases.length > 0) {
@@ -768,6 +911,8 @@ export default function BasesMetiersPage() {
           })}
         </div>
       )}
+      {mutationError && <div className="bm-mutation-message bm-mutation-message--error">{mutationError}</div>}
+      {mutationNotice && <div className="bm-mutation-message bm-mutation-message--success">{mutationNotice}</div>}
 
       {bases.length > 0 && (
         <section className="card surface-card bm-toolbar-card">
@@ -876,6 +1021,9 @@ export default function BasesMetiersPage() {
           filterCompte={filterCompte}
           filterApe={filterApe}
           onOpenDetail={setDetailItem}
+          onEdit={handleEditItem}
+          onDelete={handleDeleteItem}
+          busyKey={busyKey}
         />
       )}
 

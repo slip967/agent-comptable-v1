@@ -576,6 +576,7 @@
   display: flex;
   gap: .35rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .bm-action-btn {
   display: inline-flex; align-items: center; gap: .25rem;
@@ -621,6 +622,62 @@
   border-color: rgba(37,99,235,.24);
   color: #1d4ed8;
 }
+.bm-action-btn--edit {
+  background: rgba(245,158,11,.1);
+  border-color: rgba(245,158,11,.24);
+  color: #fbbf24;
+}
+.bm-action-btn--save {
+  background: rgba(16,185,129,.12);
+  border-color: rgba(16,185,129,.28);
+  color: #6ee7b7;
+}
+.bm-action-btn--delete {
+  background: rgba(239,68,68,.1);
+  border-color: rgba(239,68,68,.24);
+  color: #fca5a5;
+}
+:root[data-theme="light"] .bm-action-btn--edit { color: #b45309; }
+:root[data-theme="light"] .bm-action-btn--save { color: #047857; }
+:root[data-theme="light"] .bm-action-btn--delete { color: #dc2626; }
+.bm-inline-edit-input {
+  width: 100%;
+  min-width: 150px;
+  border: 1px solid rgba(96,165,250,.45);
+  border-radius: .55rem;
+  background: rgba(15,23,42,.72);
+  color: var(--text);
+  padding: .42rem .55rem;
+  font: inherit;
+  outline: none;
+}
+.bm-inline-edit-input:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(59,130,246,.15);
+}
+.bm-inline-edit-input--account { min-width: 76px; }
+:root[data-theme="light"] .bm-inline-edit-input {
+  background: #fff;
+  color: #0f172a;
+}
+.bm-mutation-message {
+  border-radius: .8rem;
+  padding: .7rem .9rem;
+  font-size: .82rem;
+  font-weight: 750;
+}
+.bm-mutation-message--success {
+  border: 1px solid rgba(16,185,129,.28);
+  background: rgba(16,185,129,.11);
+  color: #6ee7b7;
+}
+.bm-mutation-message--error {
+  border: 1px solid rgba(239,68,68,.28);
+  background: rgba(239,68,68,.1);
+  color: #fca5a5;
+}
+:root[data-theme="light"] .bm-mutation-message--success { color: #047857; }
+:root[data-theme="light"] .bm-mutation-message--error { color: #b91c1c; }
 
 /* ── Overlay & Panels ── */
 .bm-overlay {
