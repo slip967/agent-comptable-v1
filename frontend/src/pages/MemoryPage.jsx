@@ -25,17 +25,21 @@ import {
 
 import {
   fetchAnalysisBatchResults,
-  fetchAIMemoryItems,
   fetchHumanValidationItems,
-  fetchWorkflowHistory,
 } from "../services/api";
 import { useAnalysisBatch } from "../context/AnalysisBatchContext";
 import { readPersistentHiddenIds } from "../utils/persistentHiddenItems";
 
 const VALIDATION_HIDDEN_ITEMS_KEY = "keymanage.validation.hidden-items.v1";
-const HISTORY_HIDDEN_EVENTS_KEY = "keymanage.history.hidden-events.v1";
 const DONUT_COLORS = ["#2563eb", "#10b981", "#f59e0b", "#ef4444", "#7c3aed"];
 const PERFORMANCE_RESET_STORAGE_KEY = "keymanage.performance-reset.v1";
+const HUMAN_DECISION_ACTIONS = new Set([
+  "validate",
+  "correct_account",
+  "mark_non_comptable",
+  "reject",
+  "propose_enrichment",
+]);
 
 function asArray(value) {
   return Array.isArray(value) ? value : [];
@@ -247,8 +251,6 @@ export default function MemoryPage() {
   const [batchItems, setBatchItems] = useState([]);
   const [validationItems, setValidationItems] = useState([]);
   const [validatedItems, setValidatedItems] = useState([]);
-  const [historyEvents, setHistoryEvents] = useState([]);
-  const [memoryItems, setMemoryItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const [sourceErrors, setSourceErrors] = useState([]);
   // eslint-disable-next-line no-unused-vars
@@ -258,8 +260,6 @@ export default function MemoryPage() {
     setBatchItems([]);
     setValidationItems([]);
     setValidatedItems([]);
-    setHistoryEvents([]);
-    setMemoryItems([]);
     setSourceErrors([]);
     setLoading(false);
   };
@@ -280,11 +280,9 @@ export default function MemoryPage() {
         fetchAnalysisBatchResults({ limit: 500 }),
         fetchHumanValidationItems({ limit: 200 }),
         fetchHumanValidationItems({ status: "validated", limit: 2000 }),
-        fetchWorkflowHistory({ limit: 500 }),
-        fetchAIMemoryItems({ limit: 1000 }),
       ]);
 
-      const labels = ["analyses", "validations humaines", "écritures validées", "historique", "mémoire IA"];
+      const labels = ["analyses", "validations humaines", "écritures validées"];
       const errors = [];
       results.forEach((result, index) => {
         if (result.status === "rejected") {
@@ -293,12 +291,9 @@ export default function MemoryPage() {
       });
 
       const hiddenValidationIds = new Set(readPersistentHiddenIds(VALIDATION_HIDDEN_ITEMS_KEY));
-      const hiddenHistoryIds = new Set(readPersistentHiddenIds(HISTORY_HIDDEN_EVENTS_KEY));
       const batchPayload = results[0].status === "fulfilled" ? results[0].value : {};
       const validationPayload = results[1].status === "fulfilled" ? results[1].value : {};
       const validatedPayload = results[2].status === "fulfilled" ? results[2].value : {};
-      const historyPayload = results[3].status === "fulfilled" ? results[3].value : {};
-      const memoryPayload = results[4].status === "fulfilled" ? results[4].value : {};
 
       setBatchItems(asArray(batchPayload?.items));
       setValidationItems(
@@ -307,20 +302,12 @@ export default function MemoryPage() {
         ),
       );
       setValidatedItems(asArray(validatedPayload?.items));
-      setHistoryEvents(
-        asArray(historyPayload?.events).filter(
-          (event) => !hiddenHistoryIds.has(String(event?.event_id || event?.id || "")),
-        ),
-      );
-      setMemoryItems(asArray(memoryPayload?.items));
       setSourceErrors(errors);
     } catch (error) {
       setSourceErrors([error?.message || "Impossible de charger les indicateurs de performance"]);
       setBatchItems([]);
       setValidationItems([]);
       setValidatedItems([]);
-      setHistoryEvents([]);
-      setMemoryItems([]);
     } finally {
       if (!silent) setLoading(false);
     }
@@ -395,10 +382,20 @@ export default function MemoryPage() {
     );
   }, [effectiveBatchItems]);
 
-  const filteredValidationItems = useMemo(() => {
-    if (!currentBatchInvoiceIds.size) return validationItems;
-    return validationItems.filter((item) => hasRelatedInvoiceId(item, currentBatchInvoiceIds));
-  }, [validationItems, currentBatchInvoiceIds]);
+  const humanDecisionItems = useMemo(() => {
+    const uniqueItems = new Map();
+    [...validationItems, ...validatedItems].forEach((item, index) => {
+      if (currentBatchInvoiceIds.size && !hasRelatedInvoiceId(item, currentBatchInvoiceIds)) return;
+      const result = item?.human_validation_result || {};
+      const action = String(result?.action || "").trim().toLowerCase();
+      if (!HUMAN_DECISION_ACTIONS.has(action)) return;
+      const key = String(
+        item?.validation_id || item?.id || `${getEntityInvoiceId(item)}-${item?.line_id || index}`,
+      );
+      uniqueItems.set(key, item);
+    });
+    return [...uniqueItems.values()];
+  }, [validationItems, validatedItems, currentBatchInvoiceIds]);
 
   const persistedAutoValidatedInvoiceIds = useMemo(() => {
     const ids = new Set();
@@ -411,16 +408,6 @@ export default function MemoryPage() {
     });
     return ids;
   }, [validatedItems, currentBatchInvoiceIds]);
-
-  const filteredHistoryEvents = useMemo(() => {
-    if (!currentBatchInvoiceIds.size) return historyEvents;
-    return historyEvents.filter((item) => hasRelatedInvoiceId(item, currentBatchInvoiceIds));
-  }, [historyEvents, currentBatchInvoiceIds]);
-
-  const filteredMemoryItems = useMemo(() => {
-    if (!currentBatchInvoiceIds.size) return memoryItems;
-    return memoryItems.filter((item) => hasRelatedInvoiceId(item, currentBatchInvoiceIds));
-  }, [memoryItems, currentBatchInvoiceIds]);
 
   /* ── Métriques au niveau FACTURE (pas ligne individuelle) ── */
   const metrics = useMemo(() => {
@@ -495,12 +482,12 @@ export default function MemoryPage() {
   /* ── Graphique donut corrections humaines ── */
   const correctionData = useMemo(() => {
     const groups = new Map();
-    filteredValidationItems.forEach((item) => {
+    humanDecisionItems.forEach((item) => {
       const category = validationCategory(item);
       if (category) groups.set(category, (groups.get(category) || 0) + 1);
     });
     return [...groups.entries()].map(([name, value]) => ({ name, value }));
-  }, [filteredValidationItems]);
+  }, [humanDecisionItems]);
 
   /* ── Graphique mensuel (niveau facture) ── */
   const monthlyData = useMemo(() => {
@@ -598,7 +585,7 @@ export default function MemoryPage() {
           <div className="memory-performance-chart-head">
             <div>
               <span>Évolution hebdomadaire</span>
-              <h2>{"Courbe d\u2019apprentissage de l\u2019IA"}</h2>
+              <h2>{"Évolution des résultats d’analyse"}</h2>
             </div>
             <BrainCircuit size={21} />
           </div>
@@ -625,7 +612,7 @@ export default function MemoryPage() {
               </ResponsiveContainer>
             </div>
           ) : (
-            <EmptyChart>{"Pas encore assez de données réelles pour tracer la courbe d\u2019apprentissage."}</EmptyChart>
+            <EmptyChart>{"Pas encore assez de données réelles pour présenter l’évolution des résultats d’analyse."}</EmptyChart>
           )}
         </article>
 
@@ -633,7 +620,7 @@ export default function MemoryPage() {
           <div className="memory-performance-chart-head">
             <div>
               <span>Décisions réelles</span>
-              <h2>Nature des corrections expert-comptable</h2>
+              <h2>Nature des décisions humaines</h2>
             </div>
             <UserRoundCheck size={21} />
           </div>
@@ -654,7 +641,7 @@ export default function MemoryPage() {
               </ResponsiveContainer>
             </div>
           ) : (
-            <EmptyChart>Aucune correction humaine réelle disponible pour le moment.</EmptyChart>
+            <EmptyChart>Aucune décision humaine enregistrée pour le moment.</EmptyChart>
           )}
         </article>
 
@@ -690,18 +677,9 @@ export default function MemoryPage() {
       </section>
 
       <section className="memory-performance-sources" aria-label="État des sources réelles">
-        <span>{batchItems.length} analyse(s) enregistrée(s)</span>
-        <span>{validationItems.length} validation(s) visible(s)</span>
-        <span>
-          {filteredHistoryEvents.length
-            ? `${filteredHistoryEvents.length} événement(s) réel(s)`
-            : "Aucun événement réel disponible pour calculer cette métrique."}
-        </span>
-        <span>
-          {filteredMemoryItems.length
-            ? `${filteredMemoryItems.length} candidat(s) mémoire`
-            : "Aucun candidat mémoire réel n'a encore été généré."}
-        </span>
+        <span>{batchItems.length} {batchItems.length === 1 ? "facture analysée" : "factures analysées"}</span>
+        <span>{validationItems.length} {validationItems.length === 1 ? "ligne en validation humaine" : "lignes en validation humaine"}</span>
+        <span>{humanDecisionItems.length} {humanDecisionItems.length === 1 ? "décision humaine enregistrée" : "décisions humaines enregistrées"}</span>
       </section>
     </div>
   );

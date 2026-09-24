@@ -4034,12 +4034,13 @@
         "fr_bd_839181104",
         "fr_bd_890852403"
       ],
-      "compte_comptable": "6063",
-      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "compte_comptable": "6061",
+      "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
       "taux_tva": 20.0,
       "categorie": "exploitation_metier",
-      "sous_categorie": "matiere_premiere",
-      "type_fournisseur": "service_transport"
+      "sous_categorie": "carburant",
+      "type_fournisseur": "fournisseur_carburant",
+      "account_label": "Fournitures non stockables (eau, énergie)"
     },
     {
       "article_source": "GO pompe 05",
@@ -4338,12 +4339,13 @@
         "fr_bd_888020088",
         "fr_bd_908282098"
       ],
-      "compte_comptable": "6063",
-      "compte_comptable_libelle": "Fournitures d'entretien et de petit équipement",
+      "compte_comptable": "6061",
+      "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
       "taux_tva": 20.0,
       "categorie": "exploitation_metier",
-      "sous_categorie": "matiere_premiere",
-      "type_fournisseur": "service_transport"
+      "sous_categorie": "carburant",
+      "type_fournisseur": "fournisseur_carburant",
+      "account_label": "Fournitures non stockables (eau, énergie)"
     },
     {
       "article_source": "Carburant GO - Pompe 06",

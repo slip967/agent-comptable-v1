@@ -1602,7 +1602,12 @@ export default function AnalysisPage() {
           line_count: invoiceLines.length,
           supplier: invoiceLine.supplier || invoice.supplier || invoiceRecord.supplier || "",
           client: invoiceLine.client || invoice.client || invoiceRecord.client || "",
-          invoice_date: invoice.date || invoice.invoice_date || invoiceRecord.date || "",
+          invoice_date:
+            invoice.date
+            || invoice.invoice_date
+            || invoiceRecord.invoice_date
+            || invoiceRecord.date
+            || "",
           line_id: invoiceLine.line_id || (invoiceId + ":" + (index + 1)),
           raw_text: invoiceLine.raw_text || "",
           raw_line_text: invoiceLine.raw_line_text || invoiceLine.raw_text || "",
@@ -1819,24 +1824,6 @@ export default function AnalysisPage() {
             <h1 className="analysis-control-title">File de contrôle comptable</h1>
           </div>
         </div>
-        <div className="analysis-queue-filters">
-          {[
-            ["all", "Toutes", queueCounts?.all ?? queueItems.length],
-            ["to_control", "À contrôler", queueCounts?.to_control ?? 0],
-            ["new_articles", "Nouveaux articles", queueCounts?.new_articles ?? 0],
-            ["low_risk", "Faible risque", queueCounts?.low_risk ?? 0],
-            ["not_analyzed", "Non analysées", queueCounts?.not_analyzed ?? 0],
-          ].map(([value, label, count]) => (
-            <button
-              key={value}
-              type="button"
-              className={invoiceFilter === value ? "analysis-queue-filter active" : "analysis-queue-filter"}
-              onClick={() => handleQueueFilterChange(value)}
-            >
-              {label} ({count})
-            </button>
-          ))}
-        </div>
         <div className="analysis-sort-control" role="group" aria-label="Stratégie de traitement">
           <label htmlFor="analysis-sort-strategy">Stratégie de traitement :</label>
           <select
@@ -1869,7 +1856,19 @@ export default function AnalysisPage() {
             {persistedBatchCount > 0 ? <button type="button" className="secondary-btn compact local-clear-btn" onClick={handleClearLocalListAndReset} disabled={loadingBatch}><X size={14} /> Vider la liste locale</button> : null}
           </div>
         </div>
-        <div className="analysis-invoice-count">{persistedBatchCount || queueItems.length} facture(s) disponible(s).</div>
+        <div className="analysis-invoice-count">
+          <button
+            type="button"
+            className="secondary-btn compact"
+            onClick={handleShowAllRecordedInvoices}
+            disabled={loadingBatch || showingRecordedInvoices}
+          >
+            {showingRecordedInvoices ? <LoaderCircle size={15} className="spin" /> : <Database size={15} />}
+            {showingRecordedInvoices
+              ? "Actualisation..."
+              : `${persistedBatchCount || queueItems.length} factures enregistrées`}
+          </button>
+        </div>
         {batchActionMessage || batchSuccessMessage || errorMessage || successMessage || actionMessage ? (
           <div className="analysis-notice-stack">
             {batchActionMessage ? <div className="analysis-inline-note">{batchActionMessage}</div> : null}
@@ -2435,9 +2434,6 @@ export default function AnalysisPage() {
                                 {toDisplayMetier(candidate.base)} - Score{" "}
                                 {formatPercent(candidate.score)}
                               </div>
-                              <p className="analysis-candidate-reason">
-                                {textOrFallback(candidate.reason)}
-                              </p>
                               <div className="analysis-candidate-extra">
                                 <span>Catégorie : {textOrFallback(candidate.categorie)}</span>
                                 <span>Sous-catégorie : {textOrFallback(candidate.sous_categorie)}</span>

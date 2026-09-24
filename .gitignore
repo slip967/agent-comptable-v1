@@ -6,6 +6,7 @@ venv/
 .env.*
 !.env.example
 .pytest_cache/
+pytest-cache-files-*/
 .mypy_cache/
 frontend/node_modules/
 frontend/dist/
@@ -13,10 +14,23 @@ frontend/dist/
 **/dist/
 agent_local_v1/data/
 
+# Dependencies, virtual environments and generated builds
+node_modules/
+dist/
+build/
+**/build/
+.git/
+
+# Logs
+*.log
+logs/
+**/logs/
+
 # Local certificates and private authentication material
 *.key
 *.p12
 *.crt
+docs/*.docx
 
 # Local runtime and editor temporary files
 uvicorn_*.log

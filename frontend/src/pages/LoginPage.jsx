@@ -50,11 +50,11 @@ export default function LoginPage() {
           <div className="login-hero-copy">
             <span className="login-kicker"><Sparkles size={14} /> Comptabilité augmentée par l’IA</span>
             <h1>Votre plateforme intelligente au service de la comptabilité.</h1>
-            <p>Automatisez la lecture, le contrôle et l’imputation de vos factures avec une supervision humaine à chaque étape clé.</p>
+            <p>Automatisez l’analyse, le contrôle et l’imputation de vos factures avec une supervision humaine à chaque étape clé.</p>
           </div>
 
           <div className="login-feature-chips" aria-label="Fonctionnalités principales">
-            <span>Extraction IA</span>
+            <span>Analyse IA</span>
             <span>Validation supervisée</span>
             <span>Mémoire IA</span>
           </div>
@@ -108,7 +108,7 @@ export default function LoginPage() {
 
           <div className="login-active-profile">
             <span className="login-profile-avatar">EC</span>
-            <div><strong>Expert Comptable</strong><small>Expert-comptable</small></div>
+            <div><strong>Expert-comptable</strong><small>Expert-comptable</small></div>
             <span className="login-profile-status"><i /> Accès sécurisé</span>
           </div>
 

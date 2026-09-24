@@ -211,6 +211,12 @@ def save_validation_decision(
                     item[field] = str(payload.get(field) or "").strip()
             item["status"] = new_status
             item["human_validation_result"] = result
+            if action == "correct_account":
+                item["corrected_account"] = str(payload.get("corrected_account") or "").strip()
+                item["corrected_account_label"] = str(
+                    payload.get("corrected_account_label") or ""
+                ).strip()
+                item["human_intervention"] = True
             if action == "validate":
                 item["workflow_status"] = "COMPTABILISEE"
                 item["accounting_status"] = "COMPTABILISEE"

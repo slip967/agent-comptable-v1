@@ -1004,9 +1004,6 @@ export default function ValidationPage() {
                           <div className="analysis-candidate-meta">
                             {textOrFallback(candidate.article_source)} · Base {textOrFallback(candidate.base)} · {formatPercent(candidate.score)}
                           </div>
-                          <p className="analysis-candidate-reason">
-                            {formatHumanReadableText(candidate.reason, "Non renseigné")}
-                          </p>
                         </div>
                       </article>
                     ))

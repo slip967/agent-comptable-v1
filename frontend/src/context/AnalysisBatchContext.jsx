@@ -626,7 +626,7 @@ export function AnalysisBatchProvider({ children }) {
         });
         return next;
       });
-      setBatchActionMessage(items.length > 0 ? `${items.length} facture(s) enregistrée(s) affichée(s).` : "Aucune facture enregistrée pour le moment.");
+      setBatchActionMessage(items.length > 0 ? "" : "Aucune facture enregistrée pour le moment.");
 
       if (items.some((item) => !canOpenPdf(item))) {
         void reconcileBatchPdfStatuses(items).then((reconciledItems) => {

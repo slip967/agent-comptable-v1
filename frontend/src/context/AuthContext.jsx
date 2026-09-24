@@ -7,7 +7,7 @@ const AUTH_USER_KEY = "keymanage_auth_user";
 const TEST_EMAIL = "expert@keymanage.ai";
 const TEST_PASSWORD = "KeyManage2026";
 const DEFAULT_USER = {
-  name: "Expert Comptable",
+  name: "Expert-comptable",
   email: TEST_EMAIL,
   role: "Expert-comptable",
 };

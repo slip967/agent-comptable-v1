@@ -243,7 +243,7 @@ export default function Topbar() {
 
   const handleProfile = () => {
     setIsProfileOpen(false);
-    window.alert("Profil utilisateur : Expert Comptable");
+    window.alert("Profil utilisateur : Expert-comptable");
   };
 
   const handleLogout = () => {
@@ -341,7 +341,7 @@ export default function Topbar() {
           >
             <span className="profile-avatar" aria-hidden="true">EC</span>
             <span className="profile-trigger-copy">
-              <strong>{user?.name || "Expert Comptable"}</strong>
+              <strong>{user?.name || "Expert-comptable"}</strong>
               <small>{user?.role || "Expert-comptable"}</small>
             </span>
             <ChevronDown
@@ -356,7 +356,7 @@ export default function Topbar() {
               <div className="profile-dropdown-head">
                 <span className="profile-avatar profile-avatar-large" aria-hidden="true">EC</span>
                 <div>
-                  <strong>{user?.name || "Expert Comptable"}</strong>
+                  <strong>{user?.name || "Expert-comptable"}</strong>
                   <span>{user?.role || "Expert-comptable"}</span>
                   <a href={`mailto:${user?.email || "expert@keymanage.ai"}`}>{user?.email || "expert@keymanage.ai"}</a>
                 </div>

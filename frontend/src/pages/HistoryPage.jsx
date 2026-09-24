@@ -156,9 +156,9 @@ const HISTORY_V0_STYLES = `
   }
 
   .history-v0-filter-dot--all { background: #4f46e5; }
-  .history-v0-filter-dot--analyses { background: #2563eb; }
   .history-v0-filter-dot--validations { background: #f59e0b; }
-  .history-v0-filter-dot--corrections { background: #10b981; }
+  .history-v0-filter-dot--human-corrections { background: #10b981; }
+  .history-v0-filter-dot--ai-events { background: #64748b; }
   .history-v0-filter-dot--errors { background: #ef4444; }
 
   .history-v0-filter-label {
@@ -365,6 +365,16 @@ const HISTORY_V0_STYLES = `
   .history-v0-party--client {
     color: var(--muted);
     font-weight: 600;
+  }
+
+  .history-v0-invoice-number {
+    color: #334155;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 3px 9px;
+    border: 1px solid rgba(148, 163, 184, 0.28);
+    border-radius: 999px;
+    background: rgba(248, 250, 252, 0.92);
   }
 
   .history-v0-arrow {
@@ -732,15 +742,16 @@ function formatTechnicalText(value) {
 
 function getEventPresentation(eventType) {
   const normalized = normalizeForCompare(eventType);
-  if (normalized === "invoice analyzed" || normalized === "facture analysee") return { title: "Facture analysée", kind: "analysis", category: "analyses" };
+  if (normalized === "invoice analyzed" || normalized === "facture analysee") return { title: "Facture analysée", kind: "analysis", category: "ai-events" };
+  if (normalized === "auto validated" || normalized === "facture auto validee") return { title: "Événement IA", kind: "neutral", category: "ai-events" };
   if (normalized === "sent to human validation" || normalized === "ligne envoyee validation" || normalized === "line sent validation") return { title: "Ligne envoyée en validation", kind: "review", category: "validations" };
   if (normalized === "human validated" || normalized === "line validated") return { title: "Ligne validée", kind: "validated", category: "validations" };
-  if (normalized === "human corrected" || normalized === "correction humaine" || normalized === "human correction" || normalized === "line corrected") return { title: "Correction humaine appliquée", kind: "corrected", category: "corrections" };
-  if (normalized === "marked non comptable" || normalized === "line marked non accounting") return { title: "Ligne marquée non comptable", kind: "non-comptable", category: "corrections" };
+  if (normalized === "human corrected" || normalized === "correction humaine" || normalized === "human correction" || normalized === "line corrected") return { title: "Correction humaine appliquée", kind: "corrected", category: "human-corrections" };
+  if (normalized === "marked non comptable" || normalized === "line marked non accounting") return { title: "Ligne marquée non comptable", kind: "non-comptable", category: "human-corrections" };
   if (normalized === "rejected") return { title: "Erreur de traitement", kind: "rejected", category: "errors" };
-  if (normalized === "enrichment proposed" || normalized === "candidat memoire" || normalized === "memory candidate created") return { title: "Enrichissement IA", kind: "enrichment", category: "corrections" };
+  if (normalized === "enrichment proposed" || normalized === "candidat memoire" || normalized === "memory candidate created") return { title: "Enrichissement IA", kind: "enrichment", category: "ai-events" };
   if (normalized.includes("error") || normalized === "erreur analyse" || normalized === "analysis error") return { title: "Erreur de traitement", kind: "error", category: "errors" };
-  return { title: "Événement IA", kind: "neutral", category: "other" };
+  return { title: "Événement IA", kind: "neutral", category: "ai-events" };
 }
 
 function EventIcon({ kind }) {
@@ -820,9 +831,9 @@ function isPdfOpenableFromDebug(debug) {
 
 const FILTERS = [
   { key: "all", label: "Tous" },
-  { key: "analyses", label: "Analyses" },
-  { key: "validations", label: "Validations" },
-  { key: "corrections", label: "Corrections" },
+  { key: "validations", label: "Validations humaines" },
+  { key: "human-corrections", label: "Corrections humaines" },
+  { key: "ai-events", label: "Événements IA" },
   { key: "errors", label: "Erreurs" },
 ];
 
@@ -927,6 +938,7 @@ export default function HistoryPage() {
       const secondary = polishFrenchText(buildSecondaryText(event, summary, presentation.title));
       const { supplier, client } = resolveParties(event);
       const invoiceId = getEventInvoiceId(event);
+      const invoiceNumber = cleanText(event?.invoice_number || event?.invoiceNumber || event?.number);
       const technicalValue = cleanText(event?.line_id) || cleanText(event?.event_id);
       const technicalBadge = technicalValue ? formatTechnicalText(technicalValue) : "";
       const technicalTitle = technicalValue ? polishFrenchText(technicalValue) : "";
@@ -943,6 +955,7 @@ export default function HistoryPage() {
         supplier,
         client,
         invoiceId,
+        invoiceNumber,
         dateLabel: formatEventDate(event?.created_at || event?.date || event?.timestamp),
         technicalBadge,
         technicalTitle,
@@ -953,7 +966,7 @@ export default function HistoryPage() {
   }, [events, hiddenEventIds]);
 
   const counters = useMemo(() => {
-    const base = { all: preparedEvents.length, analyses: 0, validations: 0, corrections: 0, errors: 0 };
+    const base = { all: preparedEvents.length, validations: 0, "human-corrections": 0, "ai-events": 0, errors: 0 };
     preparedEvents.forEach((event) => {
       if (event.category in base) {
         base[event.category] += 1;
@@ -1147,12 +1160,13 @@ export default function HistoryPage() {
                       </div>
                     </div>
 
-                    {(event.supplier || event.client) ? (
+                    {(event.supplier || event.client || event.invoiceNumber) ? (
                       <div className="history-v0-event-middle">
                         <div className="history-v0-event-middle-left">
                           {event.supplier ? <span className="history-v0-party history-v0-party--supplier">{event.supplier}</span> : null}
                           {event.client ? <span className="history-v0-arrow">→</span> : null}
                           {event.client ? <span className="history-v0-party history-v0-party--client">{event.client}</span> : null}
+                          {event.invoiceNumber ? <span className="history-v0-invoice-number">Facture n° {event.invoiceNumber}</span> : null}
                         </div>
                       </div>
                     ) : null}
@@ -1189,7 +1203,7 @@ export default function HistoryPage() {
                 <span>
                   {preparedEvents.length
                     ? "Essayez un autre filtre pour retrouver les événements recherchés."
-                    : "Les analyses, validations et corrections apparaîtront ici au fil du workflow."}
+                    : "Les événements IA, validations humaines et corrections humaines apparaîtront ici au fil du workflow."}
                 </span>
               )}
             </div>

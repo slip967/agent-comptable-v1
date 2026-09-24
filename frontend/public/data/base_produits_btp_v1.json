@@ -1067,8 +1067,8 @@
       "compte_comptable_libelle": "Fournitures non stockables (eau, énergie)",
       "taux_tva": 20.0,
       "categorie": "exploitation_metier",
-      "sous_categorie": "matiere_premiere",
-      "type_fournisseur": "fournisseur_materiaux"
+      "sous_categorie": "carburant",
+      "type_fournisseur": "fournisseur_carburant"
     },
     {
       "article_source": "MELANGE POUR BETON M3 EN BIG",
