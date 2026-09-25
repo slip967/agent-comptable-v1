@@ -5,6 +5,7 @@ import unittest
 from unittest.mock import MagicMock, call, patch
 
 from agent_local_v1.app.services import odoo_service
+from agent_local_v1.app import human_validation_store
 
 
 class OdooServiceTests(unittest.TestCase):
@@ -13,6 +14,7 @@ class OdooServiceTests(unittest.TestCase):
         common.authenticate.return_value = 7
         models = MagicMock()
         models.execute_kw.side_effect = [
+            [{"company_id": [1, "My Company"], "company_ids": [1]}],
             [{"id": 1, "name": "EUR"}],
             [],
             42,
@@ -48,7 +50,11 @@ class OdooServiceTests(unittest.TestCase):
                 }
             )
 
-        self.assertEqual(result, {"move_id": 99, "partner_id": 42, "attachment_id": 123})
+        self.assertEqual(result["move_id"], 99)
+        self.assertEqual(result["partner_id"], 42)
+        self.assertEqual(result["attachment_id"], 123)
+        self.assertTrue(result["attachment_created"])
+        self.assertIsNone(result["attachment_error"])
         self.assertEqual(
             server_proxy.call_args_list,
             [
@@ -63,9 +69,10 @@ class OdooServiceTests(unittest.TestCase):
             {},
         )
 
-        currency_call, search_call, partner_create_call, tax_call, move_create_call, attachment_create_call = (
+        company_call, currency_call, search_call, partner_create_call, tax_call, move_create_call, attachment_create_call = (
             models.execute_kw.call_args_list
         )
+        self.assertEqual(company_call.args[3:5], ("res.users", "read"))
         self.assertEqual(currency_call.args[3:5], ("res.currency", "search_read"))
         self.assertEqual(search_call.args[3:5], ("res.partner", "search_read"))
         self.assertEqual(partner_create_call.args[3:5], ("res.partner", "create"))
@@ -122,6 +129,7 @@ class OdooServiceTests(unittest.TestCase):
         common.authenticate.return_value = 7
         models = MagicMock()
         models.execute_kw.side_effect = [
+            [{"company_id": [1, "My Company"], "company_ids": [1]}],
             [{"id": 1, "name": "EUR"}],
             [{"id": 88, "name": "FOURNISSEUR", "vat": False}],
             [],
@@ -144,7 +152,7 @@ class OdooServiceTests(unittest.TestCase):
             )
 
         self.assertEqual(result["move_id"], 501)
-        move_values = models.execute_kw.call_args_list[3].args[5][0]
+        move_values = models.execute_kw.call_args_list[4].args[5][0]
         self.assertEqual(move_values["currency_id"], 1)
         self.assertEqual(
             move_values["invoice_line_ids"],
@@ -152,6 +160,192 @@ class OdooServiceTests(unittest.TestCase):
                 (0, 0, {"name": "Prestation", "price_unit": 100.0, "quantity": 1.0}),
                 (0, 0, {"name": "TVA 20% — taxe d'achat Odoo introuvable", "price_unit": 20.0, "quantity": 1.0}),
             ],
+        )
+
+    def test_corrected_account_is_used_as_odoo_account_id(self) -> None:
+        common = MagicMock()
+        common.authenticate.return_value = 7
+        models = MagicMock()
+        models.execute_kw.side_effect = [
+            [{"company_id": [1, "My Company"], "company_ids": [1]}],
+            [{"id": 1, "name": "EUR"}],
+            [{"id": 88, "name": "ASSAINIS", "vat": False}],
+            [{"id": 77, "code": "613310", "name": "Entretien et réparations des biens immobiliers", "company_id": [1, "My Company"]}],
+            501,
+        ]
+
+        with (
+            patch.object(odoo_service, "ODOO_MOCK_MODE", False),
+            patch.object(odoo_service, "ODOO_USERNAME", "admin@example.com"),
+            patch.object(odoo_service, "ODOO_PASSWORD", "admin"),
+            patch.object(odoo_service, "ODOO_ACCOUNT_CODE_MAP", {"6152": "613310", "6155": "613320"}),
+            patch.object(odoo_service.xmlrpc_client, "ServerProxy", side_effect=[common, models]),
+        ):
+            result = odoo_service.export_invoice_to_odoo(
+                {
+                    "supplier": "ASSAINIS",
+                    "lines": [
+                        {
+                            "description": "Pompage",
+                            "amount_ht": 800,
+                            "recommended_account": "6062",
+                            "corrected_account": "6152",
+                            "human_validation_result": {
+                                "action": "correct_account",
+                                "corrected_account": "6152",
+                            },
+                        }
+                    ],
+                }
+            )
+
+        account_call = models.execute_kw.call_args_list[3]
+        self.assertEqual(account_call.args[3:5], ("account.account", "search_read"))
+        self.assertEqual(
+            account_call.args[5][0],
+            [("code", "=", "613310"), ("company_id", "=", 1)],
+        )
+        move_values = models.execute_kw.call_args_list[4].args[5][0]
+        self.assertEqual(move_values["invoice_line_ids"][0][2]["account_id"], 77)
+        self.assertEqual(result["account_resolutions"][0]["account_code"], "6152")
+        self.assertEqual(result["account_resolutions"][0]["odoo_account_code"], "613310")
+        self.assertEqual(result["account_resolutions"][0]["account_id"], 77)
+
+    def test_missing_account_does_not_block_invoice_creation(self) -> None:
+        common = MagicMock()
+        common.authenticate.return_value = 7
+        models = MagicMock()
+        models.execute_kw.side_effect = [
+            [{"company_id": [1, "My Company"], "company_ids": [1]}],
+            [{"id": 1, "name": "EUR"}],
+            [{"id": 88, "name": "FOURNISSEUR", "vat": False}],
+            502,
+        ]
+
+        with (
+            patch.object(odoo_service, "ODOO_MOCK_MODE", False),
+            patch.object(odoo_service, "ODOO_USERNAME", "admin@example.com"),
+            patch.object(odoo_service, "ODOO_PASSWORD", "admin"),
+            patch.object(odoo_service, "ODOO_ACCOUNT_CODE_MAP", {"6152": "613310", "6155": "613320"}),
+            patch.object(odoo_service.xmlrpc_client, "ServerProxy", side_effect=[common, models]),
+        ):
+            result = odoo_service.export_invoice_to_odoo(
+                {
+                    "supplier": "FOURNISSEUR",
+                    "lines": [
+                        {"description": "Article", "amount_ht": 10, "recommended_account": "6011"}
+                    ],
+                }
+            )
+
+        move_values = models.execute_kw.call_args_list[3].args[5][0]
+        self.assertNotIn("account_id", move_values["invoice_line_ids"][0][2])
+        self.assertFalse(result["account_resolutions"][0]["found"])
+        self.assertFalse(result["account_resolutions"][0]["mapping_found"])
+        self.assertEqual(result["unmapped_account_codes"], ["6011"])
+        self.assertEqual(result["move_id"], 502)
+
+    def test_mapped_odoo_account_missing_does_not_block_invoice_creation(self) -> None:
+        common = MagicMock()
+        common.authenticate.return_value = 7
+        models = MagicMock()
+        models.execute_kw.side_effect = [
+            [{"company_id": [1, "My Company"], "company_ids": [1]}],
+            [{"id": 1, "name": "EUR"}],
+            [{"id": 88, "name": "FOURNISSEUR", "vat": False}],
+            [],
+            504,
+        ]
+
+        with (
+            patch.object(odoo_service, "ODOO_MOCK_MODE", False),
+            patch.object(odoo_service, "ODOO_USERNAME", "admin@example.com"),
+            patch.object(odoo_service, "ODOO_PASSWORD", "admin"),
+            patch.object(odoo_service, "ODOO_ACCOUNT_CODE_MAP", {"6155": "613320"}),
+            patch.object(odoo_service.xmlrpc_client, "ServerProxy", side_effect=[common, models]),
+        ):
+            result = odoo_service.export_invoice_to_odoo(
+                {
+                    "supplier": "FOURNISSEUR",
+                    "lines": [
+                        {"description": "Entretien mobilier", "amount_ht": 50, "recommended_account": "6155"}
+                    ],
+                }
+            )
+
+        account_call = models.execute_kw.call_args_list[3]
+        self.assertEqual(
+            account_call.args[5][0],
+            [("code", "=", "613320"), ("company_id", "=", 1)],
+        )
+        move_values = models.execute_kw.call_args_list[4].args[5][0]
+        self.assertNotIn("account_id", move_values["invoice_line_ids"][0][2])
+        self.assertEqual(result["missing_account_codes"], ["6155"])
+        self.assertEqual(result["unmapped_account_codes"], [])
+        self.assertEqual(result["move_id"], 504)
+
+    def test_attachment_failure_does_not_hide_created_invoice(self) -> None:
+        common = MagicMock()
+        common.authenticate.return_value = 7
+        models = MagicMock()
+        models.execute_kw.side_effect = [
+            [{"company_id": [1, "My Company"], "company_ids": [1]}],
+            [{"id": 1, "name": "EUR"}],
+            [{"id": 88, "name": "FOURNISSEUR", "vat": False}],
+            503,
+            odoo_service.xmlrpc_client.Fault(1, "attachment denied"),
+        ]
+
+        with (
+            patch.object(odoo_service, "ODOO_MOCK_MODE", False),
+            patch.object(odoo_service, "ODOO_USERNAME", "admin@example.com"),
+            patch.object(odoo_service, "ODOO_PASSWORD", "admin"),
+            patch.object(odoo_service.xmlrpc_client, "ServerProxy", side_effect=[common, models]),
+        ):
+            result = odoo_service.export_invoice_to_odoo(
+                {
+                    "supplier": "FOURNISSEUR",
+                    "lines": [{"description": "Article", "amount_ht": 10}],
+                    "pdf_bytes": b"%PDF-1.7 test",
+                    "pdf_filename": "facture.pdf",
+                }
+            )
+
+        self.assertEqual(result["move_id"], 503)
+        self.assertIsNone(result["attachment_id"])
+        self.assertFalse(result["attachment_created"])
+        self.assertIn("attachment denied", result["attachment_error"])
+
+    def test_export_tracking_preserves_legacy_database_history(self) -> None:
+        items = [
+            {
+                "invoice_id": "invoice-1",
+                "odoo_move_id": 2,
+                "odoo_exported_at": "2025-10-31T00:00:00+00:00",
+            }
+        ]
+        written_items = []
+
+        with (
+            patch.object(human_validation_store, "_read_items_unlocked", return_value=items),
+            patch.object(
+                human_validation_store,
+                "_write_items_unlocked",
+                side_effect=lambda value: written_items.extend(value),
+            ),
+        ):
+            updated = human_validation_store.mark_invoice_exported_to_odoo(
+                "invoice-1",
+                7,
+                "keymanage_fr",
+            )
+
+        self.assertEqual(updated, 1)
+        self.assertEqual(written_items[0]["odoo_move_id"], 7)
+        self.assertEqual(written_items[0]["odoo_database"], "keymanage_fr")
+        self.assertEqual(
+            [(entry["database"], entry["move_id"]) for entry in written_items[0]["odoo_exports"]],
+            [("keymanage_db", 2), ("keymanage_fr", 7)],
         )
 
 

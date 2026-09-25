@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import os
 from pathlib import Path
 
@@ -51,6 +52,36 @@ ODOO_DB = os.getenv("ODOO_DB", "keymanage_db").strip()
 ODOO_USERNAME = os.getenv("ODOO_USERNAME", "").strip()
 ODOO_PASSWORD = os.getenv("ODOO_PASSWORD", "").strip()
 ODOO_MOCK_MODE = os.getenv("ODOO_MOCK_MODE", "False").strip().lower() in {"1", "true", "yes", "on"}
+
+
+def _parse_account_code_map(raw_value: str) -> dict[str, str]:
+    """Parse a JSON object or comma-separated KEYMANAGE:ODOO pairs."""
+    value = str(raw_value or "").strip()
+    if not value:
+        return {}
+    if value.startswith("{"):
+        try:
+            parsed = json.loads(value)
+        except json.JSONDecodeError:
+            return {}
+        if not isinstance(parsed, dict):
+            return {}
+        return {
+            str(source).strip(): str(target).strip()
+            for source, target in parsed.items()
+            if str(source).strip() and str(target).strip()
+        }
+    mappings: dict[str, str] = {}
+    for entry in value.split(","):
+        source, separator, target = entry.partition(":")
+        if separator and source.strip() and target.strip():
+            mappings[source.strip()] = target.strip()
+    return mappings
+
+
+ODOO_ACCOUNT_CODE_MAP = _parse_account_code_map(
+    os.getenv("ODOO_ACCOUNT_CODE_MAP", "")
+)
 try:
     MEMORY_PAGE_SIZE = max(50, int(os.getenv("MEMORY_PAGE_SIZE", "400").strip() or "400"))
 except ValueError:

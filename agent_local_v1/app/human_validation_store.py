@@ -152,9 +152,14 @@ def clear_all_validation_items() -> int:
         return count
 
 
-def mark_invoice_exported_to_odoo(invoice_id: str, move_id: int) -> int:
-    """Persist the Odoo move identifier on every stored line of an invoice."""
+def mark_invoice_exported_to_odoo(
+    invoice_id: str,
+    move_id: int,
+    database: str | None = None,
+) -> int:
+    """Persist an Odoo export without losing exports made to another database."""
     expected_id = str(invoice_id or "").strip()
+    database_name = str(database or "").strip()
     if not expected_id:
         return 0
     updated = 0
@@ -166,8 +171,41 @@ def mark_invoice_exported_to_odoo(invoice_id: str, move_id: int) -> int:
             ).strip()
             if item_invoice_id != expected_id:
                 continue
+            exports = item.get("odoo_exports") if isinstance(item.get("odoo_exports"), list) else []
+            previous_move_id = item.get("odoo_move_id")
+            if str(previous_move_id or "").isdigit():
+                previous_database = str(item.get("odoo_database") or "keymanage_db").strip()
+                previous_export = {
+                    "database": previous_database,
+                    "move_id": int(previous_move_id),
+                    "exported_at": item.get("odoo_exported_at"),
+                }
+                if not any(
+                    str(export.get("database") or "") == previous_database
+                    and int(export.get("move_id") or 0) == int(previous_move_id)
+                    for export in exports
+                    if isinstance(export, dict)
+                ):
+                    exports.append(previous_export)
+            current_export = {
+                "database": database_name,
+                "move_id": int(move_id),
+                "exported_at": _now_iso(),
+            }
+            exports = [
+                export
+                for export in exports
+                if not (
+                    isinstance(export, dict)
+                    and str(export.get("database") or "") == database_name
+                    and int(export.get("move_id") or 0) == int(move_id)
+                )
+            ]
+            exports.append(current_export)
+            item["odoo_exports"] = exports
             item["odoo_move_id"] = int(move_id)
-            item["odoo_exported_at"] = _now_iso()
+            item["odoo_database"] = database_name
+            item["odoo_exported_at"] = current_export["exported_at"]
             updated += 1
         if updated:
             _write_items_unlocked(items)

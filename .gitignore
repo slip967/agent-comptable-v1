@@ -37,3 +37,6 @@ uvicorn_*.log
 ~$*
 tmp_pdf_*/
 tmp_pdf_*.png
+
+# Local Odoo database and filestore backups
+backups/

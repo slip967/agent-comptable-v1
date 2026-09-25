@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import logging
 import os
 from pathlib import Path
 import tempfile
@@ -13,7 +14,7 @@ from urllib.parse import quote
 from fastapi import APIRouter, HTTPException, Query, status
 from fastapi.responses import FileResponse, Response, StreamingResponse
 
-from ..config import COUCHDB_DATABASE
+from ..config import COUCHDB_DATABASE, ODOO_DB
 from ..database import http_session
 from ..human_validation_store import list_validation_items, mark_invoice_exported_to_odoo
 from ..analysis_batch_service import (  # noqa: PLC2701
@@ -50,6 +51,7 @@ from ..services.odoo_service import (
 )
 
 COUCHDB_URL = os.getenv("COUCHDB_URL", "https://app.quimanage.info").rstrip("/")
+logger = logging.getLogger(__name__)
 
 DB_CANDIDATES = tuple(
     dict.fromkeys(
@@ -793,27 +795,37 @@ def get_invoice_pdf(invoice_id: str):
 
 
 
-def _load_invoice_pdf_bytes(invoice_id: str) -> bytes:
-    """Load a source document as PDF bytes without exposing a downloadable Word file."""
+def _load_invoice_pdf_payload(invoice_id: str) -> tuple[bytes, str, str]:
+    """Load the original source as PDF bytes with its filename and source location."""
     kind, payload = resolve_invoice_pdf(invoice_id)
     if kind == "disk":
         file_path = payload.get("path") if isinstance(payload, dict) else payload
         media_type = payload.get("media_type") if isinstance(payload, dict) else "application/pdf"
         filename = payload.get("filename") if isinstance(payload, dict) else Path(str(file_path)).name
-        converted_path, _converted_type, _converted_name = _prepare_inline_invoice_document(
+        converted_path, _converted_type, converted_name = _prepare_inline_invoice_document(
             str(file_path), invoice_id, str(media_type or ""), str(filename or "")
         )
         pdf_bytes = Path(converted_path).read_bytes()
+        pdf_filename = str(converted_name or Path(converted_path).name)
+        pdf_source = str(file_path)
     elif kind == "couch_attachment":
-        session, attachment_url, _attachment_name, _media_type = payload
+        session, attachment_url, attachment_name, _media_type = payload
         attachment_response = session.get(attachment_url, timeout=120)
         attachment_response.raise_for_status()
         pdf_bytes = attachment_response.content
+        pdf_filename = str(attachment_name or f"facture_{invoice_id}.pdf")
+        pdf_source = str(attachment_url)
     else:
         raise RuntimeError("Format de document source non pris en charge.")
 
     if not pdf_bytes.startswith(b"%PDF"):
         raise RuntimeError("Le document source n’a pas pu être converti en PDF.")
+    return pdf_bytes, pdf_filename, pdf_source
+
+
+def _load_invoice_pdf_bytes(invoice_id: str) -> bytes:
+    """Load a source document as PDF bytes without exposing a downloadable Word file."""
+    pdf_bytes, _filename, _source = _load_invoice_pdf_payload(invoice_id)
     return pdf_bytes
 
 
@@ -841,14 +853,29 @@ def _validated_invoice_for_odoo(invoice_id: str) -> dict:
         )
 
     first = matching_lines[0]
-    existing_move_id = next(
-        (
-            int(line.get("odoo_move_id"))
-            for line in matching_lines
-            if str(line.get("odoo_move_id") or "").isdigit()
-        ),
-        None,
-    )
+    existing_move_id = None
+    for line in matching_lines:
+        exports = line.get("odoo_exports") if isinstance(line.get("odoo_exports"), list) else []
+        matching_export = next(
+            (
+                export
+                for export in exports
+                if isinstance(export, dict)
+                and str(export.get("database") or "").strip() == ODOO_DB
+                and str(export.get("move_id") or "").isdigit()
+            ),
+            None,
+        )
+        if matching_export:
+            existing_move_id = int(matching_export["move_id"])
+            break
+        line_database = str(line.get("odoo_database") or "").strip()
+        legacy_matches = not line_database and ODOO_DB == "keymanage_db"
+        if (line_database == ODOO_DB or legacy_matches) and str(
+            line.get("odoo_move_id") or ""
+        ).isdigit():
+            existing_move_id = int(line["odoo_move_id"])
+            break
     supplier_details = first.get("issuer") if isinstance(first.get("issuer"), dict) else {}
     return {
         **first,
@@ -883,12 +910,22 @@ def export_validated_invoice_to_odoo(invoice_id: str) -> dict:
         }
 
     try:
-        invoice_data["pdf_bytes"] = _load_invoice_pdf_bytes(invoice_id)
-        safe_reference = str(invoice_data.get("invoice_number") or invoice_id).replace("/", "-")
-        invoice_data["pdf_filename"] = f"facture_{safe_reference}.pdf"
-    except (FileNotFoundError, RuntimeError, OSError):
-        # The vendor bill remains exportable when its source PDF is unavailable.
-        pass
+        pdf_bytes, pdf_filename, pdf_source = _load_invoice_pdf_payload(invoice_id)
+        invoice_data["pdf_bytes"] = pdf_bytes
+        invoice_data["pdf_filename"] = pdf_filename
+        invoice_data["pdf_source"] = pdf_source
+        logger.info(
+            "Export Odoo : PDF source résolu pour la facture %s depuis %s.",
+            invoice_id,
+            pdf_source,
+        )
+    except Exception as exc:  # The Odoo bill must remain exportable without its PDF.
+        invoice_data["pdf_error"] = str(exc)
+        logger.warning(
+            "Export Odoo : PDF inaccessible pour la facture %s : %s",
+            invoice_id,
+            exc,
+        )
 
     try:
         result = export_invoice_to_odoo(invoice_data)
@@ -898,13 +935,26 @@ def export_validated_invoice_to_odoo(invoice_id: str) -> dict:
         raise HTTPException(status_code=502, detail=str(exc)) from exc
 
     move_id = int(result["move_id"])
-    mark_invoice_exported_to_odoo(invoice_id, move_id)
+    mark_invoice_exported_to_odoo(invoice_id, move_id, ODOO_DB)
+    attachment_created = bool(result.get("attachment_id"))
+    message = f"Facture exportée vers Odoo #{move_id}."
+    if not attachment_created:
+        message = (
+            f"Facture exportée vers Odoo #{move_id}, mais la pièce jointe PDF "
+            "n'a pas pu être ajoutée."
+        )
+    missing_account_codes = result.get("missing_account_codes") or []
+    if missing_account_codes:
+        message += " Comptes Odoo introuvables : " + ", ".join(missing_account_codes) + "."
+    unmapped_account_codes = result.get("unmapped_account_codes") or []
+    if unmapped_account_codes:
+        message += " Mapping Odoo non défini pour : " + ", ".join(unmapped_account_codes) + "."
     return {
         "success": True,
         "invoice_id": invoice_id,
         **result,
         "already_exported": False,
-        "message": f"Facture exportée vers Odoo #{move_id}.",
+        "message": message,
     }
 
 

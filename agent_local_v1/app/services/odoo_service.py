@@ -1,18 +1,23 @@
 from __future__ import annotations
 
 import base64
+import logging
 from datetime import datetime
 from pathlib import Path
 from typing import Any
 from xmlrpc import client as xmlrpc_client
 
 from ..config import (
+    ODOO_ACCOUNT_CODE_MAP,
     ODOO_DB,
     ODOO_MOCK_MODE,
     ODOO_PASSWORD,
     ODOO_URL,
     ODOO_USERNAME,
 )
+
+
+logger = logging.getLogger(__name__)
 
 
 class OdooConfigurationError(RuntimeError):
@@ -214,6 +219,125 @@ def _find_currency_id(models: Any, uid: int, currency_name: str = "EUR") -> int:
     return int(currencies[0]["id"])
 
 
+def _company_context(models: Any, uid: int) -> tuple[int | None, dict[str, Any]]:
+    """Return the user's active company and an explicit multi-company context."""
+    users = _execute_kw(
+        models,
+        uid,
+        "res.users",
+        "read",
+        [[uid]],
+        {"fields": ["company_id", "company_ids"]},
+    )
+    user = users[0] if users else {}
+    raw_company = user.get("company_id")
+    company_id = (
+        int(raw_company[0])
+        if isinstance(raw_company, (list, tuple)) and raw_company
+        else int(raw_company)
+        if raw_company
+        else None
+    )
+    allowed_company_ids = [int(value) for value in (user.get("company_ids") or [])]
+    if company_id and company_id not in allowed_company_ids:
+        allowed_company_ids.insert(0, company_id)
+    context: dict[str, Any] = {"allowed_company_ids": allowed_company_ids}
+    if company_id:
+        context["force_company"] = company_id
+    return company_id, context
+
+
+def _validated_account_code(line: dict[str, Any]) -> str:
+    """Resolve the final KeyManage account, giving human corrections priority."""
+    validation_result = (
+        line.get("human_validation_result")
+        if isinstance(line.get("human_validation_result"), dict)
+        else {}
+    )
+    corrected_account = str(
+        line.get("corrected_account")
+        or validation_result.get("corrected_account")
+        or ""
+    ).strip()
+    if corrected_account:
+        return corrected_account
+    if str(validation_result.get("action") or "").strip() == "correct_account":
+        return ""
+    return str(
+        line.get("recommended_account")
+        or line.get("accounting_account")
+        or line.get("account")
+        or ""
+    ).strip()
+
+
+def _find_account_id(
+    models: Any,
+    uid: int,
+    account_code: str,
+    *,
+    company_id: int | None,
+    context: dict[str, Any],
+) -> int | None:
+    code = str(account_code or "").strip()
+    if not code:
+        logger.warning("Export Odoo : aucun code comptable validé reçu pour la ligne.")
+        return None
+
+    domain: list[Any] = [("code", "=", code)]
+    if company_id:
+        domain.append(("company_id", "=", company_id))
+    accounts = _execute_kw(
+        models,
+        uid,
+        "account.account",
+        "search_read",
+        [domain],
+        {
+            "fields": ["id", "code", "name", "company_id"],
+            "limit": 1,
+            "context": context,
+        },
+    )
+    if not accounts:
+        logger.warning(
+            "Export Odoo : compte introuvable pour le code %s dans la société %s ; "
+            "la ligne sera créée sans account_id explicite.",
+            code,
+            company_id or "active",
+        )
+        return None
+    account_id = int(accounts[0]["id"])
+    logger.info(
+        "Export Odoo : compte %s trouvé, account_id=%s, société=%s.",
+        code,
+        account_id,
+        company_id or "active",
+    )
+    return account_id
+
+
+def _mapped_odoo_account_code(keymanage_account_code: str) -> str | None:
+    code = str(keymanage_account_code or "").strip()
+    if not code:
+        logger.warning("Export Odoo : aucun compte final validé reçu pour la ligne.")
+        return None
+    mapped_code = str(ODOO_ACCOUNT_CODE_MAP.get(code) or "").strip()
+    if not mapped_code:
+        logger.warning(
+            "Export Odoo : aucun mapping explicite défini pour le compte KeyManage %s ; "
+            "aucun account_id ne sera imposé.",
+            code,
+        )
+        return None
+    logger.info(
+        "Export Odoo : mapping comptable appliqué, KeyManage %s -> Odoo %s.",
+        code,
+        mapped_code,
+    )
+    return mapped_code
+
+
 def _find_purchase_tax_id(models: Any, uid: int, vat_rate: float) -> int | None:
     taxes = _execute_kw(
         models,
@@ -238,7 +362,11 @@ def _pdf_payload(invoice_data: dict[str, Any]) -> tuple[bytes, str] | None:
     if pdf_path:
         path = Path(pdf_path)
         if path.is_file():
-            return path.read_bytes(), str(invoice_data.get("pdf_filename") or path.name)
+            try:
+                return path.read_bytes(), str(invoice_data.get("pdf_filename") or path.name)
+            except OSError as exc:
+                invoice_data["pdf_error"] = f"Lecture du PDF impossible : {exc}"
+                logger.warning("Export Odoo : lecture du PDF impossible depuis %s : %s", path, exc)
     return None
 
 
@@ -262,6 +390,7 @@ def export_invoice_to_odoo(invoice_data: dict[str, Any]) -> dict[str, Any]:
     """Create an Odoo 17 vendor bill and optionally attach its source PDF."""
     uid = get_odoo_uid()
     models = _models_proxy()
+    company_id, company_context = _company_context(models, uid)
     currency_id = _find_currency_id(models, uid, "EUR")
     supplier = str(
         _first_value(invoice_data, "supplier", "supplier_name", "partner_name", default="")
@@ -290,6 +419,7 @@ def export_invoice_to_odoo(invoice_data: dict[str, Any]) -> dict[str, Any]:
         raise OdooExportError("La facture ne contient aucune ligne exportable vers Odoo.")
     invoice_lines = []
     tax_cache: dict[float, int | None] = {}
+    account_resolutions: list[dict[str, Any]] = []
     for index, source_line in enumerate(source_lines, start=1):
         line = source_line if isinstance(source_line, dict) else {}
         label = str(
@@ -312,6 +442,37 @@ def export_invoice_to_odoo(invoice_data: dict[str, Any]) -> dict[str, Any]:
             "price_unit": amount_ht,
             "quantity": 1.0,
         }
+        account_code = _validated_account_code(line)
+        logger.info(
+            "Export Odoo : ligne %s, code comptable validé reçu=%s.",
+            index,
+            account_code or "absent",
+        )
+        odoo_account_code = _mapped_odoo_account_code(account_code)
+        account_id = (
+            _find_account_id(
+                models,
+                uid,
+                odoo_account_code,
+                company_id=company_id,
+                context=company_context,
+            )
+            if odoo_account_code
+            else None
+        )
+        if account_id:
+            line_values["account_id"] = account_id
+        account_resolutions.append(
+            {
+                "line": index,
+                "account_code": account_code or None,
+                "keymanage_account_code": account_code or None,
+                "odoo_account_code": odoo_account_code,
+                "mapping_found": bool(odoo_account_code),
+                "account_id": account_id,
+                "found": bool(account_id),
+            }
+        )
         tax_id: int | None = None
         if vat_rate > 0:
             if vat_rate not in tax_cache:
@@ -355,11 +516,24 @@ def export_invoice_to_odoo(invoice_data: dict[str, Any]) -> dict[str, Any]:
     if invoice_date:
         move_values["invoice_date"] = invoice_date
 
-    move_id = int(_execute_kw(models, uid, "account.move", "create", [move_values]))
+    move_id = int(
+        _execute_kw(
+            models,
+            uid,
+            "account.move",
+            "create",
+            [move_values],
+            {"context": company_context},
+        )
+    )
+    logger.info("Export Odoo : facture fournisseur créée, move_id=%s.", move_id)
     attachment_id: int | None = None
     pdf = _pdf_payload(invoice_data)
+    attachment_error: str | None = str(invoice_data.get("pdf_error") or "").strip() or None
     if pdf:
         pdf_bytes, filename = pdf
+        pdf_source = str(invoice_data.get("pdf_source") or filename or "PDF fourni").strip()
+        logger.info("Export Odoo : source PDF utilisée=%s.", pdf_source)
         attachment_values = {
             "name": filename or f"facture_{move_id}.pdf",
             "type": "binary",
@@ -368,12 +542,60 @@ def export_invoice_to_odoo(invoice_data: dict[str, Any]) -> dict[str, Any]:
             "res_model": "account.move",
             "res_id": move_id,
         }
-        attachment_id = int(
-            _execute_kw(models, uid, "ir.attachment", "create", [attachment_values])
+        try:
+            attachment_id = int(
+                _execute_kw(
+                    models,
+                    uid,
+                    "ir.attachment",
+                    "create",
+                    [attachment_values],
+                    {"context": company_context},
+                )
+            )
+            attachment_error = None
+            logger.info(
+                "Export Odoo : pièce jointe PDF créée, attachment_id=%s, move_id=%s.",
+                attachment_id,
+                move_id,
+            )
+        except OdooExportError as exc:
+            attachment_error = str(exc)
+            logger.error(
+                "Export Odoo : facture move_id=%s créée, mais ajout du PDF impossible : %s",
+                move_id,
+                exc,
+            )
+    elif attachment_error:
+        logger.warning(
+            "Export Odoo : facture move_id=%s créée sans PDF : %s",
+            move_id,
+            attachment_error,
         )
+    else:
+        attachment_error = "Document PDF source indisponible."
+        logger.warning("Export Odoo : facture move_id=%s créée sans PDF source.", move_id)
 
     return {
         "move_id": move_id,
         "partner_id": partner_id,
         "attachment_id": attachment_id,
+        "attachment_created": bool(attachment_id),
+        "attachment_error": attachment_error,
+        "company_id": company_id,
+        "account_resolutions": account_resolutions,
+        "missing_account_codes": sorted(
+            {
+                str(item["account_code"])
+                for item in account_resolutions
+                if item.get("mapping_found") and not item.get("found")
+            }
+        ),
+        "unmapped_account_codes": sorted(
+            {
+                str(item["keymanage_account_code"])
+                for item in account_resolutions
+                if item.get("keymanage_account_code") and not item.get("mapping_found")
+            }
+        ),
     }

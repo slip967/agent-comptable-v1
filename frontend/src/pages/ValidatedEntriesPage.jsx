@@ -157,7 +157,7 @@ export default function ValidatedEntriesPage() {
       if (!moveId) throw new Error("Odoo n’a retourné aucun identifiant de pièce comptable.");
       setOdooExports((current) => ({ ...current, [invoiceId]: moveId }));
       setEntries((current) => current.map((entry) => keyOf(entry) === invoiceId ? { ...entry, odoo_move_id: moveId } : entry));
-      setNotice(`Facture exportée vers Odoo #${moveId}.`);
+      setNotice(String(payload?.message || `Facture exportée vers Odoo #${moveId}.`).trim());
     } catch (odooError) {
       setError(String(odooError?.message || "Impossible d’exporter cette facture vers Odoo.").trim());
     } finally {
