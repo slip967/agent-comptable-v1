@@ -9,6 +9,49 @@ from agent_local_v1.app import human_validation_store
 
 
 class OdooServiceTests(unittest.TestCase):
+    def test_purchase_tax_prefers_standard_service_tax_over_other_variants(self) -> None:
+        models = MagicMock()
+        models.execute_kw.return_value = [
+            {"id": 24, "name": "20% EU S", "tax_scope": "service", "price_include": False},
+            {"id": 27, "name": "20% S", "tax_scope": "service", "price_include": False},
+            {"id": 35, "name": "20% R E", "tax_scope": "service", "price_include": False},
+        ]
+
+        with patch.object(odoo_service, "ODOO_PASSWORD", "admin"):
+            tax = odoo_service._find_purchase_tax(
+                models,
+                7,
+                20.0,
+                tax_scope="service",
+                price_include=False,
+                company_id=1,
+                context={"allowed_company_ids": [1], "force_company": 1},
+            )
+
+        self.assertEqual(tax["id"], 27)
+        self.assertEqual(tax["name"], "20% S")
+
+    def test_purchase_tax_selects_inclusive_service_tax_for_ttc_price(self) -> None:
+        models = MagicMock()
+        models.execute_kw.return_value = [
+            {"id": 30, "name": "20% EU S INC", "tax_scope": "service", "price_include": True},
+            {"id": 31, "name": "20% S INC", "tax_scope": "service", "price_include": True},
+        ]
+
+        with patch.object(odoo_service, "ODOO_PASSWORD", "admin"):
+            tax = odoo_service._find_purchase_tax(
+                models,
+                7,
+                20.0,
+                tax_scope="service",
+                price_include=True,
+                company_id=1,
+                context={"allowed_company_ids": [1], "force_company": 1},
+            )
+
+        self.assertEqual(tax["id"], 31)
+        self.assertEqual(tax["name"], "20% S INC")
+
     def test_export_invoice_builds_expected_xmlrpc_calls(self) -> None:
         common = MagicMock()
         common.authenticate.return_value = 7
@@ -18,7 +61,7 @@ class OdooServiceTests(unittest.TestCase):
             [{"id": 1, "name": "EUR"}],
             [],
             42,
-            [{"id": 5, "name": "TVA 20% achats", "amount": 20.0}],
+            [{"id": 5, "name": "20% S", "amount": 20.0}],
             99,
             123,
         ]
@@ -42,8 +85,8 @@ class OdooServiceTests(unittest.TestCase):
                     "invoice_number": "FA-2026-0042",
                     "invoice_date": "21/08/2026",
                     "lines": [
-                        {"description": "Abonnement téléphonique", "amount_ht": 29.99, "amount_ttc": 35.99, "tva": 20},
-                        {"label": "Fibre professionnelle", "total_net": 50, "total_gross": 60, "vat_percent": 20},
+                        {"description": "Abonnement téléphonique", "amount_ht": 29.99, "amount_ttc": 35.99, "tva": 20, "item_type": "service"},
+                        {"label": "Fibre professionnelle", "total_net": 50, "total_gross": 60, "vat_percent": 20, "item_type": "service"},
                     ],
                     "pdf_bytes": b"%PDF-1.7 test",
                     "pdf_filename": "FA-2026-0042.pdf",
@@ -79,7 +122,15 @@ class OdooServiceTests(unittest.TestCase):
         self.assertEqual(tax_call.args[3:5], ("account.tax", "search_read"))
         self.assertEqual(
             tax_call.args[5][0],
-            [("type_tax_use", "=", "purchase"), ("amount", "=", 20.0)],
+            [
+                ("type_tax_use", "=", "purchase"),
+                ("amount_type", "=", "percent"),
+                ("amount", "=", 20.0),
+                ("tax_scope", "=", "service"),
+                ("price_include", "=", False),
+                ("active", "=", True),
+                ("company_id", "=", 1),
+            ],
         )
 
         self.assertEqual(move_create_call.args[3:5], ("account.move", "create"))
@@ -146,7 +197,7 @@ class OdooServiceTests(unittest.TestCase):
                 {
                     "supplier": "FOURNISSEUR",
                     "lines": [
-                        {"description": "Prestation", "amount_ht": 100, "amount_ttc": 120, "tva": 20}
+                        {"description": "Prestation", "amount_ht": 100, "amount_ttc": 120, "tva": 20, "item_type": "service"}
                     ],
                 }
             )
@@ -170,7 +221,8 @@ class OdooServiceTests(unittest.TestCase):
             [{"company_id": [1, "My Company"], "company_ids": [1]}],
             [{"id": 1, "name": "EUR"}],
             [{"id": 88, "name": "ASSAINIS", "vat": False}],
-            [{"id": 77, "code": "613310", "name": "Entretien et réparations des biens immobiliers", "company_id": [1, "My Company"]}],
+            [{"id": 409, "code": "615200", "name": "Entretien et réparations sur biens immobiliers", "company_id": [1, "My Company"]}],
+            [{"id": 27, "name": "20% S", "amount": 20.0, "tax_scope": "service", "price_include": False, "company_id": [1, "My Company"]}],
             501,
         ]
 
@@ -178,7 +230,8 @@ class OdooServiceTests(unittest.TestCase):
             patch.object(odoo_service, "ODOO_MOCK_MODE", False),
             patch.object(odoo_service, "ODOO_USERNAME", "admin@example.com"),
             patch.object(odoo_service, "ODOO_PASSWORD", "admin"),
-            patch.object(odoo_service, "ODOO_ACCOUNT_CODE_MAP", {"6152": "613310", "6155": "613320"}),
+            patch.object(odoo_service, "ODOO_ACCOUNT_CODE_MAP", {"6152": "615200", "6155": "615500"}),
+            patch.object(odoo_service, "ODOO_TAX_SCOPE_BY_ACCOUNT", {"6152": "service"}),
             patch.object(odoo_service.xmlrpc_client, "ServerProxy", side_effect=[common, models]),
         ):
             result = odoo_service.export_invoice_to_odoo(
@@ -188,6 +241,8 @@ class OdooServiceTests(unittest.TestCase):
                         {
                             "description": "Pompage",
                             "amount_ht": 800,
+                            "amount_ttc": 960,
+                            "tva": 20,
                             "recommended_account": "6062",
                             "corrected_account": "6152",
                             "human_validation_result": {
@@ -203,13 +258,24 @@ class OdooServiceTests(unittest.TestCase):
         self.assertEqual(account_call.args[3:5], ("account.account", "search_read"))
         self.assertEqual(
             account_call.args[5][0],
-            [("code", "=", "613310"), ("company_id", "=", 1)],
+            [("code", "=", "615200"), ("company_id", "=", 1)],
         )
-        move_values = models.execute_kw.call_args_list[4].args[5][0]
-        self.assertEqual(move_values["invoice_line_ids"][0][2]["account_id"], 77)
+        tax_call = models.execute_kw.call_args_list[4]
+        self.assertEqual(tax_call.args[3:5], ("account.tax", "search_read"))
+        self.assertIn(("tax_scope", "=", "service"), tax_call.args[5][0])
+        self.assertIn(("price_include", "=", False), tax_call.args[5][0])
+        move_values = models.execute_kw.call_args_list[5].args[5][0]
+        self.assertEqual(move_values["invoice_line_ids"][0][2]["account_id"], 409)
+        self.assertEqual(move_values["invoice_line_ids"][0][2]["tax_ids"], [(6, 0, [27])])
+        self.assertEqual(move_values["invoice_line_ids"][0][2]["price_unit"], 800.0)
         self.assertEqual(result["account_resolutions"][0]["account_code"], "6152")
-        self.assertEqual(result["account_resolutions"][0]["odoo_account_code"], "613310")
-        self.assertEqual(result["account_resolutions"][0]["account_id"], 77)
+        self.assertEqual(result["account_resolutions"][0]["odoo_account_code"], "615200")
+        self.assertEqual(result["account_resolutions"][0]["account_id"], 409)
+        self.assertEqual(result["tax_resolutions"][0]["tax_scope"], "service")
+        self.assertEqual(result["tax_resolutions"][0]["tax_scope_source"], "account_mapping:6152")
+        self.assertFalse(result["tax_resolutions"][0]["price_include"])
+        self.assertEqual(result["tax_resolutions"][0]["tax_id"], 27)
+        self.assertEqual(result["tax_resolutions"][0]["tax_name"], "20% S")
 
     def test_missing_account_does_not_block_invoice_creation(self) -> None:
         common = MagicMock()

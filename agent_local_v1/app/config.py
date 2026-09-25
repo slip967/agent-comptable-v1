@@ -82,6 +82,9 @@ def _parse_account_code_map(raw_value: str) -> dict[str, str]:
 ODOO_ACCOUNT_CODE_MAP = _parse_account_code_map(
     os.getenv("ODOO_ACCOUNT_CODE_MAP", "")
 )
+ODOO_TAX_SCOPE_BY_ACCOUNT = _parse_account_code_map(
+    os.getenv("ODOO_TAX_SCOPE_BY_ACCOUNT", "")
+)
 try:
     MEMORY_PAGE_SIZE = max(50, int(os.getenv("MEMORY_PAGE_SIZE", "400").strip() or "400"))
 except ValueError:

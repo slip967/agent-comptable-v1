@@ -12,6 +12,7 @@ from ..config import (
     ODOO_DB,
     ODOO_MOCK_MODE,
     ODOO_PASSWORD,
+    ODOO_TAX_SCOPE_BY_ACCOUNT,
     ODOO_URL,
     ODOO_USERNAME,
 )
@@ -338,16 +339,142 @@ def _mapped_odoo_account_code(keymanage_account_code: str) -> str | None:
     return mapped_code
 
 
-def _find_purchase_tax_id(models: Any, uid: int, vat_rate: float) -> int | None:
+def _tax_scope_from_value(value: Any) -> str | None:
+    normalized = str(value or "").strip().lower()
+    if normalized in {"service", "services", "prestation", "prestations"}:
+        return "service"
+    if normalized in {"consu", "goods", "good", "bien", "biens", "product", "produit"}:
+        return "consu"
+    return None
+
+
+def _line_tax_scope(line: dict[str, Any], account_code: str) -> tuple[str | None, str]:
+    """Resolve goods/service without guessing from the line label."""
+    for field in ("tax_scope", "item_type", "line_type", "product_type", "nature"):
+        if field not in line:
+            continue
+        scope = _tax_scope_from_value(line.get(field))
+        if scope:
+            return scope, f"line.{field}"
+        logger.warning(
+            "Export Odoo : nature de ligne non reconnue dans %s=%r.",
+            field,
+            line.get(field),
+        )
+
+    configured_scope = _tax_scope_from_value(
+        ODOO_TAX_SCOPE_BY_ACCOUNT.get(str(account_code or "").strip())
+    )
+    if configured_scope:
+        return configured_scope, f"account_mapping:{account_code}"
+    return None, "unresolved"
+
+
+def _boolean_value(value: Any) -> bool | None:
+    if isinstance(value, bool):
+        return value
+    normalized = str(value or "").strip().lower()
+    if normalized in {"1", "true", "yes", "oui", "included", "inclusive", "ttc"}:
+        return True
+    if normalized in {"0", "false", "no", "non", "excluded", "exclusive", "ht"}:
+        return False
+    return None
+
+
+def _line_price_include(line: dict[str, Any]) -> tuple[bool, str]:
+    for field in ("price_include", "tax_included", "vat_included", "ttc_included"):
+        if field not in line:
+            continue
+        resolved = _boolean_value(line.get(field))
+        if resolved is not None:
+            return resolved, f"line.{field}"
+
+    # Le connecteur utilise amount_ht comme price_unit. La taxe Odoo doit donc
+    # être non incluse, même lorsque le montant TTC est également disponible.
+    if any(line.get(field) not in (None, "") for field in ("amount_ht", "total_ht", "ht", "total_net")):
+        return False, "exported_amount_ht"
+    return False, "connector_price_unit_ht_default"
+
+
+def _find_purchase_tax(
+    models: Any,
+    uid: int,
+    vat_rate: float,
+    *,
+    tax_scope: str,
+    price_include: bool,
+    company_id: int | None,
+    context: dict[str, Any],
+) -> dict[str, Any] | None:
+    domain: list[Any] = [
+        ("type_tax_use", "=", "purchase"),
+        ("amount_type", "=", "percent"),
+        ("amount", "=", vat_rate),
+        ("tax_scope", "=", tax_scope),
+        ("price_include", "=", price_include),
+        ("active", "=", True),
+    ]
+    if company_id:
+        domain.append(("company_id", "=", company_id))
     taxes = _execute_kw(
         models,
         uid,
         "account.tax",
         "search_read",
-        [[("type_tax_use", "=", "purchase"), ("amount", "=", vat_rate)]],
-        {"fields": ["id", "name", "amount"], "limit": 1},
+        [domain],
+        {
+            "fields": [
+                "id",
+                "name",
+                "amount",
+                "tax_scope",
+                "price_include",
+                "company_id",
+            ],
+            "limit": 50,
+            "context": context,
+        },
     )
-    return int(taxes[0]["id"]) if taxes else None
+    if not taxes:
+        return None
+
+    # l10n_fr contient plusieurs taxes au même taux et dans le même périmètre
+    # (UE, import, immobilier...). La taxe d'achat nationale standard porte le
+    # nom court "<taux>% G" ou "<taux>% S". On ne retient jamais arbitrairement
+    # la première taxe lorsque plusieurs variantes existent.
+    standard_suffix = "S" if tax_scope == "service" else "G"
+    included_suffix = " INC" if price_include else ""
+    expected_name = f"{vat_rate:g}% {standard_suffix}{included_suffix}".casefold()
+    exact_standard = [
+        tax
+        for tax in taxes
+        if str(tax.get("name") or "").strip().casefold() == expected_name
+    ]
+    if len(exact_standard) == 1:
+        return exact_standard[0]
+    if len(exact_standard) > 1:
+        logger.warning(
+            "Export Odoo : plusieurs taxes standard nommées %s correspondent à achat, "
+            "taux=%s, nature=%s, prix_inclus=%s, société=%s ; résolution refusée.",
+            expected_name,
+            vat_rate,
+            tax_scope,
+            price_include,
+            company_id or "active",
+        )
+    else:
+        logger.warning(
+            "Export Odoo : %s taxes correspondent à achat, taux=%s, nature=%s, "
+            "prix_inclus=%s, société=%s, mais aucune ne porte le nom standard %s ; "
+            "résolution refusée.",
+            len(taxes),
+            vat_rate,
+            tax_scope,
+            price_include,
+            company_id or "active",
+            expected_name,
+        )
+    return None
 
 
 def _pdf_payload(invoice_data: dict[str, Any]) -> tuple[bytes, str] | None:
@@ -418,8 +545,9 @@ def export_invoice_to_odoo(invoice_data: dict[str, Any]) -> dict[str, Any]:
     if not isinstance(source_lines, list) or not source_lines:
         raise OdooExportError("La facture ne contient aucune ligne exportable vers Odoo.")
     invoice_lines = []
-    tax_cache: dict[float, int | None] = {}
+    tax_cache: dict[tuple[float, str, bool, int | None], dict[str, Any] | None] = {}
     account_resolutions: list[dict[str, Any]] = []
+    tax_resolutions: list[dict[str, Any]] = []
     for index, source_line in enumerate(source_lines, start=1):
         line = source_line if isinstance(source_line, dict) else {}
         label = str(
@@ -474,12 +602,60 @@ def export_invoice_to_odoo(invoice_data: dict[str, Any]) -> dict[str, Any]:
             }
         )
         tax_id: int | None = None
+        tax_name: str | None = None
+        tax_scope, tax_scope_source = _line_tax_scope(line, account_code)
+        price_include, price_include_source = _line_price_include(line)
         if vat_rate > 0:
-            if vat_rate not in tax_cache:
-                tax_cache[vat_rate] = _find_purchase_tax_id(models, uid, vat_rate)
-            tax_id = tax_cache[vat_rate]
+            if tax_scope:
+                tax_key = (vat_rate, tax_scope, price_include, company_id)
+                if tax_key not in tax_cache:
+                    tax_cache[tax_key] = _find_purchase_tax(
+                        models,
+                        uid,
+                        vat_rate,
+                        tax_scope=tax_scope,
+                        price_include=price_include,
+                        company_id=company_id,
+                        context=company_context,
+                    )
+                tax = tax_cache[tax_key]
+                if tax:
+                    tax_id = int(tax["id"])
+                    tax_name = str(tax.get("name") or "").strip() or None
+                    logger.info(
+                        "Export Odoo : ligne %s, taxe trouvée=%s, tax_id=%s, taux=%s, "
+                        "nature=%s (%s), prix_inclus=%s (%s).",
+                        index,
+                        tax_name or "sans libellé",
+                        tax_id,
+                        vat_rate,
+                        tax_scope,
+                        tax_scope_source,
+                        price_include,
+                        price_include_source,
+                    )
+            else:
+                logger.warning(
+                    "Export Odoo : ligne %s, TVA %s%% non résolue car la nature bien/service "
+                    "est absente ; aucun choix arbitraire de taxe ne sera effectué.",
+                    index,
+                    vat_rate,
+                )
         if tax_id:
             line_values["tax_ids"] = [(6, 0, [tax_id])]
+        tax_resolutions.append(
+            {
+                "line": index,
+                "vat_rate": vat_rate,
+                "tax_scope": tax_scope,
+                "tax_scope_source": tax_scope_source,
+                "price_include": price_include,
+                "price_include_source": price_include_source,
+                "tax_id": tax_id,
+                "tax_name": tax_name,
+                "found": bool(tax_id),
+            }
+        )
         invoice_lines.append((0, 0, line_values))
 
         if vat_rate > 0 and not tax_id:
@@ -584,6 +760,7 @@ def export_invoice_to_odoo(invoice_data: dict[str, Any]) -> dict[str, Any]:
         "attachment_error": attachment_error,
         "company_id": company_id,
         "account_resolutions": account_resolutions,
+        "tax_resolutions": tax_resolutions,
         "missing_account_codes": sorted(
             {
                 str(item["account_code"])
